@@ -2,6 +2,8 @@
 
 Aqui você encontra o curso **completo** de Graduação em Ciência da Computação pela Universidade Federal do Rio Grande do Sul.
 
+Para mais informações sobre o curso você pode acessar o website do Instituto de Informática da UFRGS aqui [[link]](https://www.inf.ufrgs.br/site/)
+
 ## Estrutura do curso
 
 O curso é composto de 9 semestres, sendo os 8 primeiros com disciplinas e o último ficado no TCC. Esse é o motivo pelo qual o 9° semestre não consta na listagem, pois cabe a cada aluno fazer o seu Trabalho de Conclusão de Curso.
