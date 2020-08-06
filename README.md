@@ -2,7 +2,11 @@
 
 Aqui você encontra o curso **completo** de Graduação em Ciência da Computação pela Universidade Federal do Rio Grande do Sul.
 
-Para mais informações sobre o curso você pode acessar o website do Instituto de Informática da UFRGS aqui [[link]](https://www.inf.ufrgs.br/site/)
+Para mais informações sobre o curso você pode acessar o website do Instituto de Informática da UFRGS aqui [[link]](https://www.inf.ufrgs.br/site/). No link você poderá consultar mais informações sobre as disciplinas disponíveis, sobre o Instituto e o corpo docente (professores).
+
+Também estão disponíveis algumas informações sobre o curso de Graduação em Ciência da Computação no website oficial da Universidade Federal do Rio Grande do Sul, que você pode acessar esse [[link]](http://www.ufrgs.br/ufrgs/ensino/graduacao/cursos/exibeCurso?cod_curso=305).
+
+Algumas das disciplinas do curso são ministradas pelo Instituto de Matemática e Estatística, que você pode conhecer mais clicando no [[link]](https://www.ufrgs.br/ime/).
 
 ## Estrutura do curso
 
