@@ -10,7 +10,7 @@ O curso é composto de 9 semestres, sendo os 8 primeiros com disciplinas e o úl
 
 As disciplinas estão distribuídas em semestres conforme o currículo obrigatório da universidade na época, que pode ser observado abaixo.
 
-![[]](https://raw.githubusercontent.com/jlggross/computer-science-full-graduation/master/CiC%20UFRGS%20-%20Diagrama%20do%20Curr%C3%ADculo%20Obrigat%C3%B3rio.jpg?token=AANUYLBN3UUIUE7IH523Q6C7FSGHQ)
+![[]](https://raw.githubusercontent.com/jlggross/computer-science-full-graduation/master/CiC%20UFRGS%20-%20Diagrama%20do%20Curr%C3%ADculo%20Obrigat%C3%B3rio.jpg?token=AANUYLE6EEHCCTESGENH2JK7FSI5G)
 
 As disciplinas que não constam na grade de disciplinas obrigatórias são as chamadas disciplinas eletivas, necessárias para cumprir os créditos mínimos para formatura.
 
