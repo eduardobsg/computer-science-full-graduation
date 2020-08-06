@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bd_usuarios>
+	<usuario>
+		<id>1</id>
+		<nome>Jose Pereira</nome>
+		<email>jose@gmail.com</email>
+		<usuario>jose</usuario>
+		<senha>310dcbbf4cce62f762a2aaa148d556bd</senha>
+		<status>1</status>
+	</usuario>
+	<usuario>
+		<id>3</id>
+		<nome>Mauro Moreira</nome>
+		<email>mauro@gmail.com</email>
+		<usuario>mauro</usuario>
+		<senha>310dcbbf4cce62f762a2aaa148d556bd</senha>
+		<status>1</status>
+	</usuario>
+	<usuario>
+		<id>4</id>
+		<nome>Carlos Santana</nome>
+		<email>carlos@gmail.com</email>
+		<usuario>carlos</usuario>
+		<senha>550a141f12de6341fba65b0ad0433500</senha>
+		<status>1</status>
+	</usuario>
+	<usuario>
+		<id>5</id>
+		<nome>Joao</nome>
+		<email>joao@gmail.com</email>
+		<usuario>joao</usuario>
+		<senha>5b1b68a9abf4d2cd155c81a9225fd158</senha>
+		<status>1</status>
+	</usuario>
+	<usuario>
+		<id>6</id>
+		<nome>Josias</nome>
+		<email>josias@gmail.com</email>
+		<usuario>jojo</usuario>
+		<senha>96e79218965eb72c92a549dd5a330112</senha>
+		<status>1</status>
+	</usuario>
+	<usuario>
+		<id>7</id>
+		<nome>lala</nome>
+		<email>lala</email>
+		<usuario>lala</usuario>
+		<senha>e10adc3949ba59abbe56e057f20f883e</senha>
+		<status>1</status>
+	</usuario>
+	<usuario>
+		<id>8</id>
+		<nome>Jean</nome>
+		<email>j_costelas@yahoo.com.br</email>
+		<usuario>Jean</usuario>
+		<senha>b4588a98af43e1d0a8dd697b65f491ac</senha>
+		<status>1</status>
+	</usuario>
+	<usuario>
+		<id>9</id>
+		<nome>Marcos Vinicius Cavinato</nome>
+		<email>blabla@hotmail.com</email>
+		<usuario>cavina</usuario>
+		<senha>89794b621a313bb59eed0d9f0f4e8205</senha>
+		<status>1</status>
+	</usuario>
+</bd_usuarios>

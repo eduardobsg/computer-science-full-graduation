@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!-- saved from url=(0046)http://uva.onlinejudge.org/external/5/556.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Amazing</title>
+<meta name="description" content="Amazing">
+<meta name="keywords" content="htmlatex">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+
+<link rel="STYLESHEET" href="http://uva.onlinejudge.org/external/5/htmlatex.css">
+</head>
+<body lang="EN" bgcolor="#FFFFFF">
+
+<h1><br clear="ALL"><center><table bgcolor="#0060F0"><tbody><tr><td><b><font size="5" color="#C0FFFF">&nbsp;<a name="SECTION0001000000000000000000">
+Amazing</a>&nbsp;</font></b></td></tr></tbody></table></center>
+</h1>
+
+<p>
+One of the apparently intelligent tricks that enthousiastic psychologists
+persuade mice to perform is
+solving a maze. There is still some controversy as to the exact strategies
+employed by the mice
+when engaged in such a task, but it has been claimed that the animal keepers
+eavesdropping on
+conversations between the mice have heard them say things like "I have
+finally got Dr. Schmidt
+trained. Everytime I get through the maze he gives me food".
+
+</p><p>
+
+</p><p>
+<br>
+Thus when autonomous robots were first being built, it was decided that
+solving such mazes would
+be a good test of the 'intelligence' built into such machines by their
+designers. However, to their
+chagrin, the first contest was won by a robot that placed a sensor on the
+right-hand wall of the maze
+and sped through the maze maintaining contact with the right-hand wall at
+all times. This led to a
+change in the design of mazes, and also to the interest in the behaviour
+of such robots. To test this
+behaviour the mazes were modified to become closed boxes with internal walls.
+The robot was
+placed in the south west corner and set of pointing east. The robot then moved
+through the maze,
+keeping a wall on its right at all times. If it can not proceed, it will turn
+left until it can proceed. All
+turns are exact right angles. The robot stops when it returns to the starting
+square. The mazes were
+always set up so that the robot could move to at least one other square before
+returning. The
+researchers then determined how many squares were not visited and how many
+were visited one,
+twice, thrice and four times. A square is visited if a robot moves into and
+out of it. Thus for the
+following maze, the values (in order) are: 2, 3, 5, 1, 0.
+
+</p><p>
+</p><div align="CENTER">
+<img src="p556.gif">
+</div>
+
+<p>
+Write a program to simulate the behaviour of such a robot and collect the
+desired values.
+
+</p><p>
+
+</p><h2><font color="#0070E8"><a name="SECTION0001001000000000000000">
+Input</a>&nbsp;</font>
+</h2>
+Input will consist of a series of maze descriptions. Each maze description
+will start with a line
+containing the size of the maze (<i>b</i> and <i>w</i>), This will be followed by <i>b</i> lines, each consisting of <i>w</i>
+characters, either '<tt>0</tt>' or '<tt>1</tt>'. Ones represent closed squares, zeroes represent open squares. Since the
+maze is enclosed, the outer wall is not specified. The file will be terminated
+by a line containing two zeroes.
+
+<p>
+
+</p><h2><font color="#0070E8"><a name="SECTION0001002000000000000000">
+Output</a>&nbsp;</font>
+</h2>
+Output will consist of a series of lines, one for each maze. Each line will
+consist of 5 integer values
+representing the desired values, each value right justified in a field of
+width 3.
+
+<p>
+
+</p><h2><font color="#0070E8"><a name="SECTION0001003000000000000000">
+Sample Input</a>&nbsp;</font>
+</h2>
+<pre>3 5
+01010
+01010
+00000
+0 0
+</pre>
+
+<p>
+
+</p><h2><font color="#0070E8"><a name="SECTION0001004000000000000000">
+Sample Output</a>&nbsp;</font>
+</h2>
+<pre>  2  3  5  1  0
+</pre>
+
+<p>
+
+</p><p>
+<br></p><hr>
+<address>
+<i>Miguel A. Revilla</i>
+<br><i>1998-03-10</i>
+</address>
+
+
+
+</body></html>

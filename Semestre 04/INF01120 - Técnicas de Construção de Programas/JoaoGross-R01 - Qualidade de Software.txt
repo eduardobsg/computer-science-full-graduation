@@ -1,0 +1,75 @@
+Cadeira: INF01120 - Técnicas de Construção de Programas
+Professor: Marcelo Pimenta
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2011/02
+
+Resumo 01 - Qualidade de Software
+
+	Neste capítulo tive o primeiro contato com a engenharia de software. Nele foram
+descritas diversas características que a aplicação deve ter, bem como algumas técnicas
+de desenvolvimento e cuidados que se deve observar até que se conceba o produto final,
+o software. 
+	Quando se cria um software, antes de começar a programação é necessário dedicar tempo
+para projetar os sistemas, estabelecendo as funcionalidades do software, as estruturas de 
+dados que serão usadas, como se dará a interação com outros sistemas, a interface da aplicação 
+final, dentre muitos outros fatores que influem diretamente na qualidade do produto. 
+	Das características que um software deve atingir, a primeira que supera as demais em
+disparada é sem dúvida a corretude, pois sem um software correto, que faça o que sua 
+especificação pede, o seu propósito não é atingível, e logo não é um produto confiável. 
+A robustez também é uma característica bastante importante, pois garante que a aplicação
+saberá tratar anormalidades no sistema, complementando a corretude e garantindo confiabilidade.
+Compatibilidade e facilidade no uso, não deixam por menos, visto que ambas são muito 
+importantes ao usuário/cliente.
+	Quanto ao desenvolvimento de uma aplicação, uma das técnicas mais comumente utilizadas é
+o desenvolvimento em camadas de corretude, ou seja, são estabelecidadas etapas e em cada
+uma deve-se garantir que a corretude dos softwares e sistemas seja mantida, visando a corretude 
+total da aplicação.	A implementação geralmente é realizada com orientação a objetos, que deixam 
+os códigos mais limpos e organizados, além de facilitarem reuso e alterações.
+	A documentação é outra etapa que tem grande valor, pois um software bem documentado 
+possibilita manutenções mais ágeis e também compreendimento das funcionalidades da aplicação com
+rapidez.
+
+
+Tópicos:
+- Desenvolvimento de software em camadas de corretude
+
+# Fatores de qualidade de software externos:
+- Corretude: o programa faz o que está na sua especificação
+- Robustez: capacidade que um programa tem de reagir de forma apropriada a uma situação 
+anormal no programa, que foge do resultado esperado pela especificação.
+- Robustez -> complementa corretude
+- Modificabilidade (extendibility): facildade que o software tem de ser adaptado de acordo com as 
+alterações da especificação
+- Reusabilidade: capacidade dos elementos de software de um projeto servirem para 
+desenvolver outros projetos
+- Compatibilidade: facilidade de combinar elementos de software entre si
+- Eficiência: capacidade do software de consumir a menor quantidade de recursos possível,
+tanto de tempo, quanto de espaço de armazenamento ocupado e velocidades de banda necessária
+- Portabilidade: facilidade de um software rodar em diferentes hardwares e ambientes 
+de software
+- Fácil de usar: facilidade que os usuários tem de em usar e aprender a usar o software. 
+Ela também engloba a facilidade de instalar, operar e monitorar. "Não finja conhecer o 
+usuário; você não o conhece"
+- Funcionalidade: conjunto de possibilidades que um sistema proporciona.
+- O aumento da funcionalidade deve ser sustentável, não devendo afetar nenhuma outra 
+característica do software
+- Timeliness (oportunidade): capacidade de um software ser lançado antes dos usuários
+quererem este lançamento
+
+# Documentação
+Importante para usuários e clientes terem conhecimento do que o sistema faz, como operá-lo. 
+E para os desenvolvedores saberem como é a estrutura e a implementação do sistema.
+
+# Orientação a objetos
+Ajuda a ter compatibilidade, portabilidade, eficiência, facilidade no uso e funcionalidade
+
+# Manutenção
+Envolve modificações do sistema de acordo com as modificações da especificação, porém 
+inclui as etapas de debugging, tratamento de errors, mudanças em estruturas de dados
+e documentação atualizada
+
+Correção e robustez: confiabilidade
+Modificabilidade e reusabilidade: modularidade
+
+Modificabilidade == Extendibility?

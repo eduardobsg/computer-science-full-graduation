@@ -1,0 +1,46 @@
+Lista de Exercícios 5
+
+;Definição de dados
+;Um site-acessado é uma estrutura
+;(make-site-acessado url data horário), onde:
+; - url: é um símbolo
+; - data: número de 8 dígitos (Ex.: 21081990 - 21 de agosto de 1990)
+; - horário: número de 4 dígitos (Ex.: 2132 - 21:32)
+
+(define-struct site-acessado (url data horário))
+
+;Seletores:
+; - site-acessado-url
+; - site-acessado-data
+; - site-acessado-horário
+
+
+;Contrato: histórico: site-acessado -> lista
+;Objetivo: dado um site acessado guardá-lo em uma lista que contém
+;o histórico dos sites acessados
+;Cabeçalho e Corpo:
+
+(define histórico site-acessado)
+			
+
+;Contrato: tira-empty: lista-URL-acessos um-número-de-acessos -> lista-URL-acessos
+;Objetivo: adiciona um-número-de-acessos ao final da lista de entrada
+;Cabeçalho e Corpo:
+
+(define (tira-empty lista-URL-acessos um-número-de-acessos)
+  (cond
+    [(empty? lista-URL-acessos) (cons um-número-de-acessos empty)]
+    [else (cons (first lista-URL-acessos) (tira-empty (rest lista-URL-acessos) um-número-de-acessos))]))
+
+;Exemplo:
+(tira-empty 
+ (cons (make-número-de-acessos "http://www.facebook.com/" 1) 
+       (cons (make-número-de-acessos "http://www.google.com.br/" 3) 
+             (cons (make-número-de-acessos "http://www.terra.com.br/portal/" 2) 
+                   (cons (make-número-de-acessos "http://www.uol.com.br/" 2) empty))))
+ (make-número-de-acessos "http://www.facebook.com/" 1))
+;(cons (make-número-de-acessos "http://www.facebook.com/" 1) 
+;      (cons (make-número-de-acessos "http://www.google.com.br/" 3) 
+;            (cons (make-número-de-acessos "http://www.terra.com.br/portal/" 2) 
+;                  (cons (make-número-de-acessos "http://www.uol.com.br/" 2) 
+;                        (cons (make-número-de-acessos "http://www.facebook.com/" 1) empty)))))																					

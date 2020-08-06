@@ -1,0 +1,4154 @@
+1
+00:00:13,070 --> 00:00:16,277
+Olá, meu nome é Bob Cringely e
+estou aqui hoje para lhes contar
+
+2
+00:00:16,278 --> 00:00:19,400
+a incrível história dos computadores
+pessoais e como eles dominaram o mundo.
+
+3
+00:00:19,435 --> 00:00:21,414
+E porque eu estou no meio dessa
+partida de basquete?
+
+4
+00:00:21,415 --> 00:00:22,719
+Bem eu gosto deste jogo,
+
+5
+00:00:22,720 --> 00:00:25,600
+mas a razão principal é
+por causa daquele cara ali.
+
+6
+00:00:29,900 --> 00:00:34,555
+Seu nome é Paul Allen e tudo que
+você vê aqui pertence a ele.
+
+7
+00:00:34,556 --> 00:00:39,210
+O time de basquete de Portland, o
+estádio e até mesmo as dançarinas.
+
+8
+00:00:40,880 --> 00:00:43,640
+Graças aos computadores
+pessoais ele tem oito bilhões
+
+9
+00:00:43,641 --> 00:00:46,130
+de dólares para gastar
+com esses brinquedinhos.
+
+10
+00:00:47,450 --> 00:00:50,490
+Vinte anos atrás Allen e seu
+amigo do colegial, Bill Gates
+
+11
+00:00:50,491 --> 00:00:53,530
+começaram uma companhia de
+softwares chamada Microsoft.
+
+12
+00:00:55,320 --> 00:00:59,660
+Hoje Allen é mais rico que Deus
+e Gates é mais rico que Allen.
+
+13
+00:01:01,910 --> 00:01:04,259
+Vinte anos atrás jovens
+como Paul Allen e Bill Gates
+
+14
+00:01:04,360 --> 00:01:06,500
+inventaram os computadores pessoais
+
+15
+00:01:06,550 --> 00:01:11,240
+lançando a revolução que mudou a maneira da
+gente viver, trabalhar e se comunicar.
+
+16
+00:01:11,560 --> 00:01:14,985
+É até difícil de imaginar que há 20 anos
+atrás nem existiam computadores pessoais.
+
+17
+00:01:15,020 --> 00:01:17,465
+Hoje é o 3º maior ramo
+industrial do mundo, colocado
+
+18
+00:01:17,466 --> 00:01:19,670
+entre a produção de
+energia e drogas ilegais.
+
+19
+00:01:20,030 --> 00:01:23,177
+Mas o mais interessante disso,
+é que tudo começou por acidente
+
+20
+00:01:23,178 --> 00:01:27,430
+quando um grupo de "nerds"
+quis impressionar seus amigos.
+
+21
+00:01:51,900 --> 00:01:54,550
+TRIUNFO DOS NERDS
+PARTE 1
+- Impressionando os amigos -
+
+22
+00:02:03,600 --> 00:02:06,169
+Aqui começa a história
+na qual um grupo de caras
+
+23
+00:02:06,170 --> 00:02:08,380
+lançou uma revolução industrial.
+
+24
+00:02:08,730 --> 00:02:12,550
+Como eles mudaram a cultura dos negócios e
+como eles fizeram história.
+
+25
+00:02:13,690 --> 00:02:17,002
+Eu me sinto com muita
+de sorte de ter estado
+
+26
+00:02:17,003 --> 00:02:20,550
+exatamente no lugar e na
+hora certa no Vale do Silício
+
+27
+00:02:20,585 --> 00:02:25,710
+que foi, historicamente, onde esses
+eventos tomaram forma.
+
+28
+00:02:26,760 --> 00:02:29,080
+Não foi uma só idéia
+igual, foram várias
+
+29
+00:02:29,181 --> 00:02:31,500
+e as pessoas faziam isso por diversão.
+
+30
+00:02:31,520 --> 00:02:35,022
+Mesmo que perdêssemos
+algum dinheiro, pelo menos
+
+31
+00:02:35,023 --> 00:02:36,690
+poderíamos dizer que
+tivemos uma companhia.
+
+32
+00:02:38,190 --> 00:02:43,790
+Juntando tudo, foi dando certo, o PC
+foi se tornado numa coisa grande.
+
+33
+00:02:45,810 --> 00:02:49,009
+Eu paro e penso.
+O PC veio para se tornar uma parte
+
+34
+00:02:49,010 --> 00:02:51,230
+importante na sociedade e na
+maneira como vivemos.
+
+35
+00:02:51,465 --> 00:02:56,530
+Costumo parar e dizer,
+hum, que incrível viagem!
+
+36
+00:03:03,270 --> 00:03:06,570
+A maioria dessas pessoas vieram
+de um lugar que eu chamo de lar.
+
+37
+00:03:06,705 --> 00:03:09,370
+O Vale do Silício no sul de
+São Francisco - Califórnia.
+
+38
+00:03:09,530 --> 00:03:11,083
+Crescendo ao lado das companhias de
+
+39
+00:03:11,084 --> 00:03:13,390
+componentes eletrônicos
+que deram o nome ao lugar.
+
+40
+00:03:13,870 --> 00:03:16,544
+As pessoas que começaram a revolução
+da informática eram, na sua maior
+
+41
+00:03:16,545 --> 00:03:19,410
+parte, garotos brancos de classe média
+que moravam em boas casas de subúrbio.
+
+42
+00:03:20,620 --> 00:03:24,230
+Mas não é em suas casas que estamos
+interessados e sim em suas garagens.
+
+43
+00:03:30,010 --> 00:03:33,105
+Está é minha garagem
+e estas coisas são meus lixos.
+
+44
+00:03:33,140 --> 00:03:37,872
+Provavelmente um dos garotos que tinha
+espaço sobrando em sua garagem pra carros,
+
+45
+00:03:37,873 --> 00:03:42,780
+assim como a maioria dos outros, a usou para
+criar seus computadores e assim fortunas.
+
+46
+00:03:43,260 --> 00:03:48,339
+Eu não tenho uma fortuna, eu sou
+um fracassado. Eu faço programas que
+
+47
+00:03:48,340 --> 00:03:53,345
+mal conseguem rodar e tento fazer
+hardwares que nem funcionam direito.
+
+48
+00:03:53,380 --> 00:03:57,475
+Mas eu sou o cara ideal para contar
+essa história porque eu fui um dos
+
+49
+00:03:57,476 --> 00:04:01,570
+primeiros colunistas de info e todos
+acabaram me contando seus segredos.
+
+50
+00:04:03,740 --> 00:04:05,448
+E aqui é a minha casa, onde eu escrevo
+
+51
+00:04:05,449 --> 00:04:07,830
+uma coluna para revistas
+de fofocas de computador.
+
+52
+00:04:07,865 --> 00:04:09,830
+Desculpem-me pela bagunça.
+
+53
+00:04:10,480 --> 00:04:13,526
+Instituições em constante
+mudança como a dos PCs,
+
+54
+00:04:13,527 --> 00:04:17,230
+vivem em função de rumores e
+fofocas e eu estou no meio de ambos.
+
+55
+00:04:17,470 --> 00:04:21,288
+Meu e-mail eletrônico está
+inundado de informações do
+
+56
+00:04:21,289 --> 00:04:25,180
+mundo da informática e de
+quem está dormindo com quem.
+
+57
+00:04:26,620 --> 00:04:30,720
+O que junta esses fofoqueiros
+é o desejo de saber a verdade.
+
+58
+00:04:31,200 --> 00:04:34,260
+Essas pessoas e seu amor pela tecnologia
+é que tem feito a revolução dos PCs.
+
+59
+00:04:34,280 --> 00:04:37,865
+Entendê-los é entender a revolução.
+
+60
+00:04:37,900 --> 00:04:39,950
+Então vamos lá achar alguns deles.
+
+61
+00:04:48,550 --> 00:04:51,025
+Encontramos Edwin Chin
+numa manhã de sábado
+
+62
+00:04:51,026 --> 00:04:53,610
+numa estranha feira de
+componentes domésticos.
+
+63
+00:04:56,020 --> 00:05:00,715
+Poderíamos estar em 1976 ou 1996 porque
+sempre há uma nova geração de Edwins
+
+64
+00:05:00,750 --> 00:05:05,410
+que atendem o chamado enquanto a maioria
+das outras crianças está assistindo TV.
+
+65
+00:05:05,445 --> 00:05:07,065
+Mas não Edwin.
+
+66
+00:05:07,100 --> 00:05:10,492
+Eu tenho interesse em
+eletrônica e tecnologia,
+
+67
+00:05:10,493 --> 00:05:15,050
+hobbies que eu comecei
+quando tinha 6 ou 7 anos.
+
+68
+00:05:15,250 --> 00:05:18,050
+Quantos anos você tem agora Edwin?
+Dez anos.
+
+69
+00:05:20,110 --> 00:05:24,165
+Não é coincidência que a única mulher
+no local pareça estar entediada.
+
+70
+00:05:24,200 --> 00:05:28,440
+Isso é uma coisa de garotos.
+Particularmente, um tipo de garoto obcecado
+
+71
+00:05:28,441 --> 00:05:32,390
+por caixas de eletrônica, ao invés
+do mundo de pessoas imprevisíveis.
+
+72
+00:05:32,630 --> 00:05:36,490
+Nós os chamamos de engenheiros,
+programadores, hackers e técnicos.
+
+73
+00:05:36,525 --> 00:05:38,865
+Mas geralmente nós os chamamos de "nerds".
+
+74
+00:05:38,900 --> 00:05:42,361
+Penso que "nerd" é uma
+pessoa que usa o telefone
+
+75
+00:05:42,362 --> 00:05:44,840
+para falar com outra
+pessoa sobre telefones.
+
+76
+00:05:46,610 --> 00:05:52,970
+E usa o computador para
+desvendar o uso do computador.
+
+77
+00:05:55,760 --> 00:05:58,375
+As pessoas têm diferentes graus de
+paixões e diferentes tipos de paixões.
+
+78
+00:05:58,410 --> 00:06:01,937
+Algumas vivem dias tentando
+descobrir as coisas,
+
+79
+00:06:01,938 --> 00:06:05,640
+como se elas ficassem em nirvana
+quando conseguem descobrir algo,
+
+80
+00:06:05,675 --> 00:06:07,640
+desde o primeiro minuto que elas acordam.
+
+81
+00:06:10,700 --> 00:06:13,110
+O que os seus amigos pensam de você?
+
+82
+00:06:13,145 --> 00:06:15,110
+Cara, ele é um "nerd"!
+
+83
+00:06:16,720 --> 00:06:20,810
+Mas eu não ligo mais, eu já estou
+acostumado a ser chamado de nerd.
+
+84
+00:06:20,845 --> 00:06:23,710
+Você não pode deixar as outras
+pessoas pararem seus sonhos.
+
+85
+00:06:25,110 --> 00:06:27,754
+E no Vale do Silício o sonho é crescer
+
+86
+00:06:27,755 --> 00:06:29,905
+e se tornar um rapaz como este.
+
+87
+00:06:32,140 --> 00:06:36,710
+Graham Spencer
+é programador-chefe da Architext Software,
+
+88
+00:06:37,200 --> 00:06:40,962
+seis caras que terminaram a
+faculdade de Stanford e começaram
+
+89
+00:06:40,963 --> 00:06:44,420
+uma empresa, simplesmente
+porque gostavam de ficar juntos.
+
+90
+00:06:45,390 --> 00:06:48,910
+Este é o começo de um dia
+moderno. Mas no âmago
+
+91
+00:06:48,911 --> 00:06:52,370
+não é tão diferente dos
+pioneiros da Apple e da Microsoft.
+
+92
+00:06:52,610 --> 00:06:55,955
+"Nerds" que compartilham um sonho. Seus
+hobbies são seu trabalho,
+
+93
+00:06:55,990 --> 00:07:01,735
+e a cultura que eles criaram é idêntica a
+milhares de outras empresas de tecnologia.
+
+94
+00:07:01,770 --> 00:07:06,002
+Primeiramente eles derrubaram
+a idéia de 9h às 5h.
+
+95
+00:07:06,003 --> 00:07:10,680
+Nesta indústria você pode trabalhar
+quantas 80 horas por semana quiser.
+
+96
+00:07:11,410 --> 00:07:13,717
+...meu gorro, que costumo
+usar para cobrir os olhos
+
+97
+00:07:13,718 --> 00:07:15,980
+e dormir de manhã enquanto
+todo mundo está chegando.
+
+98
+00:07:16,015 --> 00:07:18,595
+Nós nem mesmo obedecemos
+a um relógio de 24 horas.
+
+99
+00:07:18,630 --> 00:07:23,815
+A gente chega e trabalha uns
+dias direto e quando chega
+
+100
+00:07:23,816 --> 00:07:28,750
+4 ou 5 da tarde pegamos nossos
+carros e vamos pro restaurante.
+
+101
+00:07:28,785 --> 00:07:30,715
+Sentamos e conversamos
+sobre o que estamos fazendo.
+
+102
+00:07:30,750 --> 00:07:32,860
+Às vezes eu me empolgo
+tanto na conversa que esqueço
+
+103
+00:07:32,861 --> 00:07:36,110
+de comer e acabo voltando
+para programar um pouco mais.
+
+104
+00:07:36,220 --> 00:07:39,590
+Nós éramos todos amigos e esses
+foram dias legais.
+
+105
+00:07:50,590 --> 00:07:58,140
+Vamos olhar na geladeira... ueh!
+Temos coca e pizza fria.
+
+106
+00:07:59,100 --> 00:08:01,535
+Dois litros de coca por dia.
+
+107
+00:08:01,536 --> 00:08:03,440
+Pensa nisso como
+comida para o cérebro?
+
+108
+00:08:03,570 --> 00:08:08,500
+Mantem-me trabalhando. Isso, escutar
+heavy metal, ficar cafeinado e hackear.
+
+109
+00:08:13,800 --> 00:08:16,051
+Eu sentei no chão do meu
+quarto, cercado de folhas de
+
+110
+00:08:16,052 --> 00:08:17,900
+papéis por todos os lados,
+com o meu computador.
+
+111
+00:08:18,860 --> 00:08:21,508
+Tudo que eu pude perceber é que
+já era tarde na noite e tinha
+
+112
+00:08:21,509 --> 00:08:24,400
+bebido um montão de coca. É assim
+mesmo, faz parte desse estilo de vida.
+
+113
+00:08:26,980 --> 00:08:29,728
+Combinação de pizza com coca-cola
+
+114
+00:08:29,729 --> 00:08:33,960
+fazem aquela meleca que gruda no chão.
+
+115
+00:08:37,530 --> 00:08:40,488
+Trouxe spaguetti para
+o trabalho e esqueci de
+
+116
+00:08:40,489 --> 00:08:42,830
+lavar há uns dias atrás, 6 ou 7 dias.
+
+117
+00:08:44,280 --> 00:08:46,080
+Uuh! Isto cheira mal!
+
+118
+00:08:47,930 --> 00:08:55,030
+Comer, tomar ducha, ter uma namorada,
+ter uma vida social, é acidental.
+
+119
+00:08:55,160 --> 00:08:56,928
+Acontece no caminho dos códigos.
+
+120
+00:08:57,129 --> 00:09:00,780
+Nosso objetivo primordial
+é com a programação.
+
+121
+00:09:01,560 --> 00:09:04,730
+Qualquer coisa que venha interromper isso,
+é perda de tempo.
+
+122
+00:09:08,610 --> 00:09:12,700
+O que será que tem na lógica interna do
+computador que é tão atraente?
+
+123
+00:09:13,030 --> 00:09:15,830
+De uma certa maneira essa lógica
+pode ser entendida num todo,
+
+124
+00:09:16,560 --> 00:09:19,316
+ao contrário do que acontece com
+as coisas que não podemos nunca
+
+125
+00:09:19,317 --> 00:09:22,960
+compreender, como as motivações
+das garotas ou dos franceses.
+
+126
+00:09:23,420 --> 00:09:24,270
+Deixem-me explicar.
+
+127
+00:09:25,590 --> 00:09:29,235
+Tempo para um curso básico
+e rápido sobre computadores.
+
+128
+00:09:29,236 --> 00:09:29,810
+Parte I
+
+129
+00:09:29,930 --> 00:09:31,370
+Este é um Mainframe.
+
+130
+00:09:31,730 --> 00:09:33,516
+Cada um desses gabinetes é uma máquina.
+
+131
+00:09:33,517 --> 00:09:36,310
+Houve tempo em que todos os
+computadores eram deste tamanho.
+
+132
+00:09:36,345 --> 00:09:38,820
+Eram cuidados por
+engenheiros vestidos de branco.
+
+133
+00:09:38,955 --> 00:09:41,370
+Uma espécie de padres que levavam
+o seu trabalho muito a sério.
+
+134
+00:09:41,730 --> 00:09:44,067
+Bem, todos os computadores se
+comportam de maneira bem parecida,
+
+135
+00:09:44,068 --> 00:09:46,753
+seja esse servidor
+gigante com 2000 usuários
+
+136
+00:09:46,754 --> 00:09:49,200
+ou esse notebook que serve apenas a mim.
+
+137
+00:09:49,680 --> 00:09:52,876
+Eles processam dados numéricos,
+adição, comparação, multiplicação.
+
+138
+00:09:52,877 --> 00:09:56,310
+O fato é que se você puder quantificar,
+um computador pode fazer o serviço.
+
+139
+00:09:56,345 --> 00:10:00,842
+Agora com coisas tipo sentimentos
+e emoções, eles não sabem o que fazer.
+
+140
+00:10:00,877 --> 00:10:05,305
+Os dados devem ser colocados em códigos
+binários que contêm apenas 1 e 0.
+
+141
+00:10:05,340 --> 00:10:07,552
+As instruções também têm que
+ser colocadas em códigos
+
+142
+00:10:07,553 --> 00:10:11,540
+para dizer exatamente o que fazer
+com os dados e em qual ordem.
+
+143
+00:10:11,575 --> 00:10:14,610
+Estas instruções é o que chamamos de
+um programa.
+
+144
+00:10:15,410 --> 00:10:18,799
+Nos primórdios carregavam-se
+essas instruções mudando switches
+
+145
+00:10:18,800 --> 00:10:21,910
+ou por papel fita.
+Isso era chamado linguagem de máquina.
+
+146
+00:10:22,020 --> 00:10:24,050
+Isso fazia o uso dos computadores
+um tormento.
+
+147
+00:10:24,140 --> 00:10:28,590
+Para piorar, cada computador falava um tipo
+de linguagem de máquina.
+
+148
+00:10:30,390 --> 00:10:32,267
+O Computador ENIAC pode
+projetar a trajetória
+
+149
+00:10:32,268 --> 00:10:34,185
+de 30 segundos de uma
+cápsula, em 20 segundos.
+
+150
+00:10:34,220 --> 00:10:35,637
+Os operadores levam 2 dias
+
+151
+00:10:35,638 --> 00:10:37,980
+programando o computador
+para fazer isso.
+
+152
+00:10:38,650 --> 00:10:41,029
+Então uma mulher, capitão
+da marinha americana,
+
+153
+00:10:41,030 --> 00:10:43,160
+chamada Grace Hopper,
+resolveu o problema.
+
+154
+00:10:43,760 --> 00:10:45,765
+Ela criou uma linguagem de computação.
+
+155
+00:10:45,766 --> 00:10:49,670
+Palavras em inglês que o computador
+poderia traduzir em códigos binários.
+
+156
+00:10:50,150 --> 00:10:53,202
+Agora os usuários podiam
+digitar as listas de instruções,
+
+157
+00:10:53,203 --> 00:10:56,410
+apenas digitando, ao invés
+dos malditos switches.
+
+158
+00:10:56,470 --> 00:10:59,917
+Como muitas coisas na computação, esta
+primeira linguagem tinha um nome bobo
+
+159
+00:10:59,918 --> 00:11:00,355
+COBOL
+
+160
+00:11:00,390 --> 00:11:03,038
+Ela foi seguida por outras linguagens
+como o FORTRAN, BASIC e todas
+
+161
+00:11:03,104 --> 00:11:06,735
+elas fizeram os computadores um
+pouquinho mais "amigáveis".
+
+162
+00:11:07,010 --> 00:11:09,112
+Então da próxima vez que você
+escutar que alguém está a noite
+
+163
+00:11:09,113 --> 00:11:11,350
+toda acordado programando, criando
+softwares ou hackeando códigos,
+
+164
+00:11:11,585 --> 00:11:15,810
+o que ele realmente está dizendo é que
+está carregando a máquina com instruções.
+
+165
+00:11:17,360 --> 00:11:22,318
+Computadores mainframe estão longe
+de serem pessoais. Eles estão em salas
+
+166
+00:11:22,319 --> 00:11:27,610
+condicionadas, de bancos, seguradoras e
+sua maior função é deixar a gente confuso
+
+167
+00:11:27,850 --> 00:11:32,790
+com o nome de um cara conhecido que é
+trambiqueiro e tem uma ficha criminal.
+
+168
+00:11:33,030 --> 00:11:36,036
+Eventualmente terminais
+de computador aparecem em
+
+169
+00:11:36,037 --> 00:11:39,410
+algumas escolas mas a maioria
+de nós não presta atenção.
+
+170
+00:11:39,600 --> 00:11:42,639
+Mas havia um garoto especial
+que prestou mais atenção,
+
+171
+00:11:42,640 --> 00:11:46,282
+apaixonado pela pureza desses uns e zeros.
+
+172
+00:11:46,283 --> 00:11:47,360
+Ele era o "nerd".
+
+173
+00:11:47,710 --> 00:11:51,791
+E eu peguei esse livro que
+falava sobre o computador PDP 8
+
+174
+00:11:51,792 --> 00:11:54,350
+e...oh, foi como uma Bíblia para mim.
+
+175
+00:11:54,385 --> 00:11:56,593
+Por alguma razão eu
+me apaixonei por ele.
+
+176
+00:11:56,594 --> 00:11:59,170
+Eu poderia ter me apaixonado
+por um jogo de cartas chamado Magic
+
+177
+00:11:59,205 --> 00:12:04,555
+ou por palavras cruzadas ou
+até por um instrumento musical,
+
+178
+00:12:04,590 --> 00:12:08,342
+mas eu acabei me apaixonando por essas
+descrições internas dos computadores.
+
+179
+00:12:08,343 --> 00:12:09,739
+Era como matemática e eu podia
+
+180
+00:12:09,740 --> 00:12:11,460
+resolver alguns problemas no papel.
+
+181
+00:12:11,495 --> 00:12:13,842
+Eu podia achar minhas
+próprias soluções
+
+182
+00:12:13,843 --> 00:12:15,910
+e isso me fazia sentir bem por dentro.
+
+183
+00:12:16,600 --> 00:12:20,664
+Então você podia teclar
+esses comandos e esperava
+
+184
+00:12:20,665 --> 00:12:24,580
+um pouco e fazia, ta-ta-ta-ta,
+te dizendo alguma coisa.
+
+185
+00:12:25,790 --> 00:12:29,760
+Só isso já era memorável, especialmente
+quando se tem 10 anos.
+
+186
+00:12:30,610 --> 00:12:34,972
+Você podia criar um programa
+em BASIC ou FORTRAN,
+
+187
+00:12:34,973 --> 00:12:39,880
+e essa máquina
+pegava sua idéia...
+
+188
+00:12:43,500 --> 00:12:45,614
+era como se ela executasse suas idéias
+
+189
+00:12:45,615 --> 00:12:47,950
+e lhe trouxesse de volta os resultados,
+
+190
+00:12:48,550 --> 00:12:50,154
+e se fossem os resultados
+que você esperava,
+
+191
+00:12:50,155 --> 00:12:51,080
+o programa tinha funcionado.
+
+192
+00:12:51,115 --> 00:12:53,080
+Era uma experiência emocionante.
+
+193
+00:12:54,940 --> 00:12:57,766
+Os "nerds" queriam seu computador
+desde o inicio,
+
+194
+00:12:57,767 --> 00:13:00,840
+mas foi necessário um marco tecnológico
+para tornar isso possível.
+
+195
+00:13:01,320 --> 00:13:04,773
+Ei-lo. Este é o chip,
+o microprocessador.
+
+196
+00:13:04,774 --> 00:13:08,155
+É ele que permite ter um computador
+mainframe na sua mesa.
+
+197
+00:13:08,190 --> 00:13:12,149
+Nos anos 60, os mainframes eram maiores
+que essa garagem e isso acontecia,
+
+198
+00:13:12,150 --> 00:13:15,900
+porque eles usavam milhares destes
+tubos de vácuo ou válvulas.
+
+199
+00:13:15,935 --> 00:13:18,644
+Gradualmente as válvulas
+foram se tornando cada vez
+
+200
+00:13:18,645 --> 00:13:21,200
+menores até chegar nos
+transistores que ainda assim
+
+201
+00:13:21,235 --> 00:13:23,610
+eram muito grandes para fazer parte de um
+computador que pudesse caber na sua mesa.
+
+202
+00:13:23,850 --> 00:13:26,703
+O que se sucedeu foi uma
+miniaturização ainda maior.
+
+203
+00:13:26,704 --> 00:13:29,510
+Aqui nós temos um única peça de silício
+com milhares de transistores.
+
+204
+00:13:29,545 --> 00:13:32,988
+Esse microprocessador
+tem mais de um milhão de transistores.
+
+205
+00:13:32,989 --> 00:13:35,290
+Esse é o
+segredo do computador pessoal.
+
+206
+00:13:35,325 --> 00:13:38,540
+E é por isso que eles o chamam de
+Vale do Silício e não Vale do Computador.
+
+207
+00:13:42,520 --> 00:13:45,890
+Estas são as pessoas que
+inventaram o microprocessador Intel.
+
+208
+00:13:48,780 --> 00:13:50,875
+A Intel começou há 28 anos atrás,
+
+209
+00:13:50,910 --> 00:13:54,461
+formada por um grupo de caras, depois
+de terem largado o antigo patrão.
+
+210
+00:13:54,462 --> 00:13:58,540
+Hoje, os processadores Intel têm uma
+participação de 85% do mercado.
+
+211
+00:14:01,670 --> 00:14:03,600
+A Intel não inventou apenas o chip.
+
+212
+00:14:03,601 --> 00:14:07,295
+Eles foram responsáveis pelo estilo
+de trabalho do Vale do Silício.
+
+213
+00:14:07,330 --> 00:14:09,849
+Todos aqui são chamados
+pelo primeiro nome.
+
+214
+00:14:09,850 --> 00:14:11,579
+Não existem vagas reservadas de
+
+215
+00:14:11,580 --> 00:14:14,200
+estacionamento, escritório,
+apenas cubículos.
+
+216
+00:14:14,235 --> 00:14:16,217
+E é ainda uma realidade hoje.
+
+217
+00:14:16,252 --> 00:14:18,200
+Aqui está o cubículo chefe.
+
+218
+00:14:18,501 --> 00:14:22,101
+Knoc, knoc. Bati na porta
+mas não existe porta.
+
+219
+00:14:22,270 --> 00:14:26,845
+Gordon Moore é um dos fundadores da
+Intel e possui 3 bilhões de dólares.
+
+220
+00:14:26,846 --> 00:14:28,855
+Com uma quantidade de dinheiro
+dessas eu teria uma porta.
+
+221
+00:14:28,890 --> 00:14:32,917
+Em um negócio como este, as pessoas
+com poder são as que entendem o que
+
+222
+00:14:32,918 --> 00:14:36,720
+está acontecendo e não são
+necessariamente aquelas que estão no topo.
+
+223
+00:14:36,840 --> 00:14:39,190
+É muito importante que
+essas pessoas tenham conhecimento
+
+224
+00:14:39,191 --> 00:14:41,540
+para poderem tomar as decisões.
+
+225
+00:14:41,780 --> 00:14:45,195
+A gente costuma dizer que
+aqueles que tinham o conhecimento
+
+226
+00:14:45,196 --> 00:14:48,040
+eram os únicos que sabiam
+o que estava acontecendo.
+
+227
+00:14:50,450 --> 00:14:53,293
+Os microprocessadores Intel foram
+cada vez tendo mais capacidade até que,
+
+228
+00:14:53,294 --> 00:14:56,480
+uma hora, eles estavam conseguindo
+processar um computador inteiro.
+
+229
+00:14:56,515 --> 00:15:00,210
+Só a Intel não apreciava o
+brilhantismo de seus próprios produtos,
+
+230
+00:15:00,450 --> 00:15:04,550
+pois na maioria das vezes eram usados
+em calculadoras ou sinais de trânsito.
+
+231
+00:15:04,910 --> 00:15:07,541
+A Intel tinha todos os
+ingredientes necessários
+
+232
+00:15:07,542 --> 00:15:11,050
+para inventar o negócio dos PCs
+mas eles ainda não tinham sacado.
+
+233
+00:15:12,010 --> 00:15:14,420
+Sorte nossa que alguém o fez.
+
+234
+00:15:16,230 --> 00:15:19,840
+Este é o chip que lançou a revolução dos
+computadores pessoais.
+
+235
+00:15:27,430 --> 00:15:29,120
+Esta foi a revista que o anunciou.
+
+236
+00:15:31,410 --> 00:15:36,595
+Em janeiro de 1975 figurava na capa o
+primeiro computador pessoal do mundo.
+
+237
+00:15:36,596 --> 00:15:37,550
+O ALTAIR 8800.
+
+238
+00:15:39,240 --> 00:15:43,330
+Foi a idéia louca de um ex-oficial da
+força aérea da Geórgia: Ed Roberts.
+
+239
+00:15:43,965 --> 00:15:48,935
+Se você olhar bem para ele é como se fosse
+um sonho realizado por um maníaco.
+
+240
+00:15:50,970 --> 00:15:54,185
+Hoje eu não mexeria nele
+porque eu sei que nenhum
+
+241
+00:15:54,186 --> 00:15:55,900
+escritório usaria isso.
+Não há como você usar isso.
+
+242
+00:15:57,670 --> 00:16:03,340
+Mas naquela época nos faltavam
+os benefícios de experiências anteriores.
+
+243
+00:16:03,380 --> 00:16:04,910
+Nós não sabíamos onde podíamos chegar.
+
+244
+00:16:07,420 --> 00:16:10,323
+Vinte anos após o brilhante
+flash de Ed Roberts,
+
+245
+00:16:10,324 --> 00:16:14,410
+esta galeria está celebrando os 20
+anos de nascimento do ALTAIR 8800.
+
+246
+00:16:15,610 --> 00:16:17,682
+Assim como todos os
+outros pioneiros do PC,
+
+247
+00:16:17,683 --> 00:16:18,981
+Ed construiu este computador
+
+248
+00:16:18,982 --> 00:16:20,790
+apenas porque queria brincar com ele.
+
+249
+00:16:20,900 --> 00:16:24,545
+Alguns de nós procuravam ardentemente
+por computadores naquela época.
+
+250
+00:16:24,580 --> 00:16:28,702
+Todos os computadores do mundo
+ficavam em grandes centros e você
+
+251
+00:16:28,703 --> 00:16:32,370
+tinha que pedir permissão até
+mesmo para chegar perto.
+
+252
+00:16:32,600 --> 00:16:34,680
+Ninguém tinha acesso a computadores.
+
+253
+00:16:34,730 --> 00:16:37,568
+E a idéia de ter o seu próprio
+computador para fazer o que
+
+254
+00:16:37,569 --> 00:16:40,310
+quisesse, na hora em que
+quisesse, era fantástica.
+
+255
+00:16:45,370 --> 00:16:47,226
+E onde tudo isso estava acontecendo?
+
+256
+00:16:47,227 --> 00:16:50,340
+Longe do Vale do Silício,
+da INTEL ou IBM.
+
+257
+00:16:51,110 --> 00:16:53,918
+No deserto, perto do aeroporto
+de Albuquerque no Novo México,
+
+258
+00:16:53,919 --> 00:16:57,080
+Ed Roberts tocava uma companhia de
+calculadoras chamada MITS.
+
+259
+00:16:58,220 --> 00:17:01,092
+Ter uma planta horrível
+não era o único problema.
+
+260
+00:17:01,093 --> 00:17:02,470
+A MITS estava falindo.
+
+261
+00:17:03,070 --> 00:17:04,934
+Ninguém estava comprando calculadoras
+
+262
+00:17:04,935 --> 00:17:07,855
+e Ed precisava de 65.000 dólares
+apenas para sair do vermelho.
+
+263
+00:17:07,890 --> 00:17:11,083
+E nós fomos no banco para
+uma reunião noite adentro,
+
+264
+00:17:11,084 --> 00:17:15,400
+e a questão era fechar a MITS ou
+pegar um empréstimo de 65.000,
+
+265
+00:17:15,570 --> 00:17:20,540
+e eles perguntaram quanto máquinas
+eu pensava que poderia vender
+
+266
+00:17:20,600 --> 00:17:23,251
+no ano seguinte após o empréstimo.
+
+267
+00:17:23,252 --> 00:17:25,690
+Eu respondi 800, no que foi considerado
+uma previsão super otimista.
+
+268
+00:17:26,225 --> 00:17:29,890
+Um mês depois estávamos
+atendendo 250 pedidos por dia.
+
+269
+00:17:30,300 --> 00:17:33,022
+O ALTAIR não foi
+nem mesmo um computador
+
+270
+00:17:33,023 --> 00:17:34,630
+e sim um kit de computador.
+
+271
+00:17:37,970 --> 00:17:41,860
+Você mesmo tinha que montá-lo
+e às vezes ainda não funcionava.
+
+272
+00:17:43,550 --> 00:17:45,933
+Ainda assim
+a demanda foi fantástica.
+
+273
+00:17:45,934 --> 00:17:52,460
+Algumas pessoas vieram até à fábrica
+da MITS com trailers e acamparam lá,
+
+274
+00:17:52,560 --> 00:17:56,610
+esperando por suas máquinas.
+Eles estavam tão ansiosos.
+
+275
+00:17:57,140 --> 00:17:59,927
+Eu penso que todo mundo sonhava acordado,
+
+276
+00:17:59,928 --> 00:18:01,795
+de um dia poder ter um computador.
+
+277
+00:18:01,830 --> 00:18:04,905
+A surpresa era que
+isso podia ser possível
+
+278
+00:18:04,906 --> 00:18:07,150
+para um universitário médio, por exemplo,
+
+279
+00:18:07,185 --> 00:18:11,150
+que vivia em mera subsistência para
+realmente poder comprar um computador.
+
+280
+00:18:11,970 --> 00:18:14,250
+Isto foi o que realmente me surpreendeu,
+
+281
+00:18:14,251 --> 00:18:16,820
+que existia uma  demanda reprimida
+
+282
+00:18:16,821 --> 00:18:19,540
+para ter o seu próprio computador.
+
+283
+00:18:21,450 --> 00:18:24,140
+E se eles podiam ser assim tão
+baratos, que coisa maravilhosa.
+
+284
+00:18:29,320 --> 00:18:33,124
+Este é um computador ALTAIR,
+o primeiro computador pessoal,
+
+285
+00:18:33,125 --> 00:18:38,520
+e não é qualquer ALTAIR.
+Ele tem o número de série 2.
+
+286
+00:18:39,520 --> 00:18:42,830
+O primeiro ALTAIR fabricado
+foi enviado a uma revista
+
+287
+00:18:42,831 --> 00:18:45,040
+para ser fotografado e acabou
+se perdendo nos correios.
+
+288
+00:18:45,175 --> 00:18:49,050
+Isso faz deste, o computador pessoal mais
+velho do mundo.
+
+289
+00:18:50,520 --> 00:18:51,974
+Praticamente um lixo pré-histórico.
+
+290
+00:18:51,975 --> 00:18:54,010
+Mas a questão é: o que
+podia ser feito com ele?
+
+291
+00:18:54,330 --> 00:18:56,886
+Ele tem um painel com
+interruptores que você
+
+292
+00:18:56,887 --> 00:18:59,670
+pode clicar para cima e
+para baixo com algumas luzes.
+
+293
+00:18:59,705 --> 00:19:03,106
+Na parte de trás, nenhuma
+parte para se conectar
+
+294
+00:19:03,107 --> 00:19:07,340
+um teclado, um monitor
+ou uma impressora.
+
+295
+00:19:08,710 --> 00:19:12,645
+Na prática não há nada que
+se possa fazer com esta coisa.
+
+296
+00:19:12,680 --> 00:19:14,850
+Mas de volta ao tempo
+de 1975, as pessoas
+
+297
+00:19:14,851 --> 00:19:17,020
+que conseguiram comprá-lo
+estavam em êxtase.
+
+298
+00:19:23,760 --> 00:19:26,855
+Os "nerds" formaram clubes para
+conversar sobre seu novo brinquedinho.
+
+299
+00:19:26,890 --> 00:19:30,845
+Um dos primeiros foi o HOMEBREW
+que se encontrava nas quartas à tarde
+
+300
+00:19:30,846 --> 00:19:34,480
+numa sala alugada da Universidade
+de Stanford no Vale do Silício.
+
+301
+00:19:34,515 --> 00:19:39,420
+Presidindo sobre quase-anarquia estava
+Lee Felsenstein que pretendia comandar.
+
+302
+00:19:39,610 --> 00:19:42,670
+Eu começava o encontro
+fazendo um barulho bem grande
+
+303
+00:19:44,000 --> 00:19:46,560
+porque todos estavam conversando e eu
+precisava chamar a atenção de alguma forma.
+
+304
+00:19:46,820 --> 00:19:49,998
+E eu usava-a para indicar a pessoa
+
+305
+00:19:49,999 --> 00:19:53,510
+que queria colocar
+questões, gesticulando-a.
+
+306
+00:19:56,410 --> 00:19:59,001
+A maioria de nós estava
+na indústria de eletrônicos,
+
+307
+00:19:59,002 --> 00:20:02,190
+mas também
+apareciam alguns físicos,
+
+308
+00:20:02,225 --> 00:20:06,400
+e muitos rádio-amadores procurando
+uma nova tecnologia que não fosse sem graça.
+
+309
+00:20:06,870 --> 00:20:12,550
+Mas a maioria de nós estava
+num nível médio ou inferior.
+
+310
+00:20:13,510 --> 00:20:18,240
+Nós nos víamos como loucos gênios
+ignorados ou possíveis gênios,
+
+311
+00:20:18,241 --> 00:20:22,900
+mas pelo menos nós podíamos esperar
+colocar a mão em um computador próprio.
+
+312
+00:20:25,680 --> 00:20:30,575
+A grande inutilidade do ALTAIR 8800
+foi o que formou o grupo.
+
+313
+00:20:30,610 --> 00:20:34,230
+Roger Melen e Harry Garland logo
+começaram uma empresa de computadores.
+
+314
+00:20:34,330 --> 00:20:36,412
+Eles vieram aqui hoje para mostrar
+
+315
+00:20:36,413 --> 00:20:39,290
+o que poderia ser feito
+com o novo brinquedo.
+
+316
+00:20:39,890 --> 00:20:42,060
+Uma solução em busca de um problema.
+
+317
+00:20:42,400 --> 00:20:45,517
+O ALTAIR era tedioso para usar.
+
+318
+00:20:45,518 --> 00:20:48,251
+Primeiramente, a única
+maneira de pôr informação
+
+319
+00:20:48,252 --> 00:20:50,370
+no computador era por meio de switches.
+
+320
+00:20:51,330 --> 00:20:52,780
+Pegue uma coisa trivial como 2 + 2.
+
+321
+00:20:53,080 --> 00:20:56,573
+Cada 2 precisava de oito
+mexidas de interruptor
+
+322
+00:20:56,574 --> 00:20:58,680
+e as luzes eram usadas
+para carregá-los.
+
+323
+00:20:58,920 --> 00:21:02,127
+O "E" pedia mais nove
+interruptores e o resultado
+
+324
+00:21:02,128 --> 00:21:05,270
+4 era dado pela 3ª luz da
+esquerda  sendo apagada.
+
+325
+00:21:05,670 --> 00:21:06,595
+Eureka!
+
+326
+00:21:06,630 --> 00:21:09,346
+Se você tivesse um programa
+de 100 bytes de comprimento,
+
+327
+00:21:09,347 --> 00:21:12,530
+tinha que fazer esse procedimento
+100 vezes pra carregar na memória.
+
+328
+00:21:12,565 --> 00:21:13,705
+Levava muito tempo.
+
+329
+00:21:13,740 --> 00:21:17,950
+E o que acontecia se desligasse
+ou perdesse o caminho no meio?
+
+330
+00:21:17,985 --> 00:21:19,400
+Chorava!
+
+331
+00:21:20,480 --> 00:21:23,837
+O ALTAIR foi frustrante
+mas serviu aos "nerds" como
+
+332
+00:21:23,838 --> 00:21:27,080
+experimento de como fazer uma
+coisa inútil ter uma utilidade,
+
+333
+00:21:27,270 --> 00:21:30,480
+transformando-o, de curiosidade
+num computador.
+
+334
+00:21:31,080 --> 00:21:33,656
+Steve Dumpier montou um Altair.
+
+335
+00:21:33,657 --> 00:21:37,230
+Laboriosamente, colocou
+um programa nele.
+
+336
+00:21:37,950 --> 00:21:40,868
+Alguém desligou a tomada da
+parede e ele teve que fazer
+
+337
+00:21:40,869 --> 00:21:43,370
+tudo de novo, mas ninguém
+sabia o que era aquilo.
+
+338
+00:21:43,871 --> 00:21:47,471
+No final seria só sentar
+e ver as luzes piscar? Não.
+
+339
+00:21:48,310 --> 00:21:52,007
+Ele colocou um rádio-transistor
+do lado do ALTAIR e passou
+
+340
+00:21:52,008 --> 00:21:55,410
+a poder manipular o comprimento
+dos loops no software,
+
+341
+00:21:55,445 --> 00:21:56,510
+assim podia tocar música.
+
+342
+00:21:56,680 --> 00:22:01,815
+O rádio começou a tocar "Fool
+on The Hill"...da, da, da, da, da...
+
+343
+00:22:01,816 --> 00:22:05,130
+e os pequenos sons que se escutavam vinham
+
+344
+00:22:05,165 --> 00:22:09,750
+do ruído que o computador estava gerando,
+recebidos pelo rádio.
+
+345
+00:22:10,050 --> 00:22:13,240
+Todo mundo levantou e o aplaudiu.
+
+346
+00:22:13,400 --> 00:22:17,053
+Eu propus que ele recebesse
+o prêmio Parafuso Phillips
+
+347
+00:22:17,054 --> 00:22:19,750
+de descobridor de uma
+utilidade para uma inutilidade.
+
+348
+00:22:20,950 --> 00:22:23,565
+Mas eu acho que todos estavam ocupados
+demais, o aplaudindo, para me escutarem.
+
+349
+00:22:23,600 --> 00:22:25,974
+Era uma coisa bastante
+excitante, deve ter sido,
+
+350
+00:22:25,975 --> 00:22:28,300
+com certeza, a primeira
+coisa que o ALTAIR fez.
+
+351
+00:22:31,430 --> 00:22:33,006
+Transformar o ALTAIR em uma coisa
+
+352
+00:22:33,007 --> 00:22:35,585
+com utilidade requeria uma
+linguagem de programação,
+
+353
+00:22:35,620 --> 00:22:38,185
+para que os programadores
+pudessem colocar informação
+
+354
+00:22:38,186 --> 00:22:39,705
+ao invés de moverem interruptores.
+
+355
+00:22:39,740 --> 00:22:42,519
+O que precisavam era de
+uma grande linguagem para computador,
+
+356
+00:22:42,520 --> 00:22:45,520
+como BASIC, somente modificada para o PC.
+
+357
+00:22:45,555 --> 00:22:47,485
+Isso foi chamado  de o interpretador de BASIC.
+
+358
+00:22:47,520 --> 00:22:50,991
+Mas ela nem sequer existia,
+pois os especialistas achavam
+
+359
+00:22:50,992 --> 00:22:55,200
+que mesmo BASIC não seria básica
+suficiente para rodar no ALTAIR.
+
+360
+00:22:55,700 --> 00:22:58,170
+Mais uma vez os especialistas se enganaram.
+
+361
+00:22:59,250 --> 00:23:01,860
+Aqui está chegando o cara
+que revolveu o problema,
+
+362
+00:23:01,990 --> 00:23:03,940
+vinte anos depois de
+terminar a primeira versão
+
+363
+00:23:03,941 --> 00:23:05,280
+do BASIC para microcomputadores.
+
+364
+00:23:05,315 --> 00:23:08,350
+Paul Allen está voltando para Albuquerque
+para celebrar o evento,
+
+365
+00:23:08,710 --> 00:23:11,697
+desta vez no seu
+jatinho de 15 milhões de dólares
+
+366
+00:23:11,698 --> 00:23:13,830
+e tapete vermelho de  três pés.
+
+367
+00:23:14,960 --> 00:23:18,479
+Na época em que eu estava
+matando meus neurônios
+
+368
+00:23:18,480 --> 00:23:21,280
+esse cara estava fundando um império.
+
+369
+00:23:23,830 --> 00:23:28,160
+Ele veio comer frango para comemorar
+o vigésimo aniversário do ALTAIR.
+
+370
+00:23:28,661 --> 00:23:30,661
+Gostaria de lhes apresentar Paul Allen.
+
+371
+00:23:38,280 --> 00:23:42,860
+Allen foi co-fundador da Microsoft com
+seu amigo de colegial, Bill Gates.
+
+372
+00:23:43,105 --> 00:23:45,643
+Um dia em Boston,
+estava na praça  de Harvard
+
+373
+00:23:45,644 --> 00:23:47,856
+e vi uma capa da Popular Electronics
+
+374
+00:23:47,857 --> 00:23:51,350
+com esta coisa que parecia o
+que eu tinha estado imaginando
+
+375
+00:23:51,351 --> 00:23:54,151
+e então arranquei-a da prateleira,
+dei uma olhada, paguei
+
+376
+00:23:54,152 --> 00:23:55,852
+e corri de volta para o dormitório do Bill
+
+377
+00:23:55,853 --> 00:23:57,753
+e pensei que ele devia estar
+jogando pôquer naquela noite
+
+378
+00:23:57,754 --> 00:24:00,054
+e de costume perdendo dinheiro
+àquela altura.
+
+379
+00:24:00,255 --> 00:24:03,555
+Uma das poucas ocasiões em que
+isso aconteceu.
+
+380
+00:24:05,990 --> 00:24:08,241
+Paul mostrou-me a revista e então:
+
+381
+00:24:08,242 --> 00:24:09,998
+Ok, aqui estava uma empresa que devia
+
+382
+00:24:09,999 --> 00:24:11,470
+estar precisando de software.
+
+383
+00:24:11,530 --> 00:24:14,960
+E ele disse: Ok,
+temos que ligar a estes caras
+
+384
+00:24:15,061 --> 00:24:16,261
+e ver se a coisa é séria.
+
+385
+00:24:16,330 --> 00:24:18,324
+Nós percebemos que as coisas
+estavam começando a acontecer,
+
+386
+00:24:18,325 --> 00:24:21,606
+e só porque nós tivemos
+uma visão de longo prazo
+
+387
+00:24:21,607 --> 00:24:23,290
+até onde esse chip poderia chegar,
+
+388
+00:24:23,725 --> 00:24:25,114
+e o que poderia significar...
+
+389
+00:24:25,115 --> 00:24:27,565
+isso não significava que as
+indústrias iam esperar
+
+390
+00:24:27,566 --> 00:24:30,240
+enquanto eu ficava  e terminava
+meu curso em Harvard.
+
+391
+00:24:30,278 --> 00:24:33,270
+Então eu liguei para Ed,
+nós contamos-lhe
+
+392
+00:24:33,271 --> 00:24:35,978
+que tínhamos o Basic e que
+era feito para a sua máquina,
+
+393
+00:24:36,078 --> 00:24:39,945
+está quase pronto,
+e nós gostaríamos de ir lá e mostrá-lo.
+
+394
+00:24:40,192 --> 00:24:42,001
+Assim, nós criamos este
+interpretador de BASIC.
+
+395
+00:24:42,002 --> 00:24:46,402
+Paul pegou a gravação... e voou.
+
+396
+00:24:46,497 --> 00:24:48,865
+Na verdade, na noite
+anterior dormimos pouco,
+
+397
+00:24:48,866 --> 00:24:51,957
+porque verificamos tudo duas vezes
+para ter certeza
+
+398
+00:24:52,022 --> 00:24:54,109
+que tudo estava certo.
+
+399
+00:24:54,208 --> 00:24:56,623
+Mas eu não tinha a menor idéia
+do que poderia acontecer
+
+400
+00:24:56,624 --> 00:24:57,921
+quando tentasse rodar o software.
+
+401
+00:24:58,021 --> 00:25:00,910
+Nunca tinha sido rodado
+num computador antes.
+
+402
+00:25:00,965 --> 00:25:04,950
+Ele estava muito nervoso
+sobre se  iria realmente funcionar.
+
+403
+00:25:04,946 --> 00:25:07,529
+Então fomos para o escritório,
+e todos o rodeamos
+
+404
+00:25:07,530 --> 00:25:09,713
+e ele colocou os dedos nos interruptores
+
+405
+00:25:09,813 --> 00:25:14,370
+e carregou o Basic com a gravação no Altair.
+
+406
+00:25:14,470 --> 00:25:18,387
+Eu estava tão nervoso... será que vai...
+
+407
+00:25:18,388 --> 00:25:19,859
+será que não vai..., e funcionou.
+
+408
+00:25:19,925 --> 00:25:23,469
+E aconteceu, e ele conseguiu fazer
+algumas coisas simples.
+
+409
+00:25:23,502 --> 00:25:26,043
+E foi maravilhoso quando
+Paul me ligou e disse
+
+410
+00:25:26,044 --> 00:25:28,017
+que a coisa tinha
+funcionado pela primeira vez.
+
+411
+00:25:28,117 --> 00:25:29,569
+E claro, foi incrivelmente rápido.
+
+412
+00:25:29,601 --> 00:25:31,219
+E ela mostrou o tamanho da
+memória eu pensei que Bill
+
+413
+00:25:31,220 --> 00:25:34,120
+tinha dito que tinha mostrado
+alguma coisa e eu disse sim, sim.
+
+414
+00:25:34,833 --> 00:25:38,412
+Oh, isso foi... isso foi inacreditável.
+O fato de ter funcionado
+
+415
+00:25:38,512 --> 00:25:41,629
+hum... foi uma ruptura.
+
+416
+00:25:41,659 --> 00:25:46,073
+Talvez não tivesse havido Microsoft se
+aquele cenário não tivesse ganho vida.
+
+417
+00:25:46,074 --> 00:25:48,619
+Quem sabe, tudo teria
+sido muito diferente.
+
+418
+00:25:55,047 --> 00:25:58,810
+Depois do sucesso da demonstração,
+Bill esqueceu sobre acabar a universidade.
+
+419
+00:25:59,157 --> 00:26:01,874
+Com medo de perder a chance
+de dominar a nova indústria,
+
+420
+00:26:01,941 --> 00:26:04,063
+juntou-se a Allen no que seria
+
+421
+00:26:04,064 --> 00:26:06,950
+o centro mundial da
+pesquisa em micro computação,
+
+422
+00:26:07,015 --> 00:26:09,413
+no meio de bares sujos
+e estações de serviço
+
+423
+00:26:09,414 --> 00:26:10,958
+de Albuquerque, Novo México.
+
+424
+00:26:13,804 --> 00:26:18,679
+E eles viviam atravessando as ruas do MITS
+para o Sundowner Motel,
+
+425
+00:26:18,711 --> 00:26:22,089
+e as prostitutas e traficantes
+andando pelos cantos,
+
+426
+00:26:22,155 --> 00:26:26,416
+e eles escrevendo BASIC
+para o computador Altair,
+
+427
+00:26:26,417 --> 00:26:29,529
+e gradualmente, realmente começaram
+
+428
+00:26:29,530 --> 00:26:31,470
+a Microsoft aqui em Albuquerque.
+
+429
+00:26:31,470 --> 00:26:34,917
+Nós contratamos alguns dos nossos amigos
+
+430
+00:26:34,918 --> 00:26:36,970
+do colegial, basicamente
+para colaborar e
+
+431
+00:26:38,031 --> 00:26:40,650
+ficar no nosso apartamento,
+que se tornou muito concorrido.
+
+432
+00:26:40,715 --> 00:26:44,270
+Nós éramos muito jovens.
+Começamos quando tinha 19 anos
+
+433
+00:26:44,271 --> 00:26:47,246
+e portanto estávamos
+cheios, cheios de energia.
+
+434
+00:26:47,310 --> 00:26:51,443
+Eles trabalharam realmente duro.
+Escutavam música muito alto,
+
+435
+00:26:51,444 --> 00:26:54,403
+Algumas vezes, dificilmente conseguia
+ficar na sala de softwares
+
+436
+00:26:54,469 --> 00:26:58,890
+porque a música, principalmente
+acid rock, estremecia as paredes.
+
+437
+00:27:02,157 --> 00:27:05,522
+Nós costumávamos sair, comer pizzas
+
+438
+00:27:05,523 --> 00:27:08,984
+e então assistir a filmes de ação.
+
+439
+00:27:13,027 --> 00:27:15,067
+Eles deviam trabalhar a noite toda,
+
+440
+00:27:15,068 --> 00:27:16,933
+e havia dias em que Bill Gates
+
+441
+00:27:16,934 --> 00:27:19,920
+ficava dormindo no
+chão do laboratório de software.
+
+442
+00:27:20,020 --> 00:27:23,067
+Às vezes acontecia que Bill
+e estes outros dois caras,
+
+443
+00:27:23,068 --> 00:27:25,686
+sentados em mesas por todo o apartamento
+
+444
+00:27:25,786 --> 00:27:27,573
+com pilhas de papel escrito,
+
+445
+00:27:27,574 --> 00:27:29,729
+convertendo Basic para o 8080.
+
+446
+00:27:31,054 --> 00:27:35,561
+Ainda lembro
+o código-fonte de cor, e esse foi
+
+447
+00:27:35,661 --> 00:27:40,201
+um trabalho de amor,
+ajustando aquela coisa.
+
+448
+00:27:40,301 --> 00:27:43,183
+Assim, essa espécie
+de habilidade profissional compensou.
+
+449
+00:27:47,360 --> 00:27:49,907
+O BASIC permitiu ao Altair ser usado
+
+450
+00:27:49,908 --> 00:27:51,998
+tanto para diversão
+como trabalho de verdade.
+
+451
+00:27:52,396 --> 00:27:55,196
+As pessoas ligaram terminais
+no computador e começaram
+
+452
+00:27:55,197 --> 00:27:58,320
+a escrever jogos, processadores de texto
+e programas de contabilidade.
+
+453
+00:27:58,825 --> 00:28:01,528
+Muitos de nós nem souberam,
+mas rapidamente apareceu
+
+454
+00:28:01,529 --> 00:28:03,740
+uma indústria próspera
+para entusiastas.
+
+455
+00:28:03,862 --> 00:28:06,888
+Pelo final de 1975,
+dúzias de outras companhias
+
+456
+00:28:06,889 --> 00:28:09,032
+estavam construindo computadores.
+
+457
+00:28:10,370 --> 00:28:11,462
+Nós criamos uma indústria
+
+458
+00:28:11,463 --> 00:28:13,605
+e penso que isso passou
+completamente desapercebido.
+
+459
+00:28:13,860 --> 00:28:16,350
+Quer dizer que não havia nada.
+Todos os aspectos da indústria,
+
+460
+00:28:16,351 --> 00:28:18,973
+quando você fala de software,
+hardware, aplicativos
+
+461
+00:28:19,073 --> 00:28:21,359
+revendedores, etc.,
+era tudo uma bagunça.
+
+462
+00:28:21,459 --> 00:28:24,342
+Foi uma era selvagem.
+Foi um tempo muito excitante
+
+463
+00:28:24,673 --> 00:28:28,485
+e a primeira convenção de usuários,
+onde encontrávamos pessoas entrando
+
+464
+00:28:28,486 --> 00:28:31,898
+e dizendo o que estavam fazendo,
+porque estavam excitadas,
+
+465
+00:28:32,229 --> 00:28:35,651
+e outras empresas
+como Processor Technology
+
+466
+00:28:35,652 --> 00:28:39,520
+ou Imsai ou Comemco foram
+se juntando, mais tarde.
+
+467
+00:28:39,620 --> 00:28:42,399
+Estas empresas estão, há muito,
+esquecidas, mas foram
+
+468
+00:28:42,400 --> 00:28:45,021
+os modestos começos
+da indústria de PCs.
+
+469
+00:28:47,009 --> 00:28:49,507
+Deixado nas mãos
+desses hobbistas pioneiros
+
+470
+00:28:49,508 --> 00:28:52,643
+o PC talvez nunca tivesse
+chegado ao shopping mall.
+
+471
+00:28:52,908 --> 00:28:56,380
+Alcançar um mercado mais vasto
+requeria um tipo de visão diferente.
+
+472
+00:28:56,752 --> 00:28:59,698
+Entram as crianças
+floridas da Califórnia,
+
+473
+00:28:59,699 --> 00:29:02,849
+que pensavam que o PC
+era, bem, maravilhoso.
+
+474
+00:29:13,388 --> 00:29:14,784
+Lembro que os anos sessenta aconteceram
+
+475
+00:29:14,785 --> 00:29:16,108
+influenciando o início dos setenta,
+
+476
+00:29:16,109 --> 00:29:17,486
+então tem que ter isso em mente
+
+477
+00:29:17,487 --> 00:29:19,895
+pois foi a maneira
+como eu vi essa época.
+
+478
+00:29:19,961 --> 00:29:23,240
+Para mim, a centelha disso
+
+479
+00:29:23,727 --> 00:29:27,610
+é que havia algo por trás
+
+480
+00:29:27,611 --> 00:29:30,489
+do que se via todos os dias.
+
+481
+00:29:33,735 --> 00:29:35,960
+É a mesma coisa
+que faz as pessoas
+
+482
+00:29:35,961 --> 00:29:38,420
+quererem ser poetas
+ao invés de banqueiros.
+
+483
+00:29:39,037 --> 00:29:41,787
+E penso que isso é
+uma coisa maravilhosa.
+
+484
+00:29:41,788 --> 00:29:46,394
+E penso que esse mesmo espírito
+pode ser colocado dentro dos produtos.
+
+485
+00:29:46,659 --> 00:29:48,219
+e esses produtos podem ser fabricados
+
+486
+00:29:48,220 --> 00:29:50,437
+e oferecidos às pessoas
+que podem sentir esse espírito.
+
+487
+00:29:50,830 --> 00:29:52,871
+Para ajudar a entender tudo isto,
+
+488
+00:29:52,872 --> 00:29:55,040
+eu irei tirar as minhas roupas.
+
+489
+00:29:59,385 --> 00:30:03,470
+Jim Warren sabe melhor que a maioria
+o que o movimento hippie fez pelo PC.
+
+490
+00:30:03,759 --> 00:30:07,471
+Um radical do anos sessenta, ele encenou
+a feira de computadores da Costa Oeste,
+
+491
+00:30:07,571 --> 00:30:10,460
+por algum tempo a maior
+mostra de computadores do mundo.
+
+492
+00:30:10,785 --> 00:30:15,424
+A Feira foi onde o PC realmente apareceu.
+Também foi onde Jim ficou rico.
+
+493
+00:30:15,954 --> 00:30:19,003
+Jim, aqui é onde você faz os seus encontros?
+
+494
+00:30:19,401 --> 00:30:23,841
+Tantos quanto possível.
+Claro. Porque não?
+
+495
+00:30:24,173 --> 00:30:27,089
+Aqui é onde os empreendedores
+do Vale do Silício se conectam?
+
+496
+00:30:28,414 --> 00:30:31,058
+Acreditem ou não, Jim
+já ensinou matemática
+
+497
+00:30:31,059 --> 00:30:32,921
+numa escola católica feminina.
+
+498
+00:30:36,302 --> 00:30:38,582
+Jim ficou imediatamente
+fascinado pelo PC,
+
+499
+00:30:38,583 --> 00:30:40,543
+como muitos hippies da área da Baía.
+
+500
+00:30:40,930 --> 00:30:44,910
+A contracultura californiana foi crucial
+para o desenvolvimento do PCs.
+
+501
+00:30:45,010 --> 00:30:48,895
+E todo o espírito era trabalhar junto,
+era compartilhar.
+
+502
+00:30:48,961 --> 00:30:52,472
+Você partilhava seu baseado,
+partilhava a sua cama,
+
+503
+00:30:52,473 --> 00:30:56,185
+partilhava a sua vida,
+partilhava as suas esperanças.
+
+504
+00:30:57,920 --> 00:31:01,620
+E todo o nosso grupo tinha
+o mesmo espírito de comunidade.
+
+505
+00:31:01,720 --> 00:31:04,271
+e isso permeou todo o
+Clube de Computação de Homebrew.
+
+506
+00:31:04,403 --> 00:31:07,120
+Assim que alguém resolvia
+um problema, vinha correndo
+
+507
+00:31:07,121 --> 00:31:09,838
+para a próxima reunião do
+Clube de Homebrew e dizia:
+
+508
+00:31:09,938 --> 00:31:11,515
+Hei, todo mundo. Sabem
+aquele problema que todos
+
+509
+00:31:11,516 --> 00:31:13,020
+estávamos tentando
+descobrir como resolver,
+
+510
+00:31:13,120 --> 00:31:15,339
+aqui está a solução. Não é maravilhoso?
+
+511
+00:31:15,439 --> 00:31:16,334
+Eu não sou legal?
+
+512
+00:31:16,599 --> 00:31:19,042
+E é minha opinião que
+esse é o componente
+
+513
+00:31:19,043 --> 00:31:22,299
+mais importante do porquê o
+Vale do Silício estava apto a
+
+514
+00:31:22,431 --> 00:31:25,079
+desenvolver a tecnologia
+tão rapidamente, porque
+
+515
+00:31:25,080 --> 00:31:27,998
+todos estávamos compartilhando,
+Todo mundo ganhava!
+
+516
+00:31:29,258 --> 00:31:32,572
+Desta mostra criativa
+veio a Apple Computer,
+
+517
+00:31:32,837 --> 00:31:35,090
+a primeira empresa
+de mercado de massas de PCs.
+
+518
+00:31:35,554 --> 00:31:38,177
+Os fundadores da Apple, um
+casal de recém graduados de
+
+519
+00:31:38,178 --> 00:31:40,800
+Homestead High eram costumeiros
+nos encontros Homebrew.
+
+520
+00:31:41,387 --> 00:31:43,309
+Steve Wozniak era o técnico mágico
+
+521
+00:31:43,441 --> 00:31:45,594
+e Steve Jobs foi o visionário que viu
+
+522
+00:31:45,595 --> 00:31:48,213
+os microcomputadores
+como possível negócio.
+
+523
+00:31:49,473 --> 00:31:51,520
+O primeiro computador Apple foi primitivo.
+
+524
+00:31:52,323 --> 00:31:54,131
+Ele foi feito toscamente
+por Woz para impressionar
+
+525
+00:31:54,132 --> 00:31:55,620
+os seus amigos nos
+encontros de Homebrew.
+
+526
+00:31:56,498 --> 00:31:57,880
+Todos estavam interessados
+em computadores,
+
+527
+00:31:57,881 --> 00:31:59,481
+então eu comecei a ter
+uma multidão à minha volta.
+
+528
+00:31:59,746 --> 00:32:01,184
+porque embora eu fosse
+muito tímido para levantar
+
+529
+00:32:01,185 --> 00:32:02,795
+a minha mão e dizer alguma
+coisa nas reuniões do clube,
+
+530
+00:32:03,060 --> 00:32:06,244
+depois dos encontros do
+clube eu pegava o computador
+
+531
+00:32:06,245 --> 00:32:09,489
+que tinha construído e que
+incrementava a cada semana
+
+532
+00:32:09,820 --> 00:32:11,854
+mas eu o mostrava, deixava
+as  pessoas teclarem
+
+533
+00:32:11,855 --> 00:32:13,399
+e explicava o que estava acontecendo.
+
+534
+00:32:13,499 --> 00:32:15,251
+Se eles viessem e me fizessem perguntas
+
+535
+00:32:15,252 --> 00:32:16,249
+eu podia responder.
+
+536
+00:32:16,514 --> 00:32:19,738
+Eh, hoje deve-se ter a
+habilidade para dizer o que é
+
+537
+00:32:19,739 --> 00:32:21,684
+e ser um pouco mais promocional
+
+538
+00:32:21,784 --> 00:32:22,684
+Mas, naquela época, eu só podia
+
+539
+00:32:22,685 --> 00:32:24,070
+responder às perguntas
+que eles me faziam
+
+540
+00:32:24,136 --> 00:32:26,522
+e uma espécie de grupo
+começou a se aglomerar à minha volta.
+
+541
+00:32:26,655 --> 00:32:29,372
+E Steve Jobs viu que havia
+muita atração à minha volta no clube
+
+542
+00:32:29,438 --> 00:32:30,963
+e disse: "Vamos começar a vendê-lo
+
+543
+00:32:31,427 --> 00:32:34,354
+e vamos montar uma
+empresa". Ele apareceu
+
+544
+00:32:34,355 --> 00:32:38,187
+com o nome Apple, e foi
+assim que as coisas começaram.
+
+545
+00:32:42,296 --> 00:32:44,671
+Apple foi, no mais,
+uma empresa rústica...
+
+546
+00:32:44,672 --> 00:32:46,936
+iniciada por uma dupla de jovens hackers
+
+547
+00:32:47,036 --> 00:32:48,764
+que, vinham de trabalhar como artistas
+
+548
+00:32:48,765 --> 00:32:50,593
+na peça Alice no País das Maravilhas
+
+549
+00:32:50,594 --> 00:32:52,351
+num shopping local, e eles começaram
+
+550
+00:32:52,352 --> 00:32:53,961
+nesta garagem  exatamente aqui.
+
+551
+00:32:54,558 --> 00:32:56,774
+O primeiro computador
+Apple foi construído aqui.
+
+552
+00:32:56,775 --> 00:32:59,396
+Agora existem mais de dez
+milhões em uso em todo o mundo.
+
+553
+00:32:59,529 --> 00:33:00,278
+E eu estava lá.
+
+554
+00:33:00,279 --> 00:33:02,975
+Por pouco tempo, eu fui
+empregado da Apple Computer.
+
+555
+00:33:03,306 --> 00:33:04,861
+Empregado número 12 e um dia
+
+556
+00:33:04,862 --> 00:33:07,416
+eu ajudei a remover
+materiais desta garagem.
+
+557
+00:33:07,548 --> 00:33:11,178
+Na época, Steve Jobs disse que
+a companhia estava sem dinheiro,
+
+558
+00:33:11,179 --> 00:33:13,447
+então ofereceu-me ações como pagamento,
+
+559
+00:33:13,580 --> 00:33:15,451
+mas eu precisava do dinheiro.
+
+560
+00:33:15,452 --> 00:33:18,418
+A minha mãe ainda me
+lembra desse incidente.
+
+561
+00:33:19,611 --> 00:33:23,190
+O Apple 1 era ainda menos
+computador que o Altair
+
+562
+00:33:24,051 --> 00:33:28,028
+uma única placa de circuito
+que vinha sem caixa ou teclado.
+
+563
+00:33:28,492 --> 00:33:32,005
+Ainda assim, Steve Jobs
+conseguiu vender cinqüenta Apple I.
+
+564
+00:33:32,336 --> 00:33:34,749
+Essa experiência mostrou
+a Jobs  que havia
+
+565
+00:33:34,750 --> 00:33:37,506
+um mercado para um
+computador real: o Apple II.
+
+566
+00:33:38,367 --> 00:33:41,098
+Ficou muito claro para
+mim que embora houvesse
+
+567
+00:33:41,099 --> 00:33:43,073
+um bando de hobbistas de hardware
+
+568
+00:33:43,206 --> 00:33:44,807
+que podiam montar seus
+próprios computadores,
+
+569
+00:33:44,808 --> 00:33:45,990
+ou pelo menos pegar a nossa placa
+
+570
+00:33:46,255 --> 00:33:50,770
+e adicionar o transformador para a fonte,
+o gabinete e o teclado, etc.,
+
+571
+00:33:50,870 --> 00:33:52,220
+conseguir o resto do material,
+
+572
+00:33:52,320 --> 00:33:56,078
+para cada um desses, havia
+milhares que não podiam fazê-lo,
+
+573
+00:33:56,079 --> 00:33:58,715
+mas queriam poder mexer com programação.
+
+574
+00:33:58,781 --> 00:34:00,608
+Hobbistas de software.
+
+575
+00:34:00,609 --> 00:34:05,240
+Como eu tinha sido aos dez anos,
+descobrindo esse computador.
+
+576
+00:34:05,343 --> 00:34:07,489
+Então o meu sonho com o Apple II
+
+577
+00:34:07,490 --> 00:34:10,910
+foi vender o primeiro
+computador real, embalado.
+
+578
+00:34:12,169 --> 00:34:14,555
+O sonho de Steve Jobs era impossível.
+
+579
+00:34:14,754 --> 00:34:17,210
+Ele precisava de demasiados
+chips, tornando o produto
+
+580
+00:34:17,211 --> 00:34:19,394
+demasiado complicado e
+dispendioso para montar.
+
+581
+00:34:19,560 --> 00:34:22,774
+Mas Woz não sabia que era impossível.
+
+582
+00:34:23,702 --> 00:34:26,632
+Então eu pensei, porquê ter
+uma memória para a imagem de
+
+583
+00:34:26,633 --> 00:34:29,203
+TV e outra para o computador.
+Junta-se tudo numa,
+
+584
+00:34:29,335 --> 00:34:32,108
+e isso encolhe o número de
+chips, e encolho os chips aqui,
+
+585
+00:34:32,109 --> 00:34:34,505
+e porque não trocar todos
+estes circuitos de tempo
+
+586
+00:34:34,571 --> 00:34:36,420
+e procurei em manuais e
+encontrei um chip que faz
+
+587
+00:34:36,421 --> 00:34:38,416
+tudo sozinho, um chip em
+vez de cinco e reduzo aquilo
+
+588
+00:34:38,482 --> 00:34:41,001
+e uma coisa depois da
+outra foi acontecendo.
+
+589
+00:34:41,002 --> 00:34:44,248
+Eu fiquei com tão poucos
+chips, que quando acabei, disse:
+
+590
+00:34:44,348 --> 00:34:46,310
+Hei, um computador que se pode programar
+
+591
+00:34:46,311 --> 00:34:48,423
+para gerar padrões coloridos numa tela,
+
+592
+00:34:48,490 --> 00:34:51,273
+ou dados, ou palavras,
+ou jogar, ou qualquer coisa.
+
+593
+00:34:51,373 --> 00:34:55,783
+Era só o computador que eu
+queria, muito mais para mim.
+
+594
+00:34:55,784 --> 00:34:57,636
+Mas ele ficou tão bom.
+
+595
+00:34:57,702 --> 00:34:59,306
+Ele disse: "Acho que temos um computador
+
+596
+00:34:59,307 --> 00:35:00,990
+que podemos vender mais de mil por mês".
+
+597
+00:35:01,090 --> 00:35:03,640
+Como você vai conseguir vender mil por mês?
+
+598
+00:35:03,740 --> 00:35:05,396
+Mas nós precisávamos algum dinheiro para
+
+599
+00:35:05,397 --> 00:35:07,196
+fabricar o gabinete e coisas do gênero.
+
+600
+00:35:07,297 --> 00:35:08,506
+Precisávamos de algumas
+centenas de milhares de dólares.
+
+601
+00:35:08,771 --> 00:35:10,195
+Isso era um monte de dinheiro para
+
+602
+00:35:10,196 --> 00:35:12,416
+duas pessoas que nunca
+tiveram nada nas suas vidas.
+
+603
+00:35:12,516 --> 00:35:14,603
+Sem falar que não tínhamos
+400 dólares no banco.
+
+604
+00:35:14,670 --> 00:35:16,989
+Então comecei a procurar
+por algum capital de risco.
+
+605
+00:35:17,860 --> 00:35:19,565
+O garoto mal arrumado de 19 anos
+
+606
+00:35:19,566 --> 00:35:22,550
+seduziu o mundo conservador
+dos capitalistas de risco.
+
+607
+00:35:22,822 --> 00:35:26,136
+O homem que Jobs persuadiu a participar
+com o seu dinheiro, foi Arthur Rock,
+
+608
+00:35:26,236 --> 00:35:28,399
+o inventor do capital de risco e o homem
+
+609
+00:35:28,400 --> 00:35:30,380
+que originalmente fundou a Intel.
+
+610
+00:35:30,709 --> 00:35:32,303
+Pelo menos, os rapazes da Intel
+
+611
+00:35:32,304 --> 00:35:35,080
+tinham-se graduado na
+universidade e vestiam ternos.
+
+612
+00:35:35,613 --> 00:35:40,683
+Bem, ele calçava sandálias
+e tinha um cabelo comprido,
+
+613
+00:35:40,684 --> 00:35:43,633
+muito comprido, barba e bigode,
+
+614
+00:35:43,733 --> 00:35:45,158
+mas muito articulado.
+
+615
+00:35:49,170 --> 00:35:52,096
+Pelo menos uma vez eu
+pensei, e foi provavelmente
+
+616
+00:35:52,097 --> 00:35:55,431
+da primeira vez que o encontrei,
+que ele só comia fruta.
+
+617
+00:35:57,000 --> 00:36:01,700
+Então, como um capitalista
+de risco tradicional, isto era...
+
+618
+00:36:01,800 --> 00:36:05,571
+Isto não era a norma.
+
+619
+00:36:09,680 --> 00:36:12,902
+Com dinheiro na mão e debaixo
+da supervisão adulta ocasional
+
+620
+00:36:12,903 --> 00:36:15,513
+de um ex-gerente da Intel
+chamado Mike Markkula,
+
+621
+00:36:15,844 --> 00:36:18,896
+Woz & Jobs terminaram
+o Apple II e fizeram um pedido
+
+622
+00:36:18,897 --> 00:36:21,677
+a uma fábrica local para
+construir mil máquinas.
+
+623
+00:36:23,201 --> 00:36:26,270
+Dois anos se passaram entre
+o Altair e o Apple II
+
+624
+00:36:26,271 --> 00:36:28,702
+e durante esse tempo
+muitas coisas mudaram.
+
+625
+00:36:28,769 --> 00:36:31,637
+Saímos de um computador que
+era projetado para hobbistas e
+
+626
+00:36:31,638 --> 00:36:34,601
+engenheiros e certamente
+parecia-se com um equipamento de teste,
+
+627
+00:36:34,734 --> 00:36:38,511
+para um computador que parecia
+uma peça de eletrônica para consumo.
+
+628
+00:36:38,843 --> 00:36:41,958
+E podemos agradecer a Steve Jobs por isso.
+O seu sentido de design
+
+629
+00:36:42,058 --> 00:36:43,075
+demandou que este gabinete
+
+630
+00:36:43,076 --> 00:36:45,351
+de plástico expandido
+fosse usado para o Apple II.
+
+631
+00:36:45,352 --> 00:36:48,055
+O primeiro gabinete deste tipo
+num computador pessoal.
+
+632
+00:36:48,321 --> 00:36:51,104
+E não que houvesse uma
+engenharia ruim dentro dele.
+
+633
+00:36:51,204 --> 00:36:54,021
+O Apple II foi um modelo
+de engenharia eficiente.
+
+634
+00:36:54,121 --> 00:36:55,806
+Aqui está o controlador
+de drive de disco,
+
+635
+00:36:55,807 --> 00:36:57,259
+por exemplo. Aqui temos oito chips
+
+636
+00:36:57,260 --> 00:36:59,720
+onde antes havia trinta e cinco.
+
+637
+00:36:59,820 --> 00:37:01,440
+Este é um pedaço fantástico de engenharia
+
+638
+00:37:01,441 --> 00:37:03,299
+que podemos atribuir a Steve Wozniak
+
+639
+00:37:03,399 --> 00:37:07,516
+que, com certeza, é o
+Mozart do design digital
+
+640
+00:37:07,517 --> 00:37:10,656
+e tornou o Apple II numa sensação.
+
+641
+00:37:15,229 --> 00:37:19,143
+O Apple II foi lançado na Feira de Jim
+Warren na Costa Oeste,
+
+642
+00:37:19,144 --> 00:37:21,526
+uma das primeiras grandes mostras
+de microcomputadores.
+
+643
+00:37:21,592 --> 00:37:25,701
+A apresentação de 1978 atraiu milhares de clientes
+e dúzias de exibidores,
+
+644
+00:37:25,767 --> 00:37:28,233
+muitos deles membros do
+Homebrew Computer Clube,
+
+645
+00:37:28,234 --> 00:37:30,937
+que criaram a maioria das
+primeiras empresas de microcomputadores.
+
+646
+00:37:31,468 --> 00:37:33,817
+Mas, havia apenas uma empresa
+mostrando alguma coisa
+
+647
+00:37:33,818 --> 00:37:35,975
+que se parecia com
+um computador pessoal moderno.
+
+648
+00:37:36,505 --> 00:37:38,933
+Mesmo na entrada, num ponto principal
+
+649
+00:37:38,934 --> 00:37:41,873
+negociado por Steve Jobs,
+localizava-se o Apple II.
+
+650
+00:37:42,403 --> 00:37:44,988
+Hipnotizou todos que o viram.
+
+651
+00:37:45,783 --> 00:37:47,838
+A minha lembrança é que nós roubamos o show,
+
+652
+00:37:48,037 --> 00:37:51,574
+e um monte de vendedores e distribuidores
+começaram a fazer fila
+
+653
+00:37:51,575 --> 00:37:53,406
+e nós estávamos tontos e correndo.
+
+654
+00:37:53,538 --> 00:37:54,930
+Qual era  a sua idade?
+
+655
+00:37:55,858 --> 00:37:57,382
+Vinte e um.
+
+656
+00:38:03,877 --> 00:38:06,037
+Na senda da Feira de
+Computadores da Costa Oeste,
+
+657
+00:38:06,038 --> 00:38:07,290
+os dois anos seguintes foram
+
+658
+00:38:07,291 --> 00:38:09,180
+de crescimento explosivo para a Apple,
+
+659
+00:38:09,280 --> 00:38:12,427
+com milhares de clientes
+literalmente chegando aos degraus
+
+660
+00:38:12,428 --> 00:38:14,747
+do minúsculo escritório
+em Cupertino, Califórnia.
+
+661
+00:38:15,543 --> 00:38:19,276
+As vendas e lucros cresceram tão rápido
+que a Apple tinha mais dinheiro que
+
+662
+00:38:19,277 --> 00:38:20,712
+a empresa podia gastar.
+
+663
+00:38:20,845 --> 00:38:22,966
+E a empresa era muito nova.
+
+664
+00:38:23,231 --> 00:38:26,787
+Os fundadores tinham cerca de vinte anos
+e alguns dos empregados eram
+
+665
+00:38:26,788 --> 00:38:28,631
+ainda mais jovens,  como Chris Espinosa
+
+666
+00:38:28,632 --> 00:38:30,521
+de 14 anos, que nunca saiu da empresa.
+
+667
+00:38:30,621 --> 00:38:33,438
+Ele ainda trabalha na Apple
+quase vinte anos depois.
+
+668
+00:38:33,470 --> 00:38:36,844
+Eram feitas demonstrações
+públicas do nosso produto todas
+
+669
+00:38:36,845 --> 00:38:39,403
+às terças e quintas-feiras
+às três da tarde
+
+670
+00:38:39,535 --> 00:38:41,656
+e isso era bom porque
+era depois da escola.
+
+671
+00:38:41,987 --> 00:38:46,030
+Então eu podia sair
+do segundo ano do colegial,
+
+672
+00:38:46,362 --> 00:38:50,393
+guiando a minha pequena bicicleta a motor
+para os escritórios da Apple e às 3 horas
+
+673
+00:38:50,394 --> 00:38:52,857
+fazia as demonstrações do Apple II.
+
+674
+00:38:53,387 --> 00:38:55,496
+Quando estávamos no
+escritório havia muitas piadas
+
+675
+00:38:55,497 --> 00:38:57,894
+e  ligávamos para as pessoas
+para fazer coisas bizarras,
+
+676
+00:38:57,994 --> 00:38:59,631
+e cada um de nós, quer dizer
+
+677
+00:38:59,632 --> 00:39:01,802
+que não havia uma pessoa na Apple
+
+678
+00:39:01,803 --> 00:39:04,787
+por uma par de anos
+que fosse, digamos, super séria.
+
+679
+00:39:04,853 --> 00:39:08,631
+Nós tínhamos sorte.
+Possuíamos o produto "quente" desses dias.
+
+680
+00:39:08,896 --> 00:39:11,277
+E algumas das pessoas para
+quem fiz demonstrações originais
+
+681
+00:39:11,278 --> 00:39:13,220
+voltaram anos depois e disseram:
+
+682
+00:39:13,271 --> 00:39:15,396
+Olha, fundei uma
+rede de lojas de computadores
+
+683
+00:39:15,397 --> 00:39:16,651
+de cem milhões de dólares
+
+684
+00:39:16,751 --> 00:39:18,802
+baseado nas demonstrações que você fez
+
+685
+00:39:18,803 --> 00:39:20,784
+uma terça-feira à tarde na Apple.
+
+686
+00:39:20,785 --> 00:39:21,622
+Era realmente engraçado.
+
+687
+00:39:22,260 --> 00:39:23,377
+Fomos tão bem sucedidos que,
+
+688
+00:39:23,378 --> 00:39:25,252
+quase de repente, Steve
+e eu não precisávamos
+
+689
+00:39:25,253 --> 00:39:27,080
+nos preocupar com trabalho
+pelo resto das nossas vidas.
+
+690
+00:39:27,180 --> 00:39:28,840
+E então fizemos mais sucesso ainda
+
+691
+00:39:28,841 --> 00:39:30,503
+e mais sucesso depois disso,
+
+692
+00:39:32,740 --> 00:39:34,944
+e foi uma espécie de choque.
+
+693
+00:39:36,230 --> 00:39:39,120
+O Apple II criou um novo padrão
+para computadores pessoais
+
+694
+00:39:39,220 --> 00:39:40,343
+e mostrou que havia realmente
+
+695
+00:39:40,344 --> 00:39:41,650
+como ganhar dinheiro com ele.
+
+696
+00:39:41,969 --> 00:39:44,036
+Companhias rivais
+pipocavam por todo o lado
+
+697
+00:39:44,037 --> 00:39:45,681
+mas o mercado ainda era de hobbistas.
+
+698
+00:39:46,012 --> 00:39:49,503
+Gente com longas barbas que pensava
+que um bom uso para um computador era
+
+699
+00:39:49,504 --> 00:39:51,049
+controlar um modelo
+de locomotivas em miniatura.
+
+700
+00:39:54,297 --> 00:39:57,699
+Mas para os microcomputadores serem
+levados a sério, tinham que começar
+
+701
+00:39:57,700 --> 00:39:59,400
+a fazer coisa que
+necessitavam ser feitas,
+
+702
+00:39:59,599 --> 00:40:02,250
+funções que fossem úteis,
+não apenas para diversão.
+
+703
+00:40:06,227 --> 00:40:09,324
+O mercado de entusiásticos tinha os seus
+limites. Para alcançar os restantes de nós
+
+704
+00:40:09,325 --> 00:40:12,590
+o Apple II precisava o que
+os nerds chamavam de aplicativo "matador".
+
+705
+00:40:13,054 --> 00:40:14,330
+Software que seria tão útil
+
+706
+00:40:14,331 --> 00:40:16,831
+que as pessoas comprariam
+computadores apenas para rodá-los.
+
+707
+00:40:17,910 --> 00:40:20,848
+Para o Apple II, este
+aplicativo foi nomeado VisiCalc.
+
+708
+00:40:20,849 --> 00:40:24,520
+Ele veio direto das salas de aula
+da Harvard Business School.
+
+709
+00:40:27,038 --> 00:40:29,330
+Inventado por um estudante
+de graduação, Dan Bricklin
+
+710
+00:40:29,331 --> 00:40:31,520
+com seu amigo programador
+Bob Frankston,
+
+711
+00:40:31,620 --> 00:40:34,992
+VisiCalc foi a primeira planilha eletrônica.
+
+712
+00:40:35,919 --> 00:40:38,769
+Uma planilha é uma ferramenta
+para planejamento financeiro,
+
+713
+00:40:38,869 --> 00:40:40,829
+trazendo juntos, pela primeira vez
+
+714
+00:40:40,830 --> 00:40:44,204
+a sedução do dinheiro com
+o poder da micro computação.
+
+715
+00:40:45,397 --> 00:40:47,121
+O professor de Dan Bricklin em Harvard
+
+716
+00:40:47,187 --> 00:40:49,458
+mostrou no quadro como as empresas
+usavam uma grade de números
+
+717
+00:40:49,459 --> 00:40:52,091
+para calcular receitas e despesas.
+
+718
+00:40:52,489 --> 00:40:58,255
+Sessenta aqui...
+dá quarenta.
+
+719
+00:40:58,355 --> 00:41:00,314
+E, bem, vejamos como
+as vendas cresceram,
+
+720
+00:41:00,315 --> 00:41:01,990
+digamos que a uns dez por cento...
+
+721
+00:41:02,090 --> 00:41:04,075
+O truque de uma
+planilha eletrônica é que
+
+722
+00:41:04,076 --> 00:41:06,408
+todos os valores na
+tabela estão relacionados.
+
+723
+00:41:07,070 --> 00:41:10,084
+Então mudanças num ano deviam
+se propagar através da tabela,
+
+724
+00:41:10,085 --> 00:41:12,505
+afetando preços e lucros
+nos anos subseqüentes.
+
+725
+00:41:13,035 --> 00:41:15,839
+Estudantes são questionados
+para calcular como os lucros futuros
+
+726
+00:41:15,840 --> 00:41:18,536
+deveriam ser afetados por
+diversos cenários de negócios.
+
+727
+00:41:18,636 --> 00:41:20,844
+Isto era chamado "correndo os números"
+
+728
+00:41:20,845 --> 00:41:22,778
+e feito laboriosamente à mão.
+
+729
+00:41:23,110 --> 00:41:27,890
+Bem, digamos que o seus custos
+iniciais são $100 de custos fixos
+
+730
+00:41:27,891 --> 00:41:30,135
+então agora você tem menos vinte.
+
+731
+00:41:30,235 --> 00:41:32,562
+É quanto você fez no primeiro ano.
+
+732
+00:41:32,563 --> 00:41:36,630
+Agora, no segundo ano você
+tem cem, mas a variável é...
+
+733
+00:41:36,730 --> 00:41:39,390
+vamos dizer, vinte e cinco,
+agora você está perdendo,
+
+734
+00:41:39,391 --> 00:41:42,198
+é uma dor no pescoço
+não ia muito bem a esta altura,
+
+735
+00:41:42,298 --> 00:41:46,002
+Oitenta? Não, não, não,
+quinze...menos quinze,
+
+736
+00:41:46,003 --> 00:41:49,886
+certo e por acaso você
+está ganhando dinheiro,
+
+737
+00:41:49,986 --> 00:41:51,246
+O que  estava fazendo ganhando
+
+738
+00:41:51,247 --> 00:41:53,149
+dinheiro e quanto custava esse dinheiro.
+
+739
+00:41:53,150 --> 00:41:54,690
+Isto era "correndo os números".
+
+740
+00:41:54,790 --> 00:41:57,406
+Porque cada valor está ligado a outros,
+
+741
+00:41:57,407 --> 00:41:59,695
+um erro podia significar um desastre.
+
+742
+00:41:59,795 --> 00:42:02,434
+Empurra todos os números para
+a frente porque você faz todos os
+
+743
+00:42:02,435 --> 00:42:04,600
+cálculos baseados nos
+outros números anteriores.
+
+744
+00:42:04,700 --> 00:42:07,516
+Dan, que trabalhou como programador,
+
+745
+00:42:07,616 --> 00:42:10,972
+começou a sonhar como
+poderia usar o computador
+
+746
+00:42:10,973 --> 00:42:13,660
+para substituir
+os cálculos manuais tediosos.
+
+747
+00:42:14,409 --> 00:42:15,953
+Eu imaginei um quadro mágico como
+
+748
+00:42:15,954 --> 00:42:18,385
+o processamento de palavras
+que faz um envoltório.
+
+749
+00:42:18,485 --> 00:42:19,886
+Se você faz uma mudança numa palavra
+
+750
+00:42:19,887 --> 00:42:21,679
+automaticamente puxa
+tudo que está atrás.
+
+751
+00:42:21,680 --> 00:42:23,555
+Bem , porque não recalcular da mesma forma?
+
+752
+00:42:23,655 --> 00:42:25,326
+Assim, se eu mudo o meu número, digamos,
+
+753
+00:42:25,327 --> 00:42:27,797
+devia ter usado dez por cento
+no lugar de doze por cento,
+
+754
+00:42:27,897 --> 00:42:31,243
+só mudaria o número
+e refazia o cálculo automaticamente
+
+755
+00:42:31,343 --> 00:42:34,822
+Essa era a idéia da planilha eletrônica.
+
+756
+00:42:35,220 --> 00:42:39,560
+Seguindo um modelo que é comum agora,
+Dan Bricklin projetou o programa
+
+757
+00:42:39,660 --> 00:42:41,210
+mas colocou o seu amigo Bob Frankston
+
+758
+00:42:41,211 --> 00:42:43,439
+para escrever o verdadeiro
+código de computador.
+
+759
+00:42:43,571 --> 00:42:45,026
+Depois de meses de programação,
+
+760
+00:42:45,027 --> 00:42:48,078
+tarde da noite, quando tempo
+de programação era mais barato,
+
+761
+00:42:48,178 --> 00:42:51,127
+a planilha da Harvard Business School
+ganhou vida.
+
+762
+00:42:51,392 --> 00:42:52,576
+Agora está ajustado, OK.
+
+763
+00:42:52,577 --> 00:42:55,700
+Então digitamos um novo valor,
+agora estou pegando esses cem,
+
+764
+00:42:55,800 --> 00:42:57,058
+eu vou mudá-lo, certo?
+
+765
+00:42:57,059 --> 00:43:01,669
+E aqui está ele recalculado!
+Woou! Isso poupou-me tanto tempo!
+
+766
+00:43:01,700 --> 00:43:07,377
+Pessoas viram e usaram, como um contador
+daqui a quem mostrei o programa,
+
+767
+00:43:07,477 --> 00:43:09,108
+e ele começou a tremer e disse:
+
+768
+00:43:09,109 --> 00:43:12,402
+isso é o que faço toda a
+semana, podia fazê-lo numa hora.
+
+769
+00:43:12,468 --> 00:43:15,580
+Eles pegavam o cartão de crédito
+e enfiavam na minha cara.
+
+770
+00:43:15,680 --> 00:43:18,182
+Encontro essas pessoas agora,
+elas chegam junto de mim e dizem:
+
+771
+00:43:18,183 --> 00:43:19,361
+Tenho que lhe contar
+
+772
+00:43:19,494 --> 00:43:22,941
+Você mudou a minha vida.
+Você tornou a contabilidade divertida.
+
+773
+00:43:23,139 --> 00:43:27,513
+Naquela época não se usava
+a palavra planilha eletrônica.
+
+774
+00:43:27,580 --> 00:43:29,502
+Ninguém sabia o que
+a expressão significava.
+
+775
+00:43:29,833 --> 00:43:32,617
+Eu apareci com o nome
+Visible Calculator,
+
+776
+00:43:32,618 --> 00:43:35,732
+Visicalc, porque queria
+enfatizar essa faceta.
+
+777
+00:43:36,129 --> 00:43:41,565
+VisiCalc começou a ser vendido
+em outubro de 1979 por 100 dólares.
+
+778
+00:43:41,763 --> 00:43:46,138
+Marv Goldschmitt vendeu as primeiras cópias
+na sua loja em Bedford, Massachusetts.
+
+779
+00:43:46,535 --> 00:43:49,385
+depois de um começo lento,
+VisiCalc decolou.
+
+780
+00:43:50,048 --> 00:43:51,248
+O que aconteceu na sociedade,
+
+781
+00:43:51,249 --> 00:43:53,400
+foi dar às pessoas que
+eram obcecadas com números,
+
+782
+00:43:53,561 --> 00:43:55,417
+estivessem elas em negócios ou em casa,
+
+783
+00:43:55,615 --> 00:43:58,549
+quanto está valendo hoje,
+qual é o valor do meu portfólio em estoque,
+
+784
+00:43:58,550 --> 00:44:00,520
+como estou indo em relação
+ao orçamento deste projeto.
+
+785
+00:44:01,647 --> 00:44:04,231
+Proporcionou a habilidade
+de jogar com cenários
+
+786
+00:44:04,232 --> 00:44:06,816
+e mudá-los e perguntar:
+bem, como será se fizer isto?
+
+787
+00:44:08,090 --> 00:44:10,462
+Então, de certa forma deu
+às pessoas uma sensação de controle.
+
+788
+00:44:10,562 --> 00:44:12,154
+Uma das coisas que muita gente
+
+789
+00:44:12,155 --> 00:44:14,240
+gosta de ser guiada, é por números.
+
+790
+00:44:18,216 --> 00:44:19,351
+A planilha eletrônica era
+
+791
+00:44:19,352 --> 00:44:21,530
+a bola de cristal de
+todo o homem de negócios.
+
+792
+00:44:21,700 --> 00:44:23,185
+Respondia a todos os "E se...?"
+
+793
+00:44:23,186 --> 00:44:26,302
+O que aconteceria se despedisse
+o departamento de engenharia?
+
+794
+00:44:26,965 --> 00:44:30,544
+E se investisse 10 milhões de dólares
+no futuro das meias-calças?
+
+795
+00:44:31,339 --> 00:44:35,912
+Olha! Ficarei rico em menos de um ano!
+
+796
+00:44:36,012 --> 00:44:38,033
+O computador diz isso!
+
+797
+00:44:45,191 --> 00:44:47,445
+O efeito da planilha eletrônica
+foi enorme.
+
+798
+00:44:47,843 --> 00:44:49,873
+Armado com um Apple II
+rodando Visicalc,
+
+799
+00:44:49,874 --> 00:44:51,422
+um estudante de  MBA
+com vinte e dois anos
+
+800
+00:44:51,522 --> 00:44:53,013
+com dois pedaços de dados duvidosos
+
+801
+00:44:53,014 --> 00:44:55,067
+podia convencer
+os seus gerentes corporativos
+
+802
+00:44:55,167 --> 00:44:56,879
+a deixá-lo saquear o fundo de pensões
+
+803
+00:44:56,880 --> 00:44:58,447
+e fazer um resgate alavancado.
+
+804
+00:44:58,547 --> 00:45:00,701
+Era a ferramenta perfeita
+para o anos oitenta...
+
+805
+00:45:00,833 --> 00:45:05,009
+a década chave, onde dinheiro era tudo
+e a ganância era boa.
+
+806
+00:45:30,720 --> 00:45:33,922
+Em cinco anos, o PC passou
+de um brinquedo para hobbistas
+
+807
+00:45:33,923 --> 00:45:36,822
+a uma máquina que modelou
+os tempos que estávamos vivendo.
+
+808
+00:45:37,352 --> 00:45:40,733
+Graças ao VisiCalc o Apple II fez história.
+
+809
+00:45:41,660 --> 00:45:43,547
+Todo o mundo com quem falava
+parecia excitado
+
+810
+00:45:43,548 --> 00:45:45,306
+querendo falar sobre
+o que estávamos fazendo.
+
+811
+00:45:46,499 --> 00:45:50,807
+E havia esta enorme explosão na mídia,
+parecida com a da internet hoje,
+
+812
+00:45:50,939 --> 00:45:54,386
+de que este era o acontecimento.
+Você lia sobre isto de novo e de novo,
+
+813
+00:45:54,486 --> 00:45:56,473
+e cada vez que pegava um vôo lia sobre ele,
+
+814
+00:45:56,474 --> 00:45:58,190
+em todos os jornais,
+todas as semanas, tinha algo para ler
+
+815
+00:45:58,290 --> 00:45:59,520
+sobre a chegada dos pequenos computadores,
+
+816
+00:45:59,521 --> 00:46:01,676
+e a Apple era uma das empresas destacadas,
+
+817
+00:46:01,920 --> 00:46:05,290
+então nós éramos retratados
+como um líder de uma revolução,
+
+818
+00:46:05,653 --> 00:46:07,943
+e realmente nós sentíamos
+que éramos um líder de uma revolução.
+
+819
+00:46:07,944 --> 00:46:09,365
+Nós estávamos para mudar muito a vida.
+
+820
+00:46:11,154 --> 00:46:15,131
+Muito bom para uma empresa
+que começou numa garagem, três anos antes.
+
+821
+00:46:16,125 --> 00:46:18,978
+Mas nem todos os pioneiros de PCs
+fizeram grandes fortunas.
+
+822
+00:46:18,979 --> 00:46:22,355
+Dan Bricklin decidiu não
+patentear a sua idéia de planilha eletrônica.
+
+823
+00:46:22,488 --> 00:46:26,464
+Embora mais de cem milhões de planilhas
+tenham sido vendidas desde 1979,
+
+824
+00:46:26,490 --> 00:46:30,110
+Bricklin e Frankston não ganharam
+royalties do VisiCalc durante anos.
+
+825
+00:46:30,230 --> 00:46:32,628
+Veja, relembrando como foram
+bem sucedidas um monte de outras pessoas
+
+826
+00:46:32,694 --> 00:46:34,948
+tem sido um pouco triste que
+nós não tenhamos tido tanto sucesso...
+
+827
+00:46:35,213 --> 00:46:38,063
+Teria sido muito bom sermos gazillionários.
+
+828
+00:46:39,521 --> 00:46:43,156
+Mas você também pode
+entender que parte do motivo
+
+829
+00:46:43,157 --> 00:46:45,818
+foi que não era isso
+que estávamos tentando ser.
+
+830
+00:46:46,083 --> 00:46:48,658
+Nós somos garotos dos anos sessenta
+e o que a gente queria fazer?
+
+831
+00:46:48,659 --> 00:46:50,391
+A gente queria fazer o mundo melhor,
+
+832
+00:46:50,590 --> 00:46:52,635
+e  a gente queria deixar
+a nossa marca no mundo
+
+833
+00:46:52,636 --> 00:46:54,235
+e melhorar as coisas, e nós conseguimos.
+
+834
+00:46:54,633 --> 00:46:56,987
+Então pela marca que devemos nos medir
+
+835
+00:46:56,988 --> 00:46:59,242
+a nós mesmos, fomos muito bem sucedidos.
+
+836
+00:47:01,526 --> 00:47:03,448
+E acerca de Ed Roberts?
+
+837
+00:47:03,713 --> 00:47:06,922
+Três anos e 40.000 computadores
+depois da montagem
+
+838
+00:47:06,923 --> 00:47:09,810
+daquele primeiro Altair, a
+brincadeira acabou para Ed.
+
+839
+00:47:09,876 --> 00:47:12,513
+MITS era apenas outro ator
+no que se tinha tornado
+
+840
+00:47:12,514 --> 00:47:14,781
+um mercado competitivo
+para computadores pessoais.
+
+841
+00:47:15,113 --> 00:47:19,023
+Roberts vendeu a sua empresa em 1978
+e começou uma nova vida.
+
+842
+00:47:19,354 --> 00:47:23,132
+Voltou de novo para a sua Geórgia nativa
+e fez novo treinamento como médico.
+
+843
+00:47:23,530 --> 00:47:25,126
+Eu não tinha pensado
+realmente alguma coisa
+
+844
+00:47:25,127 --> 00:47:26,380
+acerca disso nos últimos anos
+
+845
+00:47:26,480 --> 00:47:29,230
+e acerca das coisas que fizemos no MITS.
+
+846
+00:47:29,627 --> 00:47:32,610
+Essa é  a única coisa que eu penso.
+Irrita-me,
+
+847
+00:47:32,710 --> 00:47:35,394
+porque as coisas que fizemos no MITS,
+todo o esforço que tivemos
+
+848
+00:47:35,494 --> 00:47:37,713
+e outras pessoas tentando levar o crédito.
+
+849
+00:47:37,813 --> 00:47:39,304
+Isso me deixa frustrado.
+
+850
+00:47:40,696 --> 00:47:43,414
+Enquanto Ed Roberts
+inventou o computador pessoal,
+
+851
+00:47:43,415 --> 00:47:45,799
+foram os fundadores
+da Apple que ficaram ricos.
+
+852
+00:47:45,998 --> 00:47:49,378
+Quando a Apple veio a público
+de uma forma espetacular em 1980,
+
+853
+00:47:49,444 --> 00:47:52,096
+Jobs e Woz tornaram-se multimilionários.
+
+854
+00:47:52,361 --> 00:47:54,681
+Os "nerds" herdaram a Terra.
+
+855
+00:47:55,343 --> 00:47:56,801
+Eu valia...
+
+856
+00:47:58,856 --> 00:48:02,501
+...cerca de um milhão de dólares
+quando tinha  vinte e três anos
+
+857
+00:48:02,965 --> 00:48:05,497
+e mais de dez milhões de
+dólares quando tinha vinte e quatro,
+
+858
+00:48:05,498 --> 00:48:08,267
+e mais de cem milhões de
+dólares quando tinha vinte e cinco.
+
+859
+00:48:12,973 --> 00:48:17,281
+e, hum, isso não foi tão importante,
+porque nunca o fiz pelo dinheiro.
+
+860
+00:48:18,276 --> 00:48:20,064
+Era só uma pequena empresa de hobby
+
+861
+00:48:20,065 --> 00:48:22,517
+como um monte de pessoas
+não pensando nada disso.
+
+862
+00:48:22,981 --> 00:48:24,301
+Quero dizer que não foi como pensado
+
+863
+00:48:24,302 --> 00:48:26,428
+como nós pensamos que
+aconteceria por um longo caminho.
+
+864
+00:48:26,528 --> 00:48:28,416
+Foi como se ambos
+fizéssemos por diversão,
+
+865
+00:48:29,013 --> 00:48:32,391
+Mas voltando lá, havia
+uma pequena janela de tempo onde uma pessoa
+
+866
+00:48:32,392 --> 00:48:34,978
+que pudesse sentar e fazer
+alguns bons e puros designs
+
+867
+00:48:35,442 --> 00:48:38,822
+podia torná-los
+numa coisa  enorme como o Apple II.
+
+868
+00:48:53,867 --> 00:48:58,705
+É espantoso que no começo de 1975
+ninguém possuía um computador pessoal
+
+869
+00:48:58,904 --> 00:49:02,218
+só o que havia era
+um protótipo na capa de uma revista
+
+870
+00:49:02,240 --> 00:49:04,213
+mas em apenas cinco
+anos tinha emergido aqui,
+
+871
+00:49:04,214 --> 00:49:06,700
+no Vale do Silício,  uma
+indústria de bilhões de dólares.
+
+872
+00:49:07,321 --> 00:49:10,635
+Uma fascinação doentia por
+tecnologia da parte de alguns adolescentes
+
+873
+00:49:10,702 --> 00:49:13,286
+tinha acordado o "nerd" em cada um de nós.
+
+874
+00:49:13,560 --> 00:49:15,075
+Empresas de PCs estavam brotando
+
+875
+00:49:15,076 --> 00:49:17,300
+como cogumelos para
+atender a enorme demanda.
+
+876
+00:49:17,727 --> 00:49:19,598
+Apple emergiu como o principal fungo
+
+877
+00:49:19,599 --> 00:49:22,300
+e tinha conseguido cinqüenta
+por cento do mercado.
+
+878
+00:49:22,600 --> 00:49:25,747
+Para os rapazes de Cupertino,
+cada dia parecia com o Natal.
+
+879
+00:49:25,879 --> 00:49:27,900
+Mas o avarento estava ao virar da esquina.
+
+880
+00:49:28,066 --> 00:49:31,380
+Havia uma companhia que todos
+associavam com a palavra 'computador',
+
+881
+00:49:31,447 --> 00:49:34,760
+uma empresa que esperava,
+não pedia, para dominar o mercado:
+
+882
+00:49:34,893 --> 00:49:36,020
+IBM
+
+883
+00:49:36,484 --> 00:49:38,273
+Big Blue estava se movimentando
+
+884
+00:49:38,538 --> 00:49:42,250
+e o Vale do Silício, em breve,
+deveria sentir as reverberações.
+
+885
+00:49:44,569 --> 00:50:20,824
+Legendas por
+cmfm@ig.com.br
+

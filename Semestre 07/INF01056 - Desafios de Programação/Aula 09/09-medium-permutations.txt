@@ -1,0 +1,9 @@
+2
+abc
+3
+abcde
+119
+
+//output
+bca
+edcba

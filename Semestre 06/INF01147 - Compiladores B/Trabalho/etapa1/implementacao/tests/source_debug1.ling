@@ -1,0 +1,33 @@
+word bool byte if then else loop input return output
+// MY LINE COMMENT HAS AN int AND a bool
+<= >= == != && ||
+, ; : ( ) [ ] { } + - * / < > = ! & $
+/**
+ * MY COMMENT
+ * IN A BLOCK
+ * HAS AN int and A char or A true
+ */
+é /* */
+my_ident_say_next_is_literal_integer 1234 -1234
+TRUE
+FALSE TRUE    
+'a' 'b' ' '
+"Minha string contem um int" "as"
+"A" "u" "."
+ṕ 
+
+0AFF
+0AFFEM
+3FF2A
+
+éminhaVal32
+minha32Val minha32Val
+minha32Val
+32minhaVal
+minha_32Val
+minha_32Val
+minhaVal_32
+minha_32_Val
+minhaVal32_
+
+word a : 42;

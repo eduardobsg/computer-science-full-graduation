@@ -1,0 +1,14 @@
+create table EMP(
+  CODEMP CHAR(5) not null, 
+  NOMEEMP VARCHAR(40) not null,
+  CODEMPGER CHAR(5),
+  constraint P_IDENTIFIER_1 primary key (CODEMP));
+
+create  index CODEMPGER_FK on EMP ( CODEMPGER);
+
+alter table EMP 
+  add constraint F_EMP_GER 
+  foreign key (CODEMPGER) 
+  references EMP (CODEMP) 
+    on delete restrict
+    on update cascade;

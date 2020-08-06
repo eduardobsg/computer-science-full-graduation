@@ -1,0 +1,31 @@
+Cadeira: INF01050 - Fotografia Computacional
+Professor: Manuel
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2014/01
+
+------------------------------------------------------------------------------
+---- Colegas:
+------------------------------------------------------------------------------
+
+José Luis Damaren
+Henrique Weber
+
+------------------------------------------------------------------------------
+---- Notas de Aula
+------------------------------------------------------------------------------
+
+White Balance:
+	
+
+Gamma Correction:
+	O sensor da câmera captura informações de luminância de forma linear, ou seja,
+quanto mais luz chegar em um elemento do sensor, maior será o valor registrado.
+	Porém nossos olhos possuem uma resposta não-linear a quantidade de luz, logo é
+necessário fazer uma correção das intensidades de iluminação na imagem final, de modo
+que aos olhos humanos a imagem capturada se assemelhe mais com a cena real vista também
+pelos olhos humanos.
+
+
+
+

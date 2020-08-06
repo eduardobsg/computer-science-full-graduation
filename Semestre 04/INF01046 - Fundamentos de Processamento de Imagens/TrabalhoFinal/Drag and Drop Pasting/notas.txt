@@ -1,0 +1,19 @@
+Sugestão de Projetos Manuel: http://www.inf.ufrgs.br/~oliveira/Cursos/INF01046/INF01046_Sugestao_Projetos.html
+
+Drag and Drop Pasting: http://www.cse.cuhk.edu.hk/~leojia/all_project_webpages/ddp/drag-and-drop_pasting.html
+
+Google code: http://code.google.com/p/fpi-drag-and-drop/
+
+
+Links:
+http://harshdeep.wordpress.com/2008/01/19/poisson-image-editing/
+
+
+Tópicos:
+- extrair objetos de imagens
+- paste image to another, alpha channel
+- blend two different images through interpolations at different levels of Laplacian pyramids. [Burt and Adelson 1983]
+- Poisson image editing, on the other hand, blends two images through Poisson equations. [Perez et al. 2003]
+
+GrabCut [Rother et al. 2004] and Lazy Snapping [Li et al.
+2004] can be used to produce Wobj once W0 is given.

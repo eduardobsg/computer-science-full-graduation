@@ -1,0 +1,52 @@
+Cadeira: INF01120 - Técnicas de Construção de Programas
+Professor: Marcelo Pimenta
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2011/02
+
+Resumo 9 - Convenções 2
+
+* Expressões Booleanas
+	- utilizar as palavras TRUE e FALSE ao invés de 1 e 0
+	- em testes condicionais (ifs) sempre que possível utilizar comparação
+	implícita com true ou false, ou seja, if(!a) ao invés de if(a == false) ou
+	if(a) ao invés de if(a == true)
+	- definir de forma simples TRUE e FALSE
+	#define TRUE (1==1)
+	#define FALSE (!TRUE)
+	
+	- facilitar os testes, removendo complexidade
+		- quebrar testes grandes em vários testes pequenos
+		- transformar expressões boolianas complexas em funções booleanas
+		
+	- lembrar: muitas pessoas tem dificuldade de compreender uma série de cláusulas
+	negativas, logo, devemos projetar os testes esperando resultados positivos.
+	- aplicar o teorema de DeMorgan em expressões booleanas a fim de simplificá-las
+	- usar parênteses para deixar mais clara as relações entre os valores lógicos 
+	e os operadores
+	
+	- comparações com zero
+		- quando necessário comparar, fazer explicitamente a comparação da variável 
+		com zero
+		- comparar caracteres de uma string explicitamente com o caracter finalizador
+		de string ('/0')
+		- comparar ponteiros com NULL
+		
+* Blocos
+	- primeiro escrever o if e sua cláusula, depois as duas chaves (abertura e fechamento)
+	e depois o conteúdo ao entrar no if
+		- isso se mostra importante em encadeamento de if's, onde ao término do encadeamento
+		há uma sequencia de chaves de fechamento
+	
+	- tentar usar estrutura de if-then-elseS
+	if() {
+	} else if() {
+	} else if() {
+	} else if() {}
+	
+	- redesenhar trechos de código com muito encadeamento
+	
+* Componentes e Estrutura de Programação
+	- Sequencia: série de chamadas de função
+	- Seleção: if-then-else, switch-case
+	- Iteração: for, while, do-while

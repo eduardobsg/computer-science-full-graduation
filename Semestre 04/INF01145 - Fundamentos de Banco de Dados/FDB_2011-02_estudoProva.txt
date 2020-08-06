@@ -1,0 +1,696 @@
+Cadeira: INF01145 - Fundamentos de Banco de Dados
+Professor: Carlos Alberto Heuser
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2011/02
+Moodle: FUNDBD
+
+------------------------------------------------------------------------------
+---- Estudo - Prova 1
+------------------------------------------------------------------------------
+2011-09-26:
+
+* SQL
+
+- qualquer comparação com vazio dá resultado UNKNOWN
+
+Obter o código e o nome de cada peça, seguida do código e nome de cada
+fornecedor que tenha embarcado mais que 300 unidades.
+
+SELECT Fornec.codFornec, Fornec.nomeFornec, Peca.codPeca, Peca.nomePeca
+FROM 
+	Peca
+		NATURAL LEFT JOIN
+	Embarq
+		NATURAL LEFT JOIN
+	Fornec
+WHERE
+	qteEmbarc > 300 OR
+	qteEmbarc IS NULL
+
+
+SELECT Fornec.codFornec, Fornec.nomeFornec, Peca.codPeca, Peca.nomePeca
+FROM 
+	Peca
+		NATURAL LEFT JOIN
+	Embarq
+		ON (qteEmbarc > 300 AND Peca.codPeca = Embarq.codPeca)
+		NATURAL LEFT JOIN
+	Fornec
+WHERE
+	qteEmbarc > 300 OR
+	qteEmbarc IS NULL
+
+
+Obter nome de cada departamento seguido do nome de cada uma de suas disciplinas
+com mais de 3 créditos do departamento.
+
+SELECT Depto.nomeDepto, Depto.nomeDisc
+FROM
+	Depto
+		OUTTER LEFT JOIN
+	Disciplina
+		ON (Depto.codDepto = Disciplina.codDepto AND
+			Disciplina.creditosDisc > 3)
+
+
+Obter cada disciplina obter o nome da disciplina seguido do nome do pré-requisito,
+bem como do nome do pré-requisito do pré-requisito e assim recursivamente
+
+SELECT PreReq.codDepto, PreReq.numDisc, PreReq.codDeptoPreReq, PreReq.numDiscPreReq
+WITH RECURSIVE
+	PreReqN AS (codDepto, numDisc, codDeptoPreReq, numDiscPreReq)
+
+	SELECT * FROM PreReq
+
+	UNION
+	
+	SELECT PreReq.codDepto, PreReq.numDisc, PreReqN.codDeptoPreReq, PreReqN.numDiscPreReq
+	FROM 
+		PreReq
+			JOIN //junção interna equi-join
+		PreReqN
+			ON (PreReq.codDeptoPreReq = PreReqN.codDepto AND
+				PreReq.numDiscPreReq = PreReqN.numDisc)
+	
+	SELECT Disciplina.nomeDisc, DiscPre.nomeDisc
+	FROM 
+		Disciplina 
+			NATURAL LEFT OUTTER JOIN //gera tabela com todas as disciplinas, mesmo 
+									 //aquelas que não tem pré-requisito
+		PreReqN
+			LEFT JOIN
+		Disciplina AS DiscPre //renomeação
+			ON (DiscPre.codDepto = PreReqN.codDepto AND
+				DiscPre.numDisc = PreReqN.numDisc)
+
+
+
+
+
+------------------------------------------------------------------------------
+2011-09-08:
+
+* Tipos de Abordagem:
+	-> Abordagem hierárquica:
+		- uma floresta composta de árvores de registros
+		- tipos básicos de construção:
+			- registro
+			- ligação pai-filho entre registros (cada registro filho pode ter apenas UM 
+			registro pai, caracterizando uma árvore e não um grafo)
+
+	-> Abordagem em rede:
+		- banco de dados é um grafo
+		- tipos básicos de construção:
+			- registro (nós)
+			- ligações pai-filho entre registros (arcos)
+		- um registro pode ter diferentes ligações pai-filho
+
+	-> Abordagem relacional: 
+		- SQL
+		- composto de relações ou tabelas
+		- relação vem da matemática, baseada em conjuntos
+		- Terminologia para as representações dos dados
+			- Terminologia acadêmica: relação, tupla, nome de atributo
+			- Terminologia profisisonal: tabela, linha (row), nome de campo
+		- Não há repetição de linhas
+		- chave primária: representa unicidade, não pode ter duas linhas com essa chave
+		- chave alternativa: representa unicidade. São chaves que não são primárias, mas
+		que também são únicas para cada linha nas tabelas
+		- chave estrangeira: combinação de colunas de diferentes tabelas. São chaves que 
+		aparecem na chave primária de outras tabelas. Pode-se ter uma chave estrangeira 
+		dentro de uma mesma tabela (ver exemplos de 'chave estrangeira' nos slides)
+		- Resultado de uma consulta é sempre uma tabela. Tabelas não possuem duplicatas.
+
+
+* Álgebra Relacional:
+
+	-> Tipos de operações:
+		- (sigma): seleção
+		* Descrição: o resultado da seleção tem colunas com os mesmos nomes e domínios da
+		tabela de entrada, ou seja, uma seleção pega algumas linhas de uma tabela, mas
+		SEMPRE pega todas as colunas.
+		* Sintaxe: ((sigma) (critério de seleção) (tabela))
+		* Ex.: ((sigma) codPeca = 'P1' Fornec)
+		Retorna as linhas da tabela 'Fornec' nas quais a chave 'codPeca' é igual a 'P1'
+		
+		- (pi): projeção
+		* Descrição: recebe uma tabela e tem como resultado uma outra tabela que contém
+		apenas as colunas selecionadas.
+		* Sintaxe: ((pi) (lista de colunas) (tabela))
+		* Ex.: ((pi) codPeca,nomePeca Fornec)
+		Retorna as colunas das chaves 'codPeca' e 'nomePeca' para todas as linhas da tabela
+		'Fornec'
+		
+		- (rô): renomeação
+		* Descrição: dada uma tabela, a ela é atribuído outro nome, para não gerar ambi-
+		guidade ao manipularmos a mesma tabela em dois momentos da consulta
+		* Sintaxe: ((rô) (novo nome da tabela) (tabela))
+		* Ex.: ((rô) Fornec2 Fornec)
+		
+		- união, disjunção, diferença
+		* Descrição: opera com duas tabelas que necessariamente precisam ter a mesma
+		quantidade de colunas e a i-ésima coluna da 'tabela1' deve ser igual a i-ésima
+		coluna da 'tabela2'
+		* Sintaxe:	
+			(tabela1) (união) (tabela2)
+			(tabela1) (disjunção) (tabela2)
+			(tabela1) - (tabela2)
+		
+		- x: produto cartesiano
+		* Descrição: opera com duas tabelas. Produz como resultado uma tabela onde as
+		linhas da 'tabela1' estão combinadas com as linhas da 'tabela2' e as colunas
+		das duas tabeas ficam concatenadas, ou seja, a quantidade de linhas da tabela 
+		resultante será uma multiplicação da quantidade de linhas da 'tabela1' com a
+		quantidade de linhas da 'tabela2' e a quantidade de colunas será a soma a quan-
+		tidade das colunas das duas tabelas.
+		* Sintase: (tabela1 x tabela2)
+
+------------------------------------------------------------------------------
+2011-09-15:
+
+* Álgebra Relacional:
+
+	-> Tipos de operações:
+		- (theta-junção)
+		* Descrição: semelhante ao produto cartesiano, porém é possível estabelecer 
+		critérios de seleção nas tabelas antes de executar a junção. Nesta junção
+		as colunas comparadas no critérios das duas tabelas se mantém na junção final
+		* Sintaxe: (tabela1 (theta-junção) <critério> tabela2)
+		* Exemplo: Embarq (theta-junção) (Embarq.numPecas > Fornec.numPecas) Fornec
+		
+		- (equi-junção)
+		* Descrição: ídem à (theta-junção), porém compara apenas se duas colunas das
+		tabelas são iguais, nos critérios, 
+		* Sintaxe: (tabela1 (equi-junção) <lista1>,<lista2> tabela2)
+		* Exemplo: Embarq (equi-junção) (codPeca,numPeca),(codPeca,numPeca) Fornec
+		Nesse caso apenas as colunas codPeca e numPeca de Embarq vão aparecer (que são
+		iguais as colunas codPeca e numPeca de Fornec).
+		
+		- (junção-natural)
+		* Descrição: produto cartesiano onde apenas as linhas das tabelas que tem colunas
+		com valores iguais são unidas entre si. Semelhante a equi-junção, porém a junção
+		é feita para todas as colunas. Nas equi-junção se escolhe quais colunas serão 
+		comparadas, na junção natural todas (as colunas comuns) são comparadas.
+		* Sintaxe: (tabela1 (junção-natural) tabela2)
+		* Exemplo: Embarq (junção-natural) Fornec
+
+		- (divisão)
+		* Descrição: como em uma divisão normal o divisor tabela2 precisa estar contida
+		na tabela1.
+		* Sintaxe: (tabela1 div tabela2)
+		
+		- (fi): ponto fixo
+
+------------------------------------------------------------------------------
+2011-09-20:
+
+* Otimização de Consultas:
+	A otimização de uma consulta se constitui de três etapas:
+	
+	(a) a expressão de álgebra relacional equivalente.
+		Trivial, apenas pegamos a consulta em SQL e transformamos para álgebra 
+	relacional.
+	
+	(b) a árvore de consulta resultante desta expressão de álgebra relacional.
+		Também trivial, pegamos a consulta expressa em álgebra relacional e montamos
+	em forma de árvore
+		
+	(c) cada uma das árvores resultantes dos passos da otimização algébrica.	
+		(c.1) Empurrar os 'selects' (sigma) para baixo.
+		Pegamos os selects e unimos com a tabela na qual o select é feito.
+		
+		(c.2) Fazer junções ao invés de produtos cartesianos.
+		Trocamos um produto cartesiano e uma seleção desse produto cartesiano por
+		uma junção theta.
+		
+		(c.3) Selecionar apenas as colunas necessárias. Fazemos projeções (pi).
+		As projeções são executadas o mais cedo possível.
+
+
+------------------------------------------------------------------------------
+---- Exercícios
+------------------------------------------------------------------------------
+2011-09-08:
+
+* 04 - Exercícios de álgebra relacional - 1ª parte.pdf
+
+1) Obter os códigos dos diferentes departamentos que tem turmas no ano-semestre
+2002/1.
+
+(pi codDepto
+	(sigma anoSem = '2002/1' turma)
+)
+
+2) Obter os códigos dos professores que são do departamento de código ’INF01’
+e que ministraram ao menos uma turma em 2002/1.
+
+(pi	codProf
+	(sigma profTurma.anoSem = '2002/1' AND
+		   professor.codDepto = 'INF01' AND
+		   profTurma.codProf = professor.codProf
+		(profTurma x professor)
+	)
+)
+
+3) Obter os códigos dos professores com título denominado ’Doutor’ que não
+ministraram aulas em 2002/1.
+
+(pi codProf
+	(sigma titulacao.nomeTit = 'Doutor' AND
+			profTurma.codTit = professor.codTit
+		(professor x titulacao)
+	)
+)
+- 
+(pi codProf
+	(sigma anoSem = '2002/1' profTurma)	
+)	
+
+4) Obter os nomes das disciplinas que não têm pré-requisito.
+
+(pi nomeDisc Disciplina)
+- 
+(pi nomeDisc
+	(sigma
+		PreReq.codDeptoPreReq = Dsiciplina.codDepto AND
+		PreReq.numDiscPreReq = Dsiciplina.numDisc
+		Disciplina x PreReq	
+	)
+)
+
+
+
+5) Obter os horários de aula (dia da semana,hora inicial e número de horas
+ministradas) do professor "João da Silva".
+
+(pi Horario.DiaSem,Horario.HoraInic,Horario.NumHoras
+	(sigma  Professor.NomeProf = "Joao da Silva"
+			AND Professor.CodProf = ProfTurma.CodProf
+			AND ProfTurma.AnoSem = Horario.AnoSem
+			AND ProfTurma.CodDepto = Horario.CodDepto
+			AND ProfTurma.NumDisc = Horario.NumDisc
+			AND ProfTurma.SiglaTur = Horario.SiglaTur
+		(Professor x ProfTurma x Horario)
+	)
+)
+
+6) Obter os nomes dos departamentos que têm turmas que, em 2002/1, têm
+aulas na sala 101 do prédio denominado ’Informática - Salas de Aula’.
+
+(pi nomeDepto
+	(sigma predio.codPred = sala.codPred AND
+		   predio.nomePred = 'Informática - Salas de Aula' AND
+		   sala.numSala = '101' AND
+		   turma.anoSem = '2002/1' AND
+		   turma.codDepto = depto.codDepto
+		(sala x predio x turma x depto)
+	)
+)
+
+7) Obter os identificadores das salas (código do prédio e número da sala) que,
+em 2002/1:
+• nas segundas-feiras (dia da semana = 2), tiveram ao menos uma turma
+do departamento ’Informática’, e
+• nas terças-feiras (dia da semana = 3), tiveram ao menos uma turma
+ministrada pelo professor denominado ’Antonio Santos’.
+
+	
+(pi codPred, numSala
+	(sigma 
+		Depto.codDepto = Horario.codDepto AND
+		Depto.codDepto = Sala.codDepto AND
+		Horario.diaSem = '2' AND
+		Horario.anoSem = '2002/1'
+		Horario x (sigma nomeDepto = 'Informática' Depto)
+	)
+)
+	
+(união)
+
+(pi codPred, numSala
+	(sigma 
+		Professor.codProf = ProfTurma.codProf AND
+		ProfTurma.numDisc = Horario.numDisc AND
+		Horario.diaSem = 3 AND
+		ProfTurma.anoSem = Horario.anoSem AND 
+		ProfTurma.codDepto = Horario.codDepto AND 
+		ProfTurma.siglaTur = Horario.siglaTur AND 
+		Horario.anoSem = '2002/1' 
+		Horario x (sigma nomeProf = 'Antonio Santos' Professor) x ProfTurma
+	)
+)
+
+8) Obter o nome do prédio e o número da sala em que o professor denominado
+"Carlos" está no seguinte horário: (Terças-feiras, 9 horas (aula pode começar
+antes e terminar depois)) no semestre atual (2001/1).
+
+(pi nomePred, numSala
+	(sigma 
+		Professor.nomeProf = "Carlos" AND
+		Professor.codProf = ProfTurma.codProf AND
+		ProfTurma.codDepto = Horario.codDepto AND 
+		ProfTurma.siglaTur = Horario.siglaTur AND 
+		ProfTurma.numDisc = Horario.numDisc AND 
+		ProfTurma.anoSem = Horario.anoSem AND
+		Horario.anoSem = '2001/1' AND		
+		Horario.diaSem = 3 AND
+		Horario.horaInicio = 9
+		Predio.codPred = Horario.codPred
+		Professor x ProfTurma x Predio x Horario
+	)
+)
+
+------------------------------------------------------------------------------
+2011-09-16:
+
+* Junções:
+
+1) Obter o nome de cada fornecedor, seguido do código de cada peça embarcada 
+pelo fornecedor.
+
+(pi nomeFornec, codPeca
+	(Fornec (natural-join) Embarq)
+)
+
+(pi nomeFornec, codPeca
+	(Fornec (theta-join) (Fornec.codFornec = Embarq.codFornec) Embarq)
+)
+
+(pi nomeFornec, codPeca
+	(Fornec (equi-join) Fornec.codFornec,Embarq.codFornec Embarq)
+)
+
+
+2) Obter o nome de cada fornecedor, seguido do código de cada
+peça embarcada pelo fornecedor. Caso o fornecedor, não
+embarque peças, seu nome deve aparecer seguido de vazio.
+
+
+(pi nomeFornec, codPeca	
+	(Fornec (natural-join) Embarq)
+)
+
+(união)
+
+(
+	(pi nomeFornec, NULL Fornec)
+	-
+	(pi nomeFornec, NULL (Fornec (natural-join) Enbarq))
+)
+
+ou
+
+(pi nomeFornec, codPeca
+	(Fornec (natural-left-join) Embarq)
+)
+
+
+------------------------------------------------------------------------------
+2011-09-18:
+
+* 04 - Exercícios de álgebra relacional - 2ª parte.pdf
+
+2) Obter o nome dos professores que possuem horários conflitantes (possuem
+turmas que tenham a mesma hora inicial, no mesmo dia da semana e no
+mesmo semestre).
+
+(pi Professor.NomeProf
+	(sigma Horario.AnoSem = Horario2.AnoSem
+		AND Horario.DiaSem = Horario2.DiaSem
+		AND Horario.HoraInic = Horario2.HoraInic
+		
+		AND (Horario.CodDepto <> Horario2.CodDepto 
+			 OR Horario.NumDisc <> Horario2.NumDisc 
+			 OR Horario.SiglaTur <> Horario2.SiglaTur)
+		
+		AND Horario.CodDepto = ProfTurma.CodDepto
+		AND Horario.NumDisc = ProfTurma.NumDisc
+		AND Horario.AnoSem = ProfTurma.AnoSem
+		AND Horario.SiglaTur = ProfTurma.SiglaTur
+
+		AND Horario2.CodDepto = ProfTurma2.CodDepto
+		AND Horario2.NumDisc = ProfTurma2.NumDisc
+		AND Horario2.AnoSem = ProfTurma2.AnoSem
+		AND Horario2.SiglaTur = ProfTurma2.SiglaTur
+	
+		AND ProfTurma.CodProf = ProfTurma2.CodProf
+		AND Professor.CodProf = ProfTurma.CodProf
+	
+		Horario x ProfTurma x Professor x 
+		(ro Horario2 Horario) x (ro ProfTurma ProfTurma2)
+	)
+)
+
+
+
+5) Obter uma tabela que contém três colunas. Na primeira coluna aparece o
+nome de cada disciplina que possui pré-requisito, na segunda coluna apa-
+rece o nome de cada um de seus pré-requisitos e a terceira contém o nível
+de pré-requisito. Nível 1 significa que trata-se de um pré-requisito imedi-
+ato da disciplina, nível 2 significa que trata-se de um pré-requisito de um
+pré-requisito da disciplina, e assim por diante. Limitar a consulta para três
+níveis.
+
+(pi Disc.nomeDisc, DiscPreReq.nomeDisc, 1
+	(sigma PreReq.codDepto = Disc.codDepto
+		AND PreReq.numDisc = Disc.numDisc
+		AND PreReq.codDeptoPreReq = DiscPreReq.codDepto
+		AND PreReq.numDiscPreReq = DiscPreReq.numDisc
+		
+		(ro Disc Disciplina) x (ro DiscPreReq Disciplina) x PreReq
+	)
+)
+
+(união)
+
+(pi Disc.nomeDisc, DiscPreReq.nomeDisc, 2
+	(sigma PreReq.codDepto = Disc.codDepto
+		AND PreReq.numDisc = Disc.numDisc
+		
+		AND PreReq.codDeptoPreReq = PreReq2.codDepto
+		AND PreReq.numDiscPreReq = PreReq2.numDisc
+		
+		AND PreReq2.codDeptoPreReq = DiscPreReq.codDepto
+		AND PreReq2.numDiscPreReq = DiscPreReq.numDisc
+		
+		(ro Disc Disciplina) x 
+		(ro DiscPreReq Disciplina) x 
+		PreReq x 
+		(ro PreReq2 PreReq)
+	)
+)
+
+(união)
+
+(pi Disc.nomeDisc, DiscPreReq.nomeDisc, 3
+	(sigma PreReq.codDepto = Disc.codDepto
+		AND PreReq.numDisc = Disc.numDisc
+		
+		AND PreReq.codDeptoPreReq = PreReq2.codDepto
+		AND PreReq.numDiscPreReq = PreReq2.numDisc
+		
+		AND PreReq2.codDeptoPreReq = PreReq3.codDepto
+		AND PreReq2.numDiscPreReq = PreReq3.numDisc
+		
+		AND PreReq3.codDeptoPreReq = DiscPreReq.codDepto
+		AND PreReq3.numDiscPreReq = DiscPreReq.numDisc
+		
+		(ro Disc Disciplina) x 
+		(ro DiscPreReq Disciplina) x 
+		PreReq x 
+		(ro PreReq2 PreReq) x
+		(ro PreReq3 PreReq)
+	)
+)
+
+------------------------------------------------------------------------------
+2011-09-19:
+
+* Prova 2010/02 
+
+1) Deseja-se projetar uma base de dados para uma empresa de telefonia móvel. Nesta
+base de dados estão armazenadas informações sobre os planos que os clientes adquiriram.
+Para cada cliente, é necessário conhecer seu CPF, seu nome e os planos que ele
+adquiriu.
+Um plano recebe um número identificador e uma denominação. Para cada plano,
+a empresa deseja conhecer o seu preço, a data em que começou e a data em que
+terminou de ser vendido, juntamente com o número de minutos de fala adquiridos
+através do plano. Opcionalmente, um plano pode estar associado a um determinado
+tipo de aparelho que é oferecido aos adquirentes daquele plano. Obviamente, um
+plano pode ser adquirido por um grande número de clientes.
+
+Cada tipo de aparelho recebe um número interno de identificação e é necessário
+conhecer sua marca e seu modelo. Um mesmo tipo de aparelho pode constar de
+diversos planos.
+
+Para cada plano adquirido por um cliente, a base de dados deve armazenar a data
+de aquisição e o número de telefone habilitado naquele plano.
+Projete uma base de dados relacional para armazenar os dados acima sem redundância
+de dados. Enumere as tabelas, suas colunas, as chaves primárias e a as chaves
+estrangeiras. Não devem ser criadas colunas artificiais, além das apresentadas no
+enunciado. Apresente o esquema na notação textual ou diagramática vistas em aula.
+
+
+Tabelas:
+	- Cliente
+		pk CPF
+		nome
+	- Plano
+		pk codPlano
+		fk1 codAparelho => aparelho que é concedido a quem assina este plano
+		nomePlano
+		preco
+		dataVendaIni
+		dataVendaFim
+		numMinutos => número de minutos adquiridos com esse plano
+	- Aparelho
+		pk codAparelho => cada aparelho 
+		modelo
+		marca
+	- Assinaturas
+		pk,fk1 CPF
+		pk,fk2 codPlano
+		dataAquisicao
+		numTelefone
+		
+2) Considere a seguinte base de dados, usada por uma oficina de manutenção de automóveis.
+
+/* tabela de clientes cadastrados na oficina – cpf_conjuge é o código do cônjuge
+do marido, caso este esteja na base de dados */
+
+CLIENTE (cpf, nome_cli, cpf_conjuge)
+
+/* tabela com dados dos automóveis dos clientes da oficina */
+
+AUTOMOVEL (placa, no_chassis, modelo, cpf);
+(cpf) references CLIENTE
+
+/* tabela com as revisões periódicas programadas e feitas – para cada automóvel, a
+oficina cadastra todas revisões programadas – Km e data_programada são a quilometragem e a 
+data em que deve ser feita a revisão – data_ultim_telef serve para informar quando o pessoal 
+da oficina ligou para o cliente lembrando da provável necessidade de fazer a revisão – caso o cliente não
+tenha sido chamado, este campo contém a cadeia vazia (”) data_executada e Km_executada informa a data e 
+a quilometragem de uma revisão que já foi executada – caso a revisão não tenha sido chamado, estes campos
+contém a cadeia vazia (”) */
+
+REVISAO (placa, Km, data_programada, data_ultim_telef,
+data_executada, Km_executada)
+(placa) references AUTOMOVEL
+
+/* tabela com as peças usadas em cada revisão */
+
+PECA_REVISAO (placa, Km, cod_peca, quantidade)
+(placa, Km) references REVISAO
+(cod_peca) references PECA
+
+/* tabela com as descrições das peças */
+
+PECA (cod_peca, descricao_peca)
+
+Sobre esta base de dados, resolver as consultas que seguem usando álgebra relacional.
+Não usar mais tabelas que o estritamente necessário.
+
+2.a) Obter o código e a descrição de cada peça que foi utilizada em uma revisão do
+automóvel de número de chassis 125678.
+
+(pi Peca.cod_peca, Peca.descricao_peca
+	(sigma Automovel.no_chassis = '125678'
+		AND Automovel.placa = Peca_revisao.placa
+		AND Peca_revisao.cod_peca = Peca.cod_peca
+		Automovel x Peca_Revisao x Peca
+	)
+)
+
+2.b) Resolver usando junções. Se possível, usar junção natural, senão, usar
+equi-junção e em último caso usar theta-junção.
+
+theta: =
+equi: (),()
+natural: comparação implícita e não repete colunas
+
+(pi Peca.cod_peca, Peca.descricao_peca
+	(sigma Automovel.no_chassis = '125678'
+		(Peca (natural-join)
+			(Automovel (natural-join) Peca_Revisao) 
+		)
+	)
+)
+
+2.c) Para cada cliente que possui cônjuge cadastrado na base de dados, obter o
+nome do cliente, seguido do nome de seu cônjuge.
+
+(pi Cliente.nome_cli, ClienteConj.nome_cli
+	(sigma Cliente.cpf_conjuge = ClienteConj.cpf
+		Cliente x (ro ClienteConj Cliente)
+	)
+)
+
+2.d)Obter uma única tabela contendo as seguintes colunas:
+i. CPF e nome de cada cliente;
+ii. placa de cada automóvel registrado em seu nome;
+iii. quilometragem em que foi executada cada revisão neste automóvel (lembrar
+que Km_executada é diferente da cadeia vazia (”), quando a revisão
+tiver sido executada).
+
+Caso o cliente não tenha automóveis, as duas últimas colunas devem estar
+vazias. Caso um automóvel não tenha sido revisado ainda, a última coluna
+deve constar como vazia.
+
+(pi Cliente.cpf, Cliente.nome_cli, Automovel.placa, Revisao.Km_executada
+	(Cliente (left-natural-join)		/* deixa a coluna Automovel.placa em branco (NULL)
+										caso o Cliente não tenha um carro */
+		(Automovel (left-natural-join)	/* deixa a coluna Revisao.Km_executada em branco
+										caso o automóvel não tenha uma revisão */
+			(sigma Km_executado <> "" Revisao)
+		)
+	)
+)
+
+2.e) Sabe-se que algumas peças, como filtro de ar, podem ter sido usadas em todas
+revisões já feitas. Obter o código e a descrição de cada peça usada em todas
+revisões que constam na base de dados.
+
+(pi Peca.cod_peca, Peca.descricao_peca
+	(Peca (natural-join) 
+		(Peca_revisao (div) (pi placa, km Revisao))
+	)
+)
+
+2.f) Obter o CPF e o nome de cada cliente que não possui automóveis cadastrados
+na base de dados.
+
+(pi Cliente.cpf, Cliente.nome_cli
+	Cliente
+	-
+	(pi Cliente.cpf, Cliente.nome_cli, Cliente.cpf_conjuge
+		(sigma Automovel.cpf = Cliente.cpf
+			Automovel x Cliente
+		)
+	)
+)
+
+
+------------------------------------------------------------------------------
+2011-09-19:
+
+* Exercícios em aula - cálculo relacional:
+
+1)  Obter os ano-semestre em que a disciplina denominada ‘Programação FORTRAN’ 
+teve ao menos uma turma
+
+{ r | existe t pertencente Turma (
+		r.ano_sem = t.ano_sem AND
+		existe d pertencente Disciplina (
+			d.cod_depto = t.cod_depto AND
+			d.num_disc = t.num_dics AND
+			d.nome_disc = 'Programação Fortran'
+		)
+	)
+}
+
+
+
+
+
+

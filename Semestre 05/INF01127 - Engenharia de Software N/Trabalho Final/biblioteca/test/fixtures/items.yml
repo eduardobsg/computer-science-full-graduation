@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nome: MyString
+  autor: MyText
+  assunto: MyString
+  itemTipo: 
+
+two:
+  nome: MyString
+  autor: MyText
+  assunto: MyString
+  itemTipo: 

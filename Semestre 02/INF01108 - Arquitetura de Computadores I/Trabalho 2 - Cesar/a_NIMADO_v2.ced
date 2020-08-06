@@ -1,0 +1,38 @@
+;* Versão 2: revisada e com controle de retardo na animação - 07/10/2004
+
+;* OBS: carregar no R5 o número de vezes que deseja repetir o 
+;* laço de retardo antes de cada movimentação da letra no visor
+
+inicio:
+     mov #65500,R0  ; aponta R0 para primeiro LED do visor
+     mov #97,(R0)   ; coloca "a" na primeira posição do visor
+
+repetir:
+
+     jsr r7,espera  ; espera enquanto decrementa o contador (R5)
+
+     mov #32,(R0)   ; apaga o "a" da posição atual
+
+     cmp R0,#65535  ; se ainda não está na última posição do visor
+     bne continua   ; continua movendo o "a"
+
+     mov #65500,R0  ; aponta R0 para primeiro LED do visor
+     mov #97,(r0)   ; e coloca o "a" no início do visor
+
+     mov #32,65535  ; limpa último LED
+     br  repetir    ; vai esperar e voltar a mover o "a" no visor
+
+continua:
+     mov #97,1(r0)  ; coloca o "a" na posição seguinte no visor
+     inc R0         ; aponta R0 para posição onde está o "a"
+     br  repetir    ; vai esperar e voltar a mover o "a" no visor
+
+
+espera:
+     mov r5,r4
+repete:
+     beq voltar
+     dec r4
+     br repete
+voltar:
+     rts r7

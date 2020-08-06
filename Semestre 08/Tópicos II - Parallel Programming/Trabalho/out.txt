@@ -1,0 +1,150 @@
+Parallel Program
+----------------
+Polynomial: 0.625*x^4 - 4*x^3 + 2*x + 1
+Interval: [0,8]
+Subintervals: 10^7
+
+2 processes
+Integer: 72.0000000000, Time: 2.866702 s
+Integer: 72.0000000000, Time: 3.062620 s
+Integer: 72.0000000000, Time: 2.963152 s
+Integer: 72.0000000000, Time: 2.743911 s
+Integer: 72.0000000000, Time: 2.777966 s
+3 processes
+Integer: 72.0000000000, Time: 2.711442 s
+Integer: 72.0000000000, Time: 2.741593 s
+Integer: 72.0000000000, Time: 2.726190 s
+Integer: 72.0000000000, Time: 2.765909 s
+Integer: 72.0000000000, Time: 2.673066 s
+4 processes
+Integer: 72.0000000000, Time: 1.896810 s
+Integer: 72.0000000000, Time: 1.948490 s
+Integer: 72.0000000000, Time: 2.063702 s
+Integer: 72.0000000000, Time: 2.065340 s
+Integer: 72.0000000000, Time: 1.893695 s
+5 processes
+Integer: 72.0000000000, Time: 2.038882 s
+Integer: 72.0000000000, Time: 2.047929 s
+Integer: 72.0000000000, Time: 2.038460 s
+Integer: 72.0000000000, Time: 2.092265 s
+Integer: 72.0000000000, Time: 2.038535 s
+6 processes
+Integer: 72.0000000000, Time: 1.912429 s
+Integer: 72.0000000000, Time: 1.942309 s
+Integer: 72.0000000000, Time: 2.215733 s
+Integer: 72.0000000000, Time: 2.014297 s
+Integer: 72.0000000000, Time: 2.073446 s
+7 processes
+Integer: 72.0000000000, Time: 2.070963 s
+Integer: 72.0000000000, Time: 2.786714 s
+Integer: 72.0000000000, Time: 1.982208 s
+Integer: 72.0000000000, Time: 1.948162 s
+Integer: 72.0000000000, Time: 1.851533 s
+8 processes
+Integer: 72.0000000000, Time: 2.613572 s
+Integer: 72.0000000000, Time: 1.975322 s
+Integer: 72.0000000000, Time: 1.768363 s
+Integer: 72.0000000000, Time: 1.867782 s
+Integer: 72.0000000000, Time: 1.726009 s
+9 processes
+Integer: 72.0000000000, Time: 2.240794 s
+Integer: 72.0000000000, Time: 1.824191 s
+Integer: 72.0000000000, Time: 1.881687 s
+Integer: 72.0000000000, Time: 1.737835 s
+Integer: 72.0000000000, Time: 1.968591 s
+10 processes
+Integer: 72.0000000000, Time: 1.809765 s
+Integer: 72.0000000000, Time: 1.777438 s
+Integer: 72.0000000000, Time: 1.772202 s
+Integer: 72.0000000000, Time: 1.673465 s
+Integer: 72.0000000000, Time: 1.678153 s
+11 processes
+Integer: 72.0000000000, Time: 1.852111 s
+Integer: 72.0000000000, Time: 1.761393 s
+Integer: 72.0000000000, Time: 1.705477 s
+Integer: 72.0000000000, Time: 1.726485 s
+Integer: 72.0000000000, Time: 1.691719 s
+12 processes
+Integer: 72.0000000000, Time: 1.625613 s
+Integer: 72.0000000000, Time: 1.640382 s
+Integer: 72.0000000000, Time: 1.585444 s
+Integer: 72.0000000000, Time: 1.643182 s
+Integer: 72.0000000000, Time: 1.679947 s
+13 processes
+Integer: 72.0000000000, Time: 1.745599 s
+Integer: 72.0000000000, Time: 1.772617 s
+Integer: 72.0000000000, Time: 2.248790 s
+Integer: 72.0000000000, Time: 1.670119 s
+Integer: 72.0000000000, Time: 1.625429 s
+14 processes
+Integer: 72.0000000000, Time: 1.699403 s
+Integer: 72.0000000000, Time: 1.560860 s
+Integer: 72.0000000000, Time: 1.657338 s
+Integer: 72.0000000000, Time: 1.703240 s
+Integer: 72.0000000000, Time: 1.703371 s
+15 processes
+Integer: 72.0000000000, Time: 1.688889 s
+Integer: 72.0000000000, Time: 1.649766 s
+Integer: 72.0000000000, Time: 1.740153 s
+Integer: 72.0000000000, Time: 1.730068 s
+Integer: 72.0000000000, Time: 1.837196 s
+16 processes
+Integer: 72.0000000000, Time: 1.581904 s
+Integer: 72.0000000000, Time: 1.626647 s
+Integer: 72.0000000000, Time: 1.660955 s
+Integer: 72.0000000000, Time: 1.667037 s
+Integer: 72.0000000000, Time: 1.721011 s
+17 processes
+Integer: 72.0000000000, Time: 1.637301 s
+Integer: 72.0000000000, Time: 1.680762 s
+Integer: 72.0000000000, Time: 1.541050 s
+Integer: 72.0000000000, Time: 1.574038 s
+Integer: 72.0000000000, Time: 1.552732 s
+18 processes
+Integer: 72.0000000000, Time: 1.681318 s
+Integer: 72.0000000000, Time: 1.636216 s
+Integer: 72.0000000000, Time: 1.670372 s
+Integer: 72.0000000000, Time: 1.735958 s
+Integer: 72.0000000000, Time: 1.752471 s
+19 processes
+Integer: 72.0000000000, Time: 1.701748 s
+Integer: 72.0000000000, Time: 1.644209 s
+Integer: 72.0000000000, Time: 1.756862 s
+Integer: 72.0000000000, Time: 1.690909 s
+Integer: 72.0000000000, Time: 1.654734 s
+20 processes
+Integer: 72.0000000000, Time: 1.660494 s
+Integer: 72.0000000000, Time: 1.653254 s
+Integer: 72.0000000000, Time: 1.656096 s
+Integer: 72.0000000000, Time: 1.616421 s
+Integer: 72.0000000000, Time: 1.545320 s
+21 processes
+Integer: 72.0000000000, Time: 1.585154 s
+Integer: 72.0000000000, Time: 2.261259 s
+Integer: 72.0000000000, Time: 1.529942 s
+Integer: 72.0000000000, Time: 1.639121 s
+Integer: 72.0000000000, Time: 1.599878 s
+22 processes
+Integer: 72.0000000000, Time: 1.486036 s
+Integer: 72.0000000000, Time: 1.586041 s
+Integer: 72.0000000000, Time: 1.546473 s
+Integer: 72.0000000000, Time: 1.594587 s
+Integer: 72.0000000000, Time: 1.617998 s
+23 processes
+Integer: 72.0000000000, Time: 1.544382 s
+Integer: 72.0000000000, Time: 1.657989 s
+Integer: 72.0000000000, Time: 1.615842 s
+Integer: 72.0000000000, Time: 2.405842 s
+Integer: 72.0000000000, Time: 1.636088 s
+24 processes
+Integer: 72.0000000000, Time: 1.633330 s
+Integer: 72.0000000000, Time: 1.615142 s
+Integer: 72.0000000000, Time: 2.691815 s
+Integer: 72.0000000000, Time: 1.586483 s
+Integer: 72.0000000000, Time: 1.609437 s
+25 processes
+Integer: 72.0000000000, Time: 1.592989 s
+Integer: 72.0000000000, Time: 1.560551 s
+Integer: 72.0000000000, Time: 1.607136 s
+Integer: 72.0000000000, Time: 1.573224 s
+Integer: 72.0000000000, Time: 1.689992 s

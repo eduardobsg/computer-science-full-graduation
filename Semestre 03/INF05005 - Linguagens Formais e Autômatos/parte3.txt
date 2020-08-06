@@ -1,0 +1,96 @@
+Parte 3: ER -> AFNe
+
+Exemplos de entrada: 
+
+1) aa
+2) (a+b)
+3) (a+b)* -> x*
+4) (a+b+c)(acd+ba)
+
+1) Criar um estado inicial
+2) Identificar os elementos da expressão regular
+	2.1) Tipos de espressões regulares atômicas
+		2.1.1) a: trivial
+		2.1.2) a*: trivial
+		2.1.3) a+b+.. : ver quantidade de "+" e criar a quantidade encontrada + 1 de transições vazias
+
+		
+	2.2) Parsear entrada
+3) Chamar a função que corresponde ao elemento encontrado 
+4) Imprimir as transições (já existe)
+5) Gerar arquivo de saída (já existe)
+
+
+Exemplo:
+a(a+b)
+alfabeto = {a,b}
+
+1) Lê o primeiro "a". Como ele é trivial cria:
+q0 - q1 -
+q1 - - -
+ini1 = q0
+fim1 = q1
+
+2) Encontramos parênteses. Primeiro tratamos os elementos atômicos do OU, ou seja, as expressões regulares "a" e "b"
+q2 - a -
+q3 - - - 
+q4 - b -
+q5 - - -
+ini2 = {q2,q4}
+fim2 = {q3,q5}
+
+3) Continuamos a tratar o que está dentro dos parênteses, criando novos estados para fazer o OU
+q6 - - -
+q7 - - - 
+
+Os estados estão criados, agora precisamos associá-los aos estados q2,q3,q4,q5:
+
+q6 q2,q4 - - 	//o estado q6 faz movimentos vazios para q2 e q4
+q2 - a -		//q2 mantem-se igual 
+q4 - b -		//q4 mantem-se igual 
+ini2 = q6		//atualizamos ini2, pois agora q6 é o estado inicial do bloco OU, e não mais q2 e q4
+
+q3 q7 - - 		//o estado q7 agora é o final, logo q3 tem transição vazia para q7
+q5 q7 - -		//o estado q7 agora é o final, logo q5 tem transição vazia para q7
+q7 - - - 		
+fim2 = q7		//atualizando fim2, pois agora q7 é o estado final do bloco OU, e não mais q3 e q5
+
+Por fim temos:
+
+q1 - - -
+q6 q2,q4 - -
+ini1 = q0
+fim1 = q1
+ini2 = q6  	//agora devemos fazer uma transição vazia de q1 para q6, para ligar o "a" com o bloco OU
+fim2 = q7
+
+Fazemos então:
+
+q1 q6 - -
+q6 q2,q4 - -
+
+ini1 = q0
+fim1 = q7	//fim1 = fim2
+ini2 = NULL //ini2 e fim2 estão inicializados para a próxima expressão regular
+fim2 = NULL
+
+4) Resultado final:
+ER: a(a+b)
+
+q0 - q1 -	//pertence ao bloco da expressão regular "a"
+q1 q6 - -	//pertence ao bloco da expressão regular "a"
+
+q2 - a -	//pertence ao bloco da expressão regular (a+b), da parte do "a"
+q3 q7 - -	//pertence ao bloco da expressão regular (a+b), da parte do "a"
+q4 - b -	//pertence ao bloco da expressão regular (a+b), da parte do "b"
+q5 q7 - -	//pertence ao bloco da expressão regular (a+b), da parte do "b"
+q6 q2,q4 - -//início do bloco OU
+q7 - - - 	//fim do bloco OU
+
+ini1 = q0
+fim1 = q7	
+ini2 = NULL 
+fim2 = NULL
+
+
+

@@ -1,0 +1,941 @@
+Cadeira: INF01145 - Fundamentos de Banco de Dados
+Professor: Carlos Alberto Heuser
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2011/02
+Moodle: FUNDBD
+
+pgadmin3
+nome: postgresql
+host: localhost
+username: postgresql
+senha: JOAOLUIZGG
+
+------------------------------------------------------------------------------
+---- Colegas:
+------------------------------------------------------------------------------
+- Suyá
+- Francis
+- Gabriel Moreira
+- Germano
+- 27
+- Rafael Gonzales
+
+------------------------------------------------------------------------------
+---- Frase:
+------------------------------------------------------------------------------
+"isso é igual a chutar cachorro morto" (mencionando algo que não tem mais o 
+que fazer)
+
+"droga!"
+
+"forget it!"
+
+
+------------------------------------------------------------------------------
+---- Tarefas:
+------------------------------------------------------------------------------
+- Exercícios 1 e 2 sobre abordagem hierárquica e relacional (Done)
+- Resumo sobre abordagem hierárquica e relacional (Done)
+
+
+------------------------------------------------------------------------------
+---- Notas de Aula
+------------------------------------------------------------------------------
+2011-10-10:
+
+Mostra a quantidade de fornecedores de São Paulo que tem embarques
+
+SELECT COUNT (DISCTINCT CodFornec)
+FROM Embarq 
+		NATURAL JOIN
+	 Fornec
+WHERE CidadeFornec = 'São Paulo'	
+
+ou
+
+SELECT COUNT (*)
+FROM Fornec
+WHERE CidadeFornec = 'São Paulo'
+	AND CodFornec IN
+		(SELECT CodFornec FROM Embarq)
+
+
+Obter os nomes dos fornecedores com o maior status
+
+SELECT NomeFornec
+FROM Fornec
+WHERE StatusFornec = 
+	(SELECT MAX(StatusFornec) FROM Fornec)
+
+'Group by'
+	Organiza uma tabela por grupos, dado um critério.
+
+'Having'
+	Filtra quais os grupos serão selecionados
+
+
+
+SELECT codFornec, MIN(QtdeEmbarc)
+FROM Embarq
+GROUP BY codFornec
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------
+2011-09-28:
+
+Obter os nomes dos fornecedores que se encontram em uma cidade que tem peça de 
+peso > 10 e não embarcaram uma peça de cor vermelha.
+
+SELECT nomeFornec 
+FROM Fornec
+WHERE cidadeFornec IN
+	(SELECT cidadePeca
+	FROM Peca
+	WHERE pesoPeca > 10)
+AND codFernec NOT IN
+	(SELECT codFornec 
+	FROM Embarq
+	WHERE codPeca IN
+		(SELECT codPeca 
+		FROM Peca
+		WHERE codPeca = 'Vermelho')	
+	)
+
+ou
+
+SELECT nomeFornec 
+FROM Fornec
+WHERE EXISTS
+	(SELECT *
+	FROM Peca
+	WHERE pesoPeca > 10 AND cidadePeca = cidadeFornec)
+AND codFernec NOT EXISTS
+	(SELECT *
+	FROM Embarq
+	WHERE codFornec = Fornec.codFornec AND EXISTS
+		(SELECT *
+		FROM Peca
+		WHERE codPeca = 'Vermelho' AND codPeca = Embarq.codPeca)	
+	)
+
+
+
+
+SELECT anoSem
+FROM Turma
+WHERE (codDepto, numDisc) IN
+	(SELECT (codDepto, numDisc)
+	FROM Disciplina
+	WHERE creditosDisc = 8)
+
+
+Obter código de fornecedor tal que não exista peça vermelha para a qual não exista 
+um embarque pelo fornecedor em questão	
+
+SELECT codFornec
+FROM Fornec
+WHERE NOT EXISTS
+	(SELECT * 
+	FROM Peca
+	WHERE codPeca = 'Vermelho' 
+	AND NOT EXISTS
+		(SELECT * 
+		FROM Embarq
+		WHERE codPeca = Peca.codPeca AND codFornec = Fornec.codFornec)	
+	)
+
+
+------------------------------------------------------------------------------
+2011-09-19:
+
+* Exercícios em aula - cálculo relacional:
+
+1)  Obter os ano-semestre em que a disciplina denominada ‘Programação FORTRAN’ 
+teve ao menos uma turma
+
+{ r | existe t pertencente Turma (
+		r.ano_sem = t.ano_sem AND
+		existe d pertencente Disciplina (
+			d.cod_depto = t.cod_depto AND
+			d.num_disc = t.num_dics AND
+			d.nome_disc = 'Programação Fortran'
+		)
+	)
+}
+
+2)  Obter os nomes de professores que não têm título denominado ‘Doutor'
+
+{ r | existe p pertencente Professor (
+		r.nomeProf = p.nomeProf AND
+		¬ existe t pertencente Titulacao (
+			t.nomeTit = 'Doutor' AND
+			t.codTit = p.codTit
+		)
+	)
+}
+
+3) Obter os códigos dos professores doutores que não deram aulas em 2002/2
+
+{ r | existe p pertencente Professor (
+		r.codProf = p.codProf AND
+		existe t pertencente Titulacao (
+			t.nomeTit = 'Doutor' AND
+			t.codTit = p.codTit	AND 
+			¬ existe pt pertencente ProfTurma (
+				pf.codProf = p.codProf AND
+				pf.anoSem = '2002/2'				
+			) 
+		)
+	)
+}
+
+4) O ano/semestre em que todos os professor da 'informática' deram aula
+   O ano/semestre tal que não exista nenhum professor da 'informática' que não tenha
+dado aulas naquele ano/semestre
+
+{ r | ¬ existe p pertencente Professor (
+		existe d pertencente Depto (
+			p.codDepto = d.codDepto AND
+			d.nomeDepto = 'Informatica' AND
+			¬ existe pt pertencente ProfTurma (
+				p.codProf = pt.codProf AND
+				pt.anoSem = r.anoSem			
+			)
+		)
+	)
+}
+
+   O ano/semestre tal que para todo professor da 'Informatica' exista uma turma em 2002/2
+ministrada por este professor
+
+{ r | para todo p pertencente Professor (
+		se(
+			existe d pertencente Depto (
+				d.codDepto = p.codDepto	AND
+				d.nomeDepto = 'Informatica'	
+			)	
+		) 
+		=> 
+		então(
+			existe pt pertencente ProfTurma (
+				pt.codProf = p.codProf AND
+				pt.anoSem = r.anoSem			
+			)				
+		)
+	)
+}	
+
+(a => b) <=> (¬a OR b)
+(para todo x f(x)) <=> (¬ existe x ¬f(x))
+
+
+------------------------------------------------------------------------------
+2011-09-14:
+
+* Cálculo Relacional:
+
+- variáveis nunca estão livres
+
+
+Ex.: 
+{ f | f pertence Fornec AND 
+		existe e pertencente Embarq (
+			e.codFornec = f.codFornec	
+			)
+}
+
+Obter os nomes dos fornecedores com embarques:
+{ r | 
+	existe f pertencente Fornec (
+		f.nomeFornec = r.NomeFornec 	
+		AND
+	 	existe e pertencente Embarq (
+			e.codFornec = f.codFornec
+		)	
+	)
+
+}
+
+Exercício:
+Obter nomes dos fornecedores de peças de cor Vermelha
+{ r | 
+	existe f pertencente Fornec (
+		r.nomeFornec = f.nomeFornec AND
+		existe e pertencente Embarq (
+			e.codFornec = f.codFornec AND
+			existe p pertencente Peca (
+				e.codPeca = p.codPeca AND
+				p.corPeca = 'Vermelho'			
+			)
+		)	
+	)
+}
+
+ou
+
+{ r | 
+	existe f pertencente Fornec (
+		existe e pertencente Embarq (
+			existe p pertencente Peca (
+				r.nomeFornec = f.nomeFornec AND	
+				e.codFornec = f.codFornec AND
+				e.codPeca = p.codPeca AND
+				p.corPeca = 'Vermelho'
+			)
+		)
+	)
+}
+
+
+Obter os nomes dos fornecedores cuja cidade tem ao menos uma peça de cor Vermelha:
+{ r | 
+	existe f pertencente Fornec (
+		f.nomeFornec = r.nomeFornec AND
+		existe p pertencente Peca (
+			p.cidadeFornec = f.cidadeFornec AND
+			p.corPeca = 'Vermelho'	
+		)
+	)
+}
+
+Obter os nomes do empregados seguidos dos nomes de seus gerentes:
+{ r |
+	existe emp pertencente Emp (
+		emp.nomeEmp = r.nomeEmp AND
+		existe ger pertencente Emp (
+			ger.codEmp = emp.codEmpGer AND	
+			ger.nomeEmp = r.nomeGer
+		)	
+	)
+}
+=> as colunas serão o nome do empregado e o nome do gerente
+
+Quantificador Universal
+- não existe, logo precisamos da equivalência:
+	(quantificador universal) x f(x) <=> ¬ existe x tal que ¬ f(x)
+
+Obter os códigos dos fornecedores que possuem embarques para todas as peças de
+'Poa' ou de 'Rio'
+
+Obter os códigos de fornecedores tal que não exista nenhuma peça de 'Poa' ou 'Rio'
+que não tenha sido embarcada por este fornecedor.
+
+
+{ r |
+	existe e pertencente Fornec (
+		e.codFornec = r.codFornec AND
+		¬ existe p pertencente Peca (
+			p.cidadePeca = 'Poa' V
+			p.cidadePeca = 'Rio'		
+		) AND ¬ existe e pertencente Embarq (
+			e1.codPeca = p.codPeca AND
+			e.codFornec = r.codFornec
+		)
+	)
+}
+
+- entender bem o quantificador existencial e o quantificador universal
+
+
+------------------------------------------------------------------------------
+2011-09-12:
+
+* Otimização de consultas:
+
+- SGBD pega a consulta e transforma em uma árvore. Realiza uma reorganização 
+das instruções da consulta, jogando as seleções mais próximas das folhas (primeiras
+instruções a serem execuatadas; a última é o nodo pai)
+	- esta reorganização é baseada em heurísticas, ou seja, aproximações da solução
+	ideal
+
+Exercício:
+1) Para a consulta SQL abaixo:
+
+SELECT Professor.NomeProf
+FROM Depto,
+	Professor,
+	ProfTurma,
+	Disciplina
+WHERE Depto.CodDepto = Professor.CodDepto AND
+	Professor.CodProf = ProfTurma.CodProf AND
+	ProfTurma.CodDepto = Disciplina.CodDepto AND
+	ProfTurma.NumDisc = Disciplina.NumDisc AND
+	ProfTurma.AnoSem = 20021 AND
+	Professor.CodTit = 4 AND
+	Disciplina.CreditosDisc = 4 AND
+	Disciplina.CodDepto = Professor.CodDepto
+
+mostre:
+(a) a expressão de álgebra relacional equivalente;
+(b) a árvore de consulta resultante desta expressão de álgebra relacional;
+(c) cada uma das árvores resultantes dos passos da otimização algébrica.
+
+(a) Álgebra relacional equivalente
+(pi Professor.NomeProf 
+	(sigma Depto.CodDepto = Professor.CodDepto AND
+		Professor.CodProf = ProfTurma.CodProf AND
+		ProfTurma.CodDepto = Disciplina.CodDepto AND
+		ProfTurma.NumDisc = Disciplina.NumDisc AND
+		ProfTurma.AnoSem = 20021 AND
+		Professor.CodTit = 4 AND
+		Disciplina.CreditosDisc = 4 AND
+		Disciplina.CodDepto = Professor.CodDepto
+		(Depto x
+			(Professor x
+				(ProfTurma x Disciplina)))
+	)
+)
+
+(b) Árvore da consulta (não otimizado)
+-> pi Professor.NomeProf
+	-> sigma Depto.CodDepto = Professor.CodDepto
+		-> sigma Professor.CodProf = ProfTurma.CodProf 
+			-> sigma ProfTurma.CodDepto = Disciplina.CodDepto 
+				-> sigma ProfTurma.NumDisc = Disciplina.NumDisc 
+					-> sigma ProfTurma.AnoSem = 20021 
+						-> sigma Professor.CodTit = 4 
+							-> sigma Disciplina.CreditosDisc = 4 
+								-> sigma Disciplina.CodDepto = Professor.CodDepto
+									-> x
+										-> Depto
+										-> x
+											-> Professor
+											-> x
+												-> ProfTurma
+												-> Disciplina
+
+(c) Árvores da otimização
+	(c.1) Empurrar os 'selects' (sigma) para baixo.
+	(c.2) Fazer junções ao invés de produtos cartesianos.
+	(c.3) Selecionar apenas as colunas necessárias. Fazemos projeções (pi).
+
+
+- O SGBD precisa de volume de dados (tabelas) e informações sobre as colunas,
+para saber se um filtro será forte ou fraco
+
+
+------------------------------------------------------------------------------
+2011-09-05:
+
+* Divisão
+- Usada para selecionar informações comuns a vários usuários
+
+Obter os códigos das peças embarcadas por todos fornecedores do Rio:
+TABELA1 = ( 
+	((pi) CodPeca, CodFornec (Embarq))
+	-
+	((pi) CodFornec ((sigma) CidadeFornec = 'Rio' (Fornec) ))
+)
+
+Obter os códigos das peças embarcadas por (ao menos um) fornecedor do Rio:
+(pi) CodPeca
+	( (sigma) CidadeFornec = 'Rio' (Fornec (equi) Embarq))
+
+
+* Operações de ponto fixo (fi)
+- Usada para implementar consultas recursivas
+
+Os nomes dos professores que deram aula em todas disciplinas de departamento
+determinado 'Informática'
+
+(pi) nomeProf
+(
+	(
+		((pi) codDepto, numDisc, codProf (profTurma))
+		/
+		(
+			((pi) codDepto, numDisc)
+			(
+				(sigma) Depto.nomeDepto = Disciplina.nomeDepto
+				(
+					((sigma) nomeDepto = 'Informatica' (Depto))
+					x
+					(Disciplina)
+				)
+			)
+		)
+	)
+	(natural-union)
+	(Professor)
+)
+
+
+Obter o código de cada disciplina que tem pré-requisito seguido do código deste pré-requisito,
+bem como, o código de cada disciplina seguido do código do pré-requisito do pré-requisito
+e assim recursivamente.
+
+Primeiro passo: 
+INF01 145 INF01 123
+INF01 123 INF01 002
+Queremos: INF01 145 INF01 002 (cadeira seguida do pré-requisito do pré-requisito)
+
+
+(fi) PreReqn
+	PreReq
+	(união)	
+	(pi) PreReq.codDepto, PreReq.numDisc, PreReqn.codDeptoPreReq, PreReqn.numDiscPreReq 
+		(sigma) PreReq.codDeptoPreReq = PreReqn.codDepto AND
+				PreReq.numDiscPreReq = PreReqn.numDisc
+			(PreReq) x (PreReqn)
+
+
+
+
+
+------------------------------------------------------------------------------
+2011-08-31:
+
+(sigma) seleção
+(pi) projeção
+(rô) renomeação
+(união, disjunção) conjuntos
+(diferença -)
+x produto cartesiano 
+
+* Álgebra relacional - junção e divisão
+
+Operador de junção
+
+-> Equi-junção
+Ex.:
+
+Embarq (equi) (CodFornec) (CodFornec) Fornec <=> (sigma) (Embarq.CodFornec) = (Fornec.CodFornec) (Embarq x Fornec)
+
+
+-> Junção Natural
+	- perigoso de colocar em software
+
+Exercício:
+1) nomes das peças de uma cidade com fornecedor status > 5, pelo menos um embarque de 300
+
+( (pi) NomePeca
+	( Fornec 
+		(theta-join) (CidadeFornec = CidadePeca AND StatusFornec > 5)  
+	  ( Peca 
+			(theta-join) (Peca.CodPeca = Embarq.CodPeca AND Embarq.QtdeEmbarq = 300) 
+	    Embarq)
+	)
+)
+
+( (pi) NomePeca
+	( (sigma) StatusFornec > 5 AND QtdeEmbarq = 300
+		( Fornec 
+			(equi-join) (CidadeFornec) (CidadePeca)  
+		  ( Peca 
+				(equi-join) (Peca.CodPeca) (Embarq.CodPeca) 
+			Embarq
+		  )
+		)
+	)
+)
+
+=> não é possível usar a junção natural nessa consulta do jeito que está.
+Se a coluna CodPeca for renomeada a junção natural é possível
+
+
+2) 
+
+( (pi) NomeFornec, CodPeca
+	( Embarq
+	  (join) 
+	  Fornec	
+	)
+)
+
+(união)
+
+( (pi) NomeFornec, NULL
+	(
+	  ( (pi) CodFornec (Fornec))
+	  -
+	  ( (pi) CodFornec (Embarq))
+	)
+	(join)
+	Fornec
+)
+
+3) Exercício 2) com junção externa à esquerda
+
+( (pi) NomeFornec, CodPeca
+	(Fornec (extern left join) Embarq)
+)
+
+
+4) Para cada disciplina, obter o nome seguido do nome da disciplina
+pré-requisito (se não houver é vazio)
+
+( (pi) ___,___ 
+	( (rô) discpre (disciplina)
+	  (extern right natural-join) (coddepto, numdisc) (coddeptoprereq, numdiscprereq)
+	  ( disciplina (extern left natural-join) prereq )
+	)
+)
+
+ou
+
+( disciplina
+  (external left natural-join) (coddepto, numdisc) (prereq.coddepto, prereq.numdisc)
+  ( (rô) discpre (disciplina)
+    (internal natural-join) (coddepto, numdisc) (coddeptoprereq, numdiscprereq)
+    prereq
+  )
+)
+
+
+------------------------------------------------------------------------------
+2011-08-24:
+* Álgebra
+
+(rô) <novo nome> (<nome na tabela>) : renomeação
+
+Ex.:
+EMP(CodEmp, NomeEmp, CodEmpGer)
+	CodEmpGer referencia EMP
+
+Base de dados
+
+CodEmp	NomeEmp	CodEmpGer
+E1		Macedo	-
+E2		Perreia	E1
+E3		Soares	E1
+E4		Silva	E3
+E5		Souza	E3
+
+Selecionar o nome do empregado e de seu gerente
+	- Precisamos fazer um produto cartesiano de EMP com EMP (EMP x EMP)
+	- Mas é preciso renomear uma das tabelas
+
+( (pi) EMP.NomeEmp, GER.NomeEmp : projeção
+	( (sigma) GER.CodEmp = EMP.CodEmpGer : seleção
+		(EMP
+		x
+		(rô) GER (EMP)) : renomeação
+	)
+)
+
+Selecionar o nome do empregado seguido do nome do gerente do seu gerente,
+caso o empregado o tenha
+
+( (pi) EMP.NomeEmp, GERGER.NomeGer : projeção
+	( (sigma) GERGER.CodEmp = GER.codEmpGer
+		( (sigma) GER.CodEmp = EMP.CodEmpGer : seleção
+			(EMP
+			x
+			(rô) GER (EMP)) : renomeação
+		)
+		x
+		(rô) GERGER (EMP) : renomeação
+	)
+)
+
+ou
+
+( (pi) EMP.NomeEmp, GERGER.NomeGer
+	( (sigma) EMP.CodEmpGer =
+			GER.CodEmp AND
+			GERGER.CodEmp
+		( EMP X
+		  ( (rô) GER (EMP)) X
+		  ( (rô) GERGER (EMP)) 	
+		)	
+	)
+)
+
+- Com a instrução (rô) também podemos renomear colunas da tabela
+
+- Exercício:
+	-> 1. Para cada professor que deu aula em outro departamento obter o 
+	código do professor, seu nome, o nome de seu departamento e o nome
+	do outro departamento
+	
+	( (pi) professor.cod_prof, professor.nome_prof, depto_prof.nome_depto, 
+		 depto_turma.nome_depto
+		( (sigma) professor.cod_depto = depto.prof_depto AND
+				professor.cod_prof = prof_turma.cod_prof AND
+				prof_turma.cod_depto = depto_turma.cod_depto AND
+				professor.cod_depto <> prof_turma.cod_depto
+			(
+				professor x
+				(rô) depto_prof (depto) x
+				prof_turma x
+				(rô) depto_turma (depto)
+			)
+		)
+	)
+
+	-> 2. Obter os códigos de professores que são do departamento 'INF01' e
+	que ministraram ao menos uma turma em '2002/1'
+ 
+	( (pi) professor.cod_prof : projeção
+		( (sigma) professor.cod_prof = prof_turma.cod_prof AND
+				  professor.cod_depto = 'INF01' AND
+				  prof_turma.ano_sem = '2002/1' : seleção
+				  (professor x prof_turma)
+		)
+	)
+
+	-> 3. Obter os códigos dos professores com título denominado 'Doutor' 
+	que não ministraram aulas em 2002/1
+
+	( (pi) professor.cod_prof
+		( (sigma) titulacao.cod_tit = professor.cod_tit	AND
+				  titulacao.nome_tit = 'Doutor'
+			( (pi) professor.cod_prof
+				(				
+					( (sigma) professor.cod_prof = prof_turma.cod_prof AND
+							  prof_turma.ano_sem = '2002/1
+							  (professor x prof_turma)
+					)
+					- 
+					( (sigma) prof_turma.ano_sem = '2002/1' (professor x prof_turma) )
+				)
+			)
+			x
+			titulacao
+		)
+	)
+		
+	-> 4. Para cada disciplina que tem pré-requisito, obter seu nome seguido
+	do nome de seu pré-requisito
+
+	( (pi) disciplina.nome_disc, disc_pre.nome_disc		
+		( (sigma) disciplina.cod_depto = pre_req.cod_depto AND
+				  disciplina.num_disc = pre_req.num_disc AND
+				  disc_pre.cod_depto = pre_req.cod_depto_pre_req AND
+				  disc_pre.num_disc = pre_req.num_pre_req
+			(
+				disciplina x
+				pre_req x
+				(rô) disc_req (disciplina)
+			)
+		)
+	)
+
+------------------------------------------------------------------------------
+2011-08-22:
+
+* Álgebra
+
+Obter as cidades em que há fornecedores de status > 5:
+(pi) CidadeFornec					=> projeção sobre a coluna CidadeFornec
+	( (sigma) StatusFornec > 5		=> seleção de StatusFornec sobre a tabela
+			(Fornec) )				   Fornec
+
+- Para realizar uniões as tabelas precisam ser do mesmo tipo, mesma quantidade 
+de colunas. Obs.: O SQL une as colunas pela posição na tabela, e não pelo nome,
+logo é possível unir duas tabelas com 2 colunas cada, sendo as colunas com nomes 
+diferentes entre si.
+
+
+- Diferença:
+Obter as pecas que estão na tabela peças e que não estão na tabela fornecedores:
+((pi) CodPeca (Peca)) - ((pi) CodPeca (Embarq))
+
+- Produto Cartesiano:
+	- Produto cartesiano entre tabelas multiplica todas as linhas de uma tabela
+	por todas as linhas da outra tabela, resultado em pares ordenados das colunas
+	dessas tabelas
+
+Obter o nome e códigos dos fornecedores que tem embarques de peças de cor vermelha:
+
+( (pi) NomeFornec
+	( (sigma) Fornec.CodFronec = Embarq.CodFornec
+		((pi) CodFornec
+			( (sigma) Peca.CorPeca = 'Vermelho' 
+			   and Peca.CodPeca = Embarq.CodPeca 
+					(Embarq x Peca)
+			)
+		) x Fornec
+	) 
+)
+
+
+Obter o nome dos fornecedores de status > 10, cuja cidade é uma cidade em que há pelo 
+menos umas peça de cor Cinza.
+
+( (pi) Fornec.NomeFornec
+	( (sigma) Fornec.StatusFornec > 10 AND Peca.CorPeca = 'Cinza' AND 
+	  Fornec.CidadeFornec = Peca.CidadePeca
+	  (Fornec x Peca)
+	)
+)
+
+ou
+
+(pi) NomeFornec 
+	( (sigma) CidadeFornec = CidadePeca
+		(
+			( (sigma) CorPeca = 'Cinza' (Peca))
+			x
+			( (sigma) StatusFornec > 10 (Fornec))
+		)
+	)
+
+
+Obter os nomes dos fornecedores que não tem embarques
+(pi): projeção
+
+( (pi) NomeFornec
+	((pi) CodFornec,NomeFornec (Fornec)) 
+	- 
+	((pi) CodFornec,NomeFornec ( 
+		( (sigma) Embarq.CodFornec = Embarq.CodFornec
+		  (Embarq x Fornec)
+		)
+	))
+)
+
+
+
+
+------------------------------------------------------------------------------
+2011-08-17:
+* SQL:
+- C + SQL -> pré-processador -> C + query calls -> compilador C
+
+DDL: create, drop, alter
+DML: insert, delete, update
+
+- Banco de dados que usaremos: PostgreSQL
+	- Ao instalar o PostgreSQL será requisitado criar user e senha para acessar
+	o banco de dados
+
+FOREIGN KEY (CodPeca) REFERENCES Peca ON DELETE CASCATE => se a peça for excluída
+todos os registros que tem 'CodPeca' como chave estranegira e a descrição 'ON DELETE
+CASCATE', serão também excluídos.
+
+FOREIGN KEY (CodPeca) REFERENCES Peca ON UPDATE CASCATE => se o 'CodPeca' for 
+alterado, chave primária da tabela de peças, então o 'CodPeca' que está como
+chave estrangeira em outras tabelas e cascateado com UPDATE, também será atualizado.
+
+CodPeca		CHAR(4)		NOT NULL => 'NOT NULL' diz que esse campo não pode ser vazio.
+CorPeca		CHAR(15)	NULL	 => 'NULL' diz que 'CorPeca' pode ficar vazio.
+
+- NULL != nulo, NULL significa vazio. 
+
+- Como inserir coluna em uma tabela que não aceita inserção de uma coluna
+1) Copiar dados da tabela antiga
+2) Apagar referências (FK)
+3) Apagar tabela
+4) Criar nova tabela
+5) Carregar os dados da tabela antiga
+6) Recriar referências
+
+- Projeto de banco de dados:
+1) Criar tabelas sem as chaves estrangeiras
+2) Depois de criadas as tabelas, criamos as chaves estrangeiras, assim não precisamos nos
+preocupar com a ordenação de criação das tabelas, limitidas pelas referências (FK)
+
+
+-------------------------------------------------------------------------------
+2011-08-15:
+- Problema da base da dos em rede: 
+
+- Abordagem orientada a objetos: possui o mesmo modelo da abordagem em rede
+
+* Abordagem hierárquica:
+- um banco de dados hierárquico é uma floresta composta de árvores de registros
+- tipos básicos de construção:
+	- registro
+	- ligação pai-filho entre registros (cada registro filho pode ter apenas UM 
+	registro pai, caracterizando uma árvore e não um grafo)
+
+* Abordagem em rede:
+- banco de dados é um grafo
+- tipos básicos de construção:
+	- registro (nós)
+	- ligações pai-filho entre registros (arcos)
+- um registro pode ter diferentes ligações pai-filho
+
+* Abordagem relacional: 
+- SQL
+- composto de relações ou tabelas
+- relação vem da matemática, baseada em conjuntos
+- campos referenciados por nomes de colunas (chaves)
+- Terminologia para as representações dos dados
+	- Terminologia acadêmica: relação, tupla, nome de atributo
+	- Terminologia profisisonal: tabela, linha (row), nome de campo
+- Tabela/relação é um conjunto de linhas não ordenadas intrinsicamente
+- Não há repetição de linhas
+- chave primária: representa unicidade, não pode ter duas linhas com essa chave
+- chave alternativa: representa unicidade. São chaves que não são primárias, mas
+que também são únicas para cada linha nas tabelas
+- chave estrangeira: combinação de colunas de diferentes tabelas. São chaves que 
+aparecem na chave primária de outras tabelas. Pode-se ter uma chave estrangeira 
+dentro de uma mesma tabela (ver exemplos de 'chave estrangeira' nos slides)
+- Resultado de uma consulta é sempre uma tabela. Tabelas não possuem duplicatas.
+
+
+- Fazer exercícios 1 e 2, sobre abordagem hierárquica e em rede
+	- Usar Visio para fazer os diagramas (usado o editor de diagramas Dia para Linux)
+
+PreReq(CodDepto, NumDic, CodDeptoPreReq, NumDiscPreReq) -> todas as chaves são chave 
+primária
+INF01,145,INF01,002
+INF01,145,INF01,122
+
+-------------------------------------------------------------------------------
+2011-08-10:
+- Redundância de dados
+- Dados não controlados -> inconsistência de dados -> erro de acesso
+
+- Programa contém a estrutura das tabelas do banco de dados
+- SGBD: sistema de gerenciamento do banco de dados
+	- esconde detalhes de implementação das estruturas; abstração de dados
+
+- Linguagem de definição de dados: mexe na estrutura de dados (ddl - data 
+definition language)
+
+- Linguagem de manipulação de dados: acessar dados (dml - data modification 
+language)
+
+- Ex.: SGBD seleciona os dados. As operações sobre os dados são feitas para
+conjunto de dados, ao invés de registro a registro
+
+- SGBD possui 'otimizador de consultas', baseado em heurísticas
+- SGBD deve tratar concorrência de dados, para que a aplicação não necessite
+se preocupar com a concorrência -> facilita o desenvolvimento da aplicação
+
+- Controle de acesso: o SGBD deve gerenciar quais usuários podem fazer quais
+operações
+
+- Banco de dados deve ser confiável, correto
+
+- Restrição de integridade: regras que devem ser respeitadas em todo o banco 
+de dados. Isso garante a integridade do SGBD
+	- Restrições implementadas em programas que alteram o conteúdo do banco 
+	de dados
+
+- SGBDs falham. É necessário implementar mecanismos de recuperação em caso de
+falhas.
+
+- Modelo lógico: estrutura de dados das tabelas do banco de dados SQL vista 
+pelo programador
+
+CODASYL
+	- PL/I
+	- Cobol
+
+XML: concebido para intercâmbio de dados entre aplicações
+------------------------------------------------------------------------------
+
+
+

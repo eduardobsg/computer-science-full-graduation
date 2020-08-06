@@ -1,0 +1,83 @@
+Cadeira: INF01113 - Organização de Computadores B
+Professor: Navaux
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2011/02
+Moodle: OrgB-2011
+
+------------------------------------------------------------------------------
+---- Estudo - Prova 2
+------------------------------------------------------------------------------
+1) Políticas de Escrita
+
+Precisamos ter coerência de dados entre a memória principal (RAM) e a memória
+cache. A coerência consiste em manter a mesma informação na cache e na memória
+de forma a não haver discrepância ao manipular a área de uma ou outra memória,
+ou seja, os dados devem ser iguais para que possamos garantir que não haverá 
+perda de informação.
+
+1.1) Write-Through
+Toda escrita na cache é perpetuada para a memória cache. Os dados em ambas sempre 
+é o mesmo. Isso aumenta o tempo de acesso à cache, pois as escritas na memória 
+principal são lentas.
+
+Tma = Tc + (1 - h)*Tb + w*(Tm - Tc)
+
+Tma: tempo médio de acesso
+Tc: tempo de acesso à cache
+h: hit ratio
+Tb: tempo de leitura de uma linha da memória principal
+Tm: tempo de acesso a uma palavra da memória principal
+w: probabilidade de que acesso seja de escrita
+
+1.1.1) Write Buffer
+Usado para deixar o processador livre para outras tarefas enquanto os dados são
+escritos na memória DRAM.
+
+Processador -> Write Buffer -> Controlador de memória -> Memória DRAM
+
+Problemas:
+Write Buffer funciona bem para frequência de escrita << 1/ciclo de escrita DRAM,
+mas se frequência de escrita > 1/ciclo de escrita DRAM o buffer satura.
+
+Para corrigir esse problema, antes da DRAM, colocamos outro nível de cache, a L2.
+Antes do controlador de memória escrever na DRAM ele antes escreve na cache L2, 
+que é mais rápida. Isso aumenta a quantidade de escritas do processador.
+
+
+1.2) Write-Back
+Linha da cache só é escrita na memória principal quando precisa ser substituída
+
+------------------------------------------------------------------------------
+2) Algoritmos de Substituição
+
+2.1) Substituição Randômica
+Escolher uma linha ao acaso para ser substituída. Ela pode estar a muito ou pouco 
+tempo esperando para ser substituída.
+
+2.2) FIFO - First In First Out
+Remover a linha que está a mais tempo na cache
+
+2.3) LRU - Least Recently Used
+Linha a ser substituída é aquela que há mais tempo não é referneciada
+
+
+
+nº de linhas no conjunto = associatividade
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

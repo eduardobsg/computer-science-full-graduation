@@ -1,0 +1,9 @@
+$ cd para_dentro_da_pasta_do_projeto
+$ tar cvzf etapaX.tgz . [dentro do diretorio]
+$ sftp html.inf.ufrgs.br
+$ password <coloca sua senha>
+$ cd public_html
+$ put etapaX.tgz
+$ chmod 744 etapaX.tgz
+
+Teste o download via http://www.inf.ufrgs.br/~<fkrahe>/etapaX.tgz

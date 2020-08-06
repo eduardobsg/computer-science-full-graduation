@@ -1,0 +1,414 @@
+Cadeira: INF01113 - Organização de Computadores B
+Professor: Navaux
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2011/02
+Moodle: OrgB-2011
+
+------------------------------------------------------------------------------
+---- Colegas:
+------------------------------------------------------------------------------
+- Hélio Brauner
+- José Luiz Damaren
+- Cláudio Busato
+- Jozeane Belomo
+- Azzy
+
+------------------------------------------------------------------------------
+---- Frase:
+------------------------------------------------------------------------------
+"No frigir dos ovos."
+
+"Etcetera mais e tal."
+
+"OKA." (querendo falar ok)
+
+"É simples? É! Mas também é complicado."
+
+"Ah é? É!"
+
+"Donde eu vou ler" (de onde eu vou ler)
+
+"Isssso! Isssso!!"
+
+"Entra o sinal aqui e Pá!"
+
+"Isso é do projeto..."
+
+"Isso é malandragem de projeto..."
+
+------------------------------------------------------------------------------
+---- Tarefas:
+------------------------------------------------------------------------------
+2011-10-25:
+
+* Aula 18 - Cache
+
+- Manter a coerência de escrita na memória e na cache
+
+Leitura
+Tma = (1 - w) * ( h * (Tempo de acesso a cache) + (1 - h) * (Tempo da memória principal) ) + w * (tempo de escrita na memória principal)
+
+Write-buffer
+- processador é maks rápido do que acesso a memória
+- a taxa de store deve ser menor do que o tempo de escrita, para que o buffer não estoure
+
+Write-back
+- quando a linha sair da cache é que ela é escrita na memória principal
+- é mais problemático na hora de compartilhar cache e memória, pode dar inconsistência de dados
+- técnica mais inteligente, só ecsreve na memória quando precisa e não o tempo todo
+- dirt bit: usado para indicar que houve uma alteração na linha da cache. Cada linha possui um dirt bit.
+Se o bit for igual a 1 quer dizer que a linha foi alterada
+
+Write-Miss
+- Write-true: se houver escrita na memória de qualquer jeito, não há porque trazer esses dados para cache
+
+Associatividade
+- quantidade de linhas de cache que podem ser substituídas por outro
+
+
+------------------------------------------------------------------------------
+---- Notas de Aula
+------------------------------------------------------------------------------
+2011-10-20:
+
+* Aula 17 - Cache
+
+Cache L1, L2, L3 são mais caros do que as memórias RAM.
+	Cache: memória é um flip-flop, possui 6 transistores (6 vezes mais cara)
+	RAM: memória com capacitores
+
+Mapeamento associativo
+	Trazer bloco da memória
+	Memória associativa endereça conteúdo ao invés do endereço. Comparação de conteúdo.
+	Memória cara, mais cara do que a cache
+
+Mapeamento Direto
+	Tamanho da cache: 2 elevado ao índice
+
+------------------------------------------------------------------------------
+2011-09-29:
+
+* Aula 14 - Superescalaridade - Parte 2
+
+- Dependência de dados verdadeira:
+sub r2, r3, r5		=> r5 = r2 - r3
+add r7, r5, r10		=> r10 depende de r5
+
+- Dependência falsa ou antidependência:
+add r4, r6, r7
+sub r1, r2, r4
+
+- Dependência de saída:
+
+
+# Janelas de instruções distribuídas
+
+------------------------------------------------------------------------------
+2011-09-13:
+
+* Aula 11
+
+Dependências Verdadeiras:
+R3 = R2 + R1 => R3 precisa de R2 e R1
+
+Dependências falsas:
+
+
+------------------------------------------------------------------------------
+2011-09-08:
+* Aula 10: Organização de Computadores - Pipeline
+
+- pode tornar o desempenho até 20 vezes mais rápido dependendo do tamanho do pipeline
+- cada etapa da execução da instrução precisará de mais cuidado, para não perder dados
+- precisamos memorizar as informações entre as etapas
+
+- memória de instruções e memória de dados: pois busca de instruções e armazenamento 
+não podia ser feitas paralelamente
+
+- m‌áquina de estados (real computador): memória e registradores
+
+------------------------------------------------------------------------------
+2011-09-06:
+* Aula 09:
+
+Avaliação de Desempenho
+
+-> Prova: como calcular o tempo de execução de uma instrução em uma arquitetura
+-> Desafio: calcular o desempenho
+	- depende do compilador
+	- da maneira que o hardware implementa as instruções: se são mais poderosas 
+	ou mais simples
+	- memória e dispositivos de entrada e saída
+
+-> Throughput: vazão, medida do número de tarefas executadas por unidade de tempo	
+	- Processador mais rápido: as instruções são executadas mais rapidamente, melhora
+	o throughput
+	- Mais processadores: as instruções são executadas na mesma velocidade, porém 
+	mais instruções são executadas. Melhora o throughput
+
+-> Tempo do processador CPU: não inclui tempos de execução de outros programas,
+tempo de I/O. Só calcula o tempo de execução da instrução no processador.
+
+-> Tempo de CPU de um programa:  nº de ciclos de clock do programa x período do clock
+
+-> Aumentar desempenho:
+	- diminuir clock (melhorando tecnologia e/ou arquitetura)
+	- diminuir nº de ciclos necessários para execução do programa
+
+Exercício:
+1) programa roda em 10s na máquina A, com clock de 1GHz. Queremos rodá-lo em 6s na 
+máquina B. A máquina B pode ter sua frequencia de clock aumentada. Porém a máquina
+B exigirá 1.2 vezes mais ciclos de clock para executar instruções do que a máquina 
+A. QUal a frequencia de clock necessário?
+
+A: 10s = (1 / 1Ghz) * (1 * 10^10)
+B: 6s = (1 / x) * (1 * 10^10) * 1.2
+
+(1 / x) = 6 / 1.2 * 10^10 = 5 * 10^-10 s
+x = (5 * 10^-10)^-1 = 2 GHz
+
+-> CPI: nº médio de ciclos de clock por instrução
+-> Tempo CPU:  nº de instruções x período do clock x CPI
+
+
+------------------------------------------------------------------------------
+2011-09-01:
+* Aula 8
+
+Formato das micro-instruções:
+- micro-instrução contém 7 campos
+- cada bit é responsável por um controle diferente
+
+- Extend => para extender de 16 para 32 bits a parte do pulo da instrução
+- Extshift => para o jump
+
+- calcular PC + deslocamento x 4, estendido para 32 bits => branch on equals
+
+------------------------------------------------------------------------------
+2011-08-31:
+* Aula 7
+
+- Multi-ciclo:
+	-> ULA diminuía (uma ao invés de 3 do mono-ciclo)
+	-> mais registradores
+	-> novos multiplexadores
+
+- load é mais lento que o store
+- cada estado é um ciclo
+	-> alguns estados usam o mesmo ciclo para serem executados
+
+
+
+------------------------------------------------------------------------------
+2011-08-25:
+* Aula 6
+
+- mono-ciclo é ineficiente => o ciclo é determinado pela instrução que leva o
+maior tempo de execução.
+
+- nova ideia: quebrar a instrução em vários ciclos. Cada parte de execução da
+instrução é um ciclo.
+	-> com isso cada ciclo fica bem menor
+	-> instruções quebradas em vários ciclos
+	
+- Multi-ciclo
+	-> instruções podem ter quantidade de ciclos diferente
+	-> reutilização de unidades funcionais
+	-> CPI (ciclo por instruções) aumenta
+		-> tempo = #I (número de instruções) * CPI * (tempo de cada ciclo)
+			- no mono-ciclo o CPI é sempre 1
+			- no multi-ciclo é no mínimo 3, logo o tempo de cada ciclo precisa
+			ser pequeno o suficiente para o multi-ciclo ser mais eficiente do 
+			que o mono-ciclo
+
+- Ciclo de instruções
+	-> 1. busca da instrução (para qualquer instrução)
+	-> 2. decodificação da instrução (para qualquer instrução)
+	-> 3. execução da operação, para instruções do tipo R
+	-> 4. acesso à memória (para instruções load e store)
+	-> 5.
+
+- Multi-ciclo
+	-> uma única memória
+	-> uma única ULA
+	-> registradores adicionais
+	-> multiplexadores adicionados
+
+Exercício:
+load: 20%
+store: 10%
+tipo R: 50%
+branch: 20%
+
+1ns ALU
+1ns Memória
+1ns Banco de Registradores
+
+1 bilhão de instruções
+
+Mono-ciclo:
+T = #I (número de instruções) * CPI * (tempo de cada ciclo)
+T = (1 * 10^9) * (1) * 5ns = 5s
+
+Multi-ciclo:
+CPI = 0.2*5 + 0.1*4 + 0.5*4 + 0.2*3 = 4 ciclos por instrução em média na versão 1GHz
+Tempo de ciclo = 1ns (maior passo)
+T = (1 * 10^9) * 4 * 1ns = 4s
+
+
+
+
+		
+
+
+
+
+------------------------------------------------------------------------------
+2011-08-22:
+
+* Aula 5
+
+- PC incrementa de 4 em 4 bytes
+- 6 bits da instrução (opcode) é o código de operação 
+
+- Como a parte de controle vai atuar:
+
+- CPU = caminho de dados + controle
+- Projeto que estamos fazendo: 
+	- mono ciclo, ou seja, cada instrução leva exatamente um ciclo de relógio
+	- estado de armazenamento realizado no final do ciclo
+
+- O que precisamos controlar?
+	- ULA (ALU - Arithmetic and Logic Unit)
+	- Multiplexadores
+	- Elementos de armazenamento
+
+- 6 bits de opcode (MSB) + 6 bits de funct (LSB) => control logic
+
+# Execução das instruções
+	- importante para saber como deve funcionar a arquitetura
+	- instruções aritméticas e lógicas (tipo R):
+		Passos: ...
+
+	- começa na etapa de leitura na memória de instruções
+
+------------------------------------------------------------------------------
+2011-08-18:
+
+* Aula 4
+
+- opcode: possui 6 bits, que dizem qual é a instrução que será executada
+- cada instrução tem 4 bytes
+- cada instrução pode ser de 3 tipos no MIPS (tipo R, I, J)
+
+* Conjunto de instruções:
+- Busca 
+- Instruções Aritméticas:
+	- necessita de registradores e ULA
+	- formato: opcode(6bits)|rs(5bits)|rt(5bit)|rd(5bits)|sa(5bits)|function(6bits)
+		- rs e rt: registradores usados na operação aritmética
+		- rd: registrador para escrever o resultado da operação
+- Instruções de acesso à memória
+	- escrita (store)
+	- leitura (load)
+- Instruções de Desvio
+	- instrução de desvio condicional
+
+- Ciclo de relógio
+
+				Acessa memória		acessa banco de 	usa ULA		acessa		escreve no banco
+				de instrução		registradores					memória		de registradores
+																	de dados	
+																	(p/ leitura
+																	escrita)						
+Aritmética			sim					sim					sim			X			sim
+Load				sim					sim					sim			sim			sim
+Store				sim					sim					sim			sim			X
+Branch				sim					sim					sim			X			X
+Jump				sim					X					X			X			X
+
+Obs.: os tempos de acesso à memória de dados para leitura e escrita são diferentes.
+Usou-se o mesmo tempo no cálculo para torná-lo mais fácil
+
+Tempos:
+- 1ns: acesso à memória
+- 0.5ns: acesso à registradores
+- Aritmética: 1ns + 0.5ns + 0.5ns + 1ns + 0.5ns = 3,5ns (300 Mhz)
+	- 1 / (3,5 * (10^(-9))) = 285 714 286 Mhz
+	- 1 / (3,3 * (10^(-9))) = 303 030 303 => valor correto de tempo é 3,3ns. 3,5ns é uma estimativa
+
+------------------------------------------------------------------------------
+2011-08-16:
+* Aula 03: Arquitetura do processador MIPS
+- RISC: reduced instruction set (criada nos anos 80)
+- CISC: complex instruction set
+
+- Parte operativa: unidade lógica e aritmética
+- Controle: chega a instrução, é decodificada. O controlador manda sinais de 
+controle ao hardware para fazer a operação desejada
+
+- MIPS: 
+	- melhorar desempenho usando pipeline de instruções profundas, de uma só 
+palavra e executadas em um ciclo.	
+	- CPU: preço é associado ao número de pinos em geral, por isso o MIPS é mais 
+barato. Tem menos pinos.
+	- possui caminho de dados: ULA, componentes de lógica digital
+	- possui unidade de controle: indica como os dados de uma instrução devem 
+trafegar e como esses dados devem ser processados
+	- componentes básicos d euma microarquitetura: program counter, memmória,
+banco de registradores, ULA, unidade de controle
+	- a microarquitetura é responsável por busca, decodificação e execução de
+intruções.
+	- instruções são comandos enviados ao processador
+	- arquitetura de harvard: separa instruções de dados
+
+- Modos de endereçamento:
+	- modo registrador
+	- modo imediato
+	- modo absoluto: para instruções de desvio incondicional. Somente dentro de
+áreas de 256Mbytes, devido ao limitante de endereçamento (26 bits). Ocorre um 
+shift de 2 bits no endereço, multiplicando os 64Mbytes (2 ^ 26 / 1024 / 1024) 
+em 256Mbytes. Como cada palavra tem 4 bytes, o endereçamento é de 256Mbytes, 
+podendo atingir 64Mbytes de endereços ( 256Mbytes / 4 bytes de palavra de instrução ).
+Resumindo: o endereçamento é de 26 (64Mbytes), porém com os dois shift ele vira 28
+bits (256Mbytes), com os endereços sempre pulando de 4 em 4 bytes.
+	
+- Todas as instruções tem 32 bits
+- Todas tem op-code de 6 bits
+
+- Tipos de instrução:
+	- instruções tipo I;
+		- desvios incondicionais, load, store, >=, >, <=, < zero
+	- instruções tipo R:
+		- instruções aritméticas, lógicas, movimentação de registradores (shift, 
+		rotate), instruções de deslocamento constante e variável, jalr (jump and
+		link register)
+	- intruções tipo J:
+		- desvios com endereçamento absoluto, jal (jump and link)
+	
+- Soma com zero -> transferência de dados entre registrador-registrador, memória-
+registrador, registrador-memória (operação move)
+
+- Vimos conjunto de instruções, formatos de instrução. Próximo passo: ver parte 
+operativa e de controle
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+

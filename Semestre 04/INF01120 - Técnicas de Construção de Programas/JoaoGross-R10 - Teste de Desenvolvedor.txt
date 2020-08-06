@@ -1,0 +1,90 @@
+Cadeira: INF01120 - Técnicas de Construção de Programas
+Professor: Marcelo Pimenta
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2011/02
+
+Resumo 9 - Teste de Desenvolvedor
+
+Teste é uma parte fundamental para a qualidade de software
+
+Testando durante a construção
+	- planejar bem as classes, visando evitar erros.
+	- cuidar com a sensação de que a classe cobre uma grande gama de testes.
+	Isso pode fazer com que alguns testes passem despercebidos.
+	
+Teste durante a construção
+	- é importante fazer teste em classes que não sejam fechadas como 
+	caixas pretas, mas que sejam como caixas de vidro, assim o tester
+	pode desenvolver testes mais concisos.
+	- testar cada rotina arduanmente, mesmo que esta esteja funcionamendo
+	corretamente, pois quando ela for sendo agrada a outras rotinas, criando 
+	um sistema complexo, um erro inesperado nessa rotina pode ser desastroso
+	ao sistema.
+		- isso facilita o debugging, pois se as rotinas antigas estão testadas
+		e ocorre um erro, é muito provável que o erro seja da nova rotina,
+		que recém está sendo desenvolvida.
+	
+Abordagem recomendada ao teste de desenvolvedor
+	- testar cada requerimento para ter certeza de que foram implementados.
+	- adicionar detalhes aos testes existentes
+	- Objetivo: encontrar erros agora que podem depois ser muitos caras para o cliente
+	e para o desenvolvedor.	
+	- planejar testes e achar os defeitos o mais cedo possível, pois é
+	mais barato arrumar problemas cedo.
+	
+Testar antes ou depois?
+	- escrevendo testes antes faz a deteção dos erros antes e você pode
+	corrigir mais facilmente.
+	- escrever testes antes força o desenvolvedor a pensar um pouco mais 
+	a respeito do código. Tende a produzir um código melhor.
+	- escrever testes antes mostra problemas de requerimentos mais cedo.
+	- testar antes é uma das melhores práticas de programação.
+
+Problemas de teste:
+	- fazer testes limpos e simples
+	- tester muito otimista sobre a abordagem de teste que faz
+	- tester tende a pular alguns testes complexos / sofisticados
+
+Importante:
+	- Os testes não garantem que o programa está correto!
+		- para isso seria preciso testar TODAS as possibilidades de entradas
+		- teste axaustivo é impossível, não irá cobrir todas as possibilidades
+		em tempo hábil
+	- cuidar com testes errados, ele podem indicar error no programa que
+	na verdade não existem
+	
+Teste estruturado
+	- calcular o número de caminhos dentro do programa. Desenvolver
+	testes que passem por todos os caminhos.
+	- para saber o número de testes de caso, comece por 1 e some mais 
+	um para cada if, while, repeat, for, and, e or. Também somar 1 para
+	cada case
+	- testar limites de valores em variáveis
+	- também é possível realizar teste de "adivinhação" de erros, com 
+	boas heurísticas
+	
+Partição equivalente
+	- um bom caso de teste cobre uma grande parte das possíveis entradas.
+	Essa ideia é o conceito de partição equivalente, ou seja, uma forma de 
+	reduzir a quantidade de casos de teste.
+	
+Melhorando os testes
+	- se planejar para testar: desde o início do projeto devemos alocar
+	tempo para os testes. Com isso todas as etapas de desenvolvimento serão 
+	feitas visando com maior atenção os testes.
+	- automatização de testes: testes automatizados tem mais chances de estarem 
+	certos do que testes manuais.
+
+
+
+
+	
+	
+
+	
+	
+	
+	
+	
+	

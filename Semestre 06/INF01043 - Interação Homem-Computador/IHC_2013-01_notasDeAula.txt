@@ -1,0 +1,32 @@
+Cadeira: 
+Professor: Luciana Nedel
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2013/01
+Página do professor: 
+
+------------------------------------------------------------------------------
+---- Colegas:
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+---- Frase:
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+---- Notas de Aula
+------------------------------------------------------------------------------
+
+2013-04-15:
+
+Entrega do trabalho de conta de bar: 2013-04-22 de manhã
+
+Avaliação com usuário:
+- Conhecer usuários e tarefas do usuário
+
+Escala Likert:
+- Menos opções de escolha na avaliação.
+- Conduz mais a avaliação
+
+(muito pouco)(pouco)(neutro)(muito)(muito muito)
+

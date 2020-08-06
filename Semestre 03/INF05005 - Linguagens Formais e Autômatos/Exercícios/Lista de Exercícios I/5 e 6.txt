@@ -1,0 +1,35 @@
+﻿5)
+a)
+expressão regular: (0+1)(0+01)*
+  
+gramática regular: 
+G = {{S}, {0,1}, A, S}
+S -> 0S/1A/1/0
+A -> 0S/0
+
+b)
+expressão regular: ((a+b)(ab)*(a+ξ)(ba)*(b+ξ)
+
+gramática regular:
+G = {{S}, {a,b}, A,B,X,Y, S}
+S -> aA/bB/a/b
+A -> bS/aX
+B -> aS/bY
+X -> abS
+Y -> baS
+
+c)
+expressão regular: (102+11+2+0)(01)*(012)*
+
+gramática regular:
+G = {{S}, {0,1,2}, A,B, S}
+S -> 0/1/0A/1B
+A -> 0S/1B
+B -> 1S
+
+
+6)
+L(G) = {w/w e (a,b) e w não possui a's consecutivos}
+
+
+

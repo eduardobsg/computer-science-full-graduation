@@ -1,0 +1,8 @@
+01 - Modelo Conceitual E-R - Clínica Médica
+Ao abrir o arquivo no StarUML o modelo aparece na primeira página
+
+02 - Diagrama de Casos de Uso - Formulários 1,2 e 3
+Abra o arquivo e na lateral direita selecione a aba Model Explorer/useCaseModel/Main
+
+03 - Diagrama de Atividades - Formulários 1, 2 e 3
+Abra o arquivo e na lateral direita selecione a aba Diagram Explorer/ActivityDiagrams/ActivityDiagram1

@@ -1,0 +1,70 @@
+macro iterativo copia(FONTE,DESTINO,TEMP)
+	{copia o valor de a para b usando c}
+	ate zero-FONTE faca (ad-DESTINO;ad-TEMP;sub-FONTE);
+	ate zero-TEMP faca (ad-FONTE;sub-TEMP)
+fimmacro	
+
+macro monolitico zera (REGISTRADOR)
+	{ zera registrador }
+	1:	se zero-REGISTRADOR entao va_para 3 senao va_para 2
+	2:	faca sub-REGISTRADOR va_para 1
+fimmacro
+
+macro monolitico troca (VALOR1, VALOR2, TEMP)
+	{Troca registradores}
+	1: 	se zero-VALOR1 entao va_para 4 senao va_para 2
+	2: 	faca sub-VALOR1 va_para 3
+	3: 	faca ad-TEMP va_para 1
+	4: 	se zero-VALOR2 entao va_para 7 senao va_para 5
+	5: 	faca ad-VALOR1 va_para 6
+	6: 	faca sub-VALOR2 va_para 4
+	7: 	se zero-TEMP entao va_para 10 senao va_para 8
+	8: 	faca ad-VALOR2 va_para 9
+	9:	faca sub-TEMP va_para 7
+fimmacro	
+
+macro monolitico teste_maior(VALOR1,VALOR2,RESULTADO)
+	{testa se VALOR1 é maior que VALOR2, se VALOR1 maior que VALOR2 , RESULTADO recebe 1 senao recebe 0}
+	1:	faca copia (VALOR1,G,H) va_para 2 {copia para d o valor de a}
+	2: 	faca zera (H) va_para 3
+	3:	faca copia (VALOR2,I,H) va_para 4 {copia para e o valor de b}
+	4: 	faca zera (H) va_para 5
+	5:	faca sub-G va_para 6
+	6:	faca sub-I va_para 7
+	7:	se zero-G entao va_para 9 senao va_para 8
+	8:	se zero-I entao  va_para 10 senao va_para 5
+	9:	faca ad-RESULTADO  va_para 10
+	10:	faca zera (G) va_para 11
+	11: 	faca zera (H) va_para 12
+	12:	faca zera (I) va_para 13
+fimmacro
+
+
+{Colocar valores em A e B para calculo do MDC}
+programa monolitico 
+					{E->Variável temporária}
+					{F-> se A maior que B F recebe 1, senao recebe 0}
+					{D->Resposta do MDC}
+1:	faca copia (A,C,E) va_para 2 {Transfere o valor de A para C}
+2:	faca zera(E) va_para 3
+3:	faca copia(A,D,E) va_para 4{Transfere o valor de B para D}
+4:	faca zera(E) va_para 5
+5:	se zero-C entao va_para 40 senao va_para 6{Se C for zero significa que D é o MDC}
+6:	faca teste_maior(C,D,F) va_para 7
+7:	se zero-F entao va_para 12 senao va_para 8
+8:	faca troca(C,D,E) va_para 9
+9:	faca zera(E) va_para 10
+10:	faca zera(F) va_para 11
+11:	se zero-D entao va_para 15 senao va_para 12
+12:	faca sub-C va_para 13
+13:	faca sub-D va_para 14
+14:	faca ad-E va_para 11
+15:	faca copia(E,D,F) va_para 16
+16:	faca zera(F) va_para 17
+17:	faca zera(E) va_para 18
+18:	faca teste_maior(C,D,F) va_para 19
+19:	se zero-F entao va_para 11 senao va_para 20
+20:	faca zera(F) va_para 21
+21:	se zero-C entao va_para 40 senao va_para 22
+22:	faca troca(C,D,E) va_para 23
+23:	faca zera(E) va_para 11

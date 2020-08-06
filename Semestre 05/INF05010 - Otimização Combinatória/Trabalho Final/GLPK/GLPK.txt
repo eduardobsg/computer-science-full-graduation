@@ -1,0 +1,30 @@
+set s{1..10}; # This is a comment
+/* This is another comment */
+
+2 * a[i-1,j+1] - b[i,j]
+
+Condicional
+(if i in I then 2 * p else q[i+1]) / (a[i,j] + 1.5)
+
+Somatório
+sum{i in S diff T} alpha[i] * b[i,j]
+
+Produto
+prod
+
+Mínimo
+min
+
+Máximo
+max
+
+Exponenciação
+x ** y 
+x ^ y
+
+Sets
+A = {4, 7, 9}
+B = {(1,Jan), (1,Feb), (2,Mar), (2,Apr), (3,May), (3,Jun)}
+C = {a, b, c}
+
+{i in A, (j,k) in B, l in C}

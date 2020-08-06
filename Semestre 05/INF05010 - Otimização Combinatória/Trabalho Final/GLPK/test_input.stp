@@ -1,0 +1,22 @@
+set StartNode :=
+1
+;
+
+param NumNodes := 3;
+
+param NumEdges := 2;
+
+# Edges: start_node, end_node, edge_cost
+set Edges :=
+1 2 10
+2 3 8
+;
+
+param NumTerminals := 2;
+
+set Terminals :=
+1
+3
+;  
+  
+end;

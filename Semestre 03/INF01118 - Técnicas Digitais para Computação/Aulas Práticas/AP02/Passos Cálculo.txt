@@ -1,0 +1,61 @@
+Início: 
+
+1) Encontrar o resistor equivalente
+Req = R3+[R1||(R2+[R4||(R6+R5)])]
+
+2) Encontrar corrente total:
+I = V / Req
+
+(R6+R5) = 4315,6 ohms
+R4||(R6+R5) = 1/(1/2248 + 1/4315,6) = 1478,9 ohms
+R2+[R4||(R6+R5) = 1478,9 + 987,7 = 2466,6 ohms
+R1||(R2+[R4||(R6+R5)]) = 1/(1/3305,5 + 1/2466,6) = 1412,5 ohms
+R3+[R1||(R2+[R4||(R6+R5)])] = 1412,5 + 2223,3 = 3635,8 ohms (resistência equivalente) 
+
+I = Vtotal / Req
+  = 14,05 / 3635,8 = 3,8643 mA (corrente total)
+
+3) Encontrar os valores individuais de corrente e tensão de cada resistor
+
+a)
+Ir3 = 3,8643 mA  
+Vr3 = 3,8643 mA * 2223,3 ohms = 8,5914V
+I[R1||(R2+[R4||(R6+R5)])] = 3,8643 mA 
+V[R1||(R2+[R4||(R6+R5)])] = 3,8643 mA * 1412,5 ohms = 5,4583 V
+
+b) 
+I[R1||(R2+[R4||(R6+R5)])] = 3,8643 mA 
+Ir1 = 5,4583 V / 3305,5 ohms = 1,6512 mA
+Vr1 = 5,4583 V
+I(R2+[R4||(R6+R5)]) = 5,4583 V / 2466,6 ohms = 2,2128 mA
+V(R2+[R4||(R6+R5)]) = 5,4583 V 
+
+c)
+R2+[R4||(R6+R5) = 1478,9 + 987,7 = 2466,6 ohms
+I(R2+[R4||(R6+R5)]) = 2,2128 mA
+
+Ir2 = 2,2128 mA 
+Vr2 = 2,2128 mA * 987,7 ohms = 2,1855 V
+I[R4||(R6+R5)] = 2,2128 mA
+V[R4||(R6+R5)] = 2,2128 mA * 1478,9 ohms = 3,2725 V
+
+d) 
+R4||(R6+R5) = 1/(1/2248 + 1/4315,6) = 1478,9 ohms
+V[R4||(R6+R5)] = 3,2725 V
+
+Ir4 = 3,2725 V / 2248 ohms = 1,4557 mA
+vr4 = 3,2725 V
+I(R6+R5) = 3,2725 V / 4315,6 ohms = 0,7582 mA
+V(R6+R5) = 3,2725 V
+
+e)
+(R6+R5) = 4315,6 ohms
+
+Ir6 = 0,7582 mA
+Vr6 = 0,7582 mA * 998,5 ohms = 0,7570 V
+Ir5 = 0,7582 mA
+Vr5 = 0,7582 mA * 3317,1 ohms = 2,5150 V
+
+
+
+

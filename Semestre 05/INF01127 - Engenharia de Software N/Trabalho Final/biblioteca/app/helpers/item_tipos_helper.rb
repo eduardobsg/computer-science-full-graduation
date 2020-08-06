@@ -1,0 +1,2 @@
+module ItemTiposHelper
+end

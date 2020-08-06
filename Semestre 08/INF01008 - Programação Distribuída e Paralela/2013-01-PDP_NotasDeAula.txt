@@ -1,0 +1,166 @@
+Cadeira: INF01008 - Programação Distribuída e Paralela
+Professor: Cláudio Fernando Resin Geyer
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2013/01
+Página do professor: 
+
+------------------------------------------------------------------------------
+---- Colegas:
+------------------------------------------------------------------------------
+
+- José Luiz
+- Lucas Lersch
+- Miguel
+- Hugo
+- Francisco Krahe
+- Jefferson Stoffel
+- Cristiano Dalbem
+
+------------------------------------------------------------------------------
+---- Frase:
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+---- Notas de Aula
+------------------------------------------------------------------------------
+
+2013-03-14 - Aula 02:
+Foco em linguagem, ferramentas, mecanismos
+
+Garbage collector: recuperar memória que objetos que foram criados e não são 
+mais usados, e neste caso ele desaloca o objeto para liberar memória.
+	- garbage collector é um thread que periodicamente analisa os objetos.
+	- pode deixar o programa mais lento, pois partes do processamente serão
+	destinados ao garbage collector.
+
+------------------------------------------------------------------------------
+
+2013-03-19 - Aula 03:
+- Quando uma thread acessa um método syncronized de um objeto, todos os demais métodos 
+synchronized ficam bloqueados.
+
+- Um método estático synchronized da classe, quando acessodo por uma thread em um objeto
+desta classe, bloqueia todos os demais métodos estáticos synchronized da classe, ou seja,
+todos os objetos ficam bloqueados para acessar métodos estáticos synchronized.
+
+Bloco synchronized:
+
+synchronized(ObjetoQualquer) {
+	...
+	"bloco de comandos"
+	...
+}
+
+- este bloco pode ser inseridos dentro de um método que seja de acesso livre, porém 
+esta área é de acesso com exclusão mútua.
+
+Wait:
+- thread que executa a instrução wait() e perde o lock
+- quando ela é acordada ela volta ela precisa voltar para dentro do lock, na mesma 
+posição de quando fez o wait
+- notifyall() acorda todas as threads que fizeram wait no mesmo lock
+- notify() acorda uma thread qualquer que fez wait dentro do mesmo lock
+
+------------------------------------------------------------------------------
+
+2013-03-21:
+- lock tem wait e notify, implementa monitores
+- theads ficam bloqueadas após fazer um wait. Ficam bloqueadas em uma estrutura
+de fila não definida.
+- threads acordadas não tem mais chances de ganhar o lock do que threads ready
+
+Timer Tasks:
+
+
+Exchanger:
+- quem executa o programa de troca? 
+
+------------------------------------------------------------------------------
+
+2013-03-28:
+
+Map Reduce:
+- usado para manipular/processar grandes quantidades de dados
+- uso em sistemas distribuídos
+
+- para aplicações em sistemas distribuídos é necessário um sistema de
+arquivos distribuídos
+- mesmas máquinas que processam armazenam os dados
+
+Haddop:
+
+------------------------------------------------------------------------------
+
+2013-04-02:
+
+RMI:
+- cliente e servidor
+- servidor precisa estar em algum lugar (acesso via IP) 
+
+RMI x heterogeneidade de hw e plataforma?
+- RMI independe de sisop ou de arquitetura de hardware, comunicação
+é transparente
+
+RMI x direcionalidade da comunicação?
+- cliente começa comunicação, servidor executa comando local e envia 
+resposta 
+- é possível que o servidor envie uma mensagem ao cliente. Exemplo:
+cliente faz uma requisição, faz outras coisas e depois vem a resposta
+
+RMI x sincronização (em TM)?
+
+
+RMI x RPC?
+- estados: cliente chama rpc vê apenas um estado. Com RMI cliente
+vê diferentes estados, um estado para cada objeto
+- chamadas: são concorrentes em RMI. 
+
+RMI
+- objetos: em RMI é possível dois programas acessarem 
+o mesmo objeto
+- cargas executáveis: executáveis podem ser carregados de forma automática
+do cliente para o servidor e vice versa
+
+Passagem de Parâmetros e resultados RMI:
+- passagem por valor, enviada uma cópia
+- objetos são serializados e enviados
+- passagem por referência ocorre se for explicitado, senão será por valor
+
+------------------------------------------------------------------------------
+
+2013-04-04:
+
+Algoritmos Distribuídos:
+
+Difusão:
+- um nó quer mandar uma informação para todos os demais nós da rede
+- problema: o nó não sabe quais são todos os outros nós.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	

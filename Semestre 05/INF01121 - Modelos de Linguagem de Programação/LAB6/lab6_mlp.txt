@@ -1,0 +1,33 @@
+LAB6 - MLP - 03/04/3012
+
+- Operador IS
+- Redes Semânticas -> Prolog
+
+=> Como atribuir valores, simular acumuladores?
+=> Como simular laços, contar?
+=> Como fazer programas que manipulam a base de fatos?
+=> Como contar quantos fatos específicos existem?
+=> Como fazer E/S?
+Read(X).
+Write(X).
+
+X is 10 + 2, Y is X #2, write(X). => associações são válidas só na expressão 
+Z is X + 2. => Erro pois não foi definido
+
+=> Fatorial de 1 númeri
+=> Programa que solicita um número n e monta uma lista com o fatorial dos n 
+primeiros números inteiros. Ao final, mostra a lista.
+
+
+fatorial(0,1):-!.
+fatorial(N,X):-A is N-1,
+			  fatorial(A,R),
+			  X is N*R.
+			  
+
+concatlst([],l2,l2):-!.
+concatlst([X|L],l2,[X|D]):-concatlst(l,l2,D).
+Execução: concatlst([1,2,3],[4,5],R).
+
+		  
+			  

@@ -1,0 +1,158 @@
+1. Levando em conta a Arquitetura de Von Neumann, a
+programação de computadores permite reservar espaços 
+de memória que são acessados e manipulados a fim de 
+que possamos representar as entidades do mundo real. 
+Dentro desse contexto:
+
+a. O que é um Sistema de Tipos?
+Mecaniso da linguagem para definir os tipos de dados
+que são manipulados pelas construções da linguagem 
+(constantes, variáveis, parâmetros). Também consiste
+no conjunto de regras para verificar a compatibilidade,
+equivalência e inferência de tipos, para validar 
+operações realizadas sobre estes tipos.
+
+b. Explique porque os Sistemas de Tipos são 
+importantes. O que podemos fazer em uma linguagem 
+que possui Sistema de Tipos?
+Os Sistemas de Tipos são importantes, pois com eles 
+podemos definir com quais tipos de dados nossa linguagem
+irá trabalhar, e isso implica conhecer os possíveis valores
+de uma variável dado seu tipo, bem como as operações a
+que esta variável pode ser submetida, e como essa informação
+é manipulada pela operação.
+
+c. Caso uma linguagem não possua sistema de tipos,
+que problemas ou dificuldades poderíamos ter?
+E uma linguagem sem sistema de tipos deve-se atentar bastante 
+para como as informações são manipuladas, pois não havendo
+restrição de interação entre dados com formatos diferentes,
+numerais e texto, por exemplo, o resultado pode ser 
+imprevisto. O Sistema de Tipos minimiza a ocorrência de
+erros ou resultados inesperados, pois evita tais interações
+e caso ocorram o programador fica ciente e pode atuar
+para solucionar o problema. 
+
+2. Além dos tipos primitivos, as linguagens modernas 
+oferecem a opção de o programador definir novos tipos.
+Levando isso em conta:
+
+a. Defina tipo primitivo, indicando suas características,
+propriedades.
+São tipo nos quais as características são conhecidas,
+tipos bases, tais como inteiros e reais. São os tipos
+naturais à linguagem de programação, que fazem parte da 
+linguagem. Não são definidos com base em outros tipos
+de dados.
+
+b. Indique quais são as possibilidades que os
+programadores têm a disposição para especificar novos 
+tipos?
+Os programadores podem especificar novos tipos por
+restrição (subsequencia de um tipo existente), enumeração
+(valores desejados são descritos), composição (união de 
+tipos primitivos para criar um tipo complexo)
+
+
+3. Linguagens orientadas a objetos permitem a
+definição de tipos compostos assim como as linguagens não 
+orientadas a objetos. Nesse contexto, que benefícios o 
+paradigma orientado a objetos oferece ao programador que 
+deseja construir novos tipos compostos? Há algo que não dê 
+para fazer, em termos de especificação de tipos compostos, 
+em linguagens não orientadas a objetos?
+As vantagens do paradigma orientado a objetos está no fato
+de que podemos escapsular dados e operações sobre estes dados.
+Um dos problemas de definir um tipo de dados é que as operações
+da linguagem podem não conseguir manipular tais dados, logo 
+surge a necessidade de definir métodos para operarem sobre 
+tais dados. O paradigma orientado a objetos oferece essa
+facilidade.
+
+
+4. Há linguagens de programação que permitem
+herança múltipla, como C++. Dentro desse contexto:
+
+a. O que significa herança múltipla? O que podemos fazer
+com ela?
+Herança múltipla nada mais é do que uma classe filha possuir 
+vários pais, ou seja, herda características de várias classes.
+
+b. Que tipo de problema pode surgir na herança
+múltipla e como resolvê-lo? Analise as soluções de diferentes 
+linguagens, em especial, C++ e Java.
+Herança múltipla pode ser um problema, pois as classes pai podem
+ter métodos com o mesmo nome ou mesmo variáveis com o mesmo nome.
+Uma forma de se prevenir deste problema é nas casses pai definir 
+algumas variáveis ou métodos como privadas ou protegidas. Se forem 
+privadas apenas a classe que contém a variável ou método pode usá-la,
+não podendo ser herdada. Já atributos ou métodos protected podem 
+ser acessados pela própria classe ou pelas classes herdadas. Isso
+é utilizado tanto em C++ quanto em Java para limitar as características 
+herdadas por uma classe filho.
+
+c. O que vem a ser a herança diamante? Em que situações ela ocorre?  
+A herança diamante ocorre quanto duas classes são geradas a partir da
+mesma classe e estas duas são pais de uma quarta classe, ou seja, ela herda 
+as características das dessas duas classes. Porém como as duas classes vieram 
+da mesma elas possuem características semelhantes e ao gerar outra classe
+haverá conflito de herança, visto que variáveis e métodos terão o mesmo nome.
+
+
+5. Neste exemplo os métodos da classe estão sendo utilizados por 
+variáveis que não pertencem à classe, como se fossem simples funções.
+O correto seria tornar o uso de tais métodos específicos da classe, ou 
+seja, fazer com que alterem apenas os valores da classe. Uma sugestão
+encontra-se a seguir: 
+
+import java.awt.Point;
+
+public class ExercicoMLP {
+ 
+    public static void main(String[] args) {
+        Funcionario f = new Funcionario();
+        
+        System.out.println("\nNome do funcionário: " + f.getNome());
+        System.out.println("Localização do funcionário: " + f.getLocalizacao());
+        
+        f.setNome(new StringBuffer("Indefinido<modificado>"));
+        f.setLocalizacao(new Point (48, 2)); // Paris, França
+        System.out.println("\nNome do funcionário: " + f.getNome());
+        System.out.println("Localização do funcionário: " + f.getLocalizacao());
+ 
+        f.setNome(new StringBuffer("Indefinido<modificado2>"));
+        f.setLocalizacao(new Point (24, 92));
+        System.out.println("\nNome do funcionário: " + f.getNome());
+        System.out.println("Localização do funcionário: " + f.getLocalizacao());
+    }
+}
+ 
+class Funcionario {
+ 
+    private StringBuffer nome;
+    private Point localizacao; // armazena as coordenadas geográficas (latitude, longitude)
+ 
+    public Funcionario(){
+        nome = new StringBuffer("Indefinido");
+        localizacao = new Point(30, 51); // Na UFRGs, em Porto Alegre
+    }
+ 
+    protected StringBuffer getNome() {
+        return nome;
+    }
+ 
+    protected void setNome(StringBuffer nome) {
+        this.nome = nome;
+    }
+    
+    protected Point getLocalizacao() {
+        return localizacao;
+    }
+    
+    protected void setLocalizacao(Point localizacao) {
+        this.localizacao = localizacao;
+    }    
+ 
+}
+
+Dessa forma apenas a classe pode acessar os métodos.

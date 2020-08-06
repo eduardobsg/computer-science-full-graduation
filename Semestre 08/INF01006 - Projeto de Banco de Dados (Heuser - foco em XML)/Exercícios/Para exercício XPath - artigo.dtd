@@ -1,0 +1,48 @@
+<!-- DTD de Artigo -->
+<!ELEMENT artigo (autor+,titulo_artigo,resumo,secao+,bibliografia)>
+<!ATTLIST artigo
+      data CDATA #REQUIRED
+      ultima_revisao CDATA #IMPLIED
+      ultimo_revisor CDATA #IMPLIED
+      versao CDATA #IMPLIED
+      status CDATA #IMPLIED
+>
+<!ELEMENT autor (nome,instituicao?,endereco)>
+
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT instituicao (#PCDATA)>
+<!ELEMENT endereco (rua?,numero?,bairro?,cidade?,estado?,pais?,cep?)>
+<!ELEMENT rua (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT bairro (#PCDATA)>
+<!ELEMENT cidade (#PCDATA)>
+<!ELEMENT estado (#PCDATA)>
+<!ELEMENT cep (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+
+<!ELEMENT titulo_artigo (#PCDATA)>
+
+<!ELEMENT resumo (#PCDATA)>
+
+<!ELEMENT secao (paragrafo|figura)+>
+<!ATTLIST secao
+      numero ID #REQUIRED
+      titulo CDATA #IMPLIED
+>
+
+<!ELEMENT paragrafo (#PCDATA)>
+<!ATTLIST paragrafo
+     citacao IDREFS #IMPLIED
+>
+<!ELEMENT figura EMPTY>
+<!ATTLIST figura
+      tipo  (jpeg|gif|bmp|tiff|wmf) #REQUIRED
+>
+<!ELEMENT bibliografia (referencia)+>
+<!ELEMENT referencia (obra,autor+,ano,local?)>
+<!ATTLIST referencia
+      id ID #REQUIRED
+>
+<!ELEMENT obra (#PCDATA)>
+<!ELEMENT ano (#PCDATA)>
+<!ELEMENT local (#PCDATA)>

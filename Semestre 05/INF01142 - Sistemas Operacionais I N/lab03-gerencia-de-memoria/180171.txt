@@ -1,0 +1,79 @@
+Questão 1)
+
+Este site (http://ubuntued.info/precisa-de-saber-se-o-seu-ubuntu-e-32-ou-64bits) diz como 
+se faz para saber se o sistema operacional é de 32 ou 64 bits.
+$ file /bin/bash | cut -d' ' -f3
+> 32-bit
+
+As informações de memória e swap obtive em Sistema->Administração->Monitor do Sistema->Recursos.
+
+Logo:
+- Memória: 2,9 GB
+- Swap: 3 GB
+- Versão do SISOP: 32 bits
+
+--------------------------------------------------------------------------------
+
+Questão 2)
+
+- top: mostra um sumário dos processos que estão em execução.
+- free: mostra a quantidade me memória utilizada e livre no sistema.
+- memstat: lista todos os processos, executáveis e bibliotecas compartilhadas
+que estão usando memória virtual.
+- pmap: reporta o mapa de memória de um processo ou processos dado o pid do 
+processo.
+- procinfo: mostra estatísticas do sistemas coletadas do /proc
+- vmstat: mostra estatísticas da memória virtual sobre processos, memória,
+paginação, traps, disk, atividade da CPU e IO bloqueados.
+
+--------------------------------------------------------------------------------
+
+Questão 3) 
+
+memória ocupada pela matriz a: 1024 * 1024 * 4 = 4 Mbytes
+memória ocupada pela matriz b: 1024 * 1024 * 4 = 4 Mbytes
+memória ocupada pela matriz c: 1024 * 1024 * 4 = 4 Mbytes
+
+Ou seja, ocuparia 12MB. Rodei e deu falha de segmentação. Encontrei na internet 
+o comando shell ulimit, que mostra o tamanho máximo de alocação de programas de usuário. Fiz:
+
+$ ulimit -s
+> 8192
+
+Como o ulimit retorna o valor em unidades de 512 bytes, então a quantidade de bytes
+máxima setada para o programa foi de 8192 * 512 = 4MBytes. Fiz:
+
+$ ulimit -s 16384
+
+Setei o limite para 16384 * 512 bytes, ou seja 8MBytes. Rodei o programa denovo 
+e funcionou.
+
+8Mbytes continua sendo inferior a 12Mbytes, mas mesmo assim o programa funcionou.
+Rodei pmap com o pid do processo e a pilha estava com 12Mbytes, ou seja, as 3 matrizes estão alocadas. Agora não sei dizer o motivo pelo qual mesmo alocando os
+8MBytes com o ulimit eu ainda consegui uma pilha em memória com 12Mbytes. 
+
+O memstat não acusou uso de memória virtual para este processo, logo estava tudo 
+em memória.
+
+--------------------------------------------------------------------------------
+
+Questão 4)
+
+O programa funciona até o fatorial de 20, a partir daí dá estouro de 
+representação, ficando o fatorial de 21 negativo por exemplo.
+
+--------------------------------------------------------------------------------
+
+Questão 5)
+
+Não consegui concluir, tive que ir para minha próxima aula.
+
+
+
+
+
+
+
+
+
+

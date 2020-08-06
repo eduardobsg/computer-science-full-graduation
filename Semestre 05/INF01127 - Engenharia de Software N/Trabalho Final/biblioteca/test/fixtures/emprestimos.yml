@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  pessoa: 
+  item: 
+  dataDevolucao: 2012-06-04
+
+two:
+  pessoa: 
+  item: 
+  dataDevolucao: 2012-06-04

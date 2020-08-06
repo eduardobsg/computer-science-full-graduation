@@ -1,0 +1,27 @@
+Cadeira: INF01120 - Técnicas de Construção de Programas
+Professor: Marcelo Pimenta
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2011/02
+
+Resumo 7 - Polimorfismo
+
+- nos possibilita escrever programas que compartilham a mesma superclasse 
+em uma hierarquia de classes, como se eles fossem todos objetos da superclasse.
+- um método de uma superclasse pode ser extendido/modificado por uma subclasse
+ou várias subclasses, tendo cada, uma implementação diferente do método.
+
+- classe abstrata: possui pelo menos um método abstrato
+- overloading (sobrecarga): quando uma classe filha realiza uma nova implementação 
+de um método da classe pai.
+- métodos finais: métodos de uma classe que não podem ser sobrecarregados, ou seja,
+são méotodos definitivos que não permitem nova implementação em classes filho.
+
+Interfaces:
+- relacionam os objetos às tarefas que eles devem realizar.
+- uma interface, em Java, é declarada com a palavra 'interface'. Deve possuir apenas
+métodos 'públic' e nenhuma implementação.
+- uma classe que implemente uma interface usa a diretiva 'implements' ao lado da declaração
+da classe, assim como a palavra 'extends' de extensão de uma classe
+- uma classe abstrata não precisa implementar os métodos de uma interface. Todavia as classes
+filhas de uma classe abstrata que usa uma interface precisam implementar os métods da interface.

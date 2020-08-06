@@ -1,0 +1,25 @@
+1. O trabalho deve ser feito INDIVIDUALMENTE.
+2. O trabalho deverá ser entregue até as 23 :59 :59 horas horas do dia 1 de OUTUBRO de 2013 por e-mail para
+asc@inf.urgs.br. Entregar os fontes e um Makefile para compilação e geração do executável.
+3. A realização deste trabalho substitui UMA questão da prova teórica 1. Além disso, o trabalho vale até TRÊS
+pontos, sendo que as questões valerão DOIS pontos cada uma, ou seja, fazendo correta e adequadamente o
+trabalho você pode atingir ONZE pontos na prova teórica 1.
+4. Parâmetros a serem usados na correção :
+(a) É obrigatório o uso do programa de CRC fornecido na página da disciplina. O não cumprimento dessa
+restrição implica em ZERO pontos no trabalho.
+(b) ZERO pontos : simplesmente enviar e receber dados usando o programa fornecido em UDP.
+(c) ZERO pontos : não implementar um Go-back N real. Cuidado para não fazer dele um Stop-and-wait
+disfarçado ! ! ! Leia atentamente o item 2 da seção 2 (especificação)
+(d) Até UM ponto : implementação do Go-back N de forma que funcione na ausência de qualquer tipo de
+erro. Para isso pode ser suprimido a geração randômica dos erros, o time-out e o uso do CRC. Deverá
+ser capaz de receber e enviar arquivos ASCII e binário.
+(e) Até DOIS pontos : implementação completa desta especificação, porém funcionando em apenas uma
+máquina, ou seja, os dois processos (transmissor e o receptor) estão na mesma máquina. Deverá ser
+capaz de receber e enviar arquivos ASCII e binário.
+(f) Até TRES pontos : implementação completa desta especificação, porém funcionando em máquinas
+distintas, ou seja, o transmissor e o receptor em máquinas diferentes. Nesse caso, o programa deve
+ser capaz de transmitir corretamente mesmo que o cabo de rede seja retirado e recolocado. Deverá ser
+capaz de receber e enviar arquivos ASCII e binário.
+5. O professor da disciplina se reserva, caso necessário, o direito de solicitar uma demonstração do programa. A
+nota final será baseada nos parâmetros acima e no questionamento a questões de projeto e de implementação
+feitas ao aluno.

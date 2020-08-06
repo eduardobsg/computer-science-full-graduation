@@ -1,0 +1,73 @@
+{
+	EXEMPLO: CÁLCULO DE NÚMERO PRIMOS
+	- calcula A-ésimo número primo
+	- este é um exemplo híbrido: um programa monolítico com macros iterativas
+}
+
+programa monolitico
+
+macro iterativo zerar (REG)
+	{ zera o registrador REG }
+	ate zero-REG faca (sub-REG)
+fimmacro
+
+
+macro iterativo mover (SOURCE, DEST)
+	{ move o valor do registrador SOURCE para DEST, zerando o registrador SOURCE }
+	ate zero-SOURCE faca (ad-DEST;sub-SOURCE)
+fimmacro
+
+
+macro iterativo copiar (SOURCE, DEST, HLP)
+	{ copia o valor do registrador SOURCE para DEST utilizando o registrador HLP como auxiliar }
+
+	ate zero-SOURCE faca (ad-DEST;ad-HLP;sub-SOURCE);
+	ate zero-HLP faca (ad-SOURCE;sub-HLP)
+fimmacro
+
+
+macro iterativo teste_mod (VAL, DIV, TST) teste zero-TST
+	{ testa se o valor do registrador VAL é divisivel pelo valor do registrador DIV
+	  utiliza os registradores D e E como auxiliares }
+
+	copiar(VAL, D, E);
+	ate zero-VAL faca (
+		ate zero-DIV faca (
+			sub-VAL;ad-E;sub-DIV;
+			(se zero-VAL entao (
+				(se zero-DIV entao V
+				senao (ad-TST));
+				mover(D, VAL);mover(E, DIV);retornar)
+			senao V));
+		mover(E, DIV))
+fimmacro
+
+
+macro iterativo teste_primo (VAL, TST) teste zero-TST
+	{ teste se o valor do registrador VAL é um número primo
+	  utiliza o registrador C como auxiliar }
+
+	(se zero-VAL entao (ad-TST;retornar)
+	senao (
+		copiar(VAL, C, D);
+		sub-C;
+		(se zero-C entao retornar
+		senao (
+			ate teste_mod(VAL, C, TST) faca (sub-C;sub-TST);
+			sub-C;
+			(se zero-C entao retornar senao (zerar(C);ad-TST;retornar))))))
+fimmacro
+
+
+{ inicio do programa }
+
+inicio:	faca mover(A, B) va_para 1
+1:		faca ad-A va_para 2
+2:		se zero-B entao va_para 0 senao va_para loop
+
+loop:		faca sub-B va_para 3
+3:		faca ad-A va_para 4
+4:		se teste_primo (A, F) entao va_para 7 senao va_para 5
+5:		faca ad-A va_para 6
+6:		faca sub-F va_para 4
+7:		faca print-A va_para 2

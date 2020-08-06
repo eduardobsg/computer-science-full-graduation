@@ -1,0 +1,56 @@
+byte a: 'c';
+word b: 10;
+bool f: true;
+word kk[2] : 1 2;
+word $p : 10;
+bool vb_a: true;
+word vw_a: 1;
+word vaw_a[10]: 1 2 3 4 5 6 7 6 4 10;
+
+word foo(word d, bool x)
+	word xx: 20;
+{	
+	//kk = foo(); //indica quantidade errada de parâmetros
+	//a = foo(a, a, a); //indica quantidade errada de parâmetros 
+	//kk = foo(a, f); //funciona
+	//kk = foo(b, f); //funciona
+	//kk = foo(1+1, f); //funciona
+	//kk = foo(1+true, f); //indica erro
+	//kk = foo(f, f); //indica erro
+	//kk = foo(1+3+2+3/3*4, true&&(false||true)); //funciona
+	
+	//f = foo(-a, f);	//indica erro
+	//a = &f; //dá erro
+
+	/* Ponteiros */
+	kk[1] = *p + 1;
+
+	//p = p + 1; //deve funcionar
+	//p = 1 + 1; //deve funcionar
+	//p = &xx; //deve funcionar
+	//a = *p; //deve funcionar
+	//a = &p;	//deve acusar erro funcionar, pois referencia só ponteiros devem aceitar
+
+	a = kk[(1+1)*10];
+	a = kk['d'+2];
+	a = kk[b/2+2];
+	//a = kk[true]; //indica o erro
+	a = kk[foo(a, f)];
+	a = kk[*p]; //análise ainda não funciona, mas deveria passar como OK
+
+	kk[1+1] = a;
+	kk[foo(a, f)] = a;
+	
+	//Outros testes:
+	vb_a = true || (false && 4 < 1);
+	vw_a = vaw_a[0 + 2 * 4 / (3  / 4)];
+	a = true + true;
+	vaw_a[true] = true;
+
+	//a = foo2(-a, kk); //indica erro
+	
+	return splsaplasp;
+} 
+
+
+

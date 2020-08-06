@@ -1,0 +1,1 @@
+Software utilizado na disciplina: plt-4.2-bin-i386-win32.exe

@@ -1,0 +1,39 @@
+inicio:	ldr a ptd
+	sub a pto		; reg A tem a diferença ptd-pto
+	jz fim			; ponteiros iguais - não faz nada
+        ldr b n			; otimização: B é carregado com n
+	ldr x pto		; X é carregado com pto
+	jc ptd_maior_que_pto
+
+ptd_menor_que_pto:
+	str a laco_1+3
+laco_1:	ldr a 0,x		; x contém ponteiro durante o tempo de execução
+	str a 0,x		; a constante 0 é substituída por ptd-pto
+	add x #1
+	sub b #1
+	jz fim
+	jmp laco_1
+
+ptd_maior_que_pto:
+        str a laco_2+5
+	add x n			; aponta x para o fim da área (+ 1)
+laco_2:	sub x #1		; x contém ponteiro durante o tempo de execução
+	ldr a 0,x		
+        str a 0,x		; a constante 0 é substituída por ptd-pto
+	sub b #1
+	jz fim
+	jmp laco_2
+
+fim:
+	hlt
+
+
+org 128
+n:	db 16
+pto:	db 140
+ptd:    db 200
+
+org 140
+        dab 1,2,3,4,5,6,7,8,9
+        dab 10,11,12,13,14,15,16,17
+

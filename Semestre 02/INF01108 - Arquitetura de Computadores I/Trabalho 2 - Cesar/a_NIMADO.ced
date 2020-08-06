@@ -1,0 +1,11 @@
+inicio:
+     MOV #97,65500  ; coloca "a" na primeira posição do visor
+     MOV #65500,R0  ; aponta R0 para primeiro LED do visor
+continua:
+     MOV (R0),1(R0) ; move o "a" para a posição seguinte no visor
+     MOV #32,(R0)   ; apaga o "a" da posição atual
+     INC R0         ; aponta R0 para posição onde está o "a"
+     CMP R0,#65535  ; se ainda não está na última posição do visor
+     BNE continua   ; continua movendo o "a"
+     MOV #32,65535  ; limpa último LED
+     BR  inicio     ; reinicia colocando o "a" no primeiro LED

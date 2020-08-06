@@ -1,0 +1,44 @@
+; 1. Inicio: i=8; Pmsb=0, plsb=m
+       LDA Oito
+       STA i
+       LDA Zero
+       STA Pmsb
+       LDA mcador
+       STA plsb
+; 2. Desloca plsb p/direita, bit menos significativo vai p/carry
+laco:  LDA plsb
+       SHR
+       STA plsb
+; 3. Se carry = 0, pula a soma (passo 4)
+       LDA Pmsb
+       JNC C0
+; 4. P = P + M
+       ADD Mcando
+; 5 Desloca P e p, com carry
+C0:    ROR
+       STA Pmsb
+       JNC plsb_ok
+       LDA plsb
+       OR  M128
+       STA plsb
+plsb_ok:
+; 6. Decrementa contador (i)
+       LDA i
+       SUB Um
+       STA i
+; 7. Se n!=0, voltar para o passo 2
+       JNZ laco
+; Se não, terminar
+       HLT
+
+ORG 128
+Mcando: DB  255
+Mcador: DB    1
+Pmsb:   DB    0
+Plsb:   DB    0
+i:      DB    0
+empty:	DB    0
+Zero:   DB    0
+Um:     DB    1
+Oito:   DB    8
+M128:	DB  128

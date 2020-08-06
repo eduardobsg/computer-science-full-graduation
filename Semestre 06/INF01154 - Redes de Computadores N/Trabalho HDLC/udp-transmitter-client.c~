@@ -1,0 +1,192 @@
+/* UDP client in the internet domain */
+
+/*
+
+REALIZAR BYTE STUFFING APÓS O CRC
+
+*/
+
+
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <netdb.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdio.h>      /* printf, scanf, NULL */
+#include <stdlib.h>     /* srand, rand */
+#include <time.h>       /* time */
+
+#include "hdlc.h"
+
+#define MAX_FILENAME 80
+
+//Function prototype
+void error(char *);
+
+int main(int argc, char *argv[])
+{
+	int sock, length, n, fromlen;
+	struct sockaddr_in server, from;
+	struct hostent *hp;
+	char bufserver[MAX_HDLC], bufclient[MAX_HDLC];
+	char filename[MAX_FILENAME];
+	   
+	/* Initialize random seed */
+	srand(time(NULL));
+	
+	//Server	   
+	if(argc < 2) {
+		sock = socket(AF_INET, SOCK_DGRAM, 0);
+		if(sock < 0)
+			error("Opening socket");
+		
+		printf("Server has started.\n");
+				
+		length = sizeof(server);
+		bzero(&server, length);
+	
+		server.sin_family = AF_INET;
+		server.sin_addr.s_addr = INADDR_ANY;
+		server.sin_port = htons(IP);
+	   
+		if(bind(sock, (struct sockaddr *)&server, length) < 0) 
+			error("binding");
+		
+		fromlen = sizeof(struct sockaddr_in);
+		while(1) {
+			bzero(bufserver, MAX_HDLC);
+			n = recvfrom(sock, bufserver, MAX_HDLC, 0, (struct sockaddr *)&from, (socklen_t *)&fromlen);
+		
+			if(n < 0)
+				error("recvfrom");
+			
+			fprintf(stderr, "Received a datagram: ");
+			fprintf(stderr, "%s \n", bufserver);
+		
+			bzero(bufserver, MAX_HDLC);
+			n = sendto(sock, "OK!\n", 4, 0, (struct sockaddr *)&from, fromlen);
+					
+			if(n < 0)
+				error("sendto");
+	   }
+			
+	}
+	
+	//Client
+	else {
+		if(argc >= 5 && argc <= 6) {
+			if( !strcmp(argv[1], "-l") ) {
+				//do log
+			
+				if( !strcmp(argv[2], "-h") ) {
+					if(argv[3] != NULL) {
+						hp = gethostbyname(argv[3]);
+						
+						if( !strcmp(argv[4], "-f") ) {
+							if(argv[5] != NULL) 
+								strcpy(filename, argv[5]);
+							else {
+								fprintf(stderr, "Fifth argument must be the filename.\n");													
+								exit(0);
+							}
+						}
+					}
+					else {
+						fprintf(stderr, "Third argument must be the IP.\n");					
+						exit(0);
+					}
+				}
+				else {
+					fprintf(stderr, "Second argument must be -h.\n");
+					exit(0);
+				}
+			}
+			else {
+				if( !strcmp(argv[1], "-h") ) {
+					if(argv[2] != NULL) {
+						hp = gethostbyname(argv[2]);
+						
+						if( !strcmp(argv[3], "-f") ) {
+							if(argv[4] != NULL) 
+								strcpy(filename, argv[4]);
+							else {
+								fprintf(stderr, "Forth argument must be the filename.\n");													
+								exit(0);
+							}
+						}
+					}
+					else {
+						fprintf(stderr, "Second argument must be the IP.\n");					
+						exit(0);
+					}
+				}
+				else {
+					fprintf(stderr, "First argument must be -l or -h.\n");
+					exit(0);
+				}
+			}
+		}
+		else {
+			fprintf(stderr, "Wrong number of parameters.\n");
+			exit(0);
+		}
+				
+		printf("filename: %s\n", filename);
+	
+		sock = socket(AF_INET, SOCK_DGRAM, 0);
+		if(sock < 0)
+			error("socket");
+
+		server.sin_family = AF_INET;
+
+		if(hp == 0)
+			error("Unknown host");
+
+		bcopy(	(char *)hp->h_addr, 
+				(char *)&server.sin_addr,
+		     	hp->h_length);     
+		server.sin_port = htons(IP);
+		length = sizeof(struct sockaddr_in);
+	
+		while(1) {
+			printf("Please enter the message: ");
+			bzero(bufclient, MAX_HDLC);
+			fgets(bufclient, MAX_HDLC - 1, stdin);
+		
+			//Newline '\n' correction
+			n = strlen(bufclient) - 1;
+			if(bufclient[n] == '\n')
+				bufclient[n] = '\0';
+		
+		   	n = sendto(sock, bufclient, strlen(bufclient), 0, (struct sockaddr *)&server, length);
+			if(n < 0)
+				error("Sendto");
+		   
+			bzero(bufclient, MAX_HDLC);
+			n = recvfrom(sock, bufclient, MAX_HDLC, 0, (struct sockaddr *)&from, (socklen_t *)&length);
+		   	
+		   	if(n < 0)
+		   		error("recvfrom");
+
+			fprintf(stderr, "Got an ack from server: ");
+			fprintf(stderr, "%s \n", bufclient);
+		}	
+	}
+		
+	return 0;
+}
+
+void error(char *msg)
+{
+	perror(msg);
+	exit(0);
+}
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+# example file 3 - Dicas de uso - Fernando Nascimento - 201005
+#  
+# 0 - Abrir uma janela DOS no diretorio do Espresso.
+# 1 - Sintese basica sem opçoes.
+#     espresso ex3.txt > ex3_out1.txt
+#
+#     SAIDA
+#     .i 3
+#     .o 2
+#     .ilb E2 E1 E0
+#     .ob Y1 Y0
+#     .p 5
+#     000 11
+#     1-1 01
+#     -11 01
+#     11- 01
+#     -1- 10
+#     .e
+#     
+# 2 - Sintese com a opcao para mostrar as funcoes de saida com nomes.
+#     espresso -oeqntott ex3.txt > ex3_out2.txt
+#
+#     SAIDA
+#     Y1 = (!E2&!E1&!E0) | (E1);
+#     Y0 = (!E2&!E1&!E0) | (E2&E0) | (E1&E0) | (E2&E1);
+#     
+# 3 - Sintese com a opcao de otmizacao (sem compartilhamento).
+#     espresso -oeqntott -Dso ex3.txt > ex3_out3.txt
+#
+#     SAIDA
+#     Y1 = (!E2&!E0) | (E1);
+#     Y0 = (!E2&!E1&!E0) | (E2&E1) | (E2&E0) | (E1&E0);
+#     
+# PROGRAMA ESPRESSO
+# tres variaveis de entrada  
+.i 3   
+# duas saidas
+.o 2  
+# # nome das variaveis de entrada
+.ilb E2 E1 E0  
+# nome das variaveis de saida
+.ob Y1 Y0  
+.p 8  
+000 11 
+001 00  
+010 10  
+011 11 
+100 00  
+101 01  
+110 -1  
+111 -1  
+.e 

@@ -1,0 +1,150 @@
+LAB2
+
+=======================================================
+Currying:
+- técnica de transformação de uma função que recebe em múltiplos argumentos
+em uma sequencia de funções que recebem cada um único argumento.
+- funções com m´lutiplos argumentos podem utilizar a técnica de currying.
+- usado em funções de ordem superior para que os parâmetros sejam consumidos
+gradativamente.
+
+- Vantagens:
+  * permite realizar especialização de uma função
+  * permite criar funções que são parâmetro de outras funções
+
+=======================================================
+
+=======================================================
+Exercícios:
+
+-------------------------------------------------------
+1) Elabore uma função que simule o operador de construção.
+
+fun f x = x + x;
+fun g x = x * x;
+
+fun construir nil    n = nil
+|   construir (h::t) n = (h n)::(construir t n);
+
+ou
+
+fun construir []    n = []
+|   construir (h::t) n = (h n)::(construir t n);
+
+construir [f, g] 2;
+-------------------------------------------------------
+
+-------------------------------------------------------
+2) Dado o código abaixo:
+val p1 = (10, 10);
+val p2 = (20, 15);
+val d = distancia(p1, p2);
+
+Elabore a função "distância" de forma que o código anterior funcione. A função 
+recebe duas tuplas (pares ordenados) correspondentes a dois pontos em um espaço 
+de coordenadas cartesiano. A função deve retornar a distancia entre eles (um número 
+real). 
+
+val p1 = [10.0, 10.0];
+val p2 = [20.0, 20.0];
+load "Math";
+fun distancia p1 p2 = Math.sqrt( Math.pow((hd(p1)-hd(p2)),2.0) + Math.pow((hd(tl(p1))-hd(tl(p2))),2.0) );
+fun distancia p1 p2 = Math.sqrt( Math.pow((hd(p1)-hd(p2)),2.0) + Math.pow((last(p1)-last(p2)),2.0) );
+
+distancia p1 p2;
+Obs.: Um problema que estava dando é que antes eu usava tl(p1) ao invés de hd(tl(p1)) e dava erro de tipo.
+Isso ocorre pois tl() retorna uma lista, mas eu estou trabalhando com reais, logo preciso dar um novo hd().
+-------------------------------------------------------
+
+-------------------------------------------------------
+3) Elabore uma função que some os elementos de uma lista usando 'foldr' ou 'foldl'.
+
+fun somatorio nil = 0
+|   somatorio (h::t) = h + (somatorio t);
+
+fun somatorio2 lst = foldl op+ 0 lst; => combina os elementos de lst 2 a 2, 
+					 somando-os e partindo do valor zero.
+
+Combinar os elementos de uma lista, combinando-os 2 a 2
+através de uma função, partindo de uma valor, de uma semente.
+
+foldl op+ 0 [1,2,3] => op+(op+(op+(1,0),2),3)
+-------------------------------------------------------
+
+-------------------------------------------------------
+4) Elabore a função "pares", que recebe uma lista de números inteiros e retorna uma nova lista contendo somente os números pares da lista passada. Utilize if ... then ... else na construção da função.
+
+fun pares [] = []
+|   pares (h::t) = (if (h mod 2) = 0 then (h::[]) else [])@(pares t);
+-------------------------------------------------------
+
+-------------------------------------------------------
+5. Elabore uma função que receba uma lista e devolva uma lista com os elementos duplicados
+(multiplicados por 2), usando map e fn. 
+e.g., duplica [1,2,3] => [2,4,6]
+
+fun duplica nil = nil
+|   duplica (h::t) = (h*2)::(duplica t);
+
+fun duplica2 lst = map(fn x => x * 2) lst;
+-------------------------------------------------------
+
+-------------------------------------------------------
+6. Elabore uma função que receba uma lista e retorne uma outra lista indicando, 
+para cada elemento, se ele é positivo (true) ou negativo (false). Números 
+negativos, em ML, são precedidos de "~". 
+e.g., positivos [1, ~2, 4, 6, ~10] -> [true, false, true, true, false]
+
+OBS: A função deve fazer uso do operador map e de uma função auxiliar de 
+avaliação não nomeada. 
+
+fun positivos [] = [] |
+    positivos (h::t) = (if h >=0 then true else false)::(positivos t);
+
+fun positivos l = map( fn x => (if x >=0 then true else false) )l;
+
+val positivos = map( fn x => (if x >=0 then true else false) );
+-------------------------------------------------------
+
+-------------------------------------------------------
+7. Função que recebe um número e testa se ele é primo.
+
+fun primo n x = 
+(if (n mod x) = 0
+	then (if (n = x) then true else false)
+	else (primo n (x+1))
+);
+
+fun testprimo n = (primo n 2);
+
+-------------------------------------------------------
+
+-------------------------------------------------------
+8. Elabore uma função que ordene listas. 
+e.g., ordena [1,4,10,5, 2] -> [1, 2, 4, 5, 10]
+
+fun insert (x,[]) = [x] |
+    insert (x,h::t) = if (x <= h) then x::h::t else h::insert(x,t);
+
+fun insertionsort (h::[]) = [h] |
+    insertionsort (h::t) = insert(h, insertionsort(t));
+-------------------------------------------------------
+
+-------------------------------------------------------
+9. Elabore uma função que some os números pares de uma lista.
+
+fun somapar [] = 0 |
+    somapar (h::t) = if h mod 2 = 0 then h + somapar(t) else somapar(t);
+
+-------------------------------------------------------
+
+=======================================================
+
+
+
+
+
+
+
+
+

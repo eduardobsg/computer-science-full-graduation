@@ -1,0 +1,33 @@
+1) Os formalismos que podem ser utilizados são:
+
+- operacional ou reconhecedor: autômato finito determinístico, não-determinístico, 
+ou com movimentos vazios
+
+* autômato finito determinístico:
+M={{a,b},{q0,q1,q2,q3,q4},q0,{q0,q4}}
+
+	a	b
+q0	q1	q3
+q1	q2	q0
+q2	q2	q0
+q3	q0	q4
+q4	q0	q4
+
+
+* autômato finito não-determinístico:
+M={{a,b},{q0,q1,q2,q3},q0,{q3}}
+
+	a	b
+q0	q0;q1	q0;q2
+q1	q3	-
+q2	q3	-
+q3	-	-
+
+
+- axiomático/gerador: gramática regular
+S -> aS | bS | A
+A -> aa | bb
+
+- denotacional: expressão regular
+(a+b)*)(aa+bb)
+

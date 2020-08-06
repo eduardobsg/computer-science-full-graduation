@@ -1,0 +1,19 @@
+1) Ajustado o offset para tensão de 12v e onda quadrada no canal 1 e as duas ponteiras com atuaneação de 10x para menor interferência no circuito.
+1.1) RESISTOR - nominal:820ohms real:806ohms
+
+2) usando 12v no circuito 1
+2.1) na onda crescente 12*(1-0.36) = 7,68v, com tempo 184us
+2.2) na onda decrescente 12*0,36 = 4,32v, o tempo 188us
+
+3) usando 5v no circuito 1
+2.1) na onda crescente 5*(1-0.36) = 3,2v, com tempo 176us
+2.2) na onda decrescente 5*0,36 = 1,8v, o tempo 188us
+
+4) usando 12v no circuito 2
+4.1) na onda crescente 12*(1-0.36) = 7,68v, com tempo 400us
+4.2) na onda decrescente 12*0,36 = 4,32v, o tempo us
+
+5) constante de tempo = resistência * capacitância
+5.1) circuito 1: capacitância = 186us/806ohms = 0,2308uF
+5.1) circuito 2: capacitância = 400us/806ohms = 0,4963uF
+5.3) O valor nominal dos dois capacitores é 0,22uF

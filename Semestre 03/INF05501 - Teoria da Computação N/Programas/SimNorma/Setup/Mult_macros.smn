@@ -1,0 +1,42 @@
+{
+	EXEMPLO: MULTIPLICAÇÃO
+	- multilplica o valor do registrador A pelo B
+	- A = A * B
+	- este exemplo mostra como a linguagem Monitè é poderosa, permitindo a
+	  construção de programa híbridos: iterativos com macros monolíticas e vice-versa
+}
+
+programa iterativo
+
+macro monolitico zerar (REG)
+	{ zera o conteúdo do registrador REG }
+	1: se zero-REG entao va_para 2 senao va_para 0
+	2: faca sub-REG va_para 1
+fimmacro
+
+macro iterativo mover_somar (DEST, SRC)
+	{ move o valor do registrador SRC para DEST, deixando em zero e sem zerar o destino }
+	ate zero-SRC faca (ad-DEST;sub-SRC)
+fimmacro
+
+macro monolitico somar (DEST, SRC, AUX)
+	{ soma o valor do registrador SRC no DEST, mantendo seu valor (DEST = DEST + SRC) }
+	1: faca mover_somar(AUX, SRC) va_para 2
+	2: se zero-AUX entao va_para 0 senao va_para 3
+	3: faca ad-DEST va_para 4
+	4: faca ad-SRC va_para 5
+	5: faca sub-AUX va_para 2
+fimmacro
+
+macro iterativo mult (DEST, SRC, AUX1, AUX2)
+	{ multiplica o valor do registrador DEST com o SRC (DEST = DEST * SRC) }
+	zerar (AUX1);
+	zerar (AUX2);
+	mover_somar (AUX1, DEST);
+	ate zero-SRC faca (
+		somar (DEST, AUX1, AUX2);
+		print-SRC;
+		sub-SRC)
+fimmacro
+
+mult (A, B, C, D)

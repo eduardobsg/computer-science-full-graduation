@@ -1,0 +1,65 @@
+CAPÍTULO 8
+
+Kleene
+
+- Expressar todas as funções por um conjunto mínimo de funções
+- Importância da minimização: garante que o que é computável será computado 
+em tempo finito
+
+---------------------------------------------------------------------------
+
+Cálculo Lambda
+
+- O que é cálculo Lambda? É uma maneira alternativa de pensar/raciocinar. Temos equivalência alfabética.
+	Aplicação: dois termos lambda um do lado do outro.
+	Abstração: com "."
+	Prova: Sucessor de um número, adição, achar pontos fixos de uma função 
+	
+---------------------------------------------------------------------------
+
+CAPÍTULO 9
+
+Solucionabilidade
+
+- Problemas solucionáveis: possuem um algooritmo que sempre pára para qualquer entrada, aceitando ou rejeitando, ou seja, são problemas recursivos, seu loop é vazio.
+- Problemas solucionáveis: o problema e seu complemento são parcialmente solucionáveis
+	O complemento de um problema recursivo é recursivo
+	O complemento de um problema solucionável é solucionável
+
+- Problemas não-solucionáveis: não possuem um algoritmo que pára para qualquer entrada, ou seja, podem ficar em loop. 
+	O complemento de um problema não-solucionável é não-solucionável
+		
+- Problemas parcialmente solucináveis: pertencem à classe dos problemas não-solucionáveis. Para estes problemas existe um algoritmo the pára quando a resposta é afirmativa (aceita), porém quando a resposta é negativa pára (rejeita) ou entra em loop.
+
+
+
+Propriedades da Solucionabilidade (9.9)
+
+- complemento de uma linguagem recursiva é uma linguagem recursiva. Logo existe um algoritmo 
+que sempre pára para reconhecer o complemento da linguagem.
+	Prova: como existe um  algoritmo para uma máquina de turing que sempre pára para qualquer 
+linguagem recursiva
+
+- uma linguagem L é recursiva, se e somente se, a linguagem L e seu complemento são enumeráveis
+recursivas, ou seja, o loop da linguagem e de seu complemento é vazio.
+	Prova: 
+
+
+Completamente insolúvel: não computável
+
+Problema da parada: computável, porém não solucionável, é apenas parcialmente solucionável
+
+Complemento do problema da parada: problema da não parada -> detecção de loops
+
+
+-----------------------------------------------------------------------------
+
+Livro David Harel - Algorithmics The Spirit of Computing
+
+
+Trabalho: Castor Preguiçoso - Entrega dia 29/06
+	Caracterizar, dar exemplo, apanhado histórico
+
+
+
+Trazer para a próxima aula exercício 9.17

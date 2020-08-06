@@ -1,0 +1,136 @@
+type a : 0;
+type v[10] : 0 0 0 0 0 0 0 0 0 0;
+type mat[1000];
+type $pt : 0;
+
+type main()
+	type i : 0;
+{
+	output "Digite um numero: ";
+	loop(i < 10)
+	{
+		a = incn(a, 1);
+		i = i + 1;
+	};
+	output "Incrementado algumas vezes fica ", a, "\n";
+}
+
+type incn(type x, type n)
+{
+	return x + n;
+}
+
+type outra()
+{
+}
+
+type maisuma()
+{
+}
+type a : 0;
+type w[10];
+type j[500] : 0 1 2 3 4;
+type $q : 10;
+
+type foo(type aaa, type ccc)
+	type hhh : 100;
+	type iii : 200;
+	type lll : 200;
+	type jjj : 200;
+{
+	a = 2;
+	b = 2 + 5 + 4 - 4 - 5 / 4;
+	k = 5000;
+	j[2] = 100;
+	if(a) then j = 3;
+	if(s) then 
+	{
+		a = 2;
+		b = 3;
+	};
+	if(a >= b) then c = 2 else 
+	{
+		if(d < e) then 
+		{
+			f = g;
+		};
+	};
+	aa = *bb;
+	cc = &dd;
+	ee = -50;
+	ff = gg[10];
+	hh = (1 + ii) * (jj / 3);
+	kk = foo();
+	ll = goo(moo(), 50, vec[5]);
+	input aa;
+	loop(tt)ww = (q[30]) + &rr * -2;
+	loop(5 + 5 / *hh)
+	{
+		aa = 1;
+		bb = (foo(cc, dd));
+	};
+	output "teste", 1 + 1 * 30, "legal";
+	output 2 + 2;
+	return xx;
+}
+type a : 0;
+type v[10] : 0 0 0 0 0 0 0 0 0 0;
+type mat[1000];
+type $pt : 0;
+
+type main()
+	type i : 0;
+{
+	output "Digite um numero: ";
+	loop(i < 10)
+	{
+		a = incn(a, 1);
+		i = i + 1;
+	};
+	output "Incrementado algumas vezes fica ", a, "\n";
+}
+
+type incn(type x, type n)
+{
+	return x + n;
+}
+
+type outra()
+{
+}
+
+type maisuma()
+{
+}
+type a : 0;
+type v[10] : 0 0 0 0 0 0 0 0 0 0;
+type mat[1000];
+type $pt : 0;
+
+type main()
+	type i : 'a';
+	type a : 5;
+{
+	output "digite um numero";
+	input i;
+	loop(i + 10)
+	{
+		a = incn();
+		i = i + 1;
+	};
+	if(x) then a = 5 else a = 7;
+	output "A resposta eh", i, a, 2f, "\n";
+}
+
+type incn(type x, type n)
+{
+	return x + n;
+}
+
+type outra()
+{
+}
+
+type maisuma()
+{
+}

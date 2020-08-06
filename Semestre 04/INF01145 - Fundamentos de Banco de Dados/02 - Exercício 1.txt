@@ -1,0 +1,97 @@
+Abordagem hierárquica
+
+Considere os seguintes dados a armazenar em uma base de dados. 
+
+Deseja-se armazenar informações sobre a produção científica de 
+vários pesquisadores. Acompanhe a descrição:
+- A base de dados armazena dados sobre artigos científicos publicados 
+por cada pesquisador. 
+- Para cada artigo deseja-se saber o título, o ano e o local de publicação. 
+- Para cada artigo é necessário conhecer os pesquisadores que são autores. 
+- Para cada autor, deseja-se saber o nome e a instituição a qual ele está vinculado.
+
+Construa o modelo lógico de uma base de dados hierárquica que armazene estes dados.
+
+Banco de dados:
+
+Primeiro modelo:
+<autores>
+	<autor1>
+		<nome da instituição></nome da instituição>
+		<artigos>
+			<artigo1>
+				<título></título>
+				<ano></ano>
+				<local publicação></local publicação>
+			</artigo1>
+			<artigo2> ... </artigo2>
+			...
+			<artigon> ... </artigon>
+		<artigos>
+	</autor1>	
+	<autor2> ... </autor2>
+	...
+	<autorn> ... </autorn>
+</aturoes>
+
+- Problemas: 
+	* como cada artigo pode ter mais de um autor, os dados referentes a artigos 
+	irão se repetir bastante, pois essas informações aparecerão tantas vezes 
+	quantas forem a quantidade de autores por artigo.
+
+Segundo modelo:
+<artigos>
+	<artigo1>
+		<título></título>
+		<ano></ano>
+		<local publicação></local publicação>
+		<autores>
+			<autor1>
+				<nome da instituição></nome da instituição>			
+			</autor1>
+			... 
+			<autorn></autorn>
+		</autores>
+	<artigo1> 
+	...
+	<artigon> ... </artigon>
+</artigos>
+
+- Problemas: haverá redundância de dados, visto que diferentes artigos podem ter
+sido escritos por um mesmo autor, ou seja, a repetição das informações de um autor
+irá repetir tantas vezes quantas forem a quantidade de artigos que este escreveu.
+
+- Considerações:
+	* visto que um autor geralmente escreve diversos artigos e considerando que são
+poucas as vezes que diferentes autores escrevem o mesmo artigo, o primeiro modelo é 
+o que geraria menos redundância de dados, pois como ela é baseada em autores, a única
+redundância de dados se dará no caso de haver mais de um autor por artigo. Porém como
+estabelecemos como premissa que isso não acontecerá com tanta frequência, este é o 
+modelo que gera menos redundância.
+	* o segundo modelo, pelo contrário, por ser baseado em artigos, e sabendo que um
+autor escreve diversos artigos na sua jornada acadêmica, as informações sobre autores
+irão repetir diversas vezes, tantas vezes quantas forem a quantidade de artigos que
+um autor escrever. Isso enfatiza o motivo pelo qual o primeiro modelo é melhor, não
+gera tanta redundância de dados como no segundo modelo. 
+
+Perguntas:
+- A base de dados projetada contém redundância de dados? Caso afirmativo, onde está 
+a redundância?
+	A redundância foi explicada em 'problemas' e complementada em 'considerações'
+
+- É possível projetar uma outra base de dados hierárquica com as mesmas informações, 
+mas sem redundância? Como seria?
+	Não é possível, pois se tentássemos deixar todos os autores de um artigo como 
+filhos do artigos e os artigos de um autor como filhos de um autor, passaríamos a ter
+mais de um pai para cada filho, ou seja, deixaria de ser uma árvore.
+	Ex.: artigo1 com autor1 e autor2, artigo2 com autor1 e autor2. 
+	Como os filhos do artigo1 teríamos autor1 e autor2. Para não haver redundância os 
+filhos do artigo2 devem ser os mesmos do artigo1. Se isso ocorrer o autor1 e autor2 
+terão mais de um pai, e logo essa estrutura não será mais uma árvore.
+	Caso quiséssimos fazer o contrário, sendo os artigos filhos dos autores o mesmo
+problema iria acontecer. Os artigo1 e artigo2 teriam cada dois pais, autor1 e autor2,
+sendo esta estrutura não mais uma árvore, mas um grafo.
+	
+
+		
+	

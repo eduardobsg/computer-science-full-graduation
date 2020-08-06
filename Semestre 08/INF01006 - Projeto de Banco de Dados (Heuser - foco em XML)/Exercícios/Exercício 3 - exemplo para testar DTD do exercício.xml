@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE enderecos SYSTEM "end.dtd">
+<enderecos>
+	<endereco>
+		<ruanocompl>Rua das Pitangas, 20 ap. 300</ruanocompl>
+		<cepcidade>Quilombo 55.555-000</cepcidade>
+	</endereco>
+	<endereco>
+		<ruanocompl>Rua das Pitangas, 20 ap. 300</ruanocompl>
+		<bairro>Guaranis</bairro>
+		<cepcidade>Quilombo 55.555-000</cepcidade>
+	</endereco>
+	<endereco>
+		<rua>Rua das Pitangas</rua>
+		<numero>20</numero>
+		<cepcidade>Quilombo 55.555-000</cepcidade>
+	</endereco>
+	<endereco>
+		<rua>Rua das Pitangas</rua>
+		<numero>20</numero>
+		<complemento>ap. 300</complemento>
+		<cepcidade>Quilombo 55.555-000</cepcidade>
+	</endereco>
+	<endereco>
+		<rua>Rua das Pitangas</rua>
+		<numero>20</numero>
+		<complemento>ap. 300</complemento>
+		<bairro>Guaranis</bairro>
+		<cepcidade>Quilombo 55.555-000</cepcidade>
+	</endereco>
+	<endereco>
+		<ruanocompl>Rua das Pitangas, 20 ap. 300</ruanocompl>
+		<cidade>Quilombo</cidade>
+	</endereco>
+	<endereco>
+		<ruanocompl>Rua das Pitangas, 20 ap. 300</ruanocompl>
+		<bairro>Guaranis</bairro>
+		<cidade>Quilombo</cidade>
+	</endereco>
+	<endereco>
+		<rua>Rua das Pitangas</rua>
+		<numero>20</numero>
+		<cidade>Quilombo</cidade>
+	</endereco>
+	<endereco>
+		<rua>Rua das Pitangas</rua>
+		<numero>20</numero>
+		<complemento>ap. 300</complemento>
+		<cidade>Quilombo</cidade>
+	</endereco>
+	<endereco>
+		<rua>Rua das Pitangas</rua>
+		<numero>20</numero>
+		<complemento>ap. 300</complemento>
+		<bairro>Guaranis</bairro>
+		<cidade>Quilombo</cidade>
+	</endereco>
+	<endereco>
+		<ruanocompl>Rua das Pitangas, 20 ap. 300</ruanocompl>
+		<cidade>Quilombo</cidade>
+		<cep>55.555-000</cep>
+	</endereco>
+	<endereco>
+		<ruanocompl>Rua das Pitangas, 20 ap. 300</ruanocompl>
+		<bairro>Guaranis</bairro>
+		<cidade>Quilombo</cidade>
+		<cep>55.555-000</cep>
+	</endereco>
+	<endereco>
+		<rua>Rua das Pitangas</rua>
+		<numero>20</numero>
+		<cidade>Quilombo</cidade>
+		<cep>55.555-000</cep>
+	</endereco>
+	<endereco>
+		<rua>Rua das Pitangas</rua>
+		<numero>20</numero>
+		<complemento>ap. 300</complemento>
+		<cidade>Quilombo</cidade>
+		<cep>55.555-000</cep>
+	</endereco>
+	<endereco>
+		<rua>Rua das Pitangas</rua>
+		<numero>20</numero>
+		<complemento>ap. 300</complemento>
+		<bairro>Guaranis</bairro>
+		<cidade>Quilombo</cidade>
+		<cep>55.555-000</cep>
+	</endereco>
+	<endereco>
+		<ruanocompl>Rua das Pitangas, 20 ap. 300</ruanocompl>
+		<cep>55.555-000</cep>
+		<cidade>Quilombo</cidade>
+	</endereco>
+	<endereco>
+		<ruanocompl>Rua das Pitangas, 20 ap. 300</ruanocompl>
+		<bairro>Guaranis</bairro>
+		<cep>55.555-000</cep>
+		<cidade>Quilombo</cidade>
+	</endereco>
+	<endereco>
+		<rua>Rua das Pitangas</rua>
+		<numero>20</numero>
+		<cep>55.555-000</cep>
+		<cidade>Quilombo</cidade>
+	</endereco>
+	<endereco>
+		<rua>Rua das Pitangas</rua>
+		<numero>20</numero>
+		<complemento>ap. 300</complemento>
+		<cep>55.555-000</cep>
+		<cidade>Quilombo</cidade>
+	</endereco>
+	<endereco>
+		<rua>Rua das Pitangas</rua>
+		<numero>20</numero>
+		<complemento>ap. 300</complemento>
+		<bairro>Guaranis</bairro>
+		<cep>55.555-000</cep>
+		<cidade>Quilombo</cidade>
+	</endereco>
+	<endereco>
+		<rua>Rua das Pitangas</rua>
+		<numero>20</numero>
+		<complemento>ap. 300</complemento>
+		<bairro>Guaranis</bairro>
+		<cep>55.555-000</cep>
+		<cidade>Quilombo</cidade>
+		<telefone tipo="C">
+			<numero>9999-4444</numero>
+		</telefone>
+		<telefone tipo="P">
+			<prefixo>51</prefixo>
+			<numero>2222-4444</numero>
+		</telefone>
+		<telefone tipo="R">
+			<prefixo>51</prefixo>
+			<numero>3333-4444</numero>
+		</telefone>
+		<telefone tipo="C">
+			<prefixo>51</prefixo>
+			<numero>9999-4444</numero>
+		</telefone>
+		<telefone tipo="P">
+			<prefixo>51</prefixo>
+			<numero>2222-4444</numero>
+		</telefone>
+		<telefone tipo="P">
+			<prefixo>51</prefixo>
+			<numero>2222-5555</numero>
+		</telefone>
+		<telefone tipo="R">
+			<numero>3333-4444</numero>
+		</telefone>
+	</endereco>
+</enderecos>

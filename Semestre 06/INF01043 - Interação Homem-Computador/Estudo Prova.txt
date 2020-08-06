@@ -1,0 +1,160 @@
+Prova 1
+
+====================================================================================================
+
+Aula 02: Critérios de usabilidade e acessibilidade
+
+Usuário <--> [Interface <--> Núcleo Funcional]
+
+Qualidade de Interação:
+- aspectos visuais, estética, organização
+- clareza de informações
+- aspectos de execução: salvar informações
+
+Utilidade: o que faz?
+
+Usabilidade: como se usa?
+- Acessibilidade: facilidade de uso frente a dificuldades de usuários
+- Comunicabilidade: interface transmite a lógica de funcionamento pelo seu design
+
+Teoria da Ação - Modelo de Norman:
+- intenção -> interação -> execução -> percepção -> interpretação -> avaliação
+- quero buscar -> clico no botão buscar -> app executa pedido -> 
+app põem resposta na tela -> usuário mexe nos dados -> vê se os dados são suficiente
+
+Heurísticas de Nielsen:
+- dar feedback: manter user informado
+- linguagem do usuário: ling. simples que o usuário entenda
+- concepção minimalista: simplicidade, apenas o necessário
+- consistente: user usam mesmos comandos/termos/ações para as mesmas tarefas
+- diálogos simples e naturais: informações visíveis ou facilmente encontradas.
+- controle explícito do usuário: app deixa claro com fazer cada coisa
+- atalhos: aceleradores para users experientes
+- boas mensagens de erro: usuário entende o problema
+- prevenir erros: para evitar mensagens de erro
+- ajuda e documentação
+
+Critérios Ergonômicos:
+1) Condução: meios para orientar, situar, conduzir, informar e ajudar o usuário na interação
+- presteza: formato de data
+- agrupamento e distinção por localização: opções de um mesmo tipo agrupadas
+- agrupamento e distinção por formato
+- feedback: informar o que o app está fazendo - "logando", "conectando", "processando"
+- legibilidade: organização e jogo de cores bem escolhido
+
+2) Carga de Trabalho: aumento de eficiência e redução de carga perceptiva
+- concisão
+- ações mínimas
+- densidade informacional
+
+3) Controle explícito
+- ações explícitas: no final de um formulário ter botão de encerrar, 
+ao invés de encerra automaticamente depois de preenchido.
+- controle do usuário: usuário decide o que fazer
+
+4) Adaptabilidade
+- flexibilidade: caminhos diferentes, barras de tarefas customizáveis
+- consideração da experiência do user: teclas de atalho
+
+5) Gestão de Erros
+- proteção contra erros
+- qualidade de mensagens de erros
+- correção de erros
+
+6) Consistência: manter ordem das tarefas, não trocar de uma tela para a outra
+Compatibilidade
+
+====================================================================================================
+
+Aula 04: Aspectos cognitivos relacionados ao design de interação
+
+Cognição: perceber fatos, reagir a eles, interpretá-los e tomar decisões
+
+- Atenção: envolve sentidos, filtro regulável, informações visualizadas processadas em paralelo
+pelo cérebro
+- Percepção: como a informações é adquirida. User vê e agrega informações (percepção)
+- Pré-atenção: busca visual rápida, conseguimos destinguir objetos pela cor, formato, tamanho, textura,
+orientação (objetos de pré-atenção) => usar apenas uma das características para realce
+- Aprendizagem: interfaces devem ncentivam exploração
+
+===================================================================================================
+
+Aula 05: Introdução ao design de interação
+
+Projeto de interação baseado em ciclos:
+análise >> design >> prototipação >> avaliação >> análise
+
+Design de interação: 
+metas usabilidade + metas satisfação do user >> espaço do problema >> necessidades relevantes
+para a realização de tarefas pelo user
+												
+Concepção Ergonômica de Interfaces:
+1) Análise Contextual: análise do usuário, tarefa de referência, estado-da-arte e requisitos
+	- modelos de usuário (conhecimento sobre o user) e de tarefas + modelos de análise
+2) Projeto da Interface com o Usuário: definição das telação, ordem de navegação
+3) Prototipação
+4) Avaliação: implementar uma versão do trabalho e avaliar
+
+===================================================================================================
+
+Aula 06: Concepção de interfaces
+
+Modelos de usuários: importantes, pois podem ajudar a predizer o comportamento do user
+- tipos de user e atributos relevantes
+- atributos: freq de uso, exp na tarefa, exp em TI, idade, nivel escolar, necessidades especiais
+- usuários: personalidades distintas, culturas, idedades, habilidades, necessidades
+
+Personas (perfis de usuários):
+- personagens fictícios que representam um grupo
+- possuem identidade, objetivos, habilidades, relacionamentos, requisitovs e expectativas
+- características servem como base de design e comunicação na aplicação
+
+Stakeholders:
+- users com participação no desenvolvimento
+- afetadas pelo sistema e influem nas necessidades da aplicação
+- gestores, diretores, gerentes, desenvolverdores
+
+Análise e modelo de tarefa:
+- tarefa = objetivo + mecanismos
+- análise de tarefa: descrição das tarefas para enteder suas etapas de realização.
+- modelo de tarefa: descrição lógicas das atividades para atingir os objetivos dos users.
+- análise hierárquica de tarefa: detalhar tarefa em árvore de sub-tarefas
+
+Cenários de uso:
+- descrição narrativa de situação que o user usa o sistema
+
+===================================================================================================
+
+Aula 07: Projeto e prototipação de interfaces
+
+Questões de projeto:
+Quais comandos e ações o usuário pode realizar através da interface?
+Como os componentes da interface serão apresentados aos usuários?
+
+Conhecer usuário + Coletar dados + Análise de tarefas => ir para projeto de interface
+
+Questões de prototipação:
+Como provocar as críticas/sugestões dos usuários?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

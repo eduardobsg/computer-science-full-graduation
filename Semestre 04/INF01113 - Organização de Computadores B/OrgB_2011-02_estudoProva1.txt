@@ -1,0 +1,288 @@
+Cadeira: INF01113 - Organização de Computadores B
+Professor: Navaux
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2011/02
+Moodle: OrgB-2011
+
+------------------------------------------------------------------------------
+---- Estudo - Prova 1
+------------------------------------------------------------------------------
+1) CISC x RISC
+
+CISC:
+	a) instruções complexas, e otimizadas
+	b) demoram mais de um ciclo
+	c) sem pipeline
+	d) hardware mais complexo
+	e) operam na memória (ineficiente)
+	f) instruções microcontroladas (controle via software)
+	g) instruções de tamanho variável
+	h) muitos modos de endereçamento
+	i) muitos ciclos por segundo, código curto
+	j) maior área para o hardware, maior custo
+	
+RISC: 
+	a) instruções simples
+	b) demoram um ciclo
+	c) com pipeline, instruções executadas em estágios
+	d) hardware mais simples
+	e) operam em registradores (eficiente)
+	f) instruções executadas pelo hardware (controle via hardware)
+	g) instruções de tamanho fixo	
+	h) poucos modos de enderelamento
+	i) poucos ciclos por segundo, código largo
+	j) menor área para o hardware, menor custo
+
+
+------------------------------------------------------------------------------
+2) RISC - Microarquitetura do processador (CPU)
+
+- É um grande circuito combinacional
+
+- Composta de:
+	a) caminho de dados: realiza operações aritméticas. Composto por: 
+		- somadores
+		- multiplexadores
+		- banco de registradores: armazenam operandos e resultados das operações
+		- memória de instruções
+		- memória de dados
+		- ULAs: realiza as operações com os operandos dos registradores
+		- unidade de extensão de sinal (sign extend): usado para estender o sinal de 16 bits para 32 bits
+	b) unidade de controle: diz como os dados irão trafegar pelo caminho 
+	e dados	e como serão processados
+	
+- Responsável pela BUSCA, DECODIFICAÇÃO E EXECUÇÃO  das instruções	
+
+
+------------------------------------------------------------------------------
+3) Componentes da arquitetura RISC
+
+- PC: armazena a posição de memória da próxima instrução que será executada.
+
+- Memória de dados e de instruções: memória cache. Armazena dados e instru-
+ções mais utilizados.
+
+- Banco de registradores: conjunto de registradores que armazenam os dados usados no momento.
+
+- ULA: dadas algumas entradas de dados e controle ela realiza operações lógi-
+cas e aritméticas sobre os dados
+	-> dados de instruções lógicas e aritméticas: meias-palavras (16 bits)
+	estendidas para 32 bits e palavras (32 bits)
+
+
+------------------------------------------------------------------------------
+4) Instruções
+
+- op-code: 6 bits
+- modo de endereçamento é codificado junto da palavra da instrução
+
+Tipos I:
+	a) operações aritmética e lógicas com operando imediato
+	b) desvios condicionais (branches) 
+	c) desvios incondicionais 
+	d) ex.: lb (load byte sinal estendido), lh (load halfword sinal estendido), lw (load word), lbu (load byte sem extensão de sinal), lhu (load halfword sem extensão de sinal), sb (store byte sinal estendido), sh (store halfword sinal estendido), sw (store word), bgez, bgtz, blez, bltz (desvia se resgistrador é >=, >, <=, < zero)
+	e) formato:
+	
+	op-code		rs			rt			operando imediato / deslocamento
+	(6 bits)	(5 bits)	(5 bits)	(16 bits)
+	(31-26)		(25-21)		(20-16)		(15-0)
+	
+Tipo R:
+	a) instruções aritméticas e lógicas
+	b) instruções de movimentação entre registradores
+	c) 'shamt' (shift amount): usado em deslocamento
+	d) 'funct': operação a ser feita pela ULA
+	e) ex.: add, sub, and, or, nor, xor, sllv e srlv (shift lógico), srav (shift aritmético), mul (multiplicação), div (divisão)
+	f) formato:
+	
+	op-code		rs			rt			rd 			shamt		funct
+	(6 bits)	(5 bits)	(5 bits)	(5 bits)	(5 bits)	(6 bits)
+	(31-26)		(25-21)		(20-16)		(15-11)		(10-6)		(5-0)
+	
+Tipo J: 
+	a) desvios com endereçamento absoluto
+	b) chamada de sub-rotina
+	c) ex.: jr, jal (jump and link), jalr
+	d) formato:
+	
+	op-code		endereço
+	(6 bits)	(26 bits)
+	(31-26)		(25-0)
+
+	
+------------------------------------------------------------------------------
+5) Mono ciclo
+
+- toda instrução é executada em um ciclo de clock (tempo de ciclo = tempo gasto na execução da instrução mais demorada), até a próxima descida do relógio
+- atualização do estado de armazenamento é realizada no final do ciclo
+
+- na arquitetura há um somador e a ULA, pois o somador é utilizado para incrementar o PC, enquanto a ULA é usada para diversas operações artiméticas
+
+Vantagens:
+	a) um ciclo por instrução
+	b) controle simples
+
+Desvantagens:
+	a) tempo de ciclo muto grande (vide cáculos no item 7)
+	b) apesar das instruções serem executadas em um ciclo, é muito ineficiente, pois o tempo de ciclo é o tempo de execução da instrução mais demorada (provavelmente a 'load word', por usar 5 unidades funcionais)
+	c) cada unidade funcional só pode ser usada uma vez em cada ciclo de relógio
+	
+Soluções:
+	a) Podemos duplicar as unidades funcionais, mas o custo aumentaria
+
+
+------------------------------------------------------------------------------
+6) Etapas de execução de instruções - Mono-ciclo
+
+a) ler instrução da memória que contém os dados, usando valor do pc como endereço
+b) ler um ou mais registradores usando parte da instrução
+
+O que precisamos para BUSCA:
+	- memória onde estão armazenadas as instruções
+	- pc (program counter), para armazenar o endereço da instrução em execução
+	- somador para calcular o endereço da próxima instrução
+		- o somador pega o valor do pc, faz pc = pc + 4
+
+Formato I
+	op-code		rs			rt			operando imediato / deslocamento
+	(6 bits)	(5 bits)	(5 bits)	(16 bits)
+	(31-26)		(25-21)		(20-16)		(15-0)
+	
+	Ex.: lw $Rs, deslocamento($Rt)
+	a) Busca da instrução na memória de instruções e incrementa PC
+		- Sinal Branch = 0, faz o PC incrementar, PC = PC + 4	
+	b) Leitura do conteúdo de um registrador ($Rt) do banco de registradores
+		- Sinal RegDst = 0, seleciona o registrador $Rt para fazer a escrita
+	c) Cálculo da soma do valor lido do banco de registradores com o resultado da extensão do sinal dos 16 bits menos significativos da instrução (deslocamento)
+		- Sinal ALUop habilita a unidade de controle da ULA 
+		- Sinal ALUscr = 1, a halfword de 16bits, estendida para 32 bits é selecionada 
+	d) O resultado da soma é usado para endereçar a memória de dados
+		- Sinal MemWrite = 0
+		- Sinal MemRead = 1, conteúdo da memória designado pela entrada de endereço é colocado na saída Dado Lido
+		- Sinal MemtoReg = 1, seleciona o Dado em leitura da memória de dados e envia ao banco de registradores para a entrada dados em escrita
+	e) O dado vindo da unidade de memória é escrito no banco de registradores; o número do registrador-destino é dado pelos bits 20-16 ($Rs).
+		- Sinal RegWrite = 1, escreve o valor presente em dados em escrita no banco de registradores
+		
+
+Formato R
+	op-code		rs			rt			rd 			shamt		funct
+	(6 bits)	(5 bits)	(5 bits)	(5 bits)	(5 bits)	(6 bits)
+	(31-26)		(25-21)		(20-16)		(15-11)		(10-6)		(5-0)
+
+	Ex.: add $Rs, $Rt, $Rd
+	a) Busca da instrução na memória de instruções e incrementa PC
+		- Sinal Branch = 0, faz o PC incrementar, PC = PC + 4	
+	b) Dois registradores são lidos do banco de registradores
+		- Sinal RegDst = 1, seleciona o registrador $Rd da instrução (bits 15-11) para realizar a escrita
+	c) A ULA opera os dados lidos a partir do banco de registradores, usando o código da função vindo do funct
+		- Sinal ALUscr = 0, o segundo registrador do banco de registradores é selecionado para ser o segundo operando da ULA
+	d) O resultado da ULA é escrito no banco de registradores
+		- Sinal MemtoReg = 0, o resultado da ULA é escrito/salvo no banco de registradores
+		- Sinal MemRead = 0
+		- Sinal MemWrite = 0
+		- Sinal RegWrite = 1, escreve o resultado da ULA no registrador que está em escrita, nesse caso, $Rd
+
+		
+------------------------------------------------------------------------------
+7) Cálculos
+
+Mono-Ciclo
+
+# Período do Ciclo de relógio
+	a) memória de instruções (atraso 1 ns)
+	b) banco de registradores (atraso 0.5 ns)
+	c) ULA (atraso 0.5 ns)
+	d) memória de dados (atraso 1 ns)
+	e) banco de registradores (atraso 0.5 ns)
+
+	1 + 0.5 + 0.5 + 1 + 0.5 = 3.5 ns
+	Logo o período do ciclo de relógio deve ser igual ou maior a 3.5 ns
+
+
+Multi-Ciclo
+	Atrasos:
+	- 1 ns para acessos à memória
+	- 0.5 ns para acessos ao banco de registradores
+	- 0.5 ns para operações na ALU
+	- 0 ns para demais blocos (muxs, portas, ...)
+
+	Calcular CPI médio
+		
+	Calcular período de clock com base da frequência do clock
+	Calcular tempo total de execução
+
+	
+	
+------------------------------------------------------------------------------
+8) Controle
+
+Partes:
+	a) Main Control
+		- controlada pelo opcode (31 - 26)
+	b) ALU control
+		- controlada pela funct (5 - 0)
+
+- opcode e funct controlam entradas e saídas dos circuitos combinacionais
+
+- o uso dos dois níveis de controle (Main Control e ALU Control) incrementam a velocidade
+
+Sinais:
+	a) RegDst: seleciona registrador a ser escrito no banco de registradores
+	b) EscReg (RegWrite): 
+	c) UALFonte (ALUscr):
+	d) FontePC (Branch):
+	e) LerMem (MemRead):
+	f) EscMem (MemWrite):
+	g) MemParaReg (MemToReg):
+
+
+------------------------------------------------------------------------------
+9) Multi-ciclo
+
+Características:
+	a) vários ciclos por instrução
+	b) cada instrução é executada em um número diferente de ciclos
+	c) unidades funcionais podem ser reutilizadas em ciclo distintos
+		- acrescenta alguns multiplexadores e registradores
+		
+Cuidados:
+	a) Não aumentar o CPI, pois o desempenho cai
+	b) Tentar diminuir o período do relógio, pois o desempenho sobe	
+
+Hardware:
+	- memória única de dados e instruções
+	- única ULA
+	- novos registradores
+		a) Regsitrador de instruções
+		b) Registrados de dados de memória
+		c) registradores A e B para guardar os valores dos operandos
+		d) Registrador de Saída da ULA para guardar a saída de ULA
+	- novos multiplexadores (ou extensão dos já existentes)
+			
+
+------------------------------------------------------------------------------
+10) Ciclo de instruções - Multi Ciclo
+
+Busca da instrução
+	a) Sinal IorD = 0, O valor do PC é usado para fornecer o endereço da unidade de memória. Rinstr = Memoria[PC]
+	b) Pc é incrementado. PC = PC + 4
+
+Decodificação da instrução
+	a) Leitura dos registradores - mesmo que não sejam utilizados
+		A = Reg[I[25-21]], B = Reg[I[20-16]], ALUout = PC + SignExtend (I[15-0]) << 2
+	b) Cálculo do endereço do branch – mesmo que instrução não seja branch
+
+Execução da operação - instruções tipo R
+	a) Cálculo do endereço efetivo do operando – instruções load e store
+	b) Determinar se branch deve ser executado – instruções branch
+
+Acesso à memória – instruções load e store
+	a) Escrita de registrador – instruções tipo R
+
+Escrita de registrador – instruções load
+
+
+
+
+

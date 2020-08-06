@@ -1,0 +1,8 @@
+all: lab02-ex2
+
+lab02-ex2: lab02_ex2.o
+	gcc -o lab02-ex2 lab02_ex2.o
+
+lab02_ex2.o: lab02_ex2.c
+	gcc -c lab02_ex2.c
+	

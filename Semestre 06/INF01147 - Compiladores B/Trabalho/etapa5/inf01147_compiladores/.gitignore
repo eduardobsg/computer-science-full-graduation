@@ -1,0 +1,14 @@
+dist
+build
+lex.yy.h
+lex.yy.c
+.dep.inc
+Makefile-variables.mk
+nbproject/Makefile-Release.mk
+nbproject/Package-Debug.bash
+nbproject/Package-Release.bash
+nbproject/Makefile-Debug.mk
+nbproject/Makefile-impl.mk
+y.tab.h
+y.tab.c
+xcode-compiler

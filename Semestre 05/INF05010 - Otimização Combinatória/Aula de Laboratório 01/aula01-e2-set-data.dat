@@ -1,0 +1,60 @@
+/* data section */
+
+set TRECHO1 := A1 B1 C1; 
+set TRECHO2 := A2 B2 C2;
+set TRECHO3 := A3 B3 C3;
+
+param cost1 :=
+A1	600
+B1	440
+C1	200	;
+
+param cost2 :=
+A2	320
+B2	260
+C2	160	;
+
+param cost3 :=
+A3	720
+B3	560
+C3	280	;
+
+param costs :=
+A1	600
+B1	440
+C1	200
+A2	320
+B2	260
+C2	160
+A3	720
+B3	560
+C3	280	;
+
+param max1 :=
+A1	4
+B1	8
+C1	22	;
+
+param max2 :=
+A2	8
+B2	13
+C2	20	;
+
+param max3 :=
+A3	3	
+B3	10
+C3	18	;
+
+param max123 :=
+A1	4
+B1	8
+C1	22
+A2	8
+B2	13
+C2	20	
+A3	3	
+B3	10
+C3	18	;
+
+end;
+

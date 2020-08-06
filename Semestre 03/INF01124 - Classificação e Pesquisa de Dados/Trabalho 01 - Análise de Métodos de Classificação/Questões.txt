@@ -1,0 +1,17 @@
+Aluno: João Luiz Grave Gross / 180171
+
+3 – Considerando os resultados do seu experimento, responda:
+
+a) Qual o melhor algoritmo para arquivos pequenos (ex. 500 elementos)? Por quê? Para arquivos pequenos o algoritmo do quick sort apresentou o melhor resultado, pois foi o mais rápido de todos. Porém para arquivos pequenos em ordenação crescente o insertion sort é mais rápido.
+
+b) Qual o melhor algoritmo para arquivos grandes (ex. 30.000 elementos)? Por quê? Para arquivos grandes até 30000 elementos o melhor resultado foi obtido com o algoritmo do quick sort. É válido salientar que o heap sort vai melhorando seu desempenho (velocidade) em relação aos demais métodos de classifcados a medida que a entrada fica bem grande.
+
+c) Qual o melhor algoritmo para arquivos com registros extensos, ou seja, registros
+com muitos atributos (ex. registros com chave + 11 atributos)? Por quê? Para arquivos com registros extensos (testados até 30000 elementos) o melhor resultado foi obtido com o algoritmo do quick sort. O comportamento do heap sort descrito no item b) se repetiu para arquivos com registros extensos.
+
+d) A medida em que o número de elementos cresce, qual o melhor algoritmo a ser
+utilizado? Isto é, quanto maior o número de elementos no arquivo o algoritmo
+melhora seu desempenho. O heap sort apresentou esse comportamento, quanto maior a entrada melhor foi ficando o seu tempo de execução.
+
+e) No caso de se utilizar um único algoritmo para todas as situações dos
+experimentos, qual algoritmo você escolheria? Por quê? Eu escolheria o quick sort, pelo simples fato de ter sido o mais rápido algoritmo a executar praticamente todos os casos testados. 

@@ -1,0 +1,113 @@
+Trabalho Neander:
+
+Regras:
+- Números de 0 a 127
+- Divisão: quociente inteiro da divisão, ignorar o resto
+- Em caso de erro: resultado da operação = 0
+
+Endereços:
+- 128: OP1
+- 129: OP2
+- 130: código de 1 a 4
+- 131: código de erro 
+	0 -> ok
+	1 -> apenas op1 negativo
+	2 -> apenas op2 negativo
+	3 -> op1 e op2 negativos
+	4 -> código da operação inválido
+	5 -> divisão por zero
+- 132: resultado
+
+- 133: -1
+- 134: +1
+- 135: +2
+- 136: +3
+- 137: +4
+- 138: +5
+- 139: 0
+
+Variáveis:
+CodOP - Código da Operação
+CodErro - Código de Erro
+Result - resultado da operação
+OP1 - Operando 1
+OP2 - Operando 2
+
+Rever:
+end 22, 23 -> jum para fim
+end 30, 31 -> jump para fim
+end 59, 60 -> jump para fim
+end 82, 83 -> jump para fim
+end 112, 113 -> jump para fim
+end 146, 147 -> jump para fim
+
+
+Programa:
+
+(end 0 a 35)
+001 CodErro = 0 ok
+002 Carrega OP1 ok 
+003 N = 1? se sim -> vai para: 005 ok
+004 vai para: 011 ok
+005 CodErro = CodErro + 1 ok
+006 Carrega OP2 ok
+007 N = 1? se sim -> vai para: 009 ok
+008 vai para: 010 
+009 CodErro = CodErro + 2 ok
+010 Result = 0 -> vai para: fim
+011 Carrega OP2
+012 N = 1? se sim -> vai para: 009
+
+Testes:
+1 OP1 = 1; OP2 = 1  -> CodErro = 0
+2 OP1 = 200; OP2 = 1 -> CodErro = 1
+3 OP1 = 1; OP2 = 200 -> CodErro = 2
+4 OP1 = 200; OP2 = 200 -> CodErro = 31
+
+(end 37 a )
+013 Carrega CodOP ok
+014 Faz CodOP = CodOP - 1 ok
+015 Z = 1? se sim -> CodOP = 1 -> vai para: end 62 (multiplicação)
+016 Faz CodOP = CodOP - 1 ok
+017 Z = 1? se sim -> CodOP = 2 -> vai para: end 93 (divisão)
+018 Faz CodOP = CodOP - 1 ok
+019 Z = 1? se sim -> CodOP = 3 -> vai para: ok
+020 Faz CodOP = CodOP - 1 ok
+021 Z = 1? se sim -> CodOP = 4 -> vai para: ok
+022 CodOP < 0 || CodOP > 4
+    CodErro = 4 -> Result = 0 -> vai para fim 
+
+Testes:
+1 CodOP = 1
+2 CodOP = 2
+3 CodOP = 3
+4 CodOP = 4
+5 CodOP = 5
+6 CodOP = 0
+
+Teste Multiplicação (end 62 - 89) 
+1 0 x 4
+2 4 x 0
+3 20 x 5
+4 0 x 0
+
+Teste Divisão (end 93 - 125)
+1 10 / 2 -> end 132 = 5; end 131 = 0
+2 10 / 10 -> end 132 = 1; end 131 = 0
+3 0 / 10 -> end 132 = 0; end 131 = 0
+4 10 / 0 -> end 132 = 0; end 131 = 4
+5 4 / 5 -> end 132 = 0; end 131 = 0
+
+Exemplos de casos de teste (todos os valores estão indicados no sistema decimal) 
+Endereço  128 129 130 131 132  Endereço 128  129 130 131 132 
+Caso 1  	 128  8    2    1     0    Caso 9     18   12   3    0    30 
+Caso 2     44   1     5    4    0     Caso 10   105  56   4    0   49 
+Caso 3  	 29   1     3    0    30    Caso 11   12   12   1    0   144
+Caso 4     115  15   3    0    130  Caso 12   103  2    2     0   51 
+Caso 5     105  127  4    0    234  Caso 13  101  5     2    0    20 
+Caso 6     47    3     1   0    141  Caso 14   45   130  5    2    0 
+Caso 7     122  100  2   0    1     Caso 15   128  129  3    3    0 
+Caso 8     28    0     2   5    0     Caso 16   35   32    1    0    96 
+
+
+

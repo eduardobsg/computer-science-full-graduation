@@ -1,0 +1,119 @@
+Prova 1 - SISOP 1
+
+Gerenciamento do Processador
+
+Thread:
+- Um processo pode possuir n threads. As threads fluxos de execução de porções de código 
+do processo que as criou. O código não é replicado. A área de dados e o descritor de processo
+é o mesmo para todas as threads, bem como para o processo. Quando uma thread é criada, cria-se
+para ela mais um PC e mais um SP, ou seja, cada trhead tem a sua pilha e um apontador de 
+execução para o código do processo.
+
+- modelo N:1: sobre uma CPU virtual rodam várias threads. Problema: se uma das n threads que 
+rodam sobre uma CPU virtual bloquear, então as demais threads dessa CPU virtual ficam sem ação
+até que a thread que bloqueou desbloqueie. 
+- modelo 1:1: apenas uma thread por cada processador virtual, pois se uma delas bloquear as 
+demais ainda estarão disponíveis.
+
+
+Processo x Thread
+Uma thread é dependente do processo, pois executa trechos de código do processo. Se o processo morrer
+a thread também morre. A criação de uma thread gera um novo stack pointer e program counter, mas a
+área de dados e o descritor de processo são os mesmos do processo. Threads compartilham os recursos
+do processo.
+
+
+Escalonamento:
+- objetivos:
+	- maximizar o uso da CPU
+	- ser justo com os processos. Processos de maior prioridade rodam primeiro
+	- minimiza tempo de espera e de reposta
+	- maximiza a produção / vazão de dados da CPU (throughput)
+
+- um escalonador é possuído de duas partes:
+	- escalonador: aplica a política de escolha entre os processos e threads aptos para execução.
+	- despachante (dispatcher): efetua a troca de contexto entre os processos / threads.
+	
+- escalonamento preemptivo
+	- interrupção por prioridade
+	- interrupção por tempo
+	- liberação voluntária
+	- se um processo finaliza sua execução outro processo / thread apto assume o posto de 
+	'executando'
+
+- escalonamento não preemptivo
+	- novo processo executa a partir do momento que outro finaliza
+	- pode ser uma política de não preempção com prioridades, ou seja, não há interrupção
+	por prioridade, mas assim que o processo executante finaliza, o próximo a executar é
+	o processo / thread de mais alta prioridade
+	- liberação voluntária
+	
+- Níveis de escalonamento
+	- curto prazo: quando um processo finaliza o processo de mais alta prioridade que estiver apto
+	é o que será executado. Também controla quais os processos que podem disputar pelos recursos 
+	da CPU.
+	- médio prazo: controla quais os processos que podem disputar pelos recursos da CPU. Está
+	associado à gerência de memória. Suspende ou reassume processos (swap)
+	- longo prazo: mantém vários processos disputando os recursos da CPU, com o intuito de
+	sempre manter a CPU trabalhando (aproveitamento dos recursos da CPU)
+	
+	
+Sistemas operacionais:
+- tipos
+	- tempo real: cumprimento de prazos
+	- iterativos: tempo de resposta 
+	- batch (por lote): tempo de retorno, uso da CPU, throughput alto
+	
+
+Processos:
+- I/O bound: tempo ciclo de I/O >> tempo ciclo de execução (processamento na CPU)	
+- CPU bound: tempo ciclo de execução >> tempo ciclo de I/O 
+	- Solução ideal: unir I/O bound com CPU bound, pois enquanto um I/O bound está 
+	bloqueado o CPU bound fica executando
+	
+
+Políticas de escalonamento:
+- escalonamento não preemptivo
+	- FIFO (first in first out), FCFS (first come, first served): adequado para sistemas batch, pois
+	o tempo de retorno é minimizado. Processos executam até ceder voluntariamente a CPU, terminar
+	ou realizar operação de I/O. Nos processos os processos que saíram de bloqueado (foram para apto)
+	são inseridos em uma fila de processos, por ordem de chegada.
+
+	- SJF (Shortest Job First), SPN (shortest process next): processo apto com menor tempo de execução 
+	(prevista) é executado. Tem como objetivo minimar o tempo de retorno/finalização (turnaround) dos processos. 
+	Ótimo para sistemas em lote, batch, que priorizam o tempo de retorno. 
+		- devido à escolha dos processos à execução, esta política introduz uma noção de execução por
+		prioridade, mas não preemptiva.
+		- um dos problemas dessa política é estimar o tempo de execução de cada processo (job).
+		- tempo de execução futura = tempo último ciclo + tempo passado
+
+- escalonamento preemptivo
+	- Round Robin (por tempo): é basicamente igual à política FIFO, com a diferença que cada processo
+	executa por um quantum, uma parcela de tempo, depois volta para o final da fila.
+		- Um processo para de executar se seu quantum acabar, ele ceder a CPU (yield), bloqueiar para fazer  
+		I/O ou se o processo terminar.
+		- processos I/O bound são prejudicados, pois por bloquearem muito irão ter que esperar muito 
+		para poder executar novamente (esperar toda a fila de procesos passar). Uma solução a este problema 
+		é associar prioridade alta a processos I/O bound na política Round Robin, ou seja, estes processos 
+		irão passar na frente de outros que estão na fila para não terem que esperar tanto para terminar, 
+		dminuindo o turnaround (tempo médio de finalização de processos).
+		
+	- SRTN (Shortest Remaining Time Next): é uma versão preemptiva de SJF. Ordena os precessos de acordo com 
+	o tempo estimado de execução, a diferença é que quando um novo processo entra em apto e tem tempo estimado
+	de execução menor do que o do processo que está executando, então o de menor tempo assume a CPU.
+		- Ótimo para processos I/O bound, pois estes executarão primeiro e rápido e depois podem ficar bastante 
+		tempo bloqueados fazendo I/O
+	
+	
+Alguns problemas	
+- em políticas preemptivas, processos com baixa prioridade podem nunca ser executados, dependendo da quantidade 
+e prioridade de outros processos. Isso é chamado de starvation.
+	- uma possível solução, é adotar o sistema de agging, ou seja, quanto mais velho for o processo, maior será
+	sua prioridade de execução.
+- prioridade estática pode se tornar uma problema, pois se o processo muda seu comportamento I/O bound <->
+CPU bound, então ele pode ficar mal classificado.
+
+
+
+
+

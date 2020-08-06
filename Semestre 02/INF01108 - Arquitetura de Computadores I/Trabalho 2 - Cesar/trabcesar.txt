@@ -1,0 +1,72 @@
+r2 = número de carcateres
+r1 = posição de início
+
+	
+le_coordenada_lcd:
+	clr 65498		      	
+	tst 65498
+	beq -6
+	cmp 65499, tecla_backspace	
+	beq testa_backspace		; se z=1, end(65499) == tecla_backspace e ocorre o desvio para testa_backspace
+	cmp 65499, tecla_enter		
+	beq testa_enter			; se z=1, end(65499) == tecla_enter e ocorre o desvio para testa_enter
+	
+	;num_char=0
+	cmp #0, num_char
+	beq testa_zero			; vai para testa_zero -> ela testa se o caractere digitado é 0 ou 1	
+	cmp #1, num_char
+	beq testa_segundo		; vai para testa_segundo -> ela testa se o caractere digitado é de 1 a 9, se o primeiro for zero, ou zero se o primeiro for 1	
+	jmp le_coordenada_lcd
+le_coordenada_lcd_fim:
+	;pega valor da oordenada
+	hlt
+	rts r5
+testa_backspace:
+	;não posso usar: r4, r5, 
+	mov #65527, r1
+	cmp #0, (r1)					; faz 0 - end(65527)
+	beq testa_backspace_primeiro_char		; se z=1, end(65527) == 0, ou seja, está vazio, não foi digitado nada na segunda posição da coordenada
+	mov #0, (r1)					; limpa end(65527), executa o backspace	
+	dec num_char
+	jmp le_coordenada_lcd
+testa_backspace_primeiro_char:
+	mov #65526, r1
+	cmp #0, (r1)			; faz 0 - end(65517)
+	beq le_coordenada_lcd		; se z=1, end(65517) == 0, ou seja, está vazio, não foi digitado nada na primeira posição da coordenada
+	mov #0, (r1)			; limpa end(65517), executa o backspace
+	dec num_char	
+	jmp le_coordenada_lcd
+testa_enter:
+	cmp #2, num_char
+	beq le_coordenada_lcd_fim	; se num_char == 2, beq aciona o desvio, ou seja, já foram digitados dois caracteres para as coordenadas e eles são válidos
+testa_zero:
+	cmp 65499, #48			; faz end(65499) - 48
+	beq grava_val			; end(65499) tem o caractere 0
+	cmp 65499, #49			; faz end(65499) - 48
+	beq grava_val			; end(65499) tem o caractere 1
+	jmp le_coordenada_lcd		 	
+grava_val:
+	mov 65499, 65526		; coloca 0 ou 1 na primeira posição do número da coordenada de linha ou coluna
+	inc num_char
+	jmp le_coordenada_lcd
+testa_segundo:
+	cmp 65526, #48			; faz end(65517) - 48
+	beq testa_segundo1		; end(65517) tem o caractere 0 que vale 48 decimal -> vai para conector que testa se o valor recém digitado está entre 1 e 9
+	jmp testa_segundo2		; end(65517) tem o caractere 1 que vale 49 decimal -> vai para conector que testa se o valor digitado é zero, se for grava
+testa_segundo1:
+	cmp 65499, #57
+	ble eh_menor_ou_igual		; valor é <= 9 (caractere, não valor decimal)
+	jmp le_coordenada_lcd		; é > 9, logo não é válido e não será escrito
+eh_menor_ou_igual:
+	cmp 65499, #49
+	bge eh_valido			; valor é <= 9 e >=, ou 1 =< x =< 9
+	jmp le_coordenada_lcd		
+eh_valido:
+	mov 65499, 65527		; coloca valor na segunda posição do número da coordenada de linha ou coluna
+	inc num_char
+	jmp le_coordenada_lcd
+testa_segundo2:
+	cmp 65499, #48
+	beq eh_valido			
+	jmp le_coordenada_lcd
+		

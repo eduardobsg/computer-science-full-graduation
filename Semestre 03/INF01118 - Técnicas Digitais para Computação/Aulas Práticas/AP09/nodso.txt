@@ -1,0 +1,90 @@
+# 3 - Sintese com a opcao de otmizacao (sem compartilhamento).
+#     espresso -oeqntott -Dso equacoes.txt > equacoes_out3.txt
+#
+#     SAIDA
+#     F = (A&!B&!C) | (!A&B&C);
+#     
+# PROGRAMA ESPRESSO
+# oito variaveis de entrada
+# dez variaveis de saida
+# nome das variaveis de entrada
+# nome da variavel de saida
+c1 = (A&B&!C&D&!E&!F&!G) | (A&B&C&!D&!E&F&!G) | (A&B&!C&D&!E&F&!G) | (A&B
+    &C&!D&!E&!F) | (A&B&!C&D&!E&G) | (A&B&C&!D&F&G) | (A&B&C&D) | (A&B&E);
+
+c0 = (A&!B&!C&!D&!E&!F&!G) | (A&!B&!C&D&!E&F&!G) | (A&!B&C&D&!E&!F&G) | (
+    !A&B&C&D&!E&!F&G) | (A&B&!C&!D&!E&!F&G) | (A&!B&!C&D&!E&!F&G) | (A&B
+    &!C&!D&!E&F&G) | (A&!B&D&!E&!F&!G) | (A&!B&!C&!D&!E&F&!G) | (A&!B&!C
+    &!D&E&!F&G) | (!A&B&C&!D&E&!F) | (A&!B&!C&D&E&!F&G) | (A&!B&C&D&E&!F) | (
+    A&!B&!C&!D&E&!F&!G) | (!A&B&C&D&!E&!G) | (A&!B&!C&!D&!E&G) | (A&!B&!C
+    &D&F&G) | (A&B&!C&!D&!E&!G) | (A&!B&C&D&F) | (A&!B&!D&E&F) | (A&!B&!C
+    &D&E&!G) | (!A&B&C&D&E) | (!A&B&C&F) | (A&!B&C&!D);
+
+d3 = (!A&B&C&!D&!E&!F&G) | (!A&B&C&!D&!E&!F&!G) | (A&B&!C&!D&!E&!F&G) | (
+    A&B&!C&!D&!E&F&G) | (A&!B&C&D&E&!F) | (A&B&!C&!D&!E&!G) | (A&!B&C&D&F) | (
+    !A&B&!C&D);
+
+d2 = (!A&!B&C&D&!E&!F&!G) | (!A&B&!C&!D&!E&F&!G) | (A&!B&!C&D&!E&F&!G) | (
+    !A&B&!C&!D&!F&G) | (!A&!B&C&D&!E&F&!G) | (!A&!B&C&D&!E&F&G) | (A&!B&!C
+    &D&!E&!F&G) | (!B&C&D&!E&!F&G) | (A&!B&D&!E&!F&!G) | (A&!B&!C&D&E&!F
+    &G) | (!A&B&!C&!D&!E&!F) | (!A&B&!C&!D&F&G) | (A&!B&!C&D&F&G) | (A&!B
+    &!D&E&F) | (!A&B&!C&!D&E&!G) | (A&!B&!C&D&E&!G) | (!A&!B&C&E) | (A&B
+    &C&D) | (A&!B&C&!D);
+
+d1 = (A&!B&!C&!D&!E&!F&!G) | (A&B&C&!D&!E&F&!G) | (!A&B&!C&!D&!E&F&!G) | (
+    A&!B&C&D&!E&!F&G) | (A&B&C&!D&!F&G) | (!A&B&!C&!D&!F&G) | (A&!B&C&D&!E
+    &!F&!G) | (!A&!B&C&!D&!E&!F&G) | (!A&!B&C&!D&!E&F&G) | (A&B&!C&D&E&F) | (
+    A&!B&!C&!D&!E&F&!G) | (A&!B&!C&!D&E&!F&G) | (!A&!B&!C&D&E&!F) | (A&B
+    &C&!D&!E&!F) | (!A&B&!C&!D&!E&!F) | (A&!B&!C&!D&E&!F&!G) | (!A&!B&C&!D
+    &!E&!G) | (A&B&C&!D&F&G) | (!A&!B&!C&D&F) | (A&!B&!C&!D&!E&G) | (!A&B
+    &!C&!D&F&G) | (!A&C&D&E&F) | (A&B&C&!D&E&!G) | (!A&B&!C&!D&E&!G) | (
+    !A&B&C&D&E) | (A&!B&C&!D);
+
+d0 = (!A&!B&!C&D&!E&!F&G) | (!A&!C&E&F&G) | (B&C&!D&E&F&G) | (!A&B&C&!D&!E
+    &!F&G) | (!A&!B&C&D&E&!F&G) | (A&B&!C&D&E&!F&G) | (!A&B&C&D&!E&F&G) | (
+    !A&B&!C&E&F&!G) | (A&!B&C&D&!E&!F&!G) | (A&C&!D&E&F&!G) | (A&B&!C&D&!E
+    &F&!G) | (!A&!B&!C&D&!E&!F&!G) | (!A&!B&C&D&!E&F&!G) | (!A&!B&C&!D&!E
+    &!F&G) | (!A&B&C&D&!E&!F&G) | (!A&B&C&!D&!E&!F&!G) | (!A&!B&C&!D&!E&F
+    &G) | (!A&!B&C&D&E&!F&!G) | (!A&!B&C&D&!E&F&G) | (A&B&!C&!D&!E&!F&G) | (
+    A&B&!C&D&E&!F&!G) | (A&B&!C&!D&!E&F&G) | (!B&C&D&!E&!F&G) | (A&!B&!C
+    &!D&!E&F&!G) | (A&!B&!C&!D&E&!F&G) | (!A&B&!C&E&G) | (A&C&!D&E&G) | (
+    A&B&!C&D&!E&G) | (A&!B&!C&D&E&!F&G) | (A&C&E&F&G) | (!A&!C&!D&E&F&!G) | (
+    A&B&C&E&F&!G) | (A&!B&!C&!D&E&!F&!G) | (!A&!B&C&!D&!E&!G) | (!A&B&C&D
+    &!E&!G) | (A&B&C&!D&F&G) | (A&!B&!C&!D&!E&G) | (!A&B&!C&!D&F&G) | (A
+    &!B&!C&D&F&G) | (A&B&!C&!D&!E&!G) | (A&B&C&!D&E&!G) | (!A&!C&!D&E&G) | (
+    !A&B&!C&!D&E&!G) | (A&!B&!C&D&E&!G) | (A&B&C&E&G);
+
+u3 = (!A&!B&!C&!D&E&!F&!G) | (!A&B&!C&D&E&!F&!G) | (A&!B&C&!D&E&!F&!G) | (
+    A&B&!C&D&!E&!F&!G) | (!A&!B&C&D&!E&!F&!G) | (A&B&C&D&E&!F&!G) | (!A&!B
+    &!C&D&E&F&!G) | (!A&B&C&!D&E&F&!G) | (A&!B&C&D&E&F&!G) | (!A&B&!C&!D
+    &E&F&G) | (A&!B&!C&D&E&F&G) | (A&B&C&!D&E&F&G) | (A&!B&!C&!D&!E&!F&!G) | (
+    A&B&C&!D&!E&F&!G) | (!A&!B&!C&D&!E&!F&G) | (!A&B&!C&!D&!E&F&!G) | (A
+    &!B&!C&D&!E&F&!G) | (!A&B&C&!D&!E&!F&G) | (A&!B&C&D&!E&!F&G) | (!A&!B
+    &C&D&E&!F&G) | (A&B&!C&D&E&!F&G) | (!A&B&C&D&!E&F&G) | (!A&!B&C&!D&!E
+    &F&G) | (A&B&!C&!D&!E&F&G) | (A&!B&!C&!D&E&!F&G);
+
+u2 = (A&B&!C&!D&F&!G) | (A&!B&!C&D&E&F&!G) | (A&B&!D&E&F&!G) | (B&!C&D&!E
+    &F&G) | (!A&!B&!D&E&F&G) | (!A&B&D&E&F&G) | (A&B&!C&!D&E&F) | (A&B&C
+    &!D&!F&G) | (!A&B&!C&!D&!F&G) | (!A&!B&!C&D&!E&!F&!G) | (!A&!B&C&!D&F
+    &!G) | (!A&!B&C&!D&!E&!F&G) | (!A&B&C&D&!E&!F&G) | (!A&B&C&!D&!E&!F&!G) | (
+    !A&B&C&D&F&!G) | (!A&!B&!C&!D&!E&F) | (B&!C&!D&E&F&!G) | (!A&!B&C&D&E
+    &!F&!G) | (A&!B&!D&!E&F&G) | (!A&B&!C&D&!E&F) | (A&!B&C&!D&!E&F) | (
+    !A&!B&C&D&!E&F&G) | (A&B&!C&!D&!E&!F&G) | (A&!B&!C&D&!E&!F&G) | (A&B
+    &!C&D&E&!F&!G) | (A&B&C&D&!E&F) | (!B&C&!D&E&F&G) | (A&!B&D&!E&!F&!G) | (
+    B&C&D&E&F&G) | (!A&B&C&!D&E&!F) | (!A&!B&!C&D&E&!F) | (A&B&C&!D&!E&!F) | (
+    A&!B&!C&D&E&!F&G) | (!A&B&!C&!D&!E&!F) | (A&!B&C&D&E&!F) | (A&!B&!C&!D
+    &E&!F&!G);
+
+u1 = (!A&!B&!C&D&E&!F&G) | (A&!B&C&D&E&!F&G) | (!A&B&C&!D&!E&F&G) | (A&!C
+    &!D&E&F&G) | (A&B&!C&E&F&G) | (!A&B&!C&E&F&!G) | (A&!B&C&D&!E&!F&!G) | (
+    A&C&!D&E&F&!G) | (A&B&!C&D&!E&F&!G) | (!A&B&!C&!E&!F&G) | (!A&!B&!C&D
+    &!E&!F&!G) | (!A&!B&C&D&!E&F&!G) | (A&B&C&!E&!F&G) | (!A&B&C&!D&!E&!F
+    &!G) | (!A&!B&!C&!D&!E&G) | (!A&B&C&E&!F&G) | (!A&!B&C&D&E&!F&!G) | (
+    !A&!C&D&!E&F&G) | (A&!B&C&!D&!E&G) | (A&!B&!C&D&!E&!F&G) | (A&B&!C&D
+    &E&!F&!G) | (A&C&D&!E&F&G) | (!A&!B&C&!D&E&G) | (!A&C&D&E&F&G) | (A&B
+    &!C&!D&E&G) | (A&!B&!C&!D&!E&F&!G) | (!A&!C&!D&E&F&!G) | (A&B&C&E&F&!G) | (
+    A&!B&!C&!D&E&!F&!G) | (!A&!B&C&!D&!E&!G) | (!A&B&C&D&!E&!G) | (A&B&!C
+    &!D&!E&!G) | (A&B&C&!D&E&!G) | (!A&B&!C&!D&E&!G) | (A&!B&!C&D&E&!G);
+
+u0 = (H);
+

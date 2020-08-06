@@ -1,0 +1,828 @@
+Project Informationc:\documents and settings\aluno\desktop\ap10\multiplicador.rpt
+
+MAX+plus II Compiler Report File
+Version 10.2 07/10/2002
+Compiled: 10/18/2010 12:35:27
+
+Copyright (C) 1988-2002 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+MULTIPLICADOR
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+multiplicador
+      EPM7064LC44-7        8        8        0      33      5           51 %
+
+User Pins:                 8        8        0  
+
+
+
+Device-Specific Information:c:\documents and settings\aluno\desktop\ap10\multiplicador.rpt
+multiplicador
+
+***** Logic for device 'multiplicador' compiled without errors.
+
+
+
+
+Device: EPM7064LC44-7
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+
+                                            R  
+                                            E  
+                                            S  
+                                            E  
+                                            R  
+                       V  G  G  G  G  G     V  
+              A  A  A  C  N  N  N  N  N  S  E  
+              3  2  1  C  D  D  D  D  D  4  D  
+            -----------------------------------_ 
+          /   6  5  4  3  2  1 44 43 42 41 40   | 
+      B1 |  7                                39 | RESERVED 
+      B2 |  8                                38 | RESERVED 
+      B3 |  9                                37 | RESERVED 
+     GND | 10                                36 | RESERVED 
+      B0 | 11                                35 | VCC 
+RESERVED | 12         EPM7064LC44-7          34 | RESERVED 
+RESERVED | 13                                33 | RESERVED 
+RESERVED | 14                                32 | S6 
+     VCC | 15                                31 | S3 
+RESERVED | 16                                30 | GND 
+RESERVED | 17                                29 | S2 
+         |_  18 19 20 21 22 23 24 25 26 27 28  _| 
+           ------------------------------------ 
+              R  R  A  S  G  V  S  S  R  R  S  
+              E  E  0  0  N  C  5  7  E  E  1  
+              S  S        D  C        S  S     
+              E  E                    E  E     
+              R  R                    R  R     
+              V  V                    V  V     
+              E  E                    E  E     
+              D  D                    D  D     
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCC = Dedicated power pin, which MUST be connected to VCC.
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+
+
+Device-Specific Information:c:\documents and settings\aluno\desktop\ap10\multiplicador.rpt
+multiplicador
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16     0/16(  0%)   7/ 8( 87%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32     1/16(  6%)   2/ 8( 25%)   0/16(  0%)   2/36(  5%) 
+C:    LC33 - LC48    16/16(100%)   6/ 8( 75%)  16/16(100%)  26/36( 72%) 
+D:    LC49 - LC64    16/16(100%)   1/ 8( 12%)  16/16(100%)  15/36( 41%) 
+
+
+Total dedicated input pins used:                 0/4      (  0%)
+Total I/O pins used:                            16/32     ( 50%)
+Total logic cells used:                         33/64     ( 51%)
+Total shareable expanders used:                  5/64     (  7%)
+Total Turbo logic cells used:                   33/64     ( 51%)
+Total shareable expanders not available (n/a):  27/64     ( 42%)
+Average fan-in:                                  8.00
+Total fan-in:                                   264
+
+Total input pins required:                       8
+Total output pins required:                      8
+Total bidirectional pins required:               0
+Total logic cells required:                     33
+Total flipflops required:                        0
+Total product terms required:                  159
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:           3
+
+Synthesized logic cells:                        25/  64   ( 39%)
+
+
+
+Device-Specific Information:c:\documents and settings\aluno\desktop\ap10\multiplicador.rpt
+multiplicador
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  20   (19)  (B)      INPUT               0      0   0    0    0    8   22  A0
+   4   (16)  (A)      INPUT               0      0   0    0    0    7   24  A1
+   5   (14)  (A)      INPUT               0      0   0    0    0    6   25  A2
+   6   (11)  (A)      INPUT               0      0   0    0    0    5   23  A3
+  11    (3)  (A)      INPUT               0      0   0    0    0    8   24  B0
+   7    (8)  (A)      INPUT               0      0   0    0    0    7   23  B1
+   8    (5)  (A)      INPUT               0      0   0    0    0    6   24  B2
+   9    (4)  (A)      INPUT               0      0   0    0    0    5   22  B3
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:c:\documents and settings\aluno\desktop\ap10\multiplicador.rpt
+multiplicador
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  21     17    B     OUTPUT      t        0      0   0    2    0    0    0  S0
+  28     40    C     OUTPUT      t        0      0   0    4    0    0    0  S1
+  29     41    C     OUTPUT      t        2      1   1    6    1    0    0  S2
+  31     46    C     OUTPUT      t        1      0   1    8    6    0    0  S3
+  41     64    D     OUTPUT      t        3      2   1    8    7    0    0  S4
+  24     33    C     OUTPUT      t        3      2   1    8    6    0    0  S5
+  32     48    C     OUTPUT      t        1      0   1    8    4    0    0  S6
+  25     35    C     OUTPUT      t        2      1   1    8    1    0    0  S7
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:c:\documents and settings\aluno\desktop\ap10\multiplicador.rpt
+multiplicador
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+   -     47    C       SOFT    s t        0      0   0    5    0    1    0  ~105~1
+   -     60    D       SOFT    s t        1      0   1    8    0    1    0  ~420~1
+   -     54    D       SOFT    s t        1      0   1    8    0    1    0  ~420~2
+   -     39    C       SOFT    s t        1      0   1    7    0    1    0  ~420~3
+   -     38    C       SOFT    s t        0      0   0    4    0    1    0  ~420~4
+ (38)    56    D       SOFT    s t        1      0   1    8    0    1    0  ~963~1
+   -     55    D       SOFT    s t        1      0   1    8    0    1    0  ~963~2
+ (37)    53    D       SOFT    s t        1      0   1    8    0    1    0  ~963~3
+ (36)    52    D       SOFT    s t        1      0   1    8    0    1    0  ~963~4
+ (34)    51    D       SOFT    s t        1      0   1    8    0    1    0  ~963~5
+   -     44    C       SOFT    s t        1      0   1    7    0    1    0  ~963~6
+   -     50    D       SOFT    s t        1      0   1    8    0    1    0  ~1586~1
+ (33)    49    D       SOFT    s t        1      0   1    8    0    1    0  ~1586~2
+ (39)    57    D       SOFT    s t        1      0   1    8    0    1    0  ~1586~3
+   -     59    D       SOFT    s t        1      0   1    8    0    1    0  ~1586~4
+   -     61    D       SOFT    s t        1      0   1    8    0    1    0  ~1586~5
+ (40)    62    D       SOFT    s t        1      0   1    8    0    1    0  ~1586~6
+   -     63    D       SOFT    s t        0      0   0    7    0    1    0  ~1586~7
+ (26)    36    C       SOFT    s t        1      0   1    8    0    1    0  ~2083~1
+   -     42    C       SOFT    s t        1      0   1    8    0    1    0  ~2083~2
+   -     34    C       SOFT    s t        1      0   1    8    0    1    0  ~2083~3
+   -     45    C       SOFT    s t        1      0   1    8    0    1    0  ~2083~4
+ (27)    37    C       SOFT    s t        1      0   1    8    0    1    0  ~2083~5
+   -     58    D       SOFT    s t        0      0   0    7    0    1    0  ~2083~6
+   -     43    C       SOFT    s t        1      0   1    6    0    1    0  ~2184~1
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:c:\documents and settings\aluno\desktop\ap10\multiplicador.rpt
+multiplicador
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+           Logic cells placed in LAB 'B'
+        +- LC17 S0
+        | 
+        |   Other LABs fed by signals
+        |   that feed LAB 'B'
+LC      | | A B C D |     Logic cells that feed LAB 'B':
+
+Pin
+20   -> * | - * * * | <-- A0
+11   -> * | - * * * | <-- B0
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:c:\documents and settings\aluno\desktop\ap10\multiplicador.rpt
+multiplicador
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'C':
+
+                                         Logic cells placed in LAB 'C'
+        +------------------------------- LC40 S1
+        | +----------------------------- LC41 S2
+        | | +--------------------------- LC46 S3
+        | | | +------------------------- LC33 S5
+        | | | | +----------------------- LC48 S6
+        | | | | | +--------------------- LC35 S7
+        | | | | | | +------------------- LC47 ~105~1
+        | | | | | | | +----------------- LC39 ~420~3
+        | | | | | | | | +--------------- LC38 ~420~4
+        | | | | | | | | | +------------- LC44 ~963~6
+        | | | | | | | | | | +----------- LC36 ~2083~1
+        | | | | | | | | | | | +--------- LC42 ~2083~2
+        | | | | | | | | | | | | +------- LC34 ~2083~3
+        | | | | | | | | | | | | | +----- LC45 ~2083~4
+        | | | | | | | | | | | | | | +--- LC37 ~2083~5
+        | | | | | | | | | | | | | | | +- LC43 ~2184~1
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'C'
+LC      | | | | | | | | | | | | | | | | | A B C D |     Logic cells that feed LAB 'C':
+LC47 -> - - - - - * - - - - - - - - - - | - - * - | <-- ~105~1
+LC39 -> - - - - * - - - - - - - - - - - | - - * - | <-- ~420~3
+LC38 -> - - - - * - - - - - - - - - - - | - - * - | <-- ~420~4
+LC44 -> - - - * - - - - - - - - - - - - | - - * - | <-- ~963~6
+LC36 -> - - * - - - - - - - - - - - - - | - - * - | <-- ~2083~1
+LC42 -> - - * - - - - - - - - - - - - - | - - * - | <-- ~2083~2
+LC34 -> - - * - - - - - - - - - - - - - | - - * - | <-- ~2083~3
+LC45 -> - - * - - - - - - - - - - - - - | - - * - | <-- ~2083~4
+LC37 -> - - * - - - - - - - - - - - - - | - - * - | <-- ~2083~5
+LC43 -> - * - - - - - - - - - - - - - - | - - * - | <-- ~2184~1
+
+Pin
+20   -> * * * * * * - - - * * * * * * * | - * * * | <-- A0
+4    -> * * * * * * * * - * * * * * * * | - - * * | <-- A1
+5    -> - * * * * * * * * * * * * * * * | - - * * | <-- A2
+6    -> - - * * * * - * * * * * * * * - | - - * * | <-- A3
+11   -> * * * * * * * * - * * * * * * * | - * * * | <-- B0
+7    -> * * * * * * * * - - * * * * * * | - - * * | <-- B1
+8    -> - * * * * * * * * * * * * * * * | - - * * | <-- B2
+9    -> - - * * * * - * * * * * * * * - | - - * * | <-- B3
+LC60 -> - - - - * - - - - - - - - - - - | - - * - | <-- ~420~1
+LC54 -> - - - - * - - - - - - - - - - - | - - * - | <-- ~420~2
+LC56 -> - - - * - - - - - - - - - - - - | - - * - | <-- ~963~1
+LC55 -> - - - * - - - - - - - - - - - - | - - * - | <-- ~963~2
+LC53 -> - - - * - - - - - - - - - - - - | - - * - | <-- ~963~3
+LC52 -> - - - * - - - - - - - - - - - - | - - * - | <-- ~963~4
+LC51 -> - - - * - - - - - - - - - - - - | - - * - | <-- ~963~5
+LC58 -> - - * - - - - - - - - - - - - - | - - * - | <-- ~2083~6
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:c:\documents and settings\aluno\desktop\ap10\multiplicador.rpt
+multiplicador
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'D':
+
+                                         Logic cells placed in LAB 'D'
+        +------------------------------- LC64 S4
+        | +----------------------------- LC60 ~420~1
+        | | +--------------------------- LC54 ~420~2
+        | | | +------------------------- LC56 ~963~1
+        | | | | +----------------------- LC55 ~963~2
+        | | | | | +--------------------- LC53 ~963~3
+        | | | | | | +------------------- LC52 ~963~4
+        | | | | | | | +----------------- LC51 ~963~5
+        | | | | | | | | +--------------- LC50 ~1586~1
+        | | | | | | | | | +------------- LC49 ~1586~2
+        | | | | | | | | | | +----------- LC57 ~1586~3
+        | | | | | | | | | | | +--------- LC59 ~1586~4
+        | | | | | | | | | | | | +------- LC61 ~1586~5
+        | | | | | | | | | | | | | +----- LC62 ~1586~6
+        | | | | | | | | | | | | | | +--- LC63 ~1586~7
+        | | | | | | | | | | | | | | | +- LC58 ~2083~6
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'D'
+LC      | | | | | | | | | | | | | | | | | A B C D |     Logic cells that feed LAB 'D':
+LC50 -> * - - - - - - - - - - - - - - - | - - - * | <-- ~1586~1
+LC49 -> * - - - - - - - - - - - - - - - | - - - * | <-- ~1586~2
+LC57 -> * - - - - - - - - - - - - - - - | - - - * | <-- ~1586~3
+LC59 -> * - - - - - - - - - - - - - - - | - - - * | <-- ~1586~4
+LC61 -> * - - - - - - - - - - - - - - - | - - - * | <-- ~1586~5
+LC62 -> * - - - - - - - - - - - - - - - | - - - * | <-- ~1586~6
+LC63 -> * - - - - - - - - - - - - - - - | - - - * | <-- ~1586~7
+
+Pin
+20   -> * * * * * * * * * * * * * * * * | - * * * | <-- A0
+4    -> * * * * * * * * * * * * * * * * | - - * * | <-- A1
+5    -> * * * * * * * * * * * * * * * * | - - * * | <-- A2
+6    -> * * * * * * * * * * * * * * * * | - - * * | <-- A3
+11   -> * * * * * * * * * * * * * * * * | - * * * | <-- B0
+7    -> * * * * * * * * * * * * * * * * | - - * * | <-- B1
+8    -> * * * * * * * * * * * * * * - * | - - * * | <-- B2
+9    -> * * * * * * * * * * * * * * * - | - - * * | <-- B3
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:c:\documents and settings\aluno\desktop\ap10\multiplicador.rpt
+multiplicador
+
+** EQUATIONS **
+
+A0       : INPUT;
+A1       : INPUT;
+A2       : INPUT;
+A3       : INPUT;
+B0       : INPUT;
+B1       : INPUT;
+B2       : INPUT;
+B3       : INPUT;
+
+-- Node name is 'S0' 
+-- Equation name is 'S0', location is LC017, type is output.
+ S0      = LCELL( _EQ001 $  GND);
+  _EQ001 =  A0 &  B0;
+
+-- Node name is 'S1' 
+-- Equation name is 'S1', location is LC040, type is output.
+ S1      = LCELL( _EQ002 $  GND);
+  _EQ002 =  A0 & !A1 &  B1
+         # !A0 &  A1 &  B0
+         #  A1 &  B0 & !B1
+         #  A0 & !B0 &  B1;
+
+-- Node name is 'S2' 
+-- Equation name is 'S2', location is LC041, type is output.
+ S2      = LCELL( _EQ003 $  _EQ004);
+  _EQ003 = !A0 &  A1 &  A2 &  B0 &  B1 & !_LC043 &  _X001
+         #  A0 &  A1 & !B0 &  B1 &  B2 & !_LC043 &  _X001
+         #  A0 &  A2 &  B0 &  B2 & !_LC043 &  _X001
+         #  A0 & !A2 &  B0 & !B2 & !_LC043 &  _X001;
+  _X001  = EXP(!A0 & !A1 & !A2);
+  _EQ004 = !_LC043 &  _X001;
+  _X001  = EXP(!A0 & !A1 & !A2);
+
+-- Node name is 'S3' 
+-- Equation name is 'S3', location is LC046, type is output.
+ S3      = LCELL( _EQ005 $  _EQ006);
+  _EQ005 = !A1 &  A2 &  A3 &  B0 &  B1 & !B2 & !B3 & !_LC034 & !_LC036 & 
+             !_LC037 & !_LC042 & !_LC045 & !_LC058
+         #  A0 & !A1 &  A2 &  A3 & !B1 &  B2 & !B3 & !_LC034 & !_LC036 & 
+             !_LC037 & !_LC042 & !_LC045 & !_LC058
+         #  A0 &  A1 & !A2 &  A3 &  B1 & !B2 & !B3 & !_LC034 & !_LC036 & 
+             !_LC037 & !_LC042 & !_LC045 & !_LC058
+         #  A1 & !A2 &  A3 &  B0 & !B1 &  B2 & !B3 & !_LC034 & !_LC036 & 
+             !_LC037 & !_LC042 & !_LC045 & !_LC058;
+  _EQ006 = !_LC034 & !_LC036 & !_LC037 & !_LC042 & !_LC045 & !_LC058;
+
+-- Node name is 'S4' 
+-- Equation name is 'S4', location is LC064, type is output.
+ S4      = LCELL( _EQ007 $  _EQ008);
+  _EQ007 =  A1 & !A2 &  A3 &  B0 & !B1 &  B2 &  B3 & !_LC049 & !_LC050 & 
+             !_LC057 & !_LC059 & !_LC061 & !_LC062 & !_LC063 &  _X002 & 
+              _X003
+         #  A0 & !A1 &  A2 &  A3 &  B1 & !B2 &  B3 & !_LC049 & !_LC050 & 
+             !_LC057 & !_LC059 & !_LC061 & !_LC062 & !_LC063 &  _X002 & 
+              _X003
+         # !A0 &  A1 &  A2 &  A3 & !B0 &  B2 &  B3 & !_LC049 & !_LC050 & 
+             !_LC057 & !_LC059 & !_LC061 & !_LC062 & !_LC063 &  _X002 & 
+              _X003
+         # !A0 &  A2 &  A3 & !B0 &  B1 &  B2 &  B3 & !_LC049 & !_LC050 & 
+             !_LC057 & !_LC059 & !_LC061 & !_LC062 & !_LC063 &  _X002 & 
+              _X003;
+  _X002  = EXP(!A1 & !A2 & !A3);
+  _X003  = EXP(!B1 & !B2 & !B3);
+  _EQ008 = !_LC049 & !_LC050 & !_LC057 & !_LC059 & !_LC061 & !_LC062 & 
+             !_LC063 &  _X002 &  _X003;
+  _X002  = EXP(!A1 & !A2 & !A3);
+  _X003  = EXP(!B1 & !B2 & !B3);
+
+-- Node name is 'S5' 
+-- Equation name is 'S5', location is LC033, type is output.
+ S5      = LCELL( _EQ009 $  _EQ010);
+  _EQ009 =  A0 &  A1 &  A3 &  B0 & !B1 &  B2 &  B3 & !_LC044 & !_LC051 & 
+             !_LC052 & !_LC053 & !_LC055 & !_LC056 &  _X002 &  _X003
+         #  A0 &  A1 & !A2 &  A3 & !B0 &  B2 &  B3 & !_LC044 & !_LC051 & 
+             !_LC052 & !_LC053 & !_LC055 & !_LC056 &  _X002 &  _X003
+         #  A0 & !A1 &  A2 &  A3 &  B0 &  B2 & !B3 & !_LC044 & !_LC051 & 
+             !_LC052 & !_LC053 & !_LC055 & !_LC056 &  _X002 &  _X003
+         # !A1 &  A2 &  A3 &  B0 &  B1 & !B2 &  B3 & !_LC044 & !_LC051 & 
+             !_LC052 & !_LC053 & !_LC055 & !_LC056 &  _X002 &  _X003;
+  _X002  = EXP(!A1 & !A2 & !A3);
+  _X003  = EXP(!B1 & !B2 & !B3);
+  _EQ010 = !_LC044 & !_LC051 & !_LC052 & !_LC053 & !_LC055 & !_LC056 &  _X002 & 
+              _X003;
+  _X002  = EXP(!A1 & !A2 & !A3);
+  _X003  = EXP(!B1 & !B2 & !B3);
+
+-- Node name is 'S6' 
+-- Equation name is 'S6', location is LC048, type is output.
+ S6      = LCELL( _EQ011 $  _EQ012);
+  _EQ011 =  A0 & !A1 &  A2 &  A3 & !B0 &  B1 &  B3 & !_LC038 & !_LC039 & 
+             !_LC054 & !_LC060
+         # !A0 &  A1 &  A3 &  B0 & !B1 &  B2 &  B3 & !_LC038 & !_LC039 & 
+             !_LC054 & !_LC060
+         #  A0 &  A1 &  A2 &  A3 &  B0 & !B2 & !_LC038 & !_LC039 & !_LC054 & 
+             !_LC060
+         #  A0 & !A2 &  B0 &  B1 &  B2 &  B3 & !_LC038 & !_LC039 & !_LC054 & 
+             !_LC060;
+  _EQ012 = !_LC038 & !_LC039 & !_LC054 & !_LC060;
+
+-- Node name is 'S7' 
+-- Equation name is 'S7', location is LC035, type is output.
+ S7      = LCELL( _EQ013 $  _EQ014);
+  _EQ013 = !A0 & !A1 &  A3 & !B0 & !B2 &  B3 & !_LC047 &  _X001
+         # !A0 & !A2 &  A3 & !B0 & !B1 &  B3 & !_LC047 &  _X001
+         # !A0 &  A3 & !B1 & !B2 &  B3 & !_LC047 &  _X001
+         #  A3 & !B0 & !B1 & !B2 &  B3 & !_LC047 &  _X001;
+  _X001  = EXP(!A0 & !A1 & !A2);
+  _EQ014 =  A3 &  B3 & !_LC047 &  _X001;
+  _X001  = EXP(!A0 & !A1 & !A2);
+
+-- Node name is '~105~1' 
+-- Equation name is '~105~1', location is LC047, type is buried.
+-- synthesized logic cell 
+_LC047   = LCELL( _EQ015 $  GND);
+  _EQ015 = !A1 & !A2 & !B0
+         # !A1 & !B1 & !B2
+         # !A1 & !A2 & !B1
+         # !A2 & !B2;
+
+-- Node name is '~420~1' 
+-- Equation name is '~420~1', location is LC060, type is buried.
+-- synthesized logic cell 
+_LC060   = LCELL( _EQ016 $  GND);
+  _EQ016 = !A1 &  A2 &  A3 & !B1 &  B2 &  B3
+         # !A0 &  A1 &  A2 & !B0 &  B1 & !B2
+         # !A0 &  A1 & !A2 & !B0 &  B1 &  B2
+         #  A2 &  A3 &  B0 &  B1 & !B2
+         #  A0 &  A2 &  A3 &  B1 & !B2;
+
+-- Node name is '~420~2' 
+-- Equation name is '~420~2', location is LC054, type is buried.
+-- synthesized logic cell 
+_LC054   = LCELL( _EQ017 $  GND);
+  _EQ017 =  A1 & !A2 &  B0 &  B2 &  B3
+         #  A0 &  A1 & !A2 &  B2 &  B3
+         # !A0 & !A1 &  A2 &  B2 &  B3
+         #  A2 &  A3 & !B0 & !B1 &  B2
+         # !A0 & !A1 &  A2 & !B1 &  B2;
+
+-- Node name is '~420~3' 
+-- Equation name is '~420~3', location is LC039, type is buried.
+-- synthesized logic cell 
+_LC039   = LCELL( _EQ018 $  GND);
+  _EQ018 = !A1 &  A2 & !B0 & !B1 &  B2
+         # !A1 & !A2 & !B3
+         # !A2 & !B1 & !B3
+         # !A1 & !A3 & !B2
+         # !A3 & !B1 & !B2;
+
+-- Node name is '~420~4' 
+-- Equation name is '~420~4', location is LC038, type is buried.
+-- synthesized logic cell 
+_LC038   = LCELL( _EQ019 $  GND);
+  _EQ019 = !B2 & !B3
+         # !A3 & !B3
+         # !A2 & !A3;
+
+-- Node name is '~963~1' 
+-- Equation name is '~963~1', location is LC056, type is buried.
+-- synthesized logic cell 
+_LC056   = LCELL( _EQ020 $  GND);
+  _EQ020 = !A0 & !A1 &  A2 &  A3 & !B1 &  B2 &  B3
+         # !A1 &  A2 &  A3 & !B0 & !B1 &  B2 &  B3
+         #  A0 &  A1 &  A3 & !B0 &  B1 &  B2
+         #  A0 &  A1 &  A2 &  A3 &  B0 & !B1
+         #  A0 & !A1 &  B0 &  B1 &  B2 &  B3;
+
+-- Node name is '~963~2' 
+-- Equation name is '~963~2', location is LC055, type is buried.
+-- synthesized logic cell 
+_LC055   = LCELL( _EQ021 $  GND);
+  _EQ021 = !A0 &  A1 &  A2 &  B0 &  B1 &  B3
+         #  A0 &  A1 &  A2 & !A3 &  B1 & !B2
+         #  A0 &  A1 & !A2 &  B1 &  B2 & !B3
+         #  A1 &  A2 & !A3 & !B1 &  B2 &  B3
+         # !A1 &  A2 &  A3 &  B1 &  B2 & !B3;
+
+-- Node name is '~963~3' 
+-- Equation name is '~963~3', location is LC053, type is buried.
+-- synthesized logic cell 
+_LC053   = LCELL( _EQ022 $  GND);
+  _EQ022 =  A0 & !A1 & !A3 &  B0 & !B1 &  B2
+         #  A0 & !A1 & !A3 & !B0 &  B1 &  B2
+         #  A0 &  A1 & !A3 & !B0 &  B1 & !B2
+         #  A0 & !A1 &  A3 & !B0 &  B1 & !B2
+         # !A0 &  A1 & !A2 &  B0 &  B1 & !B3;
+
+-- Node name is '~963~4' 
+-- Equation name is '~963~4', location is LC052, type is buried.
+-- synthesized logic cell 
+_LC052   = LCELL( _EQ023 $  GND);
+  _EQ023 = !A0 &  A1 & !A2 &  B0 & !B1 &  B3
+         # !A0 &  A1 &  A2 &  B0 & !B1 & !B3
+         # !A0 &  A1 &  B1 &  B2 &  B3
+         #  A1 &  A2 &  A3 & !B0 &  B1
+         # !A2 & !A3 & !B1 & !B2;
+
+-- Node name is '~963~5' 
+-- Equation name is '~963~5', location is LC051, type is buried.
+-- synthesized logic cell 
+_LC051   = LCELL( _EQ024 $  GND);
+  _EQ024 = !A0 & !A1 & !A2 & !B2
+         # !A2 & !B0 & !B1 & !B2
+         # !A1 & !A2 & !B1 & !B2
+         # !A1 & !A2 & !B2 & !B3
+         # !A3 & !B0 & !B1 & !B3;
+
+-- Node name is '~963~6' 
+-- Equation name is '~963~6', location is LC044, type is buried.
+-- synthesized logic cell 
+_LC044   = LCELL( _EQ025 $  GND);
+  _EQ025 = !A0 & !A1 & !A3 & !B3
+         # !A0 & !A2 & !A3
+         # !A2 & !A3 & !B3
+         # !A3 & !B2 & !B3
+         # !B0 & !B2 & !B3;
+
+-- Node name is '~1586~1' 
+-- Equation name is '~1586~1', location is LC050, type is buried.
+-- synthesized logic cell 
+_LC050   = LCELL( _EQ026 $  GND);
+  _EQ026 =  A1 &  A2 & !A3 &  B0 &  B1 & !B2 &  B3
+         #  A0 &  A1 & !A2 &  A3 &  B1 &  B2 & !B3
+         # !A0 &  A1 & !A2 &  A3 &  B1 & !B2 &  B3
+         #  A1 & !A2 &  A3 & !B0 &  B1 & !B2 &  B3
+         # !A0 &  A1 &  A2 & !A3 & !B1 &  B2 &  B3;
+
+-- Node name is '~1586~2' 
+-- Equation name is '~1586~2', location is LC049, type is buried.
+-- synthesized logic cell 
+_LC049   = LCELL( _EQ027 $  GND);
+  _EQ027 = !A1 &  A2 &  A3 & !B0 &  B1 &  B2 & !B3
+         #  A0 &  A2 &  A3 &  B0 &  B2 &  B3
+         #  A0 &  A1 &  A3 &  B0 & !B1 &  B3
+         #  A0 & !A1 &  A3 &  B0 &  B1 &  B3
+         #  A0 &  A1 & !A2 &  B0 &  B2 &  B3;
+
+-- Node name is '~1586~3' 
+-- Equation name is '~1586~3', location is LC057, type is buried.
+-- synthesized logic cell 
+_LC057   = LCELL( _EQ028 $  GND);
+  _EQ028 =  A0 &  A1 & !A3 &  B0 &  B1 &  B3
+         #  A0 &  A2 &  A3 &  B0 &  B1 & !B2
+         #  A1 &  A3 &  B0 &  B1 &  B2 & !B3
+         # !A0 &  A1 &  A3 & !B0 &  B1 &  B3
+         #  A0 &  A1 &  A2 & !A3 & !B0 &  B1;
+
+-- Node name is '~1586~4' 
+-- Equation name is '~1586~4', location is LC059, type is buried.
+-- synthesized logic cell 
+_LC059   = LCELL( _EQ029 $  GND);
+  _EQ029 =  A0 & !A1 & !A3 &  B0 & !B1 &  B3
+         #  A0 &  A1 & !A2 &  B0 & !B2 & !B3
+         # !A0 &  A1 & !A3 &  B1 &  B2 & !B3
+         #  A0 & !A1 & !A3 &  B0 &  B1 & !B3
+         #  A0 & !A1 &  A3 &  B0 & !B1 & !B3;
+
+-- Node name is '~1586~5' 
+-- Equation name is '~1586~5', location is LC061, type is buried.
+-- synthesized logic cell 
+_LC061   = LCELL( _EQ030 $  GND);
+  _EQ030 =  A0 &  A1 & !A3 &  B0 & !B1 & !B3
+         #  A0 &  B0 &  B1 &  B2 &  B3
+         #  A0 &  A1 &  A2 &  A3 &  B0
+         #  A0 & !A3 &  B1 &  B2 &  B3
+         #  A1 &  A2 &  A3 &  B0 & !B3;
+
+-- Node name is '~1586~6' 
+-- Equation name is '~1586~6', location is LC062, type is buried.
+-- synthesized logic cell 
+_LC062   = LCELL( _EQ031 $  GND);
+  _EQ031 = !A0 & !A1 &  A2 &  B0 & !B2
+         #  A0 & !A2 & !B0 & !B1 &  B2
+         # !A0 & !A1 & !A3 & !B2
+         # !A1 & !B0 & !B1 & !B2
+         # !A3 & !B0 & !B2 & !B3;
+
+-- Node name is '~1586~7' 
+-- Equation name is '~1586~7', location is LC063, type is buried.
+-- synthesized logic cell 
+_LC063   = LCELL( _EQ032 $  GND);
+  _EQ032 = !A0 & !A1 & !A2 & !B1
+         # !A0 & !A2 & !A3 & !B3
+         # !A2 & !B0 & !B1 & !B3;
+
+-- Node name is '~2083~1' 
+-- Equation name is '~2083~1', location is LC036, type is buried.
+-- synthesized logic cell 
+_LC036   = LCELL( _EQ033 $  GND);
+  _EQ033 = !A1 &  A2 & !A3 &  B0 & !B1 &  B2 &  B3
+         #  A0 &  A1 & !A2 & !A3 & !B1 &  B2 &  B3
+         #  A0 & !A1 &  A2 & !A3 &  B1 & !B2 &  B3
+         #  A1 & !A2 & !A3 &  B0 &  B1 & !B2 &  B3
+         #  A0 &  A2 &  A3 &  B1 &  B2 &  B3;
+
+-- Node name is '~2083~2' 
+-- Equation name is '~2083~2', location is LC042, type is buried.
+-- synthesized logic cell 
+_LC042   = LCELL( _EQ034 $  GND);
+  _EQ034 =  A1 &  A3 &  B0 &  B1 &  B2 &  B3
+         #  A1 &  A2 &  A3 &  B0 &  B2 &  B3
+         #  A0 &  A1 &  A2 &  A3 &  B1 &  B3
+         #  A0 & !A3 &  B0 &  B1 &  B2 & !B3
+         #  A0 &  A1 &  A2 & !A3 &  B0 & !B3;
+
+-- Node name is '~2083~3' 
+-- Equation name is '~2083~3', location is LC034, type is buried.
+-- synthesized logic cell 
+_LC034   = LCELL( _EQ035 $  GND);
+  _EQ035 = !A0 &  A1 &  A2 & !B0 &  B1 &  B2
+         #  A0 &  A1 & !B0 & !B1 &  B2 &  B3
+         # !A0 & !A1 &  A2 &  A3 &  B0 &  B1
+         #  A0 & !A1 & !A2 &  A3 &  B0 &  B3
+         #  A0 &  A3 &  B0 & !B1 & !B2 &  B3;
+
+-- Node name is '~2083~4' 
+-- Equation name is '~2083~4', location is LC045, type is buried.
+-- synthesized logic cell 
+_LC045   = LCELL( _EQ036 $  GND);
+  _EQ036 = !A0 &  A1 &  A3 &  B0 &  B2
+         #  A0 &  A2 & !B0 &  B1 &  B3
+         #  A0 & !A2 & !B0 &  B1 & !B3
+         # !A0 &  A1 & !A3 &  B0 & !B2
+         # !A1 & !A2 & !A3 & !B3;
+
+-- Node name is '~2083~5' 
+-- Equation name is '~2083~5', location is LC037, type is buried.
+-- synthesized logic cell 
+_LC037   = LCELL( _EQ037 $  GND);
+  _EQ037 = !A1 & !B0 & !B1 & !B3
+         # !A3 & !B1 & !B2 & !B3
+         # !B0 & !B1 & !B2 & !B3
+         # !A0 & !A1 & !A2 & !A3
+         # !A0 & !A1 & !A2 & !B0;
+
+-- Node name is '~2083~6' 
+-- Equation name is '~2083~6', location is LC058, type is buried.
+-- synthesized logic cell 
+_LC058   = LCELL( _EQ038 $  GND);
+  _EQ038 = !A0 & !A1 & !A3 & !B1
+         # !A0 & !A1 & !B0 & !B1
+         # !A0 & !A2 & !B0 & !B2
+         # !A0 & !B0 & !B1 & !B2;
+
+-- Node name is '~2184~1' 
+-- Equation name is '~2184~1', location is LC043, type is buried.
+-- synthesized logic cell 
+_LC043   = LCELL( _EQ039 $  GND);
+  _EQ039 = !A0 & !A2 & !B1
+         # !A0 & !B0 & !B1
+         # !A0 & !A1 & !B0
+         # !B0 & !B1 & !B2
+         # !A1 & !B0 & !B2;
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--    _X002 occurs in LABs C, D
+--    _X003 occurs in LABs C, D
+
+
+
+
+Project Informationc:\documents and settings\aluno\desktop\ap10\multiplicador.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Standard
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = off
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:00
+   Partitioner                            00:00:00
+   Fitter                                 00:00:00
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:00
+   --------------------------             --------
+   Total Time                             00:00:00
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 4,378K

@@ -1,0 +1,26 @@
+// UFRGS - Compiladores - Marcelo Johann - 2013/1
+
+word a:0;
+word v[10]:0 0 0 0 0 0 0 0 0 0; 
+word mat[1000];
+word $pt:0;
+
+word main()
+  word i:'a';
+  byte a:5;
+  bool b:FALSE;
+  {
+  pt = &a;
+  a = pt;
+  a = *pt;
+  if (x)
+  then if (a<2*5) 
+    then a = 5
+    else a = 2 + 'x'
+  else a = 7;
+  output "A resposta eh",i,nada(),2f,"\n";
+  }
+
+word nada ()
+  {
+  }

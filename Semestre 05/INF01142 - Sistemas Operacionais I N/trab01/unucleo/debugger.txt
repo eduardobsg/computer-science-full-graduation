@@ -1,0 +1,20 @@
+Debbuger para linux:
+
+Para instalar o ambiente de debugger:
+ $ sudo apt-get install electric-fence
+ $ sudo apt-get install valgrind
+ $ sudo apt-get install gdb
+
+Para compilar o programa: 
+ $ gcc -g -o teste teste.c -Wall -lefence -O0
+
+ -g: para o gdb
+ -lefence: para rodar o electric fence
+ -O0: para o compilador não realizar otimizações, não bagunça
+ o número das linhas do programa
+
+Para testar:
+ * valgrind --leak-check=full ./teste
+
+
+

@@ -1,0 +1,1511 @@
+Project Information                                    c:\ap12\projetoap12.rpt
+
+MAX+plus II Compiler Report File
+Version 10.2 07/10/2002
+Compiled: 11/07/2010 17:29:44
+
+Copyright (C) 1988-2002 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+projetoap12
+      EPM7096LC68-7        11       13       0      71      13          73 %
+
+User Pins:                 11       13       0  
+
+
+
+Project Information                                    c:\ap12\projetoap12.rpt
+
+** PROJECT COMPILATION MESSAGES **
+
+Warning: Ignored logic function symbol "display" (ID :81) -- it has no output
+Warning: Ignored logic function symbol "display" (ID :82) -- it has no output
+Warning: Primitive 'U0' is stuck at GND
+
+
+Project Information                                    c:\ap12\projetoap12.rpt
+
+** FILE HIERARCHY **
+
+
+
+|fulladder4bits:79|
+|fulladder4bits:79|fulladder:1|
+|fulladder4bits:79|fulladder:4|
+|fulladder4bits:79|fulladder:6|
+|fulladder4bits:79|fulladder:5|
+|conversor8:80|
+|display:81|
+|display:81|segmento_b:2|
+|display:81|segmento_c:3|
+|display:81|segmento_d:4|
+|display:81|segmento_e:5|
+|display:81|segmento_f:6|
+|display:81|segmento_g:7|
+|display:81|segmento_a:23|
+|display:82|
+|display:82|segmento_b:2|
+|display:82|segmento_c:3|
+|display:82|segmento_d:4|
+|display:82|segmento_e:5|
+|display:82|segmento_f:6|
+|display:82|segmento_g:7|
+|display:82|segmento_a:23|
+
+
+Device-Specific Information:                           c:\ap12\projetoap12.rpt
+projetoap12
+
+***** Logic for device 'projetoap12' compiled without errors.
+
+
+
+
+Device: EPM7096LC68-7
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+    MultiVolt I/O                              = OFF
+
+                                                  R  R     R  R  
+                                                  E  E     E  E  
+                                V                 S  S     S  S  
+                                C                 E  E  V  E  E  
+                                C                 R  R  C  R  R  
+              B  B     G        I  G  G  G  G  G  V  V  C  V  V  
+              T  T  B  N  A  B  N  N  N  N  N  N  E  E  I  E  E  
+              0  1  3  D  0  1  T  D  D  D  D  D  D  D  O  D  D  
+            -----------------------------------------------------_ 
+          /   9  8  7  6  5  4  3  2  1 68 67 66 65 64 63 62 61   | 
+      A2 | 10                                                  60 | RESERVED 
+   VCCIO | 11                                                  59 | RESERVED 
+      B2 | 12                                                  58 | GND 
+     Cin | 13                                                  57 | D0 
+RESERVED | 14                                                  56 | D1 
+RESERVED | 15                                                  55 | RESERVED 
+     GND | 16                                                  54 | RESERVED 
+      S1 | 17                                                  53 | VCCIO 
+      U0 | 18                  EPM7096LC68-7                   52 | RESERVED 
+      S0 | 19                                                  51 | RESERVED 
+      A1 | 20                                                  50 | RESERVED 
+   VCCIO | 21                                                  49 | RESERVED 
+      A3 | 22                                                  48 | GND 
+      B0 | 23                                                  47 | U1 
+RESERVED | 24                                                  46 | RESERVED 
+    Cout | 25                                                  45 | RESERVED 
+     GND | 26                                                  44 | RESERVED 
+         |_  27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43  _| 
+           ------------------------------------------------------ 
+              D  S  S  R  V  R  R  G  V  U  R  G  U  D  R  R  V  
+              3  3  2  E  C  E  E  N  C  2  E  N  3  2  E  E  C  
+                       S  C  S  S  D  C     S  D        S  S  C  
+                       E  I  E  E     I     E           E  E  I  
+                       R  O  R  R     N     R           R  R  O  
+                       V     V  V     T     V           V  V     
+                       E     E  E           E           E  E     
+                       D     D  D           D           D  D     
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+
+
+Device-Specific Information:                           c:\ap12\projetoap12.rpt
+projetoap12
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16     0/16(  0%)   8/ 8(100%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32     8/16( 50%)   6/ 8( 75%)   6/16( 37%)  10/36( 27%) 
+C:    LC33 - LC48    15/16( 93%)   4/ 8( 50%)  15/16( 93%)  18/36( 50%) 
+D:    LC49 - LC64    16/16(100%)   3/ 8( 37%)  16/16(100%)  28/36( 77%) 
+E:    LC65 - LC80    16/16(100%)   1/ 8( 12%)  16/16(100%)  18/36( 50%) 
+F:    LC81 - LC96    16/16(100%)   2/ 8( 25%)  16/16(100%)  26/36( 72%) 
+
+
+Total dedicated input pins used:                 0/4      (  0%)
+Total I/O pins used:                            24/48     ( 50%)
+Total logic cells used:                         71/96     ( 73%)
+Total shareable expanders used:                 13/96     ( 13%)
+Total Turbo logic cells used:                   71/96     ( 73%)
+Total shareable expanders not available (n/a):  56/96     ( 58%)
+Average fan-in:                                  7.94
+Total fan-in:                                   564
+
+Total input pins required:                      11
+Total output pins required:                     13
+Total bidirectional pins required:               0
+Total logic cells required:                     71
+Total flipflops required:                        0
+Total product terms required:                  335
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:          13
+
+Synthesized logic cells:                        58/  96   ( 60%)
+
+
+
+Device-Specific Information:                           c:\ap12\projetoap12.rpt
+projetoap12
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+   5   (14)  (A)      INPUT               0      0   0    0    0    1    3  A0
+  20   (21)  (B)      INPUT               0      0   0    0    0    1    3  A1
+  10    (6)  (A)      INPUT               0      0   0    0    0    1    2  A2
+  22   (19)  (B)      INPUT               0      0   0    0    0    2    1  A3
+   9    (8)  (A)      INPUT               0      0   0    0    0    5    7  BT0
+   8    (9)  (A)      INPUT               0      0   0    0    0    5    7  BT1
+  23   (17)  (B)      INPUT               0      0   0    0    0    1    3  B0
+   4   (16)  (A)      INPUT               0      0   0    0    0    1    3  B1
+  12    (4)  (A)      INPUT               0      0   0    0    0    1    2  B2
+   7   (12)  (A)      INPUT               0      0   0    0    0    2    1  B3
+  13    (1)  (A)      INPUT               0      0   0    0    0    8   50  Cin
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                           c:\ap12\projetoap12.rpt
+projetoap12
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  25     45    C     OUTPUT      t        0      0   0    4    2    0    0  Cout
+  57     84    F     OUTPUT      t        1      1   0    1   18    0    0  D0
+  56     81    F     OUTPUT      t        3      1   1    1   13    0    0  D1
+  40     56    D     OUTPUT      t        3      3   0    1   14    0    0  D2
+  27     43    C     OUTPUT      t        2      1   1    1   11    0    0  D3
+  19     24    B     OUTPUT      t        1      0   1    5    0    0    0  S0
+  17     27    B     OUTPUT      t        1      0   1    4    1    0    0  S1
+  29     40    C     OUTPUT      t        1      0   1    4    1    0    0  S2
+  28     41    C     OUTPUT      t        1      0   1    4    1    0    0  S3
+  18     25    B     OUTPUT      t        0      0   0    0    0    0    0  U0
+  47     67    E     OUTPUT      t        1      0   1    1   17    0    0  U1
+  36     49    D     OUTPUT      t        4      4   0    1   13    0    0  U2
+  39     53    D     OUTPUT      t        3      2   1    1   15    0    0  U3
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                           c:\ap12\projetoap12.rpt
+projetoap12
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+ (41)    57    D       SOFT    s t        1      0   1    1    5    1    0  |CONVERSOR8:80|~156~1
+ (42)    59    D       SOFT    s t        1      0   1    1    5    1    0  |CONVERSOR8:80|~156~2
+   -     60    D       SOFT    s t        0      0   0    0    6    1    0  |CONVERSOR8:80|~156~3
+   -     85    F       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~255~1
+   -     87    F       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~255~2
+ (62)    92    F       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~255~3
+ (64)    94    F       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~255~4
+ (65)    96    F       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~255~5
+   -     52    D       SOFT    s t        1      0   1    1    5    1    0  |CONVERSOR8:80|~255~6
+   -     90    F       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~255~7
+ (59)    86    F       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~255~8
+   -     47    C       SOFT    s t        1      0   1    1    5    1    0  |CONVERSOR8:80|~404~1
+   -     46    C       SOFT    s t        1      0   1    1    5    1    0  |CONVERSOR8:80|~404~2
+   -     82    F       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~404~3
+   -     95    F       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~404~4
+   -     93    F       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~404~5
+ (60)    88    F       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~863~1
+ (61)    89    F       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~863~2
+   -     91    F       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~863~3
+   -     76    E       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~863~4
+   -     71    E       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~863~5
+   -     79    E       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~863~6
+ (50)    72    E       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~863~7
+   -     70    E       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~863~8
+ (49)    69    E       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~863~9
+   -     68    E       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~863~10
+   -     55    D       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~863~11
+ (24)    48    C       SOFT    s t        1      0   1    1    5    2    0  |CONVERSOR8:80|~863~12
+   -     58    D       SOFT    s t        0      0   0    1    5    1    0  |CONVERSOR8:80|~863~13
+   -     36    C       SOFT    s t        1      0   1    1    5    3    0  |CONVERSOR8:80|~1388~1
+ (44)    61    D       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~1388~2
+   -     62    D       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~1388~3
+   -     63    D       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~1388~4
+ (45)    64    D       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~1388~5
+   -     42    C       SOFT    s t        1      0   1    0    6    2    0  |CONVERSOR8:80|~1388~6
+ (30)    37    C       SOFT    s t        0      0   0    1    3    2    0  |CONVERSOR8:80|~1388~7
+   -     39    C       SOFT    s t        0      0   0    1    5    1    0  |CONVERSOR8:80|~1388~8
+   -     54    D       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~2007~1
+ (37)    51    D       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~2007~2
+   -     50    D       SOFT    s t        1      0   1    1    7    1    0  |CONVERSOR8:80|~2007~3
+   -     83    F       SOFT    s t        0      0   0    1    7    1    0  |CONVERSOR8:80|~2007~4
+   -     34    C       SOFT    s t        3      1   1    1    5    1    8  |CONVERSOR8:80|~2332~1
+   -     44    C       SOFT    s t        5      2   1    1    7    1    8  |CONVERSOR8:80|~2350~1
+ (46)    65    E       SOFT    s t        1      0   1    1    9    1    0  |CONVERSOR8:80|~2612~2
+ (55)    80    E       SOFT    s t        1      0   1    1    9    1    0  |CONVERSOR8:80|~2612~3
+   -     78    E       SOFT    s t        1      0   1    1    9    1    0  |CONVERSOR8:80|~2612~4
+ (54)    77    E       SOFT    s t        1      0   1    1    9    1    0  |CONVERSOR8:80|~2612~5
+ (51)    73    E       SOFT    s t        1      0   1    1    9    1    0  |CONVERSOR8:80|~2612~6
+   -     66    E       SOFT    s t        1      0   1    0    8    1    0  |CONVERSOR8:80|~2612~7
+   -     74    E       SOFT    s t        1      0   1    1    9    1    0  |CONVERSOR8:80|~2612~8
+ (52)    75    E       SOFT    s t        1      0   1    1    9    1    0  |CONVERSOR8:80|~2612~9
+   -     18    B       SOFT    s t        0      0   0    5    0    8   46  |fulladder4bits:79|fulladder:1|~3~1
+ (22)    19    B       SOFT    s t        0      0   0    4    0    7   48  |fulladder4bits:79|fulladder:1|~4~1
+ (33)    33    C       SOFT    s t        0      0   0    4    0    7   47  |fulladder4bits:79|fulladder:4|~4~1
+   -     20    B       SOFT    s t        1      0   1    7    1    7   50  |fulladder4bits:79|fulladder:5|~3~1
+ (20)    21    B       SOFT    s t        0      0   0    4    0    7   44  |fulladder4bits:79|fulladder:5|~4~1
+   -     22    B       SOFT    s t        3      0   1    6    1    8   47  |fulladder4bits:79|fulladder:6|~3~1
+ (32)    35    C       SOFT    s t        0      0   0    4    0    6   50  |fulladder4bits:79|fulladder:6|~4~1
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                           c:\ap12\projetoap12.rpt
+projetoap12
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+                         Logic cells placed in LAB 'B'
+        +--------------- LC18 |fulladder4bits:79|fulladder:1|~3~1
+        | +------------- LC19 |fulladder4bits:79|fulladder:1|~4~1
+        | | +----------- LC20 |fulladder4bits:79|fulladder:5|~3~1
+        | | | +--------- LC21 |fulladder4bits:79|fulladder:5|~4~1
+        | | | | +------- LC22 |fulladder4bits:79|fulladder:6|~3~1
+        | | | | | +----- LC24 S0
+        | | | | | | +--- LC27 S1
+        | | | | | | | +- LC25 U0
+        | | | | | | | | 
+        | | | | | | | |   Other LABs fed by signals
+        | | | | | | | |   that feed LAB 'B'
+LC      | | | | | | | | | A B C D E F |     Logic cells that feed LAB 'B':
+LC18 -> - - * - * - * - | - * * * * * | <-- |fulladder4bits:79|fulladder:1|~3~1
+
+Pin
+5    -> * * * - - * - - | - * - - - - | <-- A0
+20   -> - - * * * - * - | - * - - - - | <-- A1
+10   -> - - - - * - - - | - * * - - - | <-- A2
+9    -> * * * * * * * - | - * * - - - | <-- BT0
+8    -> * * * * * * * - | - * * - - - | <-- BT1
+23   -> * * * - - * - - | - * - - - - | <-- B0
+4    -> - - * * * - * - | - * - - - - | <-- B1
+12   -> - - - - * - - - | - * * - - - | <-- B2
+13   -> * - * - - * - - | - * * * * * | <-- Cin
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                           c:\ap12\projetoap12.rpt
+projetoap12
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'C':
+
+                                       Logic cells placed in LAB 'C'
+        +----------------------------- LC47 |CONVERSOR8:80|~404~1
+        | +--------------------------- LC46 |CONVERSOR8:80|~404~2
+        | | +------------------------- LC48 |CONVERSOR8:80|~863~12
+        | | | +----------------------- LC36 |CONVERSOR8:80|~1388~1
+        | | | | +--------------------- LC42 |CONVERSOR8:80|~1388~6
+        | | | | | +------------------- LC37 |CONVERSOR8:80|~1388~7
+        | | | | | | +----------------- LC39 |CONVERSOR8:80|~1388~8
+        | | | | | | | +--------------- LC34 |CONVERSOR8:80|~2332~1
+        | | | | | | | | +------------- LC44 |CONVERSOR8:80|~2350~1
+        | | | | | | | | | +----------- LC45 Cout
+        | | | | | | | | | | +--------- LC43 D3
+        | | | | | | | | | | | +------- LC33 |fulladder4bits:79|fulladder:4|~4~1
+        | | | | | | | | | | | | +----- LC35 |fulladder4bits:79|fulladder:6|~4~1
+        | | | | | | | | | | | | | +--- LC40 S2
+        | | | | | | | | | | | | | | +- LC41 S3
+        | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | |   that feed LAB 'C'
+LC      | | | | | | | | | | | | | | | | A B C D E F |     Logic cells that feed LAB 'C':
+LC37 -> - - - - - - - - - - * - - - - | - - * * - - | <-- |CONVERSOR8:80|~1388~7
+LC33 -> - - - * * - * * * * * - - - - | - - * * * * | <-- |fulladder4bits:79|fulladder:4|~4~1
+LC35 -> * * * - * * * * * - * - - - - | - - * * * * | <-- |fulladder4bits:79|fulladder:6|~4~1
+
+Pin
+10   -> - - - - - - - - - - - - * * - | - * * - - - | <-- A2
+22   -> - - - - - - - - - * - * - - * | - - * - - - | <-- A3
+9    -> - - - - - - - - - * - * * * * | - * * - - - | <-- BT0
+8    -> - - - - - - - - - * - * * * * | - * * - - - | <-- BT1
+12   -> - - - - - - - - - - - - * * - | - * * - - - | <-- B2
+7    -> - - - - - - - - - * - * - - * | - - * - - - | <-- B3
+13   -> * * * * - * * * * - * - - - - | - * * * * * | <-- Cin
+LC57 -> - - - - - - - - - - * - - - - | - - * - - - | <-- |CONVERSOR8:80|~156~1
+LC59 -> - - - - - - - - - - * - - - - | - - * - - - | <-- |CONVERSOR8:80|~156~2
+LC60 -> - - - - - - - - - - * - - - - | - - * - - - | <-- |CONVERSOR8:80|~156~3
+LC18 -> * * * * * - - - * - * - - - - | - * * * * * | <-- |fulladder4bits:79|fulladder:1|~3~1
+LC19 -> * * * * - * * * * - * - - - - | - - * * * * | <-- |fulladder4bits:79|fulladder:1|~4~1
+LC20 -> * * * - * * * * * - * - - * - | - - * * * * | <-- |fulladder4bits:79|fulladder:5|~3~1
+LC21 -> * * * * * - - - * - * - - - - | - - * * * * | <-- |fulladder4bits:79|fulladder:5|~4~1
+LC22 -> - - - * * - * * * * * - - - * | - - * * * * | <-- |fulladder4bits:79|fulladder:6|~3~1
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                           c:\ap12\projetoap12.rpt
+projetoap12
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'D':
+
+                                         Logic cells placed in LAB 'D'
+        +------------------------------- LC57 |CONVERSOR8:80|~156~1
+        | +----------------------------- LC59 |CONVERSOR8:80|~156~2
+        | | +--------------------------- LC60 |CONVERSOR8:80|~156~3
+        | | | +------------------------- LC52 |CONVERSOR8:80|~255~6
+        | | | | +----------------------- LC55 |CONVERSOR8:80|~863~11
+        | | | | | +--------------------- LC58 |CONVERSOR8:80|~863~13
+        | | | | | | +------------------- LC61 |CONVERSOR8:80|~1388~2
+        | | | | | | | +----------------- LC62 |CONVERSOR8:80|~1388~3
+        | | | | | | | | +--------------- LC63 |CONVERSOR8:80|~1388~4
+        | | | | | | | | | +------------- LC64 |CONVERSOR8:80|~1388~5
+        | | | | | | | | | | +----------- LC54 |CONVERSOR8:80|~2007~1
+        | | | | | | | | | | | +--------- LC51 |CONVERSOR8:80|~2007~2
+        | | | | | | | | | | | | +------- LC50 |CONVERSOR8:80|~2007~3
+        | | | | | | | | | | | | | +----- LC56 D2
+        | | | | | | | | | | | | | | +--- LC49 U2
+        | | | | | | | | | | | | | | | +- LC53 U3
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'D'
+LC      | | | | | | | | | | | | | | | | | A B C D E F |     Logic cells that feed LAB 'D':
+LC52 -> - - - - - - - - - - - - - * - - | - - - * - - | <-- |CONVERSOR8:80|~255~6
+LC61 -> - - - - - - - - - - - - - - - * | - - - * - - | <-- |CONVERSOR8:80|~1388~2
+LC62 -> - - - - - - - - - - - - - - - * | - - - * - - | <-- |CONVERSOR8:80|~1388~3
+LC63 -> - - - - - - - - - - - - - - - * | - - - * - - | <-- |CONVERSOR8:80|~1388~4
+LC64 -> - - - - - - - - - - - - - - - * | - - - * - - | <-- |CONVERSOR8:80|~1388~5
+LC54 -> - - - - - - - - - - - - - - * - | - - - * - - | <-- |CONVERSOR8:80|~2007~1
+LC51 -> - - - - - - - - - - - - - - * - | - - - * - - | <-- |CONVERSOR8:80|~2007~2
+LC50 -> - - - - - - - - - - - - - - * - | - - - * - - | <-- |CONVERSOR8:80|~2007~3
+
+Pin
+13   -> * * - * * * * * * * * * * * * * | - * * * * * | <-- Cin
+LC85 -> - - - - - - - - - - - - - * - - | - - - * - - | <-- |CONVERSOR8:80|~255~1
+LC87 -> - - - - - - - - - - - - - * - - | - - - * - - | <-- |CONVERSOR8:80|~255~2
+LC92 -> - - - - - - - - - - - - - * - - | - - - * - - | <-- |CONVERSOR8:80|~255~3
+LC94 -> - - - - - - - - - - - - - * - - | - - - * - - | <-- |CONVERSOR8:80|~255~4
+LC96 -> - - - - - - - - - - - - - * - - | - - - * - - | <-- |CONVERSOR8:80|~255~5
+LC90 -> - - - - - - - - - - - - - * - - | - - - * - - | <-- |CONVERSOR8:80|~255~7
+LC86 -> - - - - - - - - - - - - - * - - | - - - * - - | <-- |CONVERSOR8:80|~255~8
+LC36 -> - - - - - - - - - - - - - * * * | - - - * - - | <-- |CONVERSOR8:80|~1388~1
+LC42 -> - - - - - - - - - - - - - - * * | - - - * - - | <-- |CONVERSOR8:80|~1388~6
+LC37 -> - - - - - - - - - - - - - - - * | - - * * - - | <-- |CONVERSOR8:80|~1388~7
+LC39 -> - - - - - - - - - - - - - - - * | - - - * - - | <-- |CONVERSOR8:80|~1388~8
+LC83 -> - - - - - - - - - - - - - - * - | - - - * - - | <-- |CONVERSOR8:80|~2007~4
+LC18 -> - - * - * - * * * * * * * * * * | - * * * * * | <-- |fulladder4bits:79|fulladder:1|~3~1
+LC19 -> * * - * * * * * * * * * * * * * | - - * * * * | <-- |fulladder4bits:79|fulladder:1|~4~1
+LC33 -> * * * * * * * * * * * * * * * * | - - * * * * | <-- |fulladder4bits:79|fulladder:4|~4~1
+LC20 -> * * * * * * * * * * * * * - * * | - - * * * * | <-- |fulladder4bits:79|fulladder:5|~3~1
+LC21 -> - - * - * - * * * * * * * * * * | - - * * * * | <-- |fulladder4bits:79|fulladder:5|~4~1
+LC22 -> * * * * * * * * * * * * * * * * | - - * * * * | <-- |fulladder4bits:79|fulladder:6|~3~1
+LC35 -> * * * * * * * * * * * * * - * * | - - * * * * | <-- |fulladder4bits:79|fulladder:6|~4~1
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                           c:\ap12\projetoap12.rpt
+projetoap12
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'E':
+
+                                         Logic cells placed in LAB 'E'
+        +------------------------------- LC76 |CONVERSOR8:80|~863~4
+        | +----------------------------- LC71 |CONVERSOR8:80|~863~5
+        | | +--------------------------- LC79 |CONVERSOR8:80|~863~6
+        | | | +------------------------- LC72 |CONVERSOR8:80|~863~7
+        | | | | +----------------------- LC70 |CONVERSOR8:80|~863~8
+        | | | | | +--------------------- LC69 |CONVERSOR8:80|~863~9
+        | | | | | | +------------------- LC68 |CONVERSOR8:80|~863~10
+        | | | | | | | +----------------- LC65 |CONVERSOR8:80|~2612~2
+        | | | | | | | | +--------------- LC80 |CONVERSOR8:80|~2612~3
+        | | | | | | | | | +------------- LC78 |CONVERSOR8:80|~2612~4
+        | | | | | | | | | | +----------- LC77 |CONVERSOR8:80|~2612~5
+        | | | | | | | | | | | +--------- LC73 |CONVERSOR8:80|~2612~6
+        | | | | | | | | | | | | +------- LC66 |CONVERSOR8:80|~2612~7
+        | | | | | | | | | | | | | +----- LC74 |CONVERSOR8:80|~2612~8
+        | | | | | | | | | | | | | | +--- LC75 |CONVERSOR8:80|~2612~9
+        | | | | | | | | | | | | | | | +- LC67 U1
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'E'
+LC      | | | | | | | | | | | | | | | | | A B C D E F |     Logic cells that feed LAB 'E':
+LC65 -> - - - - - - - - - - - - - - - * | - - - - * - | <-- |CONVERSOR8:80|~2612~2
+LC80 -> - - - - - - - - - - - - - - - * | - - - - * - | <-- |CONVERSOR8:80|~2612~3
+LC78 -> - - - - - - - - - - - - - - - * | - - - - * - | <-- |CONVERSOR8:80|~2612~4
+LC77 -> - - - - - - - - - - - - - - - * | - - - - * - | <-- |CONVERSOR8:80|~2612~5
+LC73 -> - - - - - - - - - - - - - - - * | - - - - * - | <-- |CONVERSOR8:80|~2612~6
+LC66 -> - - - - - - - - - - - - - - - * | - - - - * - | <-- |CONVERSOR8:80|~2612~7
+LC74 -> - - - - - - - - - - - - - - - * | - - - - * - | <-- |CONVERSOR8:80|~2612~8
+LC75 -> - - - - - - - - - - - - - - - * | - - - - * - | <-- |CONVERSOR8:80|~2612~9
+
+Pin
+13   -> * * * * * * * * * * * * - * * * | - * * * * * | <-- Cin
+LC34 -> - - - - - - - * * * * * * * * * | - - - - * - | <-- |CONVERSOR8:80|~2332~1
+LC44 -> - - - - - - - * * * * * * * * * | - - - - * - | <-- |CONVERSOR8:80|~2350~1
+LC18 -> * * * * * * * * * * * * * * * * | - * * * * * | <-- |fulladder4bits:79|fulladder:1|~3~1
+LC19 -> * * * * * * * * * * * * - * * * | - - * * * * | <-- |fulladder4bits:79|fulladder:1|~4~1
+LC33 -> * * * * * * * * * * * * * * * * | - - * * * * | <-- |fulladder4bits:79|fulladder:4|~4~1
+LC20 -> * * * * * * * * * * * * * * * * | - - * * * * | <-- |fulladder4bits:79|fulladder:5|~3~1
+LC21 -> * * * * * * * * * * * * * * * * | - - * * * * | <-- |fulladder4bits:79|fulladder:5|~4~1
+LC22 -> * * * * * * * * * * * * * * * * | - - * * * * | <-- |fulladder4bits:79|fulladder:6|~3~1
+LC35 -> * * * * * * * * * * * * * * * * | - - * * * * | <-- |fulladder4bits:79|fulladder:6|~4~1
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                           c:\ap12\projetoap12.rpt
+projetoap12
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'F':
+
+                                         Logic cells placed in LAB 'F'
+        +------------------------------- LC85 |CONVERSOR8:80|~255~1
+        | +----------------------------- LC87 |CONVERSOR8:80|~255~2
+        | | +--------------------------- LC92 |CONVERSOR8:80|~255~3
+        | | | +------------------------- LC94 |CONVERSOR8:80|~255~4
+        | | | | +----------------------- LC96 |CONVERSOR8:80|~255~5
+        | | | | | +--------------------- LC90 |CONVERSOR8:80|~255~7
+        | | | | | | +------------------- LC86 |CONVERSOR8:80|~255~8
+        | | | | | | | +----------------- LC82 |CONVERSOR8:80|~404~3
+        | | | | | | | | +--------------- LC95 |CONVERSOR8:80|~404~4
+        | | | | | | | | | +------------- LC93 |CONVERSOR8:80|~404~5
+        | | | | | | | | | | +----------- LC88 |CONVERSOR8:80|~863~1
+        | | | | | | | | | | | +--------- LC89 |CONVERSOR8:80|~863~2
+        | | | | | | | | | | | | +------- LC91 |CONVERSOR8:80|~863~3
+        | | | | | | | | | | | | | +----- LC83 |CONVERSOR8:80|~2007~4
+        | | | | | | | | | | | | | | +--- LC84 D0
+        | | | | | | | | | | | | | | | +- LC81 D1
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'F'
+LC      | | | | | | | | | | | | | | | | | A B C D E F |     Logic cells that feed LAB 'F':
+LC82 -> - - - - - - - - - - - - - - - * | - - - - - * | <-- |CONVERSOR8:80|~404~3
+LC95 -> - - - - - - - - - - - - - - - * | - - - - - * | <-- |CONVERSOR8:80|~404~4
+LC93 -> - - - - - - - - - - - - - - - * | - - - - - * | <-- |CONVERSOR8:80|~404~5
+LC88 -> - - - - - - - - - - - - - - * - | - - - - - * | <-- |CONVERSOR8:80|~863~1
+LC89 -> - - - - - - - - - - - - - - * - | - - - - - * | <-- |CONVERSOR8:80|~863~2
+LC91 -> - - - - - - - - - - - - - - * - | - - - - - * | <-- |CONVERSOR8:80|~863~3
+
+Pin
+13   -> * * * * * * * * * * * * * * * * | - * * * * * | <-- Cin
+LC47 -> - - - - - - - - - - - - - - - * | - - - - - * | <-- |CONVERSOR8:80|~404~1
+LC46 -> - - - - - - - - - - - - - - - * | - - - - - * | <-- |CONVERSOR8:80|~404~2
+LC76 -> - - - - - - - - - - - - - - * - | - - - - - * | <-- |CONVERSOR8:80|~863~4
+LC71 -> - - - - - - - - - - - - - - * - | - - - - - * | <-- |CONVERSOR8:80|~863~5
+LC79 -> - - - - - - - - - - - - - - * - | - - - - - * | <-- |CONVERSOR8:80|~863~6
+LC72 -> - - - - - - - - - - - - - - * - | - - - - - * | <-- |CONVERSOR8:80|~863~7
+LC70 -> - - - - - - - - - - - - - - * - | - - - - - * | <-- |CONVERSOR8:80|~863~8
+LC69 -> - - - - - - - - - - - - - - * - | - - - - - * | <-- |CONVERSOR8:80|~863~9
+LC68 -> - - - - - - - - - - - - - - * - | - - - - - * | <-- |CONVERSOR8:80|~863~10
+LC55 -> - - - - - - - - - - - - - - * - | - - - - - * | <-- |CONVERSOR8:80|~863~11
+LC48 -> - - - - - - - - - - - - - - * * | - - - - - * | <-- |CONVERSOR8:80|~863~12
+LC58 -> - - - - - - - - - - - - - - * - | - - - - - * | <-- |CONVERSOR8:80|~863~13
+LC18 -> * * * * * * * * * * * * * * * * | - * * * * * | <-- |fulladder4bits:79|fulladder:1|~3~1
+LC19 -> * * * * * * * * * * * * * * * * | - - * * * * | <-- |fulladder4bits:79|fulladder:1|~4~1
+LC33 -> * * * * * * * * * * * * * * - * | - - * * * * | <-- |fulladder4bits:79|fulladder:4|~4~1
+LC20 -> * * * * * * * * * * * * * * * * | - - * * * * | <-- |fulladder4bits:79|fulladder:5|~3~1
+LC21 -> * * * * * * * * * * * * * * * * | - - * * * * | <-- |fulladder4bits:79|fulladder:5|~4~1
+LC22 -> * * * * * * * * * * * * * * - * | - - * * * * | <-- |fulladder4bits:79|fulladder:6|~3~1
+LC35 -> * * * * * * * * * * * * * * * * | - - * * * * | <-- |fulladder4bits:79|fulladder:6|~4~1
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                           c:\ap12\projetoap12.rpt
+projetoap12
+
+** EQUATIONS **
+
+A0       : INPUT;
+A1       : INPUT;
+A2       : INPUT;
+A3       : INPUT;
+BT0      : INPUT;
+BT1      : INPUT;
+B0       : INPUT;
+B1       : INPUT;
+B2       : INPUT;
+B3       : INPUT;
+Cin      : INPUT;
+
+-- Node name is 'Cout' 
+-- Equation name is 'Cout', location is LC045, type is output.
+ Cout    = LCELL( _EQ001 $  GND);
+  _EQ001 =  A3 &  BT0 &  BT1 &  B3
+         #  _LC022 &  _LC033;
+
+-- Node name is 'D0' 
+-- Equation name is 'D0', location is LC084, type is output.
+ D0      = LCELL( _EQ002 $  VCC);
+  _EQ002 = !_LC048 & !_LC055 & !_LC058 & !_LC068 & !_LC069 & !_LC070 & 
+             !_LC071 & !_LC072 & !_LC076 & !_LC079 & !_LC088 & !_LC089 & 
+             !_LC091 &  _X001;
+  _X001  = EXP(!Cin &  _LC018 & !_LC019 &  _LC020 & !_LC021 & !_LC035);
+
+-- Node name is 'D1' 
+-- Equation name is 'D1', location is LC081, type is output.
+ D1      = LCELL( _EQ003 $  _EQ004);
+  _EQ003 =  Cin &  _LC018 &  _LC019 &  _LC020 &  _LC021 &  _LC035 & !_LC046 & 
+             !_LC047 & !_LC048 & !_LC082 & !_LC093 & !_LC095 &  _X001 & 
+              _X002
+         #  Cin &  _LC018 &  _LC019 & !_LC020 &  _LC021 & !_LC035 & !_LC046 & 
+             !_LC047 & !_LC048 & !_LC082 & !_LC093 & !_LC095 &  _X001 & 
+              _X002
+         #  Cin & !_LC018 &  _LC019 & !_LC020 &  _LC021 &  _LC035 & !_LC046 & 
+             !_LC047 & !_LC048 & !_LC082 & !_LC093 & !_LC095 &  _X001 & 
+              _X002
+         #  Cin & !_LC018 &  _LC019 &  _LC020 &  _LC021 & !_LC035 & !_LC046 & 
+             !_LC047 & !_LC048 & !_LC082 & !_LC093 & !_LC095 &  _X001 & 
+              _X002;
+  _X001  = EXP(!Cin &  _LC018 & !_LC019 &  _LC020 & !_LC021 & !_LC035);
+  _X002  = EXP(!_LC020 &  _LC022 & !_LC033 & !_LC035);
+  _EQ004 = !_LC046 & !_LC047 & !_LC048 & !_LC082 & !_LC093 & !_LC095 &  _X001 & 
+              _X002;
+  _X001  = EXP(!Cin &  _LC018 & !_LC019 &  _LC020 & !_LC021 & !_LC035);
+  _X002  = EXP(!_LC020 &  _LC022 & !_LC033 & !_LC035);
+
+-- Node name is 'D2' 
+-- Equation name is 'D2', location is LC056, type is output.
+ D2      = LCELL( _EQ005 $  VCC);
+  _EQ005 = !_LC036 & !_LC052 & !_LC085 & !_LC086 & !_LC087 & !_LC090 & 
+             !_LC092 & !_LC094 & !_LC096 &  _X003 &  _X004 &  _X005;
+  _X003  = EXP( Cin & !_LC018 & !_LC019 & !_LC021 &  _LC022 & !_LC033);
+  _X004  = EXP(!Cin &  _LC018 &  _LC019 &  _LC021 & !_LC022 &  _LC033);
+  _X005  = EXP(!Cin &  _LC018 &  _LC019 &  _LC021 &  _LC022 & !_LC033);
+
+-- Node name is 'D3' 
+-- Equation name is 'D3', location is LC043, type is output.
+ D3      = LCELL( _EQ006 $  _EQ007);
+  _EQ006 =  Cin &  _LC019 &  _LC020 &  _LC022 &  _LC033 &  _LC035 & !_LC037 & 
+             !_LC057 & !_LC059 & !_LC060 &  _X006
+         #  Cin &  _LC019 &  _LC020 & !_LC022 & !_LC033 &  _LC035 & !_LC037 & 
+             !_LC057 & !_LC059 & !_LC060 &  _X006
+         #  Cin &  _LC019 & !_LC020 &  _LC022 &  _LC033 & !_LC035 & !_LC037 & 
+             !_LC057 & !_LC059 & !_LC060 &  _X006
+         # !Cin & !_LC019 &  _LC020 &  _LC022 &  _LC033 &  _LC035 & !_LC037 & 
+             !_LC057 & !_LC059 & !_LC060 &  _X006;
+  _X006  = EXP(!_LC018 & !_LC021);
+  _EQ007 = !_LC037 & !_LC057 & !_LC059 & !_LC060 &  _X006;
+  _X006  = EXP(!_LC018 & !_LC021);
+
+-- Node name is 'S0' 
+-- Equation name is 'S0', location is LC024, type is output.
+ S0      = LCELL( _EQ008 $  Cin);
+  _EQ008 =  A0 &  BT0 & !B0
+         #  A0 &  BT0 & !BT1
+         # !A0 &  BT1 &  B0
+         # !BT0 &  BT1 &  B0;
+
+-- Node name is 'S1' 
+-- Equation name is 'S1', location is LC027, type is output.
+ S1      = LCELL( _EQ009 $  _LC018);
+  _EQ009 =  A1 &  BT0 & !B1
+         #  A1 &  BT0 & !BT1
+         # !A1 &  BT1 &  B1
+         # !BT0 &  BT1 &  B1;
+
+-- Node name is 'S2' 
+-- Equation name is 'S2', location is LC040, type is output.
+ S2      = LCELL( _EQ010 $  _LC020);
+  _EQ010 =  A2 &  BT0 & !B2
+         #  A2 &  BT0 & !BT1
+         # !A2 &  BT1 &  B2
+         # !BT0 &  BT1 &  B2;
+
+-- Node name is 'S3' 
+-- Equation name is 'S3', location is LC041, type is output.
+ S3      = LCELL( _EQ011 $  _LC022);
+  _EQ011 =  A3 &  BT0 & !B3
+         #  A3 &  BT0 & !BT1
+         # !A3 &  BT1 &  B3
+         # !BT0 &  BT1 &  B3;
+
+-- Node name is 'U0' 
+-- Equation name is 'U0', location is LC025, type is output.
+ U0      = LCELL( GND $  GND);
+
+-- Node name is 'U1' 
+-- Equation name is 'U1', location is LC067, type is output.
+ U1      = LCELL( _EQ012 $  _EQ013);
+  _EQ012 = !Cin &  _LC018 &  _LC019 &  _LC020 &  _LC021 & !_LC034 &  _LC035 & 
+             !_LC044 & !_LC065 & !_LC066 & !_LC073 & !_LC074 & !_LC075 & 
+             !_LC077 & !_LC078 & !_LC080
+         #  Cin &  _LC018 & !_LC019 &  _LC020 &  _LC021 & !_LC034 &  _LC035 & 
+             !_LC044 & !_LC065 & !_LC066 & !_LC073 & !_LC074 & !_LC075 & 
+             !_LC077 & !_LC078 & !_LC080
+         # !Cin &  _LC019 &  _LC020 & !_LC022 &  _LC033 & !_LC034 &  _LC035 & 
+             !_LC044 & !_LC065 & !_LC066 & !_LC073 & !_LC074 & !_LC075 & 
+             !_LC077 & !_LC078 & !_LC080
+         # !Cin &  _LC019 &  _LC020 &  _LC022 & !_LC033 & !_LC034 &  _LC035 & 
+             !_LC044 & !_LC065 & !_LC066 & !_LC073 & !_LC074 & !_LC075 & 
+             !_LC077 & !_LC078 & !_LC080;
+  _EQ013 = !_LC065 & !_LC066 & !_LC073 & !_LC074 & !_LC075 & !_LC077 & 
+             !_LC078 & !_LC080;
+
+-- Node name is 'U2' 
+-- Equation name is 'U2', location is LC049, type is output.
+ U2      = LCELL( _EQ014 $  VCC);
+  _EQ014 = !_LC036 & !_LC042 & !_LC050 & !_LC051 & !_LC054 & !_LC083 &  _X003 & 
+              _X004 &  _X005 &  _X007;
+  _X003  = EXP( Cin & !_LC018 & !_LC019 & !_LC021 &  _LC022 & !_LC033);
+  _X004  = EXP(!Cin &  _LC018 &  _LC019 &  _LC021 & !_LC022 &  _LC033);
+  _X005  = EXP(!Cin &  _LC018 &  _LC019 &  _LC021 &  _LC022 & !_LC033);
+  _X007  = EXP(!_LC018 & !_LC020 & !_LC021 &  _LC022 & !_LC033 & !_LC035);
+
+-- Node name is 'U3' 
+-- Equation name is 'U3', location is LC053, type is output.
+ U3      = LCELL( _EQ015 $  _EQ016);
+  _EQ015 =  _LC018 &  _LC020 &  _LC021 & !_LC022 &  _LC033 &  _LC035 & 
+             !_LC036 & !_LC037 & !_LC039 & !_LC042 & !_LC061 & !_LC062 & 
+             !_LC063 & !_LC064 &  _X003 &  _X007
+         #  _LC018 &  _LC020 &  _LC021 &  _LC022 & !_LC033 &  _LC035 & 
+             !_LC036 & !_LC037 & !_LC039 & !_LC042 & !_LC061 & !_LC062 & 
+             !_LC063 & !_LC064 &  _X003 &  _X007
+         # !Cin &  _LC018 &  _LC019 &  _LC021 & !_LC022 &  _LC033 & !_LC036 & 
+             !_LC037 & !_LC039 & !_LC042 & !_LC061 & !_LC062 & !_LC063 & 
+             !_LC064 &  _X003 &  _X007
+         # !Cin &  _LC018 &  _LC019 &  _LC021 &  _LC022 & !_LC033 & !_LC036 & 
+             !_LC037 & !_LC039 & !_LC042 & !_LC061 & !_LC062 & !_LC063 & 
+             !_LC064 &  _X003 &  _X007;
+  _X003  = EXP( Cin & !_LC018 & !_LC019 & !_LC021 &  _LC022 & !_LC033);
+  _X007  = EXP(!_LC018 & !_LC020 & !_LC021 &  _LC022 & !_LC033 & !_LC035);
+  _EQ016 = !_LC036 & !_LC037 & !_LC039 & !_LC042 & !_LC061 & !_LC062 & 
+             !_LC063 & !_LC064 &  _X003 &  _X007;
+  _X003  = EXP( Cin & !_LC018 & !_LC019 & !_LC021 &  _LC022 & !_LC033);
+  _X007  = EXP(!_LC018 & !_LC020 & !_LC021 &  _LC022 & !_LC033 & !_LC035);
+
+-- Node name is '|CONVERSOR8:80|~156~1' 
+-- Equation name is '_LC057', type is buried 
+-- synthesized logic cell 
+_LC057   = LCELL( _EQ017 $  GND);
+  _EQ017 =  Cin &  _LC019 & !_LC020 & !_LC022 & !_LC033 & !_LC035
+         # !Cin & !_LC019 &  _LC020 & !_LC022 & !_LC033 &  _LC035
+         # !Cin & !_LC019 & !_LC020 &  _LC022 &  _LC033 & !_LC035
+         # !Cin & !_LC019 & !_LC020 & !_LC022 & !_LC033 & !_LC035
+         # !Cin &  _LC019 & !_LC022 &  _LC033;
+
+-- Node name is '|CONVERSOR8:80|~156~2' 
+-- Equation name is '_LC059', type is buried 
+-- synthesized logic cell 
+_LC059   = LCELL( _EQ018 $  GND);
+  _EQ018 = !Cin &  _LC019 &  _LC022 & !_LC033
+         #  Cin & !_LC019 & !_LC022 &  _LC033
+         #  Cin & !_LC019 &  _LC022 & !_LC033
+         # !_LC020 & !_LC022 &  _LC033 &  _LC035
+         # !_LC020 &  _LC022 & !_LC033 &  _LC035;
+
+-- Node name is '|CONVERSOR8:80|~156~3' 
+-- Equation name is '_LC060', type is buried 
+-- synthesized logic cell 
+_LC060   = LCELL( _EQ019 $  GND);
+  _EQ019 =  _LC020 & !_LC022 &  _LC033 & !_LC035
+         #  _LC020 &  _LC022 & !_LC033 & !_LC035
+         #  _LC018 &  _LC021;
+
+-- Node name is '|CONVERSOR8:80|~255~1' 
+-- Equation name is '_LC085', type is buried 
+-- synthesized logic cell 
+_LC085   = LCELL( _EQ020 $  GND);
+  _EQ020 =  Cin & !_LC018 &  _LC019 &  _LC020 &  _LC021 &  _LC022 &  _LC033 & 
+              _LC035
+         #  Cin &  _LC018 &  _LC019 &  _LC020 & !_LC021 &  _LC022 &  _LC033 & 
+              _LC035
+         #  Cin & !_LC018 &  _LC019 &  _LC020 &  _LC021 & !_LC022 & !_LC033 & 
+              _LC035
+         #  Cin & !_LC018 &  _LC019 & !_LC020 &  _LC021 &  _LC022 &  _LC033 & 
+             !_LC035
+         #  Cin &  _LC018 &  _LC019 &  _LC020 & !_LC021 & !_LC022 & !_LC033 & 
+              _LC035;
+
+-- Node name is '|CONVERSOR8:80|~255~2' 
+-- Equation name is '_LC087', type is buried 
+-- synthesized logic cell 
+_LC087   = LCELL( _EQ021 $  GND);
+  _EQ021 =  Cin &  _LC018 &  _LC019 & !_LC020 & !_LC021 &  _LC022 &  _LC033 & 
+             !_LC035
+         # !Cin & !_LC018 & !_LC019 &  _LC020 &  _LC021 &  _LC022 &  _LC033 & 
+              _LC035
+         # !Cin &  _LC018 & !_LC019 &  _LC020 & !_LC021 &  _LC022 &  _LC033 & 
+              _LC035
+         #  Cin & !_LC018 &  _LC019 & !_LC020 &  _LC021 & !_LC022 & !_LC033 & 
+             !_LC035
+         #  Cin &  _LC018 &  _LC019 & !_LC020 & !_LC021 & !_LC022 & !_LC033 & 
+             !_LC035;
+
+-- Node name is '|CONVERSOR8:80|~255~3' 
+-- Equation name is '_LC092', type is buried 
+-- synthesized logic cell 
+_LC092   = LCELL( _EQ022 $  GND);
+  _EQ022 = !Cin & !_LC018 & !_LC019 &  _LC020 &  _LC021 & !_LC022 & !_LC033 & 
+              _LC035
+         # !Cin & !_LC018 & !_LC019 & !_LC020 &  _LC021 &  _LC022 &  _LC033 & 
+             !_LC035
+         # !Cin &  _LC018 & !_LC019 &  _LC020 & !_LC021 & !_LC022 & !_LC033 & 
+              _LC035
+         # !Cin &  _LC018 & !_LC019 & !_LC020 & !_LC021 &  _LC022 &  _LC033 & 
+             !_LC035
+         # !Cin & !_LC018 & !_LC019 & !_LC020 &  _LC021 & !_LC022 & !_LC033 & 
+             !_LC035;
+
+-- Node name is '|CONVERSOR8:80|~255~4' 
+-- Equation name is '_LC094', type is buried 
+-- synthesized logic cell 
+_LC094   = LCELL( _EQ023 $  GND);
+  _EQ023 = !Cin &  _LC018 & !_LC019 & !_LC020 & !_LC021 & !_LC022 & !_LC033 & 
+             !_LC035
+         # !Cin &  _LC018 &  _LC019 & !_LC020 &  _LC021 &  _LC035
+         # !Cin &  _LC018 &  _LC019 &  _LC020 &  _LC021 & !_LC035
+         #  Cin &  _LC018 & !_LC019 & !_LC020 &  _LC021 &  _LC035
+         #  Cin &  _LC018 & !_LC019 &  _LC020 &  _LC021 & !_LC035;
+
+-- Node name is '|CONVERSOR8:80|~255~5' 
+-- Equation name is '_LC096', type is buried 
+-- synthesized logic cell 
+_LC096   = LCELL( _EQ024 $  GND);
+  _EQ024 =  _LC018 & !_LC020 &  _LC021 & !_LC022 &  _LC033 &  _LC035
+         #  _LC018 & !_LC020 &  _LC021 &  _LC022 & !_LC033 &  _LC035
+         #  _LC018 &  _LC020 &  _LC021 & !_LC022 &  _LC033 & !_LC035
+         #  _LC018 &  _LC020 &  _LC021 &  _LC022 & !_LC033 & !_LC035
+         # !Cin &  _LC019 & !_LC020 & !_LC022 &  _LC033 &  _LC035;
+
+-- Node name is '|CONVERSOR8:80|~255~6' 
+-- Equation name is '_LC052', type is buried 
+-- synthesized logic cell 
+_LC052   = LCELL( _EQ025 $  GND);
+  _EQ025 =  Cin & !_LC019 & !_LC020 & !_LC022 &  _LC033 &  _LC035
+         # !Cin &  _LC019 & !_LC020 &  _LC022 & !_LC033 &  _LC035
+         #  Cin & !_LC019 & !_LC020 &  _LC022 & !_LC033 &  _LC035
+         # !Cin &  _LC019 &  _LC020 & !_LC022 &  _LC033 & !_LC035
+         #  Cin & !_LC019 &  _LC020 & !_LC022 &  _LC033 & !_LC035;
+
+-- Node name is '|CONVERSOR8:80|~255~7' 
+-- Equation name is '_LC090', type is buried 
+-- synthesized logic cell 
+_LC090   = LCELL( _EQ026 $  GND);
+  _EQ026 = !Cin &  _LC019 &  _LC020 &  _LC022 & !_LC033 & !_LC035
+         #  Cin & !_LC019 &  _LC020 &  _LC022 & !_LC033 & !_LC035
+         # !Cin & !_LC018 &  _LC019 & !_LC020 & !_LC021 &  _LC035
+         # !Cin & !_LC018 &  _LC019 &  _LC020 & !_LC021 & !_LC035
+         #  Cin & !_LC018 & !_LC019 & !_LC020 & !_LC021 &  _LC035;
+
+-- Node name is '|CONVERSOR8:80|~255~8' 
+-- Equation name is '_LC086', type is buried 
+-- synthesized logic cell 
+_LC086   = LCELL( _EQ027 $  GND);
+  _EQ027 =  Cin & !_LC018 & !_LC019 &  _LC020 & !_LC021 & !_LC035
+         # !_LC018 & !_LC020 & !_LC021 & !_LC022 &  _LC033 &  _LC035
+         # !_LC018 & !_LC020 & !_LC021 &  _LC022 & !_LC033 &  _LC035
+         # !_LC018 &  _LC020 & !_LC021 & !_LC022 &  _LC033 & !_LC035
+         # !_LC018 &  _LC020 & !_LC021 &  _LC022 & !_LC033 & !_LC035;
+
+-- Node name is '|CONVERSOR8:80|~404~1' 
+-- Equation name is '_LC047', type is buried 
+-- synthesized logic cell 
+_LC047   = LCELL( _EQ028 $  GND);
+  _EQ028 =  Cin & !_LC018 &  _LC019 &  _LC020 & !_LC021 &  _LC035
+         # !Cin & !_LC018 &  _LC019 &  _LC020 &  _LC021 &  _LC035
+         # !Cin &  _LC018 &  _LC019 &  _LC020 & !_LC021 &  _LC035
+         # !Cin &  _LC018 & !_LC019 &  _LC020 &  _LC021 &  _LC035
+         #  Cin & !_LC018 & !_LC019 &  _LC020 &  _LC021 &  _LC035;
+
+-- Node name is '|CONVERSOR8:80|~404~2' 
+-- Equation name is '_LC046', type is buried 
+-- synthesized logic cell 
+_LC046   = LCELL( _EQ029 $  GND);
+  _EQ029 =  Cin &  _LC018 & !_LC019 &  _LC020 & !_LC021 &  _LC035
+         #  Cin & !_LC018 &  _LC019 & !_LC020 & !_LC021 & !_LC035
+         # !Cin & !_LC018 &  _LC019 & !_LC020 &  _LC021 & !_LC035
+         # !Cin &  _LC018 &  _LC019 & !_LC020 & !_LC021 & !_LC035
+         # !Cin &  _LC018 & !_LC019 & !_LC020 &  _LC021 & !_LC035;
+
+-- Node name is '|CONVERSOR8:80|~404~3' 
+-- Equation name is '_LC082', type is buried 
+-- synthesized logic cell 
+_LC082   = LCELL( _EQ030 $  GND);
+  _EQ030 = !Cin & !_LC018 & !_LC019 &  _LC020 & !_LC021 &  _LC035
+         #  Cin & !_LC018 & !_LC019 & !_LC020 &  _LC021 & !_LC035
+         #  Cin &  _LC018 & !_LC019 & !_LC020 & !_LC021 & !_LC035
+         # !Cin & !_LC018 & !_LC019 & !_LC020 & !_LC021 & !_LC035
+         #  Cin &  _LC019 & !_LC022 &  _LC033;
+
+-- Node name is '|CONVERSOR8:80|~404~4' 
+-- Equation name is '_LC095', type is buried 
+-- synthesized logic cell 
+_LC095   = LCELL( _EQ031 $  GND);
+  _EQ031 =  Cin &  _LC019 &  _LC022 & !_LC033
+         #  _LC020 & !_LC022 &  _LC033 &  _LC035
+         #  _LC020 &  _LC022 & !_LC033 &  _LC035
+         # !_LC018 &  _LC021 & !_LC022 &  _LC033
+         # !_LC018 &  _LC021 &  _LC022 & !_LC033;
+
+-- Node name is '|CONVERSOR8:80|~404~5' 
+-- Equation name is '_LC093', type is buried 
+-- synthesized logic cell 
+_LC093   = LCELL( _EQ032 $  GND);
+  _EQ032 =  _LC018 & !_LC021 & !_LC022 &  _LC033
+         #  _LC018 & !_LC021 &  _LC022 & !_LC033
+         # !Cin & !_LC019 & !_LC022 &  _LC033
+         # !Cin & !_LC019 &  _LC022 & !_LC033
+         # !_LC020 & !_LC022 &  _LC033 & !_LC035;
+
+-- Node name is '|CONVERSOR8:80|~863~1' 
+-- Equation name is '_LC088', type is buried 
+-- synthesized logic cell 
+_LC088   = LCELL( _EQ033 $  GND);
+  _EQ033 =  Cin &  _LC018 &  _LC019 &  _LC020 &  _LC021 & !_LC022 &  _LC033 & 
+              _LC035
+         #  Cin &  _LC018 &  _LC019 &  _LC020 &  _LC021 &  _LC022 & !_LC033 & 
+              _LC035
+         # !Cin & !_LC018 &  _LC019 &  _LC020 &  _LC021 &  _LC022 &  _LC033 & 
+              _LC035
+         # !Cin &  _LC018 &  _LC019 &  _LC020 & !_LC021 &  _LC022 &  _LC033 & 
+              _LC035
+         #  Cin & !_LC018 & !_LC019 &  _LC020 &  _LC021 &  _LC022 &  _LC033 & 
+              _LC035;
+
+-- Node name is '|CONVERSOR8:80|~863~2' 
+-- Equation name is '_LC089', type is buried 
+-- synthesized logic cell 
+_LC089   = LCELL( _EQ034 $  GND);
+  _EQ034 =  Cin &  _LC018 & !_LC019 &  _LC020 & !_LC021 &  _LC022 &  _LC033 & 
+              _LC035
+         # !Cin &  _LC018 &  _LC019 & !_LC020 &  _LC021 & !_LC022 &  _LC033 & 
+              _LC035
+         # !Cin &  _LC018 &  _LC019 & !_LC020 &  _LC021 &  _LC022 & !_LC033 & 
+              _LC035
+         # !Cin &  _LC018 &  _LC019 &  _LC020 &  _LC021 & !_LC022 &  _LC033 & 
+             !_LC035
+         # !Cin &  _LC018 &  _LC019 &  _LC020 &  _LC021 &  _LC022 & !_LC033 & 
+             !_LC035;
+
+-- Node name is '|CONVERSOR8:80|~863~3' 
+-- Equation name is '_LC091', type is buried 
+-- synthesized logic cell 
+_LC091   = LCELL( _EQ035 $  GND);
+  _EQ035 =  Cin &  _LC018 & !_LC019 & !_LC020 &  _LC021 & !_LC022 &  _LC033 & 
+              _LC035
+         #  Cin &  _LC018 & !_LC019 & !_LC020 &  _LC021 &  _LC022 & !_LC033 & 
+              _LC035
+         #  Cin &  _LC018 & !_LC019 &  _LC020 &  _LC021 & !_LC022 &  _LC033 & 
+             !_LC035
+         #  Cin &  _LC018 & !_LC019 &  _LC020 &  _LC021 &  _LC022 & !_LC033 & 
+             !_LC035
+         #  Cin &  _LC018 &  _LC019 & !_LC020 &  _LC021 & !_LC022 &  _LC033 & 
+             !_LC035;
+
+-- Node name is '|CONVERSOR8:80|~863~4' 
+-- Equation name is '_LC076', type is buried 
+-- synthesized logic cell 
+_LC076   = LCELL( _EQ036 $  GND);
+  _EQ036 =  Cin &  _LC018 &  _LC019 & !_LC020 &  _LC021 &  _LC022 & !_LC033 & 
+             !_LC035
+         #  Cin & !_LC018 &  _LC019 &  _LC020 & !_LC021 & !_LC022 &  _LC033 & 
+              _LC035
+         #  Cin & !_LC018 &  _LC019 &  _LC020 & !_LC021 &  _LC022 & !_LC033 & 
+              _LC035
+         # !Cin &  _LC018 & !_LC019 &  _LC020 &  _LC021 & !_LC022 &  _LC033 & 
+              _LC035
+         # !Cin &  _LC018 & !_LC019 &  _LC020 &  _LC021 &  _LC022 & !_LC033 & 
+              _LC035;
+
+-- Node name is '|CONVERSOR8:80|~863~5' 
+-- Equation name is '_LC071', type is buried 
+-- synthesized logic cell 
+_LC071   = LCELL( _EQ037 $  GND);
+  _EQ037 = !Cin & !_LC018 &  _LC019 &  _LC020 &  _LC021 & !_LC022 & !_LC033 & 
+              _LC035
+         # !Cin & !_LC018 &  _LC019 & !_LC020 &  _LC021 &  _LC022 &  _LC033 & 
+             !_LC035
+         # !Cin &  _LC018 &  _LC019 &  _LC020 & !_LC021 & !_LC022 & !_LC033 & 
+              _LC035
+         # !Cin &  _LC018 &  _LC019 & !_LC020 & !_LC021 &  _LC022 &  _LC033 & 
+             !_LC035
+         #  Cin & !_LC018 & !_LC019 &  _LC020 &  _LC021 & !_LC022 & !_LC033 & 
+              _LC035;
+
+-- Node name is '|CONVERSOR8:80|~863~6' 
+-- Equation name is '_LC079', type is buried 
+-- synthesized logic cell 
+_LC079   = LCELL( _EQ038 $  GND);
+  _EQ038 =  Cin & !_LC018 & !_LC019 & !_LC020 &  _LC021 &  _LC022 &  _LC033 & 
+             !_LC035
+         #  Cin &  _LC018 & !_LC019 &  _LC020 & !_LC021 & !_LC022 & !_LC033 & 
+              _LC035
+         #  Cin &  _LC018 & !_LC019 & !_LC020 & !_LC021 &  _LC022 &  _LC033 & 
+             !_LC035
+         # !Cin & !_LC018 &  _LC019 & !_LC020 & !_LC021 & !_LC022 &  _LC033 & 
+              _LC035
+         # !Cin & !_LC018 &  _LC019 & !_LC020 & !_LC021 &  _LC022 & !_LC033 & 
+              _LC035;
+
+-- Node name is '|CONVERSOR8:80|~863~7' 
+-- Equation name is '_LC072', type is buried 
+-- synthesized logic cell 
+_LC072   = LCELL( _EQ039 $  GND);
+  _EQ039 = !Cin & !_LC018 &  _LC019 &  _LC020 & !_LC021 & !_LC022 &  _LC033 & 
+             !_LC035
+         # !Cin & !_LC018 &  _LC019 &  _LC020 & !_LC021 &  _LC022 & !_LC033 & 
+             !_LC035
+         #  Cin & !_LC018 & !_LC019 & !_LC020 & !_LC021 & !_LC022 &  _LC033 & 
+              _LC035
+         #  Cin & !_LC018 & !_LC019 & !_LC020 & !_LC021 &  _LC022 & !_LC033 & 
+              _LC035
+         #  Cin & !_LC018 & !_LC019 &  _LC020 & !_LC021 & !_LC022 &  _LC033 & 
+             !_LC035;
+
+-- Node name is '|CONVERSOR8:80|~863~8' 
+-- Equation name is '_LC070', type is buried 
+-- synthesized logic cell 
+_LC070   = LCELL( _EQ040 $  GND);
+  _EQ040 =  Cin & !_LC018 & !_LC019 &  _LC020 & !_LC021 &  _LC022 & !_LC033 & 
+             !_LC035
+         #  Cin & !_LC018 &  _LC019 & !_LC020 & !_LC021 & !_LC022 &  _LC033 & 
+             !_LC035
+         #  Cin & !_LC018 &  _LC019 & !_LC020 & !_LC021 &  _LC022 & !_LC033 & 
+             !_LC035
+         # !Cin &  _LC018 & !_LC019 & !_LC020 &  _LC021 & !_LC022 &  _LC033 & 
+             !_LC035
+         # !Cin &  _LC018 & !_LC019 & !_LC020 &  _LC021 &  _LC022 & !_LC033 & 
+             !_LC035;
+
+-- Node name is '|CONVERSOR8:80|~863~9' 
+-- Equation name is '_LC069', type is buried 
+-- synthesized logic cell 
+_LC069   = LCELL( _EQ041 $  GND);
+  _EQ041 = !Cin & !_LC018 & !_LC019 &  _LC020 & !_LC021 & !_LC022 &  _LC033 & 
+              _LC035
+         # !Cin & !_LC018 & !_LC019 &  _LC020 & !_LC021 &  _LC022 & !_LC033 & 
+              _LC035
+         # !Cin & !_LC018 &  _LC019 & !_LC020 &  _LC021 & !_LC022 & !_LC033 & 
+             !_LC035
+         # !Cin &  _LC018 &  _LC019 & !_LC020 & !_LC021 & !_LC022 & !_LC033 & 
+             !_LC035
+         #  Cin & !_LC018 & !_LC019 & !_LC020 &  _LC021 & !_LC022 & !_LC033 & 
+             !_LC035;
+
+-- Node name is '|CONVERSOR8:80|~863~10' 
+-- Equation name is '_LC068', type is buried 
+-- synthesized logic cell 
+_LC068   = LCELL( _EQ042 $  GND);
+  _EQ042 =  Cin &  _LC018 & !_LC019 & !_LC020 & !_LC021 & !_LC022 & !_LC033 & 
+             !_LC035
+         # !Cin & !_LC018 & !_LC019 & !_LC020 & !_LC021 & !_LC022 &  _LC033 & 
+             !_LC035
+         # !Cin & !_LC018 & !_LC019 & !_LC020 & !_LC021 &  _LC022 & !_LC033 & 
+             !_LC035
+         #  Cin &  _LC019 & !_LC020 &  _LC022 &  _LC033 &  _LC035
+         #  Cin &  _LC019 &  _LC020 &  _LC022 &  _LC033 & !_LC035;
+
+-- Node name is '|CONVERSOR8:80|~863~11' 
+-- Equation name is '_LC055', type is buried 
+-- synthesized logic cell 
+_LC055   = LCELL( _EQ043 $  GND);
+  _EQ043 =  Cin & !_LC018 &  _LC019 & !_LC020 &  _LC021 &  _LC035
+         #  Cin & !_LC018 &  _LC019 &  _LC020 &  _LC021 & !_LC035
+         #  Cin &  _LC019 & !_LC020 & !_LC022 & !_LC033 &  _LC035
+         #  Cin &  _LC019 &  _LC020 & !_LC022 & !_LC033 & !_LC035
+         # !Cin & !_LC019 & !_LC020 &  _LC022 &  _LC033 &  _LC035;
+
+-- Node name is '|CONVERSOR8:80|~863~12' 
+-- Equation name is '_LC048', type is buried 
+-- synthesized logic cell 
+_LC048   = LCELL( _EQ044 $  GND);
+  _EQ044 =  Cin &  _LC018 &  _LC019 & !_LC020 & !_LC021 &  _LC035
+         #  Cin &  _LC018 &  _LC019 &  _LC020 & !_LC021 & !_LC035
+         # !Cin & !_LC018 & !_LC019 & !_LC020 &  _LC021 &  _LC035
+         # !Cin & !_LC018 & !_LC019 &  _LC020 &  _LC021 & !_LC035
+         # !Cin &  _LC018 & !_LC019 & !_LC020 & !_LC021 &  _LC035;
+
+-- Node name is '|CONVERSOR8:80|~863~13' 
+-- Equation name is '_LC058', type is buried 
+-- synthesized logic cell 
+_LC058   = LCELL( _EQ045 $  GND);
+  _EQ045 = !Cin & !_LC019 &  _LC020 &  _LC022 &  _LC033 & !_LC035
+         # !Cin & !_LC019 & !_LC020 & !_LC022 & !_LC033 &  _LC035
+         # !Cin & !_LC019 &  _LC020 & !_LC022 & !_LC033 & !_LC035;
+
+-- Node name is '|CONVERSOR8:80|~1388~1' 
+-- Equation name is '_LC036', type is buried 
+-- synthesized logic cell 
+_LC036   = LCELL( _EQ046 $  GND);
+  _EQ046 =  Cin &  _LC018 & !_LC019 &  _LC021 & !_LC022 &  _LC033
+         #  Cin &  _LC018 & !_LC019 &  _LC021 &  _LC022 & !_LC033
+         # !Cin & !_LC018 &  _LC019 & !_LC021 & !_LC022 &  _LC033
+         # !Cin & !_LC018 &  _LC019 & !_LC021 &  _LC022 & !_LC033
+         #  Cin & !_LC018 & !_LC019 & !_LC021 & !_LC022 &  _LC033;
+
+-- Node name is '|CONVERSOR8:80|~1388~2' 
+-- Equation name is '_LC061', type is buried 
+-- synthesized logic cell 
+_LC061   = LCELL( _EQ047 $  GND);
+  _EQ047 =  Cin &  _LC019 &  _LC020 &  _LC035
+         #  Cin &  _LC019 &  _LC022 &  _LC033
+         #  Cin & !_LC018 &  _LC019 &  _LC021
+         #  Cin &  _LC018 &  _LC019 & !_LC021
+         # !_LC018 &  _LC021 &  _LC022 &  _LC033;
+
+-- Node name is '|CONVERSOR8:80|~1388~3' 
+-- Equation name is '_LC062', type is buried 
+-- synthesized logic cell 
+_LC062   = LCELL( _EQ048 $  GND);
+  _EQ048 =  _LC018 & !_LC021 &  _LC022 &  _LC033
+         # !_LC020 &  _LC022 &  _LC033 &  _LC035
+         #  _LC020 &  _LC022 &  _LC033 & !_LC035
+         #  Cin &  _LC019 & !_LC020 & !_LC035
+         #  Cin &  _LC019 & !_LC022 & !_LC033;
+
+-- Node name is '|CONVERSOR8:80|~1388~4' 
+-- Equation name is '_LC063', type is buried 
+-- synthesized logic cell 
+_LC063   = LCELL( _EQ049 $  GND);
+  _EQ049 = !Cin & !_LC019 &  _LC020 &  _LC035
+         # !Cin & !_LC019 &  _LC022 &  _LC033
+         # !_LC018 & !_LC020 &  _LC021 &  _LC035
+         # !_LC018 &  _LC020 &  _LC021 & !_LC035
+         #  _LC018 & !_LC020 & !_LC021 &  _LC035;
+
+-- Node name is '|CONVERSOR8:80|~1388~5' 
+-- Equation name is '_LC064', type is buried 
+-- synthesized logic cell 
+_LC064   = LCELL( _EQ050 $  GND);
+  _EQ050 =  _LC018 &  _LC020 & !_LC021 & !_LC035
+         # !Cin & !_LC018 & !_LC019 &  _LC021
+         # !Cin &  _LC018 & !_LC019 & !_LC021
+         # !_LC018 &  _LC021 & !_LC022 & !_LC033
+         #  _LC018 & !_LC021 & !_LC022 & !_LC033;
+
+-- Node name is '|CONVERSOR8:80|~1388~6' 
+-- Equation name is '_LC042', type is buried 
+-- synthesized logic cell 
+_LC042   = LCELL( _EQ051 $  GND);
+  _EQ051 =  _LC018 & !_LC020 &  _LC021 & !_LC022 &  _LC033 & !_LC035
+         #  _LC018 & !_LC020 &  _LC021 &  _LC022 & !_LC033 & !_LC035
+         # !_LC018 &  _LC020 & !_LC021 & !_LC022 &  _LC033 &  _LC035
+         # !_LC018 &  _LC020 & !_LC021 &  _LC022 & !_LC033 &  _LC035
+         # !_LC018 & !_LC020 & !_LC021 & !_LC022 &  _LC033 & !_LC035;
+
+-- Node name is '|CONVERSOR8:80|~1388~7' 
+-- Equation name is '_LC037', type is buried 
+-- synthesized logic cell 
+_LC037   = LCELL( _EQ052 $  GND);
+  _EQ052 = !Cin &  _LC019 & !_LC020 &  _LC035
+         # !Cin &  _LC019 &  _LC020 & !_LC035
+         #  Cin & !_LC019 & !_LC020 &  _LC035
+         #  Cin & !_LC019 &  _LC020 & !_LC035;
+
+-- Node name is '|CONVERSOR8:80|~1388~8' 
+-- Equation name is '_LC039', type is buried 
+-- synthesized logic cell 
+_LC039   = LCELL( _EQ053 $  GND);
+  _EQ053 = !_LC020 & !_LC022 & !_LC033 &  _LC035
+         #  _LC020 & !_LC022 & !_LC033 & !_LC035
+         # !Cin & !_LC019 & !_LC020 & !_LC035
+         # !Cin & !_LC019 & !_LC022 & !_LC033;
+
+-- Node name is '|CONVERSOR8:80|~2007~1' 
+-- Equation name is '_LC054', type is buried 
+-- synthesized logic cell 
+_LC054   = LCELL( _EQ054 $  GND);
+  _EQ054 =  Cin & !_LC018 &  _LC019 &  _LC021 &  _LC022 &  _LC033
+         #  Cin &  _LC018 &  _LC019 & !_LC021 &  _LC022 &  _LC033
+         #  _LC018 &  _LC020 &  _LC021 & !_LC022 &  _LC033 &  _LC035
+         #  _LC018 &  _LC020 &  _LC021 &  _LC022 & !_LC033 &  _LC035
+         # !_LC018 & !_LC020 &  _LC021 &  _LC022 &  _LC033 &  _LC035;
+
+-- Node name is '|CONVERSOR8:80|~2007~2' 
+-- Equation name is '_LC051', type is buried 
+-- synthesized logic cell 
+_LC051   = LCELL( _EQ055 $  GND);
+  _EQ055 = !_LC018 &  _LC020 &  _LC021 &  _LC022 &  _LC033 & !_LC035
+         #  _LC018 & !_LC020 & !_LC021 &  _LC022 &  _LC033 &  _LC035
+         #  _LC018 &  _LC020 & !_LC021 &  _LC022 &  _LC033 & !_LC035
+         #  Cin & !_LC018 &  _LC019 &  _LC021 & !_LC022 & !_LC033
+         #  Cin &  _LC018 &  _LC019 & !_LC021 & !_LC022 & !_LC033;
+
+-- Node name is '|CONVERSOR8:80|~2007~3' 
+-- Equation name is '_LC050', type is buried 
+-- synthesized logic cell 
+_LC050   = LCELL( _EQ056 $  GND);
+  _EQ056 = !Cin & !_LC018 & !_LC019 &  _LC021 &  _LC022 &  _LC033
+         # !Cin &  _LC018 & !_LC019 & !_LC021 &  _LC022 &  _LC033
+         # !_LC018 & !_LC020 &  _LC021 & !_LC022 & !_LC033 &  _LC035
+         # !_LC018 &  _LC020 &  _LC021 & !_LC022 & !_LC033 & !_LC035
+         #  _LC018 & !_LC020 & !_LC021 & !_LC022 & !_LC033 &  _LC035;
+
+-- Node name is '|CONVERSOR8:80|~2007~4' 
+-- Equation name is '_LC083', type is buried 
+-- synthesized logic cell 
+_LC083   = LCELL( _EQ057 $  GND);
+  _EQ057 =  _LC018 &  _LC020 & !_LC021 & !_LC022 & !_LC033 & !_LC035
+         # !Cin & !_LC018 & !_LC019 &  _LC021 & !_LC022 & !_LC033
+         # !Cin &  _LC018 & !_LC019 & !_LC021 & !_LC022 & !_LC033;
+
+-- Node name is '|CONVERSOR8:80|~2332~1' 
+-- Equation name is '_LC034', type is buried 
+-- synthesized logic cell 
+_LC034   = LCELL( _EQ058 $  _EQ059);
+  _EQ058 =  _LC020 &  _LC035 &  _X008 &  _X009
+         # !Cin &  _LC019 &  _X008 &  _X009
+         #  Cin & !_LC019 &  _X008 &  _X009
+         # !_LC022 &  _LC033 &  _X008 &  _X009;
+  _X008  = EXP(!_LC020 & !_LC035);
+  _X009  = EXP( _LC022 & !_LC033);
+  _EQ059 =  _X008 &  _X009;
+  _X008  = EXP(!_LC020 & !_LC035);
+  _X009  = EXP( _LC022 & !_LC033);
+
+-- Node name is '|CONVERSOR8:80|~2350~1' 
+-- Equation name is '_LC044', type is buried 
+-- synthesized logic cell 
+_LC044   = LCELL( _EQ060 $  _EQ061);
+  _EQ060 =  _LC018 &  _LC021 &  _X006 &  _X008 &  _X010 &  _X011
+         #  _LC020 &  _LC035 &  _X006 &  _X008 &  _X010 &  _X011
+         #  _LC022 &  _LC033 &  _X006 &  _X008 &  _X010 &  _X011
+         # !Cin &  _LC019 &  _X006 &  _X008 &  _X010 &  _X011;
+  _X006  = EXP(!_LC018 & !_LC021);
+  _X008  = EXP(!_LC020 & !_LC035);
+  _X010  = EXP( Cin & !_LC019);
+  _X011  = EXP(!_LC022 & !_LC033);
+  _EQ061 =  _X006 &  _X008 &  _X010 &  _X011;
+  _X006  = EXP(!_LC018 & !_LC021);
+  _X008  = EXP(!_LC020 & !_LC035);
+  _X010  = EXP( Cin & !_LC019);
+  _X011  = EXP(!_LC022 & !_LC033);
+
+-- Node name is '|CONVERSOR8:80|~2612~2' 
+-- Equation name is '_LC065', type is buried 
+-- synthesized logic cell 
+_LC065   = LCELL( _EQ062 $  GND);
+  _EQ062 =  Cin & !_LC019 &  _LC020 & !_LC022 &  _LC033 & !_LC034 &  _LC035 & 
+             !_LC044
+         #  Cin & !_LC019 &  _LC020 &  _LC022 & !_LC033 & !_LC034 &  _LC035 & 
+             !_LC044
+         # !Cin &  _LC018 &  _LC019 & !_LC020 &  _LC021 & !_LC034 & !_LC035 & 
+             !_LC044
+         # !Cin & !_LC018 &  _LC019 &  _LC020 & !_LC021 & !_LC034 &  _LC035 & 
+             !_LC044
+         #  Cin &  _LC018 & !_LC019 & !_LC020 &  _LC021 & !_LC034 & !_LC035 & 
+             !_LC044;
+
+-- Node name is '|CONVERSOR8:80|~2612~3' 
+-- Equation name is '_LC080', type is buried 
+-- synthesized logic cell 
+_LC080   = LCELL( _EQ063 $  GND);
+  _EQ063 =  Cin & !_LC018 & !_LC019 &  _LC020 & !_LC021 & !_LC034 &  _LC035 & 
+             !_LC044
+         # !Cin &  _LC019 & !_LC020 & !_LC022 &  _LC033 & !_LC034 & !_LC035 & 
+             !_LC044
+         # !Cin &  _LC019 & !_LC020 &  _LC022 & !_LC033 & !_LC034 & !_LC035 & 
+             !_LC044
+         #  Cin & !_LC019 & !_LC020 & !_LC022 &  _LC033 & !_LC034 & !_LC035 & 
+             !_LC044
+         #  Cin & !_LC019 & !_LC020 &  _LC022 & !_LC033 & !_LC034 & !_LC035 & 
+             !_LC044;
+
+-- Node name is '|CONVERSOR8:80|~2612~4' 
+-- Equation name is '_LC078', type is buried 
+-- synthesized logic cell 
+_LC078   = LCELL( _EQ064 $  GND);
+  _EQ064 = !Cin & !_LC018 &  _LC019 & !_LC020 & !_LC021 & !_LC034 & !_LC035 & 
+             !_LC044
+         #  Cin & !_LC018 & !_LC019 & !_LC020 & !_LC021 & !_LC034 & !_LC035 & 
+             !_LC044
+         #  Cin &  _LC019 &  _LC022 &  _LC033 & !_LC034 & !_LC044
+         #  _LC018 &  _LC021 &  _LC022 &  _LC033 & !_LC034 & !_LC044
+         #  Cin & !_LC018 &  _LC019 &  _LC021 & !_LC034 & !_LC044;
+
+-- Node name is '|CONVERSOR8:80|~2612~5' 
+-- Equation name is '_LC077', type is buried 
+-- synthesized logic cell 
+_LC077   = LCELL( _EQ065 $  GND);
+  _EQ065 =  Cin &  _LC018 &  _LC019 & !_LC021 & !_LC034 & !_LC044
+         #  Cin &  _LC019 & !_LC020 & !_LC034 &  _LC035 & !_LC044
+         #  Cin &  _LC019 &  _LC020 & !_LC034 & !_LC035 & !_LC044
+         # !_LC020 &  _LC022 &  _LC033 & !_LC034 &  _LC035 & !_LC044
+         #  _LC020 &  _LC022 &  _LC033 & !_LC034 & !_LC035 & !_LC044;
+
+-- Node name is '|CONVERSOR8:80|~2612~6' 
+-- Equation name is '_LC073', type is buried 
+-- synthesized logic cell 
+_LC073   = LCELL( _EQ066 $  GND);
+  _EQ066 =  Cin &  _LC019 & !_LC022 & !_LC033 & !_LC034 & !_LC044
+         #  _LC018 &  _LC021 & !_LC022 & !_LC033 & !_LC034 & !_LC044
+         # !_LC018 & !_LC020 &  _LC021 & !_LC034 &  _LC035 & !_LC044
+         # !_LC018 &  _LC020 &  _LC021 & !_LC034 & !_LC035 & !_LC044
+         # !_LC018 &  _LC021 & !_LC022 &  _LC033 & !_LC034 & !_LC044;
+
+-- Node name is '|CONVERSOR8:80|~2612~7' 
+-- Equation name is '_LC066', type is buried 
+-- synthesized logic cell 
+_LC066   = LCELL( _EQ067 $  GND);
+  _EQ067 = !_LC018 &  _LC021 &  _LC022 & !_LC033 & !_LC034 & !_LC044
+         #  _LC018 & !_LC020 & !_LC021 & !_LC034 &  _LC035 & !_LC044
+         #  _LC018 &  _LC020 & !_LC021 & !_LC034 & !_LC035 & !_LC044
+         #  _LC018 & !_LC021 & !_LC022 &  _LC033 & !_LC034 & !_LC044
+         #  _LC018 & !_LC021 &  _LC022 & !_LC033 & !_LC034 & !_LC044;
+
+-- Node name is '|CONVERSOR8:80|~2612~8' 
+-- Equation name is '_LC074', type is buried 
+-- synthesized logic cell 
+_LC074   = LCELL( _EQ068 $  GND);
+  _EQ068 = !Cin & !_LC019 &  _LC022 &  _LC033 & !_LC034 & !_LC044
+         # !_LC018 & !_LC021 &  _LC022 &  _LC033 & !_LC034 & !_LC044
+         # !Cin & !_LC018 & !_LC019 &  _LC021 & !_LC034 & !_LC044
+         # !Cin &  _LC018 & !_LC019 & !_LC021 & !_LC034 & !_LC044
+         # !Cin & !_LC019 & !_LC020 & !_LC034 &  _LC035 & !_LC044;
+
+-- Node name is '|CONVERSOR8:80|~2612~9' 
+-- Equation name is '_LC075', type is buried 
+-- synthesized logic cell 
+_LC075   = LCELL( _EQ069 $  GND);
+  _EQ069 = !_LC020 & !_LC022 & !_LC033 & !_LC034 &  _LC035 & !_LC044
+         # !Cin & !_LC019 &  _LC020 & !_LC034 & !_LC035 & !_LC044
+         #  _LC020 & !_LC022 & !_LC033 & !_LC034 & !_LC035 & !_LC044
+         # !Cin & !_LC019 & !_LC022 & !_LC033 & !_LC034 & !_LC044
+         # !_LC018 & !_LC021 & !_LC022 & !_LC033 & !_LC034 & !_LC044;
+
+-- Node name is '|fulladder4bits:79|fulladder:1|~3~1' 
+-- Equation name is '_LC018', type is buried 
+-- synthesized logic cell 
+_LC018   = LCELL( _EQ070 $  GND);
+  _EQ070 =  A0 &  BT0 &  BT1 &  B0
+         #  A0 &  BT0 &  Cin
+         #  BT1 &  B0 &  Cin;
+
+-- Node name is '|fulladder4bits:79|fulladder:1|~4~1' 
+-- Equation name is '_LC019', type is buried 
+-- synthesized logic cell 
+_LC019   = LCELL( _EQ071 $  GND);
+  _EQ071 =  A0 &  BT0 & !B0
+         #  A0 &  BT0 & !BT1
+         # !A0 &  BT1 &  B0
+         # !BT0 &  BT1 &  B0;
+
+-- Node name is '|fulladder4bits:79|fulladder:4|~4~1' 
+-- Equation name is '_LC033', type is buried 
+-- synthesized logic cell 
+_LC033   = LCELL( _EQ072 $  GND);
+  _EQ072 =  A3 &  BT0 & !B3
+         #  A3 &  BT0 & !BT1
+         # !A3 &  BT1 &  B3
+         # !BT0 &  BT1 &  B3;
+
+-- Node name is '|fulladder4bits:79|fulladder:5|~3~1' 
+-- Equation name is '_LC020', type is buried 
+-- synthesized logic cell 
+_LC020   = LCELL( _EQ073 $  GND);
+  _EQ073 =  A0 &  A1 &  BT0 &  BT1 &  B0
+         #  A1 &  BT0 &  BT1 &  B0 &  Cin
+         #  A1 &  BT0 &  BT1 &  B1
+         #  A0 &  A1 &  BT0 &  Cin
+         #  BT1 &  B1 &  _LC018;
+
+-- Node name is '|fulladder4bits:79|fulladder:5|~4~1' 
+-- Equation name is '_LC021', type is buried 
+-- synthesized logic cell 
+_LC021   = LCELL( _EQ074 $  GND);
+  _EQ074 =  A1 &  BT0 & !B1
+         #  A1 &  BT0 & !BT1
+         # !A1 &  BT1 &  B1
+         # !BT0 &  BT1 &  B1;
+
+-- Node name is '|fulladder4bits:79|fulladder:6|~3~1' 
+-- Equation name is '_LC022', type is buried 
+-- synthesized logic cell 
+_LC022   = LCELL( _EQ075 $  GND);
+  _EQ075 =  A2 &  BT0 &  BT1 &  B1 &  _X012
+         #  A1 &  BT0 &  BT1 &  B2 &  _X013
+         #  A1 &  A2 &  BT0 &  _LC018
+         #  BT1 &  B1 &  B2 &  _LC018
+         #  A2 &  BT0 &  BT1 &  B2;
+  _X012  = EXP(!A1 & !_LC018);
+  _X013  = EXP(!B1 & !_LC018);
+
+-- Node name is '|fulladder4bits:79|fulladder:6|~4~1' 
+-- Equation name is '_LC035', type is buried 
+-- synthesized logic cell 
+_LC035   = LCELL( _EQ076 $  GND);
+  _EQ076 =  A2 &  BT0 & !B2
+         #  A2 &  BT0 & !BT1
+         # !A2 &  BT1 &  B2
+         # !BT0 &  BT1 &  B2;
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--     (none)
+
+
+
+
+Project Information                                    c:\ap12\projetoap12.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Standard
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = off
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:01
+   Partitioner                            00:00:01
+   Fitter                                 00:00:00
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:00
+   --------------------------             --------
+   Total Time                             00:00:02
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 4,402K

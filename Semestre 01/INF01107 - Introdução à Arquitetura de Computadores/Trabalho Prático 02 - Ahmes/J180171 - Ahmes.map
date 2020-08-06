@@ -1,0 +1,25 @@
+Símbolo     Valor Decimal   Valor Hexadecimal
+-------     -------------   -----------------
+TESTA_PAR              22                  16
+TESTA_PAR_CONT             48                  30
+DIV_2                  53                  35
+MULT_3                 67                  43
+MULT_3_CONT             83                  53
+SOMA_1                115                  73
+MSB                   128                  80
+LSB                   129                  81
+PASSOS                130                  82
+ESTADO                131                  83
+ZERO                  132                  84
+UM                    133                  85
+MUM                   134                  86
+MSB2                  135                  87
+LSB2                  136                  88
+CONT                  137                  89
+DOIS                  138                  8A
+MSB3                  139                  8B
+LSB3                  140                  8C
+TESTA_ZERO            141                  8D
+TESTA_UM              147                  93
+ESTOURO               159                  9F
+FIM                   167                  A7

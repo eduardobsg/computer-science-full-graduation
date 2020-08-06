@@ -1,0 +1,13 @@
+Considerando as expressões lambda seguintes, aplique a redução beta 
+(e eventualmente a conversão alfa) para reduzí-las ao máximo:
+
+(\x.x x)(\y.y)
+(\x.(\y.x y))y
+(\x.x x)(\x. x x)
+(\x.x 2)(\y.y+1)
+(\x.y)((\z.zz)(\w.w))
+(\x:xx)(\y:yyy)
+(\x.y)x
+(\x.x)h
+(\x.x^2)(\z.z+1)2 
+(\x.(\y.(x(\x.xy))))y 

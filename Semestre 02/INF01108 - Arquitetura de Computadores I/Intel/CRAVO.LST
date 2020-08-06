@@ -1,0 +1,599 @@
+Turbo Assembler	 Version 3.2	    06/11/10 22:44:42	    Page 1
+cravo.ASM
+
+
+
+      1					   assume cs:codigo,ds:dados,es:dados,ss:pilha
+      2
+      3	      =000D		     CR	      EQU    0DH ; constante - codigo ASCII do caractere "carriage return"
+      4	      =000A		     LF	      EQU    0AH ; constante - codigo ASCII do caractere "line feed"
+      5
+      6				     ; definicao do segmento de	dados do programa
+      7	0000			     dados    segment
+      8
+      9	0000  20 20 43 61 6D 70	6F+  tela0   db	   '  Campo Minado III - por Diogo Raphael Cravo - 00181051 - Junho de 2010'	    +
+     10	      20 4D 69 6E 61 64	6F+  ,LF,LF,'$'
+     11	      20 49 49 49 20 2D	20+
+     12	      70 6F 72 20 44 69	6F+
+     13	      67 6F 20 52 61 70	68+
+     14	      61 65 6C 20 43 72	61+
+     15	      76 6F 20 2D 20 30	30+
+     16	      31 38 31 30 35 31	20+
+     17	      2D 20 4A 75 6E 68	6F+
+     18	      20 64 65 20 32 30	31+
+     19	      30 0A 0A 24
+     20	004A  20 20 20 20 20 31	20+  tela1   db	   '	 1   2	 3   4	 5   6	 7   8	 9   10'				    +
+     21	      20 20 32 20 20 20	33+  ,LF,'$'
+     22	      20 20 20 34 20 20	20+
+     23	      35 20 20 20 36 20	20+
+     24	      20 37 20 20 20 38	20+
+     25	      20 20 39 20 20 20	31+
+     26	      30 0A 24
+     27	0077  20 20 20 2A 2D 2D	2D+  tela2   db	   '   *---*---*---*---*---*---*---*---*---*---*'				    +
+     28	      2A 2D 2D 2D 2A 2D	2D+  ,LF,'$'
+     29	      2D 2A 2D 2D 2D 2A	2D+
+     30	      2D 2D 2A 2D 2D 2D	2A+
+     31	      2D 2D 2D 2A 2D 2D	2D+
+     32	      2A 2D 2D 2D 2A 2D	2D+
+     33	      2D 2A 0A 24
+     34	00A5  20 31 20 7C 5B 20	5D+  tela3   db	   ' 1 |[ ]|   |   |   |   |   |   |   |   |   |   Total de minas no campo:   15'   +
+     35	      7C 20 20 20 7C 20	20+  ,LF,'$'
+     36	      20 7C 20 20 20 7C	20+
+     37	      20 20 7C 20 20 20	7C+
+     38	      20 20 20 7C 20 20	20+
+     39	      7C 20 20 20 7C 20	20+
+     40	      20 7C 20 20 20 54	6F+
+     41	      74 61 6C 20 64 65	20+
+     42	      6D 69 6E 61 73 20	6E+
+     43	      6F 20 63 61 6D 70	6F+
+     44	      3A 20 20 20 31 35	0A+
+     45	      24
+     46	00F3  20 20 20 2A 2D 2D	2D+  tela4   db	   '   *---*---*---*---*---*---*---*---*---*---*   Total de minas marcadas:    0'   +
+     47	      2A 2D 2D 2D 2A 2D	2D+  ,LF,'$'
+     48	      2D 2A 2D 2D 2D 2A	2D+
+     49	      2D 2D 2A 2D 2D 2D	2A+
+     50	      2D 2D 2D 2A 2D 2D	2D+
+     51	      2A 2D 2D 2D 2A 2D	2D+
+     52	      2D 2A 20 20 20 54	6F+
+     53	      74 61 6C 20 64 65	20+
+     54	      6D 69 6E 61 73 20	6D+
+     55	      61 72 63 61 64 61	73+
+     56	      3A 20 20 20 20 30	0A+
+     57	      24
+Turbo Assembler	 Version 3.2	    06/11/10 22:44:42	    Page 2
+cravo.ASM
+
+
+
+     58	0141  20 32 20 7C 20 20	20+  tela5   db	   ' 2 |   |   |   |   |   |   |   |   |   |   |   Total de minas a marcar:   15'   +
+     59	      7C 20 20 20 7C 20	20+  ,LF,'$'
+     60	      20 7C 20 20 20 7C	20+
+     61	      20 20 7C 20 20 20	7C+
+     62	      20 20 20 7C 20 20	20+
+     63	      7C 20 20 20 7C 20	20+
+     64	      20 7C 20 20 20 54	6F+
+     65	      74 61 6C 20 64 65	20+
+     66	      6D 69 6E 61 73 20	61+
+     67	      20 6D 61 72 63 61	72+
+     68	      3A 20 20 20 31 35	0A+
+     69	      24
+     70	018F  20 20 20 2A 2D 2D	2D+  tela6   db	   '   *---*---*---*---*---*---*---*---*---*---*'				    +
+     71	      2A 2D 2D 2D 2A 2D	2D+  ,LF,'$'
+     72	      2D 2A 2D 2D 2D 2A	2D+
+     73	      2D 2D 2A 2D 2D 2D	2A+
+     74	      2D 2D 2D 2A 2D 2D	2D+
+     75	      2A 2D 2D 2D 2A 2D	2D+
+     76	      2D 2A 0A 24
+     77	01BD  20 33 20 7C 20 20	20+  tela7   db	   ' 3 |   |   |   |   |   |   |   |   |   |   |'				    +
+     78	      7C 20 20 20 7C 20	20+  ,LF,'$'
+     79	      20 7C 20 20 20 7C	20+
+     80	      20 20 7C 20 20 20	7C+
+     81	      20 20 20 7C 20 20	20+
+     82	      7C 20 20 20 7C 20	20+
+     83	      20 7C 0A 24
+     84	01EB  20 20 20 2A 2D 2D	2D+  tela8   db	   '   *---*---*---*---*---*---*---*---*---*---*   Painel de controle'		    +
+     85	      2A 2D 2D 2D 2A 2D	2D+  ,LF,'$'
+     86	      2D 2A 2D 2D 2D 2A	2D+
+     87	      2D 2D 2A 2D 2D 2D	2A+
+     88	      2D 2D 2D 2A 2D 2D	2D+
+     89	      2A 2D 2D 2D 2A 2D	2D+
+     90	      2D 2A 20 20 20 50	61+
+     91	      69 6E 65 6C 20 64	65+
+     92	      20 63 6F 6E 74 72	6F+
+     93	      6C 65 0A 24
+     94	022E  20 34 20 7C 20 20	20+  tela9   db	   ' 4 |   |   |   |   |   |   |   |   |   |   |'				    +
+     95	      7C 20 20 20 7C 20	20+  ,LF,'$'
+     96	      20 7C 20 20 20 7C	20+
+     97	      20 20 7C 20 20 20	7C+
+     98	      20 20 20 7C 20 20	20+
+     99	      7C 20 20 20 7C 20	20+
+    100	      20 7C 0A 24
+    101	025C  20 20 20 2A 2D 2D	2D+  tela10  db	   '   *---*---*---*---*---*---*---*---*---*---*   Linha		01'	    +
+    102	      2A 2D 2D 2D 2A 2D	2D+  ,LF,'$'
+    103	      2D 2A 2D 2D 2D 2A	2D+
+    104	      2D 2D 2A 2D 2D 2D	2A+
+    105	      2D 2D 2D 2A 2D 2D	2D+
+    106	      2A 2D 2D 2D 2A 2D	2D+
+    107	      2D 2A 20 20 20 4C	69+
+    108	      6E 68 61 20 20 20	20+
+    109	      20 20 20 20 20 20	20+
+    110	      20 20 20 20 20 30	31+
+    111	      0A 24
+    112	02A4  20 35 20 7C 20 20	20+  tela11  db	   ' 5 |   |   |   |   |   |   |   |   |   |   |'				    +
+    113	      7C 20 20 20 7C 20	20+  ,LF,'$'
+    114	      20 7C 20 20 20 7C	20+
+Turbo Assembler	 Version 3.2	    06/11/10 22:44:42	    Page 3
+cravo.ASM
+
+
+
+    115	      20 20 7C 20 20 20	7C+
+    116	      20 20 20 7C 20 20	20+
+    117	      7C 20 20 20 7C 20	20+
+    118	      20 7C 0A 24
+    119	02D2  20 20 20 2A 2D 2D	2D+  tela12  db	   '   *---*---*---*---*---*---*---*---*---*---*   Coluna		01'	    +
+    120	      2A 2D 2D 2D 2A 2D	2D+  ,LF,'$'
+    121	      2D 2A 2D 2D 2D 2A	2D+
+    122	      2D 2D 2A 2D 2D 2D	2A+
+    123	      2D 2D 2D 2A 2D 2D	2D+
+    124	      2A 2D 2D 2D 2A 2D	2D+
+    125	      2D 2A 20 20 20 43	6F+
+    126	      6C 75 6E 61 20 20	20+
+    127	      20 20 20 20 20 20	20+
+    128	      20 20 20 20 20 30	31+
+    129	      0A 24
+    130	031A  20 36 20 7C 20 20	20+  tela13  db	   ' 6 |   |   |   |   |   |   |   |   |   |   |'				    +
+    131	      7C 20 20 20 7C 20	20+  ,LF,'$'
+    132	      20 7C 20 20 20 7C	20+
+    133	      20 20 7C 20 20 20	7C+
+    134	      20 20 20 7C 20 20	20+
+    135	      7C 20 20 20 7C 20	20+
+    136	      20 7C 0A 24
+    137	0348  20 20 20 2A 2D 2D	2D+  tela14  db	   '   *---*---*---*---*---*---*---*---*---*---*   Abrir(A)/Marcar(M): [M]'	    +
+    138	      2A 2D 2D 2D 2A 2D	2D+  ,LF,'$'
+    139	      2D 2A 2D 2D 2D 2A	2D+
+    140	      2D 2D 2A 2D 2D 2D	2A+
+    141	      2D 2D 2D 2A 2D 2D	2D+
+    142	      2A 2D 2D 2D 2A 2D	2D+
+    143	      2D 2A 20 20 20 41	62+
+    144	      72 69 72 28 41 29	2F+
+    145	      4D 61 72 63 61 72	28+
+    146	      4D 29 3A 20 5B 4D	5D+
+    147	      0A 24
+    148	0390  20 37 20 7C 20 20	20+  tela15  db	   ' 7 |   |   |   |   |   |   |   |   |   |   |'				    +
+    149	      7C 20 20 20 7C 20	20+  ,LF,'$'
+    150	      20 7C 20 20 20 7C	20+
+    151	      20 20 7C 20 20 20	7C+
+    152	      20 20 20 7C 20 20	20+
+    153	      7C 20 20 20 7C 20	20+
+    154	      20 7C 0A 24
+    155	03BE  20 20 20 2A 2D 2D	2D+  tela16  db	   '   *---*---*---*---*---*---*---*---*---*---*   > TAB para alternar entre A/M'   +
+    156	      2A 2D 2D 2D 2A 2D	2D+  ,LF,'$'
+    157	      2D 2A 2D 2D 2D 2A	2D+
+    158	      2D 2D 2A 2D 2D 2D	2A+
+    159	      2D 2D 2D 2A 2D 2D	2D+
+    160	      2A 2D 2D 2D 2A 2D	2D+
+    161	      2D 2A 20 20 20 3E	20+
+    162	      54 41 42 20 70 61	72+
+    163	      61 20 61 6C 74 65	72+
+    164	      6E 61 72 20 65 6E	74+
+    165	      72 65 20 41 2F 4D	0A+
+    166	      24
+    167	040C  20 38 20 7C 20 20	20+  tela17  db	   ' 8 |   |   |   |   |   |   |   |   |   |   |   > SETAS para	percorrer o campo'  +
+    168	      7C 20 20 20 7C 20	20+  ,LF,'$'
+    169	      20 7C 20 20 20 7C	20+
+    170	      20 20 7C 20 20 20	7C+
+    171	      20 20 20 7C 20 20	20+
+Turbo Assembler	 Version 3.2	    06/11/10 22:44:42	    Page 4
+cravo.ASM
+
+
+
+    172	      7C 20 20 20 7C 20	20+
+    173	      20 7C 20 20 20 3E	20+
+    174	      53 45 54 41 53 20	70+
+    175	      61 72 61 20 70 65	72+
+    176	      63 6F 72 72 65 72	20+
+    177	      6F 20 63 61 6D 70	6F+
+    178	      0A 24
+    179	045B  20 20 20 2A 2D 2D	2D+  tela18  db	   '   *---*---*---*---*---*---*---*---*---*---*   > ENTER para	(A)brir/(M)arcar'   +
+    180	      2A 2D 2D 2D 2A 2D	2D+  ,LF,'$'
+    181	      2D 2A 2D 2D 2D 2A	2D+
+    182	      2D 2D 2A 2D 2D 2D	2A+
+    183	      2D 2D 2D 2A 2D 2D	2D+
+    184	      2A 2D 2D 2D 2A 2D	2D+
+    185	      2D 2A 20 20 20 3E	20+
+    186	      45 4E 54 45 52 20	70+
+    187	      61 72 61 20 28 41	29+
+    188	      62 72 69 72 2F 28	4D+
+    189	      29 61 72 63 61 72	0A+
+    190	      24
+    191	04A9  20 39 20 7C 20 20	20+  tela19  db	   ' 9 |   |   |   |   |   |   |   |   |   |   |'				    +
+    192	      7C 20 20 20 7C 20	20+  ,LF,'$'
+    193	      20 7C 20 20 20 7C	20+
+    194	      20 20 7C 20 20 20	7C+
+    195	      20 20 20 7C 20 20	20+
+    196	      7C 20 20 20 7C 20	20+
+    197	      20 7C 0A 24
+    198	04D7  20 20 20 2A 2D 2D	2D+  tela20  db	   '   *---*---*---*---*---*---*---*---*---*---*   Mensagens:'			    +
+    199	      2A 2D 2D 2D 2A 2D	2D+  ,LF,'$'
+    200	      2D 2A 2D 2D 2D 2A	2D+
+    201	      2D 2D 2A 2D 2D 2D	2A+
+    202	      2D 2D 2D 2A 2D 2D	2D+
+    203	      2A 2D 2D 2D 2A 2D	2D+
+    204	      2D 2A 20 20 20 4D	65+
+    205	      6E 73 61 67 65 6E	73+
+    206	      3A 0A 24
+    207	0512  20 31 30 7C 20 20	20+  tela21  db	   ' 10|   |   |   |   |   |   |   |   |   |   |				    +
+    208	      7C 20 20 20 7C 20	20+  ................................',LF,'$'
+    209	      20 7C 20 20 20 7C	20+
+    210	      20 20 7C 20 20 20	7C+
+    211	      20 20 20 7C 20 20	20+
+    212	      7C 20 20 20 7C 20	20+
+    213	      20 7C 20 20 20 2E	2E+
+    214	      2E 2E 2E 2E 2E 2E	2E+
+    215	      2E 2E 2E 2E 2E 2E	2E+
+    216	      2E 2E 2E 2E 2E 2E	2E+
+    217	      2E 2E 2E 2E 2E 2E	2E+
+    218	      2E 2E 0A 24
+    219	0563  20 20 20 2A 2D 2D	2D+  tela22  db	   '   *---*---*---*---*---*---*---*---*---*---*				    +
+    220	      2A 2D 2D 2D 2A 2D	2D+  ................................',LF,'$'
+    221	      2D 2A 2D 2D 2D 2A	2D+
+    222	      2D 2D 2A 2D 2D 2D	2A+
+    223	      2D 2D 2D 2A 2D 2D	2D+
+    224	      2A 2D 2D 2D 2A 2D	2D+
+    225	      2D 2A 20 20 20 2E	2E+
+    226	      2E 2E 2E 2E 2E 2E	2E+
+    227	      2E 2E 2E 2E 2E 2E	2E+
+    228	      2E 2E 2E 2E 2E 2E	2E+
+Turbo Assembler	 Version 3.2	    06/11/10 22:44:42	    Page 5
+cravo.ASM
+
+
+
+    229	      2E 2E 2E 2E 2E 2E	2E+
+    230	      2E 2E 0A 24
+    231
+    232	05B4  05		     posxcursor	db 5
+    233	05B5  04		     posycursor	db 4
+    234
+    235
+    236
+    237
+    238
+    239
+    240	05B6			     dados    ends
+    241
+    242				     ; definicao do segmento de	pilha do programa
+    243	0000			     pilha    segment stack ; permite inicializacao automatica de SS:SP
+    244	0000  80*(????)			      dw     128 dup(?)
+    245	0100			     pilha    ends
+    246
+    247
+    248
+    249
+    250
+    251				     ; definicao do segmento de	codigo do programa
+    252	0000			     codigo   segment
+    253
+    254
+    255
+    256
+    257
+    258
+    259	0000			     inicio:		      ;	CS e IP	sao inicializados com este endereco
+    260	0000  B8 0000s			      mov    ax,dados ;	inicializa DS
+    261	0003  8E D8			      mov    ds,ax    ;	com endereco do	segmento DADOS
+    262	0005  8E C0			      mov    es,ax    ;	idem em	ES
+    263					     ; fim da carga inicial dos	registradores de segmento
+    264
+    265
+    266	0007  E8 00D3			     CALL imprime_tela_inicial	     ;imprime o	jogo, a	sua tela inicial
+    267
+    268	000A			     posiciona:
+    269	000A  8A 36 05B5r		     MOV DH,posycursor		     ;diz para a função	que será chamada a coordenada y	em  +
+    270				     que o cursor deve ser colocado
+    271	000E  8A 16 05B4r		     MOV DL,posxcursor		     ;diz a coordenada x
+    272	0012  E8 0153			     CALL posiciona_cursor	     ;coloca o cursor na posição especificada
+    273
+    274	0015			     laco:
+    275					     ;espera uma tecla ser pressionada e a le ou le a última que foi pressionada e não lida +
+    276				     ainda
+    277	0015  B2 4C			     MOV DL,'L'
+    278	0017  B4 02			     MOV AH,2
+    279	0019  CD 21			     INT 21H
+    280
+    281
+    282	001B  B4 00			     MOV AH,0
+    283	001D  CD 16			     INT 16H
+    284	001F  EB 01 90			     JMP jogador_teclou		     ;algo foi teclado,	processar o pedido
+    285
+Turbo Assembler	 Version 3.2	    06/11/10 22:44:42	    Page 6
+cravo.ASM
+
+
+
+    286	0022			     jogador_teclou:
+    287	0022  3C 0D			     CMP AL,13			     ;se for um	enter...
+    288	0024  74 28			     JE	enter_teclado		     ;...lidar com o enter!
+    289	0026  3C 09			     CMP AL,9			     ;senão, se	for um tab...
+    290	0028  74 2C			     JE	tab_teclado		     ;..lidar com o tab!
+    291	002A  3C 00			     CMP AL,00H			     ;se for alguma seta...
+    292	002C  75 E7			     JNE laco			     ;senão, voltar para o laço
+    293									     ;mas, se for, descobrir que seta é!
+    294
+    295	002E  B4 00			     MOV AH,0			     ;será necessário ler a próxima posição do buffer
+    296	0030  CD 16			     INT 16H
+    297	0032  80 FC 48			     CMP AH,48H			     ;se for uma seta para cima...
+    298	0035  74 27			     JE	seta_cima		     ;...lidar com a seta para cima!
+    299	0037  80 FC 50			     CMP AH,50H			     ;se for uma seta para baixo...
+    300	003A  74 3D			     JE	seta_baixo		     ;...lidar com a seta para baixo!
+    301	003C  80 FC 4B			     CMP AH,4BH			     ;se for uma seta para a esquerda...
+    302	003F  74 55			     JE	seta_esquerda		     ;...lidar com a seta para a esquerda!
+    303	0041  80 FC 4D			     CMP AH,4DH			     ;se for uma seta para a direita...
+    304	0044  74 6D			     JE	seta_direita		     ;...lidar com a seta para a direita!
+    305
+    306	0046  B2 4A			     MOV DL,'J'
+    307	0048  B4 02			     MOV AH,2
+    308	004A  CD 21			     INT 21H
+    309
+    310	004C  EB C7			     JMP laco			     ;senão, o que foi digitado	pode ser ignorado, esperar  +
+    311				     que outra coisa seja digitada
+    312
+    313	004E			     enter_teclado:
+    314	004E  B2 45			     MOV DL,'E'
+    315	0050  B4 02			     MOV AH,2
+    316	0052  CD 21			     INT 21H
+    317	0054  EB BF			     JMP laco
+    318	0056			     tab_teclado:
+    319	0056  B2 54			     MOV DL,'T'
+    320	0058  B4 02			     MOV AH,2
+    321	005A  CD 21			     INT 21H
+    322	005C  EB B7			     JMP laco
+    323	005E			     seta_cima:
+    324	005E  B2 43			     MOV DL,'C'
+    325	0060  B4 02			     MOV AH,2
+    326	0062  CD 21			     INT 21H
+    327
+    328
+    329
+    330	0064  80 3E 05B5r 04		     CMP posycursor,4		     ;se o cursor estiver no topo da tela...
+    331	0069  74 07			     JE	circular_seta_cima	     ;...fazer com que circule!
+    332	006B  80 06 05B5r 02		     ADD posycursor,2		     ;senão, simplesmente aumente seu y	para que suba uma   +
+    333				     posição
+    334	0070  EB 98			     JMP posiciona
+    335	0072				 circular_seta_cima:
+    336	0072  C6 06 05B5r 16		     MOV posycursor,22		     ;faz com que o cursor circule
+    337	0077  EB 91			     JMP posiciona
+    338	0079			     seta_baixo:			     ;análogo a	seta cima
+    339	0079  B2 42			     MOV DL,'B'
+    340	007B  B4 02			     MOV AH,2
+    341	007D  CD 21			     INT 21H
+    342
+Turbo Assembler	 Version 3.2	    06/11/10 22:44:42	    Page 7
+cravo.ASM
+
+
+
+    343
+    344
+    345	007F  80 3E 05B5r 16		     CMP posycursor,22
+    346	0084  74 08			     JE	circular_seta_baixo
+    347	0086  80 2E 05B5r 02		     SUB posycursor,2
+    348	008B  E9 FF7C			     JMP posiciona
+    349	008E				 circular_seta_baixo:
+    350	008E  C6 06 05B5r 02		     MOV posycursor,2
+    351	0093  E9 FF74			     JMP posiciona
+    352	0096			     seta_esquerda:			     ;análogo
+    353	0096  B2 53			     MOV DL,'S'
+    354	0098  B4 02			     MOV AH,2
+    355	009A  CD 21			     INT 21H
+    356
+    357
+    358
+    359	009C  80 3E 05B4r 05		     CMP posxcursor,5
+    360	00A1  74 08			     JE	circular_seta_esquerda
+    361	00A3  80 2E 05B4r 04		     SUB posxcursor,4
+    362	00A8  E9 FF5F			     JMP posiciona
+    363	00AB				 circular_seta_esquerda:
+    364	00AB  C6 06 05B4r 29		     MOV posxcursor,41
+    365	00B0  E9 FF57			     JMP posiciona
+    366	00B3			     seta_direita:			     ;análogo
+    367	00B3  B2 44			     MOV DL,'D'
+    368	00B5  B4 02			     MOV AH,2
+    369	00B7  CD 21			     INT 21H
+    370
+    371
+    372
+    373	00B9  80 3E 05B4r 29		     CMP posxcursor,41
+    374	00BE  74 08			     JE	circular_seta_direita
+    375	00C0  80 06 05B4r 04		     ADD posxcursor,4
+    376	00C5  E9 FF42			     JMP posiciona
+    377	00C8				 circular_seta_direita:
+    378	00C8  C6 06 05B4r 05		     MOV posxcursor,5
+    379	00CD  E9 FF3A			     JMP posiciona
+    380
+    381
+    382
+    383
+    384
+    385
+    386	00D0  E8 00A1			     CALL espera_tecla
+    387
+    388
+    389
+    390
+    391
+    392							      ;	retorno	ao DOS com codigo de retorno 0 no AL (fim normal)
+    393	00D3			     fim:
+    394	00D3  B8 4C00			      mov    ax,4c00h		; funcao retornar ao DOS no AH
+    395	00D6  CD 21			      int    21h		; chamada do DOS
+    396
+    397
+    398	00D8			     imprime_mensagem proc
+    399	00D8  B4 09		     MOV AH,9
+Turbo Assembler	 Version 3.2	    06/11/10 22:44:42	    Page 8
+cravo.ASM
+
+
+
+    400	00DA  CD 21		     INT 21H
+    401	00DC  C3		     RET
+    402	00DD			     imprime_mensagem endp
+    403
+    404	00DD			     imprime_tela_inicial proc
+    405	00DD  BA 0000r		     LEA DX,tela0
+    406	00E0  E8 FFF5		     CALL imprime_mensagem
+    407	00E3  BA 004Ar		     LEA DX,tela1
+    408	00E6  E8 FFEF		     CALL imprime_mensagem
+    409	00E9  BA 0077r		     LEA DX,tela2
+    410	00EC  E8 FFE9		     CALL imprime_mensagem
+    411	00EF  BA 00A5r		     LEA DX,tela3
+    412	00F2  E8 FFE3		     CALL imprime_mensagem
+    413	00F5  BA 00F3r		     LEA DX,tela4
+    414	00F8  E8 FFDD		     CALL imprime_mensagem
+    415	00FB  BA 0141r		     LEA DX,tela5
+    416	00FE  E8 FFD7		     CALL imprime_mensagem
+    417	0101  BA 018Fr		     LEA DX,tela6
+    418	0104  E8 FFD1		     CALL imprime_mensagem
+    419	0107  BA 01BDr		     LEA DX,tela7
+    420	010A  E8 FFCB		     CALL imprime_mensagem
+    421	010D  BA 01EBr		     LEA DX,tela8
+    422	0110  E8 FFC5		     CALL imprime_mensagem
+    423	0113  BA 022Er		     LEA DX,tela9
+    424	0116  E8 FFBF		     CALL imprime_mensagem
+    425	0119  BA 025Cr		     LEA DX,tela10
+    426	011C  E8 FFB9		     CALL imprime_mensagem
+    427	011F  BA 02A4r		     LEA DX,tela11
+    428	0122  E8 FFB3		     CALL imprime_mensagem
+    429	0125  BA 02D2r		     LEA DX,tela12
+    430	0128  E8 FFAD		     CALL imprime_mensagem
+    431	012B  BA 031Ar		     LEA DX,tela13
+    432	012E  E8 FFA7		     CALL imprime_mensagem
+    433	0131  BA 0348r		     LEA DX,tela14
+    434	0134  E8 FFA1		     CALL imprime_mensagem
+    435	0137  BA 0390r		     LEA DX,tela15
+    436	013A  E8 FF9B		     CALL imprime_mensagem
+    437	013D  BA 03BEr		     LEA DX,tela16
+    438	0140  E8 FF95		     CALL imprime_mensagem
+    439	0143  BA 040Cr		     LEA DX,tela17
+    440	0146  E8 FF8F		     CALL imprime_mensagem
+    441	0149  BA 045Br		     LEA DX,tela18
+    442	014C  E8 FF89		     CALL imprime_mensagem
+    443	014F  BA 04A9r		     LEA DX,tela19
+    444	0152  E8 FF83		     CALL imprime_mensagem
+    445	0155  BA 04D7r		     LEA DX,tela20
+    446	0158  E8 FF7D		     CALL imprime_mensagem
+    447	015B  BA 0512r		     LEA DX,tela21
+    448	015E  E8 FF77		     CALL imprime_mensagem
+    449	0161  BA 0563r		     LEA DX,tela22
+    450	0164  E8 FF71		     CALL imprime_mensagem
+    451	0167  C3		     RET
+    452	0168			     imprime_tela_inicial endp
+    453
+    454
+    455	0168			     posiciona_cursor	  proc
+    456	0168  B4 02		     MOV AH,2
+Turbo Assembler	 Version 3.2	    06/11/10 22:44:42	    Page 9
+cravo.ASM
+
+
+
+    457	016A  B7 00		     MOV BH,0
+    458	016C  CD 10		     INT 10H
+    459	016E  C3		     RET
+    460	016F			     posiciona_cursor	  endp
+    461
+    462	016F			     le_proximo		  proc
+    463	016F  B4 00		     MOV AH,0
+    464	0171  CD 16		     INT 16H
+    465	0173  C3		     RET
+    466	0174			     le_proximo		  endp
+    467
+    468	0174			     espera_tecla proc
+    469	0174  B4 00			      mov    ah,0		; funcao esperar tecla no AH
+    470	0176  CD 16			      int    16h		; chamada do DOS
+    471	0178  C3			      ret
+    472	0179			     espera_tecla endp
+    473
+    474
+    475	0179			     codigo   ends
+    476
+    477				     ; a diretiva a seguir indica o fim	do codigo fonte	(ultima	linha do arquivo)
+    478				     ; e informa que o programa	deve come\'e7ar	a execucao no rotulo "inicio"
+    479					      end    inicio
+Turbo Assembler	 Version 3.2	    06/11/10 22:44:42	    Page 10
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??DATE				  Text	 "06/11/10"
+??FILENAME			  Text	 "cravo	  "
+??TIME				  Text	 "22:44:42"
+??VERSION			  Number 0314
+@CPU				  Text	 0101H
+@CURSEG				  Text	 CODIGO
+@FILENAME			  Text	 CRAVO
+@WORDSIZE			  Text	 2
+CIRCULAR_SETA_BAIXO		  Near	 CODIGO:008E
+CIRCULAR_SETA_CIMA		  Near	 CODIGO:0072
+CIRCULAR_SETA_DIREITA		  Near	 CODIGO:00C8
+CIRCULAR_SETA_ESQUERDA		  Near	 CODIGO:00AB
+CR				  Number 000D
+ENTER_TECLADO			  Near	 CODIGO:004E
+ESPERA_TECLA			  Near	 CODIGO:0174
+FIM				  Near	 CODIGO:00D3
+IMPRIME_MENSAGEM		  Near	 CODIGO:00D8
+IMPRIME_TELA_INICIAL		  Near	 CODIGO:00DD
+INICIO				  Near	 CODIGO:0000
+JOGADOR_TECLOU			  Near	 CODIGO:0022
+LACO				  Near	 CODIGO:0015
+LE_PROXIMO			  Near	 CODIGO:016F
+LF				  Number 000A
+POSICIONA			  Near	 CODIGO:000A
+POSICIONA_CURSOR		  Near	 CODIGO:0168
+POSXCURSOR			  Byte	 DADOS:05B4
+POSYCURSOR			  Byte	 DADOS:05B5
+SETA_BAIXO			  Near	 CODIGO:0079
+SETA_CIMA			  Near	 CODIGO:005E
+SETA_DIREITA			  Near	 CODIGO:00B3
+SETA_ESQUERDA			  Near	 CODIGO:0096
+TAB_TECLADO			  Near	 CODIGO:0056
+TELA0				  Byte	 DADOS:0000
+TELA1				  Byte	 DADOS:004A
+TELA10				  Byte	 DADOS:025C
+TELA11				  Byte	 DADOS:02A4
+TELA12				  Byte	 DADOS:02D2
+TELA13				  Byte	 DADOS:031A
+TELA14				  Byte	 DADOS:0348
+TELA15				  Byte	 DADOS:0390
+TELA16				  Byte	 DADOS:03BE
+TELA17				  Byte	 DADOS:040C
+TELA18				  Byte	 DADOS:045B
+TELA19				  Byte	 DADOS:04A9
+TELA2				  Byte	 DADOS:0077
+TELA20				  Byte	 DADOS:04D7
+TELA21				  Byte	 DADOS:0512
+TELA22				  Byte	 DADOS:0563
+TELA3				  Byte	 DADOS:00A5
+TELA4				  Byte	 DADOS:00F3
+TELA5				  Byte	 DADOS:0141
+TELA6				  Byte	 DADOS:018F
+TELA7				  Byte	 DADOS:01BD
+TELA8				  Byte	 DADOS:01EB
+Turbo Assembler	 Version 3.2	    06/11/10 22:44:42	    Page 11
+Symbol Table
+
+
+
+TELA9				  Byte	 DADOS:022E
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+CODIGO				  16  0179 Para	  none
+DADOS				  16  05B6 Para	  none
+PILHA				  16  0100 Para	  Stack
+

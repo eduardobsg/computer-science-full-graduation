@@ -1,0 +1,58 @@
+Nova interface:
+	- criado accordRadioGroup, para associar todos os radioButtons de acordes
+
+
+
+
+
+Projeto - panorama atual:
+
+pacote main
+	WindowsArpejador.java
+		- possui a main de execução
+		- definição da interface
+		- implementação das funções de callback dos elementos da interface
+	FilesTxtFilter.java
+		- faz verificação se o arquivo que será aberto/escrito tem extensão .txt
+	FileManager.java
+		- implementa método para carregar notas musicais de um arquivo de texto
+		- implementa método para salvar notas musicais em um arquivo de texto
+
+
+pacote sound
+	InputParser.java
+		- implementa um parser para uma string que representa uma nota. Ex.: C#º 1 1,
+		parseia C# com modificador º, oitava 1 e tempo 1
+	Chord.java
+		Ainda não olhei o funcionamento. Vi que ela é usada na classe InputParser, por 
+		isso deixei no projeto, senão não compilaria.
+	Note.java
+		Ídem ao Chord.java
+	MajorScale
+		Ídem ao Chord.java e Note.java
+
+
+O que está funcionando:
+	1. Seleção da nota + modificador + oitava + tempo (fica aquela tarja cinza sobre o que 
+	está selecionado, só pra indicar a seleção mesmo)
+	2. Adicionar nota + modificador + oitava + tempo para a playlist (botão '>>>')
+	3. Remove item da playlist após selecionado (botão '<<<')
+	4. Limpa a playlist (botão 'Limpar')
+	5. Salva arquivo .txt. Pega os itens da playlist e gera o arquivo. (Item 'Salvar' do menu. 
+	Arquivo deve ter o nome com formato lala.txt)
+	6. Abre arquivo .txt. Pega o arquivo e copia linha a linha os acordes para a playlist. 
+	(Item 'Abrir' do menu)
+	7. Botão 'Sair'.
+	8. Botão 'Ajuda->Sobre'.	
+
+O que falta:
+	1. implementar função de callback para o botão play. Método 'playlistPlayButtonActionPerformed'
+	2. refatorar o código assim que estiver funcionando
+		- trocar nome de variáveis
+		- reescrever alguma rotina, excluir, modificar ou inserir
+	3. fazer diagrama lógico em UML com a interação entre as classes
+		- ver interrelacionamento entre as classes e desenhar o diagrama
+	4. relatório
+	5. power point? (tem que ver se precisa mesmo...)
+
+

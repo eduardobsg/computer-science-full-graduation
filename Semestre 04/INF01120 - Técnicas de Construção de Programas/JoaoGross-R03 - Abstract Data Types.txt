@@ -1,0 +1,63 @@
+Cadeira: INF01120 - Técnicas de Construção de Programas
+Professor: Marcelo Pimenta
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2011/02
+
+Resumo 3 - Abstract Data Types (ADT)
+
+	ADTs são conjuntos de dados e operações que atuam sobre outros dados. Eles
+podem ser utilizados para representar e manipular entidades reais e não para
+lidar apenas com problemas matemáticos.
+	O uso de ADTs possibilita que o desenvolvedor se foque no domínio do problema,
+ao invés no domínio da ciência da computação (implementação), visto que o código 
+pode ser desenvolvido em camadas, fraqmentando o problema e reduzindo sua comple-
+xidade.
+	Esse método de programação é importante, pois nos possibilita esconder deta-
+lhes de implementação, bem como facilita o encapsulamento de informações dentro
+da ADT, de modo a não deixar informações soltas pela aplicação. Essa caracterís-
+tica é fundamental para a manutenção do software, pois com todos os procedimentos 
+e dados, referentes a um grupo de informações, juntos pode-se alterar o código
+de forma mais eficiente e sem deixar que os reflexos dessas alterações provoquem
+efeitos colaterais código afora.
+
+
+Tópicos:
+
+- ADT: conjunto de dados e operações que atuam sobre os dados
+	- representar e manipular entidades reais e não apenas matemáticas
+	- trabalhar no domínio do problema e não apenas no domínio da ciência
+	da computação
+	
+- Com ADT podemos:
+	- esconder detalhes de implementação: se a estrutura de dados mudar não
+	irá afetar outras partes do programa.
+	- mudanças não afetam todo o programa
+	- é mais fácil de melhorar a performance: se uma rotina está lenta e precisa 
+	ser alterada, com a ADT as mudanças serão feitas em apenas um local.
+	- ter softwares mais corretos: a chamada das tarefas que queremos é encapsulada
+	em nomes de funções e não mais em atribuições diretas.
+	- auto-documentação melhora
+	- não precisa passar valores por todo o programa, eles ficam atrelados ao ADT
+	- tratar arquivos e itens simples como ADTs
+	
+- Não tratar apenas pilhas, listas, etc, mas também o que os elementos de cada uma
+dessas estruturas representa. Ex.: numa lista de funcionários, tratar não a lista,
+mas focar nos funcionários.
+		
+- Geralmente as operações necessitam de complementos. Uma função para ligar uma luz e
+outra para desligar. Uma para ativar um srviço, outra para desativar.
+
+- Com ADT não devemos permitir acesso direto à dados da estrutura, senão teremos um
+falso uso de ADT
+
+- Open-closed
+	- open: rotina acessa apenas alguns itens da estrutura de dados
+	- closed: rotina acessa todos os itens da estrutura de dados
+	
+- ADT x Objeto x Módulo
+	- Módulo e ADT: conjunto de dados e operações sobre informações
+	- Objeto = ADT + Herança + Polimorfismo
+	
+- ADT são bons para reduzir complexidade, pois possibilita a escrita do código em 
+camadas, focando mais no domínio do problema do que no domínio da implementação

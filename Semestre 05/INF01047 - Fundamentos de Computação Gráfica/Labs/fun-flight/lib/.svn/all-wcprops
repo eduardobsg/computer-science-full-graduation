@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 26
+/svn/!svn/ver/44/trunk/lib
+END
+moviment.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/45/trunk/lib/moviment.cpp
+END
+EasyBMP.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/45/trunk/lib/EasyBMP.cpp
+END
+model.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/46/trunk/lib/model.cpp
+END
+texture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/37/trunk/lib/texture.cpp
+END
+EasyBMP_DataStructures.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/37/trunk/lib/EasyBMP_DataStructures.h
+END
+EasyBMP_BMP.h
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/37/trunk/lib/EasyBMP_BMP.h
+END
+moviment.h
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/46/trunk/lib/moviment.h
+END
+camera.o
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/46/trunk/lib/camera.o
+END
+EasyBMP.h
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/45/trunk/lib/EasyBMP.h
+END
+model.h
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/45/trunk/lib/model.h
+END
+texture.h
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/37/trunk/lib/texture.h
+END
+light.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/45/trunk/lib/light.cpp
+END
+EasyBMP_VariousBMPutilities.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/37/trunk/lib/EasyBMP_VariousBMPutilities.h
+END
+moviment.o
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/45/trunk/lib/moviment.o
+END
+EasyBMP.o
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/45/trunk/lib/EasyBMP.o
+END
+light.h
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/45/trunk/lib/light.h
+END
+texture.o
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/45/trunk/lib/texture.o
+END
+model.o
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/46/trunk/lib/model.o
+END
+glm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/45/trunk/lib/glm.cpp
+END
+light.o
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/45/trunk/lib/light.o
+END
+glm.h
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/45/trunk/lib/glm.h
+END
+jpeg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/37/trunk/lib/jpeg.cpp
+END
+camera.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/46/trunk/lib/camera.cpp
+END
+jpeg.h
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/37/trunk/lib/jpeg.h
+END
+glm.o
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/45/trunk/lib/glm.o
+END
+camera.h
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/45/trunk/lib/camera.h
+END

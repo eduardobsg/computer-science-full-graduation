@@ -1,0 +1,33 @@
+Micro Núcleo:
+
+Estados:
+- ready
+  * processo criado entra em ready
+  * escalonamento: ready => running  
+- running
+- blocked
+
+Primitivas:
+- yield: troca de running para ready
+- join: troca de running para blocked
+
+Escalonador:
+- FIFO NÃO PREEMPTIVO, COM PRIORIDADES (política FCFS (First Come, First Served)).
+- Níveis de prioridade: baixa, média, alta
+  * prioridade ALTA é RESERVADA para as funções do núcleo (inicialização, escalonador, etc) e não deve ser usada por nenhum processo de usuário.
+  
+Programa:
+- int libsisop_init(); 
+inicialização do unúcleo. Retorna 0 se corretamente executada, caso contrário, retorna outro valor.
+
+int mproc_create(int prio, void * (*start_routine)(void*), void * arg);
+
+
+
+
+
+
+
+
+
+

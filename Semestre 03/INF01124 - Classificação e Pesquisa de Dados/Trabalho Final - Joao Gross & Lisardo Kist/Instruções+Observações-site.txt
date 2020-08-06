@@ -1,0 +1,17 @@
+INSTRUÇÕES
+
+Algumas instruções para acessar a área de administrador:
+
+1) Entre no site http://www.planonove.com.br/bancodeprovas/
+2) Vá para http://www.planonove.com.br/bancodeprovas/admin
+3) Você terá que inserir um usuário e senha. Digite:
+	User: rgalante
+	Senha: 123456
+4) Agora é só testar o site =D
+
+
+OBSERVAÇÕES
+
+Na pasta files não estão as provas, pois elas tinham um peso de cerca de 12MB, logo
+ficou inviável anexá-las. Os demais arquivos, páginas web, banco de dados, estão todos
+aí.

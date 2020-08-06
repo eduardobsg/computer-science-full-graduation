@@ -1,0 +1,113 @@
+Exercício 4 - genealogia
+João Luiz Grave Gross - 2011/02 - 180171
+Fundamentos de Banco de Dados
+Professor Carlos Alberto Heuser
+
+
+Abordagem relacional:
+
+Deseja-se construir uma base de dados para armazenar informações 
+genealógicas. Nesta base de dados, pessoas desejam armazenar 
+informações sobre seus ancestrais e possivelmente descendentes destes.
+
+Observações a cerca da base de dados:
+- Cada pessoa é identificada por um código. 
+- Para cada pessoa, podem ser armazenadas várias informações: sexo, 
+prenome, sobrenome, data e local de nascimento e data e local de 
+falecimento. Todas estas informações são opcionais. 
+- Cada local têm um código e um nome.
+- Para cada união entre pessoas (casamento,...), é necessário armazenar 
+as seguintes informações: pessoa que é marido, pessoa que é esposa, 
+pessoas que são filhos gerados pelo matrimônio e data e local do 
+matrimônio. Novamente, todas estas informações são opcionais.
+- Lembrar que uma pessoa pode ter participado de várias uniões.
+
+Deve ser projetada uma base de dados relacional para este dados. A base 
+de dados deve refletir exatamente o enunciado. Se necessário, podem ser 
+criadas chaves primárias artificiais. A base de dados projetada não 
+deve conter informações redundantes. Cada aluno deve confeccionar um 
+esquema da base de dados usando a notação textual ou a diagramática 
+vistas em aula. 
+
+
+Base de dados:
+/********************************************************************/
+/*	Local(CodLocal,NomeLocal)										*/      
+/********************************************************************/
+CREATE TABLE local (
+	codLocal	int				not null,	
+	nomeLocal	char(20)		not null,
+	
+	constraint	pk_codLocal		primary key		(codLocal),
+	constraint 	uc_nomeLocal	unique			(nomeLocal)
+);			 
+
+
+/********************************************************************/
+/*	Pessoa(CodPessoa,Sexo,PreNome,SobNome,DataNasc,LocalNasc,LocalFalec)*/      
+/********************************************************************/
+CREATE TABLE pessoa (
+	codPessoa		int				not null,
+	sexo			char(1)			not null,
+	preNome			char(20)		not null,
+	sobNome			char(20)		not null,
+	dataNasc		char(10)		not null,	/* formato: aaaa-mm-dd */	
+	codLocalNasc	int				not null,
+	codlocalFalec	int				not null,
+	codUniaoPais	int				not null,	/* essa chave evita a necessidade de uma tabela de filhos */
+
+	constraint	pk_codPessoa		primary key		(codPessoa),
+	
+	constraint	fk_codLocalNasc		foreign key		(codLocalNasc)
+		references local (codLocal)
+		on update cascade	
+		on delete restrict, 
+	constraint	fk_codLocalFalec	foreign key		(codLocalFalec)
+		references local (codLocal)
+		on update cascade		/* se 'nomeLocal' atualizar, aqui atualiza também */
+		on delete restrict  	/* se o 'nomeLocal' usado aqui for excluído este 
+								registro também será excluído */							
+);
+
+/********************************************************************/
+/*	Uniao(Marido,Esposa,DataUniao,LocalUniao,CodUniao)				*/      
+/********************************************************************/
+CREATE TABLE uniao (
+	codUniao			int			not null,
+	dataUniao			char(10)	not null,
+	codLocalUniao		int			not null,
+	codMarido			int			not null,
+	codEsposa			int			not null,		
+	
+	constraint	pk_codUniao		primary key		(codUniao),
+
+	constraint fk_codLocalUniao	foreign key		(codLocalUniao)
+		references local (codLocal)
+		on update cascade	
+		on delete restrict,		
+	constraint fk_marido		foreign key		(codMarido)
+		references pessoa (codPessoa)
+		on update cascade	
+		on delete restrict,
+	constraint fk_esposa		foreign key		(codEsposa)
+		references pessoa (codPessoa)
+		on update cascade	
+		on delete restrict
+);
+
+* Executar o ALTER depois de criar as 3 tabelas na ordem local->pessoa->uniao,
+pois a restrição que queremos colocar na tabela 'pessoa' envolve dados da tabela
+'uniao'
+
+ALTER TABLE pessoa (
+	add 	constraint	fk_codUniaoPais		foreign key		(codUniaoPais)
+		references uniao (codUniao)
+		on update cascade	
+		on delete restrict
+);
+
+
+Dúvidas:
+
+
+

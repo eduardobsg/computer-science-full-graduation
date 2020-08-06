@@ -1,0 +1,10 @@
+﻿select distinct disciplina.nomedisc from disciplina, depto, profturma, professor
+where 	disciplina.numdisc = profturma.numdisc
+	AND disciplina.coddepto = profturma.coddepto
+	AND professor.codprof = profturma.codprof
+	AND professor.coddepto = depto.coddepto
+	AND (profturma.anosem = 20021 OR profturma.anosem = 20022)
+	AND disciplina.creditosdisc = 4
+	AND depto.nomedepto = 'Informática'
+	
+	

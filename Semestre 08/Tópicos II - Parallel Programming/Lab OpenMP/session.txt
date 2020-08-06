@@ -1,0 +1,48 @@
+1) You can either use the native gcc compiler, or access
+http://software.intel.com/en-us/articles/non-commercial-software-development/
+to get the (Linux) free compilers and HPC related software from Intel. 
+If you want to obtain a 30 days trial version of Intel's compiler for Windows,
+use the following URL:
+http://software.intel.com/en-us/articles/intel-software-evaluation-center/
+
+2- Get the examples and exercises from Moodle (labomp.tar).
+In the folder, you will find:
+  - a Makefile to compile OpenMP programs,
+  - a PDF file that sums OpenMP up,
+  - a series of programs.
+
+Basically, you can compile an OpenMP program such as "hello-world" with:
+gcc -o hello -fopenmp omp-hello.c
+
+To run it, for instance with 4 threads, use something like:
+export OMP_NUM_THREADS=4
+./hello
+
+From now on, you can go on with the following exercises. Feel free to skip
+some of them if you find them less interesting. 
+
+3- Try and use the pragma sections/section to program the example discussed
+in lecture 03, where each thread runs a section that performs some computation
+on a vector. Cut & paste the code from the PDF slides! Just remember, in any
+case, to take care of shared vs. private variables.
+
+4- Basic loop parallelism
+Have a look at the trivial program omp-loop.c. Use the pragma 'schedule' to
+change the distribution of the iterations among the threads. Vary the
+parameters, run, and observe how the load is balanced. You will probably have
+to increase N. 
+You may also change the computation that is run on the entries of the vectors
+a and b.
+
+4- Using 'reduction'
+Consider the program 'omp-pi.c'. 
+It computes a sum that approximates pi. 
+Use an OMP pragma to parallelize the computation. 
+Use the C function 'gettimeofday' to measure the runtime. Did you get any
+acceleration?
+
+5- Matrix Product
+See the program 'omp-matrix.c'. Parallelize it using OpenMP.
+Measure the runtime with and without threads.
+Take care with private/shared!
+

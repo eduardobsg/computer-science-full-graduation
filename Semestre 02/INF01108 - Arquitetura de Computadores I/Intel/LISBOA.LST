@@ -1,0 +1,293 @@
+Turbo Assembler	 Version 3.2	    06/12/10 10:37:11	    Page 1
+lisboa.ASM
+
+
+
+      1				     ; Este programa exibe no video os codigos ASCII e os codigos de varredura (Scan Codes)
+      2				     ; das teclas pressionadas pelo usuario, usando a INT 16H (servico do BIOS).
+      3				     ; Este servico devolve na mesma chamada os	codigos	ASCII e	de varredura da	tecla,
+      4				     ; eliminando a necessidade	de uma segunda leitura quando usada uma	tecla de funcao.
+      5				     ; No retorno, AL =	codigo ASCII e AH = codigo de varredura	da tecla.
+      6				     ; Adaptacao do programa original teclas.asm feita em 20/05/2010.
+      7
+      8					       assume cs:codigo,ds:dados,es:dados,ss:pilha
+      9
+     10	      =000D		     CR	       EQU    0DH ; caractere ASCII &quot;Carriage Return&quot;
+     11	      =000A		     LF	       EQU    0AH ; caractere ASCII &quot;Line Feed&quot;
+     12	      =001B		     EXIT      EQU    1BH ; caractere ASCII &quot;Escape&quot; (usado para terminar no DOS Box)
+     13	      =0009		     TABULA    EQU    09H ; caractere ASCII &quot;Tabulacao&quot;
+     14	      =0008		     BACKSPACE EQU    08H ; caractere ASCII &quot;Backspace&quot;
+     15
+     16				     ; SEGMENTO	DE DADOS DO PROGRAMA
+     17	0000			     dados     segment
+     18	0000  ??		     caractere db ?
+     19	0001  ??		     scancode  db ?
+     20	0002  ??		     baite     db ?
+     21	0003  44 69 67 69 74 65	20+  prompt    db 'Digite qualquer tecla para saber qual o caractere e o Scan Code recebidos.',CR,LF
+     22	      71 75 61 6C 71 75	65+
+     23	      72 20 74 65 63 6C	61+
+     24	      20 70 61 72 61 20	73+
+     25	      61 62 65 72 20 71	75+
+     26	      61 6C 20 6F 20 63	61+
+     27	      72 61 63 74 65 72	65+
+     28	      20 65 20 6F 20 53	63+
+     29	      61 6E 20 43 6F 64	65+
+     30	      20 72 65 63 65 62	69+
+     31	      64 6F 73 2E 0D 0A
+     32	004F  50 72 65 73 73 69	6F+	       db 'Pressione a tecla ESC para terminar.',CR,LF,'$'
+     33	      6E 65 20 61 20 74	65+
+     34	      63 6C 61 20 45 53	43+
+     35	      20 70 61 72 61 20	74+
+     36	      65 72 6D 69 6E 61	72+
+     37	      2E 0D 0A 24
+     38	0076  0D 0A 46 6F 69 20	64+  codASCII  db CR,LF,'Foi digitado o	caractere: ','$'
+     39	      69 67 69 74 61 64	6F+
+     40	      20 6F 20 63 61 72	61+
+     41	      63 74 65 72 65 3A	20+
+     42	      24
+     43	0093  53 63 61 6E 20 43	6F+  codVarre  db 'Scan	Code da	tecla pressionada (em hexa): $'
+     44	      64 65 20 64 61 20	74+
+     45	      65 63 6C 61 20 70	72+
+     46	      65 73 73 69 6F 6E	61+
+     47	      64 61 20 28 65 6D	20+
+     48	      68 65 78 61 29 3A	20+
+     49	      24
+     50	00BE  20 28 63 6F 64 69	67+  hexa      db ' (codigo ASCII em hexa: $'
+     51	      6F 20 41 53 43 49	49+
+     52	      20 65 6D 20 68 65	78+
+     53	      61 3A 20 24
+     54	00D7  0D 0A 46 6F 69 20	64+  enter13H  db CR,LF,'Foi digitado o	caractere: ENTER (codigo ASCII em hexa:	13H)',CR,LF,'$'
+     55	      69 67 69 74 61 64	6F+
+     56	      20 6F 20 63 61 72	61+
+     57	      63 74 65 72 65 3A	20+
+Turbo Assembler	 Version 3.2	    06/12/10 10:37:11	    Page 2
+lisboa.ASM
+
+
+
+     58	      45 4E 54 45 52 20	28+
+     59	      63 6F 64 69 67 6F	20+
+     60	      41 53 43 49 49 20	65+
+     61	      6D 20 68 65 78 61	3A+
+     62	      20 31 33 48 29 0D	0A+
+     63	      24
+     64	0117  0D 0A 46 6F 69 20	64+  tab09H    db CR,LF,'Foi digitado o	caractere: TAB (codigo ASCII em	hexa: 09H)',CR,LF,'$'
+     65	      69 67 69 74 61 64	6F+
+     66	      20 6F 20 63 61 72	61+
+     67	      63 74 65 72 65 3A	20+
+     68	      54 41 42 20 28 63	6F+
+     69	      64 69 67 6F 20 41	53+
+     70	      43 49 49 20 65 6D	20+
+     71	      68 65 78 61 3A 20	30+
+     72	      39 48 29 0D 0A 24
+     73	0155  0D 0A 46 6F 69 20	64+  bkspc08H  db CR,LF,'Foi digitado o	caractere: BACKSPACE (codigo ASCII em hexa: 08H)',CR,LF,'$'
+     74	      69 67 69 74 61 64	6F+
+     75	      20 6F 20 63 61 72	61+
+     76	      63 74 65 72 65 3A	20+
+     77	      42 41 43 4B 53 50	41+
+     78	      43 45 20 28 63 6F	64+
+     79	      69 67 6F 20 41 53	43+
+     80	      49 49 20 65 6D 20	68+
+     81	      65 78 61 3A 20 30	38+
+     82	      48 29 0D 0A 24
+     83	0199  48 29 0D 0A 24	     fechaASC  db 'H)',CR,LF,'$'
+     84	019E  48 0D 0A 24	     fechaScan db 'H',CR,LF,'$'
+     85	01A2  46 69 6D 20 64 6F	20+  msg_final db 'Fim do programa. Espero que tenha aprendido todos os	codigos	... ',02H,' !',CR,  +
+     86	      70 72 6F 67 72 61	6D+  LF,'$'
+     87	      61 2E 20 45 73 70	65+
+     88	      72 6F 20 71 75 65	20+
+     89	      74 65 6E 68 61 20	61+
+     90	      70 72 65 6E 64 69	64+
+     91	      6F 20 74 6F 64 6F	73+
+     92	      20 6F 73 20 63 6F	64+
+     93	      69 67 6F 73 20 2E	2E+
+     94	      2E 20 02 20 21 0D	0A+
+     95	      24
+     96	01E9			     dados     ends
+     97
+     98				     ; SEGMENTO	DE PILHA DO PROGRAMA
+     99	0000			     pilha    segment stack ; permite inicializacao automatica de SS:SP
+    100	0000  80*(????)			      dw     128 dup(?)
+    101	0100			     pilha    ends
+    102
+    103				     ; SEGMENTO	DE C&Oacute;DIGO DO PROGRAMA
+    104	0000			     codigo   segment
+    105	0000			     inicio:	     ; CS e IP sao inicializados com este endereco
+    106	0000  B8 0000s			      mov    ax,dados	   ; inicializa	DS
+    107	0003  8E D8			      mov    ds,ax	   ; com endereco do segmento DADOS
+    108	0005  8E C0			      mov    es,ax	   ; idem em ES
+    109				     ; fim da carga inicial dos	registradores de segmento
+    110				     ; aqui comeca o codigo util ...
+    111	0007			     exibe_prompt:
+    112	0007  BA 0003r			      lea    dx,prompt	   ; endereco da mensagem em DX
+    113	000A  B4 09			      mov    ah,9	   ; funcao exibir mensagem no AH
+    114	000C  CD 21			      int    21h	   ; chamada do	DOS
+Turbo Assembler	 Version 3.2	    06/12/10 10:37:11	    Page 3
+lisboa.ASM
+
+
+
+    115	000E			     ler_teclado:
+    116	000E  B4 00			      mov     ah,0	   ; funcao ler	tecla sem eco no AH
+    117	0010  CD 16			      int     16h	   ; servicos de video do BIOS
+    118					      ;	BIOS retorna scan code do caractere no AH
+    119					      ;	BIOS retorna codigo ASCII do caractere no AL
+    120					      ;	Nao avanca o cursor
+    121	0012  A2 0000r			      mov    caractere,al  ; guarda codigo ASCII do caractere
+    122	0015  88 26 0001r		      mov    scancode,ah   ; guarda codigo de varredura	da tecla
+    123	0019  3C 0D			      cmp    al,CR
+    124	001B  75 0A			      jne    nao_foi_ENTER
+    125	001D  BA 00D7r			      lea    dx,enter13H
+    126	0020  B4 09			      mov    ah,9
+    127	0022  CD 21			      int    21h
+    128	0024  EB 43 90			      jmp    leu_especial
+    129	0027			     nao_foi_ENTER:
+    130	0027  3C 09			      cmp    al,TABULA
+    131	0029  75 0A			      jne    nao_foi_TAB
+    132	002B  BA 0117r			      lea    dx,tab09H
+    133	002E  B4 09			      mov    ah,9
+    134	0030  CD 21			      int    21h
+    135	0032  EB 35 90			      jmp    leu_especial
+    136	0035			     nao_foi_TAB:
+    137	0035  3C 08			      cmp    al,BACKSPACE
+    138	0037  75 0A			      jne    nao_foi_BKSPC
+    139	0039  BA 0155r			      lea    dx,bkspc08H
+    140	003C  B4 09			      mov    ah,9
+    141	003E  CD 21			      int    21h
+    142	0040  EB 27 90			      jmp    leu_especial
+    143	0043			     nao_foi_BKSPC:
+    144					      ;	exibe caractere
+    145	0043  BA 0076r			      lea    dx,codASCII
+    146	0046  B4 09			      mov    ah,9
+    147	0048  CD 21			      int    21h
+    148	004A  8A 16 0000r		      mov    dl, caractere ; escreve caractere na tela
+    149	004E  B4 02			      mov    ah,2
+    150	0050  CD 21			      int    21h
+    151				     ; exibe codigo ASCII do caractere
+    152	0052  BA 00BEr			      lea    dx,hexa
+    153	0055  B4 09			      mov    ah,9
+    154	0057  CD 21			      int    21h
+    155	0059  A0 0000r			      mov    al,caractere
+    156	005C  A2 0002r			      mov    baite,al
+    157	005F  E8 0031			      call   exibe_ASCII
+    158	0062  BA 0199r			      lea    dx, fechaASC
+    159	0065  B4 09			      mov    ah,9
+    160	0067  CD 21			      int    21h
+    161				     ; exibe codigo de varredura da tecla
+    162	0069			     leu_especial:
+    163	0069  BA 0093r			      lea    dx,codVarre
+    164	006C  B4 09			      mov    ah,9
+    165	006E  CD 21			      int    21h
+    166	0070  A0 0001r			      mov    al,scancode
+    167	0073  A2 0002r			      mov    baite,al
+    168	0076  E8 001A			      call   exibe_ASCII
+    169	0079  BA 019Er			      lea    dx, fechaScan
+    170	007C  B4 09			      mov    ah,9
+    171	007E  CD 21			      int    21h
+Turbo Assembler	 Version 3.2	    06/12/10 10:37:11	    Page 4
+lisboa.ASM
+
+
+
+    172				     ; verifica	se foi digitado	ESC para terminar
+    173	0080  80 3E 0000r 1B		      cmp    caractere,EXIT
+    174	0085  75 87			      jne    ler_teclado
+    175				     ;
+    176				     ; fim do programa - retorna ao DOS
+    177	0087			     fimprog:
+    178	0087  BA 01A2r			      lea    dx,msg_final ; endereco da	mensagem em DX
+    179	008A  B4 09			      mov    ah,9     ;	funcao exibir mensagem no AH
+    180	008C  CD 21			      int    21h      ;	chamada	do DOS
+    181	008E  B8 4C00			      mov    ax,4c00h ;	funcao retornar	ao DOS no AH
+    182							      ;	codigo de retorno 0 no AL
+    183	0091  CD 21			      int    21h      ;	chamada	do DOS
+    184
+    185	0093			     exibe_ASCII proc ;	exibe na tela valor de &quot;baite&quot; em ASCII
+    186	0093  A0 0002r			      mov    al, baite
+    187	0096  D0 E8 D0 E8 D0 E8	D0+	      shr    al, 4
+    188	      E8
+    189	009E  24 0F			      and    al, 0fH
+    190	00A0  3C 0A			      cmp    al, 10
+    191	00A2  7C 07			      jl     digitom
+    192	00A4  2C 09			      sub    al,9
+    193	00A6  0C 40			      or     al,40H
+    194	00A8  EB 03 90			      jmp    imprimem
+    195	00AB			     digitom:
+    196	00AB  0C 30			      or     al, 30H
+    197	00AD			     imprimem:
+    198	00AD  8A D0			      mov    dl, al
+    199	00AF  B4 02			      mov    ah,2
+    200	00B1  CD 21			      int    21h
+    201
+    202	00B3  A0 0002r			      mov    al, baite
+    203	00B6  24 0F			      and    al, 0fH
+    204	00B8  3C 0A			      cmp    al, 10
+    205	00BA  7C 07			      jl     digitol
+    206	00BC  2C 09			      sub    al,9
+    207	00BE  0C 40			      or     al,40H
+    208	00C0  EB 03 90			      jmp    imprimel
+    209	00C3			     digitol:
+    210	00C3  0C 30			      or     al, 30H
+    211	00C5			     imprimel:
+    212	00C5  8A D0			      mov    dl, al
+    213	00C7  B4 02			      mov    ah,2
+    214	00C9  CD 21			      int    21h
+    215	00CB  C3			      ret
+    216	00CC			     exibe_ASCII endp
+    217
+    218	00CC			     codigo   ends
+    219					      end    inicio
+Turbo Assembler	 Version 3.2	    06/12/10 10:37:11	    Page 5
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??DATE				  Text	 "06/12/10"
+??FILENAME			  Text	 "lisboa  "
+??TIME				  Text	 "10:37:11"
+??VERSION			  Number 0314
+@CPU				  Text	 0101H
+@CURSEG				  Text	 CODIGO
+@FILENAME			  Text	 LISBOA
+@WORDSIZE			  Text	 2
+BACKSPACE			  Number 0008
+BAITE				  Byte	 DADOS:0002
+BKSPC08H			  Byte	 DADOS:0155
+CARACTERE			  Byte	 DADOS:0000
+CODASCII			  Byte	 DADOS:0076
+CODVARRE			  Byte	 DADOS:0093
+CR				  Number 000D
+DIGITOL				  Near	 CODIGO:00C3
+DIGITOM				  Near	 CODIGO:00AB
+ENTER13H			  Byte	 DADOS:00D7
+EXIBE_ASCII			  Near	 CODIGO:0093
+EXIBE_PROMPT			  Near	 CODIGO:0007
+EXIT				  Number 001B
+FECHAASC			  Byte	 DADOS:0199
+FECHASCAN			  Byte	 DADOS:019E
+FIMPROG				  Near	 CODIGO:0087
+HEXA				  Byte	 DADOS:00BE
+IMPRIMEL			  Near	 CODIGO:00C5
+IMPRIMEM			  Near	 CODIGO:00AD
+INICIO				  Near	 CODIGO:0000
+LER_TECLADO			  Near	 CODIGO:000E
+LEU_ESPECIAL			  Near	 CODIGO:0069
+LF				  Number 000A
+MSG_FINAL			  Byte	 DADOS:01A2
+NAO_FOI_BKSPC			  Near	 CODIGO:0043
+NAO_FOI_ENTER			  Near	 CODIGO:0027
+NAO_FOI_TAB			  Near	 CODIGO:0035
+PROMPT				  Byte	 DADOS:0003
+SCANCODE			  Byte	 DADOS:0001
+TAB09H				  Byte	 DADOS:0117
+TABULA				  Number 0009
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+CODIGO				  16  00CC Para	  none
+DADOS				  16  01E9 Para	  none
+PILHA				  16  0100 Para	  Stack
+

@@ -1,0 +1,108 @@
+---------------------------------------------------
+insertion_sort.c, entrada crescente, tempo em micro segundos
+tipo=i, tamanho=500
+90
+tipo=i, tamanho=5000
+154
+tipo=i, tamanho=10000
+232
+tipo=i, tamanho=30000
+553
+tipo=s, tamanho=500
+311
+tipo=s, tamanho=5000
+2432
+tipo=s, tamanho=10000
+4777
+tipo=s, tamanho=30000
+14767
+---------------------------------------------------
+shell_sort.c, entrada crescente, tempo em micro segundos
+tipo=i, tamanho=500
+83
+tipo=i, tamanho=5000
+104
+tipo=i, tamanho=10000
+136
+tipo=i, tamanho=30000
+256
+tipo=s, tamanho=500
+308
+tipo=s, tamanho=5000
+2270
+tipo=s, tamanho=10000
+4487
+tipo=s, tamanho=30000
+13459
+---------------------------------------------------
+bubble_sort.c, entrada crescente, tempo em micro segundos
+tipo=i, tamanho=500
+717
+tipo=i, tamanho=5000
+53434
+tipo=i, tamanho=10000
+195639
+tipo=i, tamanho=30000
+1718647
+tipo=s, tamanho=500
+965
+tipo=s, tamanho=5000
+65019
+tipo=s, tamanho=10000
+235978
+tipo=s, tamanho=30000
+2050992
+---------------------------------------------------
+quick_sort.c, entrada crescente, tempo em micro segundos
+tipo=i, tamanho=500
+109
+tipo=i, tamanho=5000
+426
+tipo=i, tamanho=10000
+810
+tipo=i, tamanho=30000
+2436
+tipo=s, tamanho=500
+331
+tipo=s, tamanho=5000
+2726
+tipo=s, tamanho=10000
+5515
+tipo=s, tamanho=30000
+17529
+---------------------------------------------------
+heap_sort.c, entrada crescente, tempo em micro segundos
+tipo=i, tamanho=500
+184
+tipo=i, tamanho=5000
+1425
+tipo=i, tamanho=10000
+2999
+tipo=i, tamanho=30000
+10066
+tipo=s, tamanho=500
+518
+tipo=s, tamanho=5000
+5262
+tipo=s, tamanho=10000
+10985
+tipo=s, tamanho=30000
+31777
+---------------------------------------------------
+merge_sort_re.c, entrada crescente, tempo em micro segundos
+tipo=i, tamanho=500
+203
+tipo=i, tamanho=5000
+1526
+tipo=i, tamanho=10000
+3119
+tipo=i, tamanho=30000
+10318
+tipo=s, tamanho=500
+535
+tipo=s, tamanho=5000
+5549
+tipo=s, tamanho=10000
+11892
+tipo=s, tamanho=30000
+33534

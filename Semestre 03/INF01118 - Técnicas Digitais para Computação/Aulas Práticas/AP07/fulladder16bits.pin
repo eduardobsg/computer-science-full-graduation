@@ -1,0 +1,99 @@
+-- Copyright (C) 1988-2002 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+----------------------------------------------------------------------------
+
+CHIP "fulladder16bits" ASSIGNED TO AN EPM7064LC68-7
+A12                              : 1
+B11                              : 2
+VCCINT                           : 3
+B6                               : 4
+B5                               : 5
+GND                              : 6
+B15                              : 7
+Cin                              : 8
+A3                               : 9
+A2                               : 10
+VCCIO                            : 11
+A1                               : 12
+B3                               : 13
+B0                               : 14
+B1                               : 15
+GND                              : 16
+B2                               : 17
+A0                               : 18
+A9                               : 19
+Cout                             : 20
+VCCIO                            : 21
+S6                               : 22
+S7                               : 23
+S8                               : 24
+B13                              : 25
+GND                              : 26
+S9                               : 27
+S14                              : 28
+S15                              : 29
+S0                               : 30
+VCCIO                            : 31
+S1                               : 32
+S2                               : 33
+GND                              : 34
+VCCINT                           : 35
+S4                               : 36
+B4                               : 37
+GND                              : 38
+S5                               : 39
+A11                              : 40
+S13                              : 41
+S12                              : 42
+VCCIO                            : 43
+S11                              : 44
+S10                              : 45
+A4                               : 46
+B7                               : 47
+GND                              : 48
+B8                               : 49
+S3                               : 50
+A10                              : 51
+A6                               : 52
+VCCIO                            : 53
+B9                               : 54
+B10                              : 55
+RESERVED                         : 56
+A13                              : 57
+GND                              : 58
+A5                               : 59
+A14                              : 60
+A15                              : 61
+B12                              : 62
+VCCIO                            : 63
+A7                               : 64
+A8                               : 65
+GND                              : 66
+B14                              : 67
+GND                              : 68

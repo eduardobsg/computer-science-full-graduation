@@ -1,0 +1,1 @@
+INDEX VERSION 1.126+D:\Dropbox\UFRGS\2012-02\INF01151 - Sistemas Operacionais II N\Trabalho Final\.metadata\.plugins\org.eclipse.jdt.core

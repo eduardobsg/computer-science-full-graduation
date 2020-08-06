@@ -1,0 +1,20 @@
+Titulo: AP04_tB, João Gross - Exercício 3
+
+* fontes
+V1 1 0 pulse(0 12 1n 10p 10p 2n 4n)
+
+* circuito
+r1 1 2 2200
+r2 1 3 2200
+r3 1 4 2200
+
+c1 2 0 37f
+c2 3 0 74f
+c3 4 0 148f
+
+* comandos
+
+.tran 0.001n 12n
+.print tran v(1) v(2) v(3) v(4)
+
+.end

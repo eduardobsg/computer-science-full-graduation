@@ -1,0 +1,76 @@
+inicio:
+; verificação de exceções: divisão por zero e estouro
+     LDA v
+     JZ  div_por_zero ; divisor = 0
+     LDA Dr
+     SUB v
+     JNB estouro   ; D >= v provoca estouro
+
+; não ocorreu nenhuma exceção: inicialização
+     LDA Dr
+     STA Drt       ; Dr temporário
+     LDA dq
+     STA dqt       ; dq temporário
+     LDA oito
+     STA i         ; contador = 8
+
+repetir:           ; início do laço
+     LDA dqt
+     SHL
+     STA dqt       ; desloca dq p/esquerda
+     LDA Drt
+     ROL           ; desloca Dr p/esquerda
+     STA Drt       ; msbit de Dr em carry
+     JC  Dr_maior  ; se C=1, D > v
+     LDA Drt
+     SUB v         ; calcula D - v
+     JB  Dr_menor  ; se B=1, D < v
+
+Dr_maior:
+     LDA Drt       ; se D >= v
+     SUB v         ; pode subtrair
+     STA Drt
+     LDA dqt       ; e novo dígito de dq
+     OR  um        ; deve ser igual a 1
+     STA dqt
+
+Dr_menor:
+     LDA i
+     SUB um        ; decrementa contador
+     STA i
+     JNZ repetir   ; se i > 0, repete o laço
+
+fim:               ; fim normal
+     LDA um        ; estado = 1
+
+estado:
+     STA est       ; armazena estado
+     HLT
+
+div_por_zero:      ; fim com erro: div. por zero
+     LDA zero      ; estado = 0
+     JMP estado
+
+estouro:           ; fim com erro: estouro
+     LDA mum       ; estado = -1
+     JMP estado
+
+; definição de variáveis
+      ORG 128      ; começando na palavra 128
+Dr:   DB 0         ; msbits do dividendo 
+dq:   DB 0         ; lsbits do dividendo 
+v:    DB 0         ; divisor
+dqt:  DB 0         ; lsbits do dividendo - área de trabalho (no final = quociente)
+Drt:  DB 0         ; msbits do dividendo - área de trabalho (no final, = resto)
+est:  DB 0         ; estado: estouro = -1
+                   ;         div. por zero = 0
+                   ;         normal = 1
+i:    DB 0         ; contador
+
+; definição de constantes
+zero: DB 0         ; constante 0
+um:   DB 1         ; constante 1
+mum:  DB -1        ; constante -1
+oito: DB 8         ; constante 8
+
+

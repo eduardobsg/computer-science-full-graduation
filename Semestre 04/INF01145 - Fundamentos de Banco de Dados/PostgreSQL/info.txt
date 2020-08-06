@@ -1,0 +1,8 @@
+PostgreSQL
+user: postgres
+pass: JOAOLUIZGG
+
+pgAdmin III
+localhost
+
+

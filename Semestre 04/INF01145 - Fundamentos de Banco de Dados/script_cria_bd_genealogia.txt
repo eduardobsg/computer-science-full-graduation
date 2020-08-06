@@ -1,0 +1,64 @@
+/* CREATE DATABASE "genealogia" WITH ENCODING='UTF8' */
+
+CREATE TABLE local (
+	codLocal	char(4)			not null,	
+	nomeLocal	char(40)		null,
+	
+	constraint	pk_codLocal		primary key		(codLocal)
+);			 
+
+
+CREATE TABLE pessoa (
+	codPessoa		char(4)			not null,
+	sexo			char(1)			null,
+	preNome			char(20)		null,
+	sobNome			char(20)		null,
+	dataNasc		char(10)		null,	
+	codLocalNasc	char(4)			null,
+	codlocalFalec	char(4)			null,
+	codUniaoPais	char(4)			null,	
+
+	constraint	pk_codPessoa		primary key		(codPessoa),
+	
+	constraint	fk_codLocalNasc		foreign key		(codLocalNasc)
+		references local (codLocal)
+		on update cascade	
+		on delete restrict, 
+	constraint	fk_codLocalFalec	foreign key		(codLocalFalec)
+		references local (codLocal)
+		on update cascade		
+		on delete restrict  	
+);
+
+
+CREATE TABLE uniao (
+	codUniao			char(4)		not null,
+	dataUniao			char(10)	null,
+	codLocalUniao		char(4)		null,
+	codMarido			char(4)		null,
+	codEsposa			char(4)		null,		
+	
+	constraint	pk_codUniao		primary key		(codUniao),
+
+	constraint fk_codLocalUniao	foreign key		(codLocalUniao)
+		references local (codLocal)
+		on update cascade	
+		on delete restrict,		
+	constraint fk_marido		foreign key		(codMarido)
+		references pessoa (codPessoa)
+		on update cascade	
+		on delete restrict,
+	constraint fk_esposa		foreign key		(codEsposa)
+		references pessoa (codPessoa)
+		on update cascade	
+		on delete restrict
+);
+
+
+ALTER TABLE pessoa
+	add 	constraint	fk_codUniaoPais		foreign key		(codUniaoPais)
+		references uniao (codUniao)
+		on update cascade	
+		on delete restrict
+
+

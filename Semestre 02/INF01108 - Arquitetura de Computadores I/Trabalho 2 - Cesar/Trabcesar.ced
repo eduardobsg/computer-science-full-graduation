@@ -1,0 +1,881 @@
+;==========================================================================================================================
+;==                                                                                                                      ==
+;==                                       Universidade Federal do Rio Grande Do Sul                                      ==
+;==                                      Arquitetura e Organização de Computadores I                                     ==
+;==                                          Professor Carlos Arthur Lang Lisboa                                         == 
+;==                                          Trabalho Prático - Simulador Cesar                                          ==
+;==                                                     Campo Minado                                                     ==
+;==                                     Nome: João Luiz Grave Gross   Cartão: 180171                                     ==
+;==                                                                                                                      ==
+;==========================================================================================================================
+
+
+;==========================================================================================================================
+;==                                               Programa Principal                                                     ==
+;==========================================================================================================================
+
+inicio_programa:
+	org 0
+
+	; inicializacao
+	jsr r5, limpa_visor		; vai para a sub-rotina limpa o visor e volta 
+        mov #65498, r6 		  	; inicializa a pilha
+	jsr r5, limpa_campo		; vai para a sub-rotina limpa o visor e volta      
+	mov #10, linhas		
+	mov #10, coluna
+	mov #15, quant_bombas
+
+	; mensagens de apresentacao
+	mov #36, r2                  
+	mov #8000, r1                
+	mov #65500, r0           
+        jsr r5, escreve_visor           ; escreve mensagem "Campo Minado Estouro Certo! Welcome"
+	clr 65498
+	jsr r5, espera_enter		; espera a tecla enter ser pressionada para continuar
+
+	jsr r5, limpa_visor
+	mov #35, r2                  
+	mov #8036, r1                
+	mov #65500, r0           
+        jsr r5, escreve_visor           ; escreve mensagem "Autor: Joao Luiz Grave Gross/180171"
+	clr 65498
+	jsr r5, espera_enter	
+
+	jsr r5, limpa_visor
+	mov #20, r2                  
+	mov #8071, r1                
+	mov #65500, r0           
+        jsr r5, escreve_visor		; escreve mensagem "Iniciando o jogo >>"
+	clr 65498
+	jsr r5, espera_enter	
+
+;--------------------------------------------------------------------------------------------------------------------------
+	
+	mov #1, r4			; r4 vai conter a quantidade de minas inseridas
+captura_coordenadas:
+	cmp r4, #9			; faz r4 - 9 e altera os bits de estado	
+	ble captura_coordenadas_menor_9	
+	cmp r4, #15			; faz 15 - r4 e altera os bits de estado	
+	bgt captura_coordenadas_fim
+	mov #49, escrita_lcd1
+	mov r4, escrita_lcd2
+	sub #10, escrita_lcd2	
+
+	mov #5, r2 
+	mov #8091, r1                
+	mov #65500, r0           
+	jsr r5, limpa_visor	
+	jsr r5, escreve_visor		; escreve mensagem "Mina "
+	jmp captura_coordenadas_maior_9		
+captura_coordenadas_fim:
+	jmp captura_coordenadas_fim2
+
+captura_coordenadas_menor_9:
+	; linha
+	mov #48, escrita_lcd1
+	mov r4, escrita_lcd2
+	mov #5, r2 
+	mov #8091, r1                
+	mov #65500, r0           
+	jsr r5, limpa_visor	
+	jsr r5, escreve_visor		; escreve mensagem "Mina "
+captura_coordenadas_maior_9:
+	mov #21, r2 
+	mov #8098, r1                
+	mov escrita_lcd1, 65505		; como o valor está entre 0 e 9, coloca zero na primeira posição do número da bomba
+	mov escrita_lcd2, 65506		; coloca o número seguido de zero que representa a bomba
+	add #48, 65506
+	mov #65508, r0           
+        jsr r5, escreve_visor		; escreve mensagem " >> Linha  (02 a 09): "
+	mov #0, num_char
+	mov #95, 65529
+	jsr r5, le_coordenada_lcd	; vai para a subrotina de captura de valores no LCD
+	mov 65530, get_linha		; pega o valor digita pelo usuário
+	sub #48, get_linha		; ajusta o valor capturado do lcd
+
+	; coluna
+	mov #5, r2 
+	mov #8091, r1                
+	mov #65500, r0           
+	jsr r5, limpa_visor	
+	jsr r5, escreve_visor		; escreve mensagem "Mina "
+	
+	mov #21, r2 
+	mov #8120, r1                
+	mov escrita_lcd1, 65505		; como o valor está entre 0 e 9, coloca zero na primeira posição do número da bomba
+	mov escrita_lcd2, 65506		; coloca o número seguido de zero que representa a bomba
+	add #48, 65506
+	mov #65508, r0           
+        jsr r5, escreve_visor		; escreve mensagem " >> Coluna (02 a 09): "
+	mov #0, num_char
+	mov #95, 65529
+	jsr r5, le_coordenada_lcd	; vai para a subrotina de captura de valores no LCD
+	mov 65530, get_coluna		; pega o valor digita pelo usuário	
+	sub #48, get_coluna
+
+;--------------------------------------------------------------------------------------------------------------------------
+
+	mov #9998, posicao 
+calcula_posicao:
+	sub #1, get_linha			
+	beq analisa_posicao		; o desvio ocorre quando get_linha == 0, ou seja, z = 1
+	add #20, posicao		; 20 pois 10 posições do tabuleiro correspondem a 20 endereços
+	jmp calcula_posicao
+analisa_posicao:
+	mov posicao, r1
+	add get_coluna, r1
+	add get_coluna, r1		; comando repetido duas vezes devido às palavras de 2 bytes
+	mov r1, posicao
+	mov posicao, r1			; coloca o conteúdo do endereço apontado por posicao no registrador r1
+	cmp #0, (r1)
+	beq insere_mina			; z = 1, logo a posição contém zero e pode ser inserida uma mina
+
+	jsr r5, limpa_visor	
+	mov #31, r2 
+	mov #8150, r1                
+	mov #65500, r0           
+	jsr r5, escreve_visor		; escreve mensagem "Coordenada já possui bomba >=("
+	clr 65498
+	jsr r5, espera_enter 	
+	jmp captura_coordenadas
+insere_mina:
+	mov #-1, (r1)			; salva a mina na posição especificada	
+	jsr r5, limpa_visor	
+	mov #14, r2 
+	mov #8185, r1                
+	mov #65500, r0           
+	jsr r5, escreve_visor		; escreve mensagem "Mina plantada!"
+	clr 65498
+	jsr r5, espera_enter	
+	inc r4				
+	jmp captura_coordenadas
+captura_coordenadas_fim2:	
+	nop
+
+
+;--------------------------------------------------------------------------------------------------------------------------
+
+	jsr r5, limpa_visor
+	mov #27, r2 
+	mov #8200, r1                
+	mov #65500, r0           
+	jsr r5, escreve_visor		; escreve mensagem "Atualizando campo minado..."
+	mov #10020, r3			; r3 vai guardar a posição no tabuleiro 
+atualiza_campo:
+	; realiza contagem das bombas em volta das posições	
+	add #2, r3			; avança uma posição no tabuleiro
+	cmp r3, #10178			; faz conteúdo do endereço apontado por r3 - 10178
+	beq atualiza_campo_fim
+	cmp (r3), #-1			; faz conteúdo do endereço apontado por r3 - (-1)
+	bne atualiza_campo		; se end(r3) != -1, volta para atualiza_campo, senão tem uma mina e chama a subrotina
+	jsr r5, atualiza_posicoes	; end(r3) == -1, ou seja, ali te uma mina e é necessáio atualizar as posições no entorno dela
+	jmp atualiza_campo
+atualiza_campo_fim:
+	nop				; r3 == 10178, ou seja, a área com as minas já terminou
+
+;--------------------------------------------------------------------------------------------------------------------------
+	
+	mov #1, linhas
+	mov #10000, r4
+	mov #9998, posicao
+print_linha_lcd:
+	cmp linhas, #9			; faz linhas - 9 e altera os bits de estado	
+	ble print_linha_lcd_menor_9		
+	cmp linhas, #10			; faz linhas - 10 e altera os bits de estado	
+	bgt print_linha_lcd_fim
+	mov #49, escrita_lcd1
+	mov #0, escrita_lcd2
+	jmp print_linha_lcd_continua
+print_linha_lcd_fim:
+	jmp print_linha_lcd_fim2
+
+print_linha_lcd_menor_9:
+	mov #48, escrita_lcd1
+	mov linhas, escrita_lcd2
+print_linha_lcd_continua:
+	jsr r5, limpa_visor	
+	mov escrita_lcd1, 65506		; como o valor está entre 0 e 9, coloca zero na primeira posição do número da bomba
+	mov escrita_lcd2, 65507		; coloca o número seguido de zero que representa a bomba
+	add #48, 65507
+	mov #6, r2 
+	mov #8230, r1                
+	mov #65500, r0           
+	jsr r5, escreve_visor		; escreve mensagem "Linha "
+	mov #4, r2 
+	mov #8240, r1                
+	mov #65508, r0           
+	jsr r5, escreve_visor		; escreve mensagem " >> "
+	jsr r5, pega_linha
+	clr 65498
+	jsr r5, espera_enter
+	inc linhas
+	jmp print_linha_lcd
+print_linha_lcd_fim2:
+	nop	
+	
+
+;--------------------------------------------------------------------------------------------------------------------------
+	
+mensagem_final:
+	jsr r5, limpa_visor	
+	mov #28, r2 
+	mov #8250, r1                
+	mov #65500, r0           
+	jsr r5, escreve_visor		; escreve mensagem "Jogar denovo? (s ou S - sim) "
+	mov #0, num_char
+	mov #95, 65529
+	jsr r5, testa_S
+		
+
+;==========================================================================================================================
+;==                                                  Subrotinas                                                          ==
+;==========================================================================================================================
+
+limpa_visor:
+          CLR 65500             ; limpa LED 00
+          CLR 65501             ; limpa LED 01
+          CLR 65502             ; limpa LED 02
+          CLR 65503             ; limpa LED 03
+          CLR 65504             ; limpa LED 04
+          CLR 65505             ; limpa LED 05
+          CLR 65506             ; limpa LED 06
+          CLR 65507             ; limpa LED 07
+          CLR 65508             ; limpa LED 08
+          CLR 65509             ; limpa LED 09
+          CLR 65510             ; limpa LED 10
+          CLR 65511             ; limpa LED 11
+          CLR 65512             ; limpa LED 12
+          CLR 65513             ; limpa LED 13
+          CLR 65514             ; limpa LED 14
+          CLR 65515             ; limpa LED 15
+          CLR 65516             ; limpa LED 16
+          CLR 65517             ; limpa LED 17
+          CLR 65518             ; limpa LED 18
+          CLR 65519             ; limpa LED 19
+          CLR 65520             ; limpa LED 20
+          CLR 65521             ; limpa LED 21
+          CLR 65522             ; limpa LED 22
+          CLR 65523             ; limpa LED 23
+          CLR 65524             ; limpa LED 24
+          CLR 65525             ; limpa LED 25
+          CLR 65526             ; limpa LED 26
+          CLR 65527             ; limpa LED 27
+          CLR 65528             ; limpa LED 28
+          CLR 65529             ; limpa LED 29
+          CLR 65530             ; limpa LED 30
+          CLR 65531             ; limpa LED 31
+          CLR 65532             ; limpa LED 32
+          CLR 65533             ; limpa LED 33
+          CLR 65534             ; limpa LED 34
+          CLR 65535             ; limpa LED 35
+          RTS R5                ; retorna ao ponto de chamada
+
+
+;--------------------------------------------------------------------------------------------------------------------------
+
+
+espera_enter: 				; espera o usuário apertar a tecla enter      	
+	tst 65498
+	beq espera_enter
+
+	cmp 65499, tecla_enter	     	; compara o conteúdo de tecla_enter (valor 13) com o conteúdo do caractere digitado (endereço 65499)
+	beq espera_enter_fim		; se z=1, avança dois bytes, ou seja, cai na instrução "rts r5"
+	clr 65498
+	jmp espera_enter
+espera_enter_fim:
+	rts r5
+
+
+;--------------------------------------------------------------------------------------------------------------------------
+
+
+escreve_visor:
+__VOLTA_ESCR:
+          MOV (R1),R3           ; coloca 2 caracteres em R3
+          ASR R3                ; alinha primeiro caractere
+          ASR R3                ; a direita do registrador,
+          ASR R3                ; porque quando se escreve
+          ASR R3                ; na memoria a partir do
+          ASR R3                ; endereco 65500 apenas o byte
+          ASR R3                ; menos significativo e' escrito
+          ASR R3                ; na posicao correspondente
+          ASR R3                ; a um LED do visor
+          MOV R3,(R0)           ; move para o visor
+          SOB R2,__SEGUNDO      ; se ja moveu todo o texto,
+          rts r5                ; retorna ao ponto de chamada
+                                ; senao, vai mover o segundo
+                                ; caractere da mesma palavra
+__SEGUNDO:
+          INC R0                ; aponta para proximo LED
+          BEQ __FIM_VISOR2      ; fim do visor - volta ao LED 00
+__CONTINUA2:
+          MOV (R1)+,R3          ; mesmos 2 caracteres em R3 e
+                                ; incrementa apontador do texto
+          MOV R3,(R0)           ; desta vez, move o segundo byte
+          SOB R2,__PROXIMO_LED  ; se ja moveu todo o texto,
+          rts r5                ; retorna ao ponto de chamada
+
+__PROXIMO_LED:
+          INC R0                ; senao, aponta proximo LED
+          BNE __VOLTA_ESCR      ; e repete o laco
+                                ; fim do visor - volta ao LED 00
+__FIM_VISOR1:
+          MOV #65500,R0         ; aponta para primeiro LED
+          BR  __VOLTA_ESCR      ; volta a escrever no visor
+
+__FIM_VISOR2:
+          MOV #65500,R0         ; aponta para primeiro LED
+          BR  __CONTINUA2       ; volta a escrever no visor
+
+
+;--------------------------------------------------------------------------------------------------------------------------
+
+
+limpa_campo:
+	  mov #100, r3			; usado para limpar as 100 posições do campo minado  	
+	  mov #10000, r4		; r4 é inicializado ocm o endereço da primeira posição do campo minado
+limpa_campo_continua:
+	  clr (r4)			; limpa o conteúdo do endereço apontado por r4
+	  add #2, r4			; faz r4 = r4 + 2  	 	
+ 	  dec r3			; faz r3 = r3 - 1
+	  bne limpa_campo_continua	; desvia se z=0, ou seja, se r3 tem conteúdo diferente de zero	 
+	  rts r5	                ; quando cair aqui r3 = 0, então retorna ao ponto de chamada		
+
+
+;--------------------------------------------------------------------------------------------------------------------------
+
+
+le_coordenada_lcd:
+	clr 65498		      	
+	tst 65498
+	beq -6
+	cmp 65499, tecla_backspace	
+	beq testa_backspace		; se z=1, end(65499) == tecla_backspace e ocorre o desvio para testa_backspace
+	cmp 65499, tecla_enter		
+	beq testa_enter			; se z=1, end(65499) == tecla_enter e ocorre o desvio para testa_enter
+	
+	;num_char=0
+	cmp #0, num_char
+	beq testa_zero			; vai para testa_zero -> ela testa se o caractere digitado é 0 ou 1	
+	cmp #1, num_char
+	beq testa_segundo		; vai para testa_segundo -> ela testa se o caractere digitado é de 1 a 9, se o primeiro for zero, ou zero se o primeiro for 1	
+	jmp le_coordenada_lcd
+le_coordenada_lcd_fim:
+	rts r5
+testa_backspace:
+	;não posso usar: r4, r5, 
+	cmp #2, num_char
+	bne testa_backspace_primeiro_char		; z=0, num_char != 2, ou seja, a primeira posição pode ou não estar escrita, temos que testar
+	mov #95, (r1)					; z=1, num_char == 2, ou seja, a segunda posição tem um valor, deve ser apagada e escrito underline lá
+	dec num_char
+	mov #95, 65530
+	jmp le_coordenada_lcd
+testa_backspace_primeiro_char:
+	cmp #1, num_char
+	bne le_coordenada_lcd		; se z=0, num_char != 1, ou seja, a primeira posição não tem nada escrito, já está ok, devemos voltar
+	mov #95, 65529
+	mov #0, 65530
+	dec num_char	
+	jmp le_coordenada_lcd
+testa_enter:
+	cmp #2, num_char
+	beq le_coordenada_lcd_fim	; se num_char == 2, beq aciona o desvio, ou seja, já foram digitados dois caracteres para as coordenadas e eles são válidos
+testa_zero:
+	cmp 65499, #48			; faz end(65499) - 48
+	beq grava_val			; end(65499) tem o caractere 0
+	jmp le_coordenada_lcd		 	
+grava_val:
+	mov 65499, 65529		; coloca 0 ou 1 na primeira posição do número da coordenada de linha ou coluna
+	mov #95, 65530
+	inc num_char
+	jmp le_coordenada_lcd
+testa_segundo:
+	cmp 65499, #57
+	ble eh_menor_ou_igual		; valor é <= 9 (caractere, não valor decimal)
+	jmp le_coordenada_lcd		; é > 9, logo não é válido e não será escrito
+eh_menor_ou_igual:
+	cmp 65499, #50
+	bge eh_valido			; valor é <= 9 e >= 2, ou 2 =< x =< 9
+	jmp le_coordenada_lcd		; é < 2, logo não é válido e não será escrito
+eh_valido:
+	mov 65499, 65530		; coloca valor na segunda posição do número da coordenada de linha ou coluna de vai variar de 2 a 9
+	inc num_char
+	jmp le_coordenada_lcd
+
+;--------------------------------------------------------------------------------------------------------------------------
+
+atualiza_posicoes:	
+	mov r3, r4			; faz uma cópia do conteúdo de r3 para r4
+	add #2, r4			; avança 1 posição no tabuleiro (posição logo à direita da mina)
+	cmp (r4), #-1			; testa se ali tem uma bomba
+	beq continua_2			; se tiver mina desvia, se não tiver continua
+ 	add #1, (r4) 			; adiciona 1 na posição apontada pelo registrador r4
+continua_2:
+	add #16, r4			; avança 8 posições no tabuleiro (posição inferior esquerda à mina)
+	cmp (r4), #-1			; testa se ali tem uma bomba
+	beq continua_3			; se tiver mina desvia, se não tiver continua
+ 	add #1, (r4) 			; adiciona 1 na posição apontada pelo registrador r4
+continua_3:
+	add #2, r4			; avança 1 posições no tabuleiro (posição inferior logo abaixo da mina)
+	cmp (r4), #-1			; testa se ali tem uma bomba
+	beq continua_4			; se tiver mina desvia, se não tiver continua
+ 	add #1, (r4) 			; adiciona 1 na posição apontada pelo registrador r4
+continua_4:
+	add #2, r4			; avança 1 posições no tabuleiro (posição inferior direita à mina)
+	cmp (r4), #-1			; testa se ali tem uma bomba
+	beq continua_5			; se tiver mina desvia, se não tiver continua
+ 	add #1, (r4) 			; adiciona 1 na posição apontada pelo registrador r4
+continua_5:
+	add #-24, r4			; volta 24 posições no tabuleiro (posição logo à esquerda da mina)
+	cmp (r4), #-1			; testa se ali tem uma bomba
+	beq continua_6			; se tiver mina desvia, se não tiver continua
+ 	add #1, (r4) 			; adiciona 1 na posição apontada pelo registrador r4
+continua_6:
+	add #-16, r4			; volta 8 posições no tabuleiro (posição superior à direita da mina)
+	cmp (r4), #-1			; testa se ali tem uma bomba
+	beq continua_7			; se tiver mina desvia, se não tiver continua
+ 	add #1, (r4) 			; adiciona 1 na posição apontada pelo registrador r4
+continua_7:
+	add #-2, r4			; volta 1 posições no tabuleiro (posição acima da mina)
+	cmp (r4), #-1			; testa se ali tem uma bomba
+	beq continua_8			; se tiver mina desvia, se não tiver continua
+ 	add #1, (r4) 			; adiciona 1 na posição apontada pelo registrador r4
+continua_8:
+	add #-2, r4			; volta 1 posições no tabuleiro (posição superior à esquerda da mina)
+	cmp (r4), #-1			; testa se ali tem uma bomba
+	beq atualiza_posicoes_fim	; se tiver mina desvia, se não tiver continua
+ 	add #1, (r4) 			; adiciona 1 na posição apontada pelo registrador r4
+atualiza_posicoes_fim:
+	rts r5
+ 		
+
+;--------------------------------------------------------------------------------------------------------------------------
+
+
+pega_linha:
+	mov #65512, r1			; aponta para a primeira posição de escrita no lcd
+	add #20, posicao		; posicao aponta para o final da linha
+testa_posicao:
+	cmp (r4), #-1			
+	beq escreve_mina		; vai para escreve_mina pois achou uma mina 
+	mov (r4), (r1)
+	add #48, (r1)	
+	cmp posicao, r4
+	beq pega_linha_fim
+	add #2, r4
+	add #2, r1
+	jmp testa_posicao
+escreve_mina:	
+	mov #64, (r1)
+	cmp posicao, r4
+	beq pega_linha_fim
+	add #2, r4
+	add #2, r1
+	jmp testa_posicao
+pega_linha_fim:
+	add #2, r4			; já deixa r3 apontando para a linha seguinte
+	rts r5
+
+
+;--------------------------------------------------------------------------------------------------------------------------
+
+
+testa_S:
+	clr 65498		      	
+	tst 65498
+	beq -6
+	cmp 65499, tecla_backspace
+	beq testa_backspace_S		; se z=1, end(65499) == tecla_backspace e ocorre o desvio para testa_backspace
+	cmp 65499, tecla_enter		
+	beq testa_enter_S		; se z=1, end(65499) == tecla_enter e ocorre o desvio para testa_enter
+	
+	;num_char=0
+	cmp #0, num_char
+	beq insere_valor		; vai para testa_zero -> ela testa se o caractere digitado é 0 ou 1	
+	jmp testa_S
+testa_backspace_S:
+	cmp #1, num_char
+	bne testa_S			; se z=0, num_char != 1, ou seja, é zero, logo não foi digitado nada na primeira posição, o underline ainda está lá e podemos voltar
+	mov #95, 65529			; z=1, ou seja, num_char == 1, logo devemos escrever o underline na primeira posição e voltar
+	dec num_char
+	jmp testa_S	
+testa_enter_S:
+	cmp #1, num_char
+	beq testa_entrada		; se num_char == 1, beq aciona o desvio, ou seja, já foram digitados dois caracteres para as coordenadas e eles são válidos
+	jmp testa_S
+testa_entrada:
+	cmp 65529, #83			; faz end(65529) - 83
+	beq testa_S_fim			; end(65499) tem o caractere S
+	cmp 65529, #115			; faz end(65529) - 115
+	beq testa_S_fim			; end(65499) tem o caractere s
+	jsr r5, limpa_visor		
+	mov #6, r2 
+	mov #8300, r1                
+	mov #65500, r0           
+	jsr r5, escreve_visor		; escreve mensagem "Tchau!"
+	hlt 
+insere_valor:
+	mov #65529, r1
+	mov 65499, (r1)		; limpa end(65529), executa o backspace	
+	inc num_char
+	jmp testa_S		
+testa_S_fim:
+	jmp inicio_programa		
+
+
+
+;==========================================================================================================================
+;==                                                     Mensagens                                                        ==
+;==========================================================================================================================
+
+	org 8000
+
+	; Mensagem: "Campo Minado Estouro Certo! Welcome", Caracteres: 36, Endereço: 8000 
+	db 67
+	db 97
+	db 109
+	db 112
+	db 111
+	db 32 	; espaço
+	db 77
+	db 105
+	db 110
+	db 97
+	db 100
+	db 111
+	db 32 	; espaço
+	db 69
+	db 115
+	db 116
+	db 111
+	db 117
+	db 114
+	db 111
+	db 32 	; espaço
+	db 67
+	db 101
+	db 114
+	db 116
+	db 111
+	db 33
+	db 32
+	db 87
+	db 101
+	db 108
+	db 99
+	db 111
+	db 109
+	db 101
+	db 33
+
+	; Mensagem: "Autor: Joao Luiz Grave Gross/180171", Caracteres: 35, Endereço: 8036 
+	db 65 	; A
+	db 117
+	db 116
+	db 111
+	db 114	
+	db 58 	; :
+	db 32
+	db 74 	; J
+	db 111
+	db 97
+	db 111
+	db 32	
+	db 76	; L
+	db 117
+	db 105
+	db 122
+	db 32
+	db 71	; G
+	db 114
+	db 97
+	db 118
+	db 101
+	db 32
+	db 71	; G
+	db 114
+	db 111
+	db 115
+	db 115
+	db 47
+	db 49
+	db 56
+	db 48
+	db 49
+	db 55
+	db 49
+
+	; Mensagem: "Iniciando o jogo >> ", Caracteres: 20, Endereço: 8071 
+	db 73
+	db 110
+	db 105
+	db 99
+	db 105
+	db 97
+	db 110
+	db 100
+	db 111
+	db 32
+	db 111
+	db 32
+	db 106
+	db 111
+	db 103
+	db 111
+	db 32
+	db 62
+	db 62
+	db 32
+
+	; Mensagem: "Mina ", Caracteres: 5, Endereço: 8091 
+	db 77
+	db 105
+	db 110
+	db 97
+	db 32		; endereço 8095
+
+	; Mensagem: " >> Linha  (02 a 09): ", Caracteres: 21, Endereço: 8097
+	org 8097	
+	db 32
+	db 62
+	db 62
+	db 32
+	db 76
+	db 105
+	db 110
+	db 104
+	db 97
+	db 32
+	db 32
+	db 40
+	db 48
+	db 50
+	db 32
+	db 97
+	db 32
+	db 48
+	db 57
+	db 41
+	db 58
+	db 32		;endereço 8118
+
+
+	; Mensagem: "Coluna (02 a 09): LL", Caracteres: 21, Endereço: 8120
+	db 32
+	db 62	
+	db 62
+	db 32
+	db 67
+	db 111
+	db 108
+	db 117
+	db 110
+	db 97
+	db 32
+	db 40
+	db 48
+	db 50
+	db 32
+	db 97
+	db 32
+	db 48
+	db 57
+	db 41
+	db 58
+	db 32
+
+	; Mensagem: "Coordenada já possui bomba >=(", Caracteres: 31, Endereço: 8150
+	org 8150
+	db 67
+	db 111
+	db 111
+	db 114
+	db 100
+	db 101
+	db 110
+	db 97
+	db 110
+	db 97
+	db 32
+	db 106
+	db 97
+	db 32
+	db 112
+	db 111
+	db 115
+	db 115
+	db 117
+	db 105
+	db 32
+	db 98
+	db 111
+	db 109
+	db 98
+	db 97
+	db 32
+	db 62
+	db 61
+	db 40
+	
+	; Mensagem: "Mina plantada!", Caracteres: 14, Endereço: 8185
+	org 8185
+	db 77
+	db 105
+	db 110
+	db 97
+	db 32
+	db 112
+	db 108
+	db 97
+	db 110
+	db 116
+	db 97
+	db 100
+	db 97	
+	db 33
+	
+	; Mensagem: "Atualizando campo minado...", Caracteres: 27, Endereço: 8200
+	org 8200
+	db 65
+	db 116
+	db 117
+	db 97
+	db 108
+	db 105
+	db 122
+	db 97
+	db 110
+	db 100
+	db 111
+	db 32
+	db 99
+	db 97
+	db 109
+	db 112
+	db 111
+	db 32
+	db 109
+	db 105
+	db 110
+	db 97
+	db 100
+	db 111
+	db 46
+	db 46
+	db 46
+
+	; Mensagem: "Linha ", Caracteres: 6, Endereço: 8230
+	org 8230
+	db 76
+	db 105
+	db 110
+	db 104
+	db 97
+	db 32
+	
+	; Mensagem: " >> ", Caracteres: 4, Endereço: 8240 
+	org 8240
+	db 32
+	db 62
+	db 62
+	db 32
+
+
+	; Mensagem: "Jogar denovo? (s ou S - sim) ", Caracteres: 28, Endereço: 8250 	
+	org 8250
+	db 74
+	db 111
+	db 103
+	db 97
+	db 114
+	db 32
+	db 100
+	db 101
+	db 110
+	db 111
+	db 118
+	db 111
+	db 63
+	db 32
+	db 40
+	db 115
+	db 32
+	db 111
+	db 117
+	db 32
+	db 83
+	db 32
+	db 45
+	db 32
+	db 115
+	db 105
+	db 109
+	db 41
+
+	; Mensagem: "Tchau!", Caracteres: 6, Endereço: 8300 	
+	org 8300
+	db 84
+	db 99
+	db 104
+	db 97
+	db 117
+	db 33
+		
+
+
+;==========================================================================================================================
+;==                                                    Anotações                                                         ==
+;==========================================================================================================================
+;       
+;	(ok) Mensagens de Identificação do Autor. Ex.: "Campo Minado Max Plus!", "Autor: João Luiz Grave Gross"			
+;		
+;	(ok) Ler do teclado as coordenadas da bomba
+;		(ok) Exibir no LCD uma mensagem para pedir as coordenadas. Ex.: "Linha mina 01: LL", "Coluna mina 01: CC"
+;			(ok) Só aceitar valores dentro da faixa de linha de 2-9 e coluna de 2-9
+;			(ok) Só aceitar valores numéricos dentro da faixa especificada
+;			(ok) Habilitar a tecla BACKSPACE para que o usuário edite a coordenada
+;				(ok) Só permitir o BACKSPACE depois que um caractere tenha sido digitado
+;			(ok) Habilitar a tecla ENTER para enviar a coordenada
+;			(ok) Se a posição for válida, gravar mina e avisar ao usuário. Ex.: "Mina gravada." 
+;			(ok) Se a posição já estiver ocupada, avisar o usuário. Ex.: "Coordenada já contém mina"		
+;		(ok) Colocar -1 na posição válida
+;	(ok) Calcular a quantidade de minas em torno de cada posição do campo minado e guardar o resultado na posição
+;	Exibir o conteúdo do campo minado linha por linha. Ex.: "Linha 01: 0 1 3 # 5 0 0 1 # 1"
+;	Perguntar ao usuário se ele quer preencher outro campo minado. Ex.: "Preencher ou campo?"
+;		Se for digitado "s" ou "S", reinicia o programa desde a inicialização
+;		Se for digitado qualquer outro caractere, termina o programa com uma mensagem. Ex.: "Obrigado por jogar, hasta luego."
+;
+
+
+
+;==========================================================================================================================
+;==                                              Declaração de Variáveis                                                 ==
+;==========================================================================================================================
+	org 11000
+
+	linhas:			dw	; será decrementado quando cregar ao término de uma linha. Quando estiver em zero quer dizer que a varredura do campo minado terminou
+	coluna:			dw	; será decrementado a cada posição varrida do campo minado. Quando chegar em zero a linha terminou e precisa ser carregado com 10 novamente para varrer a linha seguinte.
+	quant_bombas:		dw	; será inicializada no início do programa e decrementada a cada inserção de bomba. Quando chegar em zero todas as bombas terão sido inseridas.
+	tecla_enter:		dw 13   ; valor ascii da tecla enter (usado em subrotinas)
+	tecla_backspace:	dw 8	; valor ascii da tecla backspace (usado em subrotinas)
+	num_char: 		dw	; usado na subrotina de leitura do LCD, para armazenar a quantidade de caracteres digitados (varia de 0 a 2)
+	escrita_lcd1:		dw	; tem o valor 48 ou 49 de acordo com o número da bomba
+	escrita_lcd2:		dw	; tem o valor 48 ou 49 de acordo com o número da bomba
+	get_linha:		dw	; pega o valor da coordenada de linha digitada
+	get_coluna:		dw	; pega o valor da coordenada de coluna digitada
+	posicao:		dw	; guarda o endereço de onde se quer colocar a mina
+	posicao_lcd:		dw	; guarda a posicao de escrita dos termos de uma linha no lcd
+
+
+	;org 10000
+	;daw 0,0,0,0,0,0,0,0,0,0
+	;daw 0,0,0,0,0,0,0,0,0,0
+	;daw 0,0,0,0,0,0,0,0,0,0
+	;daw 0,0,0,0,0,0,0,0,0,0
+	;daw 0,0,0,0,0,0,0,0,0,0
+	;daw 0,0,0,0,0,0,0,0,0,0
+	;daw 0,0,0,0,0,0,0,0,0,0
+	;daw 0,0,0,0,0,0,0,0,0,0
+	;daw 0,0,0,0,0,0,0,0,0,0
+	;daw 0,0,0,0,0,0,0,0,0,0
+		

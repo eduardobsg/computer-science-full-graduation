@@ -1,0 +1,167 @@
+Leia atentamente os enunciados e realize as atividades solicitadas. 
+Após, junte todas as respostas em um único arquivo pdf e encaminhe 
+no link abaixo. 
+
+1) Usando sua linguagem de programação preferida, desde que seja 
+Orientada a Objetos, defina uma classe para manipular um Ponto, 
+seguindo a seguinte especificação: 
+
+- Representação: Coordenada x, Coordenada y 
+- Operações: Criação, Set e get x, Set e get y, Soma, Subtração, 
+Clonagem/cópia 
+
+2) Elabore um programa que crie dois pontos X=(10,10) e Y=(15,30) e 
+crie um terceiro que seja igual a soma de X com Y. Mostre os pontos 
+na tela (em modo texto ou gráfico). 
+
+-------------------------------------------------------------------
+
+/* aula15-exer1-class.h */
+
+#include <iostream>
+
+using namespace std;
+
+class Point {
+	
+	private:
+		double x;
+		double y;
+	
+	public:
+		Point();
+		Point(double, double);
+		~Point();
+	
+		double getX(void);
+		double getY(void);
+		Point getPoint(void);
+		Point operator+(Point);
+		Point operator-(Point);
+		Point& operator=(const Point&);
+		friend ostream& operator<<(ostream&, const Point&);
+	
+	protected:
+		void setX(double);
+		void setY(double);
+		void setPoint(double, double);
+};
+
+-------------------------------------------------------------------
+
+/* aula15-exer1-class.cpp */
+
+#include "aula15-exer1-class.h"
+
+//Construtor
+Point::Point() {
+	this->x = 0;
+	this->y = 0;
+}
+Point::Point(double _x, double _y) {
+	this->x = _x;
+	this->y = _y;
+}
+
+//Destrutor
+Point::~Point() {
+	//cout << "Ponto: (" << this->x << "," << this->y << ") foi destruido." << endl;
+}
+
+//Getters
+double Point::getX() {
+	return this->x;
+}
+double Point::getY() {
+	return this->y;
+}
+Point Point::getPoint() {
+	return Point(this->x, this->y);
+}
+
+//Setters
+void Point::setX(double _x) {
+	this->x = _x;
+}
+void Point::setY(double _y) {
+	this->y = _y;
+}
+void Point::setPoint(double _x, double _y) {
+	this->x = _x;
+	this->y = _y;
+}
+
+//Operations
+Point Point::operator+(Point p) {
+	Point pt;
+	pt.x = this->x + p.x;
+	pt.y = this->y + p.y;
+	return pt;
+}
+
+Point Point::operator-(Point p) {
+	Point pt;
+	pt.x = this->x - p.x;
+	pt.y = this->y - p.y;
+	return pt;
+}
+
+Point& Point::operator=(const Point& p) {
+	this->x = p.x;
+	this->y = p.y;
+	return *this;
+}
+
+ostream& operator<<(ostream &out, const Point &p) {
+    out << "Point: (" << p.x << "," << p.y << ")" << endl;
+    return out;
+}
+
+------------------------------------------------------------------
+
+/* aula15-exer1-main.cpp */
+
+#include <iostream>
+#include "aula15-exer1-class.h"
+
+using namespace std;
+
+int main(int argc, char *argv[]) {
+
+	Point point1(10,10), point2(15,30), point3;
+  
+	point3 = point1 + point2;
+	
+	cout << point1;
+	cout << point2;
+	cout << point3;
+
+	return 0;
+}
+
+------------------------------------------------------------------
+
+//makefile
+
+all: aula15-exercicio1
+
+aula15-exercicio1: aula15-exer1-main.o aula15-exer1-class.o
+	g++ -o aula15-exercicio1 aula15-exer1-main.o aula15-exer1-class.o
+
+aula15-exer1-main.o: aula15-exer1-main.cpp aula15-exer1-class.h
+	g++ -c aula15-exer1-main.cpp
+
+aula15-exer1-class.o: aula15-exer1-class.cpp aula15-exer1-class.h 
+	g++ -c aula15-exer1-class.cpp
+
+
+
+3) Levando em conta o código abaixo, indique o que ele apresenta de 
+errado/inconsistente:
+
+O código possui dois problemas inicialmente. O primeiro é que a classe
+não permite a criação de um vetor de inteiros sem que seja passado o 
+tamanho do vetor na sua criação. O segundo problema é que a operação 
+de clonagem/cópia não está implementada.
+
+

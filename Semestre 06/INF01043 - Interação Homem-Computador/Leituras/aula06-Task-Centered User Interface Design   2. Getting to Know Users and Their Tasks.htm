@@ -1,0 +1,949 @@
+
+<!-- saved from url=(0035)http://hcibib.org/tcuid/chap-2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="generator" content="genfile chap-2 genfile.ini">
+<meta name="start-date" content="2001-07-18">
+<meta name="accesses" content="70,933">
+<meta name="description" content="A practically oriented textbook on 
+the design of usable computer systems -- downloadable as shareware.">
+<meta name="keywords" content="usability engineering, user friendly software, easy to use software,
+user interface, user interface design, interface design,
+human computer interaction, computer human interaction,
+hci, chi, hci textbook, hci book, chi text book, chi book, 
+man machine interaction, human machine interaction,
+software engineering, software design, 
+task analysis, task centered design
+usability analysis, usability measurement, usability lab,
+cognitive walkthrough, heuristic analysis,
+UIMS, uims, user interface management systems, prototyping,
+john rieman, John Rieman, clayton lewis, Clayton Lewis">
+
+
+<meta name="robots" content="index,nofollow">
+	<title>
+		Task-Centered User Interface Design : 2. Getting to Know Users and Their Tasks
+	</title>
+	
+<style type="text/css">
+<!--
+	h1 {color: ; font-family: Arial, sans-serif;}
+	h2 {color: ; font-family: Arial, sans-serif;}
+	h3 {color: ; font-family: Arial, sans-serif;}
+	h3.example {color: #009966; margin-top:0}
+	div.example {
+		color: #009966;
+		margin-top: .1in;
+		font-family: Arial, sans-serif;
+		background-color: #FFFFEE; border:solid; border-width:1; padding:3; font-size: 80%
+		}
+	h3.hyper {color: #006699; margin-top:0}
+	div.hyper {
+		color: #006699;
+		margin-top: .1in;
+		font-family: Arial, sans-serif;
+		background-color: #FFFFEE; border:solid; border-width:1; padding:3; font-size: 80%
+		}
+-->
+</style><style type="text/css"></style>
+
+
+</head>
+<body bgcolor="#FFFFFF">
+<table summary="Title" bgcolor="#DDDDCC" width="100%" border="0" cellpadding="5" cellspacing="0">
+	<tbody><tr>
+		
+		<td align="center">
+			<div style="font-size: 125%"><b>Task-Centered User Interface Design</b></div>
+			<div style="font-size: 90%">A Practical Introduction</div>
+		</td>
+		
+	</tr>
+	<tr>
+	<td align="center" style="font-size: 80%">
+by
+<font size="3">
+<a href="http://www.cs.colorado.edu/~clayton/"><b>Clayton Lewis</b></a>
+</font>
+ and 
+<font size="3">
+<b>John Rieman</b>
+</font>
+<br>
+
+		Copyright ©1993, 1994: Please see the
+		<a href="http://hcibib.org/tcuid/index.html#notice">"shareware notice"</a> at the front of the book.
+	</td>
+	</tr>
+</tbody></table>
+<div align="center">
+<table summary="Navigation Menu" border="0" cellpadding="2" cellspacing="0"><tbody><tr valign="top">
+<td>
+<a name="top" accesskey="k" href="http://hcibib.org/tcuid/chap-2.html#endnav"><img src="./aula06-Task-Centered User Interface Design   2. Getting to Know Users and Their Tasks_files/2x2.gif" border="0" height="1" width="1" alt="skip navigation"></a>
+</td>
+<td align="center"><a href="http://hcibib.org/tcuid/index.html" title="Main page and Shareware Notice"><font size="1">Contents</font></a></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/chap-0.html" title="Foreword"><font size="1">Foreword</font></a></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/chap-1.html" title="1. The Task-Centered Design Process"><font size="1">Process</font></a></td>
+<td valign="middle">|</td>
+<td align="center" bgcolor="#DDDDCC" style="font-size: 80%"><b title="2. Getting to Know Users and Their Tasks">Users&amp;Tasks</b></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/chap-3.html" title="3. Creating the Initial Design"><font size="1">Design</font></a></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/chap-4.html" title="4. Evaluating the Design Without Users"><font size="1">Inspections</font></a></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/chap-5.html" title="5. Evaluating the Design With Users"><font size="1">User-testing</font></a></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/chap-6.html" title="6. User Interface Management and Prototyping Systems"><font size="1">Tools</font></a></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/chap-7.html" title="7. The Extended Interface"><font size="1">Documentation</font></a></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/appx-l.html" title="L. What Can You Borrow?"><font size="1">Legal</font></a></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/appx-m.html" title="M. Managing User Interface Development"><font size="1">Managing</font></a></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/exercises.html" title="Excercises"><font size="1">Exercises</font></a></td>
+</tr></tbody></table></div>
+
+<a name="endnav"></a>
+<h1>Chapter 2: Getting to Know Users and Their Tasks</h1>
+<font size="2">
+
+	<ul>
+      <ul>
+         <li><a href="http://hcibib.org/tcuid/chap-2.html#e">Example: The Illusory Customers</a>
+         </li><li><a href="http://hcibib.org/tcuid/chap-2.html#h1">HyperTopic: Contracts and Requirements</a>
+      </li></ul>
+      <li><a href="http://hcibib.org/tcuid/chap-2.html#2-1">2.1 Getting in Touch With Users</a>
+      <ul>
+         <li><a href="http://hcibib.org/tcuid/chap-2.html#h2">HyperTopic: Generic and Designer Users</a>
+      </li></ul>
+      </li><li><a href="http://hcibib.org/tcuid/chap-2.html#2-2">2.2 Learning About the Users' Tasks</a>
+      <ul>
+         <li><a href="http://hcibib.org/tcuid/chap-2.html#h3">HyperTopic: Participatory Design</a>
+      </li></ul>
+      </li><li><a href="http://hcibib.org/tcuid/chap-2.html#2-3">2.3 Using the Tasks in Design</a>
+      <ul>
+         <li><a href="http://hcibib.org/tcuid/chap-2.html#h4">HyperTopic: Integrating Task-Centered Design and Traditional Requirements Analysis</a>
+      </li></ul>
+   </li></ul>
+
+</font>
+<p>
+To get a good interface you have to figure out who is going
+to use it to do what. You may think your idea for a new
+system is so wonderful that everyone will want it, though you
+can't think of a really specific example, and that it will be
+useful in some way to people, even though you can't say just
+how. But history suggests you will be wrong. Even systems
+that turned out to be useful in unexpected ways, like the
+spreadsheet, started out by being useful in some expected
+ways.
+
+</p><div class="example">
+<h3 class="example"><a name="e">Example:  The Illusory Customers</a></h3>
+
+There was a startup here in Boulder a few years back that
+wanted to build a system to help people build intelligent
+tutoring systems. They raised a bundle of money, brought a
+lot of smart people in, and went to work. But they didn't
+stop to figure out EXACTLY WHO would use the system to do
+EXACTLY WHAT.  The concept seemed too good, in those palmy
+days of AI madness, to require that kind of pedestrianism.
+The lack of specificity created some problems internally,
+since it was hard to make good decisions about what aspects
+of the new system were important. But the trouble became
+critical when the time came to line up test users, people who
+would try out the software and provide feedback to the
+developers. There were no takers! Not only were there no
+people waiting to fork out cash for the tool, there weren't
+even people who would take it for nothing. And this wasn't
+because the work wasn't quality. People just didn't want to
+do what the tool was supposed to help them do.
+
+<p>
+The company didn't just roll over; they searched around for
+something that people did want to do that they could do with
+something like the tool that had been built. Not surprisingly
+this didn't work out and the company folded its tents when
+the money ran out.
+
+</p></div>
+
+<p>
+You may not have needed selling on this point. "Everybody"
+knows you have to do some kind of requirements analysis. Yes,
+but based on what, and in what form? Our advice is to insist
+that your requirements be grounded in information about real,
+individual people and real tasks that they really want to
+perform. Get soft about this and the illusions start to creep
+in and before you know it you've got another system that
+everybody wants except people you can actually find.
+
+</p><div class="hyper">
+<h3 class="hyper"><a name="h1">HyperTopic:  Contracts and Requirements</a></h3>
+
+"Fortunately I don't have to worry about this. I work on
+contract stuff and all the requirements have been spelled out
+for me before I start."
+
+<p>
+Not so fast! It's one thing to meet the requirements of a
+contract and another thing to build a good system. Are
+anybody's interests really served if you build a system that
+meets spec but is a failure? That's what is likely to happen
+if you work to requirements that have not been grounded in
+reality, even if it's not your fault. Being selfish, will you
+get repeat business, or will you get a good reputation from
+work like this?
+
+</p><p>
+Clayton did once talk with a contract developer who assured
+him that on his current job the success of the system was
+really not an issue under any conceivable future (no
+possibility of repeat business, etc.) He has also heard of
+third-world "development" projects in which the real game is
+to please the bureaucrat who turns the tap on the (U.S.-
+supplied) "development" money, rather than to make something
+work. But life is too valuable to spend on activities like
+these. Find something to do that matters.
+</p></div>
+
+<h2><a name="2-1">2.1  Getting in Touch With Users</a></h2>
+
+<p>
+So here's what to do. The first step is to find some real
+people who would be potential users of what you are going to
+build. If you can't find any you need to worry a lot. If you
+can't find them now, where will they come from when it's time
+to buy? When you have found some, get them to spend some time
+with you discussing what they do and how your system might
+fit in. Are they too busy to do this? Then they'll probably
+be too busy to care about your system after it exists. Do you
+think the idea is a real winner, and they will care if you
+explain it to them? Then buy their time in some way. Find
+people in your target group who are technology nuts and
+who'll talk with you because you can show them technology. Or
+go to a professional meeting and offer a unique T-shirt to
+people who'll talk with you (yes, there are people whose time
+is too expensive for you to buy for money who will work with
+you for a shirt or a coffee mug).
+
+</p><div class="hyper">
+<h3 class="hyper"><a name="h2">HyperTopic:  Generic and Designer Users</a></h3>
+
+"I don't have to bother about this stuff. My system will be a
+tool for any UNIX user, no matter what they are working on.
+There's no special user population I'm trying to support."
+
+<p>
+Unfortunately experience shows that many ideas that are
+supposed to be good for everybody aren't good for anybody.
+Why not check by finding somebody and making sure it's good
+at least for them?
+
+</p><p>
+"Well, I'm somebody and my tool is good for me."
+
+</p><p>
+Two points here. First, is it REALLY  good for you? Do you
+actually USE it? Never work on something if you ought to be a
+user for it but you aren't. It's amazing how often this
+principle is violated. Second, there are lots of reasons why
+things often seem more useful to their designers than they do
+to other people. A big one is that the designer builds up his
+or her understanding of the thing over a long time and with a
+lot of thought. Usually the user wants to understand it right
+away, and often can't (Bruce Tognazzini makes this point very
+well in "Tog on Interface" Reading, MA: Addison Wesley, 1992,
+p. 8).
+
+</p></div>
+
+<h2><a name="2-2">2.2  Learning About the Users' Tasks</a></h2>
+
+<p>
+Once you have some people to talk with, develop CONCRETE,
+DETAILED EXAMPLES of tasks they perform or want to perform
+that your system should support. Here's how this went for
+Clayton and colleagues in a recent project, disguised to
+avoid embarrassing anybody.
+
+</p><p>
+The aim was to develop a system for modelling traffic: street
+layout, traffic volumes, accidents and the like. The system
+was to provide a flexible, graphical interface that would
+make it easy to tweak the model and examine the results. We
+had good access to potential users, because the project was
+sponsored by an organization that included people who
+currently use an existing model that the new one was to
+replace.
+
+</p><p>
+But there was a delicate issue here, that you will often
+face. The particular people providing money for the project
+were not the users themselves, but a staff organization whose
+mission was to look after the needs of the users. Sounds OK?
+It's not: it meant that our direct contact was not with the
+people who really know firsthand what the problems are but
+people who are supposed to know the problems secondhand, a
+very different thing. Fortunately we knew what we wanted and
+were able to arrange a series of meetings with real users.
+
+</p><p>
+In these meetings we developed a list of twelve things the
+users would actually want to do with the system. They were
+specific, as for example:
+
+</p><ul>
+     Change the speed limit on Canyon Boulevard eastbound
+     between Arapahoe and 9th. Calculate projected traffic
+     flows on Arapahoe west of 6th assuming Canyon speeds
+     between 25 and 55 in increments of 5 mph.
+</ul>
+
+<p>
+Notice a few things about this example.
+
+</p><p>
+<b>It says what the user wants to do but does not say how the user would do it.</b>
+
+</p><p>
+As stated, this task does not make any assumptions about the
+nature of the modelling tool or its interface. Therefore it
+can be used to compare different design alternatives for the
+system and interface in a fair way. If we said "change the
+speed limit by selecting a new value from a menu" we would
+have prejudged the right way for the user to perform this
+part of the task.
+
+</p><p>
+<b>It is very specific.</b>
+
+</p><p>
+Not only does it say exactly what the user wants to do, it
+actually specifies particular streets. What's the point of
+this? It means that we can fill out this description of the
+task with any other details that may become relevant in
+evaluating designs. In fact, it forces us to do this. For
+example, if the model needs to divide streets into separate
+pieces for purposes of analysis, and the user then needs to
+select a number of pieces to do an analysis for a stretch of
+street, we can see in detail how this would work out for the
+real Canyon Boulevard. We can't avoid the problem as we could
+if we were thinking of any old generic street.
+
+</p><p>
+Dennis Wixon has an example that makes this point (In
+<a href="http://www.hcibib.org/bs.cgi?searchtype=tcuid&query=E.Rudisill.95">M. Rudisill, T. McKay, C. Lewis, and P.G. Polson (Eds.),
+"Human-Computer Interaction Design: Success Cases, Emerging
+Methods, and Real-World Context." Morgan Kaufman. In press.</a>).
+Wixon and colleagues were developing an interface for a file
+management system. It passed lab tests with flying colors,
+but bombed as soon as customers got it. The problem was that
+it had a scrolling file list that was (say) twenty characters
+wide, but the file names customers used were very long, and
+in fact often identical for more than twenty characters (the
+names were made up by concatenating various qualifiers, and
+for many names the first several qualifiers would be the
+same.) Customers were not amused by needing to select from a
+scrolling list of umpty-ump identical entries that stood for
+different files. And this wasn't an oddball case, it was in
+fact typical. How had it been missed in the lab tests? Nobody
+thought it would matter what specific file names you used for
+the test, so of course they were all short.
+
+</p><p>
+<b>It describes a complete job.</b>
+
+</p><p>
+Note that the task doesn't just say to fiddle the speed limit
+on Canyon, or just to calculate projections for Arapahoe. It
+says the user wants to do both. This means that in seeing how
+this task plays out for a particular design of the interface
+we are forced to consider how features of the interface work
+together, not just how reasonable they may look separately.
+
+</p><p>
+We once evaluated a phone-in bank service that had done well
+in lab tests. People had no trouble checking their balances,
+finding out if checks had cleared, and the like. But when we
+looked at what was involved in finding if a check had cleared
+AND THEN looking at a balance, we found big problems. The
+interface was supposed to support this kind of transition
+between functions, but the test tasks used in the lab had not
+required them.
+
+</p><p>
+Describing complete jobs is a key feature of our approach,
+and it's different from the usual way of doing things.
+Usually requirements lists are just that: lists of little
+things the system has to do. Meeting this kind of requirement
+does little to ensure that users can do a real job without
+going crazy: it just ensures that they can do all the PARTS
+of a real job.
+
+</p><p>
+An important angle on the complete job issue is seeing where
+inputs come from and where outputs go. In the example
+problem, where does the model the user is going to tweak come
+from? How does he or she obtain it? If there aren't good
+answers to these questions the system will be no good in
+practice, even if it does the tweaking and calculating parts
+very well.
+
+</p><p>
+Clayton worked on an early business graphics package whose
+sales were disappointing. Customer visits (done after ship,
+not before development when they should have been done)
+showed that the problem was that the package worked well when
+users had numbers to type in to make a graph, but badly when
+numbers were already in the system and needed to be extracted
+from a file. One user had temporarily hired typists to
+transcribe numbers from one screen, where a data file was
+displayed, onto another screen where the graph package was
+running. He was not eager to continue this arrangement. The
+majority of uses we saw were of this get-data-from-a-file
+kind, so the system was unsuited to requirements even though
+it did a good job on making the graph itself, the part of the
+whole job on which the designers concentrated.
+
+</p><p>
+So you want to choose tasks that represent complete jobs, and
+you want to be sure to scrutinize the edges of the tasks.
+Where does stuff come in from? Where does it go? What has to
+happen next?
+
+</p><p>
+<b>The tasks should say who the users are.</b>
+
+</p><p>
+In the highway example we were dealing with a small, close-
+knit group of users, so we didn't specify in our example
+tasks WHO would be doing what: we took it as given. Probably
+we should have worried about this more, and probably you
+should. The success of a design can be influenced strongly by
+what users know, how the tasks supported by the system fit
+into other work they have to do, and the like. So you need to
+get a fix on these things early in design.
+
+</p><p>
+The design of Oncocin, a sophisticated cancer therapy
+advisor, illustrates what's at stake (Musen, M.A., Fagan,
+L.M., and Shortliffe, E.H. "Graphical specification  of
+procedural knowledge for an expert system. In J.A. Hendler
+[Ed.], "Expert Systems: The User Interface." Norwood, NJ:
+Ablex, 1988, p. 15). Earlier experience with doctor users had
+shown that they are willing to invest very little time in
+becoming familiar with a new system. A system to be used
+directly by doctors therefore has to be different from one to
+be used by medical technicians, who can be told they HAVE to
+learn a new tool. The Oncocin designers needed to decide up
+front whether their users would be doctors or would be
+technicians working in support of doctors. They went for
+direct use by doctors. The interface they came up with is as
+much as possible a faithful copy of the paper forms for
+specifying therapy that doctors were already using.
+
+</p><p>
+So what should you say about users in specifying your tasks?
+If possible, name names. This allows you to get more
+information if it becomes relevant, just as saying it's
+Arapahoe Avenue allows you to bring in more detail about the
+task if you need to. Beyond that you should note
+characteristics of the users that you already know will be
+important, such as what their job is and what expertise they
+have.
+
+</p><p>
+In choosing the sample tasks for the traffic modelling system
+we were guided by two objectives. First, we wanted to be sure
+that we had examples that illustrated the kinds of support
+that we as designers thought the system should provide. That
+is, we had some general ideas about what the system was
+supposed to be good for, and we tried to find tasks that were
+examples of these. But second, we needed to reflect the
+interests of potential users in the examples. So we tried to
+find tasks that illustrated proposed functionality in the
+context of work users really wanted to do.
+
+</p><p>
+In the process some possible functions for the system dropped
+out. We had envisioned that the system might include some
+optimization functions that would manipulate the model to
+find the best of some range of alternatives with respect to
+some measure of quality. Users had no interest in this. They
+preferred to solve such problems by framing and evaluating
+alternatives themselves rather than having the system do
+this.
+
+</p><p>
+This is not an uncommon conflict, and one without a simple
+resolution. We thought, and still think, that users would
+eventually come to want optimization functions once more
+pressing modelling needs were met, so we didn't want to just
+take the users' word on this. But we put optimization on the
+back burner to be pushed again in the future.
+
+</p><p>
+This illustrates a key point about input from users: users
+are NOT always right. They cannot anticipate with complete
+accuracy how they will use new technology. As a designer your
+job is to build a system that users will want when it gets
+here, not to build the system users say they want as they see
+things today. You may well have insight into the future that
+users lack. But you need to be very careful about this. If
+you are like most designers, an outsider in the domain of
+work you are trying to support, you have to recognize that
+users know a whole lot more about what they are doing than
+you do. If you can't get users interested in your hot new
+idea, however hard you try to draw them into it, you're
+probably missing something.
+
+</p><div class="hyper">
+<h3 class="hyper"><a name="h3">HyperTopic:  Participatory Design</a></h3>
+
+In our discussion we have been assuming a split between the
+roles of designers and users that has been traditional in
+U.S. system design. Designers are not users; they gather
+information from users and reflect it in systems they build;
+they give these systems to users who use them or not. There
+is an alternative approach, pioneered by workers in
+Scandinavia, that rejects this structure. In participatory
+design, systems are designed by designers and users working
+together: a slogan is DESIGNING WITH rather than DESIGNING
+FOR. The power to make the system be one way rather than
+another is not reserved for the designers, as it is in most
+U.S. design practice, but rather is shared by designers and
+users working in collaboration.
+
+<p>
+The contrast between participatory design and standard U.S.
+practice reflects deep differences in political and
+philosophical outlook between Europe and the U.S.. Most
+European countries give workers very broad influence on
+working conditions, which are much more strictly regulated
+than in the U.S.. In many countries workers must have seats
+on the boards of directors of companies, and workers must be
+consulted on the introduction of new technology in the
+workplace. With this view of workers it is natural to think
+that workers should have a direct hand in shaping the systems
+they have to use. By contrast the prevailing view in the U.S.
+is that management should just decide what systems are good
+for productivity and then impose them on workers, whose views
+basically don't matter.
+
+</p><p>
+Many people in the U.S., if they think about these matters at
+all, assume that the U.S. way of doing things must be right.
+What is your reaction when you hear that in some European
+countries it is illegal to make someone work in a room
+without a window? Does that seem silly, or maybe wrongheaded,
+because of the restriction in places on freedom of
+enterprise? What do you think about it when you also learn
+that a number of countries in Europe have higher per capita
+productivity than the U.S., and that the U.S. is steadily
+losing export position, especially in advanced industries,
+and holding its own primarily in commodity exports like farm
+produce?  For a fascinating, disturbing, and constructive
+look at these and related issues, read the book "The
+Competitive Advantage of Nations," by Michael Porter (New
+York: Free Press, 1990).
+
+</p><p>
+You can find a lengthy discussion of participatory design in
+the journal  Human-Computer Interaction,
+(<a href="http://www.hcibib.org/bs.cgi?searchtype=tcuid&query=J.HCI.4.4.253">Floyd, C., Mehl,
+W.-M., Reisin, F.-M., Schmidt, G., and Wolf, G. "Out of
+Scandinavia: Alternative approaches to software design and
+system development." Human-Computer Interaction, 4 (1989),
+pp. 252-350</a>), and a short and sweet discussion in an article
+by Jeanette Blomberg and Austin Henderson of Xerox in the
+CHI'90 proceedings (<a href="http://www.hcibib.org/bs.cgi?searchtype=tcuid&query=C.CHI.90.353">Blomberg, A.L. and Henderson, A.
+"Reflections on participatory design." In Proc. CHI'90
+Conference on Human Factors in Computer Systems. New York:
+ACM, 1990, pp. 353-359</a>).  Blomberg and Henderson stress three
+defining attributes of participatory design: the goal of the
+activity is to improve the worklife of users (not, for
+example, to demonstrate how neat object-oriented technology
+is); the activity is collaborative, with all goals and
+decisions actively negotiated and not imposed; the activity
+is iterative, in that ideas are tested and adjusted by seeing
+how they play out in practice.
+
+</p><p>
+It's pretty easy to see how one could approach participatory
+design in in-house projects, though it would not be easy to
+get your organization actually to do it. For in-house
+projects it will be true at some level that designers and
+users share the same goals, though in the U.S. context these
+goals may not have much to do with the quality of worklife.
+But U.S. organizations usually have job demarcations which
+make it hard to get participatory design going. Usually, if
+my job is to be a user it is not to be a designer or to work
+on designs. That's the province of "experts" employed for the
+purpose, even though they have no idea what the real problems
+are that need to be solved.
+
+</p><p>
+For commercial projects there are further challenges. At
+bottom, your objective as a commercial developer may really
+not be to improve the quality of somebody else's work life,
+but rather to make money for yourself. So you don't have the
+right goal to begin with.
+
+</p><p>
+There are two ways to go from here. One is to forget about
+the defining goals of participatory design and go through the
+motions of it in service of your selfish goals. The idea is
+that you hope to produce a better design, and hence make more
+money, by engaging users in collaboration focussed on the
+user's goals. To draw users in to making the considerable
+investment of time they would have to make to work with you,
+you would offer them a piece of the action.
+
+</p><p>
+Developing new technology in close partnership with potential
+users like this is a good idea in many industries for lots of
+reasons not restricted to the peculiarities of user
+interfaces. As Michael Porter recounts, the modern printing
+press was developed by a new technology company that was
+supported by some of its potential users, big English
+newspapers. Such a relationship gets you the information you
+need to make your system really useful, and hence successful,
+as well as developing an early market.
+
+</p><p>
+Another response to the mismatch of your goal of making money
+and the participatory design goal of improving the quality of
+work life is to change your goal. Will money actually make
+you happy? Of course not. Will improving somebody's work life
+make you happy? Maybe so, if the work involved is itself
+something worthwhile, or if you just take satisfaction in
+doing something well. Even if you can't get this unselfish
+the logic of the situation is that you may do better all
+around, including monetarily, if you really care about the
+people who will use your system and what they do than if you
+only care about the money.
+
+</p></div>
+
+<h2><a name="2-3">2.3  Using the Tasks in Design</a></h2>
+
+<p>
+Back to the traffic modelling system and our sample tasks.
+What did we do with them after we got them? Taking a look at
+their fate may clarify what the tasks should be like, as well
+as helping to persuade you that it's worth defining them.
+
+</p><p>
+Our first step was to write up descriptions of all the tasks
+and circulate them to the users (remember, we're back in us-
+versus-them mode, with designers and users clearly different
+teams.) We included queries for more information where we
+felt the original discussion had left some details out. And
+we got corrections, clarifications, and suggestions back
+which were incorporated into the written descriptions.
+
+</p><p>
+We then roughed out an interface design and produced a
+SCENARIO for each of the sample tasks. A scenario spells out
+what a user would have to do and what he or she would see
+step-by-step in performing a task using a given system. The
+key distinction between a scenario and a task is that a
+scenario is design-specific, in that it shows how a task
+would be performed if you adopt a particular design, while
+the task itself is design-independent: it's something the
+user wants to do regardless of what design is chosen.
+Developing the scenarios forced us to get specific about our
+design, and it forced us to consider how the various features
+of the system would work together to accomplish real work. We
+could settle arguments about different ways of doing things
+in the interface by seeing how they played out for our
+example tasks.
+
+</p><p>
+Handling design arguments is a key issue, and having specific
+tasks to work with really helps. Interface design is full of
+issues that look as if they could be settled in the abstract
+but really can't. Unfortunately, designers, who often prefer
+to look at questions in the abstract, waste huge amounts of
+time on pointless arguments as a result.
+
+</p><p>
+For example, in our interface users select graphical objects
+from a palette and place them on the screen. They do this by
+clicking on an object in the palette and then clicking where
+they want to put it. Now, if they want to place another
+object of the same kind should they be made to click again on
+the palette or can they just click on a new location? You
+can't settle the matter by arguing about it on general
+grounds.
+
+</p><p>
+You can settle it by looking at the CONTEXT in which this
+operation actually occurs. If the user wants to adjust the
+position of an object after placing it, and you decide that
+clicking again somewhere places a new object, and if it's
+legal to pile objects up in the same place, then you have
+trouble. How will you select an object for purposes of
+adjustment if a click means "put another object down"? On the
+other hand, if your tasks don't require much adjustment, but
+do require repeated placement of the same kind of object,
+you're pushed the other way. Our tasks seemed to us to
+require adjustment more than repeated placement, so we went
+the first way.
+
+</p><p>
+This example brings up an important point about using the
+example tasks. It's important to remember that they are ONLY
+EXAMPLES. Often, as in this case, a decision requires you to
+look beyond the specific examples you have and make a
+judgement about what will be common and what will be
+uncommon. You can't do this just by taking an inventory of
+the specific examples you chose. You can't defend a crummy
+design by saying that it handles all the examples, any more
+than you can defend a crummy design by saying it meets any
+other kind of spec.
+
+</p><p>
+We represented our scenarios with STORYBOARDS, which are
+sequences of sketches showing what the screen would show, and
+what actions the user would take, at key points in each task.
+We then showed these to the users, stepping them through the
+tasks. Here we saw a big gain from the use of the sample
+tasks. They allowed us to tell the users what they really
+wanted to know about our proposed design, which was what it
+would be like to use it to do real work. A traditional design
+description, showing all the screens, menus, and so forth,
+out of the context of a real task, is pretty meaningless to
+users, and so they can't provide any useful reaction to it.
+Our scenarios let users see what the design would really give
+them.
+
+</p><p>
+"This sample task idea seems crazy. What if you leave
+something out? And won't your design be distorted by the
+examples you happen to choose? And how do you know the design
+will work for anything OTHER than your examples?" There is a
+risk with any spec technique that you will leave something
+out. In choosing your sample tasks you do whatever you would
+do in any other method to be sure the important requirements
+are reflected. As noted above, you treat the sample tasks as
+examples. Using them does not relieve you of the
+responsibility of thinking about how other tasks would be
+handled. But it's better to be sure that your design can do a
+good job on at least some real tasks, and that it has a good
+chance of working on other tasks, because you've tried to
+design for generality, than to trust exclusively in your
+ability to design for generality. It's the same as that point
+about users: if a system is supposed to be good for EVERYBODY
+you'd better be sure it's good for SOMEBODY.
+
+</p><div class="hyper">
+<h3 class="hyper"><a name="h4">HyperTopic: Integrating Task-Centered Design and Traditional Requirements Analysis</a></h3>
+
+If you're working for a small company or developing small
+projects for a few internal users at a large firm, the task-
+centered design approach may be all you need.  But for larger
+projects, you'll probably have to work within the structure
+of an established software engineering procedure.  How to
+apply task-centered principles within that procedure will
+vary depending on the software engineering approach used at
+your company.  But we can give some general guidelines that
+are especially useful in the early stages of development.
+
+<p>
+Most large software projects are developed using some version
+of the "waterfall method."  The basic waterfall method
+assumes that a piece of software is produced through a
+clearly defined series of steps, or "phases":
+
+</p><ul>
+	<li>Requirements analysis
+	</li><li>Specification
+	</li><li>Planning
+	</li><li>Design
+	</li><li>Implementation
+	</li><li>Integration
+	</li><li>Maintenance
+</li></ul>
+
+<p>
+In its strictest version, this method states that each phase
+must be completed before the next phase can begin, and that
+there's no chance (and no reason) to return to an earlier
+phase to redefine a system as its being developed.
+
+</p><p>
+Most software engineering specialists today realize that this
+approach is unrealistic.  It was developed in the era of
+punch cards and mainframes, so it doesn't have a real place
+for considerations of interactive systems.  Even in the
+mainframe era it was less than successful, because the
+definition of what's required inevitably changes as the
+system is developed.
+
+</p><p>
+Various modifications to the phases of the waterfall method
+and their interaction have been proposed.  However, it's not
+unusual to find productive software development environments
+that still incorporate many steps of the method, partly for
+historical reasons and partly because the approach helps to
+define responsibilities and costs for various activities
+within a large software project.  With some effort, the task-
+centered design approach can supplement the early stages of a
+waterfall environment.
+
+</p><p>
+<b>Requirements Analysis</b>
+
+</p><p>
+The waterfall method's initial "Requirements Analysis" phase
+describes the activity of defining the precise needs that the
+software must meet.  These needs are defined in terms of the
+users and the their environment, with intentionally no
+reference to how the needs will actually be met by the
+proposed system.
+
+</p><p>
+This is exactly the same approach as we suggest for
+describing representative tasks:  define what the user needs
+to do, not how it will be done.  The difference is that the
+representative tasks in task-centered design are complete,
+real, detailed examples of things users actually need to do.
+The requirements produced by traditional software
+engineering, on the other hand, are abstract descriptions of
+parts of those representative tasks.
+
+</p><p>
+This is an important distinction, and we want to emphasize it
+most strongly:
+
+</p><ul>
+      Task-centered design focuses on REAL, COMPLETE,
+      REPRESENTATIVE tasks.  Traditional requirements
+      analysis looks at ABSTRACT, PARTIAL task elements.
+</ul>
+
+<p>
+Here's an example.  For a document processing system, a
+representative task might be to produce this book.  Not to
+produce "a book," but to produce "version 1 of Task-Centered
+Design, by Lewis and Rieman."  That representative task
+supplements the detailed partial tasks collected in
+traditional requirements analysis, which might include things
+such as "key in text" and "check spelling" and "print the
+document."
+
+</p><p>
+So if you're doing a traditional requirements analysis, you
+need to supplement it by collecting some representative
+tasks.  The two approaches complement each other nicely.  The
+traditional approach helps to ensure that all important
+functions of the system are recognized, while the
+representative tasks in the task-centered approach provide an
+integrated picture of those functions working together.
+
+</p><p>
+<b>Specification</b>
+
+</p><p>
+In the traditional "Specifications" phase of software
+engineering, the requirements are used to produce a
+description of the system that includes the details needed by
+the software designers and implementers.  The customers --
+the end users -- can then sign off on this document, and the
+software team can begin to plan and design the actual system.
+This sounds like great stuff from a management point of view,
+but it practice it often falls apart.  Users aren't experts
+at reading specifications documents, and they have trouble
+imagining how the system will actually perform.  Various
+alternatives to written specifications have been proposed,
+including prototypes and a more iterative approach to design,
+both of which fit nicely into the task-centered design
+approach.
+
+</p><p>
+However, even if you're still doing written specifications,
+the representative tasks can be of value.  Include those
+tasks, with some details about how they will be performed, in
+the specification document.  The big win here is that the
+customers will be able to understand this part of the
+specifications.  It will also force the specifications writer
+to consider a complete task, which may catch problems that
+could be missed when single functions are considered
+individually.
+
+</p><p>
+Notice that the description of the proposed software hasn't
+quite reached the stage where you could do a complete
+"scenario," as we have defined it.  Many of the details, such
+as the names of menu items, the distribution of functionality
+among dialog boxes, etc., remain to be defined.  But a high-
+level overview of the interactions can be described, and
+doing this well is a test of your understanding of the users'
+needs.
+
+</p><p>
+<b>Planning, Design, and Beyond</b>
+
+</p><p>
+From this point on, the strict waterfall method and the task-
+centered design approach take very different paths.  Many of
+the principles we describe can be used in doing the first
+pass at system and interface design, but inherent in the
+task-centered approach is the need for iteration: it's very
+rare that the first design of an interface is a complete
+success.  Several iterations of testing and redesign are
+required, and that may well involve jumping backward through
+the phases of the waterfall method, something that's
+traditionally not allowed.  Fortunately, the strict forward-
+moving method is seldom adhered to today.  Most development
+environments recognize the need for some iteration, and that
+should make it possible to accommodate the general spirit of
+the task-centered approach.
+
+</p></div>
+
+<br>
+<table summary="Page Footer" bgcolor="#DDDDCC" width="100%" border="0" cellpadding="5" cellspacing="0">
+	<tbody><tr><td align="center" style="font-size: 80%">
+		<a href="http://hcibib.org/tcuid/index.html#notice" title="Please see shareware notice">Copyright © 1993,1994 Lewis &amp; Rieman</a>
+	</td></tr>
+</tbody></table>
+<div align="center">
+<table summary="Navigation Menu" border="0" cellpadding="2" cellspacing="0"><tbody><tr valign="top">
+<td>
+<a accesskey="k" href="http://hcibib.org/tcuid/chap-2.html#endnav"><img src="./aula06-Task-Centered User Interface Design   2. Getting to Know Users and Their Tasks_files/2x2.gif" border="0" height="1" width="1" alt="skip navigation"></a>
+</td>
+<td align="center"><a href="http://hcibib.org/tcuid/index.html" title="Main page and Shareware Notice"><font size="1">Contents</font></a></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/chap-0.html" title="Foreword"><font size="1">Foreword</font></a></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/chap-1.html" title="1. The Task-Centered Design Process"><font size="1">Process</font></a></td>
+<td valign="middle">|</td>
+<td align="center" bgcolor="#DDDDCC" style="font-size: 80%"><b title="2. Getting to Know Users and Their Tasks">Users&amp;Tasks</b></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/chap-3.html" title="3. Creating the Initial Design"><font size="1">Design</font></a></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/chap-4.html" title="4. Evaluating the Design Without Users"><font size="1">Inspections</font></a></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/chap-5.html" title="5. Evaluating the Design With Users"><font size="1">User-testing</font></a></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/chap-6.html" title="6. User Interface Management and Prototyping Systems"><font size="1">Tools</font></a></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/chap-7.html" title="7. The Extended Interface"><font size="1">Documentation</font></a></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/appx-l.html" title="L. What Can You Borrow?"><font size="1">Legal</font></a></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/appx-m.html" title="M. Managing User Interface Development"><font size="1">Managing</font></a></td>
+<td valign="middle">|</td>
+<td align="center"><a href="http://hcibib.org/tcuid/exercises.html" title="Excercises"><font size="1">Exercises</font></a></td>
+<td valign="middle">|</td>
+<td><font size="1"><a href="http://hcibib.org/tcuid/chap-2.html#top">Top</a></font></td>
+</tr></tbody></table></div>
+
+
+
+</body></html>

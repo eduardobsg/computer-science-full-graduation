@@ -1,0 +1,10 @@
+Descreva de tres a cinco objetos encontrados na Natureza que exibam
+padroes fractais. Em cada caso, explique a estrutura que faz desse 
+padrao um fractal, e estime a sua dimensao fractal. Inclua fotos ou 
+imagens dos objetos fractais escolhidos. Construa um  fractal a partir 
+de uma linguagem de geracao de fractais, como a Linguagem L ou outros 
+sistemas iterados, cuja forma tambem seja assemelhada 'as encontradas 
+na Natureza, como , por exemplo, nuvens, montanhas , arvores e etc. 
+
+Fica opcional gerar uma paisagem contendo diversos padroes gerados por 
+linguagens de geracao de fractais.

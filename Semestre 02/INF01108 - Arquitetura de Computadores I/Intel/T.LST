@@ -1,0 +1,896 @@
+Turbo Assembler	 Version 3.2	    06/12/10 11:31:09	    Page 1
+t.ASM
+
+
+
+      1					      assume cs:codigo,ds:dados,es:dados,ss:pilha
+      2
+      3	      =000D		     CR	      EQU    0DH ; constante - codigo ASCII do caractere "carriage return"
+      4	      =000A		     LF	      EQU    0AH ; constante - codigo ASCII do caractere "line feed"
+      5
+      6				     ; definicao do segmento de	dados do programa
+      7	0000			     dados    segment
+      8
+      9	0000			     tela:
+     10	0000  20 20 20 20 20 20	20+  db	'				      ³³					 '
+     11	      20 20 20 20 20 20	20+
+     12	      20 20 20 20 20 20	20+
+     13	      20 20 20 20 20 20	20+
+     14	      20 20 20 20 20 20	20+
+     15	      20 20 B3 B3 20 20	20+
+     16	      20 20 20 20 20 20	20+
+     17	      20 20 20 20 20 20	20+
+     18	      20 20 20 20 20 20	20+
+     19	      20 20 20 20 20 20	20+
+     20	      20 20 20 20 20 20	20+
+     21	      20 20 20
+     22	0050  20 20 20 20 20 20	4A+  db	'      JOGO DAS	RAINHAS		      ³³	    Partida			 '
+     23	      4F 47 4F 20 44 41	53+
+     24	      20 52 41 49 4E 48	41+
+     25	      53 20 20 20 20 20	20+
+     26	      20 20 20 20 20 20	20+
+     27	      20 20 B3 B3 20 20	20+
+     28	      20 20 20 20 20 20	20+
+     29	      20 20 50 61 72 74	69+
+     30	      64 61 20 20 20 20	20+
+     31	      20 20 20 20 20 20	20+
+     32	      20 20 20 20 20 20	20+
+     33	      20 20 20
+     34	00A0  20 20 20 41 75 74	6F+  db	'   Autor: //V¡tor De Ara£jo, 173285  ³³					 '
+     35	      72 3A 20 2F 2F 56	A1+
+     36	      74 6F 72 20 44 65	20+
+     37	      41 72 61 A3 6A 6F	2C+
+     38	      20 31 37 33 32 38	35+
+     39	      20 20 B3 B3 20 20	20+
+     40	      20 20 20 20 20 20	20+
+     41	      20 20 20 20 20 20	20+
+     42	      20 20 20 20 20 20	20+
+     43	      20 20 20 20 20 20	20+
+     44	      20 20 20 20 20 20	20+
+     45	      20 20 20
+     46	00F0  20 20 20 20 20 20	20+  db	'				      ³³     Jogador	  Computador		 '
+     47	      20 20 20 20 20 20	20+
+     48	      20 20 20 20 20 20	20+
+     49	      20 20 20 20 20 20	20+
+     50	      20 20 20 20 20 20	20+
+     51	      20 20 B3 B3 20 20	20+
+     52	      20 20 4A 6F 67 61	64+
+     53	      6F 72 20 20 20 20	20+
+     54	      20 43 6F 6D 70 75	74+
+     55	      61 64 6F 72 20 20	20+
+     56	      20 20 20 20 20 20	20+
+     57	      20 20 20
+Turbo Assembler	 Version 3.2	    06/12/10 11:31:09	    Page 2
+t.ASM
+
+
+
+     58	0140  20 20 20 20 20 20	20+  db	'				      ³³       ..	     ..			 '
+     59	      20 20 20 20 20 20	20+
+     60	      20 20 20 20 20 20	20+
+     61	      20 20 20 20 20 20	20+
+     62	      20 20 20 20 20 20	20+
+     63	      20 20 B3 B3 20 20	20+
+     64	      20 20 20 20 2E 2E	20+
+     65	      20 20 20 20 20 20	20+
+     66	      20 20 20 20 2E 2E	20+
+     67	      20 20 20 20 20 20	20+
+     68	      20 20 20 20 20 20	20+
+     69	      20 20 20
+     70	0190  20 20 20 20 20 20	41+  db	'      A  B  C	D  E  F	 G  H	      ³³       ..	     ..			 '
+     71	      20 20 42 20 20 43	20+
+     72	      20 44 20 20 45 20	20+
+     73	      46 20 20 47 20 20	48+
+     74	      20 20 20 20 20 20	20+
+     75	      20 20 B3 B3 20 20	20+
+     76	      20 20 20 20 2E 2E	20+
+     77	      20 20 20 20 20 20	20+
+     78	      20 20 20 20 2E 2E	20+
+     79	      20 20 20 20 20 20	20+
+     80	      20 20 20 20 20 20	20+
+     81	      20 20 20
+     82	01E0  20 20 20 20 20 DA	C4+  db	'     ÚÄÄÂÄÄÂÄÄÂÄÄÂÄÄÂÄÄÂÄÄÂÄÄ¿	      ³³       ..	     ..			 '
+     83	      C4 C2 C4 C4 C2 C4	C4+
+     84	      C2 C4 C4 C2 C4 C4	C2+
+     85	      C4 C4 C2 C4 C4 C2	C4+
+     86	      C4 BF 20 20 20 20	20+
+     87	      20 20 B3 B3 20 20	20+
+     88	      20 20 20 20 2E 2E	20+
+     89	      20 20 20 20 20 20	20+
+     90	      20 20 20 20 2E 2E	20+
+     91	      20 20 20 20 20 20	20+
+     92	      20 20 20 20 20 20	20+
+     93	      20 20 20
+     94	0230  20 20 20 38 20 B3	20+  db	'   8 ³	 ³  ³  ³  ³  ³	³  ³  ³	8     ³³       ..	     ..			 '
+     95	      20 B3 20 20 B3 20	20+
+     96	      B3 20 20 B3 20 20	B3+
+     97	      20 20 B3 20 20 B3	20+
+     98	      20 B3 20 38 20 20	20+
+     99	      20 20 B3 B3 20 20	20+
+    100	      20 20 20 20 2E 2E	20+
+    101	      20 20 20 20 20 20	20+
+    102	      20 20 20 20 2E 2E	20+
+    103	      20 20 20 20 20 20	20+
+    104	      20 20 20 20 20 20	20+
+    105	      20 20 20
+    106	0280  20 20 20 20 20 C3	C4+  db	'     ÃÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄ´	      ³³					 '
+    107	      C4 C5 C4 C4 C5 C4	C4+
+    108	      C5 C4 C4 C5 C4 C4	C5+
+    109	      C4 C4 C5 C4 C4 C5	C4+
+    110	      C4 B4 20 20 20 20	20+
+    111	      20 20 B3 B3 20 20	20+
+    112	      20 20 20 20 20 20	20+
+    113	      20 20 20 20 20 20	20+
+    114	      20 20 20 20 20 20	20+
+Turbo Assembler	 Version 3.2	    06/12/10 11:31:09	    Page 3
+t.ASM
+
+
+
+    115	      20 20 20 20 20 20	20+
+    116	      20 20 20 20 20 20	20+
+    117	      20 20 20
+    118	02D0  20 20 20 37 20 B3	20+  db	'   7 ³	 ³  ³  ³  ³  ³	³  ³  ³	7     ³³					 '
+    119	      20 B3 20 20 B3 20	20+
+    120	      B3 20 20 B3 20 20	B3+
+    121	      20 20 B3 20 20 B3	20+
+    122	      20 B3 20 37 20 20	20+
+    123	      20 20 B3 B3 20 20	20+
+    124	      20 20 20 20 20 20	20+
+    125	      20 20 20 20 20 20	20+
+    126	      20 20 20 20 20 20	20+
+    127	      20 20 20 20 20 20	20+
+    128	      20 20 20 20 20 20	20+
+    129	      20 20 20
+    130	0320  20 20 20 20 20 C3	C4+  db	'     ÃÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄ´	      ³³ Comandos				 '
+    131	      C4 C5 C4 C4 C5 C4	C4+
+    132	      C5 C4 C4 C5 C4 C4	C5+
+    133	      C4 C4 C5 C4 C4 C5	C4+
+    134	      C4 B4 20 20 20 20	20+
+    135	      20 20 B3 B3 20 43	6F+
+    136	      6D 61 6E 64 6F 73	20+
+    137	      20 20 20 20 20 20	20+
+    138	      20 20 20 20 20 20	20+
+    139	      20 20 20 20 20 20	20+
+    140	      20 20 20 20 20 20	20+
+    141	      20 20 20
+    142	0370  20 20 20 36 20 B3	20+  db	'   6 ³	 ³  ³  ³  ³  ³	³  ³  ³	6     ³³     A1,A2,..,H8: Posicionar rainha	 '
+    143	      20 B3 20 20 B3 20	20+
+    144	      B3 20 20 B3 20 20	B3+
+    145	      20 20 B3 20 20 B3	20+
+    146	      20 B3 20 36 20 20	20+
+    147	      20 20 B3 B3 20 20	20+
+    148	      20 20 41 31 2C 41	32+
+    149	      2C 2E 2E 2C 48 38	3A+
+    150	      20 50 6F 73 69 63	69+
+    151	      6F 6E 61 72 20 72	61+
+    152	      69 6E 68 61 20 20	20+
+    153	      20 20 20
+    154	03C0  20 20 20 20 20 C3	C4+  db	'     ÃÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄ´	      ³³     N:	iniciar	novo jogo		 '
+    155	      C4 C5 C4 C4 C5 C4	C4+
+    156	      C5 C4 C4 C5 C4 C4	C5+
+    157	      C4 C4 C5 C4 C4 C5	C4+
+    158	      C4 B4 20 20 20 20	20+
+    159	      20 20 B3 B3 20 20	20+
+    160	      20 20 4E 3A 20 69	6E+
+    161	      69 63 69 61 72 20	6E+
+    162	      6F 76 6F 20 6A 6F	67+
+    163	      6F 20 20 20 20 20	20+
+    164	      20 20 20 20 20 20	20+
+    165	      20 20 20
+    166	0410  20 20 20 35 20 B3	20+  db	'   5 ³	 ³  ³  ³  ³  ³	³  ³  ³	5     ³³     R:	carregar jogo			 '
+    167	      20 B3 20 20 B3 20	20+
+    168	      B3 20 20 B3 20 20	B3+
+    169	      20 20 B3 20 20 B3	20+
+    170	      20 B3 20 35 20 20	20+
+    171	      20 20 B3 B3 20 20	20+
+Turbo Assembler	 Version 3.2	    06/12/10 11:31:09	    Page 4
+t.ASM
+
+
+
+    172	      20 20 52 3A 20 63	61+
+    173	      72 72 65 67 61 72	20+
+    174	      6A 6F 67 6F 20 20	20+
+    175	      20 20 20 20 20 20	20+
+    176	      20 20 20 20 20 20	20+
+    177	      20 20 20
+    178	0460  20 20 20 20 20 C3	C4+  db	'     ÃÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄ´	      ³³     S:	salvar jogo			 '
+    179	      C4 C5 C4 C4 C5 C4	C4+
+    180	      C5 C4 C4 C5 C4 C4	C5+
+    181	      C4 C4 C5 C4 C4 C5	C4+
+    182	      C4 B4 20 20 20 20	20+
+    183	      20 20 B3 B3 20 20	20+
+    184	      20 20 53 3A 20 73	61+
+    185	      6C 76 61 72 20 6A	6F+
+    186	      67 6F 20 20 20 20	20+
+    187	      20 20 20 20 20 20	20+
+    188	      20 20 20 20 20 20	20+
+    189	      20 20 20
+    190	04B0  20 20 20 34 20 B3	20+  db	'   4 ³	 ³  ³  ³  ³  ³	³  ³  ³	4     ³³     M:	mostrar	casas ocupadas		 '
+    191	      20 B3 20 20 B3 20	20+
+    192	      B3 20 20 B3 20 20	B3+
+    193	      20 20 B3 20 20 B3	20+
+    194	      20 B3 20 34 20 20	20+
+    195	      20 20 B3 B3 20 20	20+
+    196	      20 20 4D 3A 20 6D	6F+
+    197	      73 74 72 61 72 20	63+
+    198	      61 73 61 73 20 6F	63+
+    199	      75 70 61 64 61 73	20+
+    200	      20 20 20 20 20 20	20+
+    201	      20 20 20
+    202	0500  20 20 20 20 20 C3	C4+  db	'     ÃÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄ´	      ³³     T:	terminar o programa		 '
+    203	      C4 C5 C4 C4 C5 C4	C4+
+    204	      C5 C4 C4 C5 C4 C4	C5+
+    205	      C4 C4 C5 C4 C4 C5	C4+
+    206	      C4 B4 20 20 20 20	20+
+    207	      20 20 B3 B3 20 20	20+
+    208	      20 20 54 3A 20 74	65+
+    209	      72 6D 69 6E 61 72	20+
+    210	      6F 20 70 72 6F 67	72+
+    211	      61 6D 61 20 20 20	20+
+    212	      20 20 20 20 20 20	20+
+    213	      20 20 20
+    214	0550  20 20 20 33 20 B3	20+  db	'   3 ³	 ³  ³  ³  ³  ³	³  ³  ³	3     ³³					 '
+    215	      20 B3 20 20 B3 20	20+
+    216	      B3 20 20 B3 20 20	B3+
+    217	      20 20 B3 20 20 B3	20+
+    218	      20 B3 20 33 20 20	20+
+    219	      20 20 B3 B3 20 20	20+
+    220	      20 20 20 20 20 20	20+
+    221	      20 20 20 20 20 20	20+
+    222	      20 20 20 20 20 20	20+
+    223	      20 20 20 20 20 20	20+
+    224	      20 20 20 20 20 20	20+
+    225	      20 20 20
+    226	05A0  20 20 20 20 20 C3	C4+  db	'     ÃÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄ´	      ³³ Entrada:				 '
+    227	      C4 C5 C4 C4 C5 C4	C4+
+    228	      C5 C4 C4 C5 C4 C4	C5+
+Turbo Assembler	 Version 3.2	    06/12/10 11:31:09	    Page 5
+t.ASM
+
+
+
+    229	      C4 C4 C5 C4 C4 C5	C4+
+    230	      C4 B4 20 20 20 20	20+
+    231	      20 20 B3 B3 20 45	6E+
+    232	      74 72 61 64 61 3A	20+
+    233	      20 20 20 20 20 20	20+
+    234	      20 20 20 20 20 20	20+
+    235	      20 20 20 20 20 20	20+
+    236	      20 20 20 20 20 20	20+
+    237	      20 20 20
+    238	05F0  20 20 20 32 20 B3	20+  db	'   2 ³	 ³  ³  ³  ³  ³	³  ³  ³	2     ³³					 '
+    239	      20 B3 20 20 B3 20	20+
+    240	      B3 20 20 B3 20 20	B3+
+    241	      20 20 B3 20 20 B3	20+
+    242	      20 B3 20 32 20 20	20+
+    243	      20 20 B3 B3 20 20	20+
+    244	      20 20 20 20 20 20	20+
+    245	      20 20 20 20 20 20	20+
+    246	      20 20 20 20 20 20	20+
+    247	      20 20 20 20 20 20	20+
+    248	      20 20 20 20 20 20	20+
+    249	      20 20 20
+    250	0640  20 20 20 20 20 C3	C4+  db	'     ÃÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄÅÄÄ´	      ³³					 '
+    251	      C4 C5 C4 C4 C5 C4	C4+
+    252	      C5 C4 C4 C5 C4 C4	C5+
+    253	      C4 C4 C5 C4 C4 C5	C4+
+    254	      C4 B4 20 20 20 20	20+
+    255	      20 20 B3 B3 20 20	20+
+    256	      20 20 20 20 20 20	20+
+    257	      20 20 20 20 20 20	20+
+    258	      20 20 20 20 20 20	20+
+    259	      20 20 20 20 20 20	20+
+    260	      20 20 20 20 20 20	20+
+    261	      20 20 20
+    262	0690  20 20 20 31 20 B3	20+  db	'   1 ³	 ³  ³  ³  ³  ³	³  ³  ³	1     ³³ Mensagens:				 '
+    263	      20 B3 20 20 B3 20	20+
+    264	      B3 20 20 B3 20 20	B3+
+    265	      20 20 B3 20 20 B3	20+
+    266	      20 B3 20 31 20 20	20+
+    267	      20 20 B3 B3 20 4D	65+
+    268	      6E 73 61 67 65 6E	73+
+    269	      3A 20 20 20 20 20	20+
+    270	      20 20 20 20 20 20	20+
+    271	      20 20 20 20 20 20	20+
+    272	      20 20 20 20 20 20	20+
+    273	      20 20 20
+    274	06E0  20 20 20 20 20 C0	C4+  db	'     ÀÄÄÁÄÄÁÄÄÁÄÄÁÄÄÁÄÄÁÄÄÁÄÄÙ	      ³³					 '
+    275	      C4 C1 C4 C4 C1 C4	C4+
+    276	      C1 C4 C4 C1 C4 C4	C1+
+    277	      C4 C4 C1 C4 C4 C1	C4+
+    278	      C4 D9 20 20 20 20	20+
+    279	      20 20 B3 B3 20 20	20+
+    280	      20 20 20 20 20 20	20+
+    281	      20 20 20 20 20 20	20+
+    282	      20 20 20 20 20 20	20+
+    283	      20 20 20 20 20 20	20+
+    284	      20 20 20 20 20 20	20+
+    285	      20 20 20
+Turbo Assembler	 Version 3.2	    06/12/10 11:31:09	    Page 6
+t.ASM
+
+
+
+    286	0730  20 20 20 20 20 20	41+  db	'      A  B  C	D  E  F	 G  H	      ³³					 '
+    287	      20 20 42 20 20 43	20+
+    288	      20 44 20 20 45 20	20+
+    289	      46 20 20 47 20 20	48+
+    290	      20 20 20 20 20 20	20+
+    291	      20 20 B3 B3 20 20	20+
+    292	      20 20 20 20 20 20	20+
+    293	      20 20 20 20 20 20	20+
+    294	      20 20 20 20 20 20	20+
+    295	      20 20 20 20 20 20	20+
+    296	      20 20 20 20 20 20	20+
+    297	      20 20 20
+    298	0780  20 20 20 20 20 20	20+  db	'				      ³³					$'
+    299	      20 20 20 20 20 20	20+
+    300	      20 20 20 20 20 20	20+
+    301	      20 20 20 20 20 20	20+
+    302	      20 20 20 20 20 20	20+
+    303	      20 20 B3 B3 20 20	20+
+    304	      20 20 20 20 20 20	20+
+    305	      20 20 20 20 20 20	20+
+    306	      20 20 20 20 20 20	20+
+    307	      20 20 20 20 20 20	20+
+    308	      20 20 20 20 20 20	20+
+    309	      20 20 24
+    310	07D0  20 20 B3 24	     espaco db '  ³$'
+    311
+    312	07D4  52 52 B3 24	     rainha db 'RR³$'
+    313	07D8  2E 2E B3 24	     ponto  db '..³$'
+    314	07DC  20 20 08 08 24	     clear  db '  ', 8,	8, '$'
+    315	07E1  08 20 08 24	     back   db 8, ' ', 8, '$'
+    316	07E5  00		     m_ligado db 0
+    317	07E6  63 61 73 61 20 65	73+  msg_ocupada  db 'casa est 	ocupada!	     $'
+    318	      74 A0 20 6F 63 75	70+
+    319	      61 64 61 21 20 20	20+
+    320	      20 20 20 20 20 20	20+
+    321	      20 20 20 24
+    322	0806  63 61 73 61 20 61	6D+  msg_ameacada db 'casa amea‡ada por	outra rainha!$'
+    323	      65 61 87 61 64 61	20+
+    324	      70 6F 72 20 6F 75	74+
+    325	      72 61 20 72 61 69	6E+
+    326	      68 61 21 24
+    327	0826  70 6F 73 69 87 C6	6F+  msg_invalido db 'posi‡Æo inv lido		     $'
+    328	      20 69 6E 76 A0 6C	69+
+    329	      64 6F 20 20 20 20	20+
+    330	      20 20 20 20 20 20	20+
+    331	      20 20 20 24
+    332
+    333	0846  09*(2A)		     linhas  db	9 dup(42)
+    334	084F  09*(2A)		     colunas db	9 dup(42)
+    335	0858  0F*(2A)		     diag_e db 15 dup(42)
+    336	0867  0F*(2A)		     diag_d db 15 dup(42)
+    337
+    338
+    339
+    340	0876			     dados ends
+    341
+    342	0000			     pilha segment stack
+Turbo Assembler	 Version 3.2	    06/12/10 11:31:09	    Page 7
+t.ASM
+
+
+
+    343
+    344
+    345	0000  0400*(00)		     db	1024 dup(0)
+    346
+    347	0400			     pilha ends
+    348
+    349				     escreve macro mensagem
+    350						     push dx
+    351						     lea dx, mensagem
+    352						     mov    ah,9	       ; funcao	exibir mensagem	no AH
+    353					     int    21h		       ; chamada do DOS
+    354						     pop dx
+    355				     endm
+    356
+    357				     getch macro
+    358						      mov ah, 8
+    359						      int 21h
+    360				     endm
+    361				     ;;	escreve	caractere no al	o valor	ascII da tecla
+    362
+    363				     putch macro char
+    364						      push dx
+    365						      mov ah, 2
+    366						      mov dl, char
+    367						      int 21h
+    368						      pop dx
+    369				     endm
+    370
+    371
+    372
+    373				     posiciona macro lin, col
+    374						      push   dx
+    375						      push   bx
+    376						      push   ax
+    377					      mov    dh,lin	     ; linha zero
+    378					      mov    dl,col	     ; coluna zero
+    379					      mov    bh,0	     ; numero da pagina	(zero =	primeira)
+    380					      mov    ah,2	 ; set cursor position
+    381					      int    10h	  ; chamada BIOS (video)
+    382						      pop    ax
+    383						      pop    bx
+    384						      pop    dx
+    385				     endm
+    386
+    387
+    388				     ;;	aqui come‡a o codigo. eee.
+    389
+    390	0000			     codigo segment
+    391
+    392	0000			     inicio:  ;	CS e IP	sao inicializados com este endereco
+    393	0000  B8 0000s			      mov    ax,dados ;	inicializa DS
+    394	0003  8E D8			      mov    ds,ax    ;	com endereco do	segmento DADOS
+    395	0005  8E C0			      mov    es,ax    ;	idem em	ES
+    396
+    397
+    398					     posiciona 0,0
+1   399	0007  52				      push   dx
+Turbo Assembler	 Version 3.2	    06/12/10 11:31:09	    Page 8
+t.ASM
+
+
+
+1   400	0008  53				      push   bx
+1   401	0009  50				      push   ax
+1   402	000A  B6 00			      mov    dh,0	     ; linha zero
+1   403	000C  B2 00			      mov    dl,0	     ; coluna zero
+1   404	000E  B7 00			      mov    bh,0	     ; numero da pagina	(zero =	primeira)
+1   405	0010  B4 02			      mov    ah,2	 ; set cursor position
+1   406	0012  CD 10			      int    10h	  ; chamada BIOS (video)
+1   407	0014  58				      pop    ax
+1   408	0015  5B				      pop    bx
+1   409	0016  5A				      pop    dx
+    410					     escreve tela
+1   411	0017  52				     push dx
+1   412	0018  BA 0000r				     lea dx, tela
+1   413	001B  B4 09				     mov    ah,9	       ; funcao	exibir tela no AH
+1   414	001D  CD 21			     int    21h		       ; chamada do DOS
+1   415	001F  5A				     pop dx
+    416	0020  E8 01A6			     call zera_tabuleiro
+    417	0023  B6 04			     mov dh, 4
+    418	0025  B2 05			     mov dl, 5
+    419	0027  E8 01AA			     call insere_rainha
+    420	002A  B6 01			     mov dh, 1
+    421	002C  B2 07			     mov dl, 7
+    422	002E  E8 01A3			     call insere_rainha
+    423
+    424	0031  E8 0138			     call atualiza
+    425	0034  E8 0005			     call interface
+    426
+    427	0037			     fim:
+    428				     ; retorno ao DOS com codigo de retorno 0 no AL (fim normal)
+    429	0037  B8 4C00			 mov	ax,4c00h	   ; funcao retornar ao	DOS no AH
+    430	003A  CD 21			 int	21h		   ; chamada do	DOS
+    431
+    432
+    433
+    434
+    435
+    436
+    437	003C			     interface proc
+    438	003C  B1 00				     mov cl, 0
+    439						     posiciona 18, 49
+1   440	003E  52				      push   dx
+1   441	003F  53				      push   bx
+1   442	0040  50				      push   ax
+1   443	0041  B6 12			      mov    dh,18	     ; linha zero
+1   444	0043  B2 31			      mov    dl,49	     ; coluna zero
+1   445	0045  B7 00			      mov    bh,0	     ; numero da pagina	(zero =	primeira)
+1   446	0047  B4 02			      mov    ah,2	 ; set cursor position
+1   447	0049  CD 10			      int    10h	  ; chamada BIOS (video)
+1   448	004B  58				      pop    ax
+1   449	004C  5B				      pop    bx
+1   450	004D  5A				      pop    dx
+    451						     escreve clear
+1   452	004E  52				     push dx
+1   453	004F  BA 07DCr				     lea dx, clear
+1   454	0052  B4 09				     mov    ah,9	       ; funcao	exibir clear no	AH
+1   455	0054  CD 21			     int    21h		       ; chamada do DOS
+1   456	0056  5A				     pop dx
+Turbo Assembler	 Version 3.2	    06/12/10 11:31:09	    Page 9
+t.ASM
+
+
+
+    457
+    458	0057			     il:
+    459						     getch
+1   460	0057  B4 08				      mov ah, 8
+1   461	0059  CD 21				      int 21h
+    462	005B  3C 08				     cmp al, 8
+    463	005D  74 21				     je	eh_back
+    464	005F  3C 0D				     cmp al, 13
+    465	0061  74 2F				     je	eh_enter
+    466	0063  80 F9 02				     cmp cl, 2
+    467	0066  74 EF				     je	il
+    468	0068  80 F9 00				     cmp cl, 0
+    469	006B  74 05				     je	grava_no_dh
+    470	006D  8A D0				     mov dl, al
+    471	006F  EB 03 90				     jmp batata
+    472	0072			     grava_no_dh:
+    473	0072  8A F0				     mov dh, al
+    474	0074			     batata:
+    475	0074  FE C1				     inc cl
+    476						     putch al
+1   477	0076  52				      push dx
+1   478	0077  B4 02				      mov ah, 2
+1   479	0079  8A D0				      mov dl, al
+1   480	007B  CD 21				      int 21h
+1   481	007D  5A				      pop dx
+    482	007E  EB D7				     jmp il
+    483	0080			     eh_back:
+    484	0080  80 F9 00				     cmp cl, 0
+    485	0083  74 D2				     je	il
+    486						     escreve back
+1   487	0085  52				     push dx
+1   488	0086  BA 07E1r				     lea dx, back
+1   489	0089  B4 09				     mov    ah,9	       ; funcao	exibir back no AH
+1   490	008B  CD 21			     int    21h		       ; chamada do DOS
+1   491	008D  5A				     pop dx
+    492	008E  FE C9				     dec cl
+    493	0090  EB C5				     jmp il
+    494	0092			     eh_enter:
+    495	0092  80 F9 01				     cmp cl, 1
+    496	0095  7F 1E				     jg	coordenada
+    497	0097  7C BE				     jl	il
+    498	0099			     comandos:
+    499	0099  C3				     ret
+    500	009A			     invalido:
+    501						     posiciona 22, 42
+1   502	009A  52				      push   dx
+1   503	009B  53				      push   bx
+1   504	009C  50				      push   ax
+1   505	009D  B6 16			      mov    dh,22	     ; linha zero
+1   506	009F  B2 2A			      mov    dl,42	     ; coluna zero
+1   507	00A1  B7 00			      mov    bh,0	     ; numero da pagina	(zero =	primeira)
+1   508	00A3  B4 02			      mov    ah,2	 ; set cursor position
+1   509	00A5  CD 10			      int    10h	  ; chamada BIOS (video)
+1   510	00A7  58				      pop    ax
+1   511	00A8  5B				      pop    bx
+1   512	00A9  5A				      pop    dx
+    513						     escreve msg_invalido
+Turbo Assembler	 Version 3.2	    06/12/10 11:31:09	    Page 10
+t.ASM
+
+
+
+1   514	00AA  52				     push dx
+1   515	00AB  BA 0826r				     lea dx, msg_invalido
+1   516	00AE  B4 09				     mov    ah,9	       ; funcao	exibir msg_invalido no AH
+1   517	00B0  CD 21			     int    21h		       ; chamada do DOS
+1   518	00B2  5A				     pop dx
+    519	00B3  EB 87				     jmp interface
+    520	00B5			     coordenada:
+    521	00B5  80 CE 60				     or	dh, 96
+    522	00B8  80 FE 61				     cmp dh, 'a'
+    523	00BB  7C DD				     jl	     invalido
+    524	00BD  80 FE 68				     cmp dh, 'h'
+    525	00C0  7F D8				     jg	 invalido
+    526	00C2  80 FA 31				     cmp dl, '1'
+    527	00C5  7C D3				     jl	invalido
+    528	00C7  80 FA 38				     cmp dl, '8'
+    529	00CA  7F CE				     jg	invalido
+    530	00CC  80 EE 60				     sub dh, 96
+    531	00CF  80 EA 30				     sub dl, 48
+    532	00D2  E8 004F				     call atacada
+    533	00D5  80 FD 00				     cmp ch, 0
+    534	00D8  74 3C				     je	insere
+    535	00DA  7F 1E				     jg	esta_ocupada
+    536	00DC  7C 00				     jl	esta_ameacada
+    537	00DE			     esta_ameacada:
+    538						     posiciona 22, 42
+1   539	00DE  52				      push   dx
+1   540	00DF  53				      push   bx
+1   541	00E0  50				      push   ax
+1   542	00E1  B6 16			      mov    dh,22	     ; linha zero
+1   543	00E3  B2 2A			      mov    dl,42	     ; coluna zero
+1   544	00E5  B7 00			      mov    bh,0	     ; numero da pagina	(zero =	primeira)
+1   545	00E7  B4 02			      mov    ah,2	 ; set cursor position
+1   546	00E9  CD 10			      int    10h	  ; chamada BIOS (video)
+1   547	00EB  58				      pop    ax
+1   548	00EC  5B				      pop    bx
+1   549	00ED  5A				      pop    dx
+    550						     escreve msg_ameacada
+1   551	00EE  52				     push dx
+1   552	00EF  BA 0806r				     lea dx, msg_ameacada
+1   553	00F2  B4 09				     mov    ah,9	       ; funcao	exibir msg_ameacada no AH
+1   554	00F4  CD 21			     int    21h		       ; chamada do DOS
+1   555	00F6  5A				     pop dx
+    556	00F7  E9 FF42				     jmp interface
+    557	00FA			     esta_ocupada:
+    558						     posiciona 22, 42
+1   559	00FA  52				      push   dx
+1   560	00FB  53				      push   bx
+1   561	00FC  50				      push   ax
+1   562	00FD  B6 16			      mov    dh,22	     ; linha zero
+1   563	00FF  B2 2A			      mov    dl,42	     ; coluna zero
+1   564	0101  B7 00			      mov    bh,0	     ; numero da pagina	(zero =	primeira)
+1   565	0103  B4 02			      mov    ah,2	 ; set cursor position
+1   566	0105  CD 10			      int    10h	  ; chamada BIOS (video)
+1   567	0107  58				      pop    ax
+1   568	0108  5B				      pop    bx
+1   569	0109  5A				      pop    dx
+    570						     escreve msg_ocupada
+Turbo Assembler	 Version 3.2	    06/12/10 11:31:09	    Page 11
+t.ASM
+
+
+
+1   571	010A  52				     push dx
+1   572	010B  BA 07E6r				     lea dx, msg_ocupada
+1   573	010E  B4 09				     mov    ah,9	       ; funcao	exibir msg_ocupada no AH
+1   574	0110  CD 21			     int    21h		       ; chamada do DOS
+1   575	0112  5A				     pop dx
+    576	0113  E9 FF26				     jmp interface
+    577	0116  E8 00BB		     insere: call insere_rainha
+    578	0119  E8 0050				     call atualiza
+    579	011C  E9 FF1D				     jmp interface
+    580
+    581
+    582
+    583
+    584	011F			     interface endp
+    585
+    586
+    587
+    588	011F			     write   proc
+    589					     ; assume que dx aponta para a mensagem
+    590	011F  B4 09			      mov    ah,9		; funcao exibir	mensagem no AH
+    591	0121  CD 21			      int    21h		; chamada do DOS
+    592	0123  C3			      ret
+    593	0124			     write   endp
+    594
+    595
+    596				     ;;	linha dh
+    597				     ;;	coluna dl
+    598
+    599	0124			     atacada proc
+    600	0124  BE 0846r				     lea si, linhas
+    601	0127  B7 00				     mov bh, 0
+    602	0129  8A DE				     mov bl, dh
+    603	012B  8A 20				     mov ah, [si+bx]
+    604	012D  3A E2				     cmp ah, dl
+    605	012F  74 30				     je	ocupada
+    606	0131  80 FC 00				     cmp ah, 0
+    607	0134  75 30				     jne ameacada
+    608	0136  BE 084Fr				     lea si, colunas
+    609	0139  8A DA				     mov bl, dl
+    610	013B  8A 20				     mov ah, [si+bx]
+    611	013D  80 FC 01				     cmp ah, 1
+    612	0140  74 24				     je	ameacada
+    613	0142  8A DE				     mov bl, dh
+    614	0144  2A DA				     sub bl, dl
+    615	0146  80 C3 07				     add bl, 7
+    616	0149  BE 0858r				     lea si, diag_e
+    617	014C  02 20				     add ah, [si+bx]
+    618	014E  8A DE				     mov bl, dh
+    619	0150  02 DA				     add bl, dl
+    620	0152  80 EB 02				     sub bl, 2
+    621	0155  BE 0867r				     lea si, diag_d
+    622	0158  02 20				     add ah, [si+bx]
+    623	015A  75 0A				     jnz ameacada
+    624	015C			     livre:
+    625	015C  B5 00				     mov ch, 0
+    626	015E  EB 0B 90				     jmp fim_atacada
+    627	0161			     ocupada:
+Turbo Assembler	 Version 3.2	    06/12/10 11:31:09	    Page 12
+t.ASM
+
+
+
+    628	0161  B5 01				     mov ch, 1
+    629	0163  EB 06 90				     jmp fim_atacada
+    630	0166			     ameacada:
+    631	0166  B5 FF				     mov ch, -1
+    632	0168  EB 01 90				     jmp fim_atacada
+    633	016B			     fim_atacada:
+    634	016B  C3				     ret
+    635	016C			     atacada endp
+    636
+    637
+    638
+    639				     ;;	cl, posi‡Æo da linha do	cursor
+    640	016C			     atualiza proc
+    641	016C  B6 08				     mov dh, 8
+    642	016E  B1 07				     mov cl, 7
+    643	0170			     l_linha:
+    644	0170  B2 01				     mov dl, 1
+    645						     posiciona cl, 6
+1   646	0172  52				      push   dx
+1   647	0173  53				      push   bx
+1   648	0174  50				      push   ax
+1   649	0175  8A F1			      mov    dh,cl	     ; linha zero
+1   650	0177  B2 06			      mov    dl,6	     ; coluna zero
+1   651	0179  B7 00			      mov    bh,0	     ; numero da pagina	(zero =	primeira)
+1   652	017B  B4 02			      mov    ah,2	 ; set cursor position
+1   653	017D  CD 10			      int    10h	  ; chamada BIOS (video)
+1   654	017F  58				      pop    ax
+1   655	0180  5B				      pop    bx
+1   656	0181  5A				      pop    dx
+    657	0182			     l_coluna:
+    658	0182  E8 FF9F				     call atacada
+    659
+    660	0185  80 FD 00				     cmp ch, 0
+    661	0188  74 21				     je	vazio
+    662	018A  7C 0C				     jl	escreve_ponto
+    663	018C			     escreve_RR:
+    664						     escreve rainha
+1   665	018C  52				     push dx
+1   666	018D  BA 07D4r				     lea dx, rainha
+1   667	0190  B4 09				     mov    ah,9	       ; funcao	exibir rainha no AH
+1   668	0192  CD 21			     int    21h		       ; chamada do DOS
+1   669	0194  5A				     pop dx
+    670	0195  EB 20 90				     jmp fim_coluna
+    671	0198			     escreve_ponto:
+    672	0198  80 3E 07E5r 00			     cmp m_ligado, 0
+    673	019D  74 0C				     je	vazio
+    674						     escreve ponto
+1   675	019F  52				     push dx
+1   676	01A0  BA 07D8r				     lea dx, ponto
+1   677	01A3  B4 09				     mov    ah,9	       ; funcao	exibir ponto no	AH
+1   678	01A5  CD 21			     int    21h		       ; chamada do DOS
+1   679	01A7  5A				     pop dx
+    680	01A8  EB 0D 90				     jmp fim_coluna
+    681	01AB			     vazio:
+    682						     escreve espaco
+1   683	01AB  52				     push dx
+1   684	01AC  BA 07D0r				     lea dx, espaco
+Turbo Assembler	 Version 3.2	    06/12/10 11:31:09	    Page 13
+t.ASM
+
+
+
+1   685	01AF  B4 09				     mov    ah,9	       ; funcao	exibir espaco no AH
+1   686	01B1  CD 21			     int    21h		       ; chamada do DOS
+1   687	01B3  5A				     pop dx
+    688	01B4  EB 01 90				     jmp fim_coluna
+    689	01B7			     fim_coluna:
+    690	01B7  FE C2				     inc dl
+    691	01B9  80 FA 08				     cmp dl, 8
+    692	01BC  7E C4				     jle l_coluna
+    693	01BE  FE CE				     dec dh
+    694	01C0  74 06				     jz	fim_atualiza
+    695	01C2  FE C1				     inc cl
+    696	01C4  FE C1				     inc cl
+    697	01C6  EB A8				     jmp l_linha
+    698	01C8			     fim_atualiza:
+    699	01C8  C3				     ret
+    700	01C9			     atualiza endp
+    701
+    702	01C9			     zera_tabuleiro proc
+    703	01C9  BF 0846r				     lea di, linhas
+    704	01CC  B9 0030				     mov cx, 48
+    705	01CF  B0 00				     mov al , 0
+    706	01D1  F3> AA				     rep stosb
+    707	01D3  C3				     ret
+    708	01D4			     zera_tabuleiro endp
+    709
+    710
+    711				     ;;	linha dh
+    712				     ;;	coluna dl
+    713	01D4			     insere_rainha proc
+    714	01D4  BE 0846r				     lea si, linhas
+    715	01D7  B7 00				     mov bh, 0
+    716	01D9  8A DE				     mov bl, dh
+    717	01DB  88 10				     mov byte ptr [si+bx], dl
+    718	01DD  BE 084Fr				     lea si, colunas
+    719	01E0  8A DA				     mov bl, dl
+    720	01E2  C6 00 01				     mov byte ptr [si+bx], 1
+    721	01E5  8A DE				     mov bl, dh
+    722	01E7  2A DA				     sub bl, dl
+    723	01E9  80 C3 07				     add bl, 7
+    724	01EC  BE 0858r				     lea si, diag_e
+    725	01EF  C6 00 01				     mov byte ptr [si+bx], 1
+    726	01F2  8A DE				     mov bl, dh
+    727	01F4  02 DA				     add bl, dl
+    728	01F6  80 EB 02				     sub bl, 2
+    729	01F9  BE 0867r				     lea si, diag_d
+    730	01FC  C6 00 01				     mov byte ptr [si+bx], 1
+    731	01FF  C3				     ret
+    732	0200			     insere_rainha endp
+    733
+    734
+    735	0200			     espera_tecla proc
+    736	0200  B4 00			      mov    ah,0		; funcao esperar tecla no AH
+    737	0202  CD 16			      int    16h		; chamada do DOS
+    738	0204  C3			      ret
+    739	0205			     espera_tecla endp
+    740
+    741
+Turbo Assembler	 Version 3.2	    06/12/10 11:31:09	    Page 14
+t.ASM
+
+
+
+    742	0205			     codigo ends
+    743
+    744				     end inicio
+Turbo Assembler	 Version 3.2	    06/12/10 11:31:09	    Page 15
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??DATE				  Text	 "06/12/10"
+??FILENAME			  Text	 "t	  "
+??TIME				  Text	 "11:31:09"
+??VERSION			  Number 0314
+@CPU				  Text	 0101H
+@CURSEG				  Text	 CODIGO
+@FILENAME			  Text	 T
+@WORDSIZE			  Text	 2
+AMEACADA			  Near	 CODIGO:0166
+ATACADA				  Near	 CODIGO:0124
+ATUALIZA			  Near	 CODIGO:016C
+BACK				  Byte	 DADOS:07E1
+BATATA				  Near	 CODIGO:0074
+CLEAR				  Byte	 DADOS:07DC
+COLUNAS				  Byte	 DADOS:084F
+COMANDOS			  Near	 CODIGO:0099
+COORDENADA			  Near	 CODIGO:00B5
+CR				  Number 000D
+DIAG_D				  Byte	 DADOS:0867
+DIAG_E				  Byte	 DADOS:0858
+EH_BACK				  Near	 CODIGO:0080
+EH_ENTER			  Near	 CODIGO:0092
+ESCREVE_PONTO			  Near	 CODIGO:0198
+ESCREVE_RR			  Near	 CODIGO:018C
+ESPACO				  Byte	 DADOS:07D0
+ESPERA_TECLA			  Near	 CODIGO:0200
+ESTA_AMEACADA			  Near	 CODIGO:00DE
+ESTA_OCUPADA			  Near	 CODIGO:00FA
+FIM				  Near	 CODIGO:0037
+FIM_ATACADA			  Near	 CODIGO:016B
+FIM_ATUALIZA			  Near	 CODIGO:01C8
+FIM_COLUNA			  Near	 CODIGO:01B7
+GRAVA_NO_DH			  Near	 CODIGO:0072
+IL				  Near	 CODIGO:0057
+INICIO				  Near	 CODIGO:0000
+INSERE				  Near	 CODIGO:0116
+INSERE_RAINHA			  Near	 CODIGO:01D4
+INTERFACE			  Near	 CODIGO:003C
+INVALIDO			  Near	 CODIGO:009A
+LF				  Number 000A
+LINHAS				  Byte	 DADOS:0846
+LIVRE				  Near	 CODIGO:015C
+L_COLUNA			  Near	 CODIGO:0182
+L_LINHA				  Near	 CODIGO:0170
+MSG_AMEACADA			  Byte	 DADOS:0806
+MSG_INVALIDO			  Byte	 DADOS:0826
+MSG_OCUPADA			  Byte	 DADOS:07E6
+M_LIGADO			  Byte	 DADOS:07E5
+OCUPADA				  Near	 CODIGO:0161
+PONTO				  Byte	 DADOS:07D8
+RAINHA				  Byte	 DADOS:07D4
+TELA				  Near	 DADOS:0000
+VAZIO				  Near	 CODIGO:01AB
+WRITE				  Near	 CODIGO:011F
+Turbo Assembler	 Version 3.2	    06/12/10 11:31:09	    Page 16
+Symbol Table
+
+
+
+ZERA_TABULEIRO			  Near	 CODIGO:01C9
+
+Macro Name
+
+ESCREVE
+GETCH
+POSICIONA
+PUTCH
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+CODIGO				  16  0205 Para	  none
+DADOS				  16  0876 Para	  none
+PILHA				  16  0400 Para	  Stack
+

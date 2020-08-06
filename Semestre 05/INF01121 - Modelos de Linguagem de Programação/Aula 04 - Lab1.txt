@@ -1,0 +1,130 @@
+LAB1
+
+=======================================================
+Saber para prova:
+- currying
+- elemento de 1ª ordem
+- recursão
+- aplicação, regras e precedência
+- tipos primitivos vs compostos
+=======================================================
+
+=======================================================
+Resumo:
+- Linguagem ML é baseada na notação lambda. É feita a aplicação de apenas um
+valor por vez na função.
+
+- Elemento de 1ª ordem => elemento manipulado por comandos e operadores. Funções
+simples são consideradas elementos de 1ª odem.
+- Elemento de alta ordem => manipula/opera sobre outras funções. Funções que 
+recebem outras funções como argumentos ou que retornam funções.
+
+- Exemplos de funções de alta ordem:
+  * composição: h = f O g => h(x) = f(g(x))
+  * construção: [f,g,h](4) => (f(4), g(4), h(4))
+  * apply-to-all: alpha(f, (2,3,4)) => (f(2), f(3), f(4))
+
+- Avaliação tardia (lazy evaluation)
+	x = 5 + 3;
+	print x;
+  * O x só é calculado quando ocorre o print.
+
+
+Tipos:
+- Primitivos: int, real, bool, char, string
+- Compostos: 
+  * listas: entre [], mesmo tipo.
+  * tuplas: entre (), tipos diferentes, ordem importa.
+  * registros: entre {}, tipos iguais ou difrentes, ordem não importa.
+ 
+
+Operadores:
+- Aritméticos: +, -, *, / (real), div (int)
+- Lógicos: <, >, <=, >=, <>, =
+- Listas: :: (concatena elemento com elemento/lista), @ (concatena listas) 
+
+
+Listas:
+(declaração) val list = 1::2::3::nil;
+(declaração) val list = [1, 2, 3];
+=======================================================
+
+=======================================================
+Perguntas Teóricas:
+(responder) 1) A linguagem é ortogonal? Até que ponto? Comente, com exemplos.
+
+2) A linguagem é fortemente tipada? Sim
+
+3) Há conversão implícita/explícita? Não, a conversão de tipo deve ser explícita.
+Por exemplo, para se converter um valor real para int usamos a função round().
+
+4) O operador “=“ possui semântica diferenciada, dependente do contexto? Sim. Ele
+pode ser considerado uma atribuição/associação de nomes e valores, como em 
+"val a = 5;", ou uma comparação, operador lógico, como em "5 = 9" que resulta false.
+
+Como fazer uma função de soma que recebe dois elementos 
+de uma única vez, evitando currying?
+
+fun soma1 (x,y) = x + y;
+	> val soma1 = fn : int * int -> int (sem currying)
+fun soma2 x y = x + y;
+	> val soma3 = fn : int -> int -> int (com currying)
+
+=======================================================
+
+=======================================================
+Exercícios:
+
+1) Elaborar uma função  que recebe uma lista
+e devolve o somatório dela.
+
+fun somalst (nil : int list) : int = 0
+|   somalst (n : int list) : int = hd(n) + somalst(tl(n));
+
+fun somalst nil = 0
+|   somalst n = hd(n) + somalst(tl(n));
+
+fun somalst nil = 0
+|   somalst (h::t) = h + somalst(t);
+
+
+2) Elabore uma função que calcule o fatorial
+de um número.
+
+fun fac (0 : int) : int = 1 
+|   fac (n : int) : int = n * fac (n-1)
+
+fun fac 0 = 1 
+|   fac n = n * fac(n-1)
+
+fun fac n = if n = 0 then 1 else n * fac (n-1);
+
+fun fac n = if n > 1 then n * fac(n-1) else 1;
+
+
+3) Elabore uma função que recebe uma lista e 
+um número. Devolva a lista elevada ao número.
+
+load "Math";
+fun elevalst nill n = nil
+|   elevalst (h::t) n = Math.pow(h, n)::(elevalst t n);	
+
+fun elevalst2 nill n = nil
+|   elevalst2 l1 n = Math.pow(hd(l1), n)::(elevalst2 tl(l1) n);	
+
+fun elevalst3 nill n = nil
+|   elevalst3 ((h::t),n) = Math.pow(h, n)::(elevalst3(t,n));
+
+
+4) Fazer função que recebe uma lista e a devolve invertida.
+
+fun inverte [] = []
+|   inverte (h::t) = (inverte t)@(h::[]);
+
+
+5) Fibonacci
+
+fun fib 0 = 1 |
+    fib 1 = 1 |
+    fib n = fib(n-1) + fib(n-2);
+

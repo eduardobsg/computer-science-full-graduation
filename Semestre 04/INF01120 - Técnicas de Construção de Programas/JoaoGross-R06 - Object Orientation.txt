@@ -1,0 +1,156 @@
+Cadeira: INF01120 - Técnicas de Construção de Programas
+Professor: Marcelo Pimenta
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2011/02
+
+Resumo 6 - Orientação a Objetos
+
+- para poder resolver nosso problema precisamos reduzí-lo a 
+problemas menores de solução trivial
+- fundamentalmente, tudo o que pensamos pode ser representado 
+computacionalmente
+- a forma com que representamos uma parte do mundo para que possamos 
+criar e manipular informações é chamada de paradigma
+
+- nosso paradigma deve ser capaz de representar o problema em: 
+	- coisas
+	- a composição das coisas
+	- relações entre as coisas
+	- interações entre as coisas
+	
+- solução de mundos são sistemas usados para implementar soluções a 
+problemas. Elas incluem:
+	-> construção declarativa: representam o problema que o sistema 
+	quer resolver e a solução assim que esta estiver disponível. Capturam 
+	as informações de acordo com problemas e soluções. Orientados a 
+	informação.
+	-> construção procedural: orientados a processos. Manipula e 
+	transforma o problema em uma solução.
+	-> construções de negócios: onde a solução é realizada.
+	
+- Paradigmas:
+	-> Paradigma funcional: foca no comportamento e características dinâmicas
+	de um problema para derivar a solução.
+	
+	-> Paradigma de informações: foca em características estruturais do problema 
+	para derivar a solução.
+	
+	-> Paradigma de orientação a objetos: foca nos conceitos do problema, rotinas 
+	e informações para derivar a solução.
+	
+- Comparando paradigmas:
+	-> o paradigma orientado a objetos se foca em conceitos do mundo real, ao invés
+	de construções realizacionais
+	
+- Orientação a Objetos: foca em abstrações associadas às partes do mundo real. 
+- Abstração: facilita o entendimento e manipulação da complexidade do problema
+para obter a solução.
+- Encapsulamento: usado para combater a complexidade e localizar o impacto de 
+mudanças. Oermite que os construtores se comuniquem entre si e interajam através
+de interfaces sem ter interdependência entre suas implementações.
+- Organização: involve a relação e reuso das representações de sujeitos no mundo.
+Ela possibilita que novas representações sejam variações das representações exis-
+tentes.
+	
+- Objetos e classes: abstraem entidades do problema que queremos solucionar ou
+da solução.
+	-> Objetos: são construções bem definidas de entidades conceituais. As 
+	características estruturais das 'coisas' são representadas por atributos no
+	objeto, bem como as características comportamentais em operações.
+		- Atributos: podem ser de tipos de dados simples ou complexos e com apenas
+		um valor ou múltiplos valores.
+		- Operações: determinam o comportamento possível de um objeto. Possuem um
+		nome de interface, parâmetros de entrada e saída e possivelmente parâmetros de
+		retorno.
+		- Cada objeto deve ser único, sendo dois objetos distinguíveis um do outro.
+		- Precisam de semântica, ou seja, um significado para o problema ou solução.
+		- Devem ser complex e redutíveis em objetos subordinados ou primitivos e irre-
+		dutíveis.
+		- São instâncias de classes, instanciam classes.
+		
+	-> Classes:
+		- são descrições de objetos ou de um conjunto de objetos com uma implementação comum.
+		- são implementações das características estruturais e comportamentais de uma entidade.
+		- determina a estrutura e o comportamento de um objeto.
+		- é uma 'object factory', ou seja, uma fábrica de objetos.
+		- encapsulam as características estruturais de uma entidade através de atributos. Esses 
+		atributos fazem parte de cada objeto, e afetam todos os objetos quando alterados na classe.
+		- encapsulam as características comportamentais, também chamadas de operações. São serviços 
+		oferecidos pela classe.
+		- definem a acessibilidade de atributos e operandos de fora do objeto de uma classe. Acessi-
+		bilidade pública, protegida e privada.
+		- definem uma implementação para seus objetos.
+
+Tipos:
+- são descrições de objetos ou de um conjunto de objetos com uma especificação comum ou interface.
+- encapsulam características estruturais chamadas de atributos. São especificadas por um tipo.
+- encapsulam características comportamentais chamadas de operações. São especificadas por um tipo.
+- definem a especificação de um ou mais interfaces para classes.
+
+Associações e Links:
+- abstraem relacionamentos entre entidades do problema ou da solução.
+
+Links:
+- são representações de entidades conceituais ou concretas que se relacionam com outras entidades.
+- são objetos que relacionam outros objetos.
+- são dependentes de todos os objetos com os quais se relacionam.
+- não fazem parte de nenhum objeto com os quais se relacionam.
+
+Associações:
+- são descrições de um link ou um conjunto de links com implementações comuns.
+- são classes que se relacionam com outras classes.
+- estão para links, assim como classes estão para objetos.
+- definem uma implementação para seus links.
+
+Agregações:
+- são associações e links que especificam uma parte inteira de um relacionamento.
+
+Composições:
+- são agregações com propriedades fortes.
+- especifica que composições ou agregações são donas de suas partes componentes.
+- especificam que partes componentes devem ter apenas um dono.
+
+Generalizações:
+- são associações que especificam um relação taxonômica.
+- incluem entidades, classes e tipos.
+- habilitam novos construtores para serem derivados de construtores já existentes.
+- envolve classes e tipos já existentes chamadas de superclasses e supertipos.
+- envolve novas classes e novos tipos, chamados de subclasses e subtipos. Elas adquirem características 
+de suas superclasses e supertipos. Podem redefinir operações.
+- utiliza herança como mecanismo de compartilhamento através do qual novas construções adquirem as carac-
+terísticas de construções mais gerais.
+- podem ser usadas para criar classes mais abstratas ou concretas. Classes abstratas possuem apenas inter-
+faces sem implementação, enquanto classes concretas possuem implementação para todas as interfaces.
+- envolve polimorfismo, ou seja, uma forma de uma interface possuir diversas implementações.
+
+Cenários e Interações:
+Cenários: 
+- são conectores para troca de mensagens entre entidades.
+- um objeto/classe envia uma mensagem a um objeto/classe. O 'sender' envia a mensagem/pedido ao 'receiver', 
+esperando que o 'receiver' faça alguma atividade. O 'receiver' recebe a mensagem e executa a tarefa, sendo 
+este evento uma instância de uma classe de eventos 
+
+Interações:
+- são descrições de um cenário ou conjunto de cenários com uma implementação comum.
+- são os condutores para uma sequencia de troca de mensagens entre classes.
+
+Sumário:
+- objetos são abstrações de entidades que encapsulam comportamento e estados.
+- links são abstrações de relacionamento entre objetos.
+- cenários são abstraçõs de troca de mensagem entre objetos.
+
+- classes são descrições de um conjunto de objetos com comuns atributos, implementação de operações, 
+semântica, associações e interações.
+- tipos são descrições de um conjunto de objetos com comuns atributos, implementação de operações, 
+semântica, associações e interações.
+- associações são descrições de um conjunto de objetos com comuns atributos, implementação de operações, 
+semântica, associações e interações.
+- interações são descrições de um conjunto de cenários com comuns sequencia de troca de mensagens, classes 
+e associações.
+
+- frameworks: sociedade de objetos focados em domínios específicos e que proporcionam interfaces para adapta-
+bilidade em outras sociedades de objetos.
+	
+	
+	

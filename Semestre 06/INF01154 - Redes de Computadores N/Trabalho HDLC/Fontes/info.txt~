@@ -1,0 +1,18 @@
+Importante:
+1. tipo char indica valores de 0 a 127 e -1 a -128
+
+Outros:
+
+S - Supervisão
+7		6 		5 4		3		2	1	0
+1	|	0	|	S	| 	PF	|	N(R)
+
+I - Informação
+7		6 5 4		3		2 1 0
+0	|	N(S)	| 	PF	|	0	  
+
+		
+Pendente:
+1. Para envio e mensagem I gerar erro randômico na área de dados após o cálculo do CRC
+2. Cliente gera o log de erros: indica envio e recebimento. Deve indicar quando um 
+quadro é enviado com erro.

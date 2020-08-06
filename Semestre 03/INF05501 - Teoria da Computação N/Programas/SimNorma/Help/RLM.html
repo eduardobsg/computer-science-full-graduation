@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+  <title>Refer&ecirc;ncia da Linguagem Monit&egrave;</title>
+</head>
+<body style="background-color: rgb(255, 255, 207); color: rgb(0, 0, 0);"
+ link="#000099" vlink="#990099" alink="#000099">
+<table border="0" cellspacing="2" cellpadding="2"
+ style="background-color: rgb(51, 51, 153); width: 100%; text-align: left; color: rgb(255, 255, 255); margin-left: 0px; margin-right: 0px; font-family: tahoma;">
+  <tbody>
+    <tr>
+      <th style="vertical-align: top;">
+<p align="left">
+<font size="5">Refer&ecirc;ncia
+da Linguagem Monit&egrave;</font>
+</p>
+      </th>
+    </tr>
+  </tbody>
+</table>
+<div style="text-align: justify; font-family: tahoma;">
+&nbsp;
+<div style="margin-left: 40px;"><small>Esta
+se&ccedil;&atilde;o cont&eacute;m as defini&ccedil;&otilde;es da
+linguagem Monit&egrave;, descri&ccedil;&otilde;es e exemplos.</small>
+</div>
+<h3>Conven&ccedil;&otilde;es L&eacute;xicas</h3>
+<div style="margin-left: 40px;"><small><a href="RLMPC.html">Palavras-chave</a><br>
+<a href="RLMISV.html">Identificador
+sobrecarregado V</a><br>
+</small><a href="RLMC.html"><small>Coment&aacute;rios</small></a><br>
+<small><a href="RLMLR.html">Literais
+e registradores</a><br>
+<a href="RLMNA.html">Nomes
+de arquivo</a>
+</small></div>
+<h3>Conceitos B&aacute;sicos</h3>
+<div style="margin-left: 40px;"><a href="RLMMN.html"><small>M&aacute;quina
+Norma</small></a><br style="font-style: italic;">
+<a href="RLMPI.html"><small>Programa iterativo</small></a><br>
+<small><a href="RLMPM.html">Programa monol&iacute;tico</a><br>
+</small><a href="RLMCP.htm"><small>Comando <span
+ style="font-style: italic;">print</span></small></a><br>
+<a href="RLMM.html"><small>Macros</small></a><br>
+<a href="RLMB.html"><small>Bibliotecas</small></a>
+</div>
+<h3><small>Erros de Compilação</small></h3>
+<h4><small>Erros da M&aacute;quina Norma</small></h4>
+<div style="margin-left: 40px;"><small><a href="RLMMNeONV.html">A opera&ccedil;&atilde;o "<span
+ style="font-style: italic;">token</span>" n&atilde;o &eacute;
+v&aacute;lida.</a></small><br>
+<small><a href="RLMMNeTNV.html">O teste "<span style="font-style: italic;">token</span>"
+n&atilde;o &eacute; v&aacute;lido.</a></small><br>
+<small><a href="RLMMNeRNV.html">O registrador "<span style="font-style: italic;">token</span>"
+n&atilde;o &eacute; v&aacute;lido.</a></small>
+</div>
+<h4><small>Erros da Linguagem Monit&egrave; e do Simulador</small></h4>
+<div style="width: 644; height: 240; margin-left: 40px"><small><a href="RLMMNeFNEAV.html">O fim do arquivo n&atilde;o
+&eacute; esperado ou o arquivo &eacute; vazio.</a></small><br>
+<small><a href="RLMMNeEAM.html">Erro de aloca&ccedil;&atilde;o de mem&oacute;ria. SimNorma
+n&atilde;o pode alocar a mem&oacute;ria necess&aacute;ria para
+continuar a compila&ccedil;&atilde;o.</a></small><br>
+<small><a href="RLMMNeTPE.html">Tipo do programa esperado.</a></small><br>
+<small><a href="RLMMNeNBE.html">Nome da biblioteca a ser importada esperado.</a></small><br>
+<small><a href="RLMMNeEAB.html">Erro ao abrir a biblioteca "<span style="font-style: italic;">arquivo</span>".</a></small><br>
+<small><a href="RLMMNeTME.html">Tipo da macro esperado.</a></small><br>
+<small><a href="RLMMNeNME.html">Nome da macro esperado.</a></small><br>
+<small><a href="RLMMNePME.html">Par&acirc;metros da macro esperado.</a></small><br>
+<small><a href="RLMMNeFME.html">Finaliza&ccedil;&atilde;o da macro (fimmacro) esperado.</a></small><br>
+<small><a href="RLMMNeMND.html">A macro "<span style="font-style: italic;">token</span>"
+n&atilde;o foi definida.</a></small><br>
+<small><a href="RLMMNeTND.html">O teste da macro "<span style="font-style: italic;">token</span>"
+n&atilde;o foi definido.</a></small><br>
+  <small><a href="RLMMNeNIP.html">Erro de chamada da macro "<span style="font-style: italic">macro</span></a></small><a href="RLMMNeNIP.html"><small>",
+o n&uacute;mero de par&acirc;metros n&atilde;o est&aacute; correto.</small></a><br>
+<small><a href="RLMMNeCM.html">Existe um ciclo entre as macros "<span
+ style="font-style: italic;">macro1</span>" e "<span
+ style="font-style: italic;">macro2</span>".</a></small><br>
+<small><a href="RLMMNeCB.html">Existe um ciclo entre as bibliotecas "<span
+ style="font-style: italic;">biblioteca1</span>" e "<span
+ style="font-style: italic;">biblioteca2</span>".</a></small>
+</div>
+<h4><small>Erros de Programas Iterativos</small></h4>
+<div style="margin-left: 40px;">
+<small><a href="RLMMNeFAE.html">Fim do arquivo esperado.</a></small>
+  <p style="margin: 0"><small><a href="RLMMNeES.html">Erro de sintaxe.</a></small><br>
+<small><a href="RLMMNePE.html">Par&ecirc;nteses esperado.</a></small><br>
+<small><a href="RLMMNeEE.html">A palavra-chave &quot;entao&quot; &eacute; esperada.</a></small><br>
+<small><a href="RLMMNeSE.html">A palavra-chave &quot;senao&quot; &eacute; esperada.</a></small><br>
+<small><a href="RLMMNeFE.html">A palavra-chave "faca" &eacute; esperada.</a></small>
+</div>
+<h4><small>Erros de Programas Monol&iacute;ticos</small></h4>
+<div style="margin-left: 40px;"><small><a href="RLMMNeNLE.html">Nova linha esperada.</a></small><br>
+<small><a href="RLMMNeRE.html">Rótulo esperado.</a></small><br>
+<small><a href="RLMMNeIE.html">Instru&ccedil;&atilde;o esperada.</a></small><br>
+<small><a href="RLMMNePEm.html">Par&ecirc;nteses esperado.</a></small>
+  <p style="margin-top: 0; margin-bottom: 0"><small><a href="RLMMNeNRE.html">Nome do r&oacute;tulo esperado.</a></small><br>
+<small><a href="RLMMNeNOE.html">Nome da opera&ccedil;&atilde;o esperado.</a></small><br>
+<small><a href="RLMMNeNTE.html">Nome do teste esperado.</a></small><br>
+<small><a href="RLMMNeEE.html">A palavra-chave &quot;entao&quot; &eacute; esperada.</a></small><br>
+<small><a href="RLMMNeVE.html">A palavra-chave &quot;va_para&quot; &eacute; esperada.</a></small><br>
+<small><a href="RLMMNeSE.html">A palavra-chave &quot;senao&quot; &eacute; esperada.</a></small></div>
+<hr style="width: 100%; height: 2px;"><small><span
+ style="font-family: tahoma;"><em>Desenvolvido por Marcelo Bona de
+Mendon&ccedil;a Boff, Fernando Trebien e Leonardo Golob. Para mais
+informa&ccedil;&otilde;es, consulte <a
+ href="file:///C:/Documents%20and%20Settings/usuario/Meus%20documentos/Disciplinas/Programas/2003%20Teoria%20da%20Computação/Projeto%20Final/Ajuda/C.html">Cr&eacute;ditos</a>.</em></span></small></div>
+</body>
+</html>

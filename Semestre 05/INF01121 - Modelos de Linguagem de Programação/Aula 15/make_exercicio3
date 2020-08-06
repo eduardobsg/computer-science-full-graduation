@@ -1,0 +1,6 @@
+aula15-exercicio3: aula15-exercicio3.o
+	g++ -o aula15-exercicio3 aula15-exercicio3.o
+
+aula15-exercicio3.o: aula15-exercicio3.cpp 
+	g++ -c aula15-exercicio3.cpp
+

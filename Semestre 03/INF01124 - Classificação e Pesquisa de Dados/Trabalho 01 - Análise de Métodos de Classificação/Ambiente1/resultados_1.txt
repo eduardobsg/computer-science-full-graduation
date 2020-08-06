@@ -1,0 +1,204 @@
+---------------------------------------------------
+insertion_sort.c, tempo em micro segundos
+tipo=i, tamanho=500
+524
+523
+523
+tipo=i, tamanho=5000
+35774
+36758
+31898
+tipo=i, tamanho=10000
+136243
+132103
+130552
+tipo=i, tamanho=30000
+1130239
+1128803
+1136044
+tipo=s, tamanho=500
+968
+1304
+1283
+tipo=s, tamanho=5000
+83804
+83480
+82020
+tipo=s, tamanho=10000
+307365
+310770
+309070
+tipo=s, tamanho=30000
+2786058
+2731588
+2745370
+---------------------------------------------------
+shell_sort.c, tempo em micro segundos
+tipo=i, tamanho=500
+102
+98
+103
+tipo=i, tamanho=5000
+280
+274
+277
+tipo=i, tamanho=10000
+475
+473
+476
+tipo=i, tamanho=30000
+1279
+1268
+1269
+tipo=s, tamanho=500
+314
+313
+313
+tipo=s, tamanho=5000
+2445
+2836
+2440
+tipo=s, tamanho=10000
+4848
+4845
+4828
+tipo=s, tamanho=30000
+14399
+14312
+15165
+---------------------------------------------------
+bubble_sort.c, tempo em micro segundos
+tipo=i, tamanho=500
+1613
+1608
+1617
+tipo=i, tamanho=5000
+119458
+116971
+114084
+tipo=i, tamanho=10000
+497403
+451978
+451539
+tipo=i, tamanho=30000
+4072166
+4096085
+4088554
+tipo=s, tamanho=500
+2678
+2784
+3570
+tipo=s, tamanho=5000
+259253
+260288
+254990
+tipo=s, tamanho=10000
+1036057
+1021459
+1011287
+tipo=s, tamanho=30000
+9120967
+9094789
+9142957
+---------------------------------------------------
+quick_sort.c, tempo em micro segundos
+tipo=i, tamanho=500
+169
+166
+166
+tipo=i, tamanho=5000
+1177
+1172
+1175
+tipo=i, tamanho=10000
+2408
+2362
+2372
+tipo=i, tamanho=30000
+7447
+7430
+7419
+tipo=s, tamanho=500
+423
+422
+430
+tipo=s, tamanho=5000
+3909
+3891
+3886
+tipo=s, tamanho=10000
+7928
+7898
+7941
+tipo=s, tamanho=30000
+23651
+23551
+18453
+---------------------------------------------------
+heap_sort.c, tempo em micro segundos
+tipo=i, tamanho=500
+210
+205
+202
+tipo=i, tamanho=5000
+1726
+1707
+1723
+tipo=i, tamanho=10000
+3566
+3558
+3567
+tipo=i, tamanho=30000
+11915
+8819
+11913
+tipo=s, tamanho=500
+530
+535
+533
+tipo=s, tamanho=5000
+5547
+5600
+5527
+tipo=s, tamanho=10000
+11546
+11578
+11494
+tipo=s, tamanho=30000
+32857
+33482
+33694
+---------------------------------------------------
+merge_sort_re.c, tempo em micro segundos
+tipo=i, tamanho=500
+253
+252
+245
+tipo=i, tamanho=5000
+2162
+2097
+2090
+tipo=i, tamanho=10000
+4298
+4356
+4355
+tipo=i, tamanho=30000
+14453
+14298
+13551
+tipo=s, tamanho=500
+439
+430
+578
+tipo=s, tamanho=5000
+5939
+5878
+5927
+tipo=s, tamanho=10000
+12272
+12427
+12361
+tipo=s, tamanho=30000
+33450
+32636
+36196

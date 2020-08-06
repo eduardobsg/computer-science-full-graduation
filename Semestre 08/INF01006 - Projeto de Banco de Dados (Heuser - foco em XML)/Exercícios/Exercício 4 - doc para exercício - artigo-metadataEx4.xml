@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<artigo>
+	<titulo>PATAXÓ: a framework to allow updates through XML views</titulo>
+	<autores>
+		<autor>
+			<nome>
+				<prenome>VANESSA P.</prenome>
+				<sobrenome>BRAGANHOLO</sobrenome>
+			</nome>
+			<instituicaoComPais>
+				<departamento>COPPE</departamento>
+				<universidade>Universidade Federal do Rio de Janeiro</universidade>
+				<pais>Brazil</pais>
+			</instituicaoComPais>
+		</autor>
+		<autor>
+			<nome>
+				<sobrenome>DAVIDSON</sobrenome>
+				<prenome>SUSAN B.</prenome>
+			</nome>
+			<instituicao>
+				<departamento>CIS</departamento>
+				<universidade>University of Pennsylvania</universidade>
+			</instituicao>
+		</autor>
+		<autor>
+			<nome>
+				<prenome>CARLOS A.</prenome>
+				<sobrenome>HEUSER</sobrenome>
+			</nome>
+			<instituicaoComPais>
+				<departamento>Instituto de Informática</departamento>
+				<universidade>Universidade Federal do Rio Grande do Sul</universidade>
+				<pais>Brazil</pais>
+			</instituicaoComPais>
+		</autor>
+	</autores>
+	<resumo>XML has become an important medium for data exchange, and is frequently used as an interface to - i.e. a view of - a relational database. Although a lot of work has been done on querying relational databases through XML views, the problem of updating relational databases through XML views has not received much attention. In this work, we map XML views expressed using a subset of XQuery to a corresponding set of relational views. Thus, we transform the problem of updating relational databases through XML views into a classical problem of updating relational databases through relational views. We then show how updates on the XML view are mapped to updates on the corresponding relational views. Existing work on updating relational views can then be leveraged to determine whether or not the relational views are updatable with respect to the relational updates, and if so, to translate the updates to the underlying relational database.</resumo>
+	<categorias>
+		<categoria>
+			<código-da-categoria>H.2.3</código-da-categoria>
+			<nome-da-categoria>Database Management</nome-da-categoria>
+			<temas>
+				<tema>Languages?Query Languages</tema>
+			</temas>
+		</categoria>
+		<categoria>
+			<código-da-categoria>H.2.4</código-da-categoria>
+			<nome-da-categoria>Database Management</nome-da-categoria>
+			<temas>
+				<tema>Systems?Relational Databases</tema>
+			</temas>
+		</categoria>
+		<categoria>
+			<código-da-categoria>D.3.2</código-da-categoria>
+			<nome-da-categoria>Programming Languages</nome-da-categoria>
+			<temas>
+				<tema>Language Classifications?Very high-level languages</tema>
+			</temas>
+		</categoria>
+	</categorias>
+	<palavras-chave>
+		<palavra-chave>Languages</palavra-chave>
+		<palavra-chave>Algorithms</palavra-chave>
+	</palavras-chave>
+	<palavras-chave-adicionais>
+		<palavra-chave>Relational databases</palavra-chave>
+		<palavra-chave>updates</palavra-chave>
+		<palavra-chave>XML views</palavra-chave>
+	</palavras-chave-adicionais>
+</artigo>

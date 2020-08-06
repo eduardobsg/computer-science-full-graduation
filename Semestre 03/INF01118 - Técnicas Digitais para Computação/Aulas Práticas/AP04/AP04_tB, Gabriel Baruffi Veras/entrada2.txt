@@ -1,0 +1,21 @@
+Titulo: AP04_tB, João Gross - Simulação AP02
+
+* fontes
+VCC 1 0 14
+
+* circuito
+r1 1 4 2200
+r2 1 2 2200
+r3 4 0 2200
+r4 2 4 2200
+r5 4 3 2200
+r6 2 3 2200
+
+c1 3 0 1n
+
+* comandos
+
+.tran 0m 30m
+.print tran v(1) v(2) v(3) v(4)
+
+.end

@@ -1,0 +1,6 @@
+Problemas:
+
+1) Ao usar a função RemoveNodo o ponteiro Topo não é atualizado fora da função, só
+internamente.
+
+ 

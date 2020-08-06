@@ -1,0 +1,46 @@
+inicio:	ldr a ptd
+	sub a pto
+	jz fim			; ponteiros iguais - não faz nada
+        ldr b n			; otimização
+	ldr x pto
+	jc ptd_maior_que_pto
+
+ptd_menor_que_pto:
+laco_1:	ldr a 0,x
+	str a ptd,i
+	add x #1
+  	ldr a ptd
+	add a #1
+        str a ptd
+	sub b #1
+	jz fim
+	jmp laco_1
+
+ptd_maior_que_pto:
+	add x n
+        ldr a ptd
+	add a n
+	str a ptd
+laco_2:	sub x #1
+  	ldr a ptd
+	sub a #1
+        str a ptd
+	ldr a 0,x
+        str a ptd,i
+	sub b #1
+	jz fim
+	jmp laco_2
+
+fim:
+	hlt
+
+
+org 128
+n:	db 16
+pto:	db 140
+ptd:    db 200
+
+org 140
+        dab 1,2,3,4,5,6,7,8,9
+        dab 10,11,12,13,14,15,16,17
+

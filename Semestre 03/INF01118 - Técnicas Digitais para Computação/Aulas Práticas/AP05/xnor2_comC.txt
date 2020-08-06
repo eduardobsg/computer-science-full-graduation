@@ -1,0 +1,31 @@
+Titulo: Circuito XNOR2 c/ transistor MOS
+
+.include cmos7tm.mod
+
+vcc 1 0 12
+v10p 10 0 1.2
+v90p 90 0 10.8
+v1 2 0 pulse(0 12.1 0 0 0 15n 30n)
+v2 3 0 pulse(0 11.9 0 0 0 30n 60n)
+
+.subckt  xnor2  A B Bn out outn vcc
+mp1  B    A   out  vcc  modp
+mp2  out  B   A    vcc  modp
+mn1  out  A   Bn   0    modn
+mn2  A    Bn  out  0    modn
+mp3  vcc  out outn vcc  modp *inversor
+mn3  outn out 0    0    modn *inversor
+.ends xnor2
+
+.subckt  inv  in  out  vcc
+mp1  vcc  in  out  vcc  modp
+mn1  out  in  0  0  modn
+.ends inv
+
+x1 3 4 1 inv
+x2 2 3 4 5 6 1 xnor2
+c1 6 0 50f
+
+.tran 0.001n 75n
+.print tran v(2) v(3) v(4) v(6) v(10) v(90)
+.end

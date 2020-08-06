@@ -1,0 +1,327 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SimNorma">
+		<param name="Local" value="Main.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Vis&atilde;o Geral do SimNorma">
+		<param name="Local" value="VGSN.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cr&eacute;ditos">
+		<param name="Local" value="C.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Guia do Ambiente">
+		<param name="Local" value="GA.html">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Menus">
+			<param name="Local" value="GAM.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Barra de Ferramentas">
+			<param name="Local" value="GABF.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Refer&ecirc;ncia da Linguagem Monit&egrave;">
+		<param name="Local" value="RLM.html">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Conven&ccedil;&otilde;es L&eacute;xicas">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Palavras-chave">
+				<param name="Local" value="RLMPC.html">
+				<param name="ImageNumber" value="1">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="importar">
+					<param name="Local" value="RLMPCim.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="programa">
+					<param name="Local" value="RLMPCp.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="iterativo">
+					<param name="Local" value="RLMPCit.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="monolitico">
+					<param name="Local" value="RLMPCmo.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="macro">
+					<param name="Local" value="RLMPCma.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="teste">
+					<param name="Local" value="RLMPCt.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="fimmacro">
+					<param name="Local" value="RLMPCfi.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="retornar">
+					<param name="Local" value="RLMPCr.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="se">
+					<param name="Local" value="RLMPCse.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="entao">
+					<param name="Local" value="RLMPCent.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="senao">
+					<param name="Local" value="RLMPCsen.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="enquanto">
+					<param name="Local" value="RLMPCe.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="ate">
+					<param name="Local" value="RLMPCa.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="faca">
+					<param name="Local" value="RLMPCfa.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="va_para">
+					<param name="Local" value="RLMPCv.html">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Identificador sobrecarregado V">
+				<param name="Local" value="RLMISV.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Coment&aacute;rios">
+				<param name="Local" value="RLMC.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Literais e Registradores">
+				<param name="Local" value="RLMLR.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Nomes de arquivo">
+				<param name="Local" value="RLMNA.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Conceitos B&aacute;sicos">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="M&aacute;quina Norma">
+				<param name="Local" value="RLMMN.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Programa iterativo">
+				<param name="Local" value="RLMPI.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Programa monol&iacute;tico">
+				<param name="Local" value="RLMPM.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Comando print">
+				<param name="Local" value="RLMCP.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Macros">
+				<param name="Local" value="RLMM.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Bibliotecas">
+				<param name="Local" value="RLMB.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Erros de Compila&ccedil;&atilde;o">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Erros da M&aacute;quina Norma">
+				<param name="ImageNumber" value="1">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="A opera&ccedil;&atilde;o &quot;token&quot; n&atilde;o &eacute; v&aacute;lida.">
+					<param name="Local" value="RLMMNeONV.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="O teste &quot;token&quot; n&atilde;o &eacute; v&aacute;lido.">
+					<param name="Local" value="RLMMNeTNV.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="O registrador &quot;token&quot; n&atilde;o &eacute; v&aacute;lido.">
+					<param name="Local" value="RLMMNeRNV.html">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Erros da Linguagem Monit&egrave; e do Simulador">
+				<param name="ImageNumber" value="1">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="O fim do arquivo n&atilde;o &eacute; esperado ou o arquivo &eacute; vazio.">
+					<param name="Local" value="RLMMNeFNEAV.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Erro de aloca&ccedil;&atilde;o de mem&oacute;ria. SimNorma n&atilde;o pode alocar a mem&oacute;ria necess&aacute;ria para continuar a compila&ccedil;&atilde;o.">
+					<param name="Local" value="RLMMNeEAM.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Tipo do programa esperado.">
+					<param name="Local" value="RLMMNeTPE.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Nome da biblioteca a ser importada esperado.">
+					<param name="Local" value="RLMMNeNBE.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Erro ao abrir a biblioteca &quot;arquivo&quot;.">
+					<param name="Local" value="RLMMNeEAB.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Tipo da macro esperado.">
+					<param name="Local" value="RLMMNeTME.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Nome da macro esperado.">
+					<param name="Local" value="RLMMNeNME.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Par&acirc;metros da macro esperado.">
+					<param name="Local" value="RLMMNePME.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Finaliza&ccedil;&atilde;o da macro (fimmacro) esperado.">
+					<param name="Local" value="RLMMNeFME.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="A macro &quot;token&quot; n&atilde;o foi definida.">
+					<param name="Local" value="RLMMNeMND.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="O teste da macro &quot;token&quot; n&atilde;o foi definido.">
+					<param name="Local" value="RLMMNeTND.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Erro de chamada da macro &quot;macro&quot;, o n&uacute;mero de par&acirc;metros est&aacute; incorreto.">
+					<param name="Local" value="RLMMNeNIP.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Existe um ciclo entre as macros &quot;macro1&quot; e &quot;macro2&quot;.">
+					<param name="Local" value="RLMMNeCM.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Existe um ciclo entre as macros &quot;biblioteca1&quot; e &quot;biblioteca2&quot;.">
+					<param name="Local" value="RLMMNeCB.html">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Erros de Programas Iterativos">
+				<param name="ImageNumber" value="1">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Fim do arquivo esperado.">
+					<param name="Local" value="RLMMNeFAE.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Erro de sintaxe.">
+					<param name="Local" value="RLMMNeES.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Par&ecirc;nteses esperado.">
+					<param name="Local" value="RLMMNePE.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="A palavra-chave &quot;entao&quot; &eacute; esperada.">
+					<param name="Local" value="RLMMNeEE.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="A palavra-chave &quot;senao&quot; &eacute; esperada.">
+					<param name="Local" value="RLMMNeSE.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="A palavra-chave &quot;faca&quot; &eacute; esperada.">
+					<param name="Local" value="RLMMNeFE.html">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Erros de Programas Monol&iacute;ticos">
+				<param name="ImageNumber" value="1">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Nova linha esperada.">
+					<param name="Local" value="RLMMNeNLE.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="R&oacute;tulo esperado.">
+					<param name="Local" value="RLMMNeRE.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Instru&ccedil;&atilde;o esperada.">
+					<param name="Local" value="RLMMNeIE.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Par&ecirc;nteses esperado.">
+					<param name="Local" value="RLMMNePEm.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Nome da opera&ccedil;&atilde;o esperado.">
+					<param name="Local" value="RLMMNeNRE.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Nome do r&oacute;tulo esperado.">
+					<param name="Local" value="RLMMNeNOE.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Nome do teste esperado.">
+					<param name="Local" value="RLMMNeNTE.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="A palavra-chave &quot;entao&quot; &eacute; esperada.">
+					<param name="Local" value="RLMMNeEE.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="A palavra-chave &quot;va_para&quot; &eacute; esperada.">
+					<param name="Local" value="RLMMNeVE.html">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="A palavra-chave &quot;senao&quot; &eacute; esperada.">
+					<param name="Local" value="RLMMNeSE.html">
+					</OBJECT>
+			</UL>
+		</UL>
+	</UL>
+</UL>
+</BODY></HTML>

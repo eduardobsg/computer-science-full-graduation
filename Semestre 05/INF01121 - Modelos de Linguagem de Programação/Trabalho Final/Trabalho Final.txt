@@ -1,0 +1,48 @@
+Modelos de Linguagens de Programação
+
+Trabalho Final em Android
+
+Material de referência:
+http://developer.android.com/index.html 
+
+Passos:
+- Instalando a SDK: http://developer.android.com/sdk/installing.html
+- Instalando e configurando o ADT Plugin no Eclipse: http://developer.android.com/sdk/eclipse-adt.html#installing
+- Criando um projeto: http://developer.android.com/training/basics/firstapp/creating-project.html
+
+For game development:
+http://www.lazyfoo.net/SDL_tutorials/ => artigos (para termos uma ideia de como fazer um jogo - não em android)
+
+Desenvolvendo uma aplicação em um celular real:
+http://developer.android.com/guide/developing/device.html
+
+Multi-touch for android 2.1:
+http://www.zdnet.com/blog/burnette/how-to-use-multi-touch-in-android-2-part-2-building-the-touch-example/1763
+
+Android Game Tutorials:
+http://www.javacodegeeks.com/p/java-tutorials.html
+
+http://www.javacodegeeks.com/2011/07/android-game-development-basic-game_05.html
+http://www.javacodegeeks.com/2011/07/android-game-development-displaying.html
+http://www.javacodegeeks.com/2011/07/android-game-development-moving-images.html
+
+http://obviam.net/index.php/table-of-contents/
+http://obviam.net/index.php/a-very-basic-the-game-loop-for-android/
+http://obviam.net/index.php/displaying-graphics-with-android/
+http://obviam.net/index.php/moving-images-on-the-screen-with-androi/
+
+Interessante:
+Como deixar a activity em full screen:
+http://zarelli.wordpress.com/2011/07/23/android-aplicacoes-fullscreen/
+
+Como criar uma splash screen (tela de início):
+http://www.euandroid.com.br/tutoriais/tutorial-dev/2010/10/tutorial-como-construir-uma-splash-screen-android/
+
+Como finalizar uma aplicação android:
+http://stackoverflow.com/questions/4732184/how-to-finish-an-android-application
+
+Como desabilitar o botão físico de retorno do celular com android:
+http://stackoverflow.com/questions/4779954/disable-back-button-in-android
+
+NDK:
+http://developer.android.com/sdk/ndk/index.html

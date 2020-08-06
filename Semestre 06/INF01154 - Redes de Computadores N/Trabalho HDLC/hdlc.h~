@@ -1,0 +1,39 @@
+#define IP 64000
+
+#define MAX_FRAMES	7
+
+//Codes for HDLC structure
+#define FLAG 		0x7E
+#define BROADCAST	0xFF
+#define MAX_HDLC	250
+
+//Control codes - for supervision (S)
+#define RR	0x00	//S5 = 0; S4 = 0
+#define RNR	0x08	//S5 = 0; S4 = 1
+
+//Control codes - for unnumered (U)
+#define DISC 0x0C2	//11000010 - disconnect
+#define UA 	 0x0CE	//11001110 - acknowledgement
+#define SIM  0x0CC	//11001100 - set initilization mode
+
+typedef struct hdlc {
+	char flag;
+	char address; //broadcast address
+	char control;
+	int lenght;
+	char *data;
+	char FCS[2]; //FCS[0]: MSB; FCS[1]: LSB
+} HDLC;
+
+
+/*
+I - Informação
+7		6 5 4		3		2 1 0
+0	|	N(S)	| 	PF	|	0	  
+
+S - Supervisão
+7		6 		5 4		3		2	1	0
+1	|	0	|	S	| 	PF	|	N(R)  
+  
+
+*/

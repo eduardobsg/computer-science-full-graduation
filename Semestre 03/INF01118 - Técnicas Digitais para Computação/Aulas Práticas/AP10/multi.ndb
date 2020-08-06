@@ -1,0 +1,128 @@
+NDB006
+The number of symbol table entries is: 13
+The length of the symbol table is: 191
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|fulladder:57|
+=	|fulladder:56|
+L	|fulladder:55|
+[	|fulladder:41|
+j	|fulladder:36|
+y	|fulladder:35|
+"*	|fulladder:30|
+"9	|fulladder:2|
+"G	|halfadder:54|
+"V	|halfadder:34|
+"e	|halfadder:32|
+"t	|halfadder:3|
+
+The number of name info structs is : 104
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IGdW	!	:26	"s
+#	IGdW	!	:27	"q
+$	IGdW	!	:28	"o
+%	IGdW	!	:29	"m
+&	IGdW	!	:37	"l
+'	IGdW	!	:38	"k
+(	IGdW	!	:39	"j
+)	IGdW	!	:4	"t
+*	IGdW	!	:40	"i
++	IGdW	!	:50	"h
+,	IGdW	!	:51	"g
+-	IGdW	!	:52	"f
+.	IGdW	!	:53	"e
+/	IGdW	!	:58	"r
+0	IGdW	!	:59	"p
+1	IGdW	!	:60	"n
+2	IGdp	!	A0	t
+3	IGdp	!	A1	s
+4	IGdp	!	A2	o
+5	IGdp	!	A3	p
+6	IGdp	!	B0	v
+7	IGdp	!	B1	u
+8	IGdp	!	B2	q
+9	IGdp	!	B3	r
+:	IGdq	!	S0	~
+;	IGdq	!	S1	z
+<	IGdq	!	S2	}
+=	IGdq	!	S3	|
+>	IGdq	!	S4	{
+?	IGdq	!	S5	w
+@	IGdq	!	S6	y
+A	IGdq	!	S7	x
+B	IGdW	"9	:1	$&
+C	IGdW	"9	:2	$'
+D	IVOQ	"9	G	:3	$(
+E	IGdW	"9	:4	$)
+F	IVOQ	"9	H	:5	$*
+G	INu}	"9	D	Cout	$(
+H	INu}	"9	F	S	$*
+I	IGdW	"*	:1	#v
+J	IGdW	"*	:2	#w
+K	IVOQ	"*	N	:3	#x
+L	IGdW	"*	:4	#y
+M	IVOQ	"*	O	:5	#z
+N	INu}	"*	K	Cout	#x
+O	INu}	"*	M	S	#z
+P	IGdW	y	:1	#h
+Q	IGdW	y	:2	#i
+R	IVOQ	y	U	:3	#j
+S	IGdW	y	:4	#k
+T	IVOQ	y	V	:5	#l
+U	INu}	y	R	Cout	#j
+V	INu}	y	T	S	#l
+W	IGdW	j	:1	#Z
+X	IGdW	j	:2	#[
+Y	IVOQ	j	\	:3	#\
+Z	IGdW	j	:4	#]
+[	IVOQ	j	]	:5	#^
+\	INu}	j	Y	Cout	#\
+]	INu}	j	[	S	#^
+^	IGdW	[	:1	#L
+_	IGdW	[	:2	#M
+`	IVOQ	[	c	:3	#N
+a	IGdW	[	:4	#O
+b	IVOQ	[	d	:5	#P
+c	INu}	[	`	Cout	#N
+d	INu}	[	b	S	#P
+e	IGdW	L	:1	#>
+f	IGdW	L	:2	#?
+g	IVOQ	L	j	:3	#@
+h	IGdW	L	:4	#A
+i	IVOQ	L	k	:5	#B
+j	INu}	L	g	Cout	#@
+k	INu}	L	i	S	#B
+l	IGdW	=	:1	#0
+m	IGdW	=	:2	#1
+n	IVOQ	=	q	:3	#2
+o	IGdW	=	:4	#3
+p	IVOQ	=	r	:5	#4
+q	INu}	=	n	Cout	#2
+r	INu}	=	p	S	#4
+s	IGdW	.	:1	#!
+t	IGdW	.	:2	#"
+u	IVOQ	.	x	:3	##
+v	IGdW	.	:4	#$
+w	IVOQ	.	y	:5	#%
+x	INu}	.	u	Cout	##
+y	INu}	.	w	S	#%
+z	IVOQ	"e	|	:2	$H
+{	IVOQ	"e	}	:3	$I
+|	INu}	"e	z	C	$H
+}	INu}	"e	{	S	$I
+~	IVOQ	"V	""	:2	$>
+"!	IVOQ	"V	"#	:3	$?
+""	INu}	"V	~	C	$>
+"#	INu}	"V	"!	S	$?
+"$	IVOQ	"t	"&	:2	$R
+"%	IVOQ	"t	"'	:3	$S
+"&	INu}	"t	"$	C	$R
+"'	INu}	"t	"%	S	$S
+"(	IVOQ	"G	"*	:2	$3
+")	IVOQ	"G	"+	:3	$4
+"*	INu}	"G	"(	C	$3
+"+	INu}	"G	")	S	$4

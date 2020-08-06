@@ -1,0 +1,21 @@
+// apenas um teste pra ver se compila
+
+/* simple variables */
+byte meuByte : 8;
+bool meuBool : true;
+word test : 12;
+
+/* arrays */
+word a[10];
+byte b[20];
+bool r[23] : 2 4  7 8 ;
+
+/* pointers */
+bool $e : 2;
+word $ad:1111;
+byte $w: 1111 ;
+byte$s: 1111 ; // => gramática deixa passar este caso
+//byte $$lala : 2; => gramática NÂO deixa passar
+
+/* functions */
+//LETYPE LEFUNC();

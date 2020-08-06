@@ -1,0 +1,36 @@
+Trabalho de Complexidade de Algoritmos
+
+Grupo:
+João Luiz Grave Gross
+Rafael Vanz
+
+Problema:
+
+P:
+- pertencem a classe NP
+- são resolvidos em tempo polinomial (diz a solução)
+
+NP:
+- não existe solução eficiente (rápida)
+- podem ser solucionados, porém para entradas grandes a solução irá demorar bilhões de anos até ser encontrada
+- soluções dadas em tempo superior ao polinomial (fatorial, por exemplo)
+- são verificados em tempo polinomial (diz se há solução)
+	- isso é chamado de certificado, diz que há solução, mas não diz qual é
+	- algoritmo de verificação em tempo polinomial => certificado
+
+NP-Completo:
+- pertencem a clase de problemas NP
+- problemas NP podem ser reduzidos a problemas NP-completo
+- se puderem ser resolvidos em tempo polinomial, todos os problemas NP poderão também, logo P seria igual a NP,
+P = NP.
+- todos problemas NP podem ser reduzidos a um problema SAT (NP-Completo). Se o SAT tiver solução em tempo polinomial,
+então todos os problemas NP também terão e assim P = NP.
+
+NP-Difícil:
+- se P = NP os problemas NP-Díficil redutíveis a NP-Completo poderão ser resolvidos em tempo polinomial
+- problemas NP-Difícil não possuem avaliação em tempo polinomial (piores que os NP-Completo)
+
+Bin Packing Problem
+http://en.wikipedia.org/wiki/Longest_path_problem
+http://www.shannarasite.org/kb/kbse57.html
+http://www.algorithmist.com/index.php/Longest_Path_in_a_Graph

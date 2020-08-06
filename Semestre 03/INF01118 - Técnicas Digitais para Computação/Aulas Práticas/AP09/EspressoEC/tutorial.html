@@ -1,0 +1,247 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./tutorial_files/filelist.xml">
+<title>ESPRESSO: Logic Minimization Software</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>dhart</o:Author>
+  <o:LastAuthor>dhart</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>110</o:TotalTime>
+  <o:Created>2007-03-01T18:42:00Z</o:Created>
+  <o:LastSaved>2007-03-01T18:42:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>562</o:Words>
+  <o:Characters>3207</o:Characters>
+  <o:Company>University</o:Company>
+  <o:Lines>26</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3938</o:CharactersWithSpaces>
+  <o:Version>9.6926</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;}
+h1
+	{color:black;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#551A8B;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink="#551a8b" style='tab-interval:
+.5in' alink="#ff0000">
+
+<div class=Section1>
+
+<h1><span style='font-family:Arial'>ESPRESSO: Logic Minimization Software</span></h1>
+
+<p><span style='font-family:Arial'>This gives basic instructions on downloading
+espresso, creating an input file, and interpreting the results. You will use
+this program again next semester in ECE 221.</span></p>
+
+<p><strong><span style='font-family:Arial'>1. Download espresso</span></strong></p>
+
+<p style='margin-bottom:12.0pt'><span style='font-family:Arial'>Click here to
+download the executable file <a href="espresso.exe">espresso.exe</a> . Save the
+file in the folder of your choice. (Try Internet Explorer if other browsers
+give you a problem.) I created a subfolder called <em>espresso</em> in my ECE
+110 folder. You can also get the example files <a href="ex1.txt">ex1.txt</a>
+and <a href="ex2.txt">ex2.txt</a>. (Right click and then save the file.)</span></p>
+
+<p><strong><span style='font-family:Arial'>2. Open a DOS window</span></strong></p>
+
+<p><span style='font-family:Arial'>Espresso is a DOS program that must run in a
+DOS window. To open a DOS window in Windows XP, click<em> Start, Programs,
+Accessories, C:\ Command Prompt</em>. In older versions of Windows, click <em>Start,
+Programs, MS-DOS prompt</em>. Do <u>not</u> go to MS-DOS Mode. </span></p>
+
+<p><span style='font-family:Arial'>You will see a prompt indicating the current
+folder (directory). You will then have to move to the directory where the
+program is located by using the cd (change directory) command. In the DOS
+window, type the path to the folder. I have my folders arranged in the
+hierarchy <em>C:, courses, ece110, espresso</em>. Therefore, I would type </span></p>
+
+<p><span style='font-family:Arial'>cd C:\courses\ece110\espresso</span></p>
+
+<p><span style='font-family:Arial'>You should get a prompt indicating that you
+are in the desired directory.</span></p>
+
+<p><strong><span style='font-family:Arial'>3. Create an input file</span></strong></p>
+
+<p><span style='font-family:Arial'>Espresso requires a text file that defines
+the truth table for a function. You can create the file using Notepad. Here is
+an example for a four-input function.</span></p>
+
+<p><span style='font-family:Arial'># example input file 1 ex1.txt<br>
+.i 4<br>
+.o 1<br>
+.ilb A B C D<br>
+.ob F<br>
+0 0 0 0 0<br>
+0 0 0 1 0<br>
+0 0 1 0 0<br>
+0 0 1 1 0<br>
+0 1 0 0 0<br>
+0 1 0 1 0<br>
+0 1 1 0 1<br>
+0 1 1 1 1<br>
+1 0 0 0 1<br>
+1 0 0 1 1<br>
+1 0 1 0 0<br>
+1 0 1 1 0<br>
+1 1 0 0 0<br>
+1 1 0 1 0<br>
+1 1 1 0 0<br>
+1 1 1 1 0<br>
+.e</span></p>
+
+<p style='margin-bottom:12.0pt'><span style='font-family:Arial'>COMMENTS ABOUT
+THE INPUT FILE<br>
+.i 4 (Input variables = 4)<br>
+.o 1 (Output variables = 1)<br>
+.ilb A B C D (Input variable names)<br>
+.ob F (Output variable name)<br>
+0 0 0 0 0 (Truth table row, 4 inputs and output)<br>
+.e (Signifies the end of the input file.)</span></p>
+
+<p><strong><span style='font-family:Arial'>4. Run the program</span></strong></p>
+
+<p><span style='font-family:Arial'>To run espresso, type espresso filename. The
+name of my example file is ex1.txt, so to run it I would type <i>espresso
+ex1.txt </i>in the DOS window. The output will then appear in the window. </span></p>
+
+<p><strong><span style='font-family:Arial'>5. Interpret the output</span></strong></p>
+
+<p><span style='font-family:Arial'>This is the output file:</span></p>
+
+<p><span style='font-family:Arial'># example file 1 <br>
+.i 4<br>
+.o 1<br>
+.ilb A B C D<br>
+.ob F<br>
+.p 2 <br>
+100- 1<br>
+011- 1<br>
+.e</span></p>
+
+<p><span style='font-family:Arial'>Interpretation:<br>
+.p 2 (Indicates that there are two terms in the output expression)<br>
+100- 1 ( this term is AB'C'. notation: B' is B inverse, so this is read as A
+and not B and not C)<br>
+011- 1 ( this term is A'BC)</span></p>
+
+<p><span style='font-family:Arial'>The logic expression is therefore F = AB'C'
++ A'BC. In the output lines,1 is the variable, 0 is the inverse, and - means
+the variable is not involved.</span></p>
+
+<p><span style='font-family:Arial'>Tip: specifying the truth table entries only
+where the function is 1 is sufficient to define the entire truth table:</span></p>
+
+<p><span style='font-family:Arial'># example file 1 again -- only outputs that
+are 1's are required <br>
+.i 4<br>
+.o 1<br>
+.ilb A B C D<br>
+.ob F<br>
+0 1 1 0 1<br>
+0 1 1 1 1<br>
+1 0 0 0 1<br>
+1 0 0 1 1<br>
+.e</span></p>
+
+<p><span style='font-family:Arial'>Here is another example. Only outputs that
+are 1's are indicated; in all other truth table entries the function is 0.</span></p>
+
+<p><span style='font-family:Arial'># example file 2 <br>
+.i 4<br>
+.o 1<br>
+.ilb A B C D<br>
+.ob F<br>
+0 0 0 0 1<br>
+0 0 0 1 1<br>
+0 1 0 0 1<br>
+0 1 0 1 1<br>
+1 1 0 1 1<br>
+.e</span></p>
+
+<p><span style='font-family:Arial'>Here is the output file:</span><br>
+<br>
+<span style='font-family:Arial'># example file 2 <br>
+.i 4<br>
+.o 1<br>
+.ilb A B C D<br>
+.ob F<br>
+.p 2<br>
+-101 1<br>
+0-0- 1<br>
+.e</span></p>
+
+<p><span style='font-family:Arial'>The result is F = BC'D + A'C'.</span></p>
+
+<p><strong><span style='font-family:Arial'>6. Write the output to a file</span></strong></p>
+
+<p><span style='font-family:Arial'>In the DOS command window, you can have the
+program write the output to a file. For example</span></p>
+
+<p><span style='font-family:Arial'>espresso ex2.txt &gt; output2</span></p>
+
+<p style='margin-bottom:12.0pt'><span style='font-family:Arial'>will direct the
+output to the ASCII file output2. You can then print the file output2.</span></p>
+
+<p><span style='font-family:Arial'>These are links to further documentation:</span></p>
+
+<p><span style='font-family:Arial'><a
+href="http://www.csl.cornell.edu/courses/ece314/espressotutorial.pdf">http://www.csl.cornell.edu/courses/ece314/espressotutorial.pdf</a></span><br>
+<a href="http://bear.ces.cwru.edu/eecs_cad/man_octtools_espresso.html"><span
+style='font-family:Arial'>http://bear.ces.cwru.edu/eecs_cad/man_octtools_espresso.html</span></a></p>
+
+</div>
+
+</body>
+
+</html>

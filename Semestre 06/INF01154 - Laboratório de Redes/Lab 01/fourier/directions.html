@@ -1,0 +1,126 @@
+<title>Fourier Series Applet</title>
+<body>
+<hr>
+<a href="index.html">Click here to go to the applet.</a>
+<p>
+This java applet demonstrates
+<A href="http://mwt.e-technik.uni-ulm.de/world/lehre/basic_mathematics/fourier/node2.php3">Fourier series</a>,
+which is a method of expressing an arbitrary periodic function as
+a sum of cosine terms.  In other words, Fourier series can be used to express a
+function in terms of the frequencies (harmonics) it is composed of.
+<p>
+To select a function, you may press one of the following buttons:
+Sine, Cosine, Triangle, Sawtooth, Square, and Noise.  The function is
+displayed in white, with the Fourier series approximation in red.
+If you only see a red graph, that means the Fourier approximation is
+nearly the same as the original function.  (The red graph is drawn
+on top of the white one.)
+<p>
+Below the function you will see a graph of the Fourier coefficients.
+Each one represents a frequency, or harmonic.
+There are two sets of terms; on top are the sine terms, and on the bottom
+are the cosine terms.  Low frequencies are on the left and
+higher frequencies are on the right.
+<p>
+The "Number of Terms" slider will adjust the number of terms in the
+expansion.  The more terms there are, the
+better the approximation.  Try sliding the "Number of Terms" slider from left
+to right slowly to see the Fourier terms added up one by one.
+<p>
+If you move the mouse over one of the harmonics, it will turn
+yellow, and the corresponding Fourier term (frequency) will be
+drawn on top of the function in yellow.  So if you move the mouse
+over all the harmonics, you can see each of the terms individually.
+Also, if you click with the right mouse button on one of the harmonics,
+the "Number of Terms" slider will be changed so that all higher-frequency
+terms will be taken out of the series.
+<p>
+You can modify the function in one of two ways.  You can
+edit the function directly by clicking on it; in this case,
+the Fourier coefficients will be regenerated when you are done.
+Or, you can modify the Fourier coefficients, in which case the
+function will be changed to match.  If you want to create a function
+from scratch, hit the "Clear" button.
+<p>
+The "Clip" button can be used to simulate clipping.  It will
+increase the amplitude of the function,
+but will clip it if it goes out of range.  Try doing this with a
+sine function.  Using this button generally results in more jagged
+edges, which means more high-frequency terms will be involved in the
+expansion.  Some functions, like the square wave, aren't affected
+much by clipping.  Try playing the noise waveform and then hit "Clip"
+a few times to see if it changes.
+<p>
+The "Resample" button can be used to demonstrate aliasing.
+The function is replaced with samples at 32 points.  This corresponds
+to a sampling frequency of 7040 Hz (at the default playing frequency of
+220 Hz).  In almost all cases
+this will cause
+aliasing, where new, unwanted frequencies will be introduced.  Press the
+"Resample" button multiple times to choose a lower sampling rate.
+<p>
+For example
+a frequency of 220 Hz, when resampled, will have aliases at 6820 Hz
+(7040-220), 7260 Hz (7040+220), 13860 Hz (7040*2-220),
+and so on.
+<p>
+When the "Quantize" button is pressed, the values in the function are rounded
+off to the nearest multiple of 1/8.  The resulting roundoff error causes
+new frequencies to be introduced; these can be heard when the function
+is played.  This is called quantization distortion.  Press "Quantize"
+multiple times to use a coarser quantization.
+<p>
+The "Rectify" button will zero out the function wherever it is negative.
+The "Full Rectify" button will take the absolute value of the function
+at all points.  Try this with the sine or sawtooth function.
+<p>
+The "Sound" checkbox, when checked, will play the function at 220 Hz.
+This checkbox is only available if you have Java 2.  The
+frequency is adjustable using the "Playing Frequency" slider.
+Try playing
+various functions to see what they sound like.  Also try isolating each
+harmonic, or mixing two or three harmonics together.  The "Number of
+Terms" slider will affect how many harmonics are played.
+<p>
+(The sampling rate used for playing is 22.05khz, so frequencies higher
+than 11025 Hz will be filtered out.)
+<p>
+There are two lines of dashes at the bottom of the window which you can
+click on to mute one or more harmonics.  If you click on one of the
+top dashes, it
+changes to "M", meaning "mute"; that harmonic will not be played.
+If you click on one of the bottom
+ones, it changes to "S", meaning "solo"; <i>only</i> that harmonic will be played.
+<p>
+The "Mag/Phase view" checkbox will allow you to view the Fourier terms
+in phase-angle form (see
+<A
+href="http://mwt.e-technik.uni-ulm.de/world/lehre/basic_mathematics/fourier/node2.php3">this
+page</a> for more on this representation).
+<p>
+The "Log View" checkbox (which only works when "Mag/Phase View" is checked)
+will use a logarithmic scale to show the magnitudes of each term.
+<p>
+Other things to try:
+<ul>
+<li>Draw a rapidly varying sine wave (as best you can), and check out
+the Fourier coefficients to see if the frequency is picked up by the
+Fourier decomposition.  One of the magnitudes should be much higher
+than the others.
+<li>Start with a function, and remove Fourier terms one by one by
+setting the coefficients to zero.
+<li>Start with a sine wave, and then hit the "Clip" button repeatedly.
+Watch how higher-frequency terms become more and more prominent.
+<li>Hit "Clear" and then add two frequencies to the function by
+clicking on the magnitudes.  See how the frequencies interact.
+If the frequencies are fairly close together, you should see beats;
+the amplitude of the overall function will oscillate at a frequency
+which is equal to the difference in the original two frequencies.
+</ul>
+<p>
+<a href="index.html">Click here to go to the applet.</a>
+<hr>
+<a href="/mathphysics.html"><img src="/mathphysics_small.gif"></a>
+<a href="/index.html"><img src="/me_small.gif"></a>
+<br><i>java@</i><i>falstad.com</i>
+</body>

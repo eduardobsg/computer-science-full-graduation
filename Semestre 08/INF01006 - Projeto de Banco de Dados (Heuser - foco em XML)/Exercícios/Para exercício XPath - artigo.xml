@@ -1,0 +1,104 @@
+<?xml version='1.0'?>
+<!DOCTYPE artigo SYSTEM "artigo.dtd">
+<artigo data="" ultima_revisao="" versao="1">
+  <autor>
+    <nome>Arnaud Sahuguet</nome>
+    <instituicao>University of Pennsylvania</instituicao>
+    <endereco></endereco>
+  </autor>
+  <titulo_artigo>Everything you ever wanted to know about DTD's, but were afraid to ask</titulo_artigo>
+  <resumo></resumo>
+  <secao titulo = "Introduction" numero="s1">
+    <paragrafo>For the last two years, XML has become an increasingly popular data-format embraced by a lot of different communities. XML is extremely attractive because it offers a simple, intuitive and uniform text-based syntax and is extensible. One can find today XML proposals for messages, text content delivery and presentation, data content, documents, software components,
+scientific data, real-state ads, financial products, cooking recipes, etc.</paragrafo>   
+    <paragrafo>Unfortunately this also means that XML is far too general and if people plan to use it in serious applications (mainly for Electronic Document Interchange, in a broad sense), they will need to provide a specification (i.e. structure, constraints, etc.) for their XML, which XML itself cannot offer.</paragrafo>
+    <paragrafo>...</paragrafo>
+    <paragrafo citacao="b1 b5">From a database perspective for instance, DTDs can be useful to trigger optimizations for XML query languages. For instance some structural knowledge abou an XML document permits to resolve path expressions with wild-cards and perform both horizontal and vertical optimization. This role of DTDs is similar to dataguides.</paragrafo>
+    <paragrafo>...</paragrafo>
+  </secao>
+  <secao titulo="DTDs in a nutshell" numero="s2">
+    <paragrafo>We briefly describe the structure of a DTD, which can consists of the following items listed bellow.</paragrafo>	
+    <paragrafo>...</paragrafo>
+  </secao>
+  <secao titulo="The DTD survey" numero="s3">
+    <paragrafo>We present the details of the survey we have conducted on DTDs and we first describe the methodology. The first step is the harvesting of DTDs. Fortunately, repositories are emerging such as Microsoft BizTalk. For this paper we have been using http://www.xml.org. </paragrafo>	
+    <figura tipo = "gif"/> 
+    <paragrafo>The experiments were done using sgrep , Perl, shell scripts, and Java programs based on the IBM XML API. The entity expansion was performed using a modified version of xmlproc, by Lars M. Garshol. We used Graphviz from ATeT to generate DTD graphs. </paragrafo>
+    <figura tipo = "gif"/>
+  </secao>
+  <secao titulo="What we have benn looking at" numero="s3.1">
+    <paragrafo>We are interested in various properties of a DTD. First we look at its size, in terms of number of elements, attributes and entity references.</paragrafo>
+    <paragrafo>Second, we look at its structure, in terms of number of root elements, depth and the complexity of the content model.</paragrafo>
+    <paragrafo>...</paragrafo>
+  </secao> 
+  <secao titulo="Results" numero="s3.2">
+    <paragrafo>Some quantitatives results from the survey are presented in Figure 3. The detailed results will be available in the full version of this paper.</paragrafo>
+    <paragrafo>As mentioned previously, the first striking observation is that most published DTDs are not correct, with missing elements wrong syntax or incompatible attribute declarations. This might prove that such DTDs are being used for documentation purpose only and are not meant to be used for validation at all. </paragrafo>
+    <paragrafo>...</paragrafo>
+    <figura tipo = "jpeg"/>
+    <paragrafo>We also notice that DTD authors try to mimic inheritance and capture modularity via entity references. Unfortunately, this inheritance is purely syntactic and sometimes leads to some cascading mistakes.</paragrafo>
+    <paragrafo>...</paragrafo>
+  </secao>
+  <secao titulo="Shortcomings and requirements" numero="s4">
+    <paragrafo>The conclusions of the survey show that DTDs - as they are - are not suitable for what we want to do with them.</paragrafo>
+    <paragrafo>...</paragrafo>
+    <figura tipo = "jpeg"/>
+    <paragrafo>...</paragrafo>
+  </secao> 
+  <secao titulo="Replacement for DTDs" numero="s5">
+    <paragrafo>After denigrating DTDs and writing down the wish list for the New Document Type Descriptors, let us look at the current proposals. XML users have realized very early the shortcomings fo DTDs and have come up with some extensions such as SOX, DCD, XML-Data, etc.</paragrafo>
+    <paragrafo>...</paragrafo>
+  </secao> 
+  <secao titulo="Future Work" numero="s6">
+    <paragrafo>We present some future work that has arisen, sometimes unexpectedly, from this survey.</paragrafo>
+    <paragrafo>...</paragrafo>
+  </secao> 
+  <secao titulo="Conclusion" numero="s7">
+    <paragrafo>By its extensible nature, the XML language imperatively needs a constraint structure that is represented today by DTDs.</paragrafo>
+    <paragrafo>...</paragrafo>
+  </secao> 
+  <bibliografia>
+    <referencia id="b1">
+      <obra>Data on the Web: From Relations to Semistructured Data and XML</obra>
+      <autor>
+        <nome>Serge Abiteboul</nome>
+        <endereco></endereco>
+      </autor>
+      <autor>
+        <nome>Peter Buneman</nome>
+        <endereco></endereco>
+      </autor>
+      <autor>
+        <nome>Dan Suciu</nome>
+        <endereco></endereco>
+      </autor>
+      <ano>1999</ano>
+    </referencia>
+    <referencia id="b2">
+      <obra>Union Types for Semistructured Data</obra>
+      <autor>
+        <nome>Peter Buneman</nome>
+        <endereco></endereco>
+      </autor>
+      <autor>
+        <nome>Benjamin Pierce</nome>
+        <endereco></endereco>
+      </autor>
+      <ano>1999</ano>
+      <local>University of Pennsylvania</local>
+    </referencia>
+    <referencia id="b5">
+      <obra>Optimizing regular path expressions using graph Schemas</obra>
+      <autor>
+        <nome>Mary F. Fernandez</nome>
+        <endereco></endereco>
+      </autor>
+      <autor>
+        <nome>Dan suciu</nome>
+        <endereco><rua>Rua das Flores</rua></endereco>
+      </autor>
+      <ano>1998</ano>
+      <local>IEEE Computer Society</local>
+    </referencia>
+  </bibliografia>
+</artigo>

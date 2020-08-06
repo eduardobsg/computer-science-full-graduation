@@ -1,0 +1,89 @@
+Question 1
+
+Novos tipos de dados com datatype
+A instrução datatype pode ser usada para definir novos tipos de dados.
+É importante que o programador defina operações sobre eles.
+O exemplo seguinte define o tipo LOGICO3 e algumas operações sobre ele:
+
+	datatype LOGIC3 = True | False | Undef;
+
+   fun not3 True = False | 
+	   not3 False = True | 
+	   not3 Undef = Undef; 
+   fun and3 (True,True) = True | 
+       and3 (False,_) = False | 
+       and3 (_,False) = False | 
+       and3 (_,_) = Undef; 
+   fun or3 (False,False) = False |
+	   or3 (True,_) = True |
+	   or3 (_,True) = True |
+	   or3 (_,_) = Undef;
+
+   val a = True; 
+   val b = Undef; 
+   val c = False; 
+
+   and3 (a, b); 
+   and3 (c, a)); 
+   and3 (not3 (c), a)); 
+   
+   
+
+Levando em conta o tipo LOGICO3, defina a função denominada "or3", usando wild_cards ou if-then-else. 
+Insira o resultado abaixo (coloque somente o trecho da função OR3).
+
+--------------------------------------------------------------------------------------------------	
+		
+Question 2
+
+Definição de tipo e operações associadas
+
+Observe alguns exemplos de funções que usam o tipo definido pelo usuário:
+
+    (* A função área é definida através de três equações, que usam a constante PI e função Math.sqrt *) 
+    load "Math"; 
+	datatype shape = point | circle of real | box of (real*real); 
+
+    fun area(point)=0.0
+      |   area(circle r)=Math.pi*Math.pow(r,2.0)
+      |   area(box(b,h))=b*h;
+    > val area = fn : shape -> real 
+
+    - area(box(3.0,4.0)); 
+    > val it = 12.0 : real
+
+    - area(point); 
+    > val it = 0.0 : real 
+
+    - area(circle 5.0); 
+    > val it = 78.53975 : real   
+
+De maneira similar ao datatype shape, defina um tipo que suporte pelo menos 5 figuras geométricas e contenha 
+funções para calcular área, perímetro, circunferência e volume, quando aplicáveis. O código deve ser enxuto, 
+pois o Moodle limita a quantidade de caracteres. 
+
+datatype shape = trapez of (real*real*real) | circle of (real) | rectangle of (real*real) | square of (real) | sphere of (real);
+
+fun area(trapez(b,h,p)) = 2.0*b*h + 2.0*h*p + 2.0*b*p |
+    area(circle(r)) = Math.pi*Math.pow(r,2.0) |
+	area(rectangle(b,h)) = b*h | 
+	area(square(l)) = l*l |
+	area(sphere(r)) = 4.0*area(circle(r));
+	
+fun volume(trapez(b,h,p)) = b*h*p |
+    volume(circle(r)) = 0.0 |
+	volume(rectangle(b,h)) = 0.0 | 
+	volume(square(l)) = 0.0 |
+	volume(sphere(r)) = 4.0*area(circle(r))*r / 3.0;
+
+area(trapez(2.0,3.0,4.0));
+area(circle(5.0));
+area(rectangle(3.0,4.0));
+area(square(4.0));
+area(sphere(2.0));
+
+volume(trapez(2.0,3.0,4.0));
+volume(circle(5.0));
+volume(rectangle(3.0,4.0));
+volume(square(4.0));
+volume(sphere(2.0));

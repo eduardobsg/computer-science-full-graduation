@@ -1,0 +1,87 @@
+Cadeira: INF01120 - Técnicas de Construção de Programas
+Professor: Marcelo Pimenta
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2011/02
+
+Resumo 5 - Towards object technology
+
+Resumo:
+
+- O que fazemos para encontrar os módulos de nosso software?
+	-> primeiro devemos analisar 3 aspectos: processadores, ações e objetos.
+	Os processadores são unidades computações, onde iremos executar nosso software, 
+	como por exemplo CPU, GPU, thread. As ações constituem as operações que iremos
+	implementar para solucionar os problemas aos quais nosso software se destina.
+	Já os objetos são estruturas de dados que serão utilizadas por nossas ações.
+		- por enquanto não devemos nos preocupar com os processadores, visto que
+		esse tópico só será explorado quando for falado em concorrência.
+		
+	-> estabelecendo esses dois aspectos agora devemos definir se a aplicação será
+	desenvolvida no entorno das operações (ações) ou das principais estruturas
+	de dados.
+	
+- Decomposição Funcional
+	-> estruturar o código em volta dos dados ou das funções?
+	-> desenvolvimento top-down: primeiro escrevemos a ideia mais genérica do 
+	software, a que ele se destina ou o que irá fazer. Em seguida pegamos essa
+	ação e vamos fragmentando em operações menores, até chegarmos em operações 
+	atômicas, as quais podem ser implementadas, cada uma, por rotinas. 
+		- essa abordagem se constitui na decomposição do problema
+		- para auxiliar a organização dessa abordagem top-down, podemos construir
+		uma árvore, onde os filhos de cada nodo são decomposições de seu pai.
+		Isso é feito até uma abstração baixa o suficiente para possibilitar 
+		implementação direta do problema (problemas atômicos).
+		- o desenvolvimento top-down é composto de uma série de vantagens: organização
+		de ideias, e da lógica e também como um roteiro para a implementaçao, seguindo
+		a sequencia estabelecida pela árvore de ações.
+	-> as mudanças do software ocorrem naturalmente, a medida que os clientes tem 
+	novas ideias ou novas necessidades. Logo, a extensão do software e sua continuidade 
+	devem ser muito bem planejadas.
+	-> mas então, como econtrar o topo da árvore, a mais com nível de abstração mais 
+	elevado?
+		- sistemas verdadeiros não possuem topo.
+	-> um sistema que trabalha com o cliente inevitavelmente estará sugeito a se forcar
+	em aspectos externos, visto que sempre haverá uma pergunta do tipo "o que o cliente 
+	está vendo?", "o que o cliente consegue fazer?".
+		- um projeto saudável irá separar bem a interface das outras partes do programa,
+		podendo dessa forma construir uma base estrutural do software mais sólida.
+		- também é possível escrever o programa e posteriormente utilizar uma ferramenta
+		que monte a interface ao usuário. Mas vale lembrar que o desenvolvimento da aplicação
+		deve considerar desde o início a interface, pois focando apenas na aplicação, deixando
+		a interface de lado, o desenvolvedor pode acabar tendo problemas para unir esses
+		elementos.
+	-> um dos problemas do desenvolvimento top-down é que as abstrações altas e baixas ficam 
+	presas entre si, ou seja, são projetadas para serem executadas em uma determinada ordem, 
+	contudo nem sempre essa característica será necessária, pelo contrário, poderá ser uma
+	barreira ao sucesso da aplicação. Logo precisamos encontrar uma nova maneira de especificar
+	nossa aplicação com uma abordagem diferenciada, que desconsidere a ordem de execução das
+	rotinas. Uma alternativa: desenvolvimento orientado a objetos.
+		
+	-> desenvolvimento orientado a objetos: uma das principais características dessa metodologia
+	é que, ao invés de formalizar uma sequencia de operações, as operações são logicamente sequen-
+	cias, ou seja, quando é necessária uma sequencia de execução, a dita sequencia estará correta
+	e disponível para implementação, porém quando outra sequencia for exigida ela poderá ser 
+	cumprida contanto que as operações tenham uma relação lógica entre si. Isso quera uma ordem
+	pré-definida de uso das operações.
+
+	-> projetos top-down são muito bons para descrevê-lo, porém muitas vezes a abordagem
+	top-down não é a melhor para se implementar um projeto.
+	
+- Decomposição baseada em objetos
+	-> não podemos reusar um código que implemente manipulação em tabelas, por exemplo, sem 
+	reusar as operações que se aplicam a tabelas, tais como inserção, deleção, consulta e 
+	atualização.
+	-> objetos equipados com várias operações associadas ao objeto serão unidades de reuso 
+	estáveis.
+	
+- Lembrar que uma descrição de software baseada em objetos é muito mais estável e reusável do
+que uma baseada apenas em funções.
+- Tentar sempre descrever os métodos de um objeto ou as funções com restrições lógicas e não
+temporais, pois assim a aplicação não fica presa a apenas uma forma de execução das operações.
+	
+	
+	
+	
+	
+	

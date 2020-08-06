@@ -1,0 +1,36 @@
+/* tabela de Peças */
+INSERT INTO peca
+   (cod_peca,nome_peca,peso_peca,cor_peca,cidade_peca)
+   VALUES
+   ('P1','Parafuso',5,'Cinza','PoA'),
+   ('P2','Arruela',5,'Cinza','PoA'),
+   ('P3','Mancal',25,'Vermelho','Rio'),
+   ('P4','Eixo',15,'Verde','Rio'),
+   ('P5','Motor',65,'Vermelho',NULL);
+
+/* tabela de Fornecedores */
+INSERT INTO fornec
+   (cod_fornec,nome_fornec,status_fornec,cidade_fornec)
+   VALUES
+   ('F1','Antunes',5,'PoA'),
+   ('F2','Silva',10,'PoA'),
+   ('F3','Souza',15,'Curitiba'),
+   ('F6','Antunes',10,'Rio'),
+   ('F4','Machado',10,NULL),
+   ('F5','Barcelos',12,'Rio');
+
+/* tabela de Embarques */
+INSERT INTO embarq
+   (cod_fornec,cod_peca,qtde_embarq)
+   VALUES
+   ('F1','P1',300),
+   ('F1','P2',350),
+   ('F1','P3',250),
+   ('F1','P4',150),
+   ('F1','P5',200),
+   ('F2','P1',300),
+   ('F2','P2',350),
+   ('F2','P3',250),
+   ('F2','P4',150),
+   ('F3','P2',200),
+   ('F3','P3',350);

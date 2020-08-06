@@ -1,0 +1,190 @@
+NDB006
+The number of symbol table entries is: 17
+The length of the symbol table is: 509
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|fulladder4bits:1|fulladder:1|
+M	|fulladder4bits:1|fulladder:4|
+l	|fulladder4bits:1|fulladder:6|
+"-	|fulladder4bits:1|fulladder:5|
+"L	|fulladder4bits:4|fulladder:1|
+"k	|fulladder4bits:4|fulladder:4|
+#,	|fulladder4bits:4|fulladder:6|
+#K	|fulladder4bits:4|fulladder:5|
+#j	|fulladder4bits:2|fulladder:1|
+$+	|fulladder4bits:2|fulladder:4|
+$J	|fulladder4bits:2|fulladder:6|
+$i	|fulladder4bits:2|fulladder:5|
+%*	|fulladder4bits:3|fulladder:1|
+%I	|fulladder4bits:3|fulladder:4|
+%h	|fulladder4bits:3|fulladder:6|
+&)	|fulladder4bits:3|fulladder:5|
+
+The number of name info structs is : 162
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	Ky&|	!	2	D	E	A0	"+
+#	Ky&|	!	1	E	A1	")
+$	Ky&|	!	1	G	A10	x
+%	Ky&|	!	1	G	A11	t
+&	Ky&|	!	2	H	I	A12	r
+'	Ky&|	!	1	I	A13	"1
+(	Ky&|	!	2	C	K	A14	"0
+)	Ky&|	!	2	C	K	A15	".
+*	IGdp	!	A2	"'
++	Ky&|	!	2	M	N	A3	"&
+,	Ky&|	!	1	O	A4	"$
+-	Ky&|	!	1	O	A5	}
+.	Ky&|	!	1	Q	A6	""
+/	Ky&|	!	1	Q	A7	{
+0	Ky&|	!	2	R	S	A8	z
+1	Ky&|	!	1	S	A9	w
+2	Ky&|	!	2	D	E	B0	"*
+3	Ky&|	!	1	E	B1	"%
+4	Ky&|	!	1	G	B10	u
+5	Ky&|	!	1	G	B11	s
+6	Ky&|	!	2	H	I	B12	q
+7	Ky&|	!	1	I	B13	"-
+8	Ky&|	!	2	C	K	B14	"/
+9	Ky&|	!	2	C	K	B15	",
+:	IGdp	!	B2	"(
+;	Ky&|	!	2	M	N	B3	o
+<	Ky&|	!	1	O	B4	"#
+=	Ky&|	!	1	O	B5	"!
+>	Ky&|	!	1	Q	B6	~
+?	Ky&|	!	1	Q	B7	|
+@	Ky&|	!	2	R	S	B8	y
+A	Ky&|	!	1	S	B9	v
+B	Ky&|	!	2	D	E	Cin	p
+C	NLG+	!	1	Cout	"3
+D	IGdq	!	S0	"@
+E	NLG+	!	3	S1	"A
+F	IGdq	!	S10	":
+G	XUi[	!	1	1	1	S11	"8
+H	NLG+	!	2	S12	"6
+I	NLG+	!	1	S13	"7
+J	IGdq	!	S14	"5
+K	NLG+	!	2	S15	"4
+L	IGdq	!	S2	"B
+M	NLG+	!	2	S3	"2
+N	NLG+	!	1	S4	"<
+O	NLG+	!	1	S5	">
+P	IGdq	!	S6	"=
+Q	XUi[	!	1	1	2	S7	"?
+R	NLG+	!	2	S8	"9
+S	NLG+	!	1	S9	";
+T	IGdW	.	:1	#V
+U	IGdW	.	:2	#W
+V	IVOQ	.	Y	:3	#X
+W	IGdW	.	:4	#Y
+X	IVOQ	.	Z	:5	#Z
+Y	INu}	.	V	Cout	#X
+Z	INu}	.	X	S	#Z
+[	IGdW	M	:1	#e
+\	IGdW	M	:2	#f
+]	IVOQ	M	`	:3	#g
+^	IGdW	M	:4	#h
+_	IVOQ	M	a	:5	#i
+`	INu}	M	]	Cout	#g
+a	INu}	M	_	S	#i
+b	IGdW	"-	:1	$#
+c	IGdW	"-	:2	$$
+d	IVOQ	"-	g	:3	$%
+e	IGdW	"-	:4	$&
+f	IVOQ	"-	h	:5	$'
+g	INu}	"-	d	Cout	$%
+h	INu}	"-	f	S	$'
+i	IGdW	l	:1	#s
+j	IGdW	l	:2	#t
+k	IVOQ	l	n	:3	#u
+l	IGdW	l	:4	#v
+m	IVOQ	l	o	:5	#w
+n	INu}	l	k	Cout	#u
+o	INu}	l	m	S	#w
+p	IGdW	#j	:1	%_
+q	IGdW	#j	:2	%`
+r	IVOQ	#j	u	:3	%a
+s	IGdW	#j	:4	%b
+t	IVOQ	#j	v	:5	%c
+u	INu}	#j	r	Cout	%a
+v	INu}	#j	t	S	%c
+w	IGdW	$+	:1	%m
+x	IGdW	$+	:2	%n
+y	IVOQ	$+	|	:3	%o
+z	IGdW	$+	:4	%p
+{	IVOQ	$+	}	:5	%q
+|	INu}	$+	y	Cout	%o
+}	INu}	$+	{	S	%q
+~	IGdW	$i	:1	&+
+"!	IGdW	$i	:2	&,
+""	IVOQ	$i	"%	:3	&-
+"#	IGdW	$i	:4	&.
+"$	IVOQ	$i	"&	:5	&/
+"%	INu}	$i	""	Cout	&-
+"&	INu}	$i	"$	S	&/
+"'	IGdW	$J	:1	%{
+"(	IGdW	$J	:2	%|
+")	IVOQ	$J	",	:3	%}
+"*	IGdW	$J	:4	%~
+"+	IVOQ	$J	"-	:5	&!
+",	INu}	$J	")	Cout	%}
+"-	INu}	$J	"+	S	&!
+".	IGdW	%*	:1	&c
+"/	IGdW	%*	:2	&d
+"0	IVOQ	%*	"3	:3	&e
+"1	IGdW	%*	:4	&f
+"2	IVOQ	%*	"4	:5	&g
+"3	INu}	%*	"0	Cout	&e
+"4	INu}	%*	"2	S	&g
+"5	IGdW	%I	:1	&q
+"6	IGdW	%I	:2	&r
+"7	IVOQ	%I	":	:3	&s
+"8	IGdW	%I	:4	&t
+"9	IVOQ	%I	";	:5	&u
+":	INu}	%I	"7	Cout	&s
+";	INu}	%I	"9	S	&u
+"<	IGdW	&)	:1	'/
+"=	IGdW	&)	:2	'0
+">	IVOQ	&)	"A	:3	'1
+"?	IGdW	&)	:4	'2
+"@	IVOQ	&)	"B	:5	'3
+"A	INu}	&)	">	Cout	'1
+"B	INu}	&)	"@	S	'3
+"C	IGdW	%h	:1	'!
+"D	IGdW	%h	:2	'"
+"E	IVOQ	%h	"H	:3	'#
+"F	IGdW	%h	:4	'$
+"G	IVOQ	%h	"I	:5	'%
+"H	INu}	%h	"E	Cout	'#
+"I	INu}	%h	"G	S	'%
+"J	IGdW	"L	:1	$[
+"K	IGdW	"L	:2	$\
+"L	IVOQ	"L	"O	:3	$]
+"M	IGdW	"L	:4	$^
+"N	IVOQ	"L	"P	:5	$_
+"O	INu}	"L	"L	Cout	$]
+"P	INu}	"L	"N	S	$_
+"Q	IGdW	"k	:1	$i
+"R	IGdW	"k	:2	$j
+"S	IVOQ	"k	"V	:3	$k
+"T	IGdW	"k	:4	$l
+"U	IVOQ	"k	"W	:5	$m
+"V	INu}	"k	"S	Cout	$k
+"W	INu}	"k	"U	S	$m
+"X	IGdW	#K	:1	%'
+"Y	IGdW	#K	:2	%(
+"Z	IVOQ	#K	"]	:3	%)
+"[	IGdW	#K	:4	%*
+"\	IVOQ	#K	"^	:5	%+
+"]	INu}	#K	"Z	Cout	%)
+"^	INu}	#K	"\	S	%+
+"_	IGdW	#,	:1	$w
+"`	IGdW	#,	:2	$x
+"a	IVOQ	#,	"d	:3	$y
+"b	IGdW	#,	:4	$z
+"c	IVOQ	#,	"e	:5	${
+"d	INu}	#,	"a	Cout	$y
+"e	INu}	#,	"c	S	${

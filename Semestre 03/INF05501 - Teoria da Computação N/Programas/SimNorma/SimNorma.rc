@@ -1,0 +1,644 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\SimNorma.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SimNorma.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_LOGO                BITMAP                  "res\\logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEWPROJ
+    BUTTON      ID_FILE_OPENPROJ
+    BUTTON      ID_FILE_SAVEPROJ
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDOACTION
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_MODE_MONITE
+    BUTTON      ID_MODE_FLOWCHART
+    BUTTON      ID_MODE_INSTRUCTS
+    SEPARATOR
+    BUTTON      ID_MODE_RUN
+    BUTTON      ID_MODE_STEP
+    BUTTON      ID_MODE_PAUSE
+    BUTTON      ID_MODE_STOP
+    SEPARATOR
+    BUTTON      ID_MODE_OPTIONS
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&Arquivo"
+    BEGIN
+        MENUITEM "&Novo\tCtrl+N",               ID_FILE_NEWPROJ
+        MENUITEM "&Abrir...\tCtrl+A",           ID_FILE_OPENPROJ
+        MENUITEM SEPARATOR
+        MENUITEM "&Salvar\tCtrl+S",             ID_FILE_SAVEPROJ
+        MENUITEM "Salvar &Como...",             ID_FILE_SAVEASPROJ
+        MENUITEM SEPARATOR
+        MENUITEM "Sai&r",                       ID_APP_EXIT
+    END
+    POPUP "&Editar"
+    BEGIN
+        MENUITEM "&Desfazer\tCtrl+Z",           ID_EDIT_UNDO
+        MENUITEM "Re&fazer\tCtrl+Shift+Z",      ID_EDIT_REDOACTION
+        MENUITEM SEPARATOR
+        MENUITEM "&Recortar\tCtrl+X",           ID_EDIT_CUT
+        MENUITEM "&Copiar\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "Co&lar\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "&Limpar Seleção\tDel",        ID_EDIT_DELETESEL
+        MENUITEM "Selecionar &Tudo\tCtrl+T",    ID_EDIT_SELECTALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Atualizar\tF5",              ID_EDIT_REFRESH
+    END
+    POPUP "&Visualizar"
+    BEGIN
+        MENUITEM "&Barra de Ferramentas",       ID_VIEW_TOOLBAR
+        MENUITEM "Barra de &Estado",            ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Macros Disponíveis\tF4",     ID_VIEW_MACROS
+        MENUITEM "&Registradores",              ID_VIEW_REGISTERS
+        MENUITEM "&Saída da Execução",          ID_VIEW_OUTPUT
+    END
+    POPUP "&Modo"
+    BEGIN
+        MENUITEM "Modo de &Edição\tF6",         ID_MODE_MONITE
+        MENUITEM "Modo de &Fluxograma\tF7",     ID_MODE_FLOWCHART
+        MENUITEM "Modo de &Instruções Rotuladas\tF8", ID_MODE_INSTRUCTS
+        MENUITEM SEPARATOR
+        MENUITEM "&Executar\tF9",               ID_MODE_RUN
+        MENUITEM "Próximo P&asso\tF10",         ID_MODE_STEP
+        MENUITEM "&Pausa",                      ID_MODE_PAUSE
+        MENUITEM "&Parar\tCtrl+F9",             ID_MODE_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "&Opções da Execução",         ID_MODE_OPTIONS
+    END
+    POPUP "A&juda"
+    BEGIN
+        MENUITEM "&Tópicos da Ajuda\tF1",       ID_HELP_TOPICS
+        MENUITEM SEPARATOR
+        MENUITEM "&Sobre SimNorma...",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_DELETESEL,      VIRTKEY, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "Z",            ID_EDIT_REDOACTION,     VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    VK_F5,          ID_EDIT_REFRESH,        VIRTKEY, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEWPROJ,        VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_FILE_OPENPROJ,       VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVEPROJ,       VIRTKEY, CONTROL, NOINVERT
+    VK_F7,          ID_MODE_FLOWCHART,      VIRTKEY, NOINVERT
+    VK_F8,          ID_MODE_INSTRUCTS,      VIRTKEY, NOINVERT
+    VK_F6,          ID_MODE_MONITE,         VIRTKEY, NOINVERT
+    VK_F9,          ID_MODE_RUN,            VIRTKEY, NOINVERT
+    VK_F10,         ID_MODE_STEP,           VIRTKEY, NOINVERT
+    VK_F9,          ID_MODE_STOP,           VIRTKEY, CONTROL, NOINVERT
+    VK_F4,          ID_VIEW_MACROS,         VIRTKEY, NOINVERT
+    VK_F1,          ID_HELP_TOPICS,         VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 332, 194
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Sobre SimNorma"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,12,24,21,20
+    LTEXT           "SimNorma 1.0",IDC_STATIC,48,12,119,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,275,7,50,16,WS_GROUP
+    LTEXT           "Simulador da máquina Norma. Trabalho desenvolvido para a disciplina Teoria da Computação ministrada pelo Prof. Dr. Tiarajú Diverio.",
+                    IDC_STATIC,59,25,209,28
+    CONTROL         139,IDC_STATIC,"Static",SS_BITMAP,212,147,85,28
+    GROUPBOX        "Créditos",IDC_STATIC,32,60,269,118
+    LTEXT           "Líder de Projeto e Programador",IDC_STATIC,46,76,101,8
+    LTEXT           "Marcelo Bona de Mendonça Boff - marcelo@e-pocketsetup.com",
+                    IDC_STATIC,72,88,203,8
+    LTEXT           "Redação e Revisão da Ajuda e do Manual Impresso",
+                    IDC_STATIC,46,102,165,8
+    LTEXT           "Fernando Trebien - ftrebien@inf.ufrgs.br",IDC_STATIC,72,
+                    114,133,8
+    LTEXT           "Estruturação do Arquivo de Ajuda",IDC_STATIC,46,126,110,
+                    8
+    LTEXT           "Leonardo Golob - l_golob@hotmail.com",IDC_STATIC,72,137,
+                    125,8
+    LTEXT           "Professor Orientador",IDC_STATIC,46,150,68,8
+    LTEXT           "Prof. Dr. Tiarajú Asmuz Diverio ",IDC_STATIC,72,162,102,
+                    8
+END
+
+IDD_MACROS DIALOGEX 0, 0, 123, 132
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Macros Disponíveis"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_MACROS,4,4,116,124,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_REGISTERS DIALOGEX 0, 0, 144, 137
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Registradores"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_REGISTERS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,4,4,136,111
+    PUSHBUTTON      "Zerar",IDC_CLEARREGS,4,119,50,14,BS_FLAT
+    PUSHBUTTON      "Editar",IDC_EDITREG,57,119,50,14,BS_FLAT
+END
+
+IDD_OUTPUT DIALOGEX 0, 0, 193, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Saída da Execução"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_OUTPUT,4,4,185,86,LBS_NOINTEGRALHEIGHT | WS_VSCROLL
+END
+
+IDD_COMPILERERROR DIALOGEX 0, 0, 256, 140
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION
+CAPTION "Erro de Compilação!"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,102,119,50,14
+    ICON            "",IDC_ERRORICON,16,18,20,20
+    LTEXT           "SimNorma tentou compilar o seu projeto, mas ocorreu um erro que não permite o SimNorma continuar a compilação. Por favor corrija a razão do problema e tente compilar novamente.",
+                    IDC_STATIC,48,12,194,35
+    LTEXT           "Arquivo do Erro",IDC_STATIC,16,58,51,8
+    LTEXT           "Descrição do Erro",IDC_STATIC,16,76,57,8
+    EDITTEXT        IDC_ERROR_FILE,84,56,158,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ERROR_DESCRIP,84,74,158,36,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY
+END
+
+IDD_EDITREG DIALOGEX 0, 0, 186, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Valor do Registrador"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Valor",IDC_STATIC,7,28,17,8
+    EDITTEXT        IDC_REGVALUE,54,26,125,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,40,53,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,94,53,50,14
+    LTEXT           "Nome",IDC_STATIC,7,10,19,8
+    EDITTEXT        IDC_REGNAME,54,8,125,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_OPTIONS DIALOGEX 0, 0, 234, 150
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Opções da Execução"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,68,129,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,121,129,50,14
+    LTEXT           "Arquivo de saída",IDC_STATIC,8,10,54,8
+    EDITTEXT        IDC_OUTPUTFILE,84,8,96,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Procurar",IDC_BROWSE,184,8,43,14
+    LTEXT           "Tempo entre passos",IDC_STATIC,8,28,66,8
+    EDITTEXT        IDC_DELAY,84,26,96,14,ES_AUTOHSCROLL
+    LTEXT           "milisegundos",IDC_STATIC,186,28,41,8
+    CONTROL         "Usar tempo de atraso entre os passos na execução",
+                    IDC_USEDELAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,48,
+                    219,10
+    CONTROL         "Atualizar fluxograma e instruções rotuladas durante execução",
+                    IDC_UPDATECONTROLS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    8,60,219,10
+    CONTROL         "Atualizar valor dos registradores durante execução",
+                    IDC_UPDATEREGS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,
+                    72,219,10
+    CONTROL         "Imprimir a computação",IDC_PAINTCOMP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,84,219,10
+    CONTROL         "Salvar saída em arquivo",IDC_SAVECOMP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,96,219,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Trabalho de conclusão de Teoria da Computação ministrada por Prof. Tiarajú Diverio"
+            VALUE "CompanyName", "Marcelo Bona Boff, Fernando Trebien, Leonardo Golob"
+            VALUE "FileDescription", "SimNorma - simulador da máquina Norma"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "SimNorma.exe"
+            VALUE "LegalCopyright", "Copyright (C) 2003 Marcelo Bona Boff, Fernando Trebien, Leonardo Golob"
+            VALUE "OriginalFilename", "SimNorma.exe"
+            VALUE "ProductName", "SimNorma"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_MACROS, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 120
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_REGISTERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 140
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_OUTPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 189
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_COMPILERERROR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_EDITREG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\SimNorma.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HANDOPENED          CURSOR                  "res\\maoaberta.cur"
+IDC_HANDCLOSED          CURSOR                  "res\\maofechada.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "SimNorma"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "SimNorma"
+    AFX_IDS_IDLEMESSAGE     "Pronto"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Exibe informações de copyright do SimNorma\nSobre"
+    ID_APP_EXIT             "Fecha o SimNorma\nSair"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copia o código selecionado para a área de transferência\nCopiar"
+    ID_EDIT_CUT             "Recorta o código selecionado para a área de transferência\nRecortar"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Cola o conteúdo da área de transferência no seu programa\nColar"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Desfaz a última ação\nDesfazer"
+    ID_EDIT_REDO            "Refaz a última ação desfeita\nRefazer"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Mostra ou esconde a barra de ferramentas\nBarra de Ferramentas"
+    ID_VIEW_STATUS_BAR      "Mostra ou esconde a barra de estado\nBarra de Estado"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TOOLBAR             "Barra de Ferramentas"
+    ID_FILE_NEWPROJ         "Cria um novo projeto para a Norma\nNovo"
+    ID_FILE_OPENPROJ        "Abre um projeto para Norma existente\nAbrir"
+    ID_FILE_SAVEPROJ        "Salva o projeto atual\nSalvar"
+    ID_FILE_SAVEASPROJ      "Salva o projeto atual com um novo nome\nSalvar Como"
+    ID_EDIT_REDOACTION      "Refaz a última ação desfeita\nRefazer"
+    ID_EDIT_DELETESEL       "Limpa o texto selecionado no editor\nLimpar Seleção"
+    ID_EDIT_SELECTALL       "Seleciona todo o texto do editor\nSelecionar Tudo"
+    ID_VIEW_MACROS          "Mostra ou esconde a janela de macros disponíveis\nMacros Disponíveis"
+    ID_EDIT_REFRESH         "Atualiza as macros disponíveis para o arquivo aberto\nAtualizar"
+    ID_VIEW_REGISTERS       "Mostra ou esconde a janela de registradores\nRegistradores"
+    ID_VIEW_OUTPUT          "Mostra ou esconde a janela de saída da execução\nSaída da Execução"
+    ID_HELP_TOPICS          "Exibe a ajuda do SimNorma\nTópicos da Ajuda"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG1                "Você deseja salvar as modificações feita no projeto corrente?"
+    IDS_UNTITLED            "Sem Nome"
+    IDS_CURPROJ             "Arquivo atual"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MODE_MONITE          "Muda para o modo de edição\nModo de Edição"
+    ID_MODE_FLOWCHART       "Muda para o modo de fluxograma\nModo Fluxograma"
+    ID_MODE_INSTRUCTS       "Muda para o modo de instruções rotuladas\nModo de Instruções Rotuladas"
+    ID_MODE_RUN             "Inicia a execução do programa na máquina Norma\nExecutar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MODE_PAUSE           "Pára temporariamente a execução\nPausa"
+    ID_MODE_STOP            "Pára a execução do programa\nParar"
+    ID_MODE_STEP            "Executa um passo do programa em Norma\nPróximo Passo"
+    ID_MODE_OPTIONS         "Exibe o diálogo de opções da execução\nOpções da Execução"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR1              "Erro de alocação de memória. SimNorma não pode alocar a memória necessária para continuar a compilação."
+    IDS_ERROR2              "Fim do arquivo esperado."
+    IDS_ERROR3              "Nome da biblioteca a ser importada esperado."
+    IDS_ERROR4              "Erro ao abrir a biblioteca ""%s""."
+    IDS_ERROR5              "Tipo do programa esperado."
+    IDS_ERROR6              "Tipo da macro esperado."
+    IDS_ERROR7              "Nome da macro esperado."
+    IDS_ERROR8              "Parâmetros da macro esperado."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR9              "Parênteses esperado."
+    IDS_ERROR10             "Nome do teste esperado."
+    IDS_ERROR11             "Finalização da macro (fimmacro) esperado."
+    IDS_ERROR12             "A macro ""%s"" não foi definida."
+    IDS_ERROR13             "O teste da macro ""%s"" não foi definido."
+    IDS_ERROR14             "Erro de chamada da macro ""%s"", o número de parâmetros não está correto."
+    IDS_ERROR15             "Existe um ciclo entre as macros ""%s"" e ""%s""."
+    IDS_ERROR16             "Existe um ciclo entre as bibliotecas ""%s"" e ""%s""."
+    IDS_ERROR17             "O fim do arquivo não é esperado ou o arquivo é vazio ou o programa de entrada só possui instruções nulas."
+    IDS_ERROR18             "Erro de sintaxe."
+    IDS_ERROR19             "A palavra-chave ""entao"" é esperada."
+    IDS_ERROR20             "A palavra-chave ""senao"" é esperada."
+    IDS_ERROR21             "A palavra-chave ""faca"" é esperada."
+    IDS_ERROR22             "Nova linha esperada."
+    IDS_ERROR23             "Rótulo esperado."
+    IDS_ERROR24             "Instrução esperada."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR25             "Nome do teste esperado."
+    IDS_ERROR26             "Nome da operação esperado."
+    IDS_ERROR27             "A palavra-chave ""va_para"" é esperada."
+    IDS_ERROR28             "Nome do rótulo esperado."
+    IDS_ERROR29             "A operação ""%s"" não é válida."
+    IDS_ERROR30             "O teste ""%s"" não é válido."
+    IDS_ERROR31             "O registrador ""%s"" não é válido."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\SimNorma.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

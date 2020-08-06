@@ -1,0 +1,101 @@
+2) fresh tears colírio 1gota a cada 3h
+I = imread('cameraman.tif');
+F = fft2(I);
+subplot(1,2,1), imshow(real(F));
+subplot(1,2,2), imshow(imag(F));
+
+Parte real e imaginária da transformada de fourier
+
+Parte real: coeficientes da função cosseno
+Parte imaginária: coeficientes da função seno
+
+Imagens 'confusas' (2.png)
+
+2.png: imagens no domínio frequencia. Senos e cossenos não estão aí. Representação 
+visual grosseira dos coeficientes. Recombinar esses dados com as funções de base 
+para reconstruir a imagem.
+
+Obter imagem reconstruída a partir dos coeficientes da parte real e imaginária.
+
+Tarefas:
+Gerar imagem só com os coeficientes reais.
+Gerar imagem só com os coeficientes imaginários.
+
+I = imread('cameraman.tif');
+F = fft2(I);
+subplot(1,2,1), imshow(uint8(ifft2(real(F))));
+subplot(1,2,2), imshow(uint8(ifft2(imag(F) * i)));
+
+Somando as imagens
+I = imread('cameraman.tif');
+F = fft2(I);
+subplot(2,2,1), imshow(I);
+subplot(2,2,2), imshow(uint8(ifft2(real(F))));
+subplot(2,2,3), imshow(uint8(ifft2(imag(F) * i)));
+Ire_built = ifft2(real(F)) + ifft2(imag(F) * i);
+
+subplot(2,2,4), imshow(uint8(Ire_built));
+
+
+
+3) Espectro de amplitude
+F = fft2(imread('cameraman.tif'));
+imshow(log(abs(F)), [3 10]);
+(imagem 3.1.png)
+
+F = fft2(imread('cameraman.tif'));
+subplot(2,2,1), imshow(log(abs(F)), [3 10]);
+subplot(2,2,2), imshow(log(abs(F)), [5 10]);
+subplot(2,2,3), imshow(log(abs(F)), [7 10]);
+subplot(2,2,4), imshow(log(abs(F)), [9 10]);
+(imagem 3.2.png)
+
+
+4) Entendendo comando ifft2 - Tranformada de Fourier inversa
+F = fft2(imread('cameraman.tif'));
+I = ifft2(F);
+imshow(uint8(I));
+
+Imagem reconsturída é igual a imagem original
+
+
+5) Estude o comando fftshift e aplique-o ao resultado da transformada (questão 2).
+Exiba o espectro de amplitude. O que você observa?
+
+fftshift: coloca as componentes de frequencia zero no centro do espectro para melhor 
+visualizar a transformada de fourier.
+
+F = fft2(imread('cameraman.tif'));
+Fespec = log(abs(F));
+Fshift = fftshift(F);
+Fshift_espec = log(abs(Fshift));
+
+subplot(2,2,1), imshow(F, [3 10]);
+subplot(2,2,2), imshow(Fespec, [3 10]);
+subplot(2,2,3), imshow(Fshift, [3 10]);
+subplot(2,2,4), imshow(Fshift_espec, [3 10]);
+
+
+6) 
+I = imread('cameraman.tif');
+F = fft2(I);
+Fshift = fftshift(F);
+Ishift = ifft2(Fshift);
+
+%subplot(2,2,1), imshow(I);
+%subplot(2,2,2), imshow(F);
+%subplot(2,2,3), imshow(Fshift);
+subplot(1,1,1), imshow(uint8(Ishift));
+
+
+100)
+Outro:
+I = imread('cameraman.tif');
+F = fft2(I);
+Fshift = fftshift(F);
+Ishift = ifft2(Fshift);
+
+subplot(2,2,1), imshow(I);
+subplot(2,2,2), imshow(F);
+subplot(2,2,3), imshow(Fshift);
+subplot(2,2,4), imshow(Ishift);

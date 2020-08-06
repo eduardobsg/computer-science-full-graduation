@@ -1,0 +1,101 @@
+Resumo do Artigo: Testers and Developers Think Differently
+
+	No desenvolvimento de software existem dois grandes atores,
+testadores e desenvolvedores, que quando trabalham em harmonia
+produzem resultados excelentes, porém nem sempre isso ocorre.
+Na verdade, na maior parte do tempo ocorre uma incessante richa
+entre esses dois grupos de profissionais, pois na maioria das 
+vezes os desenvolvedores menosprezam o trabalho dos testadores,
+por desconhecimento, gerando frustração.
+	
+	A melhor forma de minimizar estes problemas é fazer os 
+profissionais tomarem conhecimento das atividades desempenhadas
+por testadores e desenvolvedores, pois dessa forma os desafios
+enfrentados por ambos são reconhecidos e valorizados.
+
+	Testadores necessitam ter conhecimento de diversas áreas,
+devido ao grau de complexidade das tarefas realizadas, enquanto 
+os desenvolvedores geralmente são especialistas em único assunto.
+Os desenvolvedores precisam dominar a tecnologia com a qual vão
+trabalhar, para não cometerem erros.
+
+	Uma característica importante dos testadores é que eles tem
+uma visão diferente do software, precisam pensar como o usuário.
+Muitas vezes testam a aplicação com certo nível de ignorância
+e descuido, simulando situações reais de uso. Resumindo: bons
+testadore se comportam como usuários amadores.
+
+
+Perpectiva - de um testador e de um desenvolvedor
+	
+	Testadores são como caçadores de tesouros, exploram diferentes
+possibilidades e muitas delas são infrutíferas. Porém a monotonia
+de não encontrar erros desafia os testadores a irem além e buscarem
+novas formas de levar o software a limites distintos dos já explorados,
+na busca pelo tesouro da expedição: erros. E quanto mais bem sucedidas
+empreitadas houverem, com erros sendo encontrados, menos reclamações 
+o suporte técnico terá.
+
+	Uma forma de validar a qualidade do software produzido pelo
+desenvolvedor é sem dúvida a etapa de testes. Logo após, quando ocorre
+o lançamento do aplicativo e este é elogiado plos clientes, tanto 
+desenvolvedor quanto testadores podem ter certeza que fizeram um bom
+trabalho.
+
+	Sem dúvida alguma a etapa de testes é fundamental para garavtir a
+qualidade e corretude do software; sem esta etapa, como o software
+ficando apenas nas mãos dos desenvolvedores, os software seriam como a
+25 anos atrás, pois eles são dependentes dos testadores para encarar o 
+mundo como ele realmente é.
+
+	Porém os desenvolvedores devem ser conscientes dos riscos e erros que
+seu código pode gerar. Não podem achar que podem escrever seus programas sem
+responsabilidade e atenção já que haverá um testador para encontrar os
+defeitos. esse pensamento é errado, pois sobrecarrega os testadores com trabalho
+desnecessário e isto naturalmente freia a produtividade, logo um comportamento
+indesejado.
+
+	Testadores também continuamente terão que lidar com conflitos com os
+desenvolvedores, pois problemas serão encontrados e deverão ser expostos para
+sua devida correção e alguns desenvolvedores se sentirão encomodados por terem
+sido encontrados erros no seu código. O testadores precisa ter a firmeza 
+necessária para lidar com essas situações.
+
+
+Habilidades:
+
+Testadores
+- dominam o conhecimento
+- ignorância é importante
+- modelam comportamento de usuário
+- foco no que pode dar errado
+- foco em problemas severos
+- céticos
+- se preocupam em observar o programa e seus efeitos
+- tolerar o tédio
+- resolver conflitos
+- reportar problemas
+
+Desenvolvedores
+- entendimento preciso do assunto
+- conhecimento na parte interna do produto
+- modelam projeto do sistema
+- foco em como isso pode funcionar
+- acreditam que nada vá dar errado
+- se preocupar em como o software é projetado
+- automatizar o tédio
+- evitar conflitos
+- entender os problemas encontrados pelo testador
+
+
+
+
+
+
+
+
+	
+
+
+
+

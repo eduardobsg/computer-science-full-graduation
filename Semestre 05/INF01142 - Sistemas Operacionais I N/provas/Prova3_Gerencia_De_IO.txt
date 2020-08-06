@@ -1,0 +1,29 @@
+Aula 22	- Gerência de E/S: conceitos básicos. Organização lógica do software: 
+tratadores de interrupção, device driver, independência de dispositivos, E/S 
+em nível de usuário. Bufferização. Escalonamento. Proteção. Compartilhamento. 
+Cache. Chamadas de sistemas: bloqueantes, não bloqueantes e assíncronas.
+Silberschatz (7a ed): capítulo 13 (seções 13.1 a 13.5)
+
+Aula 23	- Sistemas de arquivos: requisitos básicos. Estrutura hierárquica do 
+sistema de arquivos. Conceito de arquivos: nomes, tipos, organização lógica, 
+operações.
+Silberschatz (7a ed): capítulo 10 (seções 10.1 e 10.2)
+
+Aula 24	- Organização do espaço em disco: alocação contígua e não contígua. 
+Método encadeado. Método indexado. Método combinado. Estudo de casos: UNIX 
+e Windows.
+Silberschatz (7a ed): capítulo 11 (seção 11.4)
+
+Aula 25	- Diretório: conceito básico, linear, árvore, grafo. Aliases. 
+Implementação de diretórios. 
+Silberschatz (7a ed): capítulo 10 e 11 (seções 10.3 e 11.3)
+
+Aula 26	- Gerenciamento do espaço em disco e questões de desempenho: 
+tamanho do bloco. Lista de blocos livres. Bit map. Alternativas de 
+implementação. Cache de disco. Estudos de casos: unix (ext2 e fsck) 
+e windows NT.
+Silberschatz (7a ed): capítulo 11 (seções 11.5 e 11.6 )
+
+Aula 28	- Montagem de sistemas de arquivos. Suporte a múltiplos 
+sistemas de arquivos. Sistemas de arquivos jornalizados.
+Silberschatz (7a ed): capítulo 10 (seção 10.4) capítulo 11 (seção 11.8)

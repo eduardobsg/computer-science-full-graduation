@@ -1,0 +1,46 @@
+Cadeira: INF01121 - Modelos de Linguagem de Programação
+Professor: Leandro
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2012/01
+
+------------------------------------------------------------------------------
+---- Colegas:
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+---- Frase:
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+---- Notas de Aula
+------------------------------------------------------------------------------
+
+2012-05-08:
+
+Trabalho extra: Preparar 1 apresentação (10-15 lâminas), 15-20 minutos, sobre:
+=> Análise comparativa, com exemplos, entre templates e generics.
+=> Explicar como funciona a seleção dinâmica de chamada de métodos (call dispatch),
+em c++, java ou python.
+	- method table
+	- virtual methos table
+* Vale um ponto na média final
+
+------------------------------------------------------------------------------
+
+2012-05-29:
+
+Correção da Prova 2
+
+Acesso a variáveis
+Usar: (endereço de base, deslocamento)
+
+Técnicas:
+	1) static chain (seguir o encadeamento estátioc)
+	(quantos níveis segue no VE/PE, deslocamento)
+	
+	2) display (nível, deslocamento)
+
+	Display
+	0		1				2				3	4
+	RA 0	RA de nível1	RA de nível 2	..

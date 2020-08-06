@@ -1,0 +1,108 @@
+---------------------------------------------------
+insertion_sort.c, entrada decrescente, tempo em micro segundos
+tipo=i, tamanho=500
+932
+tipo=i, tamanho=5000
+69994
+tipo=i, tamanho=10000
+257961
+tipo=i, tamanho=30000
+2265938
+tipo=s, tamanho=500
+1731
+tipo=s, tamanho=5000
+167346
+tipo=s, tamanho=10000
+612063
+tipo=s, tamanho=30000
+5449979
+---------------------------------------------------
+shell_sort.c, entrada decrescente, tempo em micro segundos
+tipo=i, tamanho=500
+130
+tipo=i, tamanho=5000
+670
+tipo=i, tamanho=10000
+1444
+tipo=i, tamanho=30000
+4818
+tipo=s, tamanho=500
+406
+tipo=s, tamanho=5000
+3709
+tipo=s, tamanho=10000
+7769
+tipo=s, tamanho=30000
+24178
+---------------------------------------------------
+bubble_sort.c, entrada decrescente, tempo em micro segundos
+tipo=i, tamanho=500
+1607
+tipo=i, tamanho=5000
+113907
+tipo=i, tamanho=10000
+436399
+tipo=i, tamanho=30000
+3917139
+tipo=s, tamanho=500
+5096
+tipo=s, tamanho=5000
+368133
+tipo=s, tamanho=10000
+1468865
+tipo=s, tamanho=30000
+13091195
+---------------------------------------------------
+quick_sort.c, entrada decrescente, tempo em micro segundos
+tipo=i, tamanho=500
+111
+tipo=i, tamanho=5000
+447
+tipo=i, tamanho=10000
+645
+tipo=i, tamanho=30000
+2569
+tipo=s, tamanho=500
+342
+tipo=s, tamanho=5000
+2799
+tipo=s, tamanho=10000
+5640
+tipo=s, tamanho=30000
+16946
+---------------------------------------------------
+heap_sort.c, entrada decrescente, tempo em micro segundos
+tipo=i, tamanho=500
+177
+tipo=i, tamanho=5000
+1083
+tipo=i, tamanho=10000
+2163
+tipo=i, tamanho=30000
+11107
+tipo=s, tamanho=500
+492
+tipo=s, tamanho=5000
+4990
+tipo=s, tamanho=10000
+11067
+tipo=s, tamanho=30000
+30474
+---------------------------------------------------
+merge_sort_re.c, entrada decrescente, tempo em micro segundos
+tipo=i, tamanho=500
+207
+tipo=i, tamanho=5000
+1573
+tipo=i, tamanho=10000
+3137
+tipo=i, tamanho=30000
+9654
+tipo=s, tamanho=500
+558
+tipo=s, tamanho=5000
+5474
+tipo=s, tamanho=10000
+11221
+tipo=s, tamanho=30000
+33393

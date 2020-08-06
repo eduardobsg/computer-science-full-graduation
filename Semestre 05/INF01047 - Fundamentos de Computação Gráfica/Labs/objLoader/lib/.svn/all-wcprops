@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 25
+/svn/!svn/ver/5/trunk/lib
+END
+glm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/2/trunk/lib/glm.cpp
+END
+texture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/4/trunk/lib/texture.cpp
+END
+model.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/24/trunk/lib/model.cpp
+END
+glm.h
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/3/trunk/lib/glm.h
+END
+texture.h
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/5/trunk/lib/texture.h
+END
+model.h
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/24/trunk/lib/model.h
+END
+jpeg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/24/trunk/lib/jpeg.cpp
+END
+camera.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/24/trunk/lib/camera.cpp
+END
+jpeg.h
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/24/trunk/lib/jpeg.h
+END
+camera.h
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/24/trunk/lib/camera.h
+END

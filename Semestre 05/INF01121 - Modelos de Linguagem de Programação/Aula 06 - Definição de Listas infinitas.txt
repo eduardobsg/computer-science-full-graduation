@@ -1,0 +1,35 @@
+(* listas infinitas *)
+
+datatype 'a stream = Stream of (unit -> 'a * 'a stream);
+
+(* Sequencia de Fibonatti *)
+
+val FibStream = let 
+                   fun fib a b = Stream (fn () => (a, fib b (a+b))) 
+                in 
+                   fib 0 1 
+                end;
+
+fun NthFibStream 0 (Stream S) = #1 (S ()) 
+|   NthFibStream n (Stream S) = NthFibStream (n-1) (#2 (S()));
+
+
+NthFibStream 1 FibStream;
+
+NthFibStream 42 FibStream;
+
+(* ************************************* *)
+(* números pares *)
+
+val ParStream = let 
+                   fun pares a = Stream (fn () => (a, pares (a+2))) 
+                in 
+                   pares 0 
+                end;
+
+fun NthParStream 0 (Stream S) = #1 (S ()) 
+|   NthParStream n (Stream S) = NthParStream (n-1) (#2 (S()));
+
+
+NthParStream 1 FibStream;
+

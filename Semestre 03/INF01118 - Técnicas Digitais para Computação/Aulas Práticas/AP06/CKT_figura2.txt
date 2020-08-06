@@ -1,0 +1,51 @@
+Titulo: Circuito CKT_figura2 c/ transistor MOS
+
+.include cmos7tm.mod
+
+vcc 1 0 10
+v10p 20 0 1
+v90p 90 0 9
+v1 2 0 pulse(0 10.2 0 0 0 5n 10n)
+
+.subckt  nor3  in1 in2 in3 out1 out2 out vcc
+mp1  vcc  in1  out1  vcc  modp l=1u w=4u
+mp2  out1 in2  out2  vcc  modp l=1u w=4u
+mp3  out2 in3  out  vcc  modp l=1u w=4u
+mn1  out  in1  0  0  modn l=1u w=4u
+mn2  out  in2  0  0  modn l=1u w=4u
+mn3  out  in3  0  0  modn l=1u w=4u
+.ends nor3
+
+.subckt  inv  in  out  vcc
+mp1  vcc  in  out  vcc  modp l=1u w=4u
+mn1  out  in  0  0  modn l=1u w=4u
+.ends inv
+
+.subckt  invc  in  out  vcc
+mp1  vcc  in  out  vcc  modp l=1u w=16u
+mn1  out  in  0  0  modn l=1u w=16u
+.ends invc
+
+.subckt  nand2  in1 in2 out  vcc
+mp1  vcc  in1  out  vcc  modp l=1u w=4u
+mp2  vcc  in2  out  vcc  modp l=1u w=4u
+mn1  out  in1  666  0    modn l=1u w=4u
+mn2  666  in2	0   0    modn l=1u w=4u
+.ends nand2
+
+x1 2 3 1 inv
+x2 3 4 1 inv
+x3 3 5 1 inv
+x4 3 6 1 inv
+x5 4 7 1 inv
+x6 6 9 1 invc
+
+x7 5 5 5 61 62 8 1 nor3
+
+*v(4) = u1
+*v(5) = u2
+*v(6) = u3
+
+.tran 0.001n 20n
+.print tran v(2) v(4) v(5) v(6) v(20) v(90)
+.end

@@ -1,0 +1,65 @@
+/*
+ * VAR DECLARATIONS
+ */
+word     vw_a : 10;
+bool     vb_a : true;
+word vaw_a[2] : 1 2;
+word    $pw_a : 10; 
+bool    $pb_a : true;
+
+/*
+ * FUNCTIONS
+ */
+
+/*/ err1 no tipo de retorno do bloco; err2 variavel de retorno nao declarada
+byte fb_a(word vw_b, byte pe) {
+	return not_declared;
+}*/
+
+word fw_a() {
+	return (1 + 2) * vw_a;
+}
+
+/*
+ * MAIN
+ */
+word main()
+{
+	/*
+     * ASSIGNMENTS
+     */
+	vw_a = (1 - 2 + 3 * 4 / 5 + (3 - 2 * 4));
+	vb_a = true;
+	vb_a = 1 < 2;
+	vb_a = 1 < vw_a;
+	vb_a = true || (false && 4 < 1);
+	//vb_a = true < true;// err1: args should be word
+	//vb_a = true + true;// err1: args should be word; err2: var is bool, result is word (from '+' operation)
+	vw_a = -1;
+	vw_a = -vw_a;
+	//vw_a = -true;// err: word expected in unary
+	//vw_a = -vb_a;// err: word expected in unary
+	vw_a = vaw_a[0 + 2 * 4 / (3  / 4)];
+	//vb_a = vaw_a[true];// err1: array index must be word or byte; err2 type mismatch in assignment
+
+	// pointers in expressions
+	vw_a = *pw_a;
+	//vw_a = *pb_a;// err dereference is a bool, var is word
+	vb_a = *pb_a || false;
+	vw_a = *pw_a + 1;
+	pw_a = pw_a + 1;
+	//pw_a = pw_a - 1;// err1: pointers can only in '+' operations; err2: type mismatch in assignment
+	//vw_a = *not_declared;// err: pointer not declared
+	//vw_a = *vw_a;// err: vw_a is not a pointer to be dereferenced
+	//vw_a = pw_a + 1;// err: sums needs word, got a word_pointer
+	pw_a = &vw_a;
+	//pw_a = &vb_a;// err: vb_a is bool
+	//pw_a = &vaw_a;// err: vaw_a is array
+
+	/*
+     * DECLARATIONS
+     */
+	//not_declared = 1;// err identifier not declared
+
+	return vw_a;
+}

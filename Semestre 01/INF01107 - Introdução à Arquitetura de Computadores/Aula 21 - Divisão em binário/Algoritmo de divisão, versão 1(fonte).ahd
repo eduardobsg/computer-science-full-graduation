@@ -1,0 +1,78 @@
+inicio:
+; teste de exceções: estouro e div. por zero
+     LDA v
+     JZ  div_por_zero ; divisor = 0
+     LDA Dms
+     SUB v
+     JNB estouro ; D >= v provoca estouro
+
+; não ocorreu nenhuma exceção: inicialização
+     LDA Dms
+     STA Dmst ; Dms temporário
+     LDA dls
+     STA dlst ; dls temporário
+     LDA oito
+     STA i    ; contador = 8
+     LDA zero
+     STA q    ; quociente = 0repetir:           ; início do laço
+
+repetir:           ; início do laço
+     LDA q
+     SHL
+     STA q         ; desloca q p/esquerda
+     LDA dlst
+     SHL
+     STA dlst      ; desloca d p/esquerda
+     LDA Dmst
+     ROL           ; desloca D p/esquerda
+     STA Dmst      ; msbit de D em carry
+     JC  Dms_maior ; se C=1, D > v
+     LDA Dmst
+     SUB v         ; calcula D - v
+     JB  Dms_menor ; se B=1, D < vDms_maior:
+Dms_maior:
+     LDA Dmst    ; se D >= v
+     SUB v       ; pode subtrair
+     STA Dmst
+     LDA q       ; e novo dígito de q
+     OR  um      ; deve ser igual a 1
+     STA q
+Dms_menor:
+     LDA i
+     SUB um      ; decrementa contador
+     STA i
+     JNZ repetir ; se i > 0, repete o laço
+
+fim:            ; fim normal
+     LDA Dmst
+     STA r      ; resto = Dmst
+     LDA um     ; estado = 1
+     JMP estado
+
+div_por_zero:   ; fim com erro: div. por zero
+     LDA zero   ; estado = 0
+     JMP estado
+
+estouro:        ; fim com erro: estouro
+     LDA mum    ; estado = -1
+estado:
+     STA est    ; armazena estado
+     HLT
+
+; definição de variáveis e constantes
+      ORG 128  ; começando na palavra 128
+Dms:  DB 0     ; msbits do dividendo
+dls:  DB 0     ; lsbits do dividendo
+v:    DB 0     ; divisor
+q:    DB 0     ; quociente
+r:    DB 0     ; resto
+est:  DB 0     ; estado: estouro = -1
+               ;         div. por zero = 0
+               ;         normal = 1
+i:    DB 0     ; contador
+zero: DB 0     ; constante 0
+um:   DB 1     ; constante 1
+mum:  DB 255   ; constante -1
+oito: DB 8     ; constante 8
+Dmst: DB 0     ; msbits do dividendo - temp
+dlst: DB 0     ; lsbits do dividendo - temp

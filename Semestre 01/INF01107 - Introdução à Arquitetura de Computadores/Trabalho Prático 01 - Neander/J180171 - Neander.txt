@@ -1,0 +1,136 @@
+Aluno: João Luiz Grave Gross
+Número do Cartão: 180171
+
+Etapas:
+
+1) zerar código de erro e resultado
+2) testar os operandos 1 e 2, dando o devido tratamento caso sejam negativos ou não
+3) testar o código da operação, dando o devido tratamento para cada valor encontrado
+4) execução das operações de multiplicação, divisão, soma ou subtração, dependendo 
+do código de operação escolhido pelo usuário
+5) fim do programa
+
+
+
+Descrição:
+
+# Significados:
+- OP1 = Operando 1
+- OP2 = Operando 2
+- AC = Acumulador
+
+# Endereço das Variáveis:
+- 128: OP1
+- 129: OP2
+- 130: Código da Operação
+- 131: Código de Erro
+- 132: Resultado
+- 133: 255 (-1)
+- 134: 1
+- 135: 2
+- 136: 3
+- 137: 4
+- 138: 5
+- 139: 0 
+
+# Código Fonte:
+
+000 LDA 	139	;Carrega zero no AC -> AC = 0
+002 STA 	131	;Salva zero no endereço correspondente a variável "código de erro"
+004 LDA 	139	;Carrega zero no AC -> AC = 0
+006 STA 	132  	;Salva zero no endereço correspondente a variável "resultado"
+
+008 LDA 	128 	;Carrega OP1 no AC -> AC = OP1
+010 JN 	14 	;Teste o bit N -> vai para o endereço 14 se N = 1
+012 JMP 	32 	;Vai para o endereço 32
+014 LDA 	134	;Carrega 1 no AC -> AC = +1
+016 STA 	131	;Salva +1 no endereço correspondente a variável "código de erro"
+018 LDA 	129	;Carrega zero no AC -> AC = OP2
+020 JN  	24	;Teste o bit N -> vai para o endereço 24 se N = 1	
+022 JMP 	158	;Vai para o endereço 158 -> fim do programa
+024 LDA 	131	;Carrega código da operação no AC -> AC = código da operação
+026 ADD 	135	;Soma +2 ao AC -> AC = AC + 2
+028 STA 	131	;Salva AC no endereço correspondente a variável "código de erro"
+030 JMP 	158	;Vai para o endereço 158 -> fim do programa
+032 LDA 	129	;Carrega OP2 no AC -> AC = OP2
+034 JN  	24	;Teste o bit N -> vai para o endereço 24 se N = 1
+
+036 NOP		;Início do teste do código da operação
+037 LDA 	130	;Carrega código da operação no AC -> AC = código da operação
+039 ADD 	133	;Soma -1 ao AC -> AC = AC - 1
+041 JZ  	62	;Teste o bit Z -> vai para o endereço 62 se Z = 1
+043 ADD 	133	;Soma -1 ao AC -> AC = AC - 1
+045 JZ  	93	;Teste o bit Z -> vai para o endereço 93 se Z = 1
+047 ADD 	133	;Soma -1 ao AC -> AC = AC - 1
+049 JZ  	140	;Teste o bit Z -> vai para o endereço 140 se Z = 1
+051 ADD 	133	;Soma -1 ao AC -> AC = AC - 1
+053 JZ  	149	;Teste o bit Z -> vai para o endereço 149 se Z = 1
+055 LDA 	137	;Carrega +4 no AC -> AC = +4 (código inválido)
+057 STA 	131	;Salva +4 no endereço correspondente a variável "código de erro"
+059 JMP 	158	;Vai para o endereço 158 -> fim do programa
+
+061 NOP		;Multiplicação
+062 LDA 	129	;Carrega OP2 no AC -> AC = OP2
+064 JZ  	158	;Teste o bit Z -> vai para o endereço 158 (fim do programa) se Z = 1	
+066 ADD 	133	;Soma -1 ao AC -> AC = AC - 1
+068 JZ  	158	;Teste o bit Z -> vai para o endereço 158 (fim do programa) se Z = 1	
+070 STA 	129	;Salva AC no endereço correspondente a variável "OP2"
+072 LDA 	128	;Carrega OP1 no AC -> AC = OP1
+074 ADD 	128	;Soma OP1 ao AC -> AC = AC + OP1
+076 STA 	132	;Salva AC no endereço correspondente a variável "resultado"
+078 LDA 	129	;Carrega OP2 no AC -> AC = OP2
+080 ADD 	133	;Soma -1 ao AC -> AC = AC - 1
+082 JZ  	158	;Teste o bit Z -> vai para o endereço 158 (fim do programa) se Z = 1	
+084 STA 	129	;Salva AC no endereço correspondente a variável "OP2"
+086 LDA 	132	;Carrega resultado no AC -> AC = resultado
+088 JMP 	74	;Vai para o endereço 74
+
+092 NOP 		;Divisão
+093 LDA 	129	;Carrega OP2 no AC -> AC = OP2
+095 JZ  	99	;Teste o bit Z -> vai para o endereço 99 se Z = 1	
+097 JMP 	105	;Vai para o endereço 105
+099 LDA 	138	;Carrega +5 no AC -> AC = +5
+101 STA 	131	;Salva AC no endereço correspondente a variável "código de erro"
+103 JMP 	158	;Vai para o endereço 158 -> fim do programa
+105 NOT		;Gera o complemento de 1 do conteúdo de AC
+106 ADD 	134	;Soma +1 ao AC -> AC = AC + 1
+108 STA 	129	;Salva AC no endereço correspondente a variável "OP1"
+110 LDA 	129	;Carrega OP2 no AC -> AC = OP2
+112 ADD 	128	;Soma OP1 ao AC -> AC = AC + OP1
+114 STA 	128	;Salva AC no endereço correspondente a variável "OP1"
+116 JN  	158	;Teste o bit N -> vai para o endereço 158 (fim do programa) se N = 1	
+118 LDA 	132	;Carrega resultado no AC -> AC = resultado
+120 ADD 	134	;Soma +1 ao AC -> AC = AC + 1
+122 STA 	132	;Salva AC no endereço correspondente a variável "resultado"	
+124 JMP 	110	;Vai para o endereço 110
+
+127 NOP		;Variáveis
+128 OP1      
+129 OP2      
+130 Código da Operação      
+131 Código de Erro      
+132 Resultado     
+133 255      	;-1
+134 1      
+135 2      
+136 3      
+137 4      
+138 5      
+139 0     
+ 
+		;Adição
+140 LDA 128	;Carrega OP1 no AC -> AC = OP1
+142 ADD 129	;Soma OP2 ao AC -> AC = AC + OP2
+144 STA 132	;Salva AC no endereço correspondente a variável "resultado"
+		;resultado = OP1 + OP2
+146 JMP 158	;Vai para o endereço 158 -> fim do programa
+
+148 NOP		;Subtração
+149 LDA 129	;Carrega OP2 no AC -> AC = OP2
+151 NOT		;Gera o complemento de 1 do conteúdo de AC
+152 ADD 134	;Soma +1 ao AC -> AC = AC + 1	
+154 ADD 128	;Soma OP1 ao AC -> AC = AC + OP1
+156 STA 132	;Salva AC no endereço correspondente a variável "resultado"
+		;resultado = OP1 - OP2
+
+158 HLT 		;Fim do programa

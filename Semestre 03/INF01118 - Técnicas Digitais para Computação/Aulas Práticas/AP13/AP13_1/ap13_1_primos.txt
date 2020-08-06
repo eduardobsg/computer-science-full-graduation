@@ -1,0 +1,34 @@
+# 3 - Sintese com a opcao de otmizacao (sem compartilhamento).
+#     espresso -oeqntott -Dso ex1.txt > ex1_out3.txt
+#
+#     SAIDA
+#     F = (A&!B&!C) | (!A&B&C);
+#     
+# quatro variaveis de entrada
+.i 6
+# uma variavel de saida
+.o 6
+# nome das variaveis de entrada
+.ilb S5 S4 S3 S2 S1 S0
+# nome da variavel de saida
+.ob T5 T4 T3 T2 T1 T0
+000000 000010
+000010 000001
+000011 000110
+000101 000010
+000111 001100
+001011 000110
+001101 011100
+010001 000010
+010011 000100
+010111 001010
+011101 000010
+011111 111010
+100101 001100
+101001 000010
+101011 000100
+101111 011010
+110101 001110
+111011 000110
+111101 111111
+.e

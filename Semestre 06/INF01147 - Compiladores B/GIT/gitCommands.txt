@@ -1,0 +1,29 @@
+Criar repositório
+	git init
+
+Criar cópia de projeto já existente
+	git clone https://bitbucket.org/fkrahe/inf01147_compiladores
+
+Escolhendo a branch develop (deve estar dentro da pasta do inf01147-compiladores)
+	git checkout develop
+
+Lista as brachs do projeto
+	git branch
+
+Envia/Faz 'commit' de uma nova versão, alterando automaticamente o 
+repositório com os arquivos modificados ou excluídos (-a)
+	git commit -a -m "Mensagem"
+
+Visualiza as alterações feitas
+	git status
+
+Envia as alterações para o repositório
+	git push
+
+Adiciona um arquivo
+	git add "nome do arquivo"
+
+
+Compactar:
+tar cvzf ../etapa3.tgz *
+

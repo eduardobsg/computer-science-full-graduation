@@ -1,0 +1,82 @@
+Como conciliar os dois níveis?
+• 3 soluções:
+–N threads usuário por thread de núcleo
+(N:1)
+–1 thread usuário por thread de núcleo
+(1:1)
+–Meio termo entre os dois
+(N:M)
+
+O modelo N:1
+• N threads usuário estão fisicamente implementadas em uma
+thread de núcleo.
+• Todo o gerenciamento das threads se faz em nível de usuário
+– Extremamente veloz.
+• Grande limitação: o escalonamento.
+– O núcleo escalona as threads na CPU;
+– Ele só enxerga a thread de núcleo sem distinguir as threads nela
+implementadas.
+– Se uma thread de usuário tranca, toda a thread de núcleo estará
+bloqueada!
+• Totalmente inapropriado para máquinas multi-processadas
+
+O modelo 1:1
+• Cada thread de usuário é mapeada em uma thread
+de núcleo.
+– Dessa forma, o Sis. Op. escalona as threads na CPU e não
+há blocagem.
+• Adaptado a arquiteturas multi-processadas.
+• Problema: maior custo de criação/manutenção das
+threads
+– Limita-se o número de threads disponíveis em tais
+sistemas.
+
+O modelo N:M
+• Várias threads de usuário são implementadas
+em várias threads de núcleo.
+– O número exato pode variar conforme for a
+arquitetura e/ou a aplicação.
+• Junta as vantagens dos dois outros modelos.
+• É uma solução herdada diretamente do
+sistema Solaris.
+
+semáforos=>mutex
+
+Vários níveis de escalonamento
+• Escalonador de curto prazo
+– Decide da alocação da CPU
+– Tempo de resposta: faixa da ms
+• Escalonador de médio prazo
+– Decide do gerenciamento de memória
+• Swap
+– Tempo de resposta: faixa de 100 ms
+• Escalonador de longo prazo
+– Gerencia a criação dos processos
+– Escalona os acessos ao disco
+
+Round-Robin: limitações e problemas
+• O grande interesse do R.R. é sua “equidade”
+– Todos os processos acabam tendo uma chance regular de executar.
+• Como definir o quantum?
+– Muito grande: = FIFO!
+– Muito pequeno: só se faz troca de contexto…
+• Processos I/O bound são prejudicados!
+– Esperam tanto como os outros, mas não chegam a usar seu quantum
+todo!
+• Solução: juntar Round Robin e prioridades com preempção
+
+inode?
+
+um processo pode ter várias threads, que compartilham os mesmos recursos do processo.
+Correspondem a um fluxo da execução, que executa instruções sobre uma mesma area de codigo.
+O que muda entre as thread sao as variaveis locais, registradores do processador. o pcp possui uma lista de threads.
+
+Nx1 rapido, o kernel so percebe uma thread, um processador é usado. se uma thread parar, para tudo.
+1x1 custoso, criar thread de kernel é caro e lento. numero de threads limitado.
+nxm melhor dos dois. n e m definidos pelo programador.
+thread explora paralelismo real nas máquinas.
+
+working set ajuda a diminuir thrashing
+
+scan=elevador
+look parecido com scan, vai so ate a ultima requisicao num sentido

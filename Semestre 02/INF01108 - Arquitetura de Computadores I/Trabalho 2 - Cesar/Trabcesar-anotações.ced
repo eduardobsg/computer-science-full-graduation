@@ -1,0 +1,38 @@
+;Trabalho Cesar - 2010-01 - Campo Minado
+;João Luiz Grave Gross
+;Prof. Carlos Arthur Lang Lisboa
+;Disciplina: Arquitetura de Computadores I
+
+;Inicialização
+	Carregar 10 em "linha"
+	Carregar 10 em "coluna"
+	Zerar todas as posições do campo minado
+	Carregar 15 em "quant_bombas"
+	
+	
+;Início
+	Mensagens de Identificação do Autor. Ex.: "Campo Minado Max Plus!", "Autor: João Luiz Grave Gross"
+		
+	Ler do teclado as coordenadas da bomba
+		Exibir no LCD uma mensagem para pedir as coordenadas. Ex.: "Linha mina 01: LL", "Coluna mina 01: CC"
+			Só aceitar valores dentro da faixa de linha de 2-9 e coluna de 2-9
+			Só aceitar valores numéricos dentro da faixa especificada
+			Habilitar a tecla BACKSPACE para que o usuário edite a coordenada
+				Só permitir o BACKSPACE depois que um caractere tenha sido digitado
+			Habilitar a tecla ENTER para enviar a coordenada
+			Se a posição for inválida avisar ao usuário. Ex.: "Coordenada inválidas" 
+			Se a posição já estiver ocupada, avisar o usuário. Ex.: "Coordenada já contém mina"		
+		Colocar -1 na posição válida
+	Calcular a quantidade de minas em torno de cada posição do campo minado e guardar o resultado na posição
+	Exibir o conteúdo do campo minado linha por linha. Ex.: "Linha 01: 0 1 3 # 5 0 0 1 # 1"
+	Perguntar ao usuário se ele quer preencher outro campo minado. Ex.: "Preencher ou campo?"
+		Se for digitado "s" ou "S", reinicia o programa desde a inicialização
+		Se for digitado qualquer outro caractere, termina o programa com uma mensagem. Ex.: "Obrigado por jogar, hasta luego."
+	
+
+;Variáveis
+	linhas = 10//será decrementado quando cregar ao término de uma linha. Quando estiver em zero quer dizer que a varredura do campo minado terminou
+	coluna = 10//será decrementado a cada posição varrida do campo minado. Quando chegar em zero a linha terminou e precisa ser carregado com 10 novamente para varrer a linha seguinte.
+	quant_bombas = 15//será inicializada no início do programa e decrementada a cada inserção de bomba. Quando chegar em zero todas as bombas terão sido inseridas.
+	
+		

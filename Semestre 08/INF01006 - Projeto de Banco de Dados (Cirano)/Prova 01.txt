@@ -1,0 +1,8 @@
+Prova 1 - Estudo
+
+Projeo de banco de dados:
+1. Modelo físico
+2. Modelo lógico
+3. Modelo conceitual
+
+- Modelo conceitual é representado através de um diagrama de entidade-relacionamento(DER).

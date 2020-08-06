@@ -1,0 +1,228 @@
+Diretório de Trabalho:
+cd C:\Users\João' Gross'\Dropbox\UFRGS\2011-02\INF01046' - Fundamentos de Processamento de Imagens'\Laboratorio3\
+
+2. Escreva um procedimento para:
+(a) Ler e exibir a imagem low_pass.bmp utilizando os comando imread e imshow,
+vistos anteriormente.
+
+I = imread('low_pass.bmp');
+imshow(I);
+
+(b) Os pixels desta imagem contém intensidades com valores 0 (preto) e 255
+(branco). Substituir os valores “255” por “1” (e.g., divida os valores da máscara
+por 255, m = m / 255;). Ao realizar esta conversão, você terá preparado uma
+máscara para um filtro (passa baixas) a ser implementado no domínio frequência.
+
+I = imread('low_pass.bmp');
+Im = I / 255;
+imshow(Im);
+
+(c) Ler a imagem do cameraman e calcular sua transformada de Fourier (comando
+fft2);
+
+C = imread('cameraman.tif');
+Cf = fft2(C);
+
+(d) Visualize o resultado utilizando imshow(log(abs(<img transf>)), [3, 10]). A
+seguir, aplique um “shift” (comando fftshift) à imagem transformada e visualize
+o resultado.
+
+C = imread('cameraman.tif');
+Cf = fft2(C);
+subplot(1,2,1); imshow(log(abs(Cf)), [3, 10]);
+
+Cfs = fftshift(Cf);
+subplot(1,2,2); imshow(log(abs(Cfs)), [3, 10]);
+
+(e) Multiplique a transformada (após o shift) pela mascara (após a substituição de
+255s por 1s) utilizando o operador “.*” (ponto asterisco – multiplicação elemento
+a elemento das duas matrizes) e exiba o resultado (não esqueça de usar o log...).
+Observação:
+(1) Algumas versões do Matlab não permitem o uso do operador “.*” entre
+números complexos (resultado da transformada) e números inteiros
+(máscara). Neste caso, você precisará realizar um “cast” da mascara para
+double: Ex.: M = <img transf shift> .* double(<img mascara>);
+
+
+I = imread('low_pass.bmp');
+Im = I / 255;
+
+C = imread('cameraman.tif');
+Cfs = fftshift(fft2(C));
+
+M = Cfs .* double(Im);
+imshow(log(abs(M)), [3, 10]);
+
+(f) Applique o operador shift ao resultado obtido no passo (e) e exiba do resultado.
+
+Ms = fftshift(M);
+imshow(log(abs(Ms)), [3, 10]);
+
+(g) Aplique a transformada inversa (ifft2) à imagem obtida no passo (f) e exiba o
+resultado (não esqueça de converter o resultado para uint8 antes de exibir).
+
+I = imread('low_pass.bmp');
+Im = I / 255;
+C = imread('cameraman.tif');
+Cfs = fftshift(fft2(C));
+M = Cfs .* double(Im);
+imshow(log(abs(M)), [3, 10]);
+Ms = fftshift(M);
+Msi = ifft2(Ms);
+imshow(uint8(Msi));
+
+(h) Explique o que aconteceu em cada um dos passos anteriores
+
+
+3. Repita os passos descritos no ítem 2 para a imagem high_pass.bmp.
+(a) Ler e exibir a imagem low_pass.bmp utilizando os comando imread e imshow,
+vistos anteriormente.
+
+I = imread('high_pass.bmp');
+imshow(I);
+
+(b) Os pixels desta imagem contém intensidades com valores 0 (preto) e 255
+(branco). Substituir os valores “255” por “1” (e.g., divida os valores da máscara
+por 255, m = m / 255;). Ao realizar esta conversão, você terá preparado uma
+máscara para um filtro (passa baixas) a ser implementado no domínio frequência.
+
+I = imread('high_pass.bmp');
+Im = I / 255;
+imshow(Im);
+
+(c) Ler a imagem do cameraman e calcular sua transformada de Fourier (comando
+fft2);
+
+C = imread('cameraman.tif');
+Cf = fft2(C);
+
+(d) Visualize o resultado utilizando imshow(log(abs(<img transf>)), [3, 10]). A
+seguir, aplique um “shift” (comando fftshift) à imagem transformada e visualize
+o resultado.
+
+C = imread('cameraman.tif');
+Cf = fft2(C);
+subplot(1,2,1); imshow(log(abs(Cf)), [3, 10]);
+
+Cfs = fftshift(Cf);
+subplot(1,2,2); imshow(log(abs(Cfs)), [3, 10]);
+
+(e) Multiplique a transformada (após o shift) pela mascara (após a substituição de
+255s por 1s) utilizando o operador “.*” (ponto asterisco – multiplicação elemento
+a elemento das duas matrizes) e exiba o resultado (não esqueça de usar o log...).
+Observação:
+(1) Algumas versões do Matlab não permitem o uso do operador “.*” entre
+números complexos (resultado da transformada) e números inteiros
+(máscara). Neste caso, você precisará realizar um “cast” da mascara para
+double: Ex.: M = <img transf shift> .* double(<img mascara>);
+
+I = imread('high_pass.bmp');
+Im = I / 255;
+
+C = imread('cameraman.tif');
+Cfs = fftshift(fft2(C));
+
+M = Cfs .* double(Im);
+imshow(log(abs(M)), [3, 10]);
+
+(f) Applique o operador shift ao resultado obtido no passo (e) e exiba do resultado.
+
+Ms = fftshift(M);
+imshow(log(abs(Ms)), [3, 10]);
+
+(g) Aplique a transformada inversa (ifft2) à imagem obtida no passo (f) e exiba o
+resultado (não esqueça de converter o resultado para uint8 antes de exibir).
+
+I = imread('high_pass.bmp');
+Im = I / 255;
+C = imread('cameraman.tif');
+Cfs = fftshift(fft2(C));
+M = Cfs .* double(Im);
+imshow(log(M), [3, 10]);
+Ms = fftshift(M);
+Msi = ifft2(Ms);
+imshow(uint8(Msi));
+
+(h) Explique o que aconteceu em cada um dos passos anteriores
+
+
+4. Observando o conteúdo da imagem zebra.jpg, faça um esboço de como você imagina
+ser o seu espectro de amplitude desta imagem, justificando o seu raciocínio. Somente
+depois de realizar o esboço e a justificativa, calcule e exiba tal espectro. Compare-o
+com o seu esboço tente explicar eventuais diferenças entre o previsto e o obtido.
+
+I = imread('zebra.jpg');
+Fs = fftshift(fft2(I));
+imshow(log(abs(Fs)), [3, 10]);
+
+5. Construa uma máscara para remoção do ruído periódico presente na imagem
+Periodic_noise_Clown.tif e realize a filtragem da imagem.
+Observações:
+(1) A máscara deve conter as mesmas dimensões que a imagem que você
+quer filtrar;
+(2) Uma imagem da mascara apesar de binária (preto e branco) pode conter
+três canais (R,G, B). Você pode verificar o número de canais da imagem
+utilizando o comando size(<imagem>);
+(3) Você pode gerar uma imagem binária com um único canal utilizando o
+programa “Paint” do Windows e salvando a imagem no formato .bmp
+com a opção “Monochrome Bitmap”.
+
+clown = imread('Periodic_noise_Clown.tif');
+clown_fourier_shift = fftshift(fft2(clown));
+%imshow(log(abs(clown_fourier_shift)), [3, 10]);
+mask = imread('5_mascara.bmp');
+clown_fourier_shift_mask = clown_fourier_shift .* double(mask);
+imshow(log(abs(clown_fourier_shift_mask)), [3, 10]);
+
+clown_fourier_mask = fftshift(clown_fourier_shift_mask);
+clown_mask = ifft2(clown_fourier_mask);
+imshow(uint8(clown_mask);
+
+
+6. Altere a(s) máscara(s) que você gerou para o Exercício 5 de modo a remover,
+separadamente, apenas os coeficientes associados às freqüências F(u,v), e depois
+apenas os coeficientes associados às freqüências F(-u,-v) do ruído periódico (veja
+exemplo de espectro filtrado para o caso F(u,v) na imagem abaixo). O que acontece
+neste caso? Compare o seu resultado com a imagem original (ainda contendo o ruído
+periódico) e com a imagem filtrada obtida no Exercício 5.
+
+f(u,v)
+
+clown = imread('Periodic_noise_Clown.tif');
+clown_fourier_shift = fftshift(fft2(clown));
+%imshow(log(abs(clown_fourier_shift)), [3, 10]);
+mask = imread('6_mascara_f(u,v).bmp');
+clown_fourier_shift_mask = clown_fourier_shift .* double(mask);
+imshow(log(abs(clown_fourier_shift_mask)), [3, 10]);
+
+clown_fourier_mask = fftshift(clown_fourier_shift_mask);
+clown_mask = ifft2(clown_fourier_mask);
+imshow(uint8(clown_mask));
+
+f(-u,-v)
+
+clown = imread('Periodic_noise_Clown.tif');
+clown_fourier_shift = fftshift(fft2(clown));
+mask = imread('6_mascara_f(-u,-v).bmp');
+clown_fourier_shift_mask = clown_fourier_shift .* double(mask);
+imshow(log(abs(clown_fourier_shift_mask)), [3, 10]);
+
+clown_fourier_mask = fftshift(clown_fourier_shift_mask);
+clown_mask = ifft2(clown_fourier_mask);
+imshow(uint8(clown_mask));
+
+
+----------------------------------------------------------------------------------
+
+I = imread('Periodic_noise_Clown.tif');
+If = fft2(I);
+Ifs = fftshift(If);
+Is = ifft2(Ifs);
+
+subplot(2,2,1), imshow(uint8(I));
+subplot(2,2,2), imshow(uint8(If));
+subplot(2,2,3), imshow(uint8(Ifs));
+subplot(2,2,4), imshow(uint8(Is));
+
+
+

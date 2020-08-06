@@ -1,0 +1,74 @@
+Cadeira: INF01120 - Técnicas de Construção de Programas
+Professor: Marcelo Pimenta
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2011/02
+
+Resumo 8 - Convenções
+
+* Declaração de Variáveis
+- Não fazer declarações implícitas, ou seja, simplesmente começar a usar uma
+variável no meio do código. Isso dificulta a leitura do código, pois sem declarar
+a variável, muitas vezes não sabemos os escopos em que ela é utilizada ou sua 
+função.
+- lembrar de usar convenções de nomenclatura, para não ter duas variáveis com 
+nomes diferentes que significam a mesma coisa.
+
+* Inicialização de Variáveis
+- inicialização imprópria de variáveis é uma das fontes mais sujeitas e gerar
+erros. Logo é importantíssimo iniciar as variáveis antes de usá-las.
+- ao declarar uma variável é uma boa prática inicializá-la. Esta é uma estra-
+tégia defensiva em programação.
+- inicializar as variáveis próximas de onde elas são utilizadas. Isso garante 
+a inicialização apropriada da variável.
+	- atribuir um valor à variável só antes dela ser usada
+- idealmente declarar e inicializar as variáveis próximas de onde elas serão 
+usadas.
+
+- cuidados:
+	- i, j, k, sum, total geralmente são contadores e devem ser inicializados.
+	- deve-se inicializar um membro de uma classe em seu método construtor,
+	para evita problemas.
+	- prestar atenção nos 'warnings' do compilar.
+	
+* Escopo
+- escopo == 'o quão famosa uma variável é?'
+	- quanto mais 'famosa' maior será a quantidade de partes do programa
+	em que a variável estará disponível para ser usada. Escopo largo
+	- quanto menos 'famosa' MELHOR. Escopo estreito, curto, pequeno.
+
+- utilizar as variáveis o tempo mais curto possível. Isso evita que a variável 
+seja utilizada em partes indevidas do programa, além de manter seu escopo 
+pequeno.
+- life time: mede o range de instrução executadas desde o primeiro até o 
+último uso da variável
+- span: mede o quão próximo são as referências à variável
+
+- tentar manter uma 'life time' pequena e spans pequenos
+- declarando as variáveis junto às rotinas de uso das mesmas o tempo de vida dela
+diminui. A quantidade de linhas de código desde a inicialização até a última referência 
+à variável diminuem.
+	
+* Persistência
+- Uma variável pode persistir de várias formas:
+	- por um certo tempo, em um bloco de código
+	- enquanto você quiser que ela exista
+	- até o programa terminar
+	- para sempre => salvas no banco de dados
+- Problema: assumir que uma variável tem uma persistência maior do que ela
+efetivamente tem.
+	- Para se prevenir quanto a este problema devemos assumir que a variável
+	não tem persistência, ou seja, a qualquer momento pode chegar a seu fim.
+	Desta forma iremos nos precaver quanto ao fim da variável.
+
+* Tempo de ligação (Binding Time)
+- não usar valores hard-coded
+- atribuir valores a variáveis com nomes significativos
+
+* Usar cada variável para UM propósito
+- cada variável deve ser usada APENAS para um propósito, evitando que
+em contextos diferentes se use a mesma variável. 
+	- se evitarmos isso há maior garantia da clareza do código.
+- evitar variáveis com significados escondidos. O nome da variável deve indicar
+o seu significado.
+- garantir que todas as variáveis declaradas são usadas.

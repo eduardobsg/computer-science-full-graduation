@@ -1,0 +1,3455 @@
+0
+00:00:01,000 --> 00:00:04,000
+Downloaded From www.AllSubs.org
+
+1
+00:00:01,395 --> 00:00:03,057
+The story so far...
+
+2
+00:00:03,257 --> 00:00:07,112
+In 1975, Ed Roberts invented the Altair 
+personal computer.
+
+3
+00:00:07,644 --> 00:00:11,167
+It was a pain to use until 19 year-old 
+pre-billionaire Bill Gates
+
+4
+00:00:11,167 --> 00:00:13,427
+wrote the first personal computer language.
+
+5
+00:00:13,826 --> 00:00:15,621
+Still, the public didn't care.
+
+6
+00:00:15,953 --> 00:00:19,277
+Then two young hackers, 
+Steve Jobs and Steve Wozniak,
+
+7
+00:00:19,410 --> 00:00:22,135
+built the Apple computer 
+to impress their friends.
+
+8
+00:00:22,534 --> 00:00:25,592
+We were all impressed and Apple was 
+a stunning success.
+
+9
+00:00:26,124 --> 00:00:29,846
+By 1980, the PC market was worth 
+a billion dollars.
+
+10
+00:00:30,245 --> 00:00:31,907
+Now, view on...
+
+11
+00:01:00,823 --> 00:01:02,352
+We are nerds.
+
+12
+00:01:03,815 --> 00:01:06,341
+Most of the people in the industry were young
+
+13
+00:01:06,341 --> 00:01:09,797
+because the guys who had any real experience
+were too smart
+
+14
+00:01:09,797 --> 00:01:11,659
+to get involved in all these crazy little 
+machines.
+
+15
+00:01:13,453 --> 00:01:16,844
+It really wasn't that we were going to build 
+billion dollar businesses.
+
+16
+00:01:16,910 --> 00:01:18,372
+We were having a good time.
+
+17
+00:01:19,835 --> 00:01:21,763
+I thought this was the most fun you 
+could possibly have
+
+18
+00:01:21,763 --> 00:01:22,760
+with your clothes on.
+
+19
+00:01:23,491 --> 00:01:26,150
+When the personal computer was invented 
+more than twenty years ago
+
+20
+00:01:26,150 --> 00:01:28,543
+it was just that - an invention
+
+21
+00:01:28,676 --> 00:01:30,205
+it wasn't a business.
+
+22
+00:01:30,271 --> 00:01:32,797
+These were hobbyists who built these machines
+
+23
+00:01:32,864 --> 00:01:37,650
+and wrote this software to have fun 
+but that has really changed
+
+24
+00:01:38,381 --> 00:01:42,635
+and now this is a business,
+ this is a big business.
+
+25
+00:02:01,780 --> 00:02:03,508
+How the personal computer industry grew
+
+26
+00:02:03,575 --> 00:02:07,497
+from zero to 100 million units is 
+an amazing story.
+
+27
+00:02:08,228 --> 00:02:11,485
+And it wasn't just those early funky companies
+of nerds and hackers,
+
+28
+00:02:11,485 --> 00:02:13,745
+like Apple, that made it happen.
+
+29
+00:02:13,745 --> 00:02:16,471
+Most of these transformation from hobby 
+to big business
+
+30
+00:02:16,471 --> 00:02:20,393
+can be linked to three letters: IBM.
+
+31
+00:02:23,650 --> 00:02:27,040
+IBM was, and is, an American 
+business phenomenon.
+
+32
+00:02:27,638 --> 00:02:30,896
+Over 60 years, Tom Watson and his son, 
+Tom Jr., built 
+
+33
+00:02:30,896 --> 00:02:35,216
+what their workers called Big Blue into the top 
+computer company in the world.
+
+34
+00:02:35,682 --> 00:02:38,474
+But IBM made mainframe computers for 
+large companies,
+
+35
+00:02:38,474 --> 00:02:39,803
+not personal computers,
+
+36
+00:02:39,803 --> 00:02:40,933
+at least not yet.
+
+37
+00:02:41,399 --> 00:02:44,190
+For the PC to be taken seriously by big business,
+
+38
+00:02:44,257 --> 00:02:47,913
+the nerds of Silicon Valley had to meet 
+the suits of corporate America.
+
+39
+00:02:52,699 --> 00:02:55,491
+IBM never fired anyone, requiring only
+
+40
+00:02:55,425 --> 00:02:59,014
+the undying loyalty to the company and a strict 
+dress code.
+
+41
+00:03:01,008 --> 00:03:04,199
+IBM hired conservative hard-workers 
+straight from school.
+
+42
+00:03:04,731 --> 00:03:07,190
+Few IBM'ers were at the summer of love.
+
+43
+00:03:09,716 --> 00:03:13,771
+Their turn-ons were giant mainframes and 
+corporate responsibility.
+
+44
+00:03:15,234 --> 00:03:18,624
+They worked nine to five and on Saturdays
+washed the car.
+
+45
+00:03:29,991 --> 00:03:32,318
+This is intergalactic HQ for IBM,
+
+46
+00:03:32,451 --> 00:03:34,312
+the largest computer company in the world...
+
+47
+00:03:34,312 --> 00:03:38,167
+but in many ways IBM is really more a country 
+than it is a company.
+
+48
+00:03:38,167 --> 00:03:41,358
+It has hundreds of thousands of citizens, 
+it has a bureaucracy,
+
+49
+00:03:41,358 --> 00:03:46,144
+it has an entire culture - everything in fact 
+but an army.
+
+50
+00:03:48,936 --> 00:03:53,323
+OK Sam we're ready to visit IBM country,
+obviously we're dressed for the part.
+
+51
+00:03:53,323 --> 00:03:57,445
+Now when you were in sales training in 1959 
+for IBM did you sing company songs?
+
+52
+00:03:57,445 --> 00:03:58,508
+- Absolutely.
+
+53
+00:03:58,508 --> 00:04:01,300
+Well just to get us in the mood 
+let's sing one right here.
+
+54
+00:04:01,433 --> 00:04:05,289
+- You're kidding.
+I have the IBM - the songs of the IBM
+
+55
+00:04:05,289 --> 00:04:07,682
+and we're going to try for number 74,
+
+56
+00:04:07,682 --> 00:04:11,138
+our IBM salesmen sung to the 
+tune of Jingle Bells.
+
+57
+00:04:11,670 --> 00:04:15,858
+(Bob & Sam singing)
+'IBM, happy men, smiling all the way...
+
+58
+00:04:15,925 --> 00:04:17,587
+oh what fun it is to sell...
+
+59
+00:04:17,587 --> 00:04:19,980
+our pruducts night and day....
+
+60
+00:04:19,980 --> 00:04:24,101
+IBM Watson men, partners of TJ...
+
+61
+00:04:24,101 --> 00:04:28,887
+In his service to mankind,
+that's why we are so gay.'
+
+62
+00:04:28,887 --> 00:04:33,141
+- Now gay didn't mean what it means today 
+then remember that OK?
+
+63
+00:04:33,141 --> 00:04:34,338
+Right ok let's go.
+
+64
+00:04:35,667 --> 00:04:37,529
+- I guess that was OK.
+Perfect.
+
+65
+00:04:42,647 --> 00:04:46,170
+When I started at IBM there was a dress code,
+
+66
+00:04:46,170 --> 00:04:49,693
+that was an informal oral code of white shirts.
+
+67
+00:04:49,693 --> 00:04:51,954
+You couldn't wear anything but a white shirt,
+
+68
+00:04:52,020 --> 00:04:54,214
+generally with a starched collar.
+
+69
+00:04:54,280 --> 00:04:59,133
+I remember attending my first class, and a 
+gentleman said to me
+
+70
+00:04:59,133 --> 00:05:02,789
+as we were entering the building, 
+"are you an IBMer?", and I said yes.
+
+71
+00:05:03,188 --> 00:05:07,376
+He had a three piece suit on, vests were of 
+the vogue,
+
+72
+00:05:07,509 --> 00:05:11,231
+and he said:
+"could you just lift your pants leg please?"
+
+73
+00:05:11,298 --> 00:05:15,818
+I said what, and before I knew it he had lifted 
+my pants leg
+
+74
+00:05:15,818 --> 00:05:20,670
+and he said "you're not wearing any garters!"
+I said what?! 
+
+75
+00:05:20,670 --> 00:05:23,861
+He said "your socks, they're not pulled 
+tight to the top",
+
+76
+00:05:23,861 --> 00:05:28,514
+"you need garters." And sure enough I had 
+to go get garters.
+
+77
+00:05:31,040 --> 00:05:32,769
+IBM is like Switzerland
+
+78
+00:05:32,769 --> 00:05:35,428
+conservative, a little dull, yet prosperous.
+
+79
+00:05:35,494 --> 00:05:37,887
+It has committees to verify each decision.
+
+80
+00:05:37,887 --> 00:05:40,746
+The safety net is so big that it is hard 
+to make a bad decision
+
+81
+00:05:40,746 --> 00:05:42,873
+or any decision at all.
+
+82
+00:05:45,598 --> 00:05:49,254
+Rich Seidner, computer programmer and 
+wannabe Paul Simon,
+
+83
+00:05:49,254 --> 00:05:52,246
+spent twenty-five years marching in lockstep 
+at IBM.
+
+84
+00:05:52,511 --> 00:05:54,240
+He feels better now.
+
+85
+00:05:56,300 --> 00:05:58,561
+I mean it's like... getting four hundred 
+thousand people
+
+86
+00:05:58,561 --> 00:06:00,422
+to agree what they want to have for lunch.
+
+87
+00:06:00,422 --> 00:06:01,951
+You know... I mean it's how can I...
+
+88
+00:06:01,951 --> 00:06:03,280
+it's gonna be lowest common...
+you know...
+
+89
+00:06:03,280 --> 00:06:05,274
+it's going to be, you know...
+hot dogs and beans!
+
+90
+00:06:05,540 --> 00:06:08,332
+So ahm so what you gonna do?
+
+91
+00:06:08,598 --> 00:06:11,590
+So IBM had created this process and 
+it absolutely
+
+92
+00:06:11,590 --> 00:06:15,179
+made sure that quality would be preserved 
+throughout the process,
+
+93
+00:06:15,179 --> 00:06:17,506
+that you actually were doing what you set 
+out to do
+
+94
+00:06:17,506 --> 00:06:19,699
+and what you thought the customer wanted. 
+
+95
+00:06:19,699 --> 00:06:23,754
+At one point somebody kind of looked at the 
+process to see well, you know,
+
+96
+00:06:23,821 --> 00:06:26,413
+what's it doing and what's the overhead 
+built into it,
+
+97
+00:06:26,413 --> 00:06:29,737
+what they found is that it would take at least 
+nine months
+
+98
+00:06:29,737 --> 00:06:31,133
+to ship an empty box.
+
+99
+00:06:32,728 --> 00:06:35,985
+By the late seventies, even IBM 
+had begun to notice
+
+100
+00:06:36,052 --> 00:06:39,442
+the explosive growth of personal computer 
+companies like Apple.
+
+101
+00:06:39,841 --> 00:06:43,564
+(commercial) the Apple 2, small inexpensive 
+and simple to use...
+
+102
+00:06:44,694 --> 00:06:48,084
+What's more, it was a computer business 
+they didn't control.
+
+103
+00:06:48,217 --> 00:06:52,139
+In 1980, IBM decided they wanted a piece 
+of this action.
+
+104
+00:06:52,803 --> 00:06:56,858
+There were suddenly tens of thousands of 
+people buying
+
+105
+00:06:56,858 --> 00:07:00,049
+machines of that class and they loved them.
+
+106
+00:07:00,049 --> 00:07:02,376
+They were very happy with them and they 
+were showing up
+
+107
+00:07:02,442 --> 00:07:08,026
+in the engineering departments of our clients 
+as machines that were brought in
+
+108
+00:07:08,092 --> 00:07:11,084
+because you can't do the job on your 
+mainframe kind of thing.
+
+109
+00:07:11,350 --> 00:07:15,538
+(commercial) JB wanted to know why I'm doing 
+better than all the other managers...
+
+110
+00:07:15,538 --> 00:07:17,864
+it's no secret...I have an Apple,
+
+111
+00:07:17,864 --> 00:07:21,986
+sure there's a big computer three flights down 
+but it won't test my options,
+
+112
+00:07:21,986 --> 00:07:24,910
+do my charts or edit my reports like my Apple.
+
+113
+00:07:25,176 --> 00:07:28,899
+The people who had gotten it were
+religious fanatics about them.
+
+114
+00:07:28,899 --> 00:07:33,884
+So the concern was we were losing the hearts 
+and minds and give me a machine
+
+115
+00:07:33,884 --> 00:07:35,480
+to win back the hearts and minds.
+
+116
+00:07:39,535 --> 00:07:42,526
+In business, as in comedy, timing is everything,
+
+117
+00:07:42,526 --> 00:07:45,916
+and time looked like it might be running out 
+for an IBM PC.
+
+118
+00:07:46,049 --> 00:07:48,708
+I'm visiting an IBMer who took up the challenge.
+
+119
+00:07:52,364 --> 00:07:57,815
+In August 1979, as IBM's top management 
+met to discuss their PC crisis,
+
+120
+00:07:57,815 --> 00:08:00,806
+Bill Lowe ran a small lab in Boca Raton Florida.
+
+121
+00:08:00,939 --> 00:08:04,795
+- Hello Bob nice to see you.
+Nice to see you again. I tried to match 
+
+122
+00:08:04,795 --> 00:08:07,786
+the IBM dress code how did I do?
+- That's terrific, that's terrific.
+
+123
+00:08:07,986 --> 00:08:10,113
+He knew the company was in a quandary.
+
+124
+00:08:10,113 --> 00:08:14,965
+Wait another year and the PC industry would be
+too big even for IBM to take on.
+
+125
+00:08:16,162 --> 00:08:19,419
+Chairman Frank Carey turned to the 
+department heads and said:
+
+126
+00:08:19,552 --> 00:08:21,147
+"HELP!!!"
+
+127
+00:08:21,613 --> 00:08:26,266
+He kind of said well, what should we do, 
+and I said well,
+
+128
+00:08:26,332 --> 00:08:30,520
+we think we know what we would like to do if 
+we were going to proceed with our own product
+
+129
+00:08:30,587 --> 00:08:35,705
+and he said no, he said at IBM it would take 
+four years and three hundred people
+
+130
+00:08:35,705 --> 00:08:39,228
+to do anything, I mean it's just a fact of life.
+
+131
+00:08:39,295 --> 00:08:42,486
+And I said no sir, we can provide with product 
+in a year.
+
+132
+00:08:42,818 --> 00:08:46,009
+And he abruptly ended the meeting, 
+he said you're on Lowe,
+
+133
+00:08:46,009 --> 00:08:48,202
+come back in two weeks and tell me 
+what you need.
+
+134
+00:08:48,535 --> 00:08:51,925
+An IBM product in a year! Ridiculous!
+
+135
+00:08:52,191 --> 00:08:54,983
+Down in the basement Bill still has the plan.
+
+136
+00:08:55,182 --> 00:08:58,306
+To save time, instead of building a computer 
+from scratch,
+
+137
+00:08:58,306 --> 00:09:01,564
+they would buy components off the shelf 
+and assemble them
+
+138
+00:09:01,697 --> 00:09:05,552
+what in IBM speak was called 'open 
+architecture.'
+
+139
+00:09:06,749 --> 00:09:08,743
+IBM never did this.
+
+140
+00:09:08,809 --> 00:09:12,133
+Two weeks later Bill proposed his heresy 
+to the Chairman.
+
+141
+00:09:12,266 --> 00:09:14,327
+- And frankly this is it.
+
+142
+00:09:14,327 --> 00:09:20,176
+- The key decisions were to go with 
+an open architecture,
+
+143
+00:09:20,708 --> 00:09:27,688
+- non IBM technology, non IBM software, 
+non IBM sales and non IBM service.
+
+144
+00:09:28,619 --> 00:09:33,006
+- And we probably spent a full half of the 
+presentation
+
+145
+00:09:33,870 --> 00:09:37,327
+- carrying the corporate management committee
+into this concept.
+
+146
+00:09:37,593 --> 00:09:40,517
+- Because this was a new concept for IBM 
+at that point.
+
+147
+00:09:40,517 --> 00:09:42,246
+Was it a hard sell?
+
+148
+00:09:43,841 --> 00:09:50,887
+- Mr. Carey bought it. And as result of him 
+buying it, we got through it.
+
+149
+00:09:51,353 --> 00:09:54,012
+With the backing of the chairman, 
+Bill and his team
+
+150
+00:09:54,012 --> 00:09:57,801
+then set out to break all the IBM rules and 
+go for a record.
+
+151
+00:09:57,801 --> 00:10:00,127
+- We'll put it in the IBM section.
+
+152
+00:10:00,859 --> 00:10:03,916
+Once IBM decided to do a personal computer
+
+153
+00:10:03,916 --> 00:10:07,107
+and to do it in a year, they couldn't really 
+design anything,
+
+154
+00:10:07,107 --> 00:10:10,098
+they just had to slap it together, so that's 
+what we'll do.
+
+155
+00:10:10,098 --> 00:10:12,292
+You have a central processing unit and eh...
+let's see...
+
+156
+00:10:13,755 --> 00:10:21,133
+you need a monitor or display and...
+a keyboard.
+
+157
+00:10:21,665 --> 00:10:26,052
+OK: a PC, except it's not, there's something 
+missing.
+
+158
+00:10:27,382 --> 00:10:31,038
+Time for the Cringely crash course in 
+elementary computing.
+
+159
+00:10:31,769 --> 00:10:35,625
+A PC is a boxful of electronic switches, 
+a piece of hardware.
+
+160
+00:10:35,625 --> 00:10:37,419
+It's useless until you tell it what to do.
+
+161
+00:10:37,486 --> 00:10:41,275
+It requires a program of instructions...
+that's software.
+
+162
+00:10:41,341 --> 00:10:45,928
+Every PC requires at least two essential bits of
+software in order to work at all.
+
+163
+00:10:45,928 --> 00:10:48,188
+First it requires a computer language.
+
+164
+00:10:48,188 --> 00:10:51,778
+That's what you type in to give instructions 
+to the computer.
+
+165
+00:10:51,778 --> 00:10:53,174
+To tell it what to do.
+
+166
+00:10:53,174 --> 00:10:55,301
+Remember it was a computer language 
+called BASIC
+
+167
+00:10:55,301 --> 00:10:58,492
+that Paul Allen and Bill Gates adapted to the 
+Altair...the first PC.
+
+168
+00:10:58,757 --> 00:11:01,350
+The other bit of software that's required is called 
+an operating system
+
+169
+00:11:01,350 --> 00:11:04,940
+and that's the internal traffic cop that tells 
+the computer itself
+
+170
+00:11:04,940 --> 00:11:10,523
+how the keyboard is connected to the screen 
+or how to store files on a floppy disk
+
+171
+00:11:10,523 --> 00:11:13,781
+instead of just losing them when you turn off the
+PC at the end of the day.
+
+172
+00:11:14,312 --> 00:11:17,038
+Operating systems tend to have boring 
+unfriendly names
+
+173
+00:11:17,038 --> 00:11:22,223
+like UNIX and CPM and MS-DOS but, though 
+they may be boring,
+
+174
+00:11:22,223 --> 00:11:26,012
+it's an operating system that made Bill Gates 
+the richest man in the world.
+
+175
+00:11:26,278 --> 00:11:29,734
+And the story of how that came about is, well,
+pretty interesting.
+
+176
+00:11:31,862 --> 00:11:36,581
+So the contest begins. 
+Who would IBM buy their software from?
+
+177
+00:11:37,179 --> 00:11:41,567
+Let's meet the two contenders: the late 
+Gary Kildall, then aged 39,
+
+178
+00:11:41,567 --> 00:11:48,081
+a computer Ph.D., and a 24 year old Harvard 
+drop-out - Bill Gates.
+
+179
+00:11:49,677 --> 00:11:52,668
+By the time IBM came calling in 1980,
+
+180
+00:11:53,000 --> 00:11:56,656
+Bill Gates and his small company Microsoft 
+was the biggest supplier
+
+181
+00:11:56,656 --> 00:11:59,714
+of computer languages in the fledgling 
+PC industry.
+
+182
+00:12:00,911 --> 00:12:03,104
+(Commercial)
+- Many different computer manufacturers,
+
+183
+00:12:03,104 --> 00:12:06,960
+- are making the CPM Operating System standard 
+on most models.
+
+184
+00:12:07,159 --> 00:12:08,960
+For their operating system, though,
+
+185
+00:12:08,960 --> 00:12:12,544
+the logical guy for the IBMers to see was 
+Gary Kildall.
+
+186
+00:12:12,743 --> 00:12:16,798
+He ran a company modestly called 
+'Interglactic Digital Research.'
+
+187
+00:12:17,064 --> 00:12:21,119
+Gary had invented the PC's first operating system 
+called CP/M.
+
+188
+00:12:21,119 --> 00:12:26,304
+He had already sold 600,000 of them, so he was 
+the big cheese of operating systems.
+
+189
+00:12:26,437 --> 00:12:30,093
+- In the early 70s I had a need for an 
+operating system myself
+
+190
+00:12:30,093 --> 00:12:32,885
+- and eh it was a very natural thing to write
+
+191
+00:12:32,885 --> 00:12:37,206
+- and it turns out other people had a need for 
+an operating system like that and so
+
+192
+00:12:37,206 --> 00:12:40,995
+- eh it was a very natural thing I wrote it for my own 
+use and then started selling it.
+
+193
+00:12:41,128 --> 00:12:45,382
+In Gary's mind it was the dominant thing and 
+it would always be the dominant
+
+194
+00:12:45,382 --> 00:12:48,838
+'cos, you know,  Bill did languages and Gary did 
+operating systems
+
+195
+00:12:48,838 --> 00:12:52,628
+and he really honestly believed that would 
+never change.
+
+196
+00:12:53,292 --> 00:12:56,682
+But what would change the balance of power 
+in this young industry
+
+197
+00:12:56,682 --> 00:12:59,208
+was the characters of the two protagonists.
+
+198
+00:12:59,807 --> 00:13:02,599
+- So I knew Gary back when he was an assistant
+professor
+
+199
+00:13:02,599 --> 00:13:05,258
+- at Monterrey Post Grad School and I was simply 
+a grad student.
+
+200
+00:13:06,055 --> 00:13:11,639
+- And went down, sat in his hot tub, smoked dope 
+with him and thoroughly enjoyed it all,
+
+201
+00:13:11,772 --> 00:13:14,763
+- and commiserated and talked nerd stuff.
+
+202
+00:13:15,162 --> 00:13:18,818
+- He liked playing with gadgets, just like Woz did 
+and does,
+
+203
+00:13:18,951 --> 00:13:20,680
+- just like I did and do.
+
+204
+00:13:21,078 --> 00:13:25,865
+He wasn't really interested in how you drive 
+the business,
+
+205
+00:13:25,931 --> 00:13:28,191
+he worked on projects, things that interested him.
+
+206
+00:13:28,789 --> 00:13:35,370
+He didn't go rushing off to the patent office and 
+patent CPM and patent every line of code he could,
+
+207
+00:13:35,370 --> 00:13:38,761
+he didn't try to just squeeze the last dollar out of it.
+
+208
+00:13:38,960 --> 00:13:46,870
+- Gary was not a fighter, Gary avoided conflict, 
+Gary hated conflict.
+
+209
+00:13:48,532 --> 00:13:52,255
+- Bill I don't think anyone could say 
+backed away from conflict.
+
+210
+00:13:55,047 --> 00:13:58,902
+Nobody said future billionaires have to be 
+nice guys.
+
+211
+00:13:58,902 --> 00:14:02,226
+Here, at the Microsoft Museum, is a shrine to 
+Bill's legacy.
+
+212
+00:14:02,425 --> 00:14:05,616
+Bill Gates hardly fought his way up from the gutter.
+
+213
+00:14:05,882 --> 00:14:10,868
+Raised in a prosperous Seattle household, his 
+mother a homemaker who did charity work,
+
+214
+00:14:10,868 --> 00:14:12,862
+his father was a successful lawyer.
+
+215
+00:14:13,327 --> 00:14:16,850
+But beneath the affluence and comfort of 
+a perfect American family,
+
+216
+00:14:16,850 --> 00:14:19,376
+a competitive spirit ran deep.
+
+217
+00:14:20,373 --> 00:14:23,431
+I ended up spending Memorial Day Weekend 
+with him
+
+218
+00:14:23,431 --> 00:14:26,555
+out at his grandmother's house on Hood Canal.
+
+219
+00:14:26,888 --> 00:14:29,879
+She turned everything in to a game.
+
+220
+00:14:30,278 --> 00:14:36,394
+It was a very very very competitive environment,
+and if you spent the weekend there,
+
+221
+00:14:36,394 --> 00:14:37,790
+you were part of the competition,
+
+222
+00:14:37,790 --> 00:14:42,177
+and it didn't matter whether it was hearts or 
+pickleball or swimming to the dock.
+
+223
+00:14:42,310 --> 00:14:45,368
+And you know and there was always a reward 
+for winning 
+
+224
+00:14:45,368 --> 00:14:46,764
+and there was always a penalty for losing.
+
+225
+00:14:47,096 --> 00:14:49,356
+One time, it was funny, I went to
+
+226
+00:14:49,888 --> 00:14:54,209
+Bill's house and he really wanted to show me his 
+jigsaw puzzle that he was working on, 
+
+227
+00:14:54,275 --> 00:14:58,131
+and he really wanted to talk about how he did 
+this jigsaw puzzle in like four minutes,
+
+228
+00:14:58,197 --> 00:15:02,252
+and like on the box it said, if you're a genius you
+will do the jigsaw puzzle in like seven.
+
+229
+00:15:02,252 --> 00:15:05,775
+And he was into it. He was like "I can do it". And I 
+said don't, you know, I believe you.
+
+230
+00:15:05,775 --> 00:15:08,633
+You don't need to break it up and do it for me. 
+You know.
+
+231
+00:15:10,029 --> 00:15:11,891
+Bill Gates can be so focused
+
+232
+00:15:11,891 --> 00:15:14,417
+that the small things in life get overlooked.
+
+233
+00:15:14,949 --> 00:15:18,139
+If he was busy he didn't bathe, he didn't 
+change clothes.
+
+234
+00:15:18,139 --> 00:15:22,593
+We were in New York and the demo that we 
+had crashed
+
+235
+00:15:22,593 --> 00:15:28,376
+the evening before the announcement, and Bill 
+worked all night with some other engineers to fix it.
+
+236
+00:15:28,576 --> 00:15:32,697
+Well it didn't occur to him to take ten minutes 
+for a shower after that,
+
+237
+00:15:33,029 --> 00:15:35,356
+it just didn't occur to him that that was important,
+
+238
+00:15:35,356 --> 00:15:38,813
+and he badly needed a shower that day.
+
+239
+00:15:43,998 --> 00:15:45,593
+The scene is set:
+
+240
+00:15:45,593 --> 00:15:51,842
+in California laid back Gary Kildall already making
+the best selling PC operating system: CPM.
+
+241
+00:15:52,240 --> 00:15:56,428
+In Seattle Bill Gates maker of BASIC the best selling 
+PC language
+
+242
+00:15:56,428 --> 00:15:59,885
+but always prepared to seize an opportunity.
+
+243
+00:16:00,683 --> 00:16:03,142
+So IBM had to choose one of these guys
+
+244
+00:16:03,142 --> 00:16:06,134
+to write the operating system for its new 
+personal computer.
+
+245
+00:16:06,466 --> 00:16:09,457
+One would hit the jackpot the other 
+would be forgotten,
+
+246
+00:16:09,524 --> 00:16:12,382
+a footnote in the history of the personal computer,
+
+247
+00:16:12,382 --> 00:16:15,440
+and it all starts with a telephone call to an 
+eighth floor office
+
+248
+00:16:15,440 --> 00:16:20,093
+in that building the headquarters of Microsoft 
+in 1980.
+
+249
+00:16:22,420 --> 00:16:27,472
+At about noon I guess I called Bill Gates on Monday
+
+250
+00:16:27,472 --> 00:16:31,061
+and said I would like to come out and talk with him 
+about his products.
+
+251
+00:16:31,792 --> 00:16:34,584
+Bill said well, how's next week, and they said we're 
+on an airplane,
+
+252
+00:16:34,584 --> 00:16:39,437
+we're leaving in an hour, we'd like to be there 
+tomorrow. Well, hallelujah. Right oh.
+
+253
+00:16:40,634 --> 00:16:43,292
+Steve Ballmer was a Harvard roommate of Gates.
+
+254
+00:16:43,292 --> 00:16:47,015
+He'd just joined Microsoft and would end up 
+its third billionaire.
+
+255
+00:16:47,015 --> 00:16:50,738
+Back then he was the only guy in the company 
+with business training.
+
+256
+00:16:50,738 --> 00:16:55,856
+Both Ballmer and Gates instantly saw the
+importance of the IBM visit.
+
+257
+00:16:56,521 --> 00:16:58,781
+And Bill said Steve, you'd better come to 
+the meeting,
+
+258
+00:16:58,781 --> 00:17:00,376
+you're the only other guy here who can wear a suit.
+
+259
+00:17:00,310 --> 00:17:01,972
+A lot of these computer fairs discussions would get 
+around to, you know, I...
+
+260
+00:17:01,972 --> 00:17:04,564
+ we'll put on suits and we'll go to this meeting.
+
+261
+00:17:04,697 --> 00:17:07,622
+We got there at roughly two o'clock
+
+262
+00:17:07,755 --> 00:17:11,876
+and we were waiting in the front,
+
+263
+00:17:12,740 --> 00:17:15,865
+and this young fella came out to take us back to 
+Mr. Gates office.
+
+264
+00:17:15,865 --> 00:17:19,255
+I thought he was the office boy, and of course 
+it was Bill.
+
+265
+00:17:19,388 --> 00:17:23,376
+He was quite decisive, we popped out the 
+non-disclosure agreement
+
+266
+00:17:23,376 --> 00:17:25,969
+the letter that said he wouldn't tell anybody 
+we were there
+
+267
+00:17:26,035 --> 00:17:28,761
+and that we wouldn't hear any secrets and so forth.
+
+268
+00:17:29,558 --> 00:17:31,087
+ He signed it immediately.
+
+269
+00:17:31,087 --> 00:17:35,009
+IBM didn't make it easy. You had to sign all these 
+funny agreements that sort of said
+
+270
+00:17:35,009 --> 00:17:39,330
+I...IBM could do whatever they wanted, 
+whenever they wanted
+
+271
+00:17:39,330 --> 00:17:42,255
+and use your secrets however they - they felt.
+
+272
+00:17:42,388 --> 00:17:44,914
+But so it took a little bit of faith.
+
+273
+00:17:45,978 --> 00:17:48,637
+Jack Sams was looking for a package from Microsoft
+
+274
+00:17:48,703 --> 00:17:52,692
+containing both the BASIC computer language 
+and an Operating System.
+
+275
+00:17:53,223 --> 00:17:55,616
+But IBM hadn't done their homework.
+
+276
+00:17:56,347 --> 00:17:58,209
+They thought we had an operating system.
+
+277
+00:17:58,209 --> 00:18:02,131
+Because we had this Soft Card product that 
+had CPM on it, they thought
+
+278
+00:18:02,131 --> 00:18:04,524
+we could licence them CPM for this new 
+personal computer
+
+279
+00:18:04,524 --> 00:18:09,975
+they told us they wanted to do, and we said well, 
+no, we're not in that business.
+
+280
+00:18:09,975 --> 00:18:13,631
+When we discovered we didn't have - 
+he didn't have the rights to do that
+
+281
+00:18:13,631 --> 00:18:17,819
+and that it was not...he said but I think it's ready, 
+I think that Gary's got it ready to go.
+
+282
+00:18:18,550 --> 00:18:21,741
+So I said well, there's no time like the present, 
+call up Gary.
+
+283
+00:18:21,940 --> 00:18:25,995
+And so Bill right there with them in the room, 
+called Gary Kildall at Digital Research
+
+284
+00:18:25,995 --> 00:18:27,723
+and said Gary, I'm sending some guys down.
+
+285
+00:18:27,723 --> 00:18:30,582
+They're going to be on the phone. Treat them right, 
+they're important guys.
+
+286
+00:18:31,978 --> 00:18:36,631
+The men from IBM came to this Victorian House 
+in Pacific Grove California,
+
+287
+00:18:36,631 --> 00:18:40,686
+headquarters of Digital Research, headed by 
+Gary and Dorothy Kildall.
+
+288
+00:18:41,151 --> 00:18:43,943
+Just imagine what its like having IBM come to visit,
+
+289
+00:18:43,943 --> 00:18:48,197
+its like having the Queen drop by for tea, 
+its like having the Pope come by looking for advice,
+
+290
+00:18:48,197 --> 00:18:50,391
+its like a visit from God himself.
+
+291
+00:18:50,989 --> 00:18:52,984
+And what did Gary and Dorothy do? 
+
+292
+00:18:53,183 --> 00:18:54,446
+They sent them away.
+
+293
+00:18:54,712 --> 00:18:57,903
+Gary had some other plans and so he said well,
+
+294
+00:18:58,102 --> 00:19:02,024
+Dorothy will see you. So we went down the three 
+of us...
+
+295
+00:19:02,290 --> 00:19:07,009
+IBM showed up with an IBM non-disclosure and 
+Dorothy made what I...
+
+296
+00:19:07,076 --> 00:19:11,064
+a decision which I think it's easy in retrospect to say
+was dumb.
+
+297
+00:19:11,397 --> 00:19:15,917
+We popped out our letter that said please don't tell 
+anybody we're here,
+
+298
+00:19:15,917 --> 00:19:18,044
+and we don't want to hear anything confidential.
+
+299
+00:19:18,044 --> 00:19:20,238
+And she read it and said and "I can't sign this".
+
+300
+00:19:21,168 --> 00:19:24,625
+She did what her job was, she got the lawyer 
+to look at the nondisclosure.
+
+301
+00:19:24,625 --> 00:19:31,206
+The lawyer, Gerry Davis who's still in Monterey 
+threw up on this non-disclosure.
+
+302
+00:19:31,206 --> 00:19:35,593
+It was uncomfortable for IBM, they weren't used 
+to waiting.
+
+303
+00:19:35,527 --> 00:19:40,712
+And it was unfortunate situation - here you are in a 
+tiny Victorian House,
+
+304
+00:19:41,044 --> 00:19:43,570
+its overrun with people, chaotic.
+
+305
+00:19:43,770 --> 00:19:48,622
+So we spent the whole day in Pacific Grove 
+debating with them
+
+306
+00:19:48,622 --> 00:19:51,614
+and with our attorneys and her attorneys and 
+everybody else about whether or not
+
+307
+00:19:51,614 --> 00:19:55,934
+she could even talk to us about talking to us,
+
+308
+00:19:56,799 --> 00:19:57,862
+and we left.
+
+309
+00:19:59,391 --> 00:20:02,515
+This is the moment Digital Research dropped 
+the ball.
+
+310
+00:20:02,781 --> 00:20:06,969
+IBM, distinctly unimpressed with their reception, 
+went back to Microsoft.
+
+311
+00:20:07,900 --> 00:20:11,290
+Bill Gates isn't the man to give a rival 
+a second chance.
+
+312
+00:20:11,489 --> 00:20:14,148
+He saw the opportunity of a lifetime.
+
+313
+00:20:14,481 --> 00:20:17,538
+Digital research didn't seize that, and we knew 
+it was essential,
+
+314
+00:20:17,538 --> 00:20:20,064
+if somebody didn't do it, the project was going 
+to fall apart.
+
+315
+00:20:20,463 --> 00:20:23,521
+We just got carried away and said look, we can't 
+afford to lose the language business.
+
+316
+00:20:23,654 --> 00:20:26,712
+That was the initial thought - we can't afford to have
+IBM not go forward.
+
+317
+00:20:26,712 --> 00:20:29,105
+This is the most exciting thing that's going to 
+happen in PCs.
+
+318
+00:20:29,304 --> 00:20:31,105
+And we were already out on a limb,
+
+319
+00:20:31,105 --> 00:20:37,215
+because we had licensed them not only Basic, 
+but Fortran, Cobol Assembler er,
+
+320
+00:20:37,481 --> 00:20:39,209
+Typing Tutor and Venture.
+
+321
+00:20:39,209 --> 00:20:42,001
+And basically every - every product 
+the company had
+
+322
+00:20:42,134 --> 00:20:45,590
+we had committed to do for IBM in a very short 
+time frame.
+
+323
+00:20:45,989 --> 00:20:47,319
+But there was a problem.
+
+324
+00:20:47,319 --> 00:20:52,038
+IBM needed an operating system fast and 
+Microsoft didn't have one.
+
+325
+00:20:52,304 --> 00:20:57,157
+What they had was a stroke of luck - the ingredient 
+everyone needs to be a billionaire.
+
+326
+00:20:57,556 --> 00:21:00,547
+Unbelievably, the solution was just across town.
+
+327
+00:21:00,547 --> 00:21:03,871
+Paul Allen, Gates's programming partner 
+since high school,
+
+328
+00:21:03,871 --> 00:21:05,998
+had found another operating system.
+
+329
+00:21:05,998 --> 00:21:10,252
+There's a local company here in CL called 
+CL Computer Products
+
+330
+00:21:10,252 --> 00:21:14,640
+by a guy named Tim Patterson and he had done 
+an operating system
+
+331
+00:21:14,706 --> 00:21:17,498
+a very rudimentary operating system that was 
+kind of like CPM.
+
+332
+00:21:17,830 --> 00:21:22,018
+And we just told IBM look, we'll go and get this 
+operating system from this small local company,
+
+333
+00:21:22,018 --> 00:21:25,674
+we'll take care of it, we'll fix it up, and you can still 
+do a PC.
+
+334
+00:21:26,273 --> 00:21:29,929
+Tim Patterson's operating system, which saved 
+the deal with IBM,
+
+335
+00:21:29,929 --> 00:21:33,851
+was, well, adapted from Gary Kildall's CPM.
+
+336
+00:21:34,050 --> 00:21:37,839
+So I took a CPM manual that I'd gotten from the 
+Retail Computer Store five dollars
+
+337
+00:21:37,839 --> 00:21:45,151
+in 1976 or something, and used that as the basis for
+ what would be the application program interface,
+
+338
+00:21:45,151 --> 00:21:47,151
+the API for my operating system.
+
+339
+00:21:47,943 --> 00:21:54,591
+And so using these ideas that came from different 
+places I started in April
+
+340
+00:21:54,591 --> 00:22:00,374
+and it was about half time for four months before I 
+had my first working version.
+
+341
+00:22:00,906 --> 00:22:04,096
+This is it, the operating system Tim Patterson wrote.
+
+342
+00:22:04,096 --> 00:22:07,686
+He called in QDOS the quick and dirty 
+operating system.
+
+343
+00:22:07,686 --> 00:22:14,400
+Microsoft and IBM called it PC DOS 1.0 and under 
+any name it looks an awful lot like CPM.
+
+344
+00:22:14,400 --> 00:22:18,654
+On this computer here I have running a PC DOS and
+CPM 86
+
+345
+00:22:18,654 --> 00:22:21,247
+and frankly itÍs very hard to tell the difference 
+between the two.
+
+346
+00:22:21,247 --> 00:22:23,773
+The command structures are the same, 
+so are the directories,
+
+347
+00:22:24,105 --> 00:22:29,556
+in fact the only obvious external difference is the 
+floppy dirive is labelled A in PC DOS
+
+348
+00:22:30,287 --> 00:22:32,348
+and and C in CPM.
+
+349
+00:22:32,547 --> 00:22:37,134
+Some difference and yet one generated billions in 
+revenue and the other disappeared.
+
+350
+00:22:37,333 --> 00:22:40,591
+As usual in the PC business the prize didn't go to 
+the inventor
+
+351
+00:22:40,591 --> 00:22:42,917
+but to the exploiter of the invention.
+
+352
+00:22:42,984 --> 00:22:47,371
+In this case that wasn't Gary Kildall, it wasn't even 
+Tim Paterson.
+
+353
+00:22:47,703 --> 00:22:49,498
+There was still one problem.
+
+354
+00:22:49,498 --> 00:22:54,151
+Tim Patterson worked for Seattle Computer 
+Products, or SCP.
+
+355
+00:22:54,151 --> 00:22:58,937
+They still owned the rights to QDOS,
+rights that Microsoft had to have.
+
+356
+00:22:59,336 --> 00:23:03,192
+But then we went back and said to them look, 
+you know,
+
+357
+00:23:03,192 --> 00:23:08,776
+we want to buy this thing, and SCP was like most 
+little companies, you know.
+
+358
+00:23:08,776 --> 00:23:12,498
+They always needed cash and so that was when 
+they went in to the negotiation.
+
+359
+00:23:13,695 --> 00:23:21,539
+- And so ended up working out a deal to buy the 
+operating system from him 
+
+360
+00:23:21,937 --> 00:23:25,328
+- for whatever usage we wanted for 
+fifty thousand dollars.
+
+361
+00:23:25,328 --> 00:23:30,380
+Hey, let's pause there. 
+To savour an historic moment.
+
+362
+00:23:30,845 --> 00:23:33,836
+- for whatever usage we wanted for 
+fifty thousand dollars.
+
+363
+00:23:34,900 --> 00:23:37,958
+It had to be the deal of the century if not 
+the millenium,
+
+364
+00:23:37,958 --> 00:23:42,611
+it was certainly the deal that made Bill Gates 
+and Paul Allen multi billionaires
+
+365
+00:23:42,611 --> 00:23:47,929
+and allowed Paul Allen to buy toys like these, his own
+NBA basketball team and arena.
+
+366
+00:23:48,195 --> 00:23:52,516
+Microsoft bought outright for fifty thousand dollars 
+the operating system they needed
+
+367
+00:23:52,516 --> 00:23:57,235
+and they turned around and licensed it to the world 
+for up to fifty dollars per PC.
+
+368
+00:23:57,235 --> 00:24:01,224
+Think of it: one hundred million personal computers 
+running MS DOS software
+
+369
+00:24:01,290 --> 00:24:05,146
+funnelling billions into Microsoft - a company that 
+back then was
+
+370
+00:24:05,146 --> 00:24:09,334
+fifty kids managed by a twenty-five year old 
+who needed to wash his hair.
+
+371
+00:24:09,334 --> 00:24:13,455
+Nice work if you can get it and Microsoft got it.
+
+372
+00:24:17,776 --> 00:24:22,362
+There are no two places further apart in the USA 
+than south eastern Florida
+
+373
+00:24:22,362 --> 00:24:24,556
+and Washington State where Microsoft is based.
+
+374
+00:24:24,556 --> 00:24:26,550
+This - this is Florida,
+
+375
+00:24:26,683 --> 00:24:30,938
+Boca Raton and this building right here is where the 
+IBM PC was developed.
+
+376
+00:24:33,530 --> 00:24:37,452
+Here the nerds from Seattle joined forces 
+with the suits of corporate
+
+377
+00:24:37,851 --> 00:24:41,839
+and in that first honeymoon year they pulled off
+a fantastic achievement.
+
+378
+00:24:42,770 --> 00:24:46,160
+- After we got a package in the mail from the people 
+down in Florida...
+
+379
+00:24:46,160 --> 00:24:51,013
+As August 1981 approached, the deadline for the 
+launch of the IBM Acorn,
+
+380
+00:24:51,013 --> 00:24:53,472
+the PC industry held its breath.
+
+381
+00:24:53,472 --> 00:24:56,597
+- Supposedly, maybe at this very moment eh,
+
+382
+00:24:56,597 --> 00:25:00,186
+- IBM is announcing the personal computer. 
+We don't know that yet.
+
+383
+00:25:00,519 --> 00:25:04,241
+In companies across America, software writers 
+like Dan Bricklin,
+
+384
+00:25:04,308 --> 00:25:05,637
+the creator of the first spreadsheet,
+
+385
+00:25:05,903 --> 00:25:08,562
+waited with their staff for the news of 
+the announcement.
+
+386
+00:25:09,958 --> 00:25:16,539
+This is a moment of PC history. IBM secrecy had 
+codenamed the PC 'The Floridian Project.'
+
+387
+00:25:16,672 --> 00:25:20,860
+Everyone in the PC business knew IBM would 
+change their world forever.
+
+388
+00:25:21,059 --> 00:25:24,050
+They also knew that if their software was 
+on the IBM PC,
+
+389
+00:25:24,050 --> 00:25:26,178
+they would make fortunes.
+
+390
+00:25:26,178 --> 00:25:31,097
+-...the attached information is not to be disclosed 
+prior to any public announcement.
+
+391
+00:25:31,097 --> 00:25:34,819
+- It's on the ticker
+- It's on the ticker OK so now you can tell people.
+
+392
+00:25:35,285 --> 00:25:40,469
+What we're watching, are the first few seconds 
+of a $100 billion industry.
+
+393
+00:25:44,458 --> 00:25:48,912
+(promos) After years of thinking big today IBM 
+came up with something small...
+
+394
+00:25:49,177 --> 00:25:52,701
+...Big Blue is looking for a slice of Apple's 
+market share...
+
+395
+00:25:53,432 --> 00:25:55,891
+...Bits and Bytes mean nothing try this one...
+
+396
+00:25:56,490 --> 00:26:00,478
+...Now they're going to sell $1,000 computers 
+to millions of customers...
+
+397
+00:26:01,143 --> 00:26:04,533
+...I have seen the future said one analyst 
+and it computes.
+
+398
+00:26:10,981 --> 00:26:14,172
+Nobody was ever fired for buying IBM.
+
+399
+00:26:14,371 --> 00:26:19,822
+Now companies could put PCs with the name they
+trusted on desks from Wisconsin to Wall Street.
+
+400
+00:26:19,822 --> 00:26:26,071
+What IBM said was it's okay corporate America for 
+you to now start buying and using PCs.
+
+401
+00:26:26,071 --> 00:26:30,258
+And if it's okay for corporate America, it's got 
+to be okay for everybody.
+
+402
+00:26:33,183 --> 00:26:37,571
+For all the hype, the IBM PC wasn't much better 
+than what came before.
+
+403
+00:26:37,837 --> 00:26:40,762
+So while the IBM name could create 
+immense demand,
+
+404
+00:26:40,894 --> 00:26:43,686
+it took a killer application to sustain it.
+
+405
+00:26:45,747 --> 00:26:49,137
+The killer app for the IBM PC was yet 
+another spreadsheet.
+
+406
+00:26:49,137 --> 00:26:54,056
+Based on Visicalc, but called Lotus 1-2-3, 
+its creators were the first of many
+
+407
+00:26:54,056 --> 00:26:56,056
+to get rich on IBM's success.
+
+408
+00:26:56,449 --> 00:26:58,643
+Within a year Lotus was worth $150 million bucks.
+
+409
+00:26:58,709 --> 00:27:01,169
+Wham! Bam! Thank you IBM!
+
+410
+00:27:06,088 --> 00:27:10,741
+IBM had forecast sales of half a million computers
+by 1984.
+
+411
+00:27:10,741 --> 00:27:15,328
+In those 3 years, they sold 2 million.
+
+412
+00:27:15,727 --> 00:27:17,987
+Euphoric I guess is the right word.
+
+413
+00:27:17,987 --> 00:27:22,175
+Everybody was believed that they were 
+not going to...
+
+414
+00:27:22,175 --> 00:27:25,698
+At that point two million or three million, 
+you know,
+
+415
+00:27:25,698 --> 00:27:27,626
+they were now thinking in terms of a hundred
+million and
+
+416
+00:27:27,626 --> 00:27:29,952
+they were probably off the scale 
+in the other direction.
+
+417
+00:27:32,079 --> 00:27:35,735
+What did all this mean to Bill Gates, 
+whose operating system, DOS,
+
+418
+00:27:35,735 --> 00:27:38,195
+was at the heart of every IBM PC sold?
+
+419
+00:27:38,195 --> 00:27:41,519
+Initially, not much, because of the deal with IBM.
+
+420
+00:27:41,917 --> 00:27:45,906
+But it did give him a vital bridgehead to 
+other players in the PC marketplace,
+
+421
+00:27:45,906 --> 00:27:49,429
+which meant trouble in the long run for Big Blue.
+
+422
+00:27:50,626 --> 00:27:55,678
+The key to our...the structure of our deal was that 
+IBM had no control over...
+
+423
+00:27:55,678 --> 00:27:57,678
+over our licensing to other people.
+
+424
+00:27:57,938 --> 00:28:02,458
+In a lesson on the computer industry in 
+mainframes was that er, over time,
+
+425
+00:28:02,458 --> 00:28:07,045
+people built compatible machines or clones, 
+whatever term you want to use,
+
+426
+00:28:07,311 --> 00:28:11,831
+and so really, the primary upside on the deal 
+we had with IBM,
+
+427
+00:28:11,831 --> 00:28:15,088
+because they had a fixed fee er, we got about
+$80,000
+
+428
+00:28:15,088 --> 00:28:18,412
+we got some other money for some special work 
+we did er,
+
+429
+00:28:18,478 --> 00:28:22,201
+but no royalty from them.
+
+430
+00:28:22,201 --> 00:28:25,192
+And that's the DOS and Basic as well.
+
+431
+00:28:26,123 --> 00:28:30,510
+And so we were hoping a lot of other people 
+would come along and do compatible machines.
+
+432
+00:28:33,368 --> 00:28:37,756
+There were other PCs that were sorta like the 
+IBM PC, kinda like it.
+
+433
+00:28:38,287 --> 00:28:42,808
+But IBM now had fifty per cent market share and 
+was defining what a PC meant.
+
+434
+00:28:43,207 --> 00:28:46,264
+What the public wanted was IBM PCs.
+
+435
+00:28:46,397 --> 00:28:52,380
+So to be successful other manufacturers would 
+have to build computers exactly like the IBM.
+
+436
+00:28:53,311 --> 00:28:56,701
+They wanted to copy the IBM PC, to clone it.
+
+437
+00:28:57,033 --> 00:28:58,695
+How could they do that legally?
+
+438
+00:28:58,695 --> 00:29:02,883
+Well, welcome to the world of reverse engineering.
+
+439
+00:29:19,169 --> 00:29:22,958
+This is what reverse engineering can get you 
+if you do it right.
+
+440
+00:29:24,421 --> 00:29:27,611
+It's the modest Aspen, Colorado ski shack of 
+Rod Canion,
+
+441
+00:29:27,744 --> 00:29:32,996
+one of the founders of Compaq, the company set 
+up to compete head-on with the IBM PC.
+
+442
+00:29:33,129 --> 00:29:37,582
+Back in 1982, Rod and three fellow engineers 
+from Texas Instruments
+
+443
+00:29:37,715 --> 00:29:42,900
+sketched out a computer design on a place mat 
+at the House of Pies restaurant in Houston, Texas.
+
+444
+00:29:43,299 --> 00:29:47,620
+They decided to manufacture and market 
+a portable version of the IBM PC
+
+445
+00:29:47,753 --> 00:29:51,276
+using the curious technique of 
+reverse engineering.
+
+446
+00:29:51,675 --> 00:29:55,464
+Reverse engineering is figuring out after something 
+has already been created
+
+447
+00:29:55,863 --> 00:29:57,923
+how it ticks, what makes it work,
+
+448
+00:29:58,123 --> 00:30:01,979
+usually for the purpose of creating something
+that works the same way or at least does
+
+449
+00:30:02,045 --> 00:30:05,369
+something like the thing you're trying to 
+reverse engineer.
+
+450
+00:30:09,291 --> 00:30:11,218
+Here's how you clone a PC.
+
+451
+00:30:11,484 --> 00:30:13,345
+IBM had made it easy to copy.
+
+452
+00:30:13,611 --> 00:30:16,736
+The microprocessor was available off the shelf 
+from Intel
+
+453
+00:30:16,736 --> 00:30:18,929
+and the other parts came from many sources.
+
+454
+00:30:19,262 --> 00:30:24,845
+Only one part was IBM's alone, a vital chip that 
+connected the hardware with the software.
+
+455
+00:30:28,435 --> 00:30:33,022
+Called the ROM-BIOS, this was IBM's own design, 
+protected by copyright
+
+456
+00:30:33,022 --> 00:30:35,216
+and Big Blue's army of lawyers.
+
+457
+00:30:35,614 --> 00:30:40,068
+Compaq had to somehow copy the chip 
+without breaking the law.
+
+458
+00:30:40,533 --> 00:30:44,189
+- First you have to decide how the ROM works,
+
+459
+00:30:47,181 --> 00:30:51,169
+- so what we had to do was have an engineer sit 
+down with that code
+
+460
+00:30:51,169 --> 00:30:53,169
+- and through trial and error write a specification 
+that said
+
+461
+00:30:53,169 --> 00:30:57,218
+- here's how the BIOS ROM needs to work.
+It couldn't be close it had to be exact
+
+462
+00:30:57,285 --> 00:30:59,944
+- so there was a lot of detailed testing that went on.
+
+463
+00:31:00,742 --> 00:31:05,262
+You test how that all-important chip behaves, 
+and make a list of what it has to do
+
+464
+00:31:05,262 --> 00:31:07,788
+now it's time to meet my lawyer, Claude.
+
+465
+00:31:07,987 --> 00:31:14,302
+I've examined the internals of the ROM BIOS and 
+written this book of specifications
+
+466
+00:31:14,302 --> 00:31:17,559
+now I need some help because I've done 
+as much as I can do,
+
+467
+00:31:17,892 --> 00:31:21,947
+and you need to explain what's next.
+
+468
+00:31:22,279 --> 00:31:25,603
+- Well, the first thing I'm going to do is I'm going to 
+go through the book of specifications myself,
+
+469
+00:31:25,736 --> 00:31:28,129
+- but the first thing I can tell you Robert is that 
+you're out of it now.
+
+470
+00:31:28,129 --> 00:31:30,522
+- You are contaminated, you are dirty.
+
+471
+00:31:30,655 --> 00:31:35,175
+- You've seen the product that's the original work 
+of authorship, you've seen the target product,
+
+472
+00:31:35,242 --> 00:31:38,299
+- so now from here on in we're going to be working 
+with people who are not dirty.
+
+473
+00:31:38,299 --> 00:31:40,227
+- We're going to be working with so called virgins,
+
+474
+00:31:40,227 --> 00:31:42,022
+- who are going to be operating in the clean room.
+
+475
+00:31:42,022 --> 00:31:43,684
+I certainly don't qualify there.
+
+476
+00:31:43,684 --> 00:31:45,013
+- I imagine you don't.
+
+477
+00:31:45,013 --> 00:31:48,603
+- So what we're going to do is this: we're going to 
+hire a group of engineers
+
+478
+00:31:49,002 --> 00:31:51,395
+- who have never seen the IBM ROM BIOS.
+
+479
+00:31:51,860 --> 00:31:55,051
+- They have never seen it, they have never operated
+it, they know nothing about it.
+
+480
+00:31:55,051 --> 00:31:58,707
+(Claude interrogates Mark) - Have you ever before 
+attempted to disassemble decompile or to
+
+481
+00:31:58,707 --> 00:32:02,496
+- in any way shape or form reverse engineer any IBM
+equipment?
+
+482
+00:32:02,629 --> 00:32:03,759
+Oh no.
+
+483
+00:32:03,759 --> 00:32:05,354
+- And have you ever tried to disassemble...
+
+484
+00:32:05,354 --> 00:32:08,013
+This is the Silicon Valley virginity test.
+
+485
+00:32:08,013 --> 00:32:10,478
+And good virgins are hard to find.
+
+486
+00:32:10,478 --> 00:32:13,929
+- You understand that in the event that we discover 
+that the information you are providing us
+
+487
+00:32:13,996 --> 00:32:16,522
+- is inaccurate you are subject to discipline by 
+the company
+
+488
+00:32:16,522 --> 00:32:19,713
+- and that can include but not limited to termination 
+immediately do you understand that?
+
+489
+00:32:19,646 --> 00:32:20,909
+Yes I do.
+- OK
+
+490
+00:32:21,175 --> 00:32:23,568
+After the virgins are deemed intact,
+
+491
+00:32:23,568 --> 00:32:27,557
+they are forbidden contact with the outside world 
+while they build a new chip,
+
+492
+00:32:27,623 --> 00:32:30,814
+one that behaves exactly like the one in 
+the specifications.
+
+493
+00:32:31,080 --> 00:32:36,265
+In Compaq's case, it took 15 senior programmers 
+several months and cost $1 million
+
+494
+00:32:36,331 --> 00:32:37,794
+to do the reverse engineering.
+
+495
+00:32:38,126 --> 00:32:41,583
+In November 1982, Rod Canion unveiled the result.
+
+496
+00:32:42,779 --> 00:32:45,638
+- What I've brought today is a Compaq 
+portable computer.
+
+497
+00:32:45,638 --> 00:32:49,958
+When Bill Murto, another Compaq founder got 
+a plug on a cable TV show
+
+498
+00:32:49,958 --> 00:32:53,814
+their selling point was clear: 100 percent 
+IBM compatibility.
+
+499
+00:32:53,814 --> 00:32:56,672
+- ...It turns out that all major popular software runs
+
+500
+00:32:56,672 --> 00:32:59,730
+- on the IBM personal computer or the Compaq 
+portable computer.
+
+501
+00:32:59,730 --> 00:33:02,655
+-- That extends through all of this software for IBM?
+
+502
+00:33:02,655 --> 00:33:03,519
+- Eh Yes.
+
+503
+00:33:03,519 --> 00:33:04,848
+-- It all works on the Compaq?
+
+504
+00:33:04,848 --> 00:33:08,771
+The Compaq was an instant hit. 
+In their first year,
+
+505
+00:33:08,771 --> 00:33:14,088
+on the strength of being exactly like IBM but a little 
+cheaper, they sold 47,000 PCs.
+
+506
+00:33:14,620 --> 00:33:17,678
+- In our first year of sales we set an American 
+business record.
+
+507
+00:33:17,678 --> 00:33:21,002
+- I guess maybe a world business record. 
+Largest first year sales in history.
+
+508
+00:33:21,002 --> 00:33:22,730
+- It was a hundred and eleven million dollars.
+
+509
+00:33:27,516 --> 00:33:33,366
+So Rod Canion ends up in Aspen, famous for having 
+the most expensive real estate in America
+
+510
+00:33:33,366 --> 00:33:36,291
+and I try not to look envious while Rod tells me
+
+511
+00:33:36,291 --> 00:33:38,950
+which executive jet he plans to buy next.
+
+512
+00:33:38,950 --> 00:33:42,207
+- And finally I picked the Lear 31.
+Oh really?
+
+513
+00:33:42,473 --> 00:33:44,135
+- Now that was a fun airplane.
+Oh yeh.
+
+514
+00:33:44,135 --> 00:33:49,519
+Poor Big Blue! Suddenly everybody was cashing in 
+on IBM's success.
+
+515
+00:33:49,519 --> 00:33:54,039
+The most obvious winner at first was Intel, 
+maker of the PCs microprocessor chip.
+
+516
+00:33:54,039 --> 00:33:57,230
+Intel was selling chips like hotcakes to 
+clonemakers,
+
+517
+00:33:57,230 --> 00:34:01,086
+and making them smaller, quicker and cheaper. 
+This was unheard of!
+
+518
+00:34:01,285 --> 00:34:05,340
+What kind of an industry had Big Blue 
+gotten themselves into?
+
+519
+00:34:05,672 --> 00:34:10,060
+- Things get less expensive every year. People 
+aren't used to that in general.
+
+520
+00:34:10,060 --> 00:34:12,060
+- I mean, you buy a new car, you buy one now
+
+521
+00:34:12,060 --> 00:34:15,843
+- and four years later you go and buy one it costs 
+more than the one you bought before.
+
+522
+00:34:16,375 --> 00:34:18,768
+- Here is this magical piece of an industry,
+
+523
+00:34:19,233 --> 00:34:24,484
+- you go buy one later it costs less, and it does 
+more, what a wonderful thing!
+
+524
+00:34:24,950 --> 00:34:29,071
+- But it causes some funny things to occur when 
+you think about an industry. 
+
+525
+00:34:29,204 --> 00:34:32,993
+- An industry where prices are coming down, 
+where you have to sell it and use it right now,
+
+526
+00:34:32,993 --> 00:34:34,854
+because if you wait later it's worthless.
+
+527
+00:34:38,843 --> 00:34:42,034
+Where Compaq led, others soon followed.
+
+528
+00:34:42,034 --> 00:34:47,086
+IBM was now facing dozens of rivals - soon to be 
+familiar names began to appear,
+
+529
+00:34:47,086 --> 00:34:49,878
+like Amstrad, AST and Dell.
+
+530
+00:34:49,878 --> 00:34:52,803
+It was getting spectacularly easy to build a clone.
+
+531
+00:34:52,803 --> 00:34:57,722
+You could get everything off the shelf, including 
+a guaranteed-virgin ROM BIOS chip.
+
+532
+00:34:58,120 --> 00:35:04,369
+Each new clonemaker, free of IBM's big overhead,
+took another bite of the big blue business.
+
+533
+00:35:05,233 --> 00:35:09,687
+Well, they really hit with a vengeance in '85, 
+the prices were going down
+
+534
+00:35:09,687 --> 00:35:14,672
+on the competitive products had about 30% 
+every six months.
+
+535
+00:35:15,603 --> 00:35:19,857
+- Terror would be a good phrase.
+Terror?
+
+536
+00:35:19,857 --> 00:35:22,982
+- Oh, of course. I mean we were able to sell 
+a lot of products
+
+537
+00:35:22,982 --> 00:35:24,776
+- but it was getting difficult to make money.
+
+538
+00:35:25,508 --> 00:35:28,499
+And where did every clone-maker buy his 
+operating system?
+
+539
+00:35:28,499 --> 00:35:29,962
+Microsoft, of course.
+
+540
+00:35:30,028 --> 00:35:32,487
+By the mid 80's it was boom time for Bill.
+
+541
+00:35:32,820 --> 00:35:36,875
+The teenage entrepreneur had predicted a PC on 
+every desk and in every home,
+
+542
+00:35:36,875 --> 00:35:40,664
+running Microsoft software, it was actually 
+coming true.
+
+543
+00:35:42,126 --> 00:35:46,447
+As Microsoft mushroomed there was no way that 
+Bill Gates could personally dominate 
+
+544
+00:35:46,447 --> 00:35:49,505
+thousands of employees but that didn't stop him.
+
+545
+00:35:49,505 --> 00:35:53,626
+He still had a need to be both industry titan 
+and top programmer.
+
+546
+00:35:53,892 --> 00:35:56,883
+So he had to come up with a whole new corporate 
+culture for Microsoft.
+
+547
+00:35:56,883 --> 00:36:00,672
+He had to find a way to satisfy both his adolescent
+need to dominate
+
+548
+00:36:00,672 --> 00:36:02,534
+and his adult need to inspire.
+
+549
+00:36:04,129 --> 00:36:07,187
+From the beginning, Microsoft recruited 
+straight out of college.
+
+550
+00:36:07,253 --> 00:36:10,710
+They chose people who had no experience of life 
+in other companies.
+
+551
+00:36:10,843 --> 00:36:13,435
+In time they'd be called Microserfs.
+
+552
+00:36:13,901 --> 00:36:19,352
+And so a lot of young, I say people, but mostly 
+it was young men,
+
+553
+00:36:19,352 --> 00:36:26,464
+who just were out of school saw him as this 
+incredible role model or leader,
+
+554
+00:36:26,531 --> 00:36:28,924
+almost a guru I guess.
+
+555
+00:36:28,924 --> 00:36:36,103
+And they could spend hours with him and he 
+valued their contributions
+
+556
+00:36:36,502 --> 00:36:38,297
+and there was just a wonderful camaraderie
+
+557
+00:36:38,297 --> 00:36:42,219
+that seemed to exist between all these 
+young men and Bill,
+
+558
+00:36:42,684 --> 00:36:47,736
+and this strength that he has and his will and his 
+desire to be the best
+
+559
+00:36:47,736 --> 00:36:53,320
+and to be the winner - he is just like a cult leader, 
+really.
+
+560
+00:36:56,245 --> 00:37:00,499
+As the frenzied 80's came to a close IBM reached 
+a watershed
+
+561
+00:37:00,499 --> 00:37:03,889
+they had created an open PC architecture that 
+anyone could copy.
+
+562
+00:37:04,155 --> 00:37:08,675
+This was intentional but IBM always thought their 
+inside track would keep them ahead.
+
+563
+00:37:08,675 --> 00:37:10,005
+Wrong.
+
+564
+00:37:10,071 --> 00:37:14,658
+IBM's glacial pace and high overhead put them at 
+a disadvantage to the leaner clone makers
+
+565
+00:37:14,658 --> 00:37:19,444
+everything was turning into a nightmare as IBM 
+lost its dominant market share.
+
+566
+00:37:19,644 --> 00:37:23,499
+So in a big gamble they staked their PC future 
+to a new system
+
+567
+00:37:23,499 --> 00:37:29,482
+a new line of computers with proprietary closed 
+hardware and their very own operating system.
+
+568
+00:37:30,147 --> 00:37:31,742
+It was war.
+
+569
+00:37:32,274 --> 00:37:35,132
+(Presentation)
+- ...start planning for operating system 2 today...
+
+570
+00:37:35,199 --> 00:37:39,652
+IBM planned to steal the market from Gates with 
+a brand new operating system, called
+
+571
+00:37:39,652 --> 00:37:43,707
+- drum roll please -
+OS/2.
+
+572
+00:37:45,968 --> 00:37:50,621
+IBM would design OS/2. Yet they asked Microsoft 
+to write the code.
+
+573
+00:37:50,820 --> 00:37:53,811
+Why would Microsoft help create what was 
+intended to be the instrument
+
+574
+00:37:53,811 --> 00:37:55,606
+of their own destruction?
+
+575
+00:37:55,673 --> 00:37:58,930
+Because Microsoft knew IBM was was the source 
+of their success
+
+576
+00:37:58,996 --> 00:38:03,051
+and they would tolerate almost anything 
+to stay close to Big Blue.
+
+577
+00:38:03,583 --> 00:38:07,239
+It was just part of, as we used to call it, the time 
+riding the bear.
+
+578
+00:38:07,572 --> 00:38:11,294
+You just had to try to stay on the bear's back and 
+the bear would twist and turn
+
+579
+00:38:11,294 --> 00:38:15,415
+and try to buck you and throw you, but darn, 
+we were going to ride the bear
+
+580
+00:38:15,415 --> 00:38:20,002
+because the bear was the biggest, the most 
+important you just had to be with the bear,
+
+581
+00:38:20,002 --> 00:38:24,190
+otherwise you would be under the bear in the 
+computer industry, and IBM was the bear,
+
+582
+00:38:24,190 --> 00:38:26,317
+and we were going to ride the back of the bear.
+
+583
+00:38:26,517 --> 00:38:32,433
+It's easy for people to forget how pervasive IBM's 
+influence over this industry was.
+
+584
+00:38:32,433 --> 00:38:35,092
+When you talked to people who've come in to the 
+industry recently
+
+585
+00:38:35,092 --> 00:38:38,282
+there's no way you can get that in to their,
+in to their head,
+
+586
+00:38:38,282 --> 00:38:40,077
+that was the environment.
+
+587
+00:38:41,407 --> 00:38:45,994
+The relationship between IBM and Microsoft 
+was always a culture clash.
+
+588
+00:38:46,193 --> 00:38:49,251
+IBMers were buttoned-up organization men. 
+
+589
+00:38:50,181 --> 00:38:52,907
+Microsoftees were obsessive hackers.
+
+590
+00:38:53,638 --> 00:38:57,427
+With the development of OS/2 the strains 
+really began to show.
+
+591
+00:38:57,892 --> 00:39:01,482
+In IBM there's a religion in software that says you 
+have to count K-LOCs,
+
+592
+00:39:01,482 --> 00:39:04,806
+and a K-LOC is a thousand line of code.
+
+593
+00:39:04,806 --> 00:39:08,395
+How big a project is it? Oh, it's sort of a 10K-LOC 
+project.
+
+594
+00:39:08,395 --> 00:39:13,048
+This is a 20K-LOCer. And this is 5OK-LOCs.
+
+595
+00:39:13,048 --> 00:39:17,835
+And IBM wanted to sort of make it the religion 
+about how we got paid.
+
+596
+00:39:17,835 --> 00:39:21,889
+How much money we made off OS 2, how much 
+they did. How many K-LOCs did you do?
+
+597
+00:39:22,022 --> 00:39:25,878
+and we kept trying to convince them: hey, if we 
+have - a developer's got a good idea
+
+598
+00:39:25,878 --> 00:39:30,464
+and he can get something done in 4K-LOCs 
+instead of 20K-LOCs,
+
+599
+00:39:30,464 --> 00:39:32,326
+should we make less money?
+
+600
+00:39:32,326 --> 00:39:35,915
+Because he's made something smaller and 
+faster, less KLOC.
+
+601
+00:39:35,915 --> 00:39:38,907
+K-LOCs, K-LOCs, that's the methodology.
+
+602
+00:39:39,372 --> 00:39:46,219
+Ugh anyway, that always makes my back just 
+crinkle up at the thought of the whole thing.
+
+603
+00:39:47,216 --> 00:39:51,670
+When I took over in '89 there was an enormous 
+amount of resources working on OS 2,
+
+604
+00:39:52,135 --> 00:39:54,262
+both in Microsoft and the IBM company.
+
+605
+00:39:54,262 --> 00:40:00,112
+Bill Gates and I met on that several times. And 
+we pretty quickly came to the conclusion together
+
+606
+00:40:00,112 --> 00:40:04,167
+that that was not going to be a success, 
+the way it was being managed.
+
+607
+00:40:09,219 --> 00:40:12,476
+It was also pretty clear that the negotiating and 
+the contracts
+
+608
+00:40:12,476 --> 00:40:17,196
+had given most of that control to Microsoft.
+
+609
+00:40:18,725 --> 00:40:24,242
+It was no longer just a question of styles. There 
+was now a clear conflict of business interest.
+
+610
+00:40:25,106 --> 00:40:28,098
+OS/2 was planned to undermine the 
+clone market,
+
+611
+00:40:28,098 --> 00:40:30,690
+where DOS was still Microsoft's major 
+money-maker.
+
+612
+00:40:30,956 --> 00:40:35,609
+Microsoft was DOS. But Microsoft was helping 
+develop the opposition?
+
+613
+00:40:36,274 --> 00:40:39,199
+Bad idea. To keep DOS competitive,
+
+614
+00:40:39,199 --> 00:40:43,254
+Gates had been pouring resources into 
+a new programme called Windows.
+
+615
+00:40:44,849 --> 00:40:49,569
+It was designed to provide a nice user-friendly 
+facade to boring old DOS.
+
+616
+00:40:50,433 --> 00:40:54,488
+Selling it was another job for shy, retiring 
+Steve Ballmer.
+
+617
+00:40:54,887 --> 00:40:58,210
+- How much do you think this advanced operating
+environment is worth?
+
+618
+00:40:58,210 --> 00:41:00,204
+- wait just one minute before you answer
+
+619
+00:41:00,338 --> 00:41:05,722
+- watch as Windows integrates Lotus 1, 2, 3 with 
+Miami Vice. Now we can take this...
+
+620
+00:41:06,121 --> 00:41:10,375
+Just as Bill Gates saw OS/2 as a threat, 
+IBM regarded Windows
+
+621
+00:41:10,375 --> 00:41:14,430
+as another attempt by Microsoft to hold on to 
+the operating system business.
+
+622
+00:41:14,895 --> 00:41:19,948
+We created Windows in parallel. We kept saying to 
+IBM, hey, Windows is the way to go,
+
+623
+00:41:20,014 --> 00:41:24,002
+graphics is the way to go, and we got virtually 
+everyone else,
+
+624
+00:41:24,002 --> 00:41:28,589
+enthused about Windows. So that was a 
+divergence that we kept thinking
+
+625
+00:41:28,589 --> 00:41:31,846
+we could get IBM to - to come around on.
+
+626
+00:41:32,179 --> 00:41:36,765
+It was clear that IBM had a different vision of its 
+relationship with Microsoft
+
+627
+00:41:36,765 --> 00:41:39,757
+than Microsoft had of its vision with IBM.
+
+628
+00:41:40,554 --> 00:41:42,416
+Was that Microsoft's fault?
+
+629
+00:41:44,410 --> 00:41:48,531
+You know, maybe some ,but IBM's not 
+blameless there either.
+
+630
+00:41:48,797 --> 00:41:54,248
+So I don't view any of that as anything but 
+just poor business on IBM's part.
+
+631
+00:41:59,034 --> 00:42:01,560
+Bill Gates is a very disciplined guy.
+
+632
+00:42:01,892 --> 00:42:03,621
+He puts aside everything he wants to read,
+
+633
+00:42:03,621 --> 00:42:06,612
+and twice a year goes away for secluded 
+reading weeks.
+
+634
+00:42:07,144 --> 00:42:11,864
+The decisive moment in the Microsoft/IBM 
+relationship came during just such a retreat.
+
+635
+00:42:12,196 --> 00:42:14,921
+In front of a log fire Bill concluded that it was 
+no longer
+
+636
+00:42:14,921 --> 00:42:18,577
+in Microsoft's long term interests to 
+blindly follow IBM.
+
+637
+00:42:19,109 --> 00:42:23,430
+If Bill had to choose between OS2, IBM's 
+new operating system and Windows,
+
+638
+00:42:23,430 --> 00:42:25,026
+he'd choose Windows.
+
+639
+00:42:25,358 --> 00:42:27,950
+We said ooh, IBM's probably not going to like this.
+
+640
+00:42:27,950 --> 00:42:29,546
+This is going to threaten OS 2.
+
+641
+00:42:29,546 --> 00:42:33,335
+Now we told them about it, right away we told 
+them about it, but we still did it.
+
+642
+00:42:33,667 --> 00:42:35,595
+They didn't like it, we told em about it, 
+we told em about it,
+
+643
+00:42:35,595 --> 00:42:37,456
+we offered to licence it to em.
+
+644
+00:42:38,187 --> 00:42:42,641
+We always thought the best thing to do is to try 
+and combine
+
+645
+00:42:42,641 --> 00:42:46,962
+IBM promoting the software with us doing 
+the engineering.
+
+646
+00:42:46,962 --> 00:42:51,815
+And so it was only when they broke off 
+communication and decided to go their own way
+
+647
+00:42:51,815 --> 00:42:54,407
+that we thought, okay, we're on our own,
+
+648
+00:42:54,341 --> 00:42:56,534
+and that was definitely very, very scary.
+
+649
+00:42:57,199 --> 00:43:02,317
+We were in a major negotiation in early 1990, 
+right before the Windows launch.
+
+650
+00:43:02,317 --> 00:43:05,907
+We wanted to have IBM on stage with us 
+to launch Windows 3.0,
+
+651
+00:43:05,907 --> 00:43:11,956
+but they wouldn't do the kind of deal that would 
+allow us to profit it would allow them
+
+652
+00:43:11,956 --> 00:43:15,612
+essentially to take over Windows from us, and we
+walked away from the deal.
+
+653
+00:43:17,739 --> 00:43:22,127
+Jack Sams, who started IBM's relationship with 
+Microsoft with that first call
+
+654
+00:43:22,127 --> 00:43:27,511
+to Bill Gates in 1980, could only look on as the 
+partnership disintegrated.
+
+655
+00:43:28,242 --> 00:43:31,367
+Then they at that point I think they agreed 
+to disagree
+
+656
+00:43:31,367 --> 00:43:36,419
+on the future progress of OS 2 and Windows.
+
+657
+00:43:37,349 --> 00:43:42,601
+And internally we were told thou shalt not ship 
+any more products on Windows.
+
+658
+00:43:44,063 --> 00:43:48,118
+And about that time I got the opportunity 
+to take early retirement so I did.
+
+659
+00:43:52,838 --> 00:43:57,557
+Bill's decison by the fireplace ended the ten year 
+IBM/Microsoft partnership
+
+660
+00:43:57,890 --> 00:44:01,280
+and turned IBM into an also-ran in the PC 
+business.
+
+661
+00:44:01,346 --> 00:44:03,473
+Did David beat Goliath?
+
+662
+00:44:04,271 --> 00:44:08,393
+The Boca Raton, Florida birthplace of the IBM's PC
+is deserted,
+
+663
+00:44:08,725 --> 00:44:10,852
+a casualty of diminishing market share.
+
+664
+00:44:22,684 --> 00:44:25,344
+Today, IBM is again what it was before:
+
+665
+00:44:25,344 --> 00:44:28,202
+a profitable, dominant mainframe computer 
+company.
+
+666
+00:44:28,933 --> 00:44:34,251
+For awhile IBM dominated the PC market. 
+They legitimised the PC business,
+
+667
+00:44:35,581 --> 00:44:39,170
+created the standards most of us now use, 
+and introduced the PC
+
+668
+00:44:39,170 --> 00:44:40,633
+to the corporate world.
+
+669
+00:44:41,165 --> 00:44:43,159
+But in the end they lost out.
+
+670
+00:44:43,159 --> 00:44:45,818
+Maybe it was to a faster, more flexible 
+business culture.
+
+671
+00:44:47,413 --> 00:44:49,407
+Or maybe they just threw it away.
+
+672
+00:44:49,806 --> 00:44:53,462
+That's the view of a guy who's been competing 
+with IBM for 20 years,
+
+673
+00:44:53,529 --> 00:44:57,916
+Silicon Valley's most outspoken software 
+billionaire, Larry Ellison.
+
+674
+00:44:58,714 --> 00:45:03,034
+I think IBM made the single worst mistake in 
+the history of enterprise on earth.
+
+675
+00:45:03,566 --> 00:45:06,424
+- Which was?
+Which was the manufacture
+
+676
+00:45:06,491 --> 00:45:09,948
+being the first manufacturer and distributor of 
+the Microsoft/Intel PC
+
+677
+00:45:09,948 --> 00:45:12,607
+which they mistakenly called the IBM PC.
+
+678
+00:45:13,072 --> 00:45:15,930
+I mean they were the first manufacturer and 
+distributor of that technology
+
+679
+00:45:15,930 --> 00:45:20,583
+I mean it's just simply astounding that they 
+could ah...
+
+680
+00:45:20,849 --> 00:45:23,708
+basically give a third of their market value 
+to Intel
+
+681
+00:45:23,708 --> 00:45:27,032
+and a third of their market value to Microsoft 
+by accident
+
+682
+00:45:28,760 --> 00:45:31,751
+I mean no-one, no-one... I mean those two 
+companies today are worth 
+
+683
+00:45:32,216 --> 00:45:35,806
+close to you know approaching 
+a hundred billion dollars
+
+684
+00:45:36,205 --> 00:45:38,731
+I mean not many of us get a chance to make 
+a $100 billion mistake.
+
+685
+00:45:39,662 --> 00:45:44,846
+As fast as IBM abandons its buildings, Microsoft 
+builds new ones.
+
+686
+00:45:45,112 --> 00:45:49,633
+In 1980 IBM was 3000 times the size of Microsoft.
+
+687
+00:45:49,898 --> 00:45:54,751
+Though still a smaller company, today Wall Street 
+says Microsoft is worth more.
+
+688
+00:45:54,884 --> 00:45:59,205
+Both have faced anti-trust investigations about 
+their monopoly positions.
+
+689
+00:45:59,604 --> 00:46:06,849
+For years IBM defined successful American corporate
+culture - as a machine of ordered bureaucracy.
+
+690
+00:46:06,849 --> 00:46:11,436
+Here in the corridors of Microsoft it's a different 
+style, it's personal.
+
+691
+00:46:12,167 --> 00:46:15,159
+This company - in its drive, its hunger to succeed,
+
+692
+00:46:15,159 --> 00:46:19,147
+is a reflection of one man, its founder, Bill Gates.
+
+693
+00:46:19,612 --> 00:46:28,055
+Bill wanted to win. 
+Incredible desire to win and to beat other people.
+
+694
+00:46:28,719 --> 00:46:35,832
+At Microsoft we, the whole idea was that we would
+put people under, you know.
+
+695
+00:46:35,832 --> 00:46:41,815
+And unfortunately, ah... that's happened a lot.
+
+696
+00:46:42,147 --> 00:46:45,870
+Bill Gates is special. You wouldn't have had 
+a Microsoft
+
+697
+00:46:45,870 --> 00:46:49,060
+with take a random other person like Gary Kildall.
+
+698
+00:46:49,060 --> 00:46:52,118
+On the other hand, Bill Gates was also lucky.
+
+699
+00:46:52,118 --> 00:46:58,234
+But Bill Gates knows that, unlike a lot of other
+people in the industry, and he's paranoid.
+
+700
+00:46:58,234 --> 00:47:02,089
+Every morning he gets up and he doesn't feel 
+secure, he feels nervous about this. 
+
+701
+00:47:02,089 --> 00:47:06,875
+They're trying hard, they're not relaxing, and that's 
+why they're so successful.
+
+702
+00:47:07,341 --> 00:47:12,393
+And I remember, I was talking to Bill once and I 
+asked him what he feared,
+
+703
+00:47:12,659 --> 00:47:18,774
+and he said that he feared growing old because, you 
+know, once you're beyond thirty,
+
+704
+00:47:18,774 --> 00:47:21,832
+this was his belief at the time, you know once you're 
+beyond thirty, you know,
+
+705
+00:47:21,832 --> 00:47:25,156
+you don't have as many good ideas anymore. 
+You're not as smart anymore.
+
+706
+00:47:25,422 --> 00:47:29,011
+If you just slow down a little bit who knows who 
+it'll be,
+
+707
+00:47:29,011 --> 00:47:32,668
+probably some company that may not even 
+exist yet,
+
+708
+00:47:32,734 --> 00:47:35,991
+but eh someone else can come in and take the lead.
+
+709
+00:47:36,191 --> 00:47:39,581
+And I said well, you know, you're going to age, it's 
+going to happen, it's kind of inevitable,
+
+710
+00:47:39,581 --> 00:47:40,910
+what are you going to do about it?
+
+711
+00:47:40,910 --> 00:47:45,165
+And he said I'm just going to hire the smartest 
+people and I'm going to surround myself
+
+712
+00:47:45,165 --> 00:47:46,627
+with all these smart people, you know.
+
+713
+00:47:46,627 --> 00:47:49,951
+And I thought that was kind of interesting. 
+It was almost - it was like he was like oh,
+
+714
+00:47:49,951 --> 00:47:54,870
+I can't be immortal, but like maybe this is the 
+second best and I can buy that, you know.
+
+715
+00:47:56,864 --> 00:48:02,248
+If you miss what's happening then the same kind of 
+thing that happened to IBM
+
+716
+00:48:02,780 --> 00:48:05,838
+or many other companies could happen to 
+Microsoft very easily.
+
+717
+00:48:06,104 --> 00:48:10,691
+So no-one's got a guaranteed position in the high 
+technology business, and the more you think about,
+
+718
+00:48:10,691 --> 00:48:13,416
+you know, how could we move faster, what could 
+we do better,
+
+719
+00:48:13,416 --> 00:48:19,066
+are there good ideas out there that we should be 
+going beyond, it's important.
+
+720
+00:48:19,332 --> 00:48:25,248
+And I wouldn't trade places with anyone, but the 
+reason I like my job so much is
+
+721
+00:48:25,248 --> 00:48:29,104
+that we have to constantly stay on top of 
+those things.
+
+722
+00:48:30,433 --> 00:48:35,552
+The Windows software system that ended the alliance
+between Microsoft and IBM
+
+723
+00:48:35,552 --> 00:48:38,211
+pushed Gates past all his rivals.
+
+724
+00:48:38,410 --> 00:48:43,462
+Microsoft had been working on the software for 
+years, but it wasn't until 1990 that they finally
+
+725
+00:48:43,462 --> 00:48:48,115
+came up with a version that not only worked 
+properly, it blew their rivals away,
+
+726
+00:48:48,248 --> 00:48:51,306
+and where did the idea for this software come from?
+
+727
+00:48:51,306 --> 00:48:53,633
+Well not from Microsoft, of course.
+
+728
+00:48:57,222 --> 00:48:59,416
+It came from the hippies at Apple.
+
+729
+00:48:59,682 --> 00:49:05,399
+Lights! Camera! Boot up! In 1984, they made a 
+famous TV commercial.
+
+730
+00:49:05,665 --> 00:49:10,650
+Apple had set out to create the first user-friendly
+PC just as IBM and Microsoft
+
+731
+00:49:10,650 --> 00:49:13,043
+were starting to make a machine for businesses.
+
+732
+00:49:13,176 --> 00:49:16,766
+When the TV commercial aired, Apple launched 
+the Macintosh.
+
+733
+00:49:21,220 --> 00:49:25,009
+The computer and the commercial were aimed 
+directly at IBM
+
+734
+00:49:25,009 --> 00:49:28,199
+which the kids in Cupertino thought of as 
+Big Brother.
+
+735
+00:49:28,199 --> 00:49:30,526
+But Apple had targeted the wrong people.
+
+736
+00:49:30,725 --> 00:49:35,844
+It wasn't Big Brother they should have been worrying 
+about, it was big Bill Gates.
+
+737
+00:49:46,746 --> 00:50:27,029
+subtitles by fabiusX
+subs@fabiushouse.com
+
+738
+00:50:28,029 --> 00:50:38,029
+Downloaded From www.AllSubs.org
+

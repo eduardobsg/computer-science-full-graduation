@@ -1,0 +1,42 @@
+SISOP I - Trabalho 2
+
+Gerência de Memória
+
+- Implementação da política LRU com a variação segunda chance
+
+- Entrada:
+	- arquivo de texto com configuração do sistema de memória e
+	as operações realizadas pela memória.
+	- chamada do programa:
+	lrusimul entry.txt
+	
+- Saída:
+	- arquivo texto com os resultados da simulação
+	- arquivo de saída: log.txt => armazenar no diretório perf
+	- formato do arquivo de saída
+	
+	processo x
+	página a
+		nº acesso
+		nº substituição
+	página b
+		nº acesso
+		nº substituição
+	página c
+		nº acesso
+		nº substituição
+		
+	processo y
+	página a
+		nº acesso
+		nº substituição
+	página b
+		nº acesso
+		nº substituição
+	página c
+		nº acesso
+		nº substituição	
+		
+- Criação de processo:
+	- comando procsize incita a criação de novo processo
+	- é gravada na área de swap ao ser criada

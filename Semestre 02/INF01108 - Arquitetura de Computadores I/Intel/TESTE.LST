@@ -1,0 +1,69 @@
+Turbo Assembler	 Version 3.2	    06/11/10 20:20:15	    Page 1
+teste.ASM
+
+
+
+      1	0000			     PILHA   SEGMENT STACK
+      2	0000  20*(53 54	41 43 4B  +	     DB	32 DUP ('STACK---')
+      3	      2D 2D 2D)
+      4	0100			     PILHA   ENDS
+      5
+      6	0000			     DADOS   SEGMENT
+      7	0000  48 65 6C 6C 6F 20	57+	     MENSAGEM DB 'Hello	World!', 0DH, 0AH
+      8	      6F 72 6C 64 21 0D	0A
+      9	      =000E			     TAMANHO EQU $-MENSAGEM
+     10	000E  ??			     CONTADOR DB ?
+     11	000F			     DADOS   ENDS
+     12
+     13	0000			     CODIGO  SEGMENT
+     14					     ASSUME CS:	CODIGO,	SS: PILHA, DS: DADOS
+     15	0000  B8 0000s			     START:  MOV AX, DADOS    ;	Inicializa segmento de dados
+     16	0003  8E D8				     MOV DS, AX
+     17	0005  C6 06 000Er 0A			     MOV CONTADOR, 10
+     18
+     19	000A				     DE_NOVO:
+     20	000A  E8 000A				     CALL FRASE
+     21	000D  FE 0E 000Er			     DEC CONTADOR
+     22	0011  75 F7				     JNZ DE_NOVO
+     23	0013  B4 4C				     MOV AH, 4CH ; Retorna ao DOS
+     24	0015  CD 21				     INT 21H
+     25
+     26	0017				     FRASE   PROC NEAR
+     27	0017  BB 0001				     MOV BX, 0001H
+     28	001A  BA 0000r				     LEA DX, MENSAGEM
+     29	001D  B9 000E				     MOV CX, TAMANHO
+     30	0020  B4 40				     MOV AH, 40H
+     31	0022  CD 21				     INT 21H	 ; Escreve mensagem
+     32	0024  C3				     RET
+     33	0025				     FRASE   ENDP
+     34	0025			     CODIGO  ENDS
+     35					     END START
+Turbo Assembler	 Version 3.2	    06/11/10 20:20:15	    Page 2
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??DATE				  Text	 "06/11/10"
+??FILENAME			  Text	 "teste	  "
+??TIME				  Text	 "20:20:15"
+??VERSION			  Number 0314
+@CPU				  Text	 0101H
+@CURSEG				  Text	 CODIGO
+@FILENAME			  Text	 TESTE
+@WORDSIZE			  Text	 2
+CONTADOR			  Byte	 DADOS:000E
+DE_NOVO				  Near	 CODIGO:000A
+FRASE				  Near	 CODIGO:0017
+MENSAGEM			  Byte	 DADOS:0000
+START				  Near	 CODIGO:0000
+TAMANHO				  Number 000E
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+CODIGO				  16  0025 Para	  none
+DADOS				  16  000F Para	  none
+PILHA				  16  0100 Para	  Stack
+

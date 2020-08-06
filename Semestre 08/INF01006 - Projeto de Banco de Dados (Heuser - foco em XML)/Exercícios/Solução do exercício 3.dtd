@@ -1,0 +1,18 @@
+<!ELEMENT enderecos (endereco*)>
+<!ELEMENT endereco ((ruanocompl|(rua,numero,complemento?)),
+                                    bairro?,
+                                    (cepcidade|(cidade,cep?)|(cep,cidade)),
+                                    telefone*)>
+<!ELEMENT ruanocompl (#PCDATA)>
+<!ELEMENT rua (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT complemento (#PCDATA)>
+<!ELEMENT bairro (#PCDATA)>
+<!ELEMENT cepcidade (#PCDATA)>
+<!ELEMENT cidade (#PCDATA)>
+<!ELEMENT cep (#PCDATA)>
+<!ELEMENT telefone (prefixo?,numero)>
+<!ATTLIST telefone tipo ( R | C | P ) #REQUIRED>
+<!ELEMENT prefixo (#PCDATA)>
+
+                                    

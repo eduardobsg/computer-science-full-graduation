@@ -1,0 +1,26 @@
+inicio:
+	MOV #65498,R3	; ponteiro para controle do teclado
+visor:
+	MOV #65500,R1	; aponta R1 para o inicio do visor
+	mov #95,(R1)	; coloca cursor "_" no visor 
+limpa:
+	CLR (R3)		; libera buffer do teclado
+testa:
+	TST (R3)		; testa se foi digitado algo
+	BEQ testa		; se nao foi, continua testando
+	CMP 65499,#8	; testa se recebeu Backspace
+        BEQ backsp	; se sim, vai processar Backspace
+	MOV 65499,(R1)	; se nao, move caractere lido para o visor
+	INC R1		; aponta para LED seguinte no visor
+	BEQ visor		; se passou do fim, volta ao inicio do visor
+	MOV #95,(R1)	; coloca cursor no LED seguinte do visor
+	BR  limpa		; volta a esperar por caractere
+backsp:
+	CLR (R1)		; apaga cursor
+	DEC R1		; recua ponteiro do visor
+      CMP R1,#65499	; se ainda nao passou do inicio,
+	BNE continua	; coloca cursor na nova posicao
+      MOV #65535,R1	; volta para o fim do visor
+continua:
+	MOV #95,(R1)	; coloca cursor sobre caractere digitado
+      BR  limpa		; volta a esperar por caractere

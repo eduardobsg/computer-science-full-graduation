@@ -1,0 +1,123 @@
+\documentclass[10pt,DIV12]{scrartcl}
+%\documentclass[a4paper,10pt]{paper}
+
+\usepackage[english,portuges]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[nofancy]{svninfo}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\usepackage[all]{xy}
+\usepackage{ifdraft}
+
+%\usepackage[utf8x]{inputenc}
+\usepackage[top=2cm,left=2cm,right=2cm,bottom=2cm]{geometry}
+\usepackage{indentfirst}
+\usepackage{amsfonts, amsmath, amssymb}
+%\usepackage[brazil]{babel}
+%\usepackage[T1]{fontenc}%codificação
+\usepackage{graphicx,color}
+\usepackage{comment}
+\usepackage{amssymb}
+\usepackage{ifthen}
+
+\parindent0pt
+
+\lhead{\small Universidade Federal do Rio Grande do Sul\\
+Instituto de Informática\\
+Departamento de Informática Teórica}
+\rhead{\small INF05510 -- Otimização Combinatória\\
+Profa. Luciana S. Buriol\\}
+
+
+\begin{document}
+
+\newboolean{showComments}
+%mostrar comentarios
+%\setboolean{showComments}{true}
+\setboolean{showComments}{false}
+
+
+\begin{center}
+  \Large
+Exemplo de texto editado em latex
+\end{center}
+
+
+
+\pagestyle{fancy}
+
+\bigskip
+Exemplo de um sistema e um dicionário:
+
+\begin{align*}
+  \textbf{max}\qquad & z = 6x_1+8x_2+5x_3+9x_4\\
+  \textbf{sujeito a}\qquad
+  & 2x_1+x_2+x_3+3x_4\leq 5\\
+  & x_1+3x_2+x_3+2x_4\leq 3\\
+  & x_1,x_2,x_3,x_4\geq 0
+\end{align*}
+
+\begin{align}
+  \textbf{max}\qquad & z = 6x_1+8x_2+5x_3+9x_4 \label{ex:fo}\\
+  \textbf{sujeito a}\qquad
+  & w_1 = 5 - 2x_1 - x_2 - x_3 - 3x_4 \label{ex:r1}\\
+  & w_2 = 3 - x_1  - 3x_2 - x_3 - 2x_4 \label{ex:r2}\\
+  & x_1,x_2,x_3,x_4,w_1,w_2\geq 0\notag
+\end{align}
+
+
+
+\ifthenelse {\boolean{showComments}}{
+  \textbf{Resposta:}\\
+  Variáveis:\\
+AQUI DENTRO PODEM COLOCAR COMENTÁRIOS QUE NÃO APARECERÃO NO PDF
+}
+
+
+
+\begin{enumerate}
+
+\item Uma empresa possui dois produtos $P_1$ e $P_2$. O seu departamento de marketing estuda a forma mais econômica de aumentar em 30\% a vendas de cada um dos produtos. As alternativas são:
+\begin{itemize}
+   \item Investir em um programa institucional com outras empresas do mesmo ramo. Esse programa deve proporcionar um aumento de 3\% nas vendas de cada produto, para cada \$ 1.000,00 investidos.
+   \item Investir diretamente na divulgação de cada produto:
+    \begin{itemize}
+     \item Cada \$ 1.000,00 investidos em P1 retornam um aumento de 4\% em sua venda.
+     \item Cada \$ 1.000,00 investidos em P2 retornam um aumento de 10\% em sua venda. 
+    \end{itemize}
+\end{itemize}
+A empresa dispõe de \$ 10.000,00 para esse empreendimento. Quanto deverá destinar a cada atividade? Construa o modelo do sistema descrito.
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\item O setor de transporte de cargas da VASP operando em São Paulo dispõe de 8 aviões B-727, 15 aviões ELECTRA e 12 aviões BANDEIRANTE para vôos amanhã. Há cargas para remeter amanhã para o Rio de Janeiro (150 ton) e Porto Alegre (100 ton). Os custos operacionais de cada avião e suas capacidades (tonelagem) são especificados na tabela abaixo:\\
+
+\begin{table}[htb]
+   \centering
+   \begin{tabular}{|l|c|c|c|}
+      \hline
+                      & B-727& Electra & Bandeirantes\\
+      \hline
+      SP $\rightarrow$ Rio        & 23   & 5       & 1,4\\
+      \hline
+      SP $\rightarrow$  P. Alegre & 58   & 10      & 3,8\\
+      \hline
+      Tonelagem       & 45   & 7       & 4  \\
+      \hline
+   \end{tabular}
+\end{table}
+
+Quanto e quais aviões devem ser mandados para o Rio e Porto Alegre para satisfazer a demanda e minimizar os custos?
+
+\end{enumerate}
+
+
+\end{document}
+% Local Variables:
+% auto-fill-function: do-auto-fill
+% fill-column: 110
+% mode-name: "LaTeX"
+% TeX-PDF-mode: t
+% End:
+
+% LocalWords:  UFRGS Simplex Bland

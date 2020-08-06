@@ -1,0 +1,9 @@
+LAB5 - 29/03/2012
+
+pessoa('Leandro').
+pai('Leandro', 'José').
+pai('José','Antônio').
+mae('Leandro','Maria').
+pai('Maria','Carlos').
+
+avo(X,A):-(pai(X,P), pai(P,A));(mae(X,M), pai(M,A));

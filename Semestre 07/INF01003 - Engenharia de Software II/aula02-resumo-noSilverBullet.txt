@@ -1,0 +1,65 @@
+Artigo: No Silver Bullet
+
+2013-03-15:
+- clientes procuram por uma solução "bala de prata", para "matar" problemas
+como custo crescente dos softwares. 
+- pretende-se também aumentar da produtividade, a confibilidade e a simplicidade
+dos softwares
+
+- evolução do software não é lenta, a evolução do hardware é que é muito rápida,
+logo é difícil de situações ganha-ganha cliente-desenvolvedor ocorram a cada dois
+anos como ocorre com o hardware, no que diz respeito a qualidade, preço e desempenho.
+
+- maior dificuldade: especificar, projetar e testar a parte conceitual do software
+	- muitos estados
+	- tods as partes do software são únicas, não há repetição de código
+	- crescimento dos softwares está associado a um cresciment de complexidade 
+	não-linear
+	- complexidade dificulda a identificação de todos os problemas do software,
+	o que gera incompreensão e perda de confiablidade
+	
+- todos os softwares de sucesso são modificados ao longo do tempo
+	- novas tecnologias vão surgindo, novos displays, plataformas, discos,
+	impressoras e ouros afins, sendo assim para o software sobreviver ele 
+	precisa ser modificado.
+	
+- ambientes de programação unificados + linguagens de alto nível -> aumento de
+produtividade
+
+- tipos de dados abstratos: o tipo do objeto deve ser definido por um nome,
+conjunto de valores e operações. Estrutura de armazenamento é invisível.
+
+2013-03-16:
+Possíveis silver bullets:
+- OO
+- Ada programming language
+- Inteligência artificial 1: solucionar problemas antes apenas resolvidos por 
+humanos
+- Inteligência artificial 2: solucionar problemas através de heurísticas 
+elaboradas da esma forma como os humnos solucionam os problemas
+- sistema especialista: motor de inferência + regras de base analisam a entrada 
+e  propoem soluções e dicas
+	- importante pois programadores novatos, pois tem acesso a uma vasta 
+	experiência em programação embutida no sistema especialista, que o recomenda
+	sugestões importantes
+
+2013-03-17:
+- Uma verificação perfeita de um programa só garante que a espeficiação está
+correta	e não que o programa pode ter algum bug ou gerar erros.
+
+No silver bullet:
+- teste de software nunca será perfeito
+- estações de trabalho - workstations - dificilmente compilarão muito mais 
+rápido do que a velocidade atual.
+
+- atualmente os componentes conceituais são os mais demorados de se analisar
+na etapa de desenvolvimento de um software. A programação é relativamente
+rápida.
+- cuto de software se reflete no desenvolvimento, não em sua replicação
+
+- uma das partes mais críticas do desenvolvimento é a definição dos requisitos 
+técnicos: interfaces para pessoas e máquinas, formas de comunicação entre 
+outros sistemas.
+
+- os softwares não devem ser construídos, eles devem crescer incrementalmente.
+	

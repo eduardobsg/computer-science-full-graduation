@@ -1,0 +1,108 @@
+---------------------------------------------------
+insertion_sort.c, entrada decrescente, tempo em micro segundos
+tipo=i, tamanho=500
+951
+tipo=i, tamanho=5000
+68634
+tipo=i, tamanho=10000
+254970
+tipo=i, tamanho=30000
+2291592
+tipo=s, tamanho=500
+1707
+tipo=s, tamanho=5000
+166215
+tipo=s, tamanho=10000
+618596
+tipo=s, tamanho=30000
+5488852
+---------------------------------------------------
+shell_sort.c, entrada decrescente, tempo em micro segundos
+tipo=i, tamanho=500
+87
+tipo=i, tamanho=5000
+116
+tipo=i, tamanho=10000
+143
+tipo=i, tamanho=30000
+281
+tipo=s, tamanho=500
+297
+tipo=s, tamanho=5000
+2329
+tipo=s, tamanho=10000
+4484
+tipo=s, tamanho=30000
+13393
+---------------------------------------------------
+bubble_sort.c, entrada decrescente, tempo em micro segundos
+tipo=i, tamanho=500
+1497
+tipo=i, tamanho=5000
+115620
+tipo=i, tamanho=10000
+444036
+tipo=i, tamanho=30000
+3966873
+tipo=s, tamanho=500
+3809
+tipo=s, tamanho=5000
+370189
+tipo=s, tamanho=10000
+1490585
+tipo=s, tamanho=30000
+13134391
+---------------------------------------------------
+quick_sort.c, entrada decrescente, tempo em micro segundos
+tipo=i, tamanho=500
+110
+tipo=i, tamanho=5000
+444
+tipo=i, tamanho=10000
+849
+tipo=i, tamanho=30000
+2559
+tipo=s, tamanho=500
+348
+tipo=s, tamanho=5000
+2800
+tipo=s, tamanho=10000
+5638
+tipo=s, tamanho=30000
+17224
+---------------------------------------------------
+heap_sort.c, entrada decrescente, tempo em micro segundos
+tipo=i, tamanho=500
+174
+tipo=i, tamanho=5000
+1371
+tipo=i, tamanho=10000
+2868
+tipo=i, tamanho=30000
+9480
+tipo=s, tamanho=500
+491
+tipo=s, tamanho=5000
+5069
+tipo=s, tamanho=10000
+10821
+tipo=s, tamanho=30000
+33093
+---------------------------------------------------
+merge_sort_re.c, entrada decrescente, tempo em micro segundos
+tipo=i, tamanho=500
+205
+tipo=i, tamanho=5000
+1589
+tipo=i, tamanho=10000
+3128
+tipo=i, tamanho=30000
+9685
+tipo=s, tamanho=500
+532
+tipo=s, tamanho=5000
+5335
+tipo=s, tamanho=10000
+11047
+tipo=s, tamanho=30000
+33652

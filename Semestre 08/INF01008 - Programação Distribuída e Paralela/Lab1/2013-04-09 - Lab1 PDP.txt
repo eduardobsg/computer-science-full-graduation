@@ -1,0 +1,23 @@
+Exercício 1:
+
+1. Qual o problema com esta implementação da classe SlowConsole? Construa o programa Java 
+onde a classe SlowConsole imprime na tela de forma inconsistente (código do exemplo).
+
+	O problema desta implementação é que em uma situação com múltiplas threads não há 
+garantia de que uma mensagem seja impressa até o fim sem que outra começe a ser impressa,
+dando conflito de visualização.
+
+
+Exercício 2: 
+
+2. Verifique o desempenho de cada uma das versões e explique quais fatores influenciam nesta.
+	
+	A implementação com pool de threads é mais eficiente. Um dos motivos é que no pool
+o número de threads workers criadas é limitado e a carga de trabalho é distribuída entre elas.
+Logo há muito menos overhead de criação de threads e alocação de recursos, no pool, diferente-
+mente da implementação sem pool que cria muito mais threads.
+
+
+Exercício 3:
+
+	

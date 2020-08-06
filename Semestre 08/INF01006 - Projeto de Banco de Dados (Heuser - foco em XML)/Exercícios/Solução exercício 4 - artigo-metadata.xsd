@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="artigo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="titulo"/>
+        <xs:element ref="autores"/>
+        <xs:element ref="resumo"/>
+        <xs:element ref="categorias"/>
+        <xs:element ref="palavras-chave"/>
+        <xs:element ref="palavras-chave-adicionais"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="titulo" type="xs:string"/>
+  <xs:element name="autores">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="autor"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="autor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nome"/>
+        	<xs:choice>
+                 <xs:element ref="instituicao"/>
+                 <xs:element ref="instituicaoComPais"/>
+        	 </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nome">
+    <xs:complexType>
+      <xs:all>
+        <xs:element ref="prenome"/>
+        <xs:element ref="sobrenome"/>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="prenome" type="xs:string"/>
+  <xs:element name="sobrenome" type="xs:string"/>
+  <xs:complexType name="tInstituicao">
+      <xs:sequence>
+        <xs:element ref="departamento"/>
+        <xs:element ref="universidade"/>
+      </xs:sequence>
+    </xs:complexType>
+  <xs:element name="instituicao" type="tInstituicao">
+  </xs:element>
+  <xs:element name="instituicaoComPais">
+    <xs:complexType>
+      <xs:complexContent>
+       <xs:extension base="tInstituicao">
+         <xs:sequence>
+            <xs:element ref="pais"/>
+         </xs:sequence>
+       </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+    <xs:element name="departamento" type="xs:string"/>
+  <xs:element name="universidade" type="xs:string"/>
+  <xs:element name="pais" type="xs:string"/>
+  <xs:element name="resumo" type="xs:string"/>
+  <xs:element name="categorias">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="categoria"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="categoria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="código-da-categoria"/>
+        <xs:element ref="nome-da-categoria"/>
+        <xs:element ref="temas"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="tCodCat">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[A-Z]\.\d\.\d"/>
+  </xs:restriction>
+</xs:simpleType>
+  <xs:element name="código-da-categoria" type="tCodCat"/>
+  <xs:element name="nome-da-categoria" type="xs:string"/>
+  <xs:element name="temas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tema"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tema" type="xs:string"/>
+  <xs:element name="palavras-chave">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="palavra-chave"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="palavras-chave-adicionais">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="palavra-chave"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="palavra-chave" type="xs:string"/>
+</xs:schema>

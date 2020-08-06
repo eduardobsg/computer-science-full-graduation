@@ -1,0 +1,7 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body><pre><p>M3=({a,b},{q0,q1,q2,q3,q4},q0,{q3,q4})
+q0 q1 - q2
+q1 - - q3
+q2 - q2 q4
+q3 - q4 -
+q4 - - -</p></pre></body></html>

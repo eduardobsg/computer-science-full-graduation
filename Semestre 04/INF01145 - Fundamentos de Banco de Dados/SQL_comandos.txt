@@ -1,0 +1,14 @@
+Create Database
+	cria uma base de dados vazia
+	
+Drop database
+	elimina uma base de dados
+	
+Create Table
+	define a estrutura de uma tabela, suas restrições de integridade e cria a tabela vazia
+	
+Drop Table
+	elmina a tabela da base de dados
+	
+Alter Table
+	permite modificar a definição de uma tabela	

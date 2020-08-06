@@ -1,0 +1,39 @@
+TURING 2.1
+Máquina de Turing
+4
+4
+q0
+2
+qv
+qf
+ß
+¤
+1
+1
+1
+
+
+¤
+1
+ß
+q0
+(q0,¤,D)
+(qf,1,D)
+(qv,ß,D)
+qv
+
+
+
+qf
+
+
+
+100
+25
+0
+-15
+MS Sans Serif
+11
+10
+80
+30

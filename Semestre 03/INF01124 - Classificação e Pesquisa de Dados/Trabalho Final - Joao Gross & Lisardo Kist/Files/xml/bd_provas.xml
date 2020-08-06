@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bd_provas>
+	<provas>
+		<id>1</id>
+		<cod>INF01112</cod>
+		<nome>Arquitetura e Organização de Computadores II</nome>
+		<ano>Indefinido</ano>
+		<area>1</area>
+		<professor>Raul Fernando Weber</professor>
+		<tamanho>142</tamanho>
+		<link>provas/pdf/06062010_232408.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>2</id>
+		<cod>INF01112</cod>
+		<nome>Arquitetura e Organização de Computadores II</nome>
+		<ano>Indefinido</ano>
+		<area>1</area>
+		<professor>Raul Fernando Weber</professor>
+		<tamanho>1236</tamanho>
+		<link>provas/pdf/06062010_232424.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>3</id>
+		<cod>INF01112</cod>
+		<nome>Arquitetura e Organização de Computadores II</nome>
+		<ano>Indefinido</ano>
+		<area>1</area>
+		<professor>Raul Fernando Weber</professor>
+		<tamanho>539</tamanho>
+		<link>provas/pdf/06062010_232438.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>4</id>
+		<cod>INF01112</cod>
+		<nome>Arquitetura e Organização de Computadores II</nome>
+		<ano>Indefinido</ano>
+		<area>1</area>
+		<professor>Raul Fernando Weber</professor>
+		<tamanho>200</tamanho>
+		<link>provas/pdf/06062010_232451.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>5</id>
+		<cod>INF01112</cod>
+		<nome>Arquitetura e Organização de Computadores II</nome>
+		<ano>Indefinido</ano>
+		<area>1</area>
+		<professor>Raul Fernando Weber</professor>
+		<tamanho>378</tamanho>
+		<link>provas/pdf/06062010_232503.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>6</id>
+		<cod>INF01112</cod>
+		<nome>Arquitetura e Organização de Computadores II</nome>
+		<ano>Indefinido</ano>
+		<area>1</area>
+		<professor>Raul Fernando Weber</professor>
+		<tamanho>778</tamanho>
+		<link>provas/pdf/06062010_232525.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>7</id>
+		<cod>INF01112</cod>
+		<nome>Arquitetura e Organização de Computadores II</nome>
+		<ano>Indefinido</ano>
+		<area>1</area>
+		<professor>Raul Fernando Weber</professor>
+		<tamanho>383</tamanho>
+		<link>provas/pdf/06062010_232538.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>8</id>
+		<cod>INF01112</cod>
+		<nome>Arquitetura e Organização de Computadores II</nome>
+		<ano>Indefinido</ano>
+		<area>1</area>
+		<professor>Raul Fernando Weber</professor>
+		<tamanho>202</tamanho>
+		<link>provas/pdf/06062010_232637.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>9</id>
+		<cod>INF01112</cod>
+		<nome>Arquitetura e Organização de Computadores II</nome>
+		<ano>Indefinido</ano>
+		<area>2</area>
+		<professor>Raul Fernando Weber</professor>
+		<tamanho>301</tamanho>
+		<link>provas/pdf/06062010_233226.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>10</id>
+		<cod>INF01112</cod>
+		<nome>Arquitetura e Organização de Computadores II</nome>
+		<ano>Indefinido</ano>
+		<area>2</area>
+		<professor>Raul Fernando Weber</professor>
+		<tamanho>561</tamanho>
+		<link>provas/pdf/06062010_233240.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>11</id>
+		<cod>INF01112</cod>
+		<nome>Arquitetura e Organização de Computadores II</nome>
+		<ano>Indefinido</ano>
+		<area>2</area>
+		<professor>Raul Fernando Weber</professor>
+		<tamanho>302</tamanho>
+		<link>provas/pdf/06062010_233510.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>12</id>
+		<cod>INF01112</cod>
+		<nome>Arquitetura e Organização de Computadores II</nome>
+		<ano>Indefinido</ano>
+		<area>2</area>
+		<professor>Raul Fernando Weber</professor>
+		<tamanho>159</tamanho>
+		<link>provas/pdf/06062010_233522.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>13</id>
+		<cod>INF01112</cod>
+		<nome>Arquitetura e Organização de Computadores II</nome>
+		<ano>Indefinido</ano>
+		<area>2</area>
+		<professor>Raul Fernando Weber</professor>
+		<tamanho>546</tamanho>
+		<link>provas/pdf/06062010_233542.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>14</id>
+		<cod>INF01112</cod>
+		<nome>Arquitetura e Organização de Computadores II</nome>
+		<ano>Indefinido</ano>
+		<area>2</area>
+		<professor>Raul Fernando Weber</professor>
+		<tamanho>255</tamanho>
+		<link>provas/pdf/06062010_233556.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>15</id>
+		<cod>INF01112</cod>
+		<nome>Arquitetura e Organização de Computadores II</nome>
+		<ano>Indefinido</ano>
+		<area>2</area>
+		<professor>Raul Fernando Weber</professor>
+		<tamanho>290</tamanho>
+		<link>provas/pdf/06062010_233609.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>16</id>
+		<cod>INF01112</cod>
+		<nome>Arquitetura e Organização de Computadores II</nome>
+		<ano>Indefinido</ano>
+		<area>Rec</area>
+		<professor>Raul Fernando Weber</professor>
+		<tamanho>1085</tamanho>
+		<link>provas/pdf/06062010_234510.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>17</id>
+		<cod>INF01112</cod>
+		<nome>Arquitetura e Organização de Computadores II</nome>
+		<ano>Indefinido</ano>
+		<area>Rec</area>
+		<professor>Raul Fernando Weber</professor>
+		<tamanho>717</tamanho>
+		<link>provas/pdf/06062010_234523.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>18</id>
+		<cod>INF01118</cod>
+		<nome>Técnicas Digitais para Computação</nome>
+		<ano>Indefinido</ano>
+		<area>Indefinido</area>
+		<professor>Indefinido</professor>
+		<tamanho>270</tamanho>
+		<link>provas/pdf/06062010_234820.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>19</id>
+		<cod>INF01118</cod>
+		<nome>Técnicas Digitais para Computação</nome>
+		<ano>Indefinido</ano>
+		<area>Indefinido</area>
+		<professor>Indefinido</professor>
+		<tamanho>311</tamanho>
+		<link>provas/pdf/06062010_234834.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>20</id>
+		<cod>INF01107</cod>
+		<nome>Introdução à Arquitetura de Computadores</nome>
+		<ano>2007-01</ano>
+		<area>1</area>
+		<professor>Indefinido</professor>
+		<tamanho>7</tamanho>
+		<link>provas/pdf/06062010_235137.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>21</id>
+		<cod>INF01107</cod>
+		<nome>Introdução à Arquitetura de Computadores</nome>
+		<ano>2007-01</ano>
+		<area>2</area>
+		<professor>Indefinido</professor>
+		<tamanho>15</tamanho>
+		<link>provas/pdf/06062010_235236.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>22</id>
+		<cod>MAT01353</cod>
+		<nome>Cálculo e Geometria Analítica I </nome>
+		<ano>2004-01</ano>
+		<area>1</area>
+		<professor>Liana Beatriz Costi Nacul</professor>
+		<tamanho>71</tamanho>
+		<link>provas/pdf/06062010_235432.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>23</id>
+		<cod>MAT01353</cod>
+		<nome>Cálculo e Geometria Analítica I </nome>
+		<ano>2005-02</ano>
+		<area>1</area>
+		<professor>Liana Beatriz Costi Nacul</professor>
+		<tamanho>322</tamanho>
+		<link>provas/pdf/06062010_235449.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>24</id>
+		<cod>MAT01353</cod>
+		<nome>Cálculo e Geometria Analítica I </nome>
+		<ano>2007-01</ano>
+		<area>1</area>
+		<professor>Liana Beatriz Costi Nacul</professor>
+		<tamanho>23</tamanho>
+		<link>provas/pdf/06062010_235512.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>25</id>
+		<cod>MAT01353</cod>
+		<nome>Cálculo e Geometria Analítica I </nome>
+		<ano>2005-02</ano>
+		<area>2</area>
+		<professor>Liana Beatriz Costi Nacul</professor>
+		<tamanho>98</tamanho>
+		<link>provas/pdf/06062010_235534.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>26</id>
+		<cod>MAT01353</cod>
+		<nome>Cálculo e Geometria Analítica I </nome>
+		<ano>2007-01</ano>
+		<area>2</area>
+		<professor>Liana Beatriz Costi Nacul</professor>
+		<tamanho>33</tamanho>
+		<link>provas/pdf/06062010_235600.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>27</id>
+		<cod>INF01203</cod>
+		<nome>Estruturas de Dados</nome>
+		<ano>2009-01</ano>
+		<area>1</area>
+		<professor>Renata de Matos Galante</professor>
+		<tamanho>22</tamanho>
+		<link>provas/pdf/06062010_235842.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>28</id>
+		<cod>INF01203</cod>
+		<nome>Estruturas de Dados</nome>
+		<ano>2009-01</ano>
+		<area>1</area>
+		<professor>Renata de Matos Galante</professor>
+		<tamanho>22</tamanho>
+		<link>provas/pdf/06062010_235910.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>29</id>
+		<cod>INF01203</cod>
+		<nome>Estruturas de Dados</nome>
+		<ano>2008-02</ano>
+		<area>2</area>
+		<professor>Renata de Matos Galante</professor>
+		<tamanho>197</tamanho>
+		<link>provas/pdf/06062010_235941.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>30</id>
+		<cod>INF01203</cod>
+		<nome>Estruturas de Dados</nome>
+		<ano>2008-02</ano>
+		<area>2</area>
+		<professor>Renata de Matos Galante</professor>
+		<tamanho>114</tamanho>
+		<link>provas/pdf/06062010_235959.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>31</id>
+		<cod>INF01203</cod>
+		<nome>Estruturas de Dados</nome>
+		<ano>2009-01</ano>
+		<area>3</area>
+		<professor>Renata de Matos Galante</professor>
+		<tamanho>173</tamanho>
+		<link>provas/pdf/06072010_000027.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>32</id>
+		<cod>MAT01355</cod>
+		<nome>Álgebra Linear I </nome>
+		<ano>2009-02</ano>
+		<area>2</area>
+		<professor>Indefinido</professor>
+		<tamanho>358</tamanho>
+		<link>provas/pdf/06072010_000206.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>33</id>
+		<cod>MAT01355</cod>
+		<nome>Álgebra Linear I </nome>
+		<ano>2009-02</ano>
+		<area>1</area>
+		<professor>Indefinido</professor>
+		<tamanho>102</tamanho>
+		<link>provas/pdf/06072010_000231.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>34</id>
+		<cod>MAT01355</cod>
+		<nome>Álgebra Linear I </nome>
+		<ano>2009-01</ano>
+		<area>2</area>
+		<professor>Indefinido</professor>
+		<tamanho>132</tamanho>
+		<link>provas/pdf/06072010_000249.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>35</id>
+		<cod>INF01202</cod>
+		<nome>Algorítmos e Programação </nome>
+		<ano>2008-01</ano>
+		<area>1</area>
+		<professor>Indefinido</professor>
+		<tamanho>88</tamanho>
+		<link>provas/pdf/06072010_132832.zip</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>36</id>
+		<cod>INF01202</cod>
+		<nome>Algorítmos e Programação </nome>
+		<ano>2007-01</ano>
+		<area>2</area>
+		<professor>Indefinido</professor>
+		<tamanho>53</tamanho>
+		<link>provas/pdf/06072010_132931.zip</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>37</id>
+		<cod>INF01202</cod>
+		<nome>Algorítmos e Programação </nome>
+		<ano>2008-01</ano>
+		<area>1</area>
+		<professor>Indefinido</professor>
+		<tamanho>304</tamanho>
+		<link>provas/pdf/06072010_132945.zip</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>38</id>
+		<cod>INF01108</cod>
+		<nome>Arquitetura e Organização de Computadores I</nome>
+		<ano>2010-01</ano>
+		<area>2</area>
+		<professor>Carlos Arthur Lang Lisboa</professor>
+		<tamanho>154</tamanho>
+		<link>provas/pdf/07122010_201206.zip</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>39</id>
+		<cod>INF01108</cod>
+		<nome>Arquitetura e Organização de Computadores I</nome>
+		<ano>2006-01</ano>
+		<area>2</area>
+		<professor>Carlos Arthur Lang Lisboa</professor>
+		<tamanho>11</tamanho>
+		<link>provas/pdf/07122010_201229.zip</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>40</id>
+		<cod>MAT01354</cod>
+		<nome>Cálculo e Geometria Analítica II </nome>
+		<ano>2009-02</ano>
+		<area>1</area>
+		<professor>Ada Maria De Souza Doering</professor>
+		<tamanho>1526</tamanho>
+		<link>provas/pdf/07122010_202948.rar</link>
+		<status>1</status>
+	</provas>
+	<provas>
+		<id>41</id>
+		<cod>MAT01354</cod>
+		<nome>Cálculo e Geometria Analítica II </nome>
+		<ano>2009-01</ano>
+		<area>1</area>
+		<professor>Ada Maria De Souza Doering</professor>
+		<tamanho>409</tamanho>
+		<link>provas/pdf/07122010_203031.rar</link>
+		<status>1</status>
+	</provas>
+</bd_provas>

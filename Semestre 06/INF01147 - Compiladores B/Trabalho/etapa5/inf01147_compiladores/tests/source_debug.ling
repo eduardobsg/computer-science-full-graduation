@@ -1,0 +1,17 @@
+word bool byte if then else loop input return output
+// MY LINE COMMENT HAS AN int AND a bool
+<= >= == != && ||
+, ; : ( ) [ ] { } + - * / < > = ! & $
+/**
+ * MY COMMENT
+ * IN A BLOCK
+ * HAS AN int and A char or A true
+ */
+my_ident_say_next_is_literal_integer 1234
+false
+TRUE true
+FALSE TRUE
+'a' 'b' ' '
+"Minha string contem um int"
+int i = 0E
+"wrong_var_name" 89tcholoris

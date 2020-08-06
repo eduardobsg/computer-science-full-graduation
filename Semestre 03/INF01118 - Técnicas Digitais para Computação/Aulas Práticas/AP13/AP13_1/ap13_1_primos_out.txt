@@ -1,0 +1,29 @@
+# 3 - Sintese com a opcao de otmizacao (sem compartilhamento).
+#     espresso -oeqntott -Dso ex1.txt > ex1_out3.txt
+#
+#     SAIDA
+#     F = (A&!B&!C) | (!A&B&C);
+#     
+# quatro variaveis de entrada
+# uma variavel de saida
+# nome das variaveis de entrada
+# nome da variavel de saida
+T5 = (S5&S4&S3&S2&!S1&S0) | (!S5&S4&S3&S2&S1&S0);
+
+T4 = (!S5&!S4&S3&S2&!S1&S0) | (S5&S4&S3&S2&!S1&S0) | (S5&!S4&S3&S2&S1&S0) | (
+    !S5&S4&S3&S2&S1&S0);
+
+T3 = (S5&!S3&S2&!S1&S0) | (!S5&!S4&S3&S2&!S1&S0) | (S5&S4&S2&!S1&S0) | (
+    !S5&!S3&S2&S1&S0) | (S5&!S4&S3&S2&S1&S0) | (!S5&S4&S2&S1&S0);
+
+T2 = (!S4&S3&!S2&S1&S0) | (S5&S4&S2&!S1&S0) | (S5&!S3&S2&!S1&S0) | (!S5
+    &!S4&S3&S2&!S1&S0) | (!S5&!S3&!S2&S1&S0) | (S5&S3&!S2&S1&S0) | (!S5
+    &!S4&!S3&S1&S0);
+
+T1 = (S4&S3&S2&!S1&S0) | (!S5&!S4&!S3&!S2&!S1&!S0) | (S5&!S4&S3&!S2&!S1
+    &S0) | (S5&S4&S3&!S2&S1&S0) | (S5&!S4&S3&S2&S1&S0) | (S5&S4&S2&!S1&S0) | (
+    !S5&!S4&!S2&S1&S0) | (!S5&S4&!S3&!S2&!S1&S0) | (!S5&!S4&!S3&S2&!S1&S0) | (
+    !S5&S4&S2&S1&S0);
+
+T0 = (!S5&!S4&!S3&!S2&S1&!S0) | (S5&S4&S3&S2&!S1&S0);
+

@@ -1,0 +1,41 @@
+Exercício 1: Java threads e sincronização
+
+	Quanto às formas de sincronização entre as threads, utilizando métodos
+syncronized, locks e operações atômicas, não há diferenças entre as versões 6
+e 7 do Java. Porém na versão 7 do Java foi inserido mais um recurso de executor.
+
+	Uma executor é um objeto que encapsula o gerenciamento e criação de threads 
+em um sistema. Isso não se faz necessário em sisemas de pequeno porte, porém sistemas
+grandes necessitam deste recurso.
+
+	O executor desta nova versão é o Fork/Join. Ele consiste de um framework 
+que pega tarefas e a distribui a thread pertencentes a um pool de threads. O
+objetivo é utilizar todos o poder de processamento do sistema para aumentar sua 
+performance. O framework fork/join se destaca pela utilização de um algoritmo
+chamado trabalha-rouba, ou seja, a medida que as threads executam suas tarefas e
+ficam ociosas, elas podem literalmente roubar tarefas de outras threads que ainda
+estiverem ocupadas.
+
+	Outros recurso que surgiu na versão 7 do java foi o método Phaser de
+sincronização de threads. Ele atua de forma semelhante ao recurso CyclicBarrier, ou
+CountDownLatch, porém oferece mais flexibilidade. Na nova funcionalidade é possível 
+que o número de threads seja variável, ao invés de fixo como anteriormente. Barreiras,
+ou fases, são criadas e após todas as threads chegarem na mesma fase elas podem seguir
+para a próxima fase. As threads novas devem se registrar na 'phase' através do método
+register().
+
+
+Referências:
+
+Caraterísticas gerais:
+http://docs.oracle.com/javase/tutorial/essential/concurrency/executors.html
+http://docs.oracle.com/javase/tutorial/essential/concurrency/sync.html
+http://docs.oracle.com/javase/6/docs/api/java/lang/Thread.html
+http://docs.oracle.com/javase/7/docs/api/java/lang/Thread.html
+
+Executores e Sincronizadores:
+	- citação da classe ForkJoinPool na versão 7 do Java
+	- citação de novo sincronizador, chamado 'Phaser', no Java 7
+http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/package-summary.html
+http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/package-summary.html
+

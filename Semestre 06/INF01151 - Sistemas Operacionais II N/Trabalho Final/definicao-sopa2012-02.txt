@@ -1,0 +1,20 @@
+Neste semestre os trabalhos práticos de Sistemas Operacionais II serão 4 diferentes aplicações distribuídas a serem feitas com a implementação do SOPA: Sistema Operacional Para Avaliação. As aplicações são: Ring, Clock, Membership e RPC.
+
+Cada SOPA deve seguir as orientações gerais, fazendo a simulação de uma máquina mediante programação concorrente, com threads e sincronização, onde nessa máquina roda um sistema operacional com time-sharing para vários processos de usuário, iniciados sob comando do console. 
+
+Em 2012-2, a máquina e o kernel devem ser completados e estendidos, conforme necessário, para fazerem comunicação entre processos, incluindo entre processos rodando em diferentes implementações do SOPA, ligadas via rede, para o que será usada comunicação via Socket. 
+
+Neste semestre, os alunos devem formar duplas para fazer cada implementação do SOPA, e essas duplas formaram super-grupos que escolheram a mesma aplicação. A avaliação será feita com o teste das aplicações rodando com os trabalhos das várias duplas que formam um super-grupo (tipicamente 3).
+
+A aplicação de Ring deve demonstrar apenas um token sendo passado entre processos de usuário, rodando ou no mesmo ou em outro SOPA da rede. Não deve haver preocupação com tolerância a falhas ou variação no número de SOPAs. Mas a implementação deve permitir que novos processos entrem ou saiam do ring, e naturalmente que outros processos rodem sem pedir para estarem no ring.
+
+A aplicação de Clock deve fazer o sincronismo de relógio para cada processo cliente que quiser isso. Os processos rodando sobre o SOPA devem ter janelas com relógios, onde mostram os segundos de forma sincronizada, sendo que esse sincronismo vem de um servidor (um dos SOPA), o qual pode variar o tempo, ficar em silêncio (sem comunicação) ou voltar à responder.
+
+Na aplicação de Membership, o objetivo é apenas controlar o número de processos que estão participando de um grupo, prevendo a possibilidade de os processos entrarem, sairem, e de máquinas entrarem e sairem, sem a necessidade de uma máquina específica coordenadora, diferenciada das demais.
+
+Na aplicação de RPC, deve-se permitir que um processo solicite a execução de uma função por outro processo em outra máquina SOPA (potencilamente rodando em outro computador hospedeiro). Deve ser prevista pelo menos a passagem de dois parâmetros e a recuperação de um resultado. O processo que é servidor de RPC deve se cadastrar primeiro, e ser identificado por algum código (um número).
+
+Em todos os casos, os processos de usuário precisam solicitar esses serviços para o kernel do SOPA, usando um conjunto de operações com Interrupções de Software, a serem definidas para cada aplicação pelos super-grupos. 
+
+A Lista com os valores parciais de cada etapa será divulgada em breve.
+

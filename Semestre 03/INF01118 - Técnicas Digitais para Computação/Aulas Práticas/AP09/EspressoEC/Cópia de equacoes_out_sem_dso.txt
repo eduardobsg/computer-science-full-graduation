@@ -1,0 +1,160 @@
+# 3 - Sintese com a opcao de otmizacao (sem compartilhamento).
+#     espresso -oeqntott -Dso equacoes.txt > equacoes_ouA&B&!C&D&!E&F&!G.txt
+#
+#     SAIDA
+#     F = (A&!B&!C) | (!A&B&C);
+#     
+# PROGRAMA ESPRESSO
+# oito variaveis de entrada
+# dez variaveis de saida
+# nome das variaveis de entrada
+# nome da variavel de saida
+
+T = 
+T0 = 
+T1 = 
+T2 = 
+T3 = 
+T4 = 
+T5 = 
+T6 = 
+T7 = 
+T8 = 
+T9 = 
+
+T00 = (A&B&!C&D&!E&!F&!G) 
+T01 = (A&B&C&!D&!E&F&!G) 
+T02 = (A&B&!C&D&!E&F&!G)
+T03 = (A&B&C&!D&!E&!F)
+T04 = (A&B&!C&D&!E&G)
+T05 = (A&B&C&!D&F&G)
+T06 = (A&B&C&D)
+T07 = (A&B&E)
+T08 = (A&!B&!C&!D&!E&!F&!G)
+T09 = (A&!B&!C&D&!E&F&!G)
+T10 = (A&!B&C&D&!E&!F&G)
+T11 = (!A&B&C&D&!E&!F&G)
+T12 = (A&B&!C&!D&!E&!F&G)
+T13 = (A&!B&!C&D&!E&!F&G)
+T14 = (A&B&!C&!D&!E&F&G)
+T15 = (A&!B&D&!E&!F&!G)
+T16 = (A&!B&!C&!D&!E&F&!G)
+T17 = (A&!B&!C&!D&E&!F&G)
+T18 = (!A&B&C&!D&E&!F)
+T19 = (A&!B&!C&D&E&!F&G)
+T20 = (A&!B&C&D&E&!F)
+T21 = (A&!B&!C&!D&E&!F&!G)
+T22 = (!A&B&C&D&!E&!G)
+T23 = (A&!B&!C&!D&!E&G)
+T24 = (A&!B&!C&D&F&G)
+T25 = (A&B&!C&!D&!E&!G)
+T26 = (A&!B&C&D&F)
+T27 = (A&!B&!D&E&F)
+T28 = (A&!B&!C&D&E&!G)
+T29 = (!A&B&C&D&E)
+T30 = (!A&B&C&F)
+T31 = (A&!B&C&!D)
+T32 = (!A&B&C&!D&!E&!F&G)
+T33 = (!A&B&C&!D&!E&!F&!G)
+T34 = (!A&B&!C&D)
+T35 = (!A&!B&C&D&!E&!F&!G)
+T36 = (!A&B&!C&!D&!E&F&!G)
+T37 = (!A&B&!C&!D&!F&G)
+T38 = (!A&!B&C&D&!E&F&!G)
+T39 = (!A&!B&C&D&!E&F&G)
+T40 = (!B&C&D&!E&!F&G)
+T41 = (!A&B&!C&!D&!E&!F)
+T42 = (!A&B&!C&!D&F&G)
+T43 = (!A&B&!C&!D&E&!G)
+T44 = (!A&!B&C&E)
+T45 = (A&B&C&!D&!F&G)
+T46 = (A&!B&C&D&!E&!F&!G)
+T47 = (!A&!B&C&!D&!E&!F&G)
+T48 = (!A&!B&C&!D&!E&F&G)
+T49 = (A&B&!C&D&E&F)
+T50 = (!A&!B&!C&D&E&!F)
+T51 = (!A&!B&C&!D&!E&!G)
+T52 = (!A&!B&!C&D&F)
+T53 = (!A&C&D&E&F)
+T54 = (A&B&C&!D&E&!G)
+T55 = (!A&!B&!C&D&!E&!F&G)
+T56 = (!A&!C&E&F&G)
+T57 = (B&C&!D&E&F&G)
+T58 = (!A&!B&C&D&E&!F&G)
+T59 = (!A&B&C&D&!E&F&G)
+T60 = (!A&B&!C&E&F&!G)
+T61 = (A&C&!D&E&F&!G)
+T62 = (!A&!B&!C&D&!E&!F&!G)
+T63 = (!A&!B&C&D&E&!F&!G)
+T64 = (A&B&!C&D&E&!F&!G)
+T65 = (!A&B&!C&E&G)
+T66 = (A&C&!D&E&G)
+T67 = (A&C&E&F&G)
+T68 = (!A&!C&!D&E&F&!G)
+T69 = (A&B&C&E&F&!G)
+T70 = (!A&!C&!D&E&G)
+T71 = (A&B&C&E&G)
+T72 = (!A&!B&!C&!D&E&!F&!G)
+T73 = (!A&B&!C&D&E&!F&!G)
+T74 = (A&!B&C&!D&E&!F&!G)
+T75 = (A&B&C&D&E&!F&!G)
+T76 = (!A&!B&!C&D&E&F&!G)
+T77 = (!A&B&C&!D&E&F&!G)
+T78 = (A&!B&C&D&E&F&!G)
+T79 = (!A&B&!C&!D&E&F&G)
+T80 = (A&!B&!C&D&E&F&G)
+T81 = (A&B&C&!D&E&F&G)
+T82 = (A&B&!C&!D&F&!G)
+T83 = (A&!B&!C&D&E&F&!G)
+T84 = (A&B&!D&E&F&!G)
+T85 = (B&!C&D&!E&F&G)
+T86 = (!A&!B&!D&E&F&G)
+T87 = (!A&B&D&E&F&G)
+T88 = (A&B&!C&!D&E&F)
+T89 = (!A&!B&C&!D&F&!G)
+T90 = (!A&B&C&D&F&!G)
+T91 = (!A&!B&!C&!D&!E&F)
+T92 = (B&!C&!D&E&F&!G)
+T93 = (A&!B&!D&!E&F&G)
+T94 = (!A&B&!C&D&!E&F)
+T95 = (A&!B&C&!D&!E&F)
+T96 = (A&B&C&D&!E&F)
+T97 = (!B&C&!D&E&F&G)
+T98 = (B&C&D&E&F&G)
+T99 = (!A&!B&!C&D&E&!F&G)
+T100 = (A&!B&C&D&E&!F&G)
+T101 = (!A&B&C&!D&!E&F&G)
+T102 = (A&!C&!D&E&F&G)
+T103 = (A&B&!C&E&F&G)
+T104 = (!A&B&!C&!E&!F&G)
+T105 = (A&B&C&!E&!F&G) 
+T106 = (!A&!B&!C&!D&!E&G)
+T107 = (!A&B&C&E&!F&G)
+T108 = (!A&!C&D&!E&F&G)
+T109 = (A&!B&C&!D&!E&G)
+T110 = (A&C&D&!E&F&G)
+T111 = (!A&!B&C&!D&E&G)
+T112 = (!A&C&D&E&F&G)
+T113 = (A&B&!C&!D&E&G)
+
+
+c1 = T00 | T01 | T02 | T03 | T04 | T05 | T06 | T07;
+
+c0 = T08 | T09 | T10 | T11 | T12 | T13 | T14 | T15 | T16 | T17 | T18 | T19 | T20 | T21 | T22 | T23 | T24 | T25 | T26 | T27 | T28 | T29 | T30 | T31;
+
+d3 = T32 | T33 | T12 | T14 | T20 | T25 | T26 | T34;
+
+d2 = T35 | T36 | T09 | T37 | T38 | T39 | T13 | T40 | T15 | T19 | T41 | T42 | T24 | T27 | T43 | T28 | T44 | T06 | T31;
+
+d1 = T08 | T01 | T36 | T10 | T45 | T37 | T46 | T47 | T48 | T49 | T16 | T17 | T50 | T03 | T41 | T21 | T51 | T05 | T52 | T23 | T42 | T53 | T54 | T43 | T29 | T31;
+
+d0 = T55 | T56 | T57 | T32 | T58 | T59 | T60 | T46 | T61 | T02 | T62 | T38 | T47 | T11 | T33 | T48 | T63 | T39 | T12 | T64 | T14 | T40 | T16 | T17 | T65 | T66 | T04 | T19 | T67 | T68 | T69 | T21 | T51 | T22 | T05 | T23 | T42 | T24 | T25 | T54 | T70 | T43 | T28 | T71;
+
+u3 = T72 | T73 | T74 | T00 | T35 | T75 | T76 | T77 | T78 | T79 | T80 | T81 | T08 | T01 | T55 | T36 | T09 | T32 | T10 | T58 | T59 | T48 | T14 | T17;
+
+u2 = T82 | T83 | T84 | T85 | T86 | T87 | T88 | T45 | T37 | T62 | T89 | T47 | T11 | T33 | T90 | T91 | T92 | T63 | T93 | T94 | T95 | T39 | T12 | T13 | T64 | T96 | T97 | T15 | T98 | T18 | T50 | T03 | T19 | T41 | T20 | T21;
+
+u1 = T99 | T100 | T101 | T102 | T103 | T60 | T46 | T61 | T02 | T104 | T62 | T38 | T105| T33 | T106 | T107 | T63 | T108 | T109 | T13 | T64 | T110 | T111 | T112 | T113 | T16 | T68 | T69 | T21 | T51 | T22 | T25 | T54 | T43 | T28;
+
+u0 = (H);
+

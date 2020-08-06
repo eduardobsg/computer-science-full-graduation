@@ -1,0 +1,58 @@
+Cadeira: 
+Professor: 
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2013/01
+Página do professor: 
+
+------------------------------------------------------------------------------
+---- Colegas:
+------------------------------------------------------------------------------
+
+- Jefferson Stoffel
+- Vitor Araújo
+- Lisardo
+- Valdez
+- Luiz Castro
+- Alexandre Kraismann
+- Vitor'
+- Henrique Weber
+
+------------------------------------------------------------------------------
+---- Frase:
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+---- Notas de Aula
+------------------------------------------------------------------------------
+
+2013-03-14:
+
+História da evolução dos computadores:
+
+- O que é um computador?
+É programável, hardware pode ser usado de forma distinta dependendo do modo 
+como é programado. Manipula dados, recebe entradas e gera saídas. Capaz de
+realizar tudo o que é computável.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

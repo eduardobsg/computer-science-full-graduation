@@ -1,0 +1,96 @@
+; **********************************************************
+; * Algoritmo para divisão de inteiros em complemento de 2 *
+; * sem restauração                                       *
+; * Equivale ao programa da página 79 do livro - 2a edição *
+; **********************************************************
+; teste de exceções: estouro e div. por zero
+inicio:
+     LDA v
+     JZ  div_por_zero ; divisor = 0
+     LDA dq        
+     SHL           ; desloca dq p/esquerda
+     STA dqt       ; e salva em dq temporário
+     LDA Dr        ; desloca Dr p/esquerda
+     ROL           ; msbit de Dr em carry
+     STA Drt       ; e salva em Dr temporário
+     SUB v         ; calcula D - v
+     JP estouro    ; Se positivo (D >= v), estouro
+; não ocorreu nenhuma exceção: inicializa contador
+; atenção: Drt e dqt já estão inicializados !!!
+     LDA oito
+     STA i         ; contador = 8
+     LDA um
+     STA aux       ; aux = 1
+repetir:           ; início do laço
+     LDA aux     
+     JZ soma
+; flag indica subtração
+     LDA Drt
+     SUB v         ; calcula D - v
+     STA Drt
+     JMP continua
+; flag indica soma
+soma:
+     LDA Drt
+     ADD v         ; calcula D + v
+     STA Drt
+continua:
+     JN  qzero     ; se negativo, D < v
+     LDA dqt
+     OR  um        ; faz bit do quociente = 1
+     STA dqt
+     LDA um        ; aux = 1 (próxima operação é subtração)
+     JMP teste      
+qzero:             ; bit do quociente deve ser zero
+     LDA zero      ; próxima operação é soma
+teste:
+     STA aux
+     LDA i
+     SUB um        ; decrementa contador
+     STA i
+     JZ  fim       ; se i = 0, fim normal
+     LDA dqt       
+     SHL           ; desloca dq p/esquerda
+     STA dqt       
+     LDA Drt       
+     ROL           ; desloca Dr p/esquerda
+     STA Drt       
+     JMP repetir   ; volta para o início do laço
+fim:               ; fim normal
+     LDA Drt       ; testa resto
+     JP  resto_ok  ; se positivo, está correto
+     ADD v         ; se negativo, corrigir (somar o divisor)
+     STA Drt     
+resto_ok:
+     LDA um        ; estado = 1
+estado:
+     STA est       ; armazena estado
+     HLT
+div_por_zero:      ; fim com erro: div. por zero
+     LDA zero      ; estado = 0
+     JMP estado
+estouro:           ; fim com erro: estouro
+     LDA mum       ; estado = -1
+     JMP estado
+
+; definição de variáveis
+      ORG 128      ; começando na palavra 128
+Dr:   DB 0         ; msbits do dividendo
+dq:   DB 0         ; lsbits do dividendo 
+v:    DB 0         ; divisor
+dqt:  DB 0         ; lsbits do dividendo (no final = quociente)
+Drt:  DB 0         ; msbits do dividendo (no final, = resto)
+est:  DB 0         ; estado: estouro = -1
+                   ;         div. por zero = 0
+                   ;         normal = 1
+i:    DB 0         ; contador
+
+; definição de constantes
+zero: DB 0         ; constante 0
+um:   DB 1         ; constante 1
+mum:  DB -1        ; constante -1
+oito: DB 8         ; constante 8
+; indicador de subtração (=1) ou soma (=0)
+aux:  DB 0
+
+

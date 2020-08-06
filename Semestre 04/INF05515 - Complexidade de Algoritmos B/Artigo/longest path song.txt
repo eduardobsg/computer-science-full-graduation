@@ -1,0 +1,53 @@
+Hi,
+
+I created the song "Find the Longest Path" that you have posted at
+[snip].  I wrote it while a grad student at Johns Hopkins University
+on May 1, 1988, during a difficult "Algorithms II" final exam.  I also
+recorded the song and it's been played at several mathematics
+conferences.  If you wouldn't mind, please credit me as author on your
+site. Thanks!
+
+--
+Dan Barrett
+http://www.blazemonger.com/
+Longest-path, Daniel Barrett.
+
+longestpath.mp3
+Original song The longest Time
+Original artist Billy Joel
+--------------------------
+
+Woh, oh-oh-oh
+Find the Longest Path
+Woh oh-oh
+Find the Longest Path
+If you said P is NP tonight
+There would still be papers left to write
+I have a weakness
+I'm addicted to completeness
+And I keep searching for the longest Path
+
+The algorithm I would like to see
+Is of Polynomial Degree
+Buts its elusive,
+Nobody has found conclusive
+Evidence that we can find the Longest Path
+
+I have been hard
+Working for so long
+I swear its right,
+And he marks it wrong
+Somehow I'll feel sorry when its done
+GPA 2.1,
+Is more than I hoped for
+
+Garey, Johnson, Karp and other Men (and Women)
+Try to make it Order n log n.
+Am I a math fool
+If I spend my life in Grad School
+Forever following the Longest Path.
+
+Woh oh-oh-oh
+Find the longest path
+Woh oh-oh-oh
+Find the longest path

@@ -1,0 +1,145 @@
+1) Redes Neurais Artificiais:
+* Características:
+- podem induzir, adquirir, armazenar e utilizar conhecimento
+	- extraídos por experiência
+	- utilizados algoritmos de aprendizagem
+- conhecimentos aprendidos são dificilmente entendidos pelo usuário
+- utilizadas para reconhecimento de padrões
+
+* Conhecimento:
+- representado em estados, neurônios artificiais,
+interligados por elos
+	- elos possuem pesos sinápticos
+	- ajuste dos pesos sinápicos por procedimentos iterativos de
+	treinamento
+- neurônio artifical é uma porta lógica universal
+	
+* Resultados:	
+- valor de saída depende da soma ponderada entre as entradas do 
+neurônio e os seus pesos sinápticos
+	- saída é gerada pela comparação da soma ponderada com um 
+	limiar, por uma função de ativação
+- bias: valor de ajuste para a saída
+- algoritmo de treinamento: ajuste de mínimos quadrados, minimizando 
+o erro entre a saída obtida e a esperada.
+
+* Treinamento:
+- perceptron de múltiplas camadas: cada camada influi na próxima
+	- Backpropagation: algoritmo de treinamento baseado em 
+	aprendizado supervisionado por correção de erros
+		- 1ª propagação: entrada se propaga entre as camadas até a
+		saída, onde se tem a resposta e o erro. (on-line)
+		- 2º adaptação: alterações nos pesos sinápticos da saída 
+		para a entrada. (off-line)
+		
+* Sistemas auto-organizáveis:
+- objetivo: extrair características da entrada sem supervisão externa
+- algoritmo busca similaridades entre conjuntos de dados
+- treinamento: aplica regras locais de modificação, considerando
+a vizinhança em torno do neurônio
+
+* Modelos Descritivos:
+- Entradas => Modelo de agrupamento dos dados]
+- aprendizado não supervisionado
+- aprendizado por similaridade de características dos dados
+- para identificar agrupamentos é importante descrver com detalhes
+os dados
+- classe natural: agrupamento de daods semelhantes
+- classe de interesse: rótulo ara a classe 
+- como descobrir os agrupamentos? 
+	- redes competitivas
+
+* Mapa auto-organizável:
+- rede neural com a interação de um neurônio com a sua vizinhança.
+- entradas com características semelhantes são mapeadas na rede 
+neural para neurônios próximos entre si.
+- processamento:
+	- criação das ativações dos neurônios
+	- definir neurônio vencedor
+	- treinamento: modificar peso do vencedor e de sua vizinhança
+	- recuperação: vencedor indica qual o agrupamento da entrada
+
+	
+2) Sistemas Fuzzy
+- inferência nebulosa
+- conhecimento: conceitos linguísticos flexíveis, similares os da
+linguagem natural.
+	- baseado em regras fuzzy
+	- conhecimento impreciso -> grau de pertinência
+	- relações fuzzy
+- incorpora variabilidade do domínio
+- podemos:
+	- compor um conjunto a uma relação fuzzy
+	
+* Raciocínio aproximado:
+- regras de inferência com proposições fuzzy
+- proposição fuzzy: representação de uma expressão em linguagem 
+natural
+	- são do tipo se-então
+	
+* Raciocínio fuzzy
+Exemplo: 
+	Se a temperatura está baixa, então aumente o aquecedor.
+	Se a temperatura está muito baixa, então aumente muito o aquecedor.
+
+	
+3) Raciocínio baseado em casos
+- caso: instância concreta do problema. Ajuda a propor soluções melhores
+- casos são uma boa amostragem dos tipos de problemas que o sistema deve
+resolver
+- automático ou interativo
+
+- descrição do caso -> solução do caso -> adaptação da solução
+- aprendizado baseado em casos
+
+- algoritmo k-NN: leva em consideração todos os atributos dos exemplos
+para calcular as distâncias
+
+- técnica de apadtação por reinstanciação: 
+
+
+4) Algoritmos Genéticos
+- imitar evolução natural 
+- grau de adaptação dos indivíduos do meio
+- representação do problema através de um conjunto de indivíduos
+	- indivíduo: solução potencial para o problema
+- processos de seleção, mutação e reprodução geram novos indivíduos
+- meta: após algumas gerações atingir uma geração elite, com soluções
+ótimas ao problema
+
+- população inicial + função de aptidão + operadores genéticos
+- indivíduos mais adaptados passam à geração seguinte
+- fitness: quão bem um indivíduo resolve o problema?
+- crossover: fusão das características dos pais
+- mutação: altera o indivíduo. Se o resltado for possitivo ele irá
+se disseminar
+
+* Algoritmo:
+- criar população
+- aplicar função de aptidão sobre cada indivíduo
+- criar novos indivíduos com os operadores genéticos
+- gerar nova população
+- iterar até satisfazer condição de parada
+
+* Características:
+- vantagem: fornecer soluções próxima à ótima, sem conhecer métodos que
+solucionem o problema
+- não exige conhecimento sobre como resolver o problema
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		

@@ -1,0 +1,62 @@
+Abordagem relacional:
+
+Considere uma base de dados acadêmica, contendo as seguintes tabelas:
+
+Base de dados:
+Depto(CodDepto,NomeDepto)
+- chave primária: CodDepto
+- chave estrangeira:
+
+Disciplina(CodDepto,NumDisc,NomeDisc,CreditosDisc)
+- chave primária: CodDepto,NumDisc
+- chave estrangeira: -
+
+PreReq(CodDepto,NumDisc,CodDeptoPreReq,NumDiscPreReq)
+- chave primária: CodDepto,NumDisc,CodDeptoPreReq,NumDiscPreReq
+- chave estrangeira: CodDepto, NumDisc, CodDeptoPreReq, NumDiscPreReq
+
+Turma(AnoSem,CodDepto,NumDisc,SiglaTur,CapacTur)
+- chave primária: AnoSem,CodDepto,NumDisc,SiglaTur
+- chave estrangeira: CodDepto
+
+Horario(AnoSem,CodDepto,NumDisc,SiglaTur,DiaSem,HoraIncio,
+NumHoras,CodPred,NumSala)
+- chave primária: AnoSem,CodDepto,NumDisc,SiglaTur,DiaSem,HoraIncio
+- chave estrangeira: AnoSem,CodDepto,NumDisc,SiglaTur
+
+Predio(CodPred,NomePred)
+- chave primária: CodPred
+- chave estrangeira: -
+
+Sala(CodPred,NumSala,CapacSala)
+- chave primária: CodPred,NumSala
+- chave estrangeira: CodPred
+
+Professor(CodProf,NomeProf,CodTit,CodDepto)
+- chave primária: CodProf
+- chave estrangeira: CodDepto, CodTit
+
+ProfTurma(AnoSem,CodDepto,NumDisc,SiglaTur,CodProf) 
+- chave primária: AnoSem,CodDepto,NumDisc,SiglaTur,CodProf
+* é tudo pois pode haver mais de um professor por turma
+- chave estrangeira: AnoSem,CodDepto,NumDisc,SiglaTur 
+
+Titulacao(CodTit,NomeTit)
+- chave primária: CodTit
+- chave estrangeira: -
+
+Observações sobre a base de dados:
+- NumDisc identifica a disciplina dentro de um departamento.
+- Uma disciplina pode ter várias disciplinas como pré-requisito e um 
+pré-requisito pode ser usado para várias disciplinas.
+- NumSala identifica a sala dentro de um prédio.
+- SiglaTur identifica uma turma de uma disciplina dentro de uma ano/
+semestre.
+- Uma turma pode ter vários professores e um professor pode ser professor 
+de várias turmas.
+
+Questões:
+- Identifique as chaves primárias das tabelas. (ok)
+- Identifique as chaves estrangeiras. (ok)
+- Construa um diagrama que representa o modelo lógico da base de dados 
+em questão. (ok)

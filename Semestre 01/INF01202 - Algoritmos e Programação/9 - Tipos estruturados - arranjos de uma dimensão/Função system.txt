@@ -1,0 +1,20 @@
+Configura as cores padrão de primeiro plano e plano de fundo do console:
+
+instrução -> system ("attr")
+
+attr -> Especifica os atributos de cor da saída do console
+
+Atributos de cor são especificados por DOIS dígitos hexadecimais. O primeiro
+corresponde à cor de plano de fundo; o segundo à cor de primeiro plano. Cada
+dígito pode ter apenas um dos seguintes valores:
+
+    0 = Preto        	8 = Cinza
+    1 = Azul         	9 = Azul claro
+    2 = Verde        	A = Verde claro
+    3 = Verde-água	B = Verde-água claro
+    4 = Vermelho    C = Vermelho claro
+    5 = Roxo         	D = Lilás
+    6 = Amarelo      E = Amarelo claro
+    7 = Branco       	F = Branco brilhante
+
+Exemplo: system ("71') ;fundo branco e texto em azul

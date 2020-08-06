@@ -1,0 +1,32 @@
+CREATE TABLE peca (
+    cod_peca CHAR (4) NOT NULL,
+    nome_peca VARCHAR (40) NOT NULL,
+    peso_peca INT2 NULL,
+    cor_peca VARCHAR (20) NULL,
+    cidade_peca VARCHAR (40) NULL,
+    CONSTRAINT peca_pk PRIMARY KEY (cod_peca)
+    ) ;
+
+CREATE TABLE fornec (
+    cod_fornec CHAR (4) NOT NULL,
+    nome_fornec VARCHAR (40) NOT NULL,
+    status_fornec INT2 NULL,
+    cidade_fornec VARCHAR (40) NULL,
+    CONSTRAINT fornec_pk PRIMARY KEY (cod_fornec)
+    );
+
+CREATE TABLE embarq (
+    cod_fornec CHAR (4) NOT NULL,
+    cod_peca CHAR (4) NOT NULL,
+    qtde_embarq INT2 NOT NULL,
+    CONSTRAINT embarq_pk PRIMARY KEY (cod_fornec, cod_peca),
+    CONSTRAINT embarq_peca_fk FOREIGN KEY (cod_peca)
+         REFERENCES peca
+         ON DELETE RESTRICT
+         ON UPDATE CASCADE,
+    CONSTRAINT embarq_fornec_fk FOREIGN KEY (cod_fornec)
+         REFERENCES fornec
+  	ON DELETE RESTRICT
+         ON UPDATE CASCADE);
+
+

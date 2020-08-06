@@ -1,0 +1,2636 @@
+1
+00:00:12,444 --> 00:00:18,701
+Hi, I'm Bob Cringely - and I'm here to tell you the incredible story
+of how personal computers took over the world.
+
+2
+00:00:18,701 --> 00:00:25,576
+Why am I telling you this at a basketball game? Well, I like
+the game - but mainly it's because of that guy down there.
+
+3
+00:00:29,358 --> 00:00:37,513
+His name is Paul Allen and everything you see here belongs to him
+-- the Portland Trailblazer's basketball team, their arena,
+
+4
+00:00:37,513 --> 00:00:39,104
+even the dancers.
+
+5
+00:00:40,290 --> 00:00:45,997
+Thanks to personal computers, he has $8 billion to spend
+on such toys.
+
+6
+00:00:47,028 --> 00:00:53,216
+Twenty years ago Allen and his high school friend, Bill Gates,
+ were running a two-man software company called Microsoft.
+
+7
+00:00:54,660 --> 00:00:59,560
+Today Allen is richer than God and Gates is richer than Allen.
+
+8
+00:01:01,810 --> 00:01:06,004
+Twenty years ago, young men like Paul Allen and Bill Gates 
+invented the personal computer
+
+9
+00:01:06,073 --> 00:01:10,886
+and in doing so launched a revolution that's changed the way
+we live, work and communicate.
+
+10
+00:01:10,955 --> 00:01:13,877
+It's hard to believe that twenty years ago there were 
+no personal computers,
+
+11
+00:01:13,946 --> 00:01:19,137
+now it's the third largest industry in the world, somewhere
+between energy production and illegal drugs
+
+12
+00:01:19,308 --> 00:01:27,181
+but the most amazing thing of all is that it happened by accident
+because a bunch of disenfranchised nerds wanted to
+impress their friends.
+
+13
+00:02:02,934 --> 00:02:08,021
+This is the story of how a handful of guys launched an
+industrial revolution.
+
+14
+00:02:08,296 --> 00:02:12,628
+How they changed the culture of business, how they made history.
+
+15
+00:02:12,766 --> 00:02:18,678
+I feel incredibly lucky to be at exactly the right place in Silicon Valley,
+
+16
+00:02:18,747 --> 00:02:25,416
+at exactly the right time historically where this invention has,
+has taken form.
+
+17
+00:02:26,345 --> 00:02:30,917
+It wasn't like we both thought it was going to go a long ways,
+it was like, we'll both do it for fun
+
+18
+00:02:31,192 --> 00:02:36,039
+and even though we're goin' to lose some money probably
+we'll just have been able to say we had a company.
+
+19
+00:02:37,346 --> 00:02:42,915
+Now all of us would get together and just hope we were right
+that the PC would become a big thing.
+
+20
+00:02:44,084 --> 00:02:51,131
+You know I stop and say wow the PC really has become part of the
+very fabric of the way people live
+
+21
+00:02:51,131 --> 00:02:56,322
+and we certainly surged with it. I used to stop and say
+hmmm pretty incredible ride.
+
+22
+00:03:02,682 --> 00:03:05,948
+Most of these people come from the place I call home,
+
+23
+00:03:06,051 --> 00:03:09,042
+the Silicon Valley, south of San Francisco, California.
+
+24
+00:03:09,076 --> 00:03:12,926
+Growing-up here near the electronics companies
+that give the place its name,
+
+25
+00:03:12,961 --> 00:03:19,320
+these founders of the PC revolution were for the most part
+middle class white kids from good suburban homes.
+
+26
+00:03:19,920 --> 00:03:23,530
+But it's not their homes we're interested in -- it's their garages.
+
+27
+00:03:29,310 --> 00:03:32,762
+This is my garage and this is all my junk.
+
+28
+00:03:32,865 --> 00:03:42,388
+I'm probably one of the few guys in Silicon Valley who
+actually has room in his garage for a car, 
+most everyone else seems to use theirs to start 
+computer companies and create great fortunes,
+
+29
+00:03:42,560 --> 00:03:52,460
+but I don't have a fortune - I'm a failure, I've written
+computer programmes that almost ran and I've designed 
+and built hardware devices that frankly didn't work at all
+
+30
+00:03:52,495 --> 00:04:00,870
+but I'm the ideal guy to tell the story of the personal computer
+business because I'm its premier gossip columnist and 
+everyone tells me all their secrets.
+
+31
+00:04:03,040 --> 00:04:07,130
+And this is my home where I write a gossip column for a
+computing magazine.
+
+32
+00:04:07,130 --> 00:04:09,130
+Sorry about the mess.
+
+33
+00:04:10,234 --> 00:04:16,731
+Institutions in constant change like the PC industry are driven
+by rumor and gossip and I thrive on both.
+
+34
+00:04:17,625 --> 00:04:24,480
+My electronic mail address is deluged with inside information
+about everything from product flaws to who's sleeping with whom.
+
+35
+00:04:25,920 --> 00:04:30,020
+What ties these gossipers together is a desire for truth.
+
+36
+00:04:30,500 --> 00:04:34,360
+These people and their love of technology have fueled 
+the PC revolution.
+
+37
+00:04:35,080 --> 00:04:37,250
+To understand them is to understand that revolution.
+
+38
+00:04:37,250 --> 00:04:39,250
+So let's go find some.
+
+39
+00:04:47,850 --> 00:04:52,910
+Meet Edwin Chin on a Saturday morning at the Weird Stuff Warehouse.
+
+40
+00:04:55,165 --> 00:05:00,940
+This could be 1976 or 1996 because there is always a new
+generation of techies like Edwin
+
+41
+00:05:00,975 --> 00:05:04,378
+who hear the calling. Most other kids are watching TV,
+
+42
+00:05:04,447 --> 00:05:05,650
+but not Edwin.
+
+43
+00:05:05,753 --> 00:05:14,176
+You know I've been interested in electronics and technology 
+as a hobby since I started when I was like six or seven you know.
+
+44
+00:05:14,245 --> 00:05:17,350
+How old are you now, Edwin?
+- Ten, right now.
+
+45
+00:05:19,410 --> 00:05:23,500
+It's no coincidence that the only woman in the vicinity looks bored,
+
+46
+00:05:23,561 --> 00:05:32,499
+because this is a boy thing -- the obsession of a particular type
+of boy who would rather struggle with an electronic box than
+with a world of unpredictable people.
+
+47
+00:05:32,533 --> 00:05:35,790
+We call them engineers, programmers, hackers, and techies,
+
+48
+00:05:35,790 --> 00:05:38,200
+but mainly we call them nerds.
+
+49
+00:05:38,893 --> 00:05:45,425
+I think a nerd is a person who uses the telephone 
+to talk to other people about telephones.
+
+50
+00:05:45,910 --> 00:05:50,970
+And a computer nerd therefore is somebody who uses
+a computer in order to use a computer.
+
+51
+00:05:55,463 --> 00:05:58,420
+And people have different degrees of passion and different 
+types of passion.
+
+52
+00:05:58,557 --> 00:06:04,883
+Some people like just live databases, like 5th normal form is just
+like nirvana, they just quest for it you know,
+
+53
+00:06:04,940 --> 00:06:06,940
+that's like what gets them up in the morning.
+
+54
+00:06:10,383 --> 00:06:12,410
+What do your friends think of you?
+
+55
+00:06:12,410 --> 00:06:14,852
+Boy, he's a nerd.
+
+56
+00:06:16,296 --> 00:06:20,110
+but I don't mind, I'm used to being called a nerd,
+
+57
+00:06:20,110 --> 00:06:23,240
+can't have other people stop your dreams.
+
+58
+00:06:24,615 --> 00:06:29,360
+And in Silicon Valley the dream is to grow up to become
+a boy like this...
+
+59
+00:06:31,903 --> 00:06:36,010
+Graham Spencer is chief programmer for Architext Software
+
+60
+00:06:36,166 --> 00:06:43,720
+six guys who graduated from Stanford University and started
+a company just because they like each other.
+
+61
+00:06:44,690 --> 00:06:51,670
+This is a modern-day startup, but at heart it's no different from
+PC pioneers like Apple, or Microsoft,
+
+62
+00:06:51,774 --> 00:06:53,630
+nerds who share a dream.
+
+63
+00:06:53,630 --> 00:06:56,036
+Their hobby is their business
+
+64
+00:06:56,036 --> 00:07:01,070
+and the culture they've created is identical to that of a
+thousand other technology companies.
+
+65
+00:07:01,606 --> 00:07:10,200
+First, they dumped the idea of nine to five. In this industry,
+you can work any 80 hours per week you like.
+
+66
+00:07:10,338 --> 00:07:15,975
+...my cap which I use to cover my eyes and sleep in
+the early morning while everybody is coming in.
+
+67
+00:07:16,044 --> 00:07:21,338
+We didn't even obey a 24 hour clock, we'd come in and
+programme for a couple of days straight.
+
+68
+00:07:21,820 --> 00:07:28,214
+We'd - you know, four or five of us, when it was time to eat
+we'd all get in our cars, kind of race over to the restaurant
+
+69
+00:07:28,351 --> 00:07:30,758
+and sit and talk about what we were doing, sometimes I'd get...
+
+70
+00:07:30,758 --> 00:07:34,471
+...excited talking about things, I'd forget to eat,
+but then you know, we'd just go back
+
+71
+00:07:34,471 --> 00:07:38,940
+and programme some more. It was us and our friends - 
+those were fun days.
+
+72
+00:07:50,559 --> 00:07:57,160
+Let's look in the refrigerator... Woah! We have
+coke and cold pizza.
+
+73
+00:07:57,160 --> 00:07:58,810
+I drink about two litres of coke a day.
+
+74
+00:07:58,810 --> 00:08:03,416
+Two litres of coke a day and do you like think of it as brain food?
+
+75
+00:08:03,554 --> 00:08:08,298
+It keeps me going you know, that and listening to heavy metal,
+and get caffeinated and hack.
+
+76
+00:08:13,592 --> 00:08:18,749
+I'd sit down in my room on the floor with sheets of paper spread
+ all around with my computer design I was working on.
+
+77
+00:08:18,886 --> 00:08:24,318
+And always I noticed that I was up pretty late at night and I had
+lots of cokes - it's just part of that life.
+
+78
+00:08:26,243 --> 00:08:34,081
+A combination of stale pizza and body odour and spilt cola
+kinda ground in to the rug.
+
+79
+00:08:35,869 --> 00:08:42,130
+I brought some spaghetti to work and then forgot to wash out the
+container for the last couple of days, maybe six or seven...
+
+80
+00:08:42,271 --> 00:08:46,457
+if I had to be honest. Ooh, that smells bad.
+
+81
+00:08:47,706 --> 00:08:53,406
+Eating, bathing, having a girlfriend, having an active social life
+
+82
+00:08:53,406 --> 00:09:00,365
+is incidental, it gets in the way of code time. Writing code
+is the primary force that drives our lives so
+
+83
+00:09:00,431 --> 00:09:04,540
+anything that interrupts that is is wasteful.
+
+84
+00:09:08,252 --> 00:09:12,000
+What is it about the internal logic of a computer
+that's so enticing?
+
+85
+00:09:12,494 --> 00:09:15,609
+For one thing, such logic CAN be understood,
+
+86
+00:09:15,609 --> 00:09:20,580
+as opposed to things that can't be understood at all,
+like the motivations of young women, say,
+
+87
+00:09:20,580 --> 00:09:22,170
+or of the French.
+
+88
+00:09:22,369 --> 00:09:23,827
+Let me explain...
+
+89
+00:09:24,890 --> 00:09:29,110
+Time for the Cringely crash course in basic computers,
+Part 1.
+
+90
+00:09:29,230 --> 00:09:30,985
+This is a mainframe computer,
+
+91
+00:09:31,184 --> 00:09:35,757
+all of these cabinets are one machine. In the old days
+all computers were this size
+
+92
+00:09:35,757 --> 00:09:37,945
+they were tended by engineers in white coats
+
+93
+00:09:37,945 --> 00:09:41,060
+a kind of priesthood who took their jobs very seriously.
+
+94
+00:09:41,457 --> 00:09:46,163
+Now all computers work pretty much the same, whether
+ it's a giant that serves two thousand users like this one,
+
+95
+00:09:46,163 --> 00:09:48,748
+or a little notebook that serves only me.
+
+96
+00:09:48,748 --> 00:09:52,725
+They process numerical data - adding, multiplying,
+comparing,
+
+97
+00:09:52,791 --> 00:09:55,906
+the fact is if you can quantify it a computer can handle it.
+
+98
+00:09:55,906 --> 00:09:58,888
+It's the emotional stuff they don't know what to do with.
+
+99
+00:09:59,352 --> 00:10:04,640
+The data must be put into a special binary code
+consisting only of ones and zeros.
+
+100
+00:10:04,920 --> 00:10:10,023
+And you have to give the computer instructions, also
+in code, to tell it exactly what to do wth the data
+
+101
+00:10:10,023 --> 00:10:14,199
+and in what order. These instructions are called a program.
+
+102
+00:10:14,710 --> 00:10:19,633
+In the early days, you put in the instructions by
+flipping switches or loaded them from paper tape.
+
+103
+00:10:19,633 --> 00:10:22,086
+This was called machine language.
+
+104
+00:10:22,285 --> 00:10:24,339
+It made computers a pain to use.
+
+105
+00:10:24,538 --> 00:10:28,713
+Even worse, every type of computer spoke a different
+machine language.
+
+106
+00:10:28,912 --> 00:10:33,910
+The ENIAC could compute the thirty second trajectory
+of a shell in twenty seconds.
+
+107
+00:10:34,215 --> 00:10:38,059
+Operators required two days to program it do so.
+
+108
+00:10:39,318 --> 00:10:43,030
+Then a US Navy captain named Grace Hopper 
+solved the problem.
+
+109
+00:10:43,060 --> 00:10:48,970
+She invented a computer language, English words that
+the computer itself could translate into binary code.
+
+110
+00:10:49,525 --> 00:10:53,501
+Now users could type whole lists of instructions
+into a computer
+
+111
+00:10:53,501 --> 00:10:55,755
+rather than flipping those damned switches.
+
+112
+00:10:56,020 --> 00:10:59,690
+Like most things having to do with computers,
+that first language had a silly name - COBOL.
+
+113
+00:10:59,690 --> 00:11:05,498
+It was followed by other languages like FORTRAN and BASIC
+and they all made computing just a bit more user-friendly.
+
+114
+00:11:05,710 --> 00:11:10,650
+So when some nerd tells you he's been up all night
+programming or writing software or hacking code,
+
+115
+00:11:10,650 --> 00:11:15,904
+what he really means is he's been typing long lists of
+instructions into his computer.
+
+116
+00:11:17,958 --> 00:11:22,796
+Mainframe computers were far from personal. They sat
+in big air-conditioned rooms
+
+117
+00:11:22,796 --> 00:11:25,381
+ at insurance companies, phone companies, and the bank,
+
+118
+00:11:25,580 --> 00:11:29,623
+and their main function was to get us confused with
+some other guy named Cringely,
+
+119
+00:11:29,623 --> 00:11:32,009
+who was a deadbeat and had a criminal record.
+
+120
+00:11:33,202 --> 00:11:36,715
+Eventually computer terminals did begin to
+appear in some schools,
+
+121
+00:11:36,715 --> 00:11:38,637
+but most of us paid no attention.
+
+122
+00:11:39,035 --> 00:11:45,464
+But there was usually one kid who did pay attention, 
+falling in love with the digital purity of those ones and zeros.
+
+123
+00:11:46,060 --> 00:11:47,253
+He was the nerd.
+
+124
+00:11:47,510 --> 00:11:53,650
+And I took this book home that described the PDP 8 computer
+and it just...oh, it was just like a bible to me.
+
+125
+00:11:53,947 --> 00:11:58,470
+I mean, all these things that for some reason I'd fallen
+in love with, like you might fall in love with...
+
+126
+00:11:58,470 --> 00:12:02,431
+a card game called Magic, or you might fall in love with doing
+crossword puzzles or something else,
+
+127
+00:12:02,431 --> 00:12:07,932
+or playing a musical instrument, I fell in love with these
+little descriptions of computers on their insides,
+
+128
+00:12:07,998 --> 00:12:11,975
+and it was a little mathematics, I could work out some
+problems on paper and solve it and see how it's done,
+
+129
+00:12:12,041 --> 00:12:16,084
+and I could come up with my own solutions 
+and feel good inside.
+
+130
+00:12:16,900 --> 00:12:22,712
+So you would keyboard these commands in and then you
+would wait for a while and then the thing would go dadadada...
+
+131
+00:12:22,712 --> 00:12:24,170
+and it would tell you something out,
+
+132
+00:12:25,959 --> 00:12:29,870
+but even with that it was still remarkable - especially for 
+a ten year old,
+
+133
+00:12:29,910 --> 00:12:41,005
+that you could write a programme in Basic let's say or Fortran
+and actually this machine would sort of take your idea
+
+134
+00:12:41,071 --> 00:12:47,632
+and it would sort of execute your idea and
+give you back some results
+
+135
+00:12:47,850 --> 00:12:52,206
+and if they were the results that you predicted your program
+really worked it was an incredibly thrilling experience.
+
+136
+00:12:54,061 --> 00:13:00,159
+ Nerds wanted their own computers right from the beginning,
+but it took a technological breakthrough to make that possible.
+
+137
+00:13:01,021 --> 00:13:07,648
+This is it, the chip, the microprocessor, this is what allows you
+to have a mainframe computer on your desk.
+
+138
+00:13:08,245 --> 00:13:13,415
+In the 1950s mainframes were as big as this garage and that's
+because they were filled with thousands of these,
+
+139
+00:13:13,415 --> 00:13:15,535
+vacuum tubes or valves.
+
+140
+00:13:15,734 --> 00:13:19,645
+Eventually the valves were made much smaller and 
+replaced with transistors,
+
+141
+00:13:19,645 --> 00:13:22,910
+still too big however to make a computer that could fit 
+on your desk.
+
+142
+00:13:23,150 --> 00:13:29,122
+What that took was further miniaturisation. Here we have a single
+piece of silicon etched with thousands of transistors.
+
+143
+00:13:29,321 --> 00:13:34,690
+This microprocessor holds more than a million transistors and
+that's the secret of the personal computer
+
+144
+00:13:34,756 --> 00:13:38,203
+and that's why they call it silicon valley not computer valley.
+
+145
+00:13:42,047 --> 00:13:46,023
+These are the people who invented the microprocessor -- Intel.
+
+146
+00:13:48,277 --> 00:13:53,712
+Intel was started 28 years ago by a handful of guys after a row
+ with their old boss.
+
+147
+00:13:54,242 --> 00:13:58,616
+Their microprocessors today power 85 percent 
+of the world's computers.
+
+148
+00:14:01,334 --> 00:14:06,967
+Intel not only invented the chip, they are responsible for the
+laid-back Silicon Valley working style.
+
+149
+00:14:07,365 --> 00:14:09,486
+Everyone was on a first-name basis.
+
+150
+00:14:09,486 --> 00:14:13,463
+There were no reserved parking places, no offices, only cubicles.
+
+151
+00:14:13,794 --> 00:14:17,439
+It's still true today. Here's the chairman's cubicle.
+
+152
+00:14:17,903 --> 00:14:21,416
+Knock, knock I knocked at the door but there's no door.
+
+153
+00:14:22,012 --> 00:14:28,441
+Gordon Moore is one of the Intel founders worth $3 billion.
+With money like that, I'd have a door.
+
+154
+00:14:28,707 --> 00:14:34,473
+In a business like this the people with the power are the ones 
+that have the understanding of what's going on,
+
+155
+00:14:34,473 --> 00:14:36,140
+not necessarily the ones on top.
+
+156
+00:14:36,461 --> 00:14:41,366
+And it's very important that those people that have the knowledge
+are the ones that make the decisions.
+
+157
+00:14:41,962 --> 00:14:48,126
+So we set up something where everyone who had the knowledge
+had an equal say in what was going on.
+
+158
+00:14:50,181 --> 00:14:56,344
+Intel's microprocessors kept getting more powerful. 
+They soon had enough horsepower to run a whole computer.
+
+159
+00:14:56,610 --> 00:14:59,791
+Only Intel didn't appreciate the brilliance of their own product,
+
+160
+00:14:59,990 --> 00:15:03,850
+seeing it as useful mainly for powering calculators 
+or traffic lights.
+
+161
+00:15:04,696 --> 00:15:10,859
+Intel had all the elements necessary to invent the PC business,
+but they just didn't get it.
+
+162
+00:15:11,588 --> 00:15:14,041
+Lucky for us, someone did.
+
+163
+00:15:16,228 --> 00:15:20,271
+This is the chip that launched the personal computer revolution.
+
+164
+00:15:26,501 --> 00:15:29,417
+This is the magazine that announced it.
+
+165
+00:15:30,710 --> 00:15:38,100
+In January 1975 featured on the cover was the world's first 
+personal computer the Altair 8800.
+
+166
+00:15:38,540 --> 00:15:43,402
+It was the crazy idea of an ex-airforce officer from Georgia:
+Ed Roberts.
+
+167
+00:15:44,529 --> 00:15:50,162
+If you look at it you know it was kind of grandiose
+almost megalomaniac kind of scheme you know
+
+168
+00:15:50,825 --> 00:15:55,663
+and right now I couldn't do it because I could see right off
+there's no way you could do this.
+
+169
+00:15:57,188 --> 00:16:02,888
+But at that time you know we just lacked the eh the benefits
+of age and experience.
+
+170
+00:16:02,888 --> 00:16:04,412
+We didn't know we couldn't do it.
+
+171
+00:16:07,328 --> 00:16:13,956
+20 years after Ed Roberts' flash of brilliance, this exhibit is being
+held to celebrate the anniversary of the Altair.
+
+172
+00:16:14,910 --> 00:16:20,385
+Like every other PC pioneer, Ed built his computer just because
+he wanted one to play with.
+
+173
+00:16:20,700 --> 00:16:24,428
+There were some of us that lusted after computers
+really at that time.
+
+174
+00:16:25,025 --> 00:16:28,140
+All the computers in the world tended to be in big centres
+
+175
+00:16:28,338 --> 00:16:34,436
+and you had to get permission to get close to them, and you know,
+nobody had access to computers.
+
+176
+00:16:34,569 --> 00:16:37,220
+And the idea that you could have your own computer and do
+whatever you wanted to with it,
+
+177
+00:16:37,220 --> 00:16:39,937
+whenever you wanted to, was fantastic.
+
+178
+00:16:44,670 --> 00:16:49,945
+And where was this all happening? It was far from Silicon Valley,
+Intel, or IBM.
+
+179
+00:16:50,475 --> 00:16:57,236
+Out in the desert near the airport in Albuquerque, New Mexico,
+Ed Roberts ran a calculator company called MITS.
+
+180
+00:16:57,766 --> 00:17:01,875
+Having an ugly building wasn't it's only problem:
+MITS was going bankrupt.
+
+181
+00:17:02,370 --> 00:17:07,973
+Nobody was buying calculators and Ed needed $65,000
+just to stay afloat.
+
+182
+00:17:08,370 --> 00:17:11,419
+And we went to the bank, we had a late night meeting,
+
+183
+00:17:11,419 --> 00:17:16,324
+and the issue was whether we closed MITS down or they loaned us
+an additional sixty-five thousand
+
+184
+00:17:17,070 --> 00:17:21,891
+and I was asked how many machines that I think we would sell
+in the next year after it was introduced,
+
+185
+00:17:22,421 --> 00:17:25,868
+and I said eight hundred, which was considered
+a wild-eyed optimist at that.
+
+186
+00:17:25,868 --> 00:17:30,110
+Within a month after it was introduced we were getting 
+two hundred and fifty orders a day.
+
+187
+00:17:30,772 --> 00:17:34,219
+The Altair wasn't even a computer, it was a computer KIT.
+
+188
+00:17:34,617 --> 00:17:37,930
+- Wow this is a pretty well equipped machine.
+
+189
+00:17:37,930 --> 00:17:45,221
+You had to build it yourself and even then it usually didn't work. 
+Still, the demand was amazing.
+
+190
+00:17:45,619 --> 00:17:50,656
+ There were actually people that came to MITS, a couple of people
+with camper trailers 
+
+191
+00:17:50,656 --> 00:17:56,621
+and camped out inthe parking lot waiting for their machines. 
+I mean, they were so eager.
+
+192
+00:17:56,940 --> 00:18:01,393
+I mean I think everybody had sort of daydream, 
+Ed Walter Mitteyed about owning a computer.
+
+193
+00:18:01,525 --> 00:18:06,430
+The surprise was that it would be possible for the
+average college student, for example,
+
+194
+00:18:06,450 --> 00:18:10,539
+who was living on bare subsistence, to actually buy a computer.
+
+195
+00:18:11,270 --> 00:18:17,540
+ This is what really amazed me was that people were so,
+there was a sort of pent up demand
+
+196
+00:18:17,540 --> 00:18:20,083
+for having your own computer.
+
+197
+00:18:21,150 --> 00:18:24,458
+And if it could be that cheap what a wonderful thing.
+
+198
+00:18:28,832 --> 00:18:33,206
+This is an Altair computer - the first personal computer. 
+
+199
+00:18:33,604 --> 00:18:39,437
+And not just any Altair - this is Altair serial number 2,
+the second one made.
+
+200
+00:18:39,820 --> 00:18:45,136
+The first Altair made was sent off to be photographed 
+at a magazine and was lost in the mail.
+
+201
+00:18:45,240 --> 00:18:48,850
+So this is the oldest personal computer in the world.
+
+202
+00:18:49,820 --> 00:18:53,753
+Pretty historic junk but the question is what do you do with it?
+
+203
+00:18:54,030 --> 00:18:58,970
+I mean it has a front panel with switches that you can click
+back and forth and some lights
+
+204
+00:18:58,970 --> 00:19:07,273
+but in the back there's no place to connect a keyboard, there's no
+place to connect a monitor, there's no place to connect a printer,
+
+205
+00:19:08,010 --> 00:19:11,980
+in fact there practically nothing at all that you can really do 
+with this thing
+
+206
+00:19:11,980 --> 00:19:16,950
+but back then 1975, the people who had it were thrilled.
+
+207
+00:19:23,060 --> 00:19:26,627
+The nerds formed clubs to talk about their new toy.
+
+208
+00:19:26,892 --> 00:19:32,989
+One of the first was the Homebrew Computer Club, which met on
+Wednesday evenings in a hall rented from Stanford University
+
+209
+00:19:32,989 --> 00:19:34,182
+in Silicon Valley.
+
+210
+00:19:34,580 --> 00:19:39,484
+Presiding over near-anarchy was Lee Felsenstein who pretended
+to be in charge.
+
+211
+00:19:39,617 --> 00:19:42,401
+And I would start the meeting by making a horrendous loud noise
+
+212
+00:19:43,594 --> 00:19:46,643
+because everyone was talking and I had to get some attention somehow.
+
+213
+00:19:46,643 --> 00:19:53,005
+And I would use it to call upon the person in question.
+I'd make threatening gestures with it.
+
+214
+00:19:55,710 --> 00:20:01,490
+Most of us were in the electronics industry to a certain extent, 
+there was also a stratem of physicians
+
+215
+00:20:01,754 --> 00:20:06,128
+and there were a lot radio amateurs for instance finding a new 
+technology that wasn't stale.
+
+216
+00:20:07,270 --> 00:20:12,756
+But most of us were at a sort of middle level or downwards.
+
+217
+00:20:12,756 --> 00:20:17,793
+We saw ourselves as crazed ignored geniuses or possibly geniuses
+
+218
+00:20:17,926 --> 00:20:22,698
+but at least we could each hope to get our hands on a computer 
+of our own.
+
+219
+00:20:26,012 --> 00:20:33,700
+The very uselessness of the Altair is what drove the hobbyists together.
+Roger Melen and Harry Garland started an early computer company.
+
+220
+00:20:33,833 --> 00:20:38,590
+They came here to meet others and to figure out just what the heck
+could be done with this new toy
+
+221
+00:20:39,190 --> 00:20:42,581
+a solution in search of a problem.
+
+222
+00:20:42,800 --> 00:20:44,835
+The Altair was tedious to use. 
+
+223
+00:20:45,100 --> 00:20:50,269
+At first, the only way that data and instructions could be given 
+to the computer, was by flipping switches.
+
+224
+00:20:50,402 --> 00:20:52,921
+Take something trivial like 2+2.
+
+225
+00:20:53,186 --> 00:20:58,223
+Each 2 needed eight different switches to be flipped, then a ninth
+switch was used to load them all.
+
+226
+00:20:58,223 --> 00:21:06,044
+'And' required another nine switches. The answer 4 was if the third
+light from the left turned on. Eureka!
+
+227
+00:21:06,044 --> 00:21:12,009
+So if you had a program that was a hundred bytes long you had
+to go this procedure a hundred times to load that in the memory.
+
+228
+00:21:12,009 --> 00:21:13,467
+- It took a long time.
+
+229
+00:21:13,864 --> 00:21:17,709
+And what happened if you lost power or if you lost
+your way in the middle?
+
+230
+00:21:17,841 --> 00:21:19,299
+You cried.
+
+231
+00:21:20,492 --> 00:21:24,602
+The Altair may have been frustrating, but it drove the nerds 
+to experiment,
+
+232
+00:21:24,734 --> 00:21:30,169
+finding real uses for the useless box, turning it from a curiosity 
+to a computer.
+
+233
+00:21:30,832 --> 00:21:37,327
+Steve Dumpier set up an Altair, ehm laboriously keyed a program
+into it.
+
+234
+00:21:37,725 --> 00:21:44,352
+Somebody knocked a plug out of the wall and he had to do that 
+all over again but nobody knew what this was about.
+
+235
+00:21:44,617 --> 00:21:47,666
+After all, was it just going to sit and flash its lights? No.
+
+236
+00:21:48,196 --> 00:21:51,245
+You put a little eh transistor radio next to the Altair
+
+237
+00:21:51,643 --> 00:21:56,710
+and he would by manipulating the length of loops in the sofware,
+could play tunes.
+
+238
+00:21:56,880 --> 00:22:02,380
+The radio began playing 'Fool on the Hill'....Da da da, da da da....
+
+239
+00:22:02,513 --> 00:22:09,936
+and the tinny little tunes that you could tell were coming from the
+ noise that the computer was generated being picked up by the radio.
+
+240
+00:22:10,250 --> 00:22:12,985
+Everybody rose and applauded.
+
+241
+00:22:13,250 --> 00:22:19,745
+I proposed that he receive the stripped Philips Screw Award for 
+finding a use for something previously thought useless.
+
+242
+00:22:20,250 --> 00:22:22,900
+But I think everybody was too busy applauding to even hear me.
+
+243
+00:22:23,456 --> 00:22:28,229
+It was a very exciting thing, it was probably the first thing 
+the Altair actually did.
+
+244
+00:22:31,145 --> 00:22:39,231
+Turning the Altair into a useful tool required a programming language
+so users could type their programs in rather than flipping switches.
+
+245
+00:22:39,496 --> 00:22:44,820
+What it needed was a version of some big computer language 
+like BASIC, only modified for the PC.
+
+246
+00:22:44,820 --> 00:22:50,498
+This was called a BASIC interpreter, but it didn't yet exist because
+the experts all thought
+
+247
+00:22:50,498 --> 00:22:55,137
+that not even BASIC was basic enough to fit inside the tiny
+Altair memory.
+
+248
+00:22:55,137 --> 00:22:57,789
+Yet again the experts were wrong.
+
+249
+00:22:58,550 --> 00:23:05,079
+Here comes the guy who solved the problem. 
+Twenty years after finishing the first microcomputer BASIC,
+
+250
+00:23:05,344 --> 00:23:08,526
+Paul Allen is returning to Albuquerque for a celebration of that event,
+
+251
+00:23:08,910 --> 00:23:13,130
+this time with his $15 million jet and three foot red carpet.
+
+252
+00:23:15,949 --> 00:23:20,480
+At a time when I was killing brain cells, this guy was founding 
+an empire.
+
+253
+00:23:23,130 --> 00:23:28,011
+He has come to eat rubber chicken in honor of the Altair's 
+20th anniversary.
+
+254
+00:23:28,409 --> 00:23:30,265
+I'd like to introduce to you - Paul Allen.
+
+255
+00:23:38,180 --> 00:23:42,858
+Allen co-founded Microsoft with his younger buddy from high school,
+Bill Gates.
+
+256
+00:23:42,990 --> 00:23:48,955
+One day in Boston, I was in Harvard Square I saw a cover of 
+Popular Electronics with this thing that looked like
+
+257
+00:23:48,955 --> 00:23:53,595
+what I had been imagining, and so I grabbed it off the shelf, 
+I looked at it and I bought it and
+
+258
+00:23:53,860 --> 00:24:00,350
+I ran back to Bill's dorm, and I think he was probably playing poker 
+that night and usually losing money at that point. 
+
+259
+00:24:00,350 --> 00:24:05,290
+One of the few times when that's been the case.
+
+260
+00:24:05,790 --> 00:24:11,070
+Paul showed that to me and then okay, here was a company 
+that would be needing software.
+
+261
+00:24:11,755 --> 00:24:16,129
+And he said OK we gotta call these guys up and see if this thing's 
+for real.
+
+262
+00:24:16,130 --> 00:24:22,757
+We realised that things were starting to happen, and just because 
+we'd had a vision for a long time of where this chip could go,
+
+263
+00:24:22,990 --> 00:24:24,745
+what it could mean er,
+
+264
+00:24:24,745 --> 00:24:30,313
+that didn't mean the industry was going to wait for us while I stayed 
+and - and finished my Degree at Harvard.
+
+265
+00:24:30,578 --> 00:24:36,278
+So called up Ed you know, we told him we've got this Basic and
+it's you know just for your machine, and it's, you know,
+
+266
+00:24:36,278 --> 00:24:39,592
+not that far from being done, and we'd like to come
+out and show it to you.
+
+267
+00:24:39,592 --> 00:24:43,502
+So we created this BASIC interpreter. Paul took the paper tape er, and
+
+268
+00:24:44,297 --> 00:24:51,257
+and flew out. In fact, the night before, he - he got some sleep while
+I double checked everything to make sure
+
+269
+00:24:51,522 --> 00:24:53,709
+that we had er, had it all right.
+
+270
+00:24:53,908 --> 00:24:57,421
+But I had no idea what it was really going to be like to try to 
+run the software.
+
+271
+00:24:57,421 --> 00:25:00,810
+It had never been run on an actual computer before.
+
+272
+00:25:01,265 --> 00:25:03,950
+He was very nervous about whether this would actually work.
+
+273
+00:25:04,446 --> 00:25:10,013
+And then he got to the office and we all gathered around him 
+and he put his fingers on the switches
+
+274
+00:25:10,013 --> 00:25:14,670
+and he loaded BASIC with paper tape into the Altair.
+
+275
+00:25:14,670 --> 00:25:19,359
+I was just I was so nervous....this is just....it's not going to work 
+and it worked.
+
+276
+00:25:19,425 --> 00:25:23,269
+And it came up, and it could do a few little simple things.
+
+277
+00:25:23,402 --> 00:25:26,517
+And it was amazing when Paul called me up and said the thing 
+had worked the first time.
+
+278
+00:25:26,517 --> 00:25:28,969
+And of course, it was incredibly fast.
+
+279
+00:25:29,101 --> 00:25:34,420
+And it printed out memory size and I think Bill said 
+"it printed something!". So I said yeah, yeah.
+
+280
+00:25:35,133 --> 00:25:38,712
+Oh, that was - that was unbelievable. The fact that it really worked
+
+281
+00:25:38,712 --> 00:25:41,429
+er, was - was - was a breakthrough.
+
+282
+00:25:41,959 --> 00:25:48,919
+Maybe there wouldn't be a Microsoft if the screen hadn't come alive,
+who knows, it might all be quite different.
+
+283
+00:25:55,347 --> 00:25:59,110
+After the demo succeeded, Bill forgot about finishing university.
+
+284
+00:25:59,457 --> 00:26:02,174
+Afraid of missing his chance to dominate the new industry,
+
+285
+00:26:02,241 --> 00:26:06,350
+he joined Allen in what was then the the center of world 
+microcomputing research
+
+286
+00:26:06,615 --> 00:26:10,658
+among the sleezy bars and gas stations of Albuquerque, New Mexico.
+
+287
+00:26:14,104 --> 00:26:18,479
+And they lived across the street from MITS in the Sundowner Motel,
+
+288
+00:26:18,611 --> 00:26:22,389
+and the prostitutes and the drug dealers out on the corner,
+
+289
+00:26:22,455 --> 00:26:31,270
+and they were writing BASIC for the Altair computer, and gradually
+ they actually started Microsoft here in Albuquerque.
+
+290
+00:26:31,270 --> 00:26:36,970
+We hired some of our high school friends basically to come down and
+
+291
+00:26:38,031 --> 00:26:40,350
+eh stay with us in our apartment, which became very crowded.
+
+292
+00:26:40,615 --> 00:26:46,846
+We were pretty young. We started when I was 19 and so we just had
+a lot of - a lot of energy.
+
+293
+00:26:47,310 --> 00:26:54,203
+They worked really hard. They listened to really loud music, 
+I could hardly stand to go to the software room sometimes
+
+294
+00:26:54,269 --> 00:26:58,690
+because the music would be banging off the walls, mostly acid rock.
+
+295
+00:27:01,957 --> 00:27:08,784
+You know we'd usually go out, eat pizzas and then go out and watch
+action movies.
+
+296
+00:27:12,827 --> 00:27:19,720
+They would work all night long, and there were days when Bill Gates
+would be sleeping on the floor in the software lab.
+
+297
+00:27:19,820 --> 00:27:25,486
+Sometimes it would be Bill and these two other guys all,
+you know, sitting on tables around the apartment
+
+298
+00:27:25,486 --> 00:27:29,529
+with stacks and stacks of paper writing, converting the BASIC 
+for the 8080.
+
+299
+00:27:30,854 --> 00:27:35,361
+I still know the source code by heart, and that was er, er,
+
+300
+00:27:35,361 --> 00:27:40,001
+a work of love, you know, we just kept tuning and tuning that thing.
+
+301
+00:27:40,001 --> 00:27:42,983
+And - and so that kind of craftsmanship paid off.
+
+302
+00:27:47,160 --> 00:27:51,798
+BASIC let the Altair be used for both fun stuff and real work.
+
+303
+00:27:52,196 --> 00:27:58,120
+People attached terminals to the computer and began writing games,
+word processors, and accounting programs.
+
+304
+00:27:58,625 --> 00:28:03,540
+Most of us didn't notice but soon there was thriving industry
+for enthusiasts.
+
+305
+00:28:03,662 --> 00:28:08,832
+By the end of 1975, dozens of other companies 
+were building microcomputers.
+
+306
+00:28:10,170 --> 00:28:13,405
+We created an industry and I think that goes completely unnoticed.
+
+307
+00:28:13,660 --> 00:28:18,773
+I mean there was nothing - every aspect of the industry when you talk
+about software, hardware, application stuff,
+
+308
+00:28:18,773 --> 00:28:21,159
+dealerships, you name it, it was all in a mess.
+
+309
+00:28:21,159 --> 00:28:24,142
+It was a wild time. It was a very exciting time.
+
+310
+00:28:24,473 --> 00:28:31,698
+and the first user convention - where we got people to come in and 
+tell us what they were doing, what they were excited about,
+
+311
+00:28:32,029 --> 00:28:39,320
+and other companies like Processor Technology or Imsai or Comemco
+got going as add-on companies.
+
+312
+00:28:39,320 --> 00:28:44,821
+These companies are long-forgotten, but they were the - 
+the humble beginnings of the - of the PC industry.
+
+313
+00:28:46,809 --> 00:28:52,443
+Left in the hands of those early hobbyists the PC might never have
+made it to the shopping mall.
+
+314
+00:28:52,708 --> 00:28:56,180
+Reaching the wider market required a different type of vision.
+
+315
+00:28:56,552 --> 00:29:02,649
+Enter the flower children of California, who thought the PC was, 
+well, groovy.
+
+316
+00:29:13,188 --> 00:29:17,695
+Remember that the Sixties happened in the early Seventies, right,
+so you have to remember that and that's sort of when I came of age.
+
+317
+00:29:17,761 --> 00:29:23,040
+So I saw a lot of this and to me the spark of that
+
+318
+00:29:23,527 --> 00:29:30,089
+was that there was something beyond sort of what you see every day.
+
+319
+00:29:33,535 --> 00:29:38,220
+It's the same thing that causes people to want to be 
+poets instead of bankers.
+
+320
+00:29:38,837 --> 00:29:46,194
+And I think that's a wonderful thing. And I think that that same spirit
+can be put into products,
+
+321
+00:29:46,459 --> 00:29:50,237
+and those products can be manufactured and given to people 
+and they can sense that spirit.
+
+322
+00:29:50,630 --> 00:29:54,840
+To help you understand all this, I will now take off my clothes.
+
+323
+00:29:55,804 --> 00:29:58,820
+- And he says well frame relay is scaleable.
+
+324
+00:29:59,185 --> 00:30:03,270
+Jim Warren knows better than most what the hippy movement 
+did for the PC.
+
+325
+00:30:03,559 --> 00:30:07,271
+A sixties radical himself, he staged the West Coast Computer Faire
+
+326
+00:30:07,271 --> 00:30:10,260
+for a time the biggest computer show in the world.
+
+327
+00:30:10,585 --> 00:30:15,224
+The Faire was where the PC really arrived. It's also where Jim got rich.
+
+328
+00:30:15,754 --> 00:30:18,803
+- So eh Jim is this where you hold all your meetings?
+
+329
+00:30:19,201 --> 00:30:23,641
+- Uhm as many as possible - sure why not.
+
+330
+00:30:23,973 --> 00:30:26,889
+- This is how silicon vallye entrepreneurs conduct business?
+
+331
+00:30:28,214 --> 00:30:32,721
+Believe it or not, Jim once taught mathematics at a 
+Catholic girls school.
+
+332
+00:30:36,102 --> 00:30:40,343
+Jim was immediately fascinated by the PC like many Bay Area hippies.
+
+333
+00:30:40,730 --> 00:30:44,710
+The California counter culture was crucial to the PC's development.
+
+334
+00:30:44,710 --> 00:30:48,695
+And the whole spirit there was working together, was sharing.
+
+335
+00:30:48,761 --> 00:30:55,985
+You shared your dope, you shared your bed, you shared your life, 
+you shared your hopes.
+
+336
+00:30:57,720 --> 00:31:01,420
+And a whole bunch of us had the same community spirit
+
+337
+00:31:01,420 --> 00:31:04,071
+and that permeated the whole Home Brew Computer Club.
+
+338
+00:31:04,203 --> 00:31:09,638
+As soon as somebody would solve a problem they'd come running
+down to the Home Brew Computer Club's next meeting and say:
+
+339
+00:31:09,638 --> 00:31:12,820
+hey everybody you know that problem that all of us 
+have been trying to figure out how to solve,
+
+340
+00:31:12,820 --> 00:31:15,139
+here's the solution, isn't this wonderful?
+
+341
+00:31:15,139 --> 00:31:16,134
+Aren't I a great guy?
+
+342
+00:31:16,399 --> 00:31:22,099
+And it's my contention that that is a major component of why 
+Silicon Valley was able to
+
+343
+00:31:22,231 --> 00:31:27,798
+develop the technology as rapidly as it did, 
+because we were all sharing - everybody won!
+
+344
+00:31:29,058 --> 00:31:32,372
+Out of this creative show-and-tell came Apple Computer,
+
+345
+00:31:32,637 --> 00:31:34,890
+the first mass market PC company.
+
+346
+00:31:35,354 --> 00:31:40,600
+The Apple founders, a couple of recent graduates from 
+Homestead High were regulars at Homebrew meetings.
+
+347
+00:31:41,187 --> 00:31:43,109
+Steve Wozniak was the technical wizard
+
+348
+00:31:43,241 --> 00:31:48,013
+and Steve Jobs was the visionary who saw microcomputers 
+as a possible business.
+
+349
+00:31:49,273 --> 00:31:51,320
+The first Apple computer was primitive.
+
+350
+00:31:52,123 --> 00:31:55,420
+It was cobbled together by Woz to impress his friends 
+at the Hombrew meetings.
+
+351
+00:31:56,298 --> 00:31:59,281
+Everybody was interested in computers so I started getting
+a crowd around me
+
+352
+00:31:59,546 --> 00:32:02,595
+because even although I was too shy to raise my hand 
+and say anything in a club meeting
+
+353
+00:32:02,860 --> 00:32:09,289
+after the club meetings I would put my computer that I had built and
+every week it had a little bit more working on it too
+
+354
+00:32:09,620 --> 00:32:13,199
+but I would set it down and let people type on the keyboard 
+and I would explain what's in it
+
+355
+00:32:13,199 --> 00:32:16,049
+If they would come up to me and ask the question I can answer
+
+356
+00:32:16,314 --> 00:32:21,484
+eh you know nowadays I would have the ability to tell them what it is
+you know and be a little bit more promotional
+
+357
+00:32:21,484 --> 00:32:23,870
+but back then I could only answer questions that they asked me
+
+358
+00:32:23,936 --> 00:32:26,322
+but a kinda group started gathering around me.
+
+359
+00:32:26,455 --> 00:32:29,172
+And Steve Jobs saw that I had a lot of interest around me at the club
+
+360
+00:32:29,238 --> 00:32:30,763
+and he said "let's start selling it"
+
+361
+00:32:31,227 --> 00:32:37,987
+and let's make this company. He came up with the name Apple
+and eh and eh that's how it started.
+
+362
+00:32:42,096 --> 00:32:46,736
+Apple was at best a funky company...started by a couple of 
+teenage hackers who
+
+363
+00:32:46,736 --> 00:32:53,761
+had previously been working as Alice in Wonderland characters in a
+local shopping mall and they started it in this garage right here.
+
+364
+00:32:54,358 --> 00:32:59,196
+The first Apple computer was built here, now there are more than
+ten million in use around the world.
+
+365
+00:32:59,329 --> 00:33:02,775
+And I was there - well for a short time I was an employee of 
+Apple Computer,
+
+366
+00:33:03,106 --> 00:33:07,216
+employee number 12 and one day I helped move materials
+out of this garage.
+
+367
+00:33:07,348 --> 00:33:13,247
+At the time Steve Jobs said that the company was short of loot
+so he offered to pay me in company shares,
+
+368
+00:33:13,380 --> 00:33:18,218
+but I held out for the money - 
+my mother still reminds me of that incident.
+
+369
+00:33:19,411 --> 00:33:22,990
+The Apple 1 was even less of a computer than the Altair
+
+370
+00:33:23,851 --> 00:33:27,828
+a single circuit board that came with neither a case nor a keyboard.
+
+371
+00:33:28,292 --> 00:33:31,805
+Still, Steve Jobs managed to sell 50 Apple 1's.
+
+372
+00:33:32,136 --> 00:33:37,306
+That experience showed Jobs there was a market for a real computer:
+the Apple II.
+
+373
+00:33:38,167 --> 00:33:42,873
+It was very clear to me that while there were a bunch of 
+hardware hobbyists 
+
+374
+00:33:43,006 --> 00:33:45,790
+that could assemble their own computers, or at least take our board
+
+375
+00:33:46,055 --> 00:33:50,570
+and add the transformers for the power supply and the case 
+the keyboard and go get, you know, et cetera,
+
+376
+00:33:50,570 --> 00:33:52,020
+go get the rest of the stuff.
+
+377
+00:33:52,020 --> 00:33:58,515
+For every one of those there were a thousand people that couldn't 
+do that, but wanted to mess around with programming
+
+378
+00:33:58,581 --> 00:34:04,540
+software hobbyists. Just like I had been when I was, you know, ten,
+discovering that computer.
+
+379
+00:34:05,143 --> 00:34:10,710
+And so my dream for the Apple 2 was to sell the first real 
+packaged computer.
+
+380
+00:34:11,969 --> 00:34:14,355
+Steve Jobs's dream was impossible.
+
+381
+00:34:14,554 --> 00:34:19,194
+It needed too many chips, making the product too complicated 
+and expensive to build.
+
+382
+00:34:19,360 --> 00:34:22,574
+But Woz didn't know it was impossible.
+
+383
+00:34:23,502 --> 00:34:29,003
+And then I got in to a way of why have memory for your TV screen
+and memory for your computer, make them one,
+
+384
+00:34:29,135 --> 00:34:34,305
+and that shrunk the chips down, and I shrunk the chips here, 
+and why not take all these timing circuits
+
+385
+00:34:34,371 --> 00:34:38,216
+and I looked through manuals and found a chip that did it in one
+chip instead of five, and reduced that,
+
+386
+00:34:38,282 --> 00:34:44,048
+and one thing after another after another happened. 
+I wound up with so few chips, when I was done I said:
+
+387
+00:34:44,048 --> 00:34:48,223
+hey, a computer that you could program to generate 
+coloured patterns on a screen,
+
+388
+00:34:48,290 --> 00:34:51,073
+or data or words or play games or anything,
+
+389
+00:34:51,073 --> 00:34:57,436
+it was just the computer I wanted, you know, for myself pretty much,
+but it had turned out so good.
+
+390
+00:34:57,502 --> 00:35:00,790
+He said: "I think we have a computer we could sell a thousand
+a month of."
+
+391
+00:35:00,790 --> 00:35:03,440
+How can you sell a thousand a month, you know?
+
+392
+00:35:03,440 --> 00:35:08,306
+ But we needed some money for tooling the case, things like that,
+we needed a few hundred thousand dollars.
+
+393
+00:35:08,571 --> 00:35:12,216
+That was a lot of money for two people who had nothing in their lives
+
+394
+00:35:12,216 --> 00:35:14,403
+to speak of, didn't have a 400 dollar bank account.
+
+395
+00:35:14,470 --> 00:35:16,789
+So I went looking for some venture capital.
+
+396
+00:35:17,660 --> 00:35:22,350
+The scruffy 19 year-old seduced the conservative world 
+of venture capitalists.
+
+397
+00:35:22,622 --> 00:35:25,936
+The man Jobs persuaded to part with his cash was Arthur Rock,
+
+398
+00:35:25,936 --> 00:35:30,180
+the inventor of venture capital and the man who had 
+originally funded Intel.
+
+399
+00:35:30,509 --> 00:35:34,880
+At least the Intel boys had graduated from university 
+and owned suits.
+
+400
+00:35:35,413 --> 00:35:43,433
+Well, he wore sandals and he had long, very long hair and 
+a beard and a moustache,
+
+401
+00:35:43,433 --> 00:35:44,958
+but very articulate.
+
+402
+00:35:48,970 --> 00:35:55,231
+He was, I think at one time in his life, and it was probably when 
+I first met him that he ate nothing but fruit.
+
+403
+00:35:56,800 --> 00:36:01,500
+- So as a mainline venture capitalist, is this...
+
+404
+00:36:01,500 --> 00:36:05,371
+- This is not the norm.
+
+405
+00:36:09,480 --> 00:36:15,313
+With money in hand and under occasional adult supervision from
+an ex-Intel manager named Mike Markkula,
+
+406
+00:36:15,644 --> 00:36:21,477
+Woz & Jobs finished the Apple II and ordered a local factory 
+to build 1000 machines.
+
+407
+00:36:23,001 --> 00:36:28,502
+Two years passed between the Altair and the Apple 2.
+And in that time a lot of things changed.
+
+408
+00:36:28,569 --> 00:36:34,401
+We went from a computer that was designed for hobbyists and
+engineers and certainly looked like a piece of test equipment
+
+409
+00:36:34,534 --> 00:36:38,311
+to a computer that looked like a piece of consumer electronics
+
+410
+00:36:38,643 --> 00:36:41,758
+and we can thank Steve Jobs for that - his sense of design
+
+411
+00:36:41,758 --> 00:36:47,855
+demanded that this structural foam case be used for the Apple 2
+the first case of its type on a personal computer.
+
+412
+00:36:48,121 --> 00:36:50,904
+And not that there wasn't good engineering inside either.
+
+413
+00:36:50,904 --> 00:36:53,821
+The Apple 2 was a model of efficient engineering,
+
+414
+00:36:53,821 --> 00:36:59,520
+here's the floppy disk drive controller for example. There are eight chips
+here where previously there would have been thirty-five.
+
+415
+00:36:59,520 --> 00:37:03,099
+This is an amazing bit of engineering that we can attribute to 
+Steve Wozniak
+
+416
+00:37:03,099 --> 00:37:10,456
+who is certainly the Mozart of digital design and all told it turned 
+the Apple 2 into a sensation.
+
+417
+00:37:15,029 --> 00:37:21,326
+The Apple II was launched at Jim Warren's West Coast Computer Faire,
+one of the first big microcomputer shows.
+
+418
+00:37:21,392 --> 00:37:25,501
+The 1978 show drew thousands of attendees and dozens of exhibitors
+
+419
+00:37:25,567 --> 00:37:30,737
+many of them members of the Homebrew Computer Club,
+which spawned most of the early microcomputer companies.
+
+420
+00:37:31,268 --> 00:37:35,775
+But there was only one company showing something 
+that looked like a modern personal computer.
+
+421
+00:37:36,305 --> 00:37:41,673
+Right by the entrance, in a prime spot negotiated by Steve Jobs,
+sat the Apple II.
+
+422
+00:37:42,203 --> 00:37:44,788
+It mesmerized all who saw it.
+
+423
+00:37:45,583 --> 00:37:47,638
+My recollection is we stole the show,
+
+424
+00:37:47,837 --> 00:37:53,206
+and a lot of dealers and distributors started lining up and we were off 
+and running.
+
+425
+00:37:53,338 --> 00:37:54,730
+- How old were you?
+
+426
+00:37:55,658 --> 00:37:57,182
+Twenty-one.
+
+427
+00:38:03,677 --> 00:38:08,980
+Following the West Coast Computer Faire, the next two years were
+ones of explosive growth for Apple,
+
+428
+00:38:08,980 --> 00:38:14,547
+with thousands of customers literally arriving on the doorstep 
+of the tiny office in Cupertino, California.
+
+429
+00:38:15,343 --> 00:38:20,512
+Sales and profits grew so quickly that Apple had more money than
+the company could spend.
+
+430
+00:38:20,645 --> 00:38:22,766
+And the company was very young.
+
+431
+00:38:23,031 --> 00:38:30,321
+The founders were in their twenties and some employees were 
+even younger, like 14 year-old Chris Espinosa, who never left.
+
+432
+00:38:30,321 --> 00:38:33,238
+He still works at Apple, almost 20 years later.
+
+433
+00:38:33,270 --> 00:38:39,203
+And there would be public demonstrations of our product every 
+Tuesday and Thursday afternoon at 3 o'clock
+
+434
+00:38:39,335 --> 00:38:41,456
+and that was good because it was after school.
+
+435
+00:38:41,787 --> 00:38:45,830
+So I would get out of my, you know sophomore-junior year 
+of high school,
+
+436
+00:38:46,162 --> 00:38:52,657
+I would ride my little moped down to the Apple offices and at 3 oÍclock
+I'd give the demonstrations of the Apple 2.
+
+437
+00:38:53,187 --> 00:38:57,694
+When we were in the office it was hey jokes and we were wiring up
+people's phones to do weird things,
+
+438
+00:38:57,694 --> 00:39:04,587
+ust every one of us I mean there wasn't a person in Apple I don't think 
+for a couple of years that was you know super serious.
+
+439
+00:39:04,653 --> 00:39:08,431
+We were lucky, we had like the hot product of its day.
+
+440
+00:39:08,696 --> 00:39:13,020
+And some of the people that I did original demos to came up to me
+years later and said:
+
+441
+00:39:13,071 --> 00:39:16,451
+"you know I founded a hundred million dollar chain of computer stores"
+
+442
+00:39:16,451 --> 00:39:21,422
+based on the demo you showed me one Tuesday afternoon at Apple. 
+It was really fun.
+
+443
+00:39:22,060 --> 00:39:26,880
+It went so successful that all of a sudden Steve and I wouldn't have to 
+worry about work for the rest of our lives.
+
+444
+00:39:26,880 --> 00:39:30,303
+And then it got even more successful and more successful after that,
+
+445
+00:39:32,540 --> 00:39:34,744
+and eh it was sort of a shock.
+
+446
+00:39:36,030 --> 00:39:38,920
+The Apple II set a new standard for personal computers
+
+447
+00:39:38,920 --> 00:39:41,450
+and showed there was some real money to be made.
+
+448
+00:39:41,769 --> 00:39:45,481
+Rival companies popped-up all over, but the market was still hobbyists
+
+449
+00:39:45,812 --> 00:39:50,849
+guys with big beards who thought a good use for their computer was 
+controlling a model train set.
+
+450
+00:39:54,097 --> 00:39:59,200
+But for microcomputers to be taken seriously, they had to start 
+doing things that needed doing,
+
+451
+00:39:59,399 --> 00:40:02,050
+functions that were useful, not just for fun.
+
+452
+00:40:06,027 --> 00:40:12,390
+ The enthusiast had its limits. To reach the rest of us the Apple 2
+ needed what nerds call a killer application.
+
+453
+00:40:12,854 --> 00:40:16,631
+Software that's so useful that people will buy computers just to run it.
+
+454
+00:40:17,710 --> 00:40:24,320
+For the Apple II, this application was called VisiCalc.
+It came straight from the blackboards of the Harvard Business school.
+
+455
+00:40:26,838 --> 00:40:31,320
+Invented by a graduate student, Dan Bricklin with his programmer friend
+Bob Frankston,
+
+456
+00:40:31,320 --> 00:40:34,792
+VisiCalc was the first electronic spreadsheet.
+
+457
+00:40:35,719 --> 00:40:38,569
+A spreadsheet is a tool for financial planning,
+
+458
+00:40:38,569 --> 00:40:44,004
+bringing together for the first time the seduction of money 
+with the power of microcomputing.
+
+459
+00:40:45,197 --> 00:40:46,921
+Dan Bricklin's professor at Harvard
+
+460
+00:40:46,987 --> 00:40:51,891
+showed how companies used a grid of numbers on a blackboard 
+to work out profits and expenses.
+
+461
+00:40:52,289 --> 00:40:58,055
+- Sixty down here and your profit would be this minus this which 
+gives you forty.
+
+462
+00:40:58,055 --> 00:41:01,790
+- And then well let's see what's the sales growth, say there's a 
+ten percent...
+
+463
+00:41:01,790 --> 00:41:06,208
+The trick to a spreadsheet is that all the values in the table 
+are related to the others.
+
+464
+00:41:06,870 --> 00:41:12,305
+So changes in one year would ripple through the table, 
+affecting prices and profits in subseqent years.
+
+465
+00:41:12,835 --> 00:41:18,336
+Students were asked to calculate how future profits would be affected
+by various business scenarios.
+
+466
+00:41:18,336 --> 00:41:22,578
+It was called running the numbers and they did it laborously by hand.
+
+467
+00:41:22,910 --> 00:41:29,935
+- Well let's say your initial costs have a hundred fixed costs at the beginning
+so now you have a minus twenty
+
+468
+00:41:29,935 --> 00:41:36,430
+- is how much you make the first year and in the second year you have 
+a hundred but your variable is say
+
+469
+00:41:36,430 --> 00:41:41,998
+- let's say twenty-five so now your losing, what is it, it's a pain in the neck 
+I wasn't very good at this stuff,
+
+470
+00:41:41,998 --> 00:41:49,686
+- eightyfive 
+- no no no - fifteen - minus fifteen right and eventually your making money,
+
+471
+00:41:49,686 --> 00:41:54,590
+- what year do we make money and how much does the cost of money 
+that's what running numbers was...
+
+472
+00:41:54,590 --> 00:41:59,495
+Because each value was linked to others, one mistake 
+could mean disaster.
+
+473
+00:41:59,495 --> 00:42:04,400
+- ...it blows your all number afterwards because you make all your 
+calculations based on the other numbers before them.
+
+474
+00:42:04,400 --> 00:42:07,316
+Dan, who had worked as a programmer,
+
+475
+00:42:07,316 --> 00:42:13,460
+started daydreaming about how he could use a computer 
+to replace the tedious hand calculations.
+
+476
+00:42:14,209 --> 00:42:18,185
+- I imagined that there was this magic blackboard that did like 
+word processing does word wrapping
+
+477
+00:42:18,185 --> 00:42:23,355
+- if you make a change to a word it automatically pulls everything back,
+well why no recalculate in the same way?
+
+478
+00:42:23,355 --> 00:42:27,597
+- So that if I change my number, you know, I should have used ten per cent
+instead of twelve per cent,
+
+479
+00:42:27,597 --> 00:42:31,043
+- I could just put it in and it would recalculate everything 
+and go through it you know 
+
+480
+00:42:31,043 --> 00:42:34,622
+- and that would be this idea of an electronic spread sheet.
+
+481
+00:42:35,020 --> 00:42:39,360
+Following a model that's common today, Dan Bricklin designed
+the program,
+
+482
+00:42:39,360 --> 00:42:43,239
+but got his friend Bob Frankston to write the actual computer code.
+
+483
+00:42:43,371 --> 00:42:47,878
+After months of programming late at night when computer time 
+was cheaper,
+
+484
+00:42:47,878 --> 00:42:50,927
+the Harvard Business School blackboard came to life.
+
+485
+00:42:51,192 --> 00:42:55,500
+- Now we've set this up, OK. Then we type a new value in, then 
+I'm going to take that one hundred,
+
+486
+00:42:55,500 --> 00:43:00,869
+- I'm going to change it right and here, it recalculated! Woa! 
+That saved me so much time!
+
+487
+00:43:01,200 --> 00:43:05,177
+People who saw it and went and got it like an accountant, 
+I remember showing it
+
+488
+00:43:05,177 --> 00:43:12,202
+- to one around here and he started shaking and said: 
+"that's what I do all week, I could do it in an hour you know,"
+
+489
+00:43:12,268 --> 00:43:15,380
+- you know, they would take their credit cards and shove them
+in your face.
+
+490
+00:43:15,380 --> 00:43:19,161
+I meet these people now they come up to me and say 
+"I gotta tell you you know..."
+
+491
+00:43:19,294 --> 00:43:22,741
+(BOB): You changed my life.
+(DAN): You changed my life. You made accounting fun and...
+
+492
+00:43:22,939 --> 00:43:27,313
+- You have to remember what it was like in those days we did not use 
+the word spreadsheet
+
+493
+00:43:27,380 --> 00:43:29,302
+- cause nobody knew what a spreadsheet was.
+
+494
+00:43:29,633 --> 00:43:35,532
+- I came up with the name visible calculator or visicalc because 
+we wanted to emphasise that aspect.
+
+495
+00:43:35,929 --> 00:43:41,365
+VisiCalc hit the market in October, 1979, selling for $100.
+
+496
+00:43:41,563 --> 00:43:45,938
+Marv Goldschmitt sold the first copies from his computer store 
+in Bedford, Massachusetts.
+
+497
+00:43:46,335 --> 00:43:49,185
+After a slow start VisiCalc took off.
+
+498
+00:43:49,848 --> 00:43:53,200
+What it did in our society, it gave people who were obsessed 
+with numbers,
+
+499
+00:43:53,361 --> 00:43:55,217
+whether they were in business or at home,
+
+500
+00:43:55,415 --> 00:44:00,320
+how much am I worth today, what's my stock portfolio worth, how
+am I doing against budget on this project.
+
+501
+00:44:01,447 --> 00:44:06,616
+It gave them an ability to play with scenarios and change it and 
+say well, what if I do this.
+
+502
+00:44:07,890 --> 00:44:10,262
+So it put people in a sense in control 
+
+503
+00:44:10,262 --> 00:44:14,040
+of the thing that lots of people in our society feel is driving 
+them and that's numbers.
+
+504
+00:44:18,016 --> 00:44:21,330
+The spreadsheet was every businessman's crystal ball.
+
+505
+00:44:21,500 --> 00:44:26,102
+It answered all those 'what if' questions. 
+What if I fire the engineering department?
+
+506
+00:44:26,765 --> 00:44:30,344
+What if I invest $10 million in pantyhose futures? 
+
+507
+00:44:31,139 --> 00:44:35,712
+Look! I'll be rich in under a year and have slimmer thighs 
+at the same time!
+
+508
+00:44:35,712 --> 00:44:37,833
+The Computer says so!
+
+509
+00:44:44,991 --> 00:44:47,245
+The effect of the spreadsheet was enormous.
+
+510
+00:44:47,643 --> 00:44:51,222
+Armed with an Apple 2 running Visicalc a twenty-four year old MBA
+
+511
+00:44:51,222 --> 00:44:54,867
+with two pieces of dubious data could convince his 
+corporate managers
+
+512
+00:44:54,867 --> 00:44:58,247
+to allow him to loot the corporate pension fund and do a 
+leverage buy-out.
+
+513
+00:44:58,247 --> 00:45:00,501
+It was the perfect tool for the eighties...
+
+514
+00:45:00,633 --> 00:45:04,809
+the lead decade where money was everything and greed was good.
+
+515
+00:45:30,520 --> 00:45:36,622
+In five years, the PC had gone from a hobbyist's toy
+to an engine that shaped the times we lived in. 
+
+516
+00:45:37,152 --> 00:45:40,533
+Thanks to VisiCalc the Apple II made history.
+
+517
+00:45:41,460 --> 00:45:45,106
+Everybody you talked to just seemed excited about talking
+about what we were doing.
+
+518
+00:45:46,299 --> 00:45:50,607
+And there was this huge media explosion, kind of like the Internet
+is receiving today,
+
+519
+00:45:50,739 --> 00:45:54,186
+of this is the happening thing. You read about it over and over
+and over,
+
+520
+00:45:54,186 --> 00:45:57,990
+and every time you took an airplane flight you read about it, 
+in every newspaper every week you'd read something
+
+521
+00:45:57,990 --> 00:46:01,476
+about small computers coming, and Apple was one of the 
+highlight companies
+
+522
+00:46:01,720 --> 00:46:05,090
+so we were being portrayed as a leader of a revolution,
+
+523
+00:46:05,453 --> 00:46:09,165
+and we really felt that we were a leader of a revolution. 
+We were going to change life a lot.
+
+524
+00:46:10,954 --> 00:46:14,931
+Pretty good for a company started in a garage three years before.
+
+525
+00:46:15,925 --> 00:46:22,155
+But not all the PC pioneers made great fortunes. Dan Bricklin decided
+not to patent his spreadsheet idea.
+
+526
+00:46:22,288 --> 00:46:26,264
+Though more than 100 million spreadsheets have been sold 
+since 1979,
+
+527
+00:46:26,290 --> 00:46:29,910
+Bricklin and Frankston haven't earned VisiCalc royalties in years.
+
+528
+00:46:30,030 --> 00:46:32,428
+You know, looking back at how successful a lot of other people
+
+529
+00:46:32,494 --> 00:46:34,748
+have been it's kind of sad that we weren't as successful...
+
+530
+00:46:35,013 --> 00:46:37,863
+It would be very nice to be gazillionaires,
+
+531
+00:46:39,321 --> 00:46:45,618
+but you can also understand that part of the reason was 
+that that's not what we're trying to be.
+
+532
+00:46:45,883 --> 00:46:50,191
+We're kids of the Sixties and what did you want to do?
+You wanted to make the world better,
+
+533
+00:46:50,390 --> 00:46:54,035
+and you wanted to make your mark on the world and improve things,
+and we did it.
+
+534
+00:46:54,433 --> 00:46:58,542
+So by the mark of what we would measure ourselves by, 
+we're very successful.
+
+535
+00:47:01,326 --> 00:47:03,248
+And what about Ed Roberts?
+
+536
+00:47:03,513 --> 00:47:09,610
+Three years and 40,000 computers after assembling that first Altair,
+the fun was over for Ed.
+
+537
+00:47:09,676 --> 00:47:14,581
+MITS was just another player in what had become a 
+competitive market for personal computers.
+
+538
+00:47:14,913 --> 00:47:18,823
+Roberts sold his company in 1978 and started a new life.
+
+539
+00:47:19,154 --> 00:47:22,932
+He went back to his native Georgia and retrained as a doctor.
+
+540
+00:47:23,330 --> 00:47:26,180
+- I hadn't really thought anything at all about it for the last 
+few years
+
+541
+00:47:26,180 --> 00:47:29,030
+- until people started taking credit for things that we did at MITS
+
+542
+00:47:29,427 --> 00:47:32,410
+- eh that's the only thing I think about. It irritates me
+
+543
+00:47:32,410 --> 00:47:35,194
+- when I think about the things that we did at MITS and we took
+ all the heat for
+
+544
+00:47:35,194 --> 00:47:37,513
+- that other people have tried to take credit for
+
+545
+00:47:37,513 --> 00:47:39,104
+- and that frustrates me.
+
+546
+00:47:40,496 --> 00:47:45,599
+While Ed Roberts invented the personal computer, 
+it was the founders of Apple who got rich.
+
+547
+00:47:45,798 --> 00:47:49,178
+When Apple went public in spectacular fashion in 1980,
+
+548
+00:47:49,244 --> 00:47:51,896
+Jobs and Woz became multimillionaires.
+
+549
+00:47:52,161 --> 00:47:54,481
+The nerds had inherited the earth.
+
+550
+00:47:55,143 --> 00:47:56,601
+ I was worth...
+
+551
+00:47:58,656 --> 00:48:02,301
+...about over a million dollars when I was twenty-three
+
+552
+00:48:02,765 --> 00:48:08,067
+and over ten million dollars when I was twenty-four, 
+and over a hundred million dollars when I was twenty-five
+
+553
+00:48:12,773 --> 00:48:17,081
+and ehm it wasn't that important ehm because I never did it 
+for the money.
+
+554
+00:48:18,076 --> 00:48:22,317
+It was just a little hobby company like a lot of people do 
+not thinking anything of it.
+
+555
+00:48:22,781 --> 00:48:26,228
+I mean it wasn't as though we both thought it was going to go 
+a long ways.
+
+556
+00:48:26,228 --> 00:48:28,216
+It was like we'll both do it for fun
+
+557
+00:48:28,813 --> 00:48:34,778
+but back then there was a short window in time where one person
+ who could sit down and do some neat good designs
+
+558
+00:48:35,242 --> 00:48:38,622
+could turn them into a huge thing like the Apple 2.
+
+559
+00:48:53,667 --> 00:48:58,505
+It's astonishing that at the beginning of 1975 nobody owned
+a personal computer
+
+560
+00:48:58,704 --> 00:49:02,018
+all there was was a mock-up on a magazine cover
+
+561
+00:49:02,040 --> 00:49:06,500
+yet within five years there had emerged here in Silicon Valley 
+a billion dollar industry.
+
+562
+00:49:07,121 --> 00:49:10,435
+An unhealthy fascination with technology on the part of a few 
+adolescents
+
+563
+00:49:10,502 --> 00:49:13,086
+had awakened the nerd within us all.
+
+564
+00:49:13,360 --> 00:49:17,100
+PC companies were sprouting like mushrooms to meet 
+the enormous demand.
+
+565
+00:49:17,527 --> 00:49:22,100
+Apple had emerged as the top fungus and had taken fifty per cent
+of the market.
+
+566
+00:49:22,400 --> 00:49:25,547
+To the boys in Cupertino, every day seemed like Christmas...
+
+567
+00:49:25,679 --> 00:49:27,700
+but Scrooge was around the corner.
+
+568
+00:49:27,866 --> 00:49:31,180
+There was a company that everyone associated with the word 
+'computer',
+
+569
+00:49:31,247 --> 00:49:34,560
+a company that expected, no demanded to dominate its market:
+
+570
+00:49:34,693 --> 00:49:35,820
+IBM
+
+571
+00:49:36,284 --> 00:49:38,073
+Big Blue was on the move 
+
+572
+00:49:38,338 --> 00:49:42,050
+and Silicon Valley would soon be feeling the reverberations.
+
+573
+00:49:44,369 --> 00:49:48,824
+subtitles by fabiusX
+subs@fabiushouse.com
+

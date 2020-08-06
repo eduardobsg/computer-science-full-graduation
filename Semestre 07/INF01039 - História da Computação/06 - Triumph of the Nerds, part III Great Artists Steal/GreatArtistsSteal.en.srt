@@ -1,0 +1,2830 @@
+1
+00:00:01,500 --> 00:00:03,000
+The story so far,
+
+2
+00:00:04,000 --> 00:00:08,500
+In 1980, just four years after being founded
+in a Californian garage,
+
+3
+00:00:08,801 --> 00:00:12,202
+Apple was the biggest maker of PCs in the world.
+
+4
+00:00:12,702 --> 00:00:18,304
+Computer giant IBM was not amused and fought back,
+launching its own PC in 1981.
+
+5
+00:00:19,305 --> 00:00:21,305
+Though built from copy-cat technology,
+
+6
+00:00:21,506 --> 00:00:26,706
+IBM's PC was an enormous hit and spawned many imitators,
+the PC clones.
+
+7
+00:00:28,007 --> 00:00:33,007
+But PCs were still a pain to use.
+A revolution was needed to make them friendlier.
+
+8
+00:00:33,808 --> 00:00:35,508
+Now, view on.
+
+9
+00:01:25,009 --> 00:01:30,218
+Ladies and gentlemen welcome to the launch of Windows 95.
+
+10
+00:01:31,519 --> 00:01:34,519
+Yes, welcome Microsoftees nice to have you all here.
+
+11
+00:01:34,520 --> 00:01:37,020
+But now let's welcome the chairman of Microsoft.
+
+12
+00:01:37,021 --> 00:01:43,321
+Listen to this. This is a man, a man so successful
+his chaffeur is Ross Perot ladies and gentlemen...
+
+13
+00:01:45,022 --> 00:01:46,522
+please welcome Bill Gates.
+
+14
+00:01:51,523 --> 00:01:53,923
+It's August 24th, 1995.
+
+15
+00:01:54,324 --> 00:01:56,724
+In a suburb of Seattle in the Pacific Northwest,
+
+16
+00:01:57,025 --> 00:02:01,425
+this is the biggest, noisiest product launch
+in the history of the personal computer.
+
+17
+00:02:01,426 --> 00:02:08,926
+It's Windows 95 software - and Bill Gates is the star, chairman,
+chief nerd and spiritual leader of Microsoft.
+
+18
+00:02:10,027 --> 00:02:16,027
+This is the latest step in Bill's dream to have
+his software running on every PC in the world.
+
+19
+00:02:16,528 --> 00:02:19,028
+Bill Gates: We wanted people to be able to appreciate
+
+20
+00:02:19,129 --> 00:02:25,129
+how Windows 95 makes computing
+faster, easier and more fun.
+
+21
+00:02:26,230 --> 00:02:30,230
+And for seven years it was a lonely, lonely crusade...
+
+22
+00:02:32,031 --> 00:02:36,531
+this moves the whole PC industry up to a whole new level...
+
+23
+00:02:37,032 --> 00:02:42,032
+Wait a minute all this publicity is so Bill Gates
+can claim that Windows 95 is the latest
+
+24
+00:02:42,233 --> 00:02:45,733
+and perhaps the most significant improvement
+in the PC since it was invented.
+
+25
+00:02:46,034 --> 00:02:51,534
+He can say that his new operating system makes PC's
+nicer to look at and easier to use than ever before.
+
+26
+00:02:51,835 --> 00:02:57,335
+They'll no longer be just for geeks and nerds they'll be
+so easy to use that even my mother will want one...
+
+27
+00:02:57,536 --> 00:03:02,536
+but you know what - most of the ideas in Windows 95
+were invented twenty years ago.
+
+28
+00:03:06,537 --> 00:03:10,537
+The 20 year journey to this software celebration hasn't been easy.
+
+29
+00:03:10,838 --> 00:03:15,338
+It has involved huge gambles,
+passionate commitment, dramatic setbacks
+
+30
+00:03:15,439 --> 00:03:18,439
+and required the occasional crushing of rivals and allies.
+
+31
+00:03:20,540 --> 00:03:23,040
+It's the triumph of Bill Gates' commercial vision.
+
+32
+00:03:23,341 --> 00:03:28,341
+Success in the market place doesn't have to come
+from innovation, or from being the best,
+
+33
+00:03:28,542 --> 00:03:32,042
+if you have a ruthless ability to exploit your opportunities.
+
+34
+00:03:33,043 --> 00:03:40,543
+And the way Microsoft made the PC's graphical user interface
+its own is a textbook example of that ability.
+
+35
+00:03:44,044 --> 00:03:47,544
+Time for another Cringely crash course in elementary computing.
+
+36
+00:03:47,845 --> 00:03:51,345
+In the early days of personal computing
+the machines were pretty hard to use
+
+37
+00:03:51,346 --> 00:03:53,346
+in part that's because they were primitive
+
+38
+00:03:53,547 --> 00:03:57,347
+but it's also because computer guys
+tend to like things that are pretty hard to use.
+
+39
+00:03:57,548 --> 00:04:01,048
+This is an IBM PC circa about 1983
+
+40
+00:04:01,349 --> 00:04:04,349
+and on it I have written a letter to my bank manager
+
+41
+00:04:04,350 --> 00:04:06,850
+asking him to back one of my get rich quick schemes
+
+42
+00:04:06,851 --> 00:04:12,851
+and I need to file the letter now and let me show you
+how I do it - there will be a test on this.
+
+43
+00:04:13,552 --> 00:04:18,552
+OK the commands are - copy c, colon, backslash,
+
+44
+00:04:18,553 --> 00:04:26,053
+quickrich, dot, doc space a colon backslash
+
+45
+00:04:26,054 --> 00:04:33,054
+begging and return - well not very easy to do.
+
+46
+00:04:33,055 --> 00:04:38,055
+Here's a windows PC about twelve years newer
+and we'll do exactly the same thing
+
+47
+00:04:38,056 --> 00:04:44,556
+I've written a document - quickrich, dot doc
+and I put it in the begging file
+
+48
+00:04:44,557 --> 00:04:48,557
+and it yes I really do mean to do it and that's it.
+
+49
+00:04:49,058 --> 00:04:53,558
+Pictures rather than words making the PC easy and intuitive.
+
+50
+00:04:54,059 --> 00:04:58,359
+This is called a graphical user interface - GUI or gooey
+
+51
+00:04:58,360 --> 00:05:00,360
+where they come up with these names.
+
+52
+00:05:01,061 --> 00:05:04,561
+The battle to bring gooeys to PCs
+and make them more user friendly
+
+53
+00:05:04,562 --> 00:05:09,062
+took ten years and is a helluva story
+that is what this program is about.
+
+54
+00:05:09,563 --> 00:05:14,063
+It's also about how Bill Gates ended up
+master of the gooey universe and a gazillionaire.
+
+55
+00:05:14,064 --> 00:05:16,564
+I never said it was a fairy story.
+
+56
+00:05:18,565 --> 00:05:23,565
+It all began in 1971 in Palo Alto,
+just south of San Francisco,
+
+57
+00:05:24,066 --> 00:05:29,566
+when Xerox, the copier company, set up the
+Palo Alto Research Center, or PARC.
+
+58
+00:05:32,067 --> 00:05:34,067
+The Xerox management had a sinking feeling
+
+59
+00:05:34,068 --> 00:05:37,568
+that if people started reading
+computer screens instead of paper,
+
+60
+00:05:37,569 --> 00:05:40,069
+Xerox was in trouble.
+
+61
+00:05:40,070 --> 00:05:44,570
+Unless... they could dominate
+the paperless office of the future.
+
+62
+00:05:45,571 --> 00:05:52,071
+You could take computer technology into the office
+and make the office a much better place to work,
+
+63
+00:05:52,572 --> 00:05:55,072
+more productive, more enjoyable
+
+64
+00:05:55,073 --> 00:05:58,573
+a lot more enjoyable, ehm more interesting,
+
+65
+00:05:59,073 --> 00:06:03,373
+more rewarding and so we set to work on it.
+
+66
+00:06:03,374 --> 00:06:06,374
+Bob Taylor ran the PARC's Computer Science Lab
+
+67
+00:06:06,575 --> 00:06:08,575
+and one of the first things he did was to buy
+
+68
+00:06:08,576 --> 00:06:12,076
+bean bags for his researchers to sit on and brainstorm.
+
+69
+00:06:12,077 --> 00:06:14,577
+Here's a couple of the original beanbag chairs.
+
+70
+00:06:14,578 --> 00:06:19,078
+The role of the beanbag in computer science is ease of use.
+- OK.
+
+71
+00:06:19,079 --> 00:06:25,579
+It was said that of the top 100 computer researchers in the world,
+58 worked at PARC.
+
+72
+00:06:25,580 --> 00:06:27,580
+Strange, as the staff never exceeded 50.
+
+73
+00:06:27,581 --> 00:06:29,581
+See you didn't get your butt low enough...
+
+74
+00:06:29,582 --> 00:06:34,582
+But Taylor gave these nerd geniuses unlimited resources
+and protected them from commercial pressures.
+
+75
+00:06:34,583 --> 00:06:35,583
+BOB: It's very comfortable.
+
+76
+00:06:35,584 --> 00:06:36,584
+BOB TAYLOR: Now let's see you get out of it.
+
+77
+00:06:36,585 --> 00:06:41,085
+BOB: I feel my neural capacity already increasing - Oh God...
+
+78
+00:06:41,586 --> 00:06:47,086
+The atmosphere was electric eh there was total intellectual freedom.
+
+79
+00:06:47,087 --> 00:06:53,087
+There was no conventional wisdom almost every idea
+was up for challenge and got challenged regularly.
+
+80
+00:06:53,088 --> 00:06:57,088
+The management said go create the new world.
+
+81
+00:06:57,089 --> 00:06:58,589
+We don't understand it.
+
+82
+00:06:58,590 --> 00:07:03,090
+Here are people who have a lot of ideas
+and tremendous talent, young, energetic.
+
+83
+00:07:03,591 --> 00:07:10,091
+People came there specifically to work
+on five year programs that were their dreams.
+
+84
+00:07:11,592 --> 00:07:16,092
+This is a computer room in the basement of
+the Xerox Pala Alto Research Centre...
+
+85
+00:07:16,093 --> 00:07:20,093
+about twenty five years ago they built
+the max time sharing system in here
+
+86
+00:07:20,094 --> 00:07:26,094
+and now it's loaded with all sorts of other computers
+and eh there's one that we're really interested in here
+
+87
+00:07:27,095 --> 00:07:31,095
+let's see... here it is... let me turn on the lights.
+
+88
+00:07:32,596 --> 00:07:34,596
+OK, here we have it.
+
+89
+00:07:34,597 --> 00:07:39,597
+This is a Xerox/Alto computer built around 1973.
+
+90
+00:07:39,598 --> 00:07:42,598
+Some people would argue that this is the first personal computer.
+
+91
+00:07:43,099 --> 00:07:46,599
+Ah it really isn't because for one thing
+it wasn't ever for sale
+
+92
+00:07:47,000 --> 00:07:52,500
+and the parts alone cost about $10,000 but
+it has all the elements of quite a modern personal computer
+
+93
+00:07:52,501 --> 00:07:55,501
+and without it we wouldn't have the Macintosh, we wouldn't have Windows
+
+94
+00:07:55,502 --> 00:07:58,002
+we wouldn't have most of the things we value in computing today
+
+95
+00:07:58,003 --> 00:08:02,003
+and ironically none of those things has a Xerox name on it.
+
+96
+00:08:02,504 --> 00:08:04,508
+Commercial:
+What's the mail this morning?
+
+97
+00:08:04,509 --> 00:08:09,009
+This promotional film made in the mid seventies,
+to flaunt XEROX PARC research,
+
+98
+00:08:09,010 --> 00:08:11,510
+shows just how revolutionary the Alto was.
+
+99
+00:08:12,511 --> 00:08:14,011
+It was friendly and intuitive.
+
+100
+00:08:14,012 --> 00:08:17,512
+Commercial:
+This is an experimental office system. It's in use now...
+
+101
+00:08:17,513 --> 00:08:22,013
+It had the first GUI using a mouse to
+point to information on the screen.
+
+102
+00:08:22,014 --> 00:08:26,514
+It was linked to other PCs, by a system called ethernet,
+the first computer network.
+
+103
+00:08:27,515 --> 00:08:31,015
+And what you saw on the screen was precisely
+what you got on your laser printer.
+
+104
+00:08:31,516 --> 00:08:33,016
+It was way ahead of its time.
+
+105
+00:08:33,017 --> 00:08:34,017
+Commercial:
+Thank you Fred.
+
+106
+00:08:34,018 --> 00:08:37,518
+Everybody wanted to make a real difference,
+we really thought that we were changing the world
+
+107
+00:08:38,019 --> 00:08:43,019
+and that at the end of this project or this set of projects
+
+108
+00:08:44,520 --> 00:08:52,020
+personal computing would burst on the scene exactly the way
+we had envisioned it and take everybody by total surprise.
+
+109
+00:08:53,521 --> 00:08:59,021
+But the brilliant researchers at PARC could never persuade
+the Xerox management that their vision was accurate.
+
+110
+00:08:59,022 --> 00:09:04,022
+Head Office in New York ignored the revolutionary technologies
+they owned three thousand miles away.
+
+111
+00:09:04,523 --> 00:09:06,023
+They just didn't get it.
+
+112
+00:09:06,524 --> 00:09:11,524
+And none of the main body of the company
+was prepared to accept the answers.
+
+113
+00:09:12,525 --> 00:09:18,525
+So there was a tremendous mismatch between
+the management and what the researchers were doing
+
+114
+00:09:18,526 --> 00:09:23,526
+and these guys had never fantasised about
+what the future of the office was going to be
+
+115
+00:09:23,527 --> 00:09:30,027
+and when it was presented to them they had no mechanisms
+for turning those ideas into real live products
+
+116
+00:09:30,028 --> 00:09:37,528
+and that was really the frustrating part of it because
+you were talking to people who didn't understand the vision
+
+117
+00:09:38,029 --> 00:09:43,029
+and yet the vision was getting created everyday
+within the Palo Alto Research Centre
+
+118
+00:09:43,030 --> 00:09:45,530
+and there was no one to receive that vision.
+
+119
+00:09:48,531 --> 00:09:53,031
+But a few miles down the road from Palo Alto
+was a man ready to share the vision.
+
+120
+00:09:54,032 --> 00:09:58,032
+The most dangerous man in Silicon Valley
+sits in an office in this building.
+
+121
+00:09:58,033 --> 00:10:00,533
+People love him and hate him.
+Often at the same time.
+
+122
+00:10:01,034 --> 00:10:07,034
+For ten years by sheer force of will he made
+the personal computer industry follow his direction.
+
+123
+00:10:07,035 --> 00:10:13,535
+With this guy we're not talking about someone driven by the profit motive
+in a desire for an opulent retirement at the age of forty,
+
+124
+00:10:13,536 --> 00:10:21,036
+no we're talking holy war we're talking rivers of blood
+and fields of dead martyrs to the cause of greater computing.
+
+125
+00:10:21,037 --> 00:10:25,537
+We're talking about a guy who sees the personal computer
+as his tool for changing the world.
+
+126
+00:10:26,538 --> 00:10:28,038
+We're talking about Steve Jobs.
+
+127
+00:10:34,539 --> 00:10:36,039
+Hi, I'm Steve Jobs.
+
+128
+00:10:37,040 --> 00:10:40,540
+When I wasn't sure what the word charisma meant,
+I met Steve Jobs and then I knew.
+
+129
+00:10:45,541 --> 00:10:49,541
+Steve Jobs is on my eternal heroes list,
+there's nothing he can ever do to get off it.
+
+130
+00:10:50,542 --> 00:10:57,542
+He wanted you to be great and he wanted you
+to create something that was great
+
+131
+00:10:58,543 --> 00:11:01,043
+and he was going to make you do that.
+
+132
+00:11:04,044 --> 00:11:09,044
+He's also obnoxious and this comes from his high standards.
+
+133
+00:11:09,045 --> 00:11:16,545
+He has extremely high standards and he has no patience with people
+who don't either share those standards or perform to them.
+
+134
+00:11:20,546 --> 00:11:22,546
+And I'm also one of these people.
+
+135
+00:11:22,547 --> 00:11:28,547
+I don't really care about being right
+you know I just care about success.
+
+136
+00:11:30,548 --> 00:11:34,548
+Steve Jobs had co-founded Apple Computer in 1976.
+
+137
+00:11:35,549 --> 00:11:39,049
+The first popular personal computer, the Apple 2, was a hit
+
+138
+00:11:40,050 --> 00:11:43,550
+and made Steve Jobs one of the biggest names in a brand-new industry.
+
+139
+00:11:45,051 --> 00:11:48,551
+At the height of Apple's early success in December 1979,
+
+140
+00:11:48,552 --> 00:11:54,052
+Jobs, then all of 24, had a privileged invitation to visit Xerox Parc.
+
+141
+00:11:54,553 --> 00:11:57,553
+And they showed me really three things.
+
+142
+00:11:58,554 --> 00:12:03,554
+But I was so blinded by the first one that
+I didn't even really see the other two.
+
+143
+00:12:06,055 --> 00:12:11,555
+One of the things they showed me was object orienting programming
+they showed me that but I didn't even see that.
+
+144
+00:12:12,056 --> 00:12:15,056
+The other one they showed me was a networked computer system...
+
+145
+00:12:15,057 --> 00:12:19,557
+they had over a hundred Alto computers all networked using email etc., etc.,
+
+146
+00:12:19,558 --> 00:12:21,558
+I didn't even see that.
+
+147
+00:12:21,559 --> 00:12:27,059
+I was so blinded by the first thing they showed me
+which was the graphical user interface.
+
+148
+00:12:27,060 --> 00:12:29,560
+I thought it was the best thing I'd ever seen in my life.
+
+149
+00:12:29,561 --> 00:12:35,561
+Now remember it was very flawed, what we saw was incomplete,
+they'd done a bunch of things wrong.
+
+150
+00:12:35,562 --> 00:12:42,062
+But we didn't know that at the time but still
+though they had the germ of the idea was there and they'd done it very well
+
+151
+00:12:43,063 --> 00:12:51,063
+and within you know ten minutes it was obvious to me
+that all computers would work like this some day.
+
+152
+00:12:51,564 --> 00:12:53,064
+It was a turning-point.
+
+153
+00:12:53,065 --> 00:12:56,565
+Jobs decided that this was the way forward for Apple.
+
+154
+00:12:56,566 --> 00:13:05,566
+He came back and I almost said asked, but the truth is,
+demanded that his entire programming team
+
+155
+00:13:06,067 --> 00:13:12,567
+get a demo of the Smalltalk System
+and the then head of the science centre
+
+156
+00:13:12,568 --> 00:13:19,068
+asked me to give the demo because Steve specifically asked
+for me to give the demo and I said no way.
+
+157
+00:13:19,069 --> 00:13:27,069
+I had a big argument with these Xerox executives telling them
+that they were about to give away the kitchen sink
+
+158
+00:13:28,070 --> 00:13:32,570
+and I said that I would only do it
+if I were ordered to do it
+
+159
+00:13:32,571 --> 00:13:36,071
+cause then of course it would be their responsibility,
+and that's what they did.
+
+160
+00:13:36,572 --> 00:13:41,572
+Demonstration:
+The mouse is a pointing device that moves
+a cursor around the display screen.
+
+161
+00:13:42,073 --> 00:13:47,573
+Adele and her colleagues showed the Apple programmers
+an Alto machine running a graphical user interface.
+
+162
+00:13:48,574 --> 00:13:55,574
+Demonstration:
+A selected window displays above other windows much like
+place a piece of paper on top of a stack on a desk.
+
+163
+00:13:55,575 --> 00:13:59,075
+The visitors from Apple saw a computer
+that was designed to be easy to use,
+
+164
+00:14:00,076 --> 00:14:05,076
+a machine that anybody could operate
+and find friendly...even the French.
+
+165
+00:14:06,577 --> 00:14:10,077
+I think mostly what we got in that hour and a half
+
+166
+00:14:11,078 --> 00:14:17,078
+was inspiration and basically just sort of
+a bolstering of our convictions that
+
+167
+00:14:18,079 --> 00:14:25,579
+a more graphical way to do things would make
+this business computer more accessible.
+
+168
+00:14:25,580 --> 00:14:30,080
+After an hour looking at demos
+they understood our technology, and what it meant
+
+169
+00:14:30,081 --> 00:14:34,581
+more than any Xerox executive understood
+after years of showing it to them.
+
+170
+00:14:35,082 --> 00:14:40,082
+Basically they were copier heads that just had
+no clue about a computer or what it could do.
+
+171
+00:14:40,083 --> 00:14:46,083
+And so they just grabbed eh grabbed defeat from
+the greatest victory in the computer industry.
+
+172
+00:14:46,084 --> 00:14:49,084
+Xerox could have owned the entire computer industry today.
+
+173
+00:14:50,585 --> 00:14:52,585
+Could have been you know a company ten times its size.
+
+174
+00:14:53,086 --> 00:14:55,586
+Could have been IBM
+could have been the IBM of the nineties.
+
+175
+00:14:55,587 --> 00:14:57,587
+Could have been the Microsoft of the nineties.
+
+176
+00:14:58,588 --> 00:15:02,588
+For Steve Jobs the road to Damascus passed through Palo Alto.
+
+177
+00:15:02,089 --> 00:15:08,589
+He persuaded the Apple board to invest in technology
+copying what he'd seen at Xerox Parc - his instrument of change.
+
+178
+00:15:09,090 --> 00:15:13,590
+They hired a hundred engineers and started
+developing a new PC codenamed Lisa.
+
+179
+00:15:13,591 --> 00:15:15,091
+But there were problems.
+
+180
+00:15:15,592 --> 00:15:20,092
+The Lisa didn't work properly and the
+pricetag was heading toward $10,000
+
+181
+00:15:20,093 --> 00:15:22,593
+way too much for the average PC buyer.
+
+182
+00:15:24,094 --> 00:15:30,094
+Jobs' domineering style drove everyone nuts too
+so the board ousted him from his own pet project.
+
+183
+00:15:30,595 --> 00:15:32,095
+You know I brooded for a few months,
+
+184
+00:15:32,096 --> 00:15:37,096
+but it was not very long after that
+that it really occurred to me that
+
+185
+00:15:37,097 --> 00:15:41,597
+if we didn't do something here the
+Apple 2 was running out of gas
+
+186
+00:15:42,098 --> 00:15:46,598
+and we needed to do something
+with this technology fast or else
+
+187
+00:15:46,599 --> 00:15:49,599
+Apple might cease to exist as the company that it was.
+
+188
+00:15:52,000 --> 00:15:56,500
+Jobs got his answer from Jeff Raskin,
+Apple employee number 31.
+
+189
+00:15:56,501 --> 00:16:01,501
+Raskin's idea was a $600 computer
+as easy to use as a toaster
+
+190
+00:16:01,502 --> 00:16:05,502
+code-named Macintosh, after America's favourite apple.
+
+191
+00:16:05,503 --> 00:16:09,003
+Jobs liked the price but not Raskin's design ideas.
+
+192
+00:16:09,004 --> 00:16:14,004
+So Steve took over the Macintosh project,
+determined to make it a cheaper Lisa.
+
+193
+00:16:14,505 --> 00:16:18,005
+And so I formed a small team to do the Macintosh
+
+194
+00:16:18,506 --> 00:16:23,006
+and we were on a mission from God
+you know to save Apple.
+
+195
+00:16:23,007 --> 00:16:29,507
+While jobs persude his Mac mission,
+he needed a more orthodox chief executive to run the company.
+
+196
+00:16:29,508 --> 00:16:32,508
+A respectable face, who could sell to corporate america.
+
+197
+00:16:32,509 --> 00:16:35,509
+He chose Pepsi-Cola executive, John sculley.
+
+198
+00:16:35,510 --> 00:16:42,510
+Sculley refused, Leave pepsi for a four year old company
+that had been setup in a garage! Are you serious?!
+
+199
+00:16:42,511 --> 00:16:46,011
+But it was hard saying - No, to Steve jobs.
+
+200
+00:16:46,012 --> 00:16:52,512
+And then he looked up at me and just stared at me
+with the stare that only Steve Jobs has
+
+201
+00:16:52,513 --> 00:17:00,013
+and he said do you want to sell sugar water for the rest of your life
+or do you want to come with me and change the world
+
+202
+00:17:01,514 --> 00:17:08,014
+and I just gulped because I knew I would wonder
+for the rest of my life what I would have missed.
+
+203
+00:17:10,815 --> 00:17:13,615
+For the young Mac team, average age 21,
+
+204
+00:17:13,616 --> 00:17:18,116
+this was the start of the toughest,
+but most exhilarating assignment of their lives,
+
+205
+00:17:18,117 --> 00:17:20,617
+relentlessly driven by Jobs' ego.
+
+206
+00:17:21,018 --> 00:17:24,518
+BOB: Oh look at this and who is
+this fresh-faced young guy here?
+
+207
+00:17:24,519 --> 00:17:27,019
+ANDY: That's me eleven years ago
+
+208
+00:17:27,020 --> 00:17:30,020
+had more hair I guess little thinner.
+
+209
+00:17:30,521 --> 00:17:32,021
+Oh I love these people.
+
+210
+00:17:32,022 --> 00:17:34,522
+They're like family to me really
+
+211
+00:17:34,523 --> 00:17:39,523
+and we were united by this common bond of trying
+to do this incredible thing with the Mac.
+
+212
+00:17:40,024 --> 00:17:43,524
+Jobs wanted the Mac to revolutionise the PC market
+
+213
+00:17:44,025 --> 00:17:47,525
+so he insisted that the team deliver perfection.
+
+214
+00:17:47,826 --> 00:17:50,826
+Steve was upset that the Mac took too long to boot
+
+215
+00:17:50,827 --> 00:17:54,527
+to boot up when you first turned it on
+so he tried motivating Larry Kenyon
+
+216
+00:17:54,528 --> 00:17:58,528
+by telling him well you know how many millions
+of people are going to buy this machine
+
+217
+00:17:58,529 --> 00:18:02,529
+it's going to be millions of people
+and let's imagine that
+
+218
+00:18:02,530 --> 00:18:09,530
+you can make it boot five seconds faster well that's
+five seconds times a million every day that's fifty lifetimes,
+
+219
+00:18:10,031 --> 00:18:15,031
+if you can shave five seconds off
+that you're saving fifty lives.
+
+220
+00:18:15,532 --> 00:18:18,532
+And so it was a nice way of thinking about it,
+
+221
+00:18:19,033 --> 00:18:20,533
+And we did get it to go faster.
+
+222
+00:18:21,034 --> 00:18:24,534
+And then this is one of the
+very first Macintosh wire-wrap.
+
+223
+00:18:24,535 --> 00:18:26,535
+This is wire-wrap board No. 4.
+
+224
+00:18:26,536 --> 00:18:30,536
+As the Mac progressed, new features
+were being continually added.
+
+225
+00:18:30,537 --> 00:18:35,037
+Jobs said the Mac had to be 'insanely great' and
+pushed his engineers to the limit.
+
+226
+00:18:36,038 --> 00:18:40,538
+He had to - because by early 1983,
+Apple was in trouble.
+
+227
+00:18:42,539 --> 00:18:45,039
+And this was what was giving Apple such a headache...
+
+228
+00:18:45,040 --> 00:18:48,540
+IBM's first PC launched in 1981.
+
+229
+00:18:48,541 --> 00:18:50,041
+It was a runaway success.
+
+230
+00:18:50,042 --> 00:18:53,042
+Within a couple of years more than
+2 million units had been shipped
+
+231
+00:18:53,043 --> 00:18:57,043
+overtaking Apple and making Big Blue
+the biggest player in the market.
+
+232
+00:18:59,544 --> 00:19:05,544
+Commercial:
+When IBM personal computer owners look for good software
+where can they turn - to IBM.
+
+233
+00:19:05,545 --> 00:19:09,045
+What was driving IBM PC sales was software...
+
+234
+00:19:09,046 --> 00:19:13,546
+Commercial:
+Business programs, entertainment, productivity, education.
+
+235
+00:19:13,547 --> 00:19:16,547
+But software for an IBM wouldn't run on the Mac.
+
+236
+00:19:16,548 --> 00:19:21,048
+If the Macintosh was to succeed
+Jobs needed killer applications.
+
+237
+00:19:21,549 --> 00:19:25,549
+Enter 25 year old software supremo Bill Gates.
+
+238
+00:19:26,550 --> 00:19:30,050
+At that time his company Microsoft
+had one hundred workers
+
+239
+00:19:30,051 --> 00:19:32,551
+and was growing like crazy thanks to DOS,
+
+240
+00:19:33,052 --> 00:19:35,552
+the operating system that drove the IBM PC.
+
+241
+00:19:36,053 --> 00:19:37,553
+But DOS sure wasn't a GUI.
+
+242
+00:19:38,554 --> 00:19:43,554
+Gates and his aggressive number 2 Steve Ballmer
+were immediately intrigued by the Mac.
+
+243
+00:19:44,055 --> 00:19:47,055
+Jobs talked to Bill at some industry conference
+and said hey we're doing,
+
+244
+00:19:47,556 --> 00:19:50,056
+I think LISA was sort of in
+development and he said
+
+245
+00:19:50,057 --> 00:19:53,557
+But i'm gonna do the graphical
+interface machine here at Apple
+
+246
+00:19:53,558 --> 00:19:59,058
+Not just that LISA thing Bill I'm going to do the one
+the one that's really going to be the winner.
+
+247
+00:20:00,059 --> 00:20:02,059
+While the Mac was being developed,
+
+248
+00:20:02,060 --> 00:20:05,560
+Jobs staged an event,
+a parody of a TV game show,
+
+249
+00:20:05,561 --> 00:20:08,561
+to whip up enthusiasm among software developers.
+
+250
+00:20:09,062 --> 00:20:12,562
+And now ladies and gentlemen
+the Macintosh Software Dating Game...
+
+251
+00:20:13,063 --> 00:20:17,563
+Jobs got the three top software bosses
+of the time to sing the Mac's praises.
+
+252
+00:20:18,064 --> 00:20:20,064
+One of them was Bill Gates.
+
+253
+00:20:20,065 --> 00:20:25,065
+Steve didn't realise he was opening the door to the man
+who'd prove to be Apple's main rival.
+
+254
+00:20:26,066 --> 00:20:28,066
+JOBS: When was your first date with the Macintosh?
+
+255
+00:20:29,067 --> 00:20:32,567
+GATES: We've been working with the Mac
+for almost two years now
+
+256
+00:20:33,568 --> 00:20:37,068
+and we put some of our really good people on it and eh...
+
+257
+00:20:38,069 --> 00:20:40,569
+Even before we finished our work on the IBM PC,
+
+258
+00:20:42,070 --> 00:20:46,570
+Steve Jobs came and talked about what he wanted to do
+
+259
+00:20:46,571 --> 00:20:49,071
+that he thought he could do sort of a LISA but cheaper.
+
+260
+00:20:49,572 --> 00:20:51,572
+We said boy we'd love to help out.
+
+261
+00:20:51,573 --> 00:20:53,573
+The LISA had all its own applications
+
+262
+00:20:53,574 --> 00:20:57,574
+but of course they required a lot of memory ah
+and we thought we could do better
+
+263
+00:20:57,575 --> 00:21:03,075
+and so Steve signed a deal with us to actually provide
+bundled applications for the first Mac
+
+264
+00:21:03,076 --> 00:21:07,576
+and so we were big believers in the Mac
+and what Steve was doing there.
+
+265
+00:21:09,577 --> 00:21:13,577
+Most people don't remember, but until the Mac,
+Microsoft was not in the applications business...
+
+266
+00:21:13,578 --> 00:21:15,078
+it was dominated by Lotus.
+
+267
+00:21:15,079 --> 00:21:18,079
+And Microsoft took a big gamble to write for the Mac.
+
+268
+00:21:18,080 --> 00:21:23,580
+And so we got started in early 1982
+
+269
+00:21:23,581 --> 00:21:28,581
+on our Macintosh software effort and
+I think at that point in time you know,
+
+270
+00:21:28,582 --> 00:21:34,082
+it really clicked with Bill that you know, graphic user interface
+was going to be the way, the way of the future.
+
+271
+00:21:36,083 --> 00:21:38,583
+But while Bill was having his own GUI revelation,
+
+272
+00:21:38,584 --> 00:21:42,084
+Jobs believed that Apple's true enemy was IBM.
+
+273
+00:21:43,585 --> 00:21:47,085
+Will Big Blue dominate the entire computer industry...
+
+274
+00:21:48,586 --> 00:21:51,086
+the entire information age,
+
+275
+00:21:51,587 --> 00:21:55,587
+was George Orwell right about 1984?
+
+276
+00:21:56,588 --> 00:22:01,588
+Despite Steve Jobs' showmanship,
+the IBM PC was hurting Apple's business.
+
+277
+00:22:03,089 --> 00:22:06,589
+And most pundits considered that...
+
+278
+00:22:06,590 --> 00:22:09,590
+Apple was going to be
+out of business in a few short months.
+
+279
+00:22:09,591 --> 00:22:12,591
+Business Week ran an article on their cover saying
+
+280
+00:22:12,592 --> 00:22:14,592
+ehm "It's Over - IBM Has Won."
+
+281
+00:22:17,593 --> 00:22:20,593
+The Mac team saw themselves as Apple's pirates
+
+282
+00:22:20,594 --> 00:22:23,594
+but the gang was now being called on to save the ship,
+
+283
+00:22:24,095 --> 00:22:26,595
+as the Apple II was losing precious market share.
+
+284
+00:22:28,096 --> 00:22:30,096
+In the case of the Macintosh team,
+
+285
+00:22:31,097 --> 00:22:33,597
+they were behind schedule in getting the Mac out
+
+286
+00:22:34,098 --> 00:22:36,598
+which was not unusual in high technology
+
+287
+00:22:38,099 --> 00:22:41,099
+and so just getting that product to market
+was extremely important.
+
+288
+00:22:46,000 --> 00:22:49,500
+After many delays, a date for
+the launch of the Mac was announced.
+
+289
+00:22:50,501 --> 00:22:54,501
+The pressure of the deadline was mounting,
+but Steve was still a perfectionist.
+
+290
+00:22:55,002 --> 00:23:00,502
+No design issue was too small and
+it was never too late to do it right.
+
+291
+00:23:01,003 --> 00:23:04,503
+It was a pressure cooker.
+We were working until we finished.
+
+292
+00:23:04,504 --> 00:23:09,004
+We couldn't go to sleep or anything
+I was up for three days in that very last push
+
+293
+00:23:09,005 --> 00:23:16,005
+and finally the stars aligned and the last release
+we made at six a.m. that morning.
+
+294
+00:23:24,006 --> 00:23:28,506
+It was now all or nothing,
+because Lisa had turned out an expensive flop.
+
+295
+00:23:29,007 --> 00:23:32,007
+The fate of the whole company
+seemed to rest on the launch of the Mac.
+
+296
+00:23:32,508 --> 00:23:37,008
+John Sculley had even authorised a
+15 million dollar advertising campaign
+
+297
+00:23:37,009 --> 00:23:39,009
+to coincide with the Mac's public unveiling
+
+298
+00:23:39,010 --> 00:23:42,010
+January 24th, 1984.
+
+299
+00:23:42,511 --> 00:23:49,011
+I remember how nervous Steve was
+before the introduction of the Macintosh
+
+300
+00:23:49,512 --> 00:23:53,512
+and the rehearsal the night before was a total disaster
+
+301
+00:23:55,013 --> 00:23:57,513
+nothing seemed to go right,
+Steve was upset at everybody,
+
+302
+00:23:58,014 --> 00:24:01,514
+we wondered how in the world we were going to
+get through the introduction the following day
+
+303
+00:24:02,015 --> 00:24:06,515
+but when that moment came
+Steve was a master showman.
+
+304
+00:24:11,516 --> 00:24:15,016
+There have only been two milestone products in our industry
+
+305
+00:24:16,517 --> 00:24:23,017
+the Apple 2 in 1977 and the IBM PC in 1981.
+
+306
+00:24:23,518 --> 00:24:25,518
+Today...one year after LISA
+
+307
+00:24:25,519 --> 00:24:30,019
+we are introducing the third industry milestone product
+...Macintosh.
+
+308
+00:24:34,020 --> 00:24:37,520
+Many of us have been working on
+Macintosh for over two years now
+
+309
+00:24:38,521 --> 00:24:41,521
+and it has turned out insanely great.
+
+310
+00:24:43,522 --> 00:24:49,022
+You've just seen some pictures of Macintosh
+now I'd like to show you Macintosh in person.
+
+311
+00:25:10,023 --> 00:25:16,023
+The Macintosh was undoubtedly the first affordable
+personal computer with a genuine graphical user interface.
+
+312
+00:25:16,024 --> 00:25:20,024
+It was also the first computer to be
+a monument to one man's ego.
+
+313
+00:25:21,525 --> 00:25:26,025
+Forget the brilliant work done at Xerox PARC
+and the innovations borrowed from the Lisa.
+
+314
+00:25:26,526 --> 00:25:30,526
+On the day only one man was claiming paternity for the Mac.
+
+315
+00:25:30,527 --> 00:25:34,527
+Computer generated voice:
+So it is with considerable pride, that I introduce a man
+
+316
+00:25:34,528 --> 00:25:38,528
+who's been like a father to me - Steve Jobs.
+
+317
+00:25:44,529 --> 00:25:47,529
+I was standing off-stage and as he came off
+
+318
+00:25:48,530 --> 00:25:53,030
+he said this is the proudest happiest moment
+of my life and it was all over his face
+
+319
+00:25:53,031 --> 00:25:56,031
+it clearly was cause he had launched a revolution.
+
+320
+00:26:03,032 --> 00:26:05,532
+Ultimately it comes down to taste.
+
+321
+00:26:06,533 --> 00:26:11,533
+It comes down to trying to expose yourself to
+the best things that humans have done
+
+322
+00:26:12,534 --> 00:26:16,034
+and then try to bring those things in to what you're doing.
+
+323
+00:26:16,535 --> 00:26:20,535
+I mean Picasso had a saying he said
+good artists copy great artists steal.
+
+324
+00:26:21,536 --> 00:26:27,036
+And we have always been shameless
+about stealing great ideas
+
+325
+00:26:28,537 --> 00:26:34,537
+and I think part of what made the Macintosh
+great was that the people working on it
+
+326
+00:26:34,538 --> 00:26:41,538
+were musicians and poets and artists
+and zoologists and historians
+
+327
+00:26:41,539 --> 00:26:44,539
+who also happened to be the best
+computer scientists in the world.
+
+328
+00:26:47,040 --> 00:26:49,540
+With delusions of grandeur running rampant,
+
+329
+00:26:49,541 --> 00:26:52,541
+Apple created a Hollywood-style TV commercial.
+
+330
+00:26:52,542 --> 00:26:55,042
+It symbolised how the friendly Mac would free us
+
+331
+00:26:55,043 --> 00:26:58,543
+from the Orwellian tyranny of clunky IBM PC's.
+
+332
+00:26:59,544 --> 00:27:01,544
+Pleeeeeease!
+
+333
+00:27:06,045 --> 00:27:10,545
+Despite the hype, by late 1984,
+the Mac's sales were disastrous.
+
+334
+00:27:22,046 --> 00:27:28,546
+In ad after ad, Apple desperately pointed out
+that the Mac was far easier to use than the IBM PC.
+
+335
+00:27:28,547 --> 00:27:33,047
+But it sold for $2500
+a thousand more than the IBM.
+
+336
+00:27:34,548 --> 00:27:40,548
+And despite Jobs' best efforts in recruiting
+software makers like Bill Gates, applications were scarce.
+
+337
+00:27:41,049 --> 00:27:42,049
+It didn't do very much.
+
+338
+00:27:42,050 --> 00:27:45,550
+We had Mac Paint and Mac Write
+were our only applications
+
+339
+00:27:46,051 --> 00:27:50,051
+and the market started to figure this out,
+
+340
+00:27:50,552 --> 00:27:58,552
+by the end of the year people said
+well maybe the IBM PC isn't as easy to use
+
+341
+00:27:58,553 --> 00:28:03,553
+or is not as attractive as the Macintosh but
+it actually does something that we want to be able to do
+
+342
+00:28:03,554 --> 00:28:06,054
+spreadsheets, wordprocessing and database
+
+343
+00:28:06,055 --> 00:28:11,055
+and so we started to see the sales of the Mac
+tail off towards the end of 1984,
+
+344
+00:28:12,056 --> 00:28:15,056
+and that became a problem the following year.
+
+345
+00:28:17,557 --> 00:28:21,057
+Cringely's Third Law of Personal Computing was right again,
+
+346
+00:28:22,058 --> 00:28:27,058
+to succeed, a PC must have an application
+which alone justifies buying the whole box.
+
+347
+00:28:27,559 --> 00:28:32,559
+The IBM PC had Lotus 1-2-3.
+The Mac needed its killer application.
+
+348
+00:28:36,060 --> 00:28:39,060
+WYSIWYG - another bunch of initials,
+from the world of the nerds.
+
+349
+00:28:39,061 --> 00:28:42,561
+What you see is what you get
+so what's the big deal?
+
+350
+00:28:42,562 --> 00:28:49,562
+Well, it turns out that it's very hard to print on paper
+exactly the same image that you see on the computer screen.
+
+351
+00:28:49,563 --> 00:28:54,563
+Eighty per cent of our brain is devoted to processing
+visual data, but that's not the same for computers.
+
+352
+00:28:54,564 --> 00:28:57,064
+I've been here writing a letter to my Mum
+
+353
+00:28:57,065 --> 00:29:04,365
+and I'm signing it Bob in 72 point
+Times Roman Italic type as befitting myself
+
+354
+00:29:04,366 --> 00:29:07,866
+and when I tell it to print,
+what comes out is a Bob
+
+355
+00:29:07,867 --> 00:29:10,367
+but certainly not the Bob that I intended.
+
+356
+00:29:13,068 --> 00:29:17,068
+Until someone invented a way to print
+exactly what was on the screen
+
+357
+00:29:17,069 --> 00:29:19,569
+gui would be, well a lot of hooey.
+
+358
+00:29:21,070 --> 00:29:23,570
+Apple's problem was the dot matrix printer.
+
+359
+00:29:23,571 --> 00:29:26,071
+It gave everything a type-writer quality.
+
+360
+00:29:27,572 --> 00:29:32,072
+But salvation was at hand and
+once again it owed a lot to Xerox Parc.
+
+361
+00:29:32,573 --> 00:29:35,073
+One of Parc's former brains, John Warnock,
+
+362
+00:29:35,074 --> 00:29:39,074
+had invented a technology that allowed
+a laser printer to print exactly,
+
+363
+00:29:39,075 --> 00:29:41,575
+precisely what was on your screen.
+
+364
+00:29:42,576 --> 00:29:46,076
+He started a company called Adobe
+to market his invention
+
+365
+00:29:47,077 --> 00:29:48,577
+And what we had figured out how to do
+
+366
+00:29:48,578 --> 00:29:52,078
+that no-one else had figured out
+how to do was drive laser printers.
+
+367
+00:29:52,079 --> 00:29:56,079
+Within two or three weeks
+we had cancelled our internal project,
+
+368
+00:29:56,580 --> 00:29:59,580
+a bunch of people wanted to
+kill me over this, but we did it
+
+369
+00:29:59,581 --> 00:30:02,581
+and I had cut a deal with Adobe user software
+
+370
+00:30:03,082 --> 00:30:05,582
+and we bought 19.9 per cent of Adobe at Apple.
+
+371
+00:30:09,083 --> 00:30:11,083
+The investment paid off.
+
+372
+00:30:20,584 --> 00:30:26,584
+The power of precise laser-printed images
+and a user friendly gui gave birth to a brand new business
+
+373
+00:30:26,585 --> 00:30:28,585
+Desk-top publishing (DTP).
+
+374
+00:30:29,586 --> 00:30:32,586
+The spreadsheet had made us all accountants.
+
+375
+00:30:32,587 --> 00:30:36,087
+Now using break-through software
+we could create fancy artwork,
+
+376
+00:30:36,588 --> 00:30:39,588
+snappy-looking note-paper, even counterfeit money.
+
+377
+00:30:41,589 --> 00:30:44,089
+The Mac had found its killer application
+
+378
+00:30:44,090 --> 00:30:48,090
+and would soon become the PC of choice
+for any creative business.
+
+379
+00:30:49,091 --> 00:30:54,591
+It changed my life that one instant
+when I picked up the mouse
+
+380
+00:30:54,592 --> 00:30:58,592
+my whole life changed to building
+a career as a computer artist.
+
+381
+00:31:02,593 --> 00:31:06,593
+The success of desk-top publishing
+came too late for Apple's founder.
+
+382
+00:31:06,594 --> 00:31:11,594
+In 1985 Mac sales were still flat
+but Jobs refused to believe the numbers.
+
+383
+00:31:11,595 --> 00:31:15,095
+He simply behaved as if the Mac was
+a hot seller from the start.
+
+384
+00:31:16,096 --> 00:31:19,096
+The grandiose plans of what
+Macintosh were going to be
+
+385
+00:31:19,097 --> 00:31:24,097
+was just so far out of whack
+with the truth of what the product was doing
+
+386
+00:31:24,098 --> 00:31:28,098
+and the truth of what the product was doing
+was not horrible it was salvagable
+
+387
+00:31:28,099 --> 00:31:31,599
+but the gap between the two
+was just so unthinkable
+
+388
+00:31:31,600 --> 00:31:35,100
+that somebody had to do something
+and that somebody was John Sculley.
+
+389
+00:31:35,501 --> 00:31:39,101
+John Sculley, whom Jobs saw
+as his own creation,
+
+390
+00:31:39,102 --> 00:31:42,102
+presented the board with
+his strategy to save the company.
+
+391
+00:31:42,503 --> 00:31:45,503
+The plan did not include Steve Jobs.
+
+392
+00:31:46,504 --> 00:31:51,004
+The board had to make a choice,
+and I said look, it's Steve's company,
+
+393
+00:31:51,005 --> 00:31:56,505
+I was brought in here to help you know,
+if you want him to run it that's fine with me
+
+394
+00:31:57,506 --> 00:32:02,006
+but you know we've at least decide what
+we're going to do and everyone has got to get behind it.
+
+395
+00:32:02,507 --> 00:32:08,507
+But he took it as a personal attack,
+started attacking Scully in which you know,
+
+396
+00:32:08,508 --> 00:32:13,008
+backed himself into a corner because he was sure
+that the board would support him and not Sculley.
+
+397
+00:32:13,509 --> 00:32:18,509
+And ehm ultimately after the board talked
+with Steve and talked with me,
+
+398
+00:32:19,010 --> 00:32:25,010
+the decision was that we would go forward
+with my plans and Steve left.
+
+399
+00:32:30,011 --> 00:32:32,511
+What can I say? I hired the wrong guy.
+
+400
+00:32:32,512 --> 00:32:34,012
+That was Sculley?
+
+401
+00:32:34,013 --> 00:32:41,013
+Yeah and eh he destroyed everything
+I spent ten years working for.
+
+402
+00:32:42,514 --> 00:32:46,014
+Starting with me but that wasn't the saddest part.
+
+403
+00:32:46,015 --> 00:32:51,015
+I would have gladly left Apple if
+Apple would have turned out like I wanted it to.
+
+404
+00:32:51,516 --> 00:32:54,516
+People in the company had
+very mixed feelings about it.
+
+405
+00:32:54,517 --> 00:33:00,017
+Everyone had been terrorised by Steve Jobs
+at some point or another and so there was a certain relief
+
+406
+00:33:01,018 --> 00:33:05,018
+that the terrorist will be gone
+but on the other hand I think
+
+407
+00:33:05,019 --> 00:33:08,019
+there was an incredible respect
+for Steve Jobs by the very same people
+
+408
+00:33:08,020 --> 00:33:10,020
+and we were all very worried
+what would happen to this company
+
+409
+00:33:10,021 --> 00:33:14,521
+without the visionary, without the founder,
+without the care, without the charisma...
+
+410
+00:33:15,022 --> 00:33:17,522
+Apple never recovered from losing Steve.
+
+411
+00:33:17,523 --> 00:33:20,023
+Steve was the heart and soul and driving force.
+
+412
+00:33:20,024 --> 00:33:25,024
+It would be quite a different place today.
+They lost their soul.
+
+413
+00:33:36,525 --> 00:33:41,025
+The years after Jobs left were the most
+profitable for Apple Computers.
+
+414
+00:33:41,526 --> 00:33:44,026
+Apple people worked hard, they played hard.
+
+415
+00:33:44,027 --> 00:33:46,527
+They made the computer business
+look like a beach party
+
+416
+00:33:46,528 --> 00:33:50,028
+and with a median age of twenty seven
+the company was very sexy too...
+
+417
+00:33:50,029 --> 00:33:51,529
+...maybe too sexy.
+
+418
+00:33:51,530 --> 00:33:55,030
+There was so much sleeping around that
+they came up with a travel policy back then
+
+419
+00:33:55,031 --> 00:33:58,031
+that men would share rooms with other men on the road
+and women with other women
+
+420
+00:33:58,032 --> 00:34:00,032
+just to settle it down a bit.
+
+421
+00:34:00,033 --> 00:34:03,533
+They applied the California lifestyle
+to the computer industry
+
+422
+00:34:03,534 --> 00:34:06,034
+and the computer industry
+would never be the same again.
+
+423
+00:34:11,035 --> 00:34:14,535
+In this bizarre promo to inspire their sales force,
+
+424
+00:34:14,536 --> 00:34:20,536
+Apple stressed that the Mac's ease of use could
+liberate the pathetic prisoners of the IBM PC.
+
+425
+00:34:20,537 --> 00:34:28,537
+Commercial:
+We'll fight them in the office and the classroom
+and the desktop with superior weapons.
+
+426
+00:34:28,538 --> 00:34:32,038
+With improvements to the hardware
+and the boom in desktop publishing,
+
+427
+00:34:32,039 --> 00:34:34,539
+Mac production went into overdrive.
+
+428
+00:34:35,040 --> 00:34:39,540
+By 1987, Apple was selling a million a year. IBM numbers!
+
+429
+00:34:46,541 --> 00:34:51,041
+The Mac minted money,
+half its 2000 dollar price was pure profit!
+
+430
+00:35:02,042 --> 00:35:04,542
+Apple arrogantly assumed their stuff was so good,
+
+431
+00:35:04,543 --> 00:35:09,043
+consumers would always pay a premium for it.
+Big mistake.
+
+432
+00:35:12,044 --> 00:35:14,544
+The Mac really ought to have
+won the battle for the desktop
+
+433
+00:35:14,545 --> 00:35:18,045
+OK, it was more expensive than an IBM PC
+
+434
+00:35:18,046 --> 00:35:22,546
+but if what you wanted was a friendly
+easy to use system and surely everyone wanted that,
+
+435
+00:35:22,547 --> 00:35:27,047
+then this was the only game in town
+at least that's what the boys at Apple thought
+
+436
+00:35:27,048 --> 00:35:30,048
+but they weren't reckoning on one man, Bill Gates.
+
+437
+00:35:30,549 --> 00:35:36,049
+Gates saw that the Mac's GUI represented
+a long term threat to Microsoft's money machine,
+
+438
+00:35:36,050 --> 00:35:40,550
+to DOS, the clunky operating system
+that sat inside every IBM PC.
+
+439
+00:35:41,051 --> 00:35:44,551
+So Bill had his boys create a GUI
+that sat in top of DOS
+
+440
+00:35:44,552 --> 00:35:48,052
+rather like building a fancy facade
+on an old building.
+
+441
+00:35:48,553 --> 00:35:51,053
+They called it Windows and
+it wasn't much at first
+
+442
+00:35:51,054 --> 00:35:54,054
+but it was good enough to
+defend the DOS franchise.
+
+443
+00:35:54,555 --> 00:35:57,055
+February or March of 1984,
+
+444
+00:35:57,056 --> 00:36:00,556
+which was just right after the
+Apple Macintosh had been introduced.
+
+445
+00:36:01,057 --> 00:36:07,557
+And at that point in time we were firmly convinced
+that we needed to bet on graphic user interface.
+
+446
+00:36:07,558 --> 00:36:10,558
+First with the Macintosh
+and then with Windows.
+
+447
+00:36:13,059 --> 00:36:16,559
+At Microsoft, it was a long and
+often frustrating struggle
+
+448
+00:36:16,560 --> 00:36:19,560
+to find a GUI solution
+that challenged the MAC.
+
+449
+00:36:20,061 --> 00:36:21,561
+I know the feeling!
+
+450
+00:36:28,062 --> 00:36:33,062
+For years teams of Microsofties slaved in
+their windowless offices to build Windows
+
+451
+00:36:33,563 --> 00:36:37,063
+refreshed by an endless supply of free sodas.
+
+452
+00:36:38,064 --> 00:36:44,564
+I was the development manager for Windows 1.0
+and we kept slogging and slogging
+
+453
+00:36:44,565 --> 00:36:47,065
+yeah it took us i don't know about seven versions
+
+454
+00:36:47,066 --> 00:36:50,566
+just a few versions to get
+things right for 1990, that's right.
+
+455
+00:36:51,567 --> 00:36:54,567
+Windows may at first have been
+a joke compared to the Mac.
+
+456
+00:36:54,568 --> 00:36:58,068
+But Gates is persistent. Slowly it got better.
+
+457
+00:36:58,069 --> 00:37:00,569
+And the guys at Apple got worried.
+
+458
+00:37:00,570 --> 00:37:03,070
+As each new feature appeared on the Windows gui,
+
+459
+00:37:03,071 --> 00:37:06,571
+the more they thought Microsoft
+was copying the features on the Mac.
+
+460
+00:37:07,572 --> 00:37:10,572
+So finally they sued Microsoft,
+
+461
+00:37:10,573 --> 00:37:15,573
+accusing them in a long legal battle of
+stealing the look and feel of Apple's GUI.
+
+462
+00:37:17,574 --> 00:37:20,074
+The look and feel which is how it looks,
+
+463
+00:37:20,575 --> 00:37:26,575
+the experience of using it was not patentable
+but it was copyrightable
+
+464
+00:37:26,576 --> 00:37:30,576
+but there was no precedent law.
+This was going to be a precedent setting case.
+
+465
+00:37:30,577 --> 00:37:35,577
+But it was a period of five years where, Microsoft
+
+466
+00:37:35,578 --> 00:37:41,578
+our whole strategy would have been ruined
+because Windows was very important to us.
+
+467
+00:37:41,579 --> 00:37:45,079
+They weren't going to change anything and
+
+468
+00:37:48,080 --> 00:37:50,080
+they were going to get us to cave in
+
+469
+00:37:50,081 --> 00:37:52,581
+or take us all the way to
+the Supreme Court on this thing.
+
+470
+00:37:52,582 --> 00:37:59,082
+We assumed that the lawyers, the judges would all
+come to the right conclusion which eventually they did.
+
+471
+00:37:59,583 --> 00:38:01,083
+And Apple lost.
+
+472
+00:38:01,084 --> 00:38:08,084
+But in that period of about six years
+that this case was going on
+
+473
+00:38:08,085 --> 00:38:13,585
+it may have lulled us into a
+bit of complacency thinking that
+
+474
+00:38:14,086 --> 00:38:18,086
+we were going to be insulated,
+you know, from the Windows attack.
+
+475
+00:38:24,587 --> 00:38:28,587
+The launch of Windows 3 in 1990
+killed off Apple's hopes
+
+476
+00:38:28,588 --> 00:38:31,088
+that the Macintosh would win the gui wars.
+
+477
+00:38:36,589 --> 00:38:40,589
+Today we're introducing Microsoft Windows version 3...
+
+478
+00:38:41,090 --> 00:38:46,090
+The six years' labour to produce a GUI
+that made IBM PCs and all the clones
+
+479
+00:38:46,091 --> 00:38:49,591
+as easy to use as the Mac finally came up trumps.
+
+480
+00:38:50,092 --> 00:38:56,592
+In a year Windows 3 sold close to 30 million copies,
+consigning the Mac to a niche in the market.
+
+481
+00:38:56,593 --> 00:38:59,593
+Ladies and gentlemen the Windows 3 development team.
+
+482
+00:39:02,594 --> 00:39:04,594
+Bill Gates strategy won out.
+
+483
+00:39:05,095 --> 00:39:09,095
+At every stage in the PC's development
+he joined the leading hardware company
+
+484
+00:39:09,596 --> 00:39:15,096
+and by carving out a dominant market share
+for his product made his software the industry standard.
+
+485
+00:39:15,597 --> 00:39:22,597
+You know the original PC did our evangelism in the way
+we created tools for that and pulled that together.
+
+486
+00:39:23,098 --> 00:39:26,598
+Take Windows did we bet our company on that
+did that come together?
+
+487
+00:39:27,099 --> 00:39:30,599
+Virtually everything we've done,
+when we've first come out with it there's a lot of scepticism
+
+488
+00:39:31,000 --> 00:39:34,000
+but most of the things we really stuck with them
+
+489
+00:39:34,501 --> 00:39:39,001
+and despite all that second guessing
+we were able to pull them off.
+
+490
+00:39:39,502 --> 00:39:42,002
+The problem was the industry wasn't measured by
+
+491
+00:39:42,003 --> 00:39:46,503
+who has the best selling personal computer
+or who has the most innovative technology.
+
+492
+00:39:46,504 --> 00:39:53,504
+The industry was measured by who had the most open system
+that was adopted by the most other companies
+
+493
+00:39:54,005 --> 00:39:58,505
+and the Microsoft strategy ultimately turned out
+to be the better business strategy.
+
+494
+00:39:59,006 --> 00:40:02,506
+The only problem with Microsoft is
+they just have no taste,
+
+495
+00:40:02,507 --> 00:40:05,507
+they have absolutely no taste,
+and what that means is
+
+496
+00:40:05,508 --> 00:40:08,508
+I don't mean that in a small way
+I mean that in a big way.
+
+497
+00:40:08,509 --> 00:40:10,509
+In the sense that...
+
+498
+00:40:15,010 --> 00:40:22,010
+they, they don't think of original ideas and
+they don't bring much culture into their product
+
+499
+00:40:23,511 --> 00:40:25,011
+and you say why is that important
+
+500
+00:40:25,012 --> 00:40:29,012
+well you know proportionally spaced fonts
+come from type setting and beautiful books,
+
+501
+00:40:29,013 --> 00:40:31,013
+that's where one gets the idea
+
+502
+00:40:31,014 --> 00:40:34,014
+if it weren't for the Mac
+they would never have that in their products
+
+503
+00:40:36,515 --> 00:40:41,515
+and so I guess I am saddened,
+
+504
+00:40:41,516 --> 00:40:44,516
+Not by Microsoft's success
+I have no problem with their success,
+
+505
+00:40:45,017 --> 00:40:48,517
+they've earned their success for the most part.
+
+506
+00:40:48,518 --> 00:40:52,518
+I have a problem with the fact that
+they just make really third rate products.
+
+507
+00:40:53,519 --> 00:40:59,019
+I will admit quite frankly that I think
+Windows today is probably four years behind,
+
+508
+00:40:59,020 --> 00:41:05,520
+three years behind where it would have been
+had we not danced with IBM for so long.
+
+509
+00:41:05,521 --> 00:41:10,521
+Because the amount of split energy,
+split works, split IQ in the company
+
+510
+00:41:10,522 --> 00:41:15,522
+really cost our end customer
+real innovation in our product line
+
+511
+00:41:16,023 --> 00:41:21,523
+and so whenever I hear these criticisms
+which I gotta to say sting eh sometimes,
+
+512
+00:41:22,024 --> 00:41:26,524
+I say to myself just you watch,
+just you watch Windows 95, Windows 9...
+
+513
+00:41:26,525 --> 00:41:30,525
+there's no lack of focus there hasn't been here
+for the last three or four years
+
+514
+00:41:30,526 --> 00:41:33,026
+since we didn't have this big spot with IBM.
+
+515
+00:41:33,527 --> 00:41:36,527
+And i think even in the operating systems here now,
+
+516
+00:41:36,528 --> 00:41:42,028
+you'll start to see clear, clear...
+and people will recognise clear leadership.
+
+517
+00:41:42,029 --> 00:41:44,029
+We just keep making them better.
+
+518
+00:41:44,030 --> 00:41:49,030
+We get millions of phone calls
+we get to go out there and talk to customers
+
+519
+00:41:49,031 --> 00:41:54,531
+there's nothing cast in concrete. If people decide
+there's something we should change we change it,
+
+520
+00:41:54,532 --> 00:41:57,532
+it's a lot better than most industries in that sense.
+
+521
+00:41:58,033 --> 00:42:03,033
+I think the way that applications user interfaces
+have advanced over the last decade
+
+522
+00:42:03,034 --> 00:42:08,034
+Microsoft has been at the forefront
+of a very high percentage of that,
+
+523
+00:42:08,035 --> 00:42:11,035
+and you know,
+I think it's great stuff.
+
+524
+00:42:14,036 --> 00:42:19,536
+On August 24th 1995, Gates delivered
+the coup de grace to his software rivals.
+
+525
+00:42:20,037 --> 00:42:26,037
+Windows 95 combines a PC's operating system
+and its graphical interface into one package.
+
+526
+00:42:26,038 --> 00:42:33,038
+With a worldwide promotional campaign costing $300 million,
+it looks set to become the industry standard
+
+527
+00:42:33,039 --> 00:42:36,539
+supplanting Microsoft's old warhorse DOS.
+
+528
+00:42:41,040 --> 00:42:43,040
+Cue the triumph of Bill.
+
+529
+00:42:43,041 --> 00:42:46,041
+A software nerd is the richest man in the world.
+
+530
+00:42:49,042 --> 00:42:53,042
+But even as Bill Gates bestrides
+the PC world like a colossus,
+
+531
+00:42:53,543 --> 00:42:57,543
+ahead lie bigger battles, battles
+that will make the trouncing of the Mac
+
+532
+00:42:57,544 --> 00:43:01,044
+and mastering the IBM PC
+look like a tea party.
+
+533
+00:43:06,545 --> 00:43:12,045
+The Gates fortune was built on setting the
+industry standard for PC operating systems.
+
+534
+00:43:12,046 --> 00:43:15,546
+Fine as long as PC's are
+stand alone boxes on your desk.
+
+535
+00:43:18,047 --> 00:43:24,547
+But now they are being linked into a worldwide network,
+the much hyped information superhighway.
+
+536
+00:43:24,548 --> 00:43:28,548
+The PC on the internet is a mailbox,
+a telephone and a television.
+
+537
+00:43:29,049 --> 00:43:36,049
+Of course at the centre of this will be the idea of
+digital convergence that is taking all the information
+
+538
+00:43:36,050 --> 00:43:44,050
+books, art, movies and being able to provide that
+on demand on what the PC will have evolved into.
+
+539
+00:43:44,551 --> 00:43:50,551
+The Internet is the next wave of the information revolution
+where there is as yet no industry standard,
+
+540
+00:43:50,552 --> 00:43:53,552
+a world where even Bill Gates seems unsure.
+
+541
+00:43:54,053 --> 00:43:57,053
+You know, if you take the way
+the Internet is changing month by month,
+
+542
+00:43:57,054 --> 00:44:00,554
+if somebody can predict what's going to happen
+three months from now, nine months from now
+
+543
+00:44:00,555 --> 00:44:03,555
+even today eh my hat's off to them,
+
+544
+00:44:03,556 --> 00:44:10,056
+I think we've got a phenomena here that is moving
+so rapidly that nobody knows exactly where it will go.
+
+545
+00:44:13,557 --> 00:44:16,057
+Bill Gates isn't resting on his laurels.
+
+546
+00:44:16,058 --> 00:44:21,558
+He's making new alliances, like investing in
+Steven Spielberg's new movie studio, Dreamworks.
+
+547
+00:44:25,559 --> 00:44:31,559
+He's in cable TV with broadcaster NBC and in
+competition with Rupert Murdoch and Mickey Mouse.
+
+548
+00:44:32,560 --> 00:44:37,560
+These tycoons are a far cry from
+the nerds Bill has so far outsmarted
+
+549
+00:44:37,561 --> 00:44:41,061
+guys like Gary Kildall who became
+businessmen by accident.
+
+550
+00:44:41,562 --> 00:44:48,562
+Even Bill's victory over IBM was really with a corporate outpost
+a long way from the attention of Big Blue Headquarters.
+
+551
+00:44:52,563 --> 00:44:55,563
+No - Bill's new rivals are hotshots, not hippies.
+
+552
+00:44:56,064 --> 00:44:58,064
+And one of them is the guy I'm visiting.
+
+553
+00:44:58,065 --> 00:45:02,065
+He hopes the Internet will go somewhere
+other than to Bill Gates' bottom line.
+
+554
+00:45:02,066 --> 00:45:08,566
+He's betting it will soon consign the PC itself
+to the trashcan and do the same to Microsoft.
+
+555
+00:45:19,567 --> 00:45:22,067
+Larry Ellison is the boss of Oracle,
+
+556
+00:45:22,068 --> 00:45:27,568
+a booming business that sells software to companies
+who share information among hundreds of users.
+
+557
+00:45:30,069 --> 00:45:33,069
+In Atherton, the most exclusive suburb in Silicon Valley,
+
+558
+00:45:33,070 --> 00:45:38,570
+the bachelor billionaire has built himself
+a 10 million dollar samurai mansion. Naturally!
+
+559
+00:45:39,071 --> 00:45:44,571
+I want to have a large pond about 5 acres of water
+surrounded by several little buildings like a village.
+
+560
+00:45:45,572 --> 00:45:50,072
+With his ceremonial carp Larry contemplates
+the coming battle with Microsoft.
+
+561
+00:45:51,073 --> 00:45:55,073
+People make a terrible mistake of thinking
+IBM is the present and Microsoft is the future
+
+562
+00:45:55,074 --> 00:45:58,074
+I think IBM is the past and Microsoft is the present
+
+563
+00:45:58,075 --> 00:46:02,075
+and the future has not happened so we don't know what company,
+what technology is going to be dominant.
+
+564
+00:46:03,576 --> 00:46:06,076
+These are temple guardians from the Koma Kura period
+
+565
+00:46:07,577 --> 00:46:10,577
+and, they you know you would have
+one on either side of your door and,
+
+566
+00:46:10,578 --> 00:46:15,078
+the job was to scare employees of Microsoft away
+and keep them from entering the Temple.
+
+567
+00:46:16,079 --> 00:46:20,579
+We shouldn't spend all of our time wringing our hands
+about Microsoft you know
+
+568
+00:46:20,580 --> 00:46:25,580
+Microsoft world domination that eh
+there still room enough for innovation.
+
+569
+00:46:25,581 --> 00:46:29,581
+there's going to be change and
+Microsoft's future is not assured.
+
+570
+00:46:30,582 --> 00:46:32,082
+Anything good for the Internet.
+
+571
+00:46:32,083 --> 00:46:36,083
+Yeah I'm very supportive of it because
+the Internet does not require a PC.
+
+572
+00:46:36,084 --> 00:46:41,084
+Larry believes the PC will be replaced with
+a cheap device he calls an information appliance.
+
+573
+00:46:41,585 --> 00:46:45,585
+It will be a glorified television which will
+access information and computing
+
+574
+00:46:45,586 --> 00:46:49,086
+simply by connecting to
+giant computers via the Internet.
+
+575
+00:46:49,087 --> 00:46:51,087
+Just like turning on a tap.
+
+576
+00:46:51,088 --> 00:46:54,088
+and the PC will go the way of the well and the bucket.
+
+577
+00:46:54,589 --> 00:46:57,089
+I hate the PC with a passion.
+
+578
+00:46:57,590 --> 00:47:00,090
+Me going down to the store
+and buying Windows 95,
+
+579
+00:47:00,091 --> 00:47:06,091
+I've got to get into my car drive down
+to a store, buy a cardboard box full of bits,
+
+580
+00:47:06,092 --> 00:47:11,592
+you know encoded on a piece of plastic CDROM
+and you bring it home and read a manual install this thing
+
+581
+00:47:11,593 --> 00:47:15,593
+you must be kidding you know,
+put the stuff on the net
+
+582
+00:47:15,594 --> 00:47:20,594
+it's bits, don't put bits in cardboard,
+cardboard in trucks, trucks to stores,
+
+583
+00:47:21,095 --> 00:47:25,095
+me go to the store, you know,
+pick the stuff out, it's insane.
+
+584
+00:47:26,096 --> 00:47:32,096
+OK I love the Internet,
+I want information you know it flows across the wire.
+
+585
+00:47:33,597 --> 00:47:38,597
+So, the way ahead is wired,
+Larry, Bill, everybody agrees on that.
+
+586
+00:47:38,598 --> 00:47:42,098
+And we have the nerds of the seventies
+to thank for making it possible,
+
+587
+00:47:42,099 --> 00:47:44,599
+whether the PC itself survives or not.
+
+588
+00:47:44,600 --> 00:47:49,100
+As we take up their challenge, it's worth finding out
+how these pioneers made out.
+
+589
+00:47:50,501 --> 00:47:54,501
+Steve Jobs sold all his Apple stock
+in disgust when he was fired,
+
+590
+00:47:54,502 --> 00:47:58,502
+but has made another fortune from
+his stake in a movie animation studio.
+
+591
+00:47:58,503 --> 00:48:01,503
+He has no doubts about
+his contribution to humanity.
+
+592
+00:48:02,504 --> 00:48:06,004
+If you talk to people that use
+the Macintosh they love it
+
+593
+00:48:06,005 --> 00:48:11,005
+but you don't hear people loving products
+very often you know really,
+
+594
+00:48:11,006 --> 00:48:14,506
+but you could feel it in there,
+there was something really wonderful there.
+
+595
+00:48:16,007 --> 00:48:21,007
+Apple, the company Jobs took from a garage
+to the Fortune 500 is in trouble.
+
+596
+00:48:21,008 --> 00:48:24,008
+It is now a fading force in the PC marketplace.
+
+597
+00:48:26,009 --> 00:48:29,009
+Apple's other millionaire founder Steve Wozniak,
+
+598
+00:48:29,010 --> 00:48:33,010
+spends much of his time teaching
+computing to 11 and 12 year olds.
+
+599
+00:48:36,011 --> 00:48:42,011
+IBM created the mass market for the PC
+but no longer sets industry standards.
+
+600
+00:48:44,012 --> 00:48:48,512
+And most of the guys who built
+IBM's first PC have left Big Blue.
+
+601
+00:48:50,513 --> 00:48:54,013
+And Ed Roberts who built the Altair,
+the very first PC,
+
+602
+00:48:56,514 --> 00:49:01,014
+he turned his back on computing
+and returned to his first love, medicine.
+
+603
+00:49:03,015 --> 00:49:05,015
+Funny, isn't how things turn out?
+
+604
+00:49:06,016 --> 00:49:09,516
+After all the first PC revolution
+caught us all pretty much by surprise.
+
+605
+00:49:09,517 --> 00:49:13,517
+Even Microsoft with 2000 millionaires
+and at least two billionaires
+
+606
+00:49:13,518 --> 00:49:16,518
+never expected to be as successful
+as they are today.
+
+607
+00:49:18,019 --> 00:49:20,019
+Cringely's universal law says,
+
+608
+00:49:20,020 --> 00:49:26,020
+Society takes 30 years to adopt new technology
+into daily life, the phone, movies.
+
+609
+00:49:26,021 --> 00:49:30,521
+Even television took that long before
+our rear ends became couch-shaped.
+
+610
+00:49:30,522 --> 00:49:33,022
+So far the PC has had 20 years.
+
+611
+00:49:33,523 --> 00:49:36,523
+So what comes next? Well, I'm off to find out.
+
+612
+00:49:36,524 --> 00:49:38,524
+See you in ten years!
+
+613
+00:49:44,525 --> 00:49:54,525
+Subtitles by [*** (V)r . |)  U  ƒ  |2  E  §  ||  E ***]
+from PBS transcripts,
+(12/12/2007)
+
+614
+00:49:54,526 --> 00:50:04,526
+Inspired by,
+fabiusX
+from part I and II
+

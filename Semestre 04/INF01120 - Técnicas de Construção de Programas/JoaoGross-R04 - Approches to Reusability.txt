@@ -1,0 +1,144 @@
+Cadeira: INF01120 - Técnicas de Construção de Programas
+Professor: Marcelo Pimenta
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2011/02
+
+Resumo 4 - Approches to Reusability
+
+
+Resumo:
+
+- Com reusabilidade podemos ter:
+	-> Timeliness: utilizando códigos que já foram desenvolvidos podemos concluir
+	um projeto mais rapidamente e lança-lo
+	-> Diminuição em esforços com manutenção
+	-> Confiabilidade: fazendo reuso de programas confiáveis garante que a aplicação
+	estará correta
+	-> Eficiência: reusabilidade faz com que os desenvolvedores utilizem os melhores 
+	algoritmos e as melhores estruturas de dados
+	-> Investimento: reusabilidade é a melhor forma de preservar o conhecimento de 
+	bons programadores, pois um software reusável pode ser posteriormente utilizado
+	em outras aplicações 
+
+- Se uma empresa é nova em reuso de código, dificilmente ela será uma produtora de 
+código reusável. Com o tempo, imitando grupos que desenvolvem código reusável, 
+estudando e persistindo essa companhia pode se tornar um produtor de código reusável.
+
+- "Seja um consumidor de reuso antes de tentar ser um produtor de reuso."
+
+- O que podemos reusar?
+	-> Pessoas: os desenvolvedores também são reusáveis. Em empresas, gerlamente, 
+	os engenheiros de software vão de projeto em projeto, agregando mais conehcimento 
+	e disseminando o que já conhecem com seus colegas. Dessa forma o 'know-how' não
+	se perde e as experiências são transmitidas.
+	
+	-> Projetos e especificações: uma empresa que desenvolve sempre o mesmo produto, 
+	com pequenas alteraçẽos de acordo com o cliente, deve ter um repositório com
+	diversos esqueletos de aplicações, com design encaminhados e espeficiações consis-
+	tentes, visando a preservação do know-how, timeliness, confiabilidade, corretude
+	e eficiência dos projetos.
+	
+	-> Padrões de projeto: para o desenvolvimento de aplicações também é recomendável 
+	ter programas que resolvem determinados problemas disponíveis para reuso. Novamente
+	assim não é preciso desenvolver a mesma coisa várias vezes.
+	
+	-> Código-fonte: com o código fonte em mãos é possível reusar seu conteúdo sem que
+	haja informações escondidas.
+	
+	-> Módulos abstratos: componentes reusáveis de software que devem ser modulares.
+	
+- Repetição de código: evitar que operações simples como escrita e leitura de arquivos
+sejá sempre reescrita. Para esses casos, e outros também, é possível reusar.
+
+- Por que muitos não reusam?
+	-> Not Invented Here Syndrom (NIH Syndrom): os desenvolvedores são individualistas 
+	e não gostam que acreditar que o trabalho de outras pessoas é confiável e acabam 
+	fazendo o seu próprio programa. Porém muitas vezes isso também é um reflexo do medo
+	que os desenvolvedores tem em não saberem quais os bugs que o software reusado trará
+	ou mesmo quanto a sua corretude.
+
+	-> Estratégias de algumas companhias: as vezes não é vantagem produzir um software 
+	que aplique os conceitos de reusabilidade, muitas vezes o resultado do trabalho é
+	largamente aplicável e o cliente pode não querer o próximo trabalho.
+		- O objetivo do reuso não é substituir as pessoas, mas separar o que será feito 
+		pelas pessoas e o que será feito pelas ferramentas.
+		- Consultores podem dizer quais os melhores componentes de uma ferramenta que 
+		podem ser utilizadas para uma aplicação
+
+	-> A distribuição do código compilado (binário), protege a propriedade intelectual do desenvol-
+	vedor, porém garante a reusabilidade. Também pode-se distribuir o código com arquivo fonte.
+	Isso facilita o trabalho do desenvolvedor, pois diminui sua preocupação com a portabilidade.
+ 
+	-> Uma boa distribuição de código, que pode ser reusada, não é considerada boa apenas pela
+	sua implementação, mas principalmente pelo projeto dos elementos de interface, que facilitam
+	a vida do programador.
+		- Lembre: as interfaces das funções ficarão expostas para o mundo, logo elas precisam ser bem
+		pensadas
+		
+	-> reusabilidade também deve levar em consideração o uso das melhores estruturas, visando a
+	minimização dos custos de execução e a melhor forma organizacional de disponibilizar os com-
+	ponentes do software.
+ 
+- Como um módulo reusável deve ser?
+	-> na prática, ao desenvolvermos um software iremos nos deparar com problemas que não são
+	plenamente solucionáveis com as funções que temos a disposição para reusar. Nesse caso o
+	desenvolvedor pode reescrever boa parte da função que já está pronta, contudo englobando a solução
+	plena do seu problema ou aliar reusabilidade com escrita de código. Este último é geralmente o que
+	ocorre no mundo verdadeiro, pois dificilmente teremos sempre funções que resolvam todos os
+	problemas que queremos solucionar.
+		- Logo, na prática, a reusabilidade está associada à extensão das funções, pois elas precisarão
+		ser adaptadas para suprir todas as nossas necessidades.
+ 
+- Cinco requisitos em estruturas modulares
+	-> Variação de Tipo: em reusabilidade certos módulos devem aceitar qualquer tipo de dados para
+	trabalhar, int,floatm double, etc. Um módulo não genérico, em que o tipo esteja hard-coded, é
+	ineficiente, pois fica restrito a apenas alguns casos de aplicação, precisando o desenvolvedor
+	alterar o código fonte para poder usar o módulo corretamente.
+ 
+	-> Agrupamento de rotinas: um módulo que realiza uma determinada operação deve estar servido
+	de diversas rotinas auxiliares que ajudam a por em prática sua operação principal.
+	 
+	-> Variação de implementação: módulos utilizam diferentes algoritmos para solucionar os mesmos
+	problemas, onde cada implementação é melhor do que a outra em determinado aspecto. Cabe ao
+	desenvolvedor criar úma família de módulos, quando for conveniente, para que se tenha acesso
+	às diferentes implementações dos algoritmos.
+	 
+	-> Independência de representação: uma forma de especificar uma sem saber a sua implementação.
+	Por exemplo, uma tabela t e um elemento x. A chamada get(t, x), para pegar o elemento x da tabela t,
+	independente do tipo da tabela. Para vista do cliente.
+	 
+	-> Factoring Out comportamentos comuns: na visão do desenvolvedor, e não do cliente, ele deve tirar
+	vantagem de iniciativas já criadas, para não precisar fazer tudo denovo.
+ 
+- Estruturas modulares tradicionais
+	-> Módulos abstratos definem o que consideramos elementos reusáveis, com base no cumprimento
+	dos cinco requisitos anteriormente citados.
+ 
+	-> Rotinas: também é válido criar uma biblioteca com rotinas, que retornam ou não valores, e que são
+	responsáveis por solucionar um conjunto de problemas pequenos. Para este caso de implementação
+	são utilizadas estruturas de dados simples, e cada rotina pode ser vista como um conjunto de entradas 
+	e saídas, onde cada resolve um determinado problema, podendo estes problemas não terem relação 
+	entre si.
+
+	-> Pacote: possuem rotinas e variáveis chamadas features, onde cada rotina é responsável por resolver uma 
+	parte do problema. Permitem aceso das suas features por outros pacotes, podem ser compiladas separadamente. 
+	O cliente não tem acesso ao corpo das rotinas e nem à implementação da estrutura de dados, tudo isso fica 
+	escondido (information hiding)
+
+- Sobrecarga e genericidade
+	-> Sobrecarga: sobrecarga é uma facilidade que usamos para clientes, com ela podemos escrever a mesma interface 
+	e para cada chamada da rotina uma implementação diferente é escolhida, de acordo com o tipo das variáveis 
+	passadas como parâmetro.
+
+	-> Genericidade: está associado à variação de tipo. Quando um rotina é chamada, dependendo das variações de tipos 
+	das variáveis passadas como parâmetro à rotina, a rotina se adaptado ao tipo fornecido, executando o trecho de 
+	código adequado para o tipo fornecido. Genericidade é diferente de sobrecarga, pois em genericidade há apenas uma 
+	implementação, genérica a vários tipos, porém em sobrecarga há várias implementações, uma para cada tipo.
+	
+	
+	
+	
+	
+	
+	

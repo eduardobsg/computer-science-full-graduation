@@ -1,0 +1,59 @@
+;* Versão 2010: com controle de retardo na animação variável - 03/05/2010
+
+;* OBS: carregar no R5 o valor inicial para o número de vezes  
+;* que deseja repetir o laço de retardo antes de cada movimentação 
+;* da letra no visor. Este valor pode ser alterado durante a 
+;* execução do programa usando as teclas + e -
+
+inicio:
+     mov #65500,R0  ; aponta R0 para primeiro LED do visor
+     mov #97,(R0)   ; coloca "a" na primeira posição do visor
+     mov #65498,R1  ; endereco do registrador de estado do teclado
+     clr (R1)       ; libera teclado para digitação
+
+repetir:
+
+     jsr r7,espera  ; espera enquanto decrementa o contador (R5)
+
+     mov #32,(R0)   ; apaga o "a" da posição atual
+
+     cmp R0,#65535  ; se ainda não está na última posição do visor
+     bne continua   ; continua movendo o "a"
+
+     mov #65500,R0  ; aponta R0 para primeiro LED do visor
+     mov #97,(r0)   ; e coloca o "a" no início do visor
+
+     mov #32,65535  ; limpa último LED
+     br  repetir    ; vai esperar e voltar a mover o "a" no visor
+
+continua:
+     mov #97,1(r0)  ; coloca o "a" na posição seguinte no visor
+     inc R0         ; aponta R0 para posição onde está o "a"
+     br  repetir    ; vai esperar e voltar a mover o "a" no visor
+
+
+espera:
+     tst (R1)       ; testa se foi pressionada uma tecla
+     beq contagem   ; se não, usa para contagem valor atual de R5
+     mov 65499,r2   ; copia caractere digitado para R2
+     clr (R1)       ; e libera teclado antes de continuar
+     cmp r2,#43     ; se foi digitado +
+     bne menos      ; não, verifica se foi digitado -
+     INC R5         ; sim, incrementa R5
+     clr (R1)       ; e libera teclado antes de fazer contagem
+     br contagem    ; e vai para contagem
+menos:
+     cmp r2,#45  ; foi digitado - ?
+     bne contagem   ; não, caractere inválido; conta com R5 atual
+     cmp r5,#1
+     beq nao_decrementar
+     DEC R5         ; sim, decrementa R5
+nao_decrementar:
+     clr (R1)       ; e libera teclado antes de fazer contagem
+contagem:
+     mov r5,r4
+repete:
+     dec r4
+     bne repete
+voltar:
+     rts r7

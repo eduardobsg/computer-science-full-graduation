@@ -1,0 +1,24 @@
+Prova 2 - MLP
+
+-------------------------------------------------
+Aula 13: Tipos de Dados
+
+Tipos de Dados -> Expressões -> Comandos -> Unidades -> Programas
+
+-------------------------------------------------
+
+Polimosfirsmo
+	ad hoc
+		coersão
+		sobrecarga
+	universal
+		paramétrico
+		inclusão		
+  
+  
+  
+
+
+2012-05-17: A votação ocorreu, com oposição total da população presenta na câmara. Os políticos não se importaram com a opinião pública e TODOS votaram a favor do aumento de 40,3% dos seus salários atuais, ficando agora com salários de R$ 8.112,68.
+
+abuso, roubo, indignação

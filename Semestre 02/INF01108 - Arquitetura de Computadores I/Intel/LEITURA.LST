@@ -1,0 +1,143 @@
+Turbo Assembler	 Version 3.2	    06/14/10 21:21:23	    Page 1
+leitura.ASM
+
+
+
+      1					      assume cs:codigo,ds:dados,es:dados,ss:pilha
+      2
+      3	      =000D		     CR	       EQU    0DH ; caractere ASCII "Carriage Return"
+      4	      =000A		     LF	       EQU    0AH ; caractere ASCII "Line Feed"
+      5
+      6				     ; SEGMENTO	DE DADOS DO PROGRAMA
+      7	0000			     dados     segment
+      8	0000  40*(??)		     nome      db 64 dup (?)
+      9	0040  80*(??)		     buffer    db 128 dup (?)
+     10	00C0  4E 6F 6D 65 20 64	6F+  pede_nome db 'Nome	do arquivo: ','$'
+     11	      20 61 72 71 75 69	76+
+     12	      6F 3A 20 24
+     13	00D2  45 72 72 6F 21 20	52+  erro      db 'Erro! Repita.',CR,LF,'$'
+     14	      65 70 69 74 61 2E	0D+
+     15	      0A 24
+     16	00E2  46 69 6D 20 64 6F	20+  msg_final db 'Fim do programa.',CR,LF,'$'
+     17	      70 72 6F 67 72 61	6D+
+     18	      61 2E 0D 0A 24
+     19	00F5  ????		     handler   dw ?
+     20	00F7			     dados     ends
+     21
+     22				     ; SEGMENTO	DE PILHA DO PROGRAMA
+     23	0000			     pilha    segment stack ; permite inicializacao automatica de SS:SP
+     24	0000  80*(????)			      dw     128 dup(?)
+     25	0100			     pilha    ends
+     26
+     27				     ; SEGMENTO	DE CÓDIGO DO PROGRAMA
+     28	0000			     codigo   segment
+     29	0000			     inicio:	     ; CS e IP sao inicializados com este endereco
+     30	0000  B8 0000s			      mov    ax,dados		; inicializa DS
+     31	0003  8E D8			      mov    ds,ax		; com endereco do segmento DADOS
+     32	0005  8E C0			      mov    es,ax		; idem em ES
+     33				     ; fim da carga inicial dos	registradores de segmento
+     34				     ;
+     35				     ; pede nome do arquivo
+     36	0007  BA 00C0r		     de_novo: lea    dx,pede_nome ; endereco da	mensagem em DX
+     37	000A  B4 09			      mov    ah,9     ;	funcao exibir mensagem no AH
+     38	000C  CD 21			      int    21h      ;	chamada	do DOS
+     39				     ; le nome do arquivo
+     40	000E  BF 0000r			      lea    di, nome
+     41	0011  B4 01		     entrada: mov    ah,1
+     42	0013  CD 21			      int    21h     ; le um caracter com eco
+     43	0015  3C 0D			      cmp    al,CR   ; compara com carriage return
+     44	0017  74 05			      je     continua
+     45	0019  88 05			      mov    [di],al ; coloca no buffer
+     46	001B  47			      inc    di
+     47	001C  EB F3			      jmp    entrada
+     48	001E  C6 05 00		     continua: mov   byte ptr [di],0  ;	forma string ASCIIZ com	o nome do arquivo
+     49	0021  B2 0A			      mov    dl,LF   ; escreve LF na tela
+     50	0023  B4 02			      mov    ah,2
+     51	0025  CD 21			      int    21h
+     52				     ;
+     53				     ; abre arquivo para leitura
+     54	0027  B4 3D			      mov    ah,3dh
+     55	0029  B0 00			      mov    al,0
+     56	002B  BA 0000r			      lea    dx,nome
+     57	002E  CD 21			      int 21h
+Turbo Assembler	 Version 3.2	    06/14/10 21:21:23	    Page 2
+leitura.ASM
+
+
+
+     58	0030  73 09			      jnc    abriu_ok
+     59	0032  BA 00D2r			      lea    dx,erro  ;	endereco da mensagem em	DX
+     60	0035  B4 09			      mov    ah,9     ;	funcao exibir mensagem no AH
+     61	0037  CD 21			      int    21h      ;	chamada	do DOS
+     62	0039  EB CC			      jmp    de_novo
+     63				     ;
+     64	003B  A3 00F5r		     abriu_ok: mov handler,ax
+     65	003E  B4 3F		     laco:    mov ah,3fh      ;	le um caracter do arquivo
+     66	0040  8B 1E 00F5r		      mov bx,handler
+     67	0044  B9 0001			      mov cx,1
+     68	0047  BA 0040r			      lea dx,buffer
+     69	004A  CD 21			      int 21h
+     70	004C  3B C1			      cmp ax,cx
+     71	004E  75 17			      jne fim
+     72	0050  8A 16 0040r		      mov dl, buffer  ;	escreve	caracter na tela
+     73	0054  B4 02			      mov ah,2
+     74	0056  CD 21			      int 21h
+     75				     ;
+     76	0058  8A 16 0040r		      mov dl, buffer  ;	escreve	na tela	até encontrar um LF (fim de linha)
+     77	005C  80 FA 0A			      cmp dl, LF
+     78	005F  75 DD			      jne laco
+     79				     ;
+     80	0061  B4 08			      mov ah,8	      ;	espera pela digitacao de uma tecla qualquer
+     81	0063  CD 21			      int 21h
+     82	0065  EB D7			      jmp laco
+     83				     ;
+     84	0067  B4 3E		     fim:     mov ah,3eh      ;	fecha arquivo
+     85	0069  8B 1E 00F5r		      mov bx,handler
+     86	006D  CD 21			      int 21h
+     87				     ;
+     88	006F  BA 00E2r			      lea    dx,msg_final ; endereco da	mensagem em DX
+     89	0072  B4 09			      mov    ah,9     ;	funcao exibir mensagem no AH
+     90	0074  CD 21			      int    21h      ;	chamada	do DOS
+     91	0076  B8 4C00			      mov    ax,4c00h ;	funcao retornar	ao DOS no AH
+     92							      ;	codigo de retorno 0 no AL
+     93	0079  CD 21			      int    21h      ;	chamada	do DOS
+     94	007B			     codigo   ends
+     95					      end    inicio
+Turbo Assembler	 Version 3.2	    06/14/10 21:21:23	    Page 3
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??DATE				  Text	 "06/14/10"
+??FILENAME			  Text	 "leitura "
+??TIME				  Text	 "21:21:22"
+??VERSION			  Number 0314
+@CPU				  Text	 0101H
+@CURSEG				  Text	 CODIGO
+@FILENAME			  Text	 LEITURA
+@WORDSIZE			  Text	 2
+ABRIU_OK			  Near	 CODIGO:003B
+BUFFER				  Byte	 DADOS:0040
+CONTINUA			  Near	 CODIGO:001E
+CR				  Number 000D
+DE_NOVO				  Near	 CODIGO:0007
+ENTRADA				  Near	 CODIGO:0011
+ERRO				  Byte	 DADOS:00D2
+FIM				  Near	 CODIGO:0067
+HANDLER				  Word	 DADOS:00F5
+INICIO				  Near	 CODIGO:0000
+LACO				  Near	 CODIGO:003E
+LF				  Number 000A
+MSG_FINAL			  Byte	 DADOS:00E2
+NOME				  Byte	 DADOS:0000
+PEDE_NOME			  Byte	 DADOS:00C0
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+CODIGO				  16  007B Para	  none
+DADOS				  16  00F7 Para	  none
+PILHA				  16  0100 Para	  Stack
+

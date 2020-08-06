@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Console2.java&apos; to &apos;PromptDeComando.java&apos;&#x0D;&#x0A;- Original project: &apos;sopa-2012-02-rpc&apos;&#x0D;&#x0A;- Original element: &apos;Console2.java&apos;&#x0D;&#x0A;- Renamed element: &apos;PromptDeComando.java&apos;" description="Rename compilation unit &apos;Console2.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{Console2.java" name="PromptDeComando.java" references="false" stamp="1355697898686" version="1.0"/>
+</session>

@@ -1,0 +1,263 @@
+NDB006
+The number of symbol table entries is: 2
+The length of the symbol table is: 34
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|CONTADOR_PRIMOS:42|
+
+The number of name info structs is : 250
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IGdG	!	:34	",
+#	IGdG	!	:35	"1
+$	IGdG	!	:36	"0
+%	IGdG	!	:37	"-
+&	IGdG	!	:38	".
+'	IGdG	!	:39	"/
+(	Ky&|	!	6	*	+	,	-	.	/	CK	o
+)	Ky&|	!	6	*	+	,	-	.	/	CLR	p
+*	[)+g	!	12	*	+	,	-	.	/	0	1	2	3	4	5	1	1	3	S0	w
++	[)+g	!	12	*	+	,	-	.	/	0	1	2	3	4	5	1	1	2	S1	x
+,	P}g7	!	12	*	+	,	-	.	/	0	1	2	3	4	5	1	S2	y
+-	P}g7	!	12	*	+	,	-	.	/	0	1	2	3	4	5	1	S3	z
+.	P}g7	!	12	*	+	,	-	.	/	0	1	2	3	4	5	1	S4	{
+/	[)+g	!	12	*	+	,	-	.	/	0	1	2	3	4	5	1	1	1	S5	|
+0	XUi[	!	1	1	3	T0	v
+1	XUi[	!	1	1	2	T1	u
+2	NLG+	!	1	T2	t
+3	NLG+	!	1	T3	s
+4	NLG+	!	1	T4	r
+5	XUi[	!	1	1	1	T5	q
+6	IeEA	.	28	1	:135	#_
+7	IeEA	.	28	1	:136	#`
+8	IeEA	.	28	1	:137	#a
+9	IeEA	.	28	1	:138	#b
+:	IeEA	.	28	1	:139	#c
+;	IeEA	.	28	1	:140	#d
+<	IeEA	.	28	1	:141	#e
+=	IeEA	.	28	1	:142	#f
+>	IeEA	.	28	1	:143	#g
+?	IeEA	.	28	1	:144	#h
+@	IeEA	.	28	1	:145	#i
+A	IeEA	.	28	1	:146	#j
+B	IeEA	.	28	1	:147	#k
+C	IeEA	.	28	1	:148	#l
+D	IeEA	.	28	1	:149	#m
+E	IeEA	.	28	1	:150	#n
+F	IeEA	.	28	1	:151	#o
+G	IeEA	.	28	1	:152	#p
+H	IeEA	.	28	1	:153	#q
+I	IeEA	.	28	1	:154	#r
+J	IeEA	.	28	1	:155	#s
+K	IeEA	.	28	1	:156	#t
+L	IeEA	.	28	1	:157	#u
+M	IeEA	.	28	1	:158	#v
+N	IeEA	.	28	1	:159	#w
+O	IeEA	.	28	1	:160	#x
+P	IeEA	.	28	1	:161	#y
+Q	IeEA	.	28	1	:162	#z
+R	IeEA	.	28	1	:163	#{
+S	IeEA	.	28	1	:164	#|
+T	IeEA	.	28	1	:165	#}
+U	IeEA	.	28	1	:166	#~
+V	IeEA	.	28	1	:167	$!
+W	IeEA	.	28	1	:168	$"
+X	IeEA	.	28	1	:169	$#
+Y	IeEA	.	28	1	:170	$$
+Z	IeEA	.	28	1	:171	$%
+[	IeEA	.	28	1	:172	$&
+\	IeEA	.	28	1	:173	$'
+]	IeEA	.	28	1	:174	$(
+^	IeEA	.	28	1	:175	$)
+_	IeEA	.	31	1	:225	$[
+`	IeEA	.	31	1	:226	$\
+a	IeEA	.	31	1	:227	$]
+b	IeEA	.	31	1	:228	$^
+c	IeEA	.	31	1	:229	$_
+d	IeEA	.	31	1	:230	$`
+e	IeEA	.	31	1	:231	$a
+f	IeEA	.	31	1	:232	$b
+g	IeEA	.	31	1	:233	$c
+h	IeEA	.	31	1	:234	$d
+i	IeEA	.	31	1	:235	$e
+j	IeEA	.	31	1	:236	$f
+k	IeEA	.	31	1	:237	$g
+l	IeEA	.	31	1	:238	$h
+m	IeEA	.	31	1	:239	$i
+n	IeEA	.	31	1	:240	$j
+o	IeEA	.	31	1	:241	$k
+p	IeEA	.	31	1	:242	$l
+q	IeEA	.	31	1	:243	$m
+r	IeEA	.	31	1	:244	$n
+s	IeEA	.	31	1	:245	$o
+t	IeEA	.	31	1	:246	$p
+u	IeEA	.	31	1	:247	$q
+v	IeEA	.	31	1	:248	$r
+w	IeEA	.	31	1	:249	$s
+x	IeEA	.	23	1	:25	"O
+y	IeEA	.	31	1	:250	$t
+z	IeEA	.	31	1	:251	$u
+{	IeEA	.	31	1	:252	$v
+|	IeEA	.	31	1	:253	$w
+}	IeEA	.	31	1	:254	$x
+~	IeEA	.	31	1	:255	$y
+"!	IeEA	.	31	1	:256	$z
+""	IeEA	.	31	1	:257	${
+"#	IeEA	.	31	1	:258	$|
+"$	IeEA	.	31	1	:259	$}
+"%	IeEA	.	23	1	:26	"P
+"&	IeEA	.	31	1	:260	$~
+"'	IeEA	.	31	1	:261	%!
+"(	IeEA	.	31	1	:262	%"
+")	IeEA	.	31	1	:263	%#
+"*	IeEA	.	31	1	:264	%$
+"+	IeEA	.	31	1	:265	%%
+",	IeEA	.	31	1	:266	%&
+"-	IeEA	.	31	1	:267	%'
+".	IeEA	.	31	1	:268	%(
+"/	IeEA	.	31	1	:269	%)
+"0	IeEA	.	23	1	:27	"Q
+"1	IeEA	.	31	1	:270	%*
+"2	IeEA	.	31	1	:271	%+
+"3	IeEA	.	31	1	:272	%,
+"4	IeEA	.	31	1	:273	%-
+"5	IeEA	.	31	1	:274	%.
+"6	IeEA	.	23	1	:28	"R
+"7	IeEA	.	23	1	:29	"S
+"8	IeEA	.	23	1	:30	"T
+"9	IeEA	.	23	1	:31	"U
+":	IeEA	.	23	1	:32	"V
+";	IeEA	.	23	1	:33	"W
+"<	IeEA	.	23	1	:34	"X
+"=	IeEA	.	23	1	:35	"Y
+">	IeEA	.	35	1	:354	%~
+"?	IeEA	.	35	1	:355	&!
+"@	IeEA	.	35	1	:356	&"
+"A	IeEA	.	35	1	:357	&#
+"B	IeEA	.	35	1	:358	&$
+"C	IeEA	.	35	1	:359	&%
+"D	IeEA	.	23	1	:36	"Z
+"E	IeEA	.	35	1	:360	&&
+"F	IeEA	.	35	1	:361	&'
+"G	IeEA	.	35	1	:362	&(
+"H	IeEA	.	35	1	:363	&)
+"I	IeEA	.	35	1	:364	&*
+"J	IeEA	.	35	1	:365	&+
+"K	IeEA	.	35	1	:366	&,
+"L	IeEA	.	35	1	:367	&-
+"M	IeEA	.	35	1	:368	&.
+"N	IeEA	.	35	1	:369	&/
+"O	IeEA	.	23	1	:37	"[
+"P	IeEA	.	35	1	:370	&0
+"Q	IeEA	.	35	1	:371	&1
+"R	IeEA	.	35	1	:372	&2
+"S	IeEA	.	35	1	:373	&3
+"T	IeEA	.	35	1	:374	&4
+"U	IeEA	.	35	1	:375	&5
+"V	IeEA	.	35	1	:376	&6
+"W	IeEA	.	35	1	:377	&7
+"X	IeEA	.	35	1	:378	&8
+"Y	IeEA	.	35	1	:379	&9
+"Z	IeEA	.	35	1	:380	&:
+"[	IeEA	.	35	1	:381	&;
+"\	IeEA	.	35	1	:382	&<
+"]	IeEA	.	35	1	:383	&=
+"^	IeEA	.	35	1	:384	&>
+"_	IeEA	.	35	1	:385	&?
+"`	IeEA	.	35	1	:386	&@
+"a	IeEA	.	35	1	:387	&A
+"b	IeEA	.	35	1	:388	&B
+"c	IeEA	.	35	1	:389	&C
+"d	IeEA	.	35	1	:390	&D
+"e	IeEA	.	35	1	:391	&E
+"f	IeEA	.	35	1	:392	&F
+"g	IeEA	.	35	1	:393	&G
+"h	IeEA	.	35	1	:394	&H
+"i	IeEA	.	35	1	:395	&I
+"j	IeEA	.	35	1	:396	&J
+"k	IeEA	.	35	1	:397	&K
+"l	IeEA	.	35	1	:398	&L
+"m	IeEA	.	35	1	:399	&M
+"n	IeEA	.	35	1	:400	&N
+"o	IeEA	.	35	1	:401	&O
+"p	IeEA	.	35	1	:402	&P
+"q	IeEA	.	35	1	:403	&Q
+"r	IeEA	.	35	1	:404	&R
+"s	IeEA	.	35	1	:405	&S
+"t	IeEA	.	35	1	:406	&T
+"u	IeEA	.	35	1	:407	&U
+"v	IeEA	.	35	1	:408	&V
+"w	IeEA	.	35	1	:409	&W
+"x	IeEA	.	35	1	:410	&X
+"y	IeEA	.	35	1	:411	&Y
+"z	IeEA	.	35	1	:412	&Z
+"{	IeEA	.	35	1	:413	&[
+"|	IeEA	.	35	1	:414	&\
+"}	IeEA	.	35	1	:415	&]
+"~	IeEA	.	35	1	:416	&^
+#!	IeEA	.	35	1	:417	&_
+#"	IeEA	.	35	1	:418	&`
+##	IeEA	.	35	1	:419	&a
+#$	IeEA	.	35	1	:420	&b
+#%	IeEA	.	35	1	:421	&c
+#&	IeEA	.	35	1	:422	&d
+#'	IeEA	.	35	1	:423	&e
+#(	IeEA	.	35	1	:424	&f
+#)	IeEA	.	35	1	:425	&g
+#*	IeEA	.	35	1	:426	&h
+#+	IeEA	.	35	1	:427	&i
+#,	IeEA	.	35	1	:428	&j
+#-	IeEA	.	35	1	:429	&k
+#.	IeEA	.	35	1	:430	&l
+#/	IeEA	.	35	1	:431	&m
+#0	IeEA	.	35	1	:432	&n
+#1	IeEA	.	35	1	:433	&o
+#2	IeEA	.	40	1	:450	'"
+#3	IeEA	.	40	1	:451	'#
+#4	IeEA	.	40	1	:452	'$
+#5	IeEA	.	40	1	:453	'%
+#6	IeEA	.	40	1	:454	'&
+#7	IeEA	.	40	1	:455	''
+#8	IeEA	.	40	1	:456	'(
+#9	IeEA	.	40	1	:457	')
+#:	IeEA	.	40	1	:458	'*
+#;	IeEA	.	40	1	:459	'+
+#<	IeEA	.	40	1	:460	',
+#=	IeEA	.	40	1	:461	'-
+#>	IeEA	.	40	1	:462	'.
+#?	IeEA	.	40	1	:463	'/
+#@	IeEA	.	40	1	:464	'0
+#A	IeEA	.	40	1	:465	'1
+#B	IeEA	.	40	1	:466	'2
+#C	IeEA	.	25	1	:66	"x
+#D	IeEA	.	25	1	:67	"y
+#E	IeEA	.	25	1	:68	"z
+#F	IeEA	.	25	1	:69	"{
+#G	IeEA	.	25	1	:70	"|
+#H	IeEA	.	25	1	:71	"}
+#I	IeEA	.	25	1	:72	"~
+#J	IeEA	.	25	1	:73	#!
+#K	IeEA	.	25	1	:74	#"
+#L	IeEA	.	25	1	:75	##
+#M	IeEA	.	25	1	:76	#$
+#N	IeEA	.	25	1	:77	#%
+#O	IeEA	.	25	1	:78	#&
+#P	IeEA	.	25	1	:79	#'
+#Q	IeEA	.	25	1	:80	#(
+#R	IeEA	.	25	1	:81	#)
+#S	IeEA	.	25	1	:82	#*
+#T	IeEA	.	25	1	:83	#+
+#U	IeEA	.	25	1	:84	#,
+#V	IeEA	.	25	1	:85	#-
+#W	IeEA	.	25	1	:86	#.
+#X	IeEA	.	25	1	:87	#/
+#Y	IeEA	.	25	1	:88	#0
+#Z	IeEA	.	25	1	:89	#1
+#[	IeEA	.	25	1	:90	#2
+#\	IeEA	.	25	1	:91	#3
+#]	IeEA	.	25	1	:92	#4
+#^	IeEA	.	25	1	:93	#5
+#_	IeEA	.	25	1	:94	#6

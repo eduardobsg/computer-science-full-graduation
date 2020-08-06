@@ -1,0 +1,55 @@
+Fundamentos de Computação Gráfica
+
+20/06/2011
+
+Classificação de tipos de objetos:
+	- Man-made: mesas, carros, bolsas, cadeiras, sofás, ... -> computação
+gráfica nos proporciona imensa sensação de realismo para estes objetos;
+	- Natural: animais, pessoas, flores, árvores, ... -> computação gráfica
+está evoluindo nesta área, porém o realismo de objetos naturais não é tão
+grande quando o de objetos man-made;
+
+Classificação do mundo Natural: 
+	- Ex.: Reino vegetal, mineral, animal
+
+Maiores desafios:
+	- GRANDE quantidade de detalhes: cabelos ao vento, te‏cido molhado, 
+folhas em uma árvore
+	- Dificuldade em representar detalhes e fenômenos naturais: chuva, fogo,
+vento
+
+Abordagem:
+	- Para representar um fenômeno natural em CG: procurar modelos que que 
+já definem esses fenômenos naturais
+
+
+22/06/2011
+
+Algoritmos de Visualização Volumétrica
+
+Visualização de Volumes - Abordagens:
+	* Voxels: Volumetric pixel
+	- Visualização Indireta: data ---extraction--->  t‌riangles ---rendering---> image 
+	- ‭Visualização Direta: data ---rendering---> image
+
+
+Algoritmos:
+	- Isosurface extraction: 
+		* isosuperfície: estamos buscando região do espaço que corresponde a
+um determinado objeto, ou seja, pontos da imagem que correspondem à mesma
+função que descreve o objeto (pixels/voxels regidos pela mesma função, que pode ser por iluminação, cor, ...) - Os vários triângulos do objeto podem estar sendo iluminados pela mesma função de iluminação
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,103 @@
+OBS: em desenvolvimento...
+
+Nomes:	Caroline Zingano de Aguiar 
+	João Gilberto Heitor Gaiewski 
+
+
+*************************UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL*************************************************
+*******************INSTITUTO DE INFORMÁTICA - DEPARTAMENTO DE INFORMÁTICA APLICADA*********************************
+*************(INF01142) SISTEMAS OPERACIONAIS - TARFEA 2: IMPLEMENTAÇÃO DE UM MICROKERNEL***************************
+
+
+ORGANIZAÇÃO DOS ARQUIVOS
+------------------------
+
+*libsisop.c: contém as principais funções implementadas para o microkernel (mrpoc_create, mproc_yield, mproc_join). Além disso, nele está contido 
+o escalonador, ou seja, é neste arquivo que está implmenetada toda a política de escalonamento, de trocas de estado do processo e de contexto.
+
+*libsisop.h: header para o arquivo libsisop.c.
+
+*pcb.c: contém funções relacionadas ao PCB. Como a criação de um novo PCB.
+
+*pcb.h: header para o arquivo pcb.c.
+
+*fifo.c: contém funções de manipulação de filas (cria e destroi fila, insere e remove elemento). Duas filas são utilizadas (amabas formadas por 
+elementos do tipo PCB): uma "ready"(processos prontos para executar) e uma "blocked"(processos bloqueados).
+
+*fifo.h: header para o arquivo fifo.c.
+
+
+ESTRUTURAS DE DADOS UTILIZADAS
+------------------------------
+
+*PCB: estrutura de um Process Control Block, ou seja, contem todos os dados relativos ao processo: contexto, PID, seu estado atual, a função 
+que ele exexuta.
+
+*FILA: todas as filas são compostas de processos. 
+
+
+FLUXO DO PROGRAMA
+-----------------
+O programa é baseado em um contexto principal que é o contexto do escalonador. Assim, a cada execução de um mproc_join ou mproc_yield o contexto 
+do escalonador é verificando e alterado. Para isso foi criada a função "scheduler" que é a função executada pelo contexto do escalonador. Ela 
+executa enquanto a fila de prontos não está vazia ou enquando a execução não é retornada para a main do programa sendo executado. Além disso, 
+é preciso verificar a fila de bloqueados sempre que um processo é finalizado, pois pode haver algum processo pronto para retornar a fila de ready.
+
+
+FUNCIONAMENTO
+-------------
+Aparentemente, o programa funciona corretamente conforme proposto na especificação do trabalho.
+
+
+TESTE REALIZADOS
+----------------
+*teste1: Funcionamento do yield. Cria quatro processos e executa um yield. Assim, os quatro processos são executados, o controle retorna a maine 
+o programa é encerrado.  
+
+*teste2: Funcionamento do join. Cria dois processos e e executa um join (passando o PID do processo 2 como argumento). Executa os dois processos 
+e retorna a main (que dependia do teŕmino do segundo), encerrando a execução.
+
+*teste3yield: Funcionamento de vários yields. Cria apenas um processo e executa um join (passando o PID do processo criado como argumento). O 
+processo criado executa vários yields(sempre voltando a executar ele mesmo pois é o único processo existente), quando termina, o programa volta 
+a main e é encerrado.
+
+*teste4join: Cria dois processos e exucuta um join (main só retorn após o fim do primeiro processo). O processo um chama um yield e o processo 
+dois passa a ser executado. Como ele chama um join (dependendo do fim da execução do primeiro), e agora a mais e o processo dois estão bloqueados 
+o único que resta na fila "ready" é o processo um. Ao terminar, a main e o processo 2 são liberados, mas como a main foi bloqueada primeiro é a 
+próxima a ser executada, encerrando a execução do programa sem finalizar o processo dois.
+
+*teste5: Teste básico disponibilizado pelo professor para teste.
+
+*teste6threadsyield: Cria 127 processos. Como todos eles executam um yield, nenhum finaliza a execução da sua função e o controle volta para a 
+main e a execução é encerrada.
+
+*teste7join: Cria seis processos. Executa um join e bloqueia a main até que o quarto processo finalize a sua execução. Quando a execução retorna 
+para a main depois de finalizar os quatro processos, um novo join é executado (bloqueado pelo processo cinco). O processo cinco é executado, mas 
+como ele contém um yield, retorna para a fila "ready" e o sexto processo é executado. Após o quinto processo termina a sua execução e a main é 
+liberada. Antes de finalizar a execução, é feita a tentativa de executar um join no qual o processo bloqueante não existe. Portanto, o join não 
+é executado e o programa finalizado.
+
+*teste8: Cria um processo. Executa um yield e a execução passa para o processo criado. Como ele executa um join a execução retorna para a main. 
+Antes de encerrar o teste é feita a tentativa de efetuar um join sem um processo na fila de ready, a caham retorna erro e a execução é encerrada.
+
+*teste9joincascade: Cria um processo e executa um join. Ao executar o join o processo um passa a ser executado. Esse processo cria um novo processo 
+e chama um join, bloqueando o processo um até que o processo criado (2) termine de executar. A main está bloqueda, portanto o próximo processo é 
+o segundo. Ele é executado e finalizado. A execução retorna para o primeiro, que também é finalizado. Ao retornar parta a main, o programa é encerrado.
+
+*teste10joinduplo: Testa se três processos são liberados corretamente da fila de bloqueados quando são dependentes do mesmo processo. Cria tres 
+processos e executa um join. O processo um bloqueia a main e executa um yield. Os próximos processos (2 e 3) executam um join e são bloqueados pelo processo um. Portanto, o único processo não bloqueado é o um, que encerra a sua execução e libera os outros tres. A execução volta para a main e o programa é finalizado.
+
+*teste128: Cria 127 processos (mais o principal), um deles apenas é finalizado. Cria um novo processo, utilizando o PID liberado. Executa os 126 processos que ficaram pela metade e o último processo criado. Cria mais um processo, utilizando o pid 1 e ele é executado. Depois o programa é finalizado. 
+
+*teste256: Cria 127 processos (mais o principal) e os executa. Repete a mesma operação de criar e executar 127 novos processos para verificar se todos os processos são finalizados corretamente.
+
+Todos os testes realizados funcionaram corretamente. Portanto, aparentemente, o funcionamento do programa está correto. No entanto, pode ser que alguma situação específica não tenha sido verificada, apesar de termos tentado realizar testes que abrangessem a maior quantidade de casos possíveis.
+
+
+DIFICULDADES E SOLUÇÕES
+-----------------------
+
+O maior desafio na criação do unucleo foi definir a utilização da função e do contexto scheduler, pois eles que controlam o escalonamento dos processos. Essa etapa foi decisiva e desafiadora pelo fato de ser necessário criar um rotina que não fosse específica, pelo contrário, ela deveria abranger qualquer situação envolvendo o escalonamento de processos. A solução encontrada foi desenvolver essas funções da maneira mais geral possível, imaginando o funcionamento de um escalonador real.
+
+
+

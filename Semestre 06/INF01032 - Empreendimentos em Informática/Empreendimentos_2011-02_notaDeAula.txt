@@ -1,0 +1,687 @@
+Cadeira: INF01032 - Empreendimentos em Informática
+Professor: Newton Braga
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2011/02
+
+------------------------------------------------------------------------------
+---- Frase:
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+---- Case 7 - 2011/11/25
+------------------------------------------------------------------------------
+
+Carla Azevedo - Stefanini IT Solutions
+
+Diretora
+Cuida do negócio, não é a dona.
+
+Dono: Marco Antônio Stefanini - CEO e presidente da Stefanini
+
+1987: fundação dampresa
+1995: expansão nacional - campinas, curitiba, porto alegre
+2005: cmmi - lvl 5: certificado de qualidade de desenvolvimento de software 
+(nível máximo de certificação internacional)
+2006: expansão internacional - reino unido e índia
+2008: expansão internacional - canadá
+2009: mps.br nível A. Aquisição da empresa Calere.
+
+Funcionários 14 mil pelo mundo
+8 mil no brasil
+
+Estão abrindo filial na China.
+Possui filiais no mundo inteiro.
+
+28 países
+66 cidades
+72 escritórios
+32 idiomas
+
+Faturamento anual:
+2011 USD 764 milhões
+2010 USD 600 milhões
+2009 USD 380 milhões
+2007 USD 201 milhões
+2004 USD 105 milhões
+1999 USD 10 milhões
+
+Stefanini tem vários clientes
+O maior cliente representa 10% do faturamento da empresa
+
+Outsourcing
+Integração e desenvolvimento
+Consultoria
+
+500 clientes
+350 regionais (brasil)
+150 globais (clientes de atuação global)
+
+Pós-Graduação em tecnologia dentro da Stefanini, em São Paulo
+
+crescimento orgânico: crescimento do faturamento dentro do cliente
+
+Ela está na faculdade AIEC - terminando o curso
+
+
+
+------------------------------------------------------------------------------
+---- Case 6 - 2011/11/11
+------------------------------------------------------------------------------
+Márcio André Pontes Tesses
+Bacharel Informática PUCRS 1991
+
+Presidente CWI Software
+
+Início da CWI: 1991
+Fundadores: Carlos Werner Alves de Inda, Derli Lara Viegas, Márcio André Pontes Tesser
+
+Começou vida profissional na Ecobras. 
+
+Em 1995 começaram a trabalhar com  outsourcing, que é vender mão-de-obra especialidade
+por hora. 
+
+Uma das empresas com as quais trabalharam é a Wall Mart.
+
+Em 1996 tinham cerca de 25 funcionários
+
+Nessa época o ZIM deixou de ser super bom, pois começou a ser utilizado o Oracle,
+banco aberto, robusto, etc.
+	- O problema do ZIM é que os programas que usavam zim só funcionam com programas com ZIM.
+
+Decidem abrir filial em SP para pegar mais mercado
+
+"Propor sempre objetos na carreira profissional" 
+
+Bug do Milênio (1999-2001)
+- Tinham 70% de coisas para fazer e 30% para receber
+- Ele teve que ir nos clientes, dizem que não conseguiria entregar o trabalho no 
+prazo e precisava de mais dinheiro. Conquistou os clientes prometendo que aquilo não
+iria se repetir
+
+Fizeram cede no pólo de informática em são leopoldo
+
+Mudaram para Java e .NET (ferramentas abertas) e Oracle.
+
+1999: 60 funcionários, 16 gerentes, 12 foram demitidos
+
+Dois sócios saíram, entrou mais um, o James
+
+"Visão de 20 anos à frente não é nada, eu quero um cara de visão com 3 anos à frente. 
+Daqui 20 anos eu posso estar morto"
+
+"Eu oriento a minha vida por resultado. O resto não importa."
+
+Faturamento
+2003: 7.3 Milhões
+2004: 8.3 Milhões
+2005: 10M
+2006: 14M
+2007: 18M
+2008: 25M
+2009: 25M
+2010: 32M
+2011: 42M (previsão)
+
+
+Em 2005 começaram a fazer grandes projetos e nova filial em SP.
+
+"Tomar decisões na hora que precisam ser tomadas, por mais doloridas que elas sejam."
+
+>> "Um bolo do cacete. Um não paga. FUDEU!!"
+
+2009 Filial em Caxias do Sul
+Clientes: Marco Polo, 
+
+2010 Retomada, FIlial em SP decolou.
+	- Mudança da cede
+	- Novas políticas no RH
+	- Participação nos resultados para gerentes e gestores técnicos
+
+Dicas:
+	"Preparem-se. As oportunidades não avisam, aparecem."
+	"Corram riscos."
+	"Não existe sucesso sem sorte." 
+
+Hoje a empresa tem 520 funcionários
+
+"O andar do bêbado" 
+
+------------------------------------------------------------------------------
+---- Case 6 - 2011/10/21
+------------------------------------------------------------------------------
+* Empresa: Digitel
+* Palestrante: Gilberto
+
+* Fez engenharia elétrica
+* CPUR
+
+* Viajou para os estados unidos
+	- trabalhou lá como cortador de grama, no McDonalds
+
+* Deu aulas de inglês
+
+* Foi bolsista de eletrônica na física. Gostou.
+
+* Fez mestrado em ciência da computação.
+
+* Abriu a Digitel para começar a fabricar e vender modens.
+
+* Adotaram duas estratégias:
+	1. Produzir e vender o modem do Gilberto
+		- Conseguiu produzir o produto.
+		- Mostrou para a UFRGS e vendeu.
+	2. Encontrar faculdades (UFRGS) para desenvolver um produto e encontrar uma empresa 
+	para produzí-lo. (O sócio do Gilberto, Jaime, que foi por essa estratégia)
+		- Não deu certo
+
+* Próximo cliente, PROCERGS
+
+* Foram em uma feira, mostraram os produtos e conseguiram outro cliente, CTA (centro de
+tecnologia aeronáutica)
+	- Venderam os modens e alguns meses depois vários queimaram
+
+* Começaram a ter problemas com os modens, os componentes estavam queimando, mesmo os 
+produtos novos. Era preciso fazer 'burn-in', pré-envelhecer os componentes, pois o 
+tempo de vida deles segue a curva da banheira: Nos primeiros meses de vida a taxa de mortalidade
+é alta, depois cai, e lá no final da vida volta a subir.
+
+* Todos os sócios davam aulas e a empresa era secundária.
+
+* Começaram a vender para grandes clientes, que tinham grandes computadores e precisavam
+de modem para acesso remoto. (80's)
+
+* A empresa começou a crescer e o Gilberto começou a estudar mais sobre o que era uma
+empresa e o que uma empresa precisava ter, fez curso de contabilidade, entendeu as
+competências de um rh, folha de pagamento, foi em palestras, estudou casos de sucesso
+e de empresas grandes.
+
+* Ficaram 3 sócios: Jaime (P&D), Gilberto, Olinto (Contabilidade)
+
+* A empresa estava grande o suficiente para ter um presidente. As decisões estavam
+difíceis sem presidente. 
+
+* A empresa estava cheia de contas. Virou S.A., entrou dinheiro de fora, pagaram as contas
+e seguiram em frente. (1985)
+	- Houve investimento de capital (capitalização da empresa)
+	- Todas as contas foram pagas, mas a empresa que pagou as contas (CRP) ficou com 20% das
+	ações
+	- O Gilberto tinha 39 anos nessa época
+
+* Gilberto virou presidente da Digitel. 
+* Por ter decisão final na empresa ela decolou.
+
+* 33 anos de mercado nacional
+
+* Vendas sem sucesso de permanência no mercado norte-americano.
+	- preço para entrar no mercado norte-americano é muito alto.
+
+* Países que vendem atualmente: Angola, Marrocos, Egito, Turquia, Irã, Vietnã, 
+Índia, outros países sul-americanos
+
+* Principal linha de produtos: rádios.
+	- única empresa nacional que fabrica rádios de alta velocidade
+	- capacidades de 200Mbits a 1Gbits
+
+* Outros produtos
+	- roteadores, switchs (tecnologias de acesso)
+
+* Outros grandes clientes: Telebrás, OI, Telefônica, Embratel, Vivo, Tim, Claro 
+	- consumidores de rádios de alta velocidade
+
+* Produtos precisam ser cada vez mais gerenciáveis
+
+* Fazem desenvolvimento em FPGA e RF
+
+* Mercado brasileiro é muito difícil de trabalhar
+
+* Estão começando a fabricar antenas de alta velocidade, pois atualmente importam
+da China
+
+* Funcionários: 260
+	- mais de 50% são engenheiros
+	- poucas pessoas na fábrica, produção é automatizada
+
+* Investem 20% em desenvolvimento
+
+* Parcerias: universidade do Ceará, UnB, universidade de brasília, softSul
+
+* Perfis:
+	- melancólico (organizado, focado: engenheiro) x sanguíneo (boa praça, desorganizado: vendedor)
+	- colérico x fleumático
+
+* Pessoas que crescem mais rápido do que a empresa, saem dela.
+* Multinacionais: crescimento lento, pois as empresas são muito estruturadas.
+
+
+------------------------------------------------------------------------------
+---- Case 5 - 2011/10/14
+------------------------------------------------------------------------------
+* Empresa: Solis
+* Palestrante: 
+
+Empresa é uma cooperativa
+Fundada em Lajeado
+Cerca de 50 pessoas
+
+
+Trabalham com gestão acadêmica da universidade e gestão de bibliotecas
+Segmento de infra-estrutura: segurança da informação
+
+Negócio: solucões livres
+Visão: Ser a referência brasileira em software livre e cooperativismo.
+Missão: Desenvolver, integrar e difundir soluções de qualidade em software livre,
+proporcionando liberdade de conhecimento aos nossos clientes e à sociedade...
+
+Cliente: 
+
+Prodabel - centro de processamento de dados de minas gerais
+	-> implantação de sistema de gestão para 180 bibliotecas em minas gerais
+		
+Metodologia de Trabalho
+	-> análise ddas necessidades -> documentação e elaboração do plano de ação ->
+Customização do sotware -> Treinamento implantação e consultoria -> Suporte de longo prazo
+
+Sucesso é dar resultado ao negócio, não apenas deixar funcionamendo. Ou seja, o 
+cliente precisa ter lucro.
+
+Não cobram pelo software, cobram pela implantação e suporte.	
+
+Solis faz prestação de serviço para um cliente. Não cria software de prateleira.
+	
+Compraram ferramenta para desenvolvimento de php e outro software para gerenciamento 
+financeiro.	
+	
+Cooperativa: não há lucro, há sobras	
+Tempo para fechar um negócio: 10 a 18 meses
+Tempo de desenvolvimento e implantação do sistema: 10 meses
+Faturamento 2010: R$ 1.600.000
+Faturamento mensal: R$ 150.00 - 160.000
+Rentabilidade (lucro / sobras): 7,5% do faturamento
+Previsão de aumento do faturamento em 17% em 2011, em relação ao ano de 2010.
+
+		
+------------------------------------------------------------------------------
+---- Case 4 - 2011/09/16
+------------------------------------------------------------------------------
+* Empresa: aQuiris
+
+- 4 anos de experiência
+- mais de 30 games publicados
+- estudio independente brasileiro
+- possuem uma engine 3d própria
+
+- Por volta de 30 funcionários
+- "evitar a profissionalização precosse"
+- está no tecno PUC e possui mais um escritório em SP
+- desenvolvimento de jogos
+
+- Game: Critical Mass
+	- está sendo desenvolvido com um publisher internacional
+
+- unity BOOTCAMP
+
+http://vimeo.com/channels/aquiris
+http://www.aquiris.com.br/en/home/
+
+- aQuiris => criada em 2005/2006
+	- não foi criada com a pretenção de desenvolver games
+	- não nasceu na universidade
+
+- foco em jogos para publicidade - advergames (advertise games)
+	- são  produzidos geralmente em 1-2 meses
+- atualmente 3 sócios
+
+- pilares:
+	- arquitetura / design: environment art, technical art
+	- engenharia: planejamento de software, programação
+	- comunicação: game design, produção
+
+- interativo feio + lightmaps = mapa de navegação interessante
+
+- no início da empresa a ferramenta Virtools não estava atingindo a qualidade
+desejada no game
+	- optaram por outra engine, Unity3D
+	- unity3D rodava em Mac, windows e tinha plugin para WEB
+- montaram parceria com a UnityTech
+
+- em 2008 decidiram consolidar a empresa, tornando-a mais profissional
+	- contrataram uma gerente finaceira
+
+- os games curtos trouxeram bastante experiência
+
+- 2009 começa a internacionalização da empresa
+	- participação de eventos no exterior
+	- busca por novas parcerias, contatos
+	- posição conquistada de 'world top unity developer'
+	- evento: GDC - game developers conference
+	
+- bootcamp: game demo para mostrar o poder da Unity3D
+	- Unity3D => está concorrendo com a Engine da Unreal
+	- bootcamp abriu as portas para a aquiris participar do mercado internacional
+
+- desenvolver para console é mais complicado, precisa comprovar diversas coisas
+
+- lições aprendidas:
+	- projetos rápidos, curva de aprendizagem rápida.
+	- objetividade e profissionalismo. Isso é um negócio.
+	- liberdade criativa sem limites é péssimo!
+	- busque parceiros para auxiliar o crescimento do negócio.
+	- o brasil é diferente.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------
+---- Case 3 - 2011/09/09
+------------------------------------------------------------------------------
+* Empresa de games: South Logic
+
+- encubada na PUC
+- palestrantes: Cristian (programador), Fernando (artista)
+
+- "a natureza do curso da computação é das subsídios para aprender e desenvolver coisas
+sozinho"
+- "aprender a aprender"
+- "há muitas ideias, mas implementá-las é difícil"
+
+- desenvolveram um jogo chamado Aquarius em 2001. Apresentaram na E3. O jogo não deu certo,
+mas eles fecharam um contrato para desenvolver um jogo de caça (deer hunter) usando uma 
+tecnologia que eles desenvolveram.
+
+- a indústria vende muitos enlatados, produtos semelhantes com nomes e aparências diferentes.
+
+- royalties: o desenvolvedor tem direito a 10% dos lucros 
+- financiamento de projeto: pegam dinheiro 
+- Hollywood accounting: http://en.wikipedia.org/wiki/Hollywood_accounting
+
+- jogo para meninas sobre casamento: wedding designers (vendeu 1 milhão de cópias)
+	- jogo para ds
+
+- desenvolveram um jogo de futebol para PC para crianças aprenderem a jogar futebol
+- Intellectual property (IP)
+
+- é necessário adquirir uma autorização para desenvolver para as empresas
+	- precisa de autorização para desenvolver para microsoft, nintendo, sony
+	- empresas que desenvolvem jogos marca nintendo: first party
+	- empresas que desenvolvem jogos para rodar no nintendo: third party
+
+- a empresa foi vendida para a Ubisoft e virou parte da Ubisoft Brasil
+	-> com essa venda todos os royalties do 'wedding designer' ficaram para a
+	Ubisoft
+	-> colocaram a equipe que antes desenvolvia em 3D para começar a desenvolver
+	jogos em flash em 2D para o facebook. A equipe começou a ficar desestimulada
+
+- eles procuravam as pessoas nas faculdades, buscando talentos, devido a falta
+de pessoas com experiência em jogos.
+
+- a missão da empresa é algo mágico, mas não um aviso na parede.
+- "por exemplo, se trabalha muito por exemplo"
+- "material prima são pessoas, computadores são baratos"
+	-> devemos fazer as pessoas se sentirem importantes, para que tenham
+	um ambiente amigável propício a criatividade e criação.
+
+- "manter a casa arrumada em termos contábeis"
+- "repartir o bolo (lucro) com as pessoas da empresa"
+
+- Na Ubisoft a equipe foi se deteriorando e não durou
+- A Ubisoft foi embora do Brasil e eles criaram outra empresa: rock head games 
+(empresa atual)
+	-> estão desenvolvendo um jogo
+
+- "nunca diga nunca"
+- "até o sucesso passamos por diversos fracassos"
+
+http://www.glassdoor.com/index.htm => críticas sobre ambientes de trabalho
+
+- a wallmart determinava há um tempo atrás quais jogos seriam vendidos
+- a publicidade era apenas em caixas, distribuição física, então a wallmart decidia 
+quais produtos ficavam nas prateleiras.
+- com a distribuição digital dos games, por download, a distribuição fica mais 
+facilitada
+- o advento da internet facilitou a distribuição dos jogos, redes sociais, reviews,
+artigos, sites dos desenvolvedores.
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------
+---- Business Plan - 2011/09/02
+------------------------------------------------------------------------------
+- Palestra: Business Plane
+- Palestrante: Prof. Newton Braga Rosa
+
+- Primeiro slide: capa - nome, instituição, contato
+- Segundo slide: mensagem de conquista de 30 segundos
+
+-> não usar muitos efeitos de texto do power point para não poluir a apresentação
+
+- Plano:
+	-> Porque fazer um BP? 
+		- Torna a oportunidade mais clara; explicar porque ela existe
+		- identificar e minizar riscos; funciona como check-list, bom para
+		perceber todos os problemas do negócio (não deixar e ideia apenas na cabeça)
+		- funciona como instrumento de comunicação interna e externa à equipe
+		- serve como bússula para manter alinahdos a equipe e dirigentes
+	
+	-> Desculpas para não planejar
+		- "as coisas não saem como planejado"
+		- "já sei de tudo"
+		- "as regras do jogo mudam a toda hora"
+
+	-> Importante para não perder tempo com retrabalho
+	-> Um plano de negócios bem feito evita complicações futuras. O mesmo pode
+	ser aplicado ao desenvolvimento de software. Antes de começar a programar é
+	necessário projetar a aplicação para que o desenvolvimento flua (conceitos 
+	de TCP)
+
+	-> Planejar não é adivinhar o futuro. Planejar é projetar um cenário e saber como
+	se posicionar nele
+
+	-> Documentação de toda a trajetória do negócio é importantíssimo. Dessa forma
+	ideias, pensamentos e impresões sobre o mercado não se perdem ao longo do tempo
+
+- Roteiro de um BP:
+	-> Declaração dos princípios é importante		
+	-> Visão - missão - valores
+		- Visão: articula diferentes formas de ver o negócio
+		- Missão: declaração de compromissos
+		- Valores: 
+
+	-> Objetivos específicos
+		- deve preparar a meta
+		- etapas para implementação do objetivo geral
+	-> Meta: precisa ter número e data. Ex.: vender 10 itens ao final de um ano
+		- devem estar associadas a algum objetivo específico
+
+
+
+------------------------------------------------------------------------------
+---- Apresentação - 2011/09/02
+------------------------------------------------------------------------------
+* Inteligência Social
+
+- Palestrante: Lucas Magrini Rigo
+
+-> Título: Inteligência Social
+-> Autor do livro: Karl Albrecht
+
+- Inteligência Social: "a habilidade de se relacionar com as pessoas e conseguir 
+que elas cooperem com você"
+- Múltiplas inteligências: abstrata, social, emocional, prática, estética,
+cinestésica
+
+S.P.A.C.E.
+- Habilidades de interação
+	-> Presença: porte, fala, vocabulário, aparência
+	-> Autenticidade: honestidade, ética
+	-> Clareza: expressar as ideias de forma clara
+	-> Empatia: capacidade de uma pessoa se colocar na posição da outra, para 
+	entender a cabeça do cliente
+
+- S de Consciência Situacional
+	-> "interpretar momentos e pessoas"
+	-> se portar e falar da forma adequada nos mais diversos ambientes
+
+- P de Presença
+	-> "gosto dessa pessoa e não sei porque" => ela tem carisma
+	-> carisma engloba simpatia, presença
+	-> apresente-se naturalmente e imagine o que outra pessoa pensa/imagina
+	a respeito de você
+
+- A de Autenticidade
+	-> ser autêntico é ser honesto, ético, confiável e bem intecionado 
+	consigo mesmo
+
+- C de Clareza
+	-> habilidade de expressar ideias, opiniões, pensamentos
+	-> usar um vocabulário adequado para que as pessoas entendam o que se
+	quer dizer
+	-> fala fácil: frases médias, evite jargões, use voz ativa
+	-> use humor e metáforas bem elaboradas
+	-> aprender a capturar a atenção do ouvinte
+
+- E de Empatia
+	-> Regra de Ouro: "Trate od outros como queres que tratem a ti mesmo"
+	-> Regra de Platina: "Trate os outros como eles querem ser tratados"
+	-> Observar os comportamentos tóxicos, não repoduzí-los pois enfraquecem
+	as relações
+
+
+
+------------------------------------------------------------------------------
+---- Case 2 - 2011/08/26
+------------------------------------------------------------------------------
+- Avaliação própria: colocando em prática nossos critérios de justiça
+
+StopWish (desenvolvido por Bullb)
+
+"Networking é muito muito importante"
+
+História da Bullb:
+- Estudou bastante computação
+- Achava que o cumputador podia pensar como os humanos
+- Fez vestibular para informática com ênfase em engenharia
+	"se não for o melhor cientista da computação, pelo menos será o melhor 
+	vendedor de cachorro quente de POA" --O pai do João disse, quando ele 
+	perguntou se com computação ele conseguiria pelo menos pagar a comida
+	dele
+
+- Pensou em montar um negócio, uma lan house, após contato com um amigo que
+jogava em lan house => fez um plano de negócios, criou a empresa, ela durou 
+5 anos. Ele também montou um fliperama, que se pagou em 3 meses.
+- Formação: mestrado (trabalhava com sistemas embarcados), MBA em gestão.
+
+"Competência emocional é a competência mais importante das pessoas que tem
+um negócio." --Aprendido de um livro que ele leu
+"Quem tem sucesso tem um quoeficiente emocional alto, atitude, rotina (valores
+aplicados no dia-a-dia)"
+"Quem tem sucesso é quem tem um alto poder de convencimento. Articulação."
+"As pessoas juntas conseguem fazer coisas maiores do que elas mesmas."
+
+- Alinhamento estratégico: como a empresa vai se comportar, num contexto
+em que os funcionários vão abraçar os objetivos da empresa. O funcionário
+deve se sentir mais confortável na empresa (sala de jogos na empresa, por
+exemplo)
+- Livro: 
+	- Pai rico, pai pobre
+	- Getting thing done, de David Aleen
+	- A cabeça do brasileiro (livro de sociologia)
+	- Inteligência emocional no trabalho
+	- The back of the napkin: como explicar ideias de maneira gráfica
+
+- Ficar nos melhores hotéis, pois neles estão as melhores pessoas / 
+cabeças => networking
+
+- O uniforme da marinha norte americana é azul-marinho, pois o azul-
+marinho transmite mais confiança
+
+- mexicano é muito parecido com o brasileiro
+	- pessoas de classe mais baixa se sensibilizam com histórias tristes,
+	e podem te ajudar
+- QE: quociente emocional
+
+- Decidiu abrir empresa de software para implantar suas ideias
+
+"A decisão coletiva é geralmente inteligente"
+
+"Ideia não vale nada, o difícil é implementar a ideia. Sem fazer a ideia
+ela não tem valor."
+
+- Dois sócios: João Otelo e Janone
+- Ganharam o Prime.
+- Início da Bullb em 2010.
+
+Livro: The bussiness model generator => metodologia para fazer negócio em 
+tecnologia
+
+Start-up (definição atual): uma empresa em busca do seu modelo de negócio
+
+- Depois de alguns problemas fizeram um reset da empresa.
+- O primeiro produto vendido foi um site por R$ 1.500,00.
+
+- O João teve uma ideia em uma viagem à praia com a equipe dele. O projeto
+foi apresentado ao BuscaPé, mas não foi aprovado.
+
+"A maioria das pessoas do mundo é confiável e confia"
+	-> a prova disso são as sociedades, as leis que existem
+	-> outra prova: a wikipedia. 
+	
+- A frustação é algo constante na vida de um empreendedor. Deve ser superado.
+
+Produto:
+- Para web e smartphone
+- Concorrentes: zenergo, sonar, urbanorca
+- www.bullb.com.br
+- implementação: jQuery mobile
+
+- Teste: bullb.com.br/spotwish_alpha
+	-> das 20 às 22h
+	-> código do convite: EMPREENDEDOR
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+{
+	EXEMPLO: POTENCIAÇÃO
+	 - este exemplo calcula A elevando no registrador B (A^B)
+}
+
+programa iterativo
+
+ate zero-A faca (ad-E;sub-A);
+ad-A;
+ate zero-B faca (
+			ate zero-A faca (ad-C;sub-A);
+			ate zero-C faca (
+						ate zero-E faca (ad-A;ad-D;sub-E);
+						ate zero-D faca (ad-E;sub-D);
+						sub-C);
+			sub-B)

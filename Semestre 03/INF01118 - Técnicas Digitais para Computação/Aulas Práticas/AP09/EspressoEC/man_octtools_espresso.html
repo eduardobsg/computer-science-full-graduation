@@ -1,0 +1,309 @@
+<HTML>
+<HEAD>
+<TITLE>ESPRESSO(1OCTTOOLS) manual page</TITLE>
+</HEAD>
+<BODY bgcolor=white>
+<A HREF="#toc">Table of Contents</A><P>
+ 
+<H2><A NAME="sect0" HREF="#toc0">Name </A></H2>
+espresso - Boolean Minimization  
+<H2><A NAME="sect1" HREF="#toc1">Synopsis </A></H2>
+<B>espresso</B> [<I>options 
+</I>] [<I>file </I>]  
+<H2><A NAME="sect2" HREF="#toc2">Description </A></H2>
+<P>
+<I>Espresso</I> takes as input a two-level representation 
+of a two-valued (or multiple-valued) Boolean function, and produces a minimal 
+equivalent representation.  The algorithms used are new and represent an 
+advance in both speed and optimality of solution in heuristic Boolean 
+minimization. <P>
+<I>Espresso</I> reads the <I>file </I> provided (or standard input if no 
+files are specified), performs the minimization, and writes the minimized 
+result to standard output. <I>Espresso</I> automatically verifies that the minimized 
+function is equivalent to the original function. Options allow for using 
+an exact minimization algorithm, for choosing an optimal phase assignment 
+for the output functions, and for choosing an optimal assignment of the 
+inputs to input decoders. <P>
+The default input and output file formats are 
+compatible with the Berkeley standard format for the physical description 
+of a <FONT SIZE=-1>PLA</FONT>
+.  The input format is described in detail in <A HREF="man_octtools_espresso_inputs.html">espresso(5)</A>
+.  Note 
+that the input file is a <I>logical </I> representation of a set of Boolean equations, 
+and hence the input format differs slightly from that described in <A HREF="man_octtools_pla.html">pla(5)</A>
+ 
+(which provides for the <I>physical </I> representation of a <FONT SIZE=-1>PLA</FONT>
+). The input and 
+output formats have been expanded to allow for multiple-valued logic functions, 
+and to allow for the specification of the don't-care set which will be used 
+in the minimization. <P>
+A complete list of the command line options is given 
+below. Be warned that many of the command line options are not intended 
+for general use. 
+<DL>
+
+<DT><B>-d</B>  </DT>
+<DD>Enables debugging. Useful only for those familiar with 
+the algorithms used. </DD>
+
+<DT><B>-Dcheck</B>  </DT>
+<DD>Checks that the function is a partition of 
+the entire space (i.e., that the <FONT SIZE=-1>ON</FONT>
+-set, <FONT SIZE=-1>OFF</FONT>
+-set and <FONT SIZE=-1>DC</FONT>
+-set are pairwise disjoint, 
+and that their union is the Universe).  </DD>
+
+<DT><B>-Dd1merge</B>  </DT>
+<DD>Performs a quick distance-1 
+merge on the input file.  This is useful when the input file is very large 
+(e.g., a truth table with more than 1000 terms) because distance-1 merge 
+is O(n log n) rather than the <FONT SIZE=-1>EXPAND</FONT>
+ step of Espresso which is O(n * n). 
+ The output should then be run through Espresso to complete the minimization. 
+ A range of variables to be merged can also be specified using <B>-rn-m</B> (the 
+default is to merge over all variables).  </DD>
+
+<DT><B>-Decho</B>  </DT>
+<DD>Echoes the function to 
+standard output. This can be used to get the complement of a function when 
+combined with <B>-o </B>.  </DD>
+
+<DT><B>-Dequiv</B>  </DT>
+<DD>Identify output variables which are equivalent. 
+ Takes into account the don't-care set and checks for equivalence of both 
+the <FONT SIZE=-1>ON</FONT>
+-set and <FONT SIZE=-1>OFF</FONT>
+-set. </DD>
+
+<DT><B>-Dexact</B>  </DT>
+<DD>Exact minimization algorithm (guarantees 
+minimum number of product terms, and heuristically minimizes number of 
+literals). Potentially expensive.  </DD>
+
+<DT><B>-Dmany</B>  </DT>
+<DD>Reads and minimizes PLA's until 
+end-of-file is detected.  PLA's in the same file are separated by <I>.e </I>.  </DD>
+
+<DT><B>-Dmap</B> 
+ </DT>
+<DD>Draw the Karnaugh maps for a binary-valued function.  </DD>
+
+<DT><B>-Dmapdc</B>  </DT>
+<DD>Derive from 
+the binary-valued variable <I>DONT_CARE </I> a don't-care set, and then delete this 
+variable. All input conditions for which an output changes when <I>DONT_CARE 
+</I> changes define the don't-care conditions for that output. This is a hack 
+to support don't-cares from high-level languages without a notion of don't-cares. 
+ </DD>
+
+<DT><B>-Dopo</B>  </DT>
+<DD>Perform output phase optimization (i.e., determine which functions 
+to complement to reduce the number of terms needed to implement the function). 
+ After choosing an assignment of phases for the outputs, the function 
+is minimized. A simple algorithm is used which may become very expensive 
+for a large number of outputs (e.g., more than 40). </DD>
+
+<DT><B>-Dopoall</B>  </DT>
+<DD>Minimize the 
+function with all possible phase assignments. A range of outputs to cycle 
+through can be given with <B>-rn-m</B> (the default is to use all outputs). The 
+option <B>-S1</B> will perform an exact minimization for each phase assignment. 
+Be warned that opoall requires an exponential number of minimizations 
+! </DD>
+
+<DT><B>-Dpair</B>  </DT>
+<DD>Choose an assignment of the inputs to two-bit decoders, and minimize 
+the function.  The function MUST be minimized first to achieve good results. 
+ There are actually 4 different algorithms, of increasing cost, which 
+may be selected with <B>-S1</B>, <B>-S2</B>, or <B>-S3</B>. The default is <B>-S0</B> which seems to give 
+the best results for the cost. </DD>
+
+<DT><B>-Dpairall</B>  </DT>
+<DD>Minimize the function with all 
+possible assignments of inputs to two-bit decoders. The option <B>-S1</B> will perform 
+an exact minimization for each assignment of inputs to decoders, and the 
+option <B>-S2</B> will perform an output-phase assignment for each assignment of 
+inputs to decoders. Be warned that pairall requires an exponential number 
+of minimizations ! </DD>
+
+<DT><B>-Dseparate</B>  </DT>
+<DD>Remove the don't-care set from the <FONT SIZE=-1>ON</FONT>
+-set of 
+the function. </DD>
+
+<DT><B>-Dso</B>  </DT>
+<DD>Minimize each function one at a time as a single-output 
+function. Terms will not be shared among the functions. The option <B>-S1</B> will 
+perform an exact minimization for each single-output function. </DD>
+
+<DT><B>-Dso_both</B> 
+ </DT>
+<DD>Minimize each function one at a time as a single-output function, but 
+choose the function or its complement based on which has fewer terms. The 
+option <B>-S1</B> will perform an exact minimization for each single-output function 
+and its complement to determine which has fewer terms. </DD>
+
+<DT><B>-Dstats</B>  </DT>
+<DD>Provide 
+simple statistics on the size of the function. </DD>
+
+<DT><B>-Dverify</B>  </DT>
+<DD>Checks for Boolean 
+equivalence of two PLA's.  Reads two filenames from the command line, each 
+containing a single PLA. </DD>
+
+<DT><B>-DPLAverify</B>  </DT>
+<DD>Checks for Boolean equivalence of 
+two PLA's by first permuting the columns based on the user supplied variable 
+names.  Reads two filenames from the command line. </DD>
+
+<DT><B>-eeat</B>  </DT>
+<DD>Normally comments 
+are echoed from the input file to the output file. This options discards 
+any comments in the input file. </DD>
+
+<DT><B>-efast</B>  </DT>
+<DD>Stop after the first <FONT SIZE=-1>EXPAND</FONT>
+ and 
+<FONT SIZE=-1>IRREDUNDANT</FONT>
+ operations (i.e., do not iterate over the solution). </DD>
+
+<DT><B>-ekiss</B>  </DT>
+<DD>Sets 
+up a <I>kiss </I>-style minimization problem.  This is a hack. </DD>
+
+<DT><B>-eness</B>  </DT>
+<DD>Essential 
+primes will not be detected. </DD>
+
+<DT><B>-enirr</B>  </DT>
+<DD>The result will not necessarily be 
+made irredundant in the final step which removes redundant literals. </DD>
+
+<DT><B>-enunwrap</B> 
+ </DT>
+<DD>The <FONT SIZE=-1>ON</FONT>
+-set will not be unwrapped before beginning the minimization. </DD>
+
+<DT><B>-eonset</B> 
+ </DT>
+<DD>Recompute the <FONT SIZE=-1>ON</FONT>
+-set before the minimization.  Useful when the <FONT SIZE=-1>PLA</FONT>
+ has 
+a large number of product terms (e.g., an exhaustive list of minterms). </DD>
+
+<DT><B>-epos</B> 
+ </DT>
+<DD>Swaps the <FONT SIZE=-1>ON</FONT>
+-set and <FONT SIZE=-1>OFF</FONT>
+-set of the function after reading the function. 
+ This can be used to minimize the <FONT SIZE=-1>OFF</FONT>
+-set of a function.  <I>.phase </I> (see <A HREF="man_octtools_espresso_inputs.html">espresso(5)</A>
+) 
+in the input file can also specify an arbitrary choice of output phases. 
+</DD>
+
+<DT><B>-estrong</B>  </DT>
+<DD>Uses the alternate strategy <FONT SIZE=-1>SUPER_GASP</FONT>
+ (as a replacement for 
+<FONT SIZE=-1>LAST_&nbsp;GASP</FONT>
+) which is more expensive, but occasionally provides better results. 
+</DD>
+
+<DT><B>-o[type]</B>  </DT>
+<DD>Selects the output format.  By default, only the <FONT SIZE=-1>ON</FONT>
+-set (i.e., type 
+f) is output after the minimization.  [type] can be one of <B>f </B>, <B>d </B>, <B>r </B>, 
+<B>fd </B>, <B>dr </B>, <B>fr </B>, or <B>fdr </B> to select any combination of the <FONT SIZE=-1>ON</FONT>
+-set (f), the 
+<FONT SIZE=-1>OFF</FONT>
+-set (r) or the <FONT SIZE=-1>DC</FONT>
+-set (d).  [type] may also be <B>eqntott </B> to output algebraic 
+equations acceptable to  <I><A HREF="eqntott.1OCTTOOLS">eqntott</I>(1OCTTOOLS)</A>
+,<I></I> or <B>pleasure </B> to output an 
+unmerged <FONT SIZE=-1>PLA</FONT>
+ (with the <I>.label </I> and <I>.group </I> keywords) acceptable to
+<I><A HREF="pleasure.1OCTTOOLS">pleasure</I>(1OCTTOOLS)</A>
+. 
+</DD>
+
+<DT><B>-s</B>  </DT>
+<DD>Will provide a short summary of the execution of the program including 
+the initial cost of the function, the final cost, and the computer resources 
+used. </DD>
+
+<DT><B>-t</B>  </DT>
+<DD>Will produce a trace showing the execution of the program.  After 
+each main step of the algorithm, a single line is printed which reports 
+the processor time used, and the current cost of the function. </DD>
+
+<DT><B>-x</B>  </DT>
+<DD>Suppress 
+printing of the solution. </DD>
+
+<DT><B>-v [type]</B>  </DT>
+<DD>Specifies verbose debugging detail. 
+ Not generally useful. </DD>
+</DL>
+ 
+<H2><A NAME="sect3" HREF="#toc3">Diagnostics </A></H2>
+Espresso will issue a warning message 
+if a product term spans more than one line.  Usually this is an indication 
+that the number of inputs or outputs of the function is specified incorrectly. 
+ 
+<H2><A NAME="sect4" HREF="#toc4">See Also </A></H2>
+<A HREF="kiss.1OCTTOOLS">kiss(1OCTTOOLS)</A>
+, <A HREF="pleasure.1OCTTOOLS">pleasure(1OCTTOOLS)</A>
+, <A HREF="man_octtools_pla.html">pla(5OCTTOOLS)</A>
+, <A HREF="man_octtools_espresso.html">espresso(5OCTTOOLS)</A>
+, <A HREF="man_octtools_nova.html">nova(5OCTTOOLS)</A>
+ 
+<P>
+R. Brayton, G. Hachtel, C. McMullen, and A. Sangiovanni-Vincentelli, <I>Logic 
+Minimization Algorithms for VLSI Synthesis </I>, Kluwer Academic Publishers, 
+1984. <P>
+R. Rudell, A. Sangiovanni-Vincentelli, "Espresso-MV: Algorithms for Multiple-Valued 
+Logic Minimization," <I>Proc. Cust. Int. Circ. Conf. </I>, Portland, May 1985. <P>
+R. Rudell, 
+"Multiple-Valued Minimization for PLA Synthesis," Master's Report, University 
+of California, Berkeley, June 1986. <P>
+R. Rudell, A. Sangiovanni-Vincentelli, 
+"Exact Minimization of Multiple-Valued Functions for PLA Optimization", 
+<I>Int. Conf. Comp. Aid. Des. </I>, Santa Clara, November 1986.  
+<H2><A NAME="sect5" HREF="#toc5">Author </A></H2>
+Please direct 
+any questions or comments to:  <BR>
+ <PRE>Richard Rudell 
+ 205 Cory Hall 
+ Dept. of EECS 
+ University of California 
+ Berkeley, California  94720 
+  </PRE><P>
+Arpanet mail address is rudell@ic.Berkeley.EDU.  
+<H2><A NAME="sect6" HREF="#toc6">Comments </A></H2>
+Default is to 
+pass comments and unrecognized options from the input file to standard 
+output (sometimes this isn't what you want). <P>
+It is no longer possible to 
+specify the type on the command line. <P>
+There are a lot of options, but typical 
+use doesn't need them. <P>
+This manual page refers to Version 2.3 of Espresso. 
+ The major change from Version 2.2 to Version 2.3 is the addition of a fast 
+sparse-matrix covering algorithm for the <B>-Dexact </B> mode. <P>
+The -Dopo option becomes 
+very slow for many outputs (&gt; 20). <P>
+
+<HR><P>
+<A NAME="toc"><B>Table of Contents</B></A><P>
+<UL>
+<LI><A NAME="toc0" HREF="#sect0">Name</A></LI>
+<LI><A NAME="toc1" HREF="#sect1">Synopsis</A></LI>
+<LI><A NAME="toc2" HREF="#sect2">Description</A></LI>
+<LI><A NAME="toc3" HREF="#sect3">Diagnostics</A></LI>
+<LI><A NAME="toc4" HREF="#sect4">See Also</A></LI>
+<LI><A NAME="toc5" HREF="#sect5">Author</A></LI>
+<LI><A NAME="toc6" HREF="#sect6">Comments</A></LI>
+</UL>
+</BODY></HTML>

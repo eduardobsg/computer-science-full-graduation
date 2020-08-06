@@ -1,0 +1,38 @@
+{
+	EXEMPLO: Multiplicacao 
+	 - este exemplo calcula A x B
+}
+
+programa iterativo
+
+{
+ate zero-A faca (ad-E;sub-A);
+ad-A;
+ate zero-B faca (
+			ate zero-A faca (ad-C;sub-A);
+			ate zero-C faca (
+						ate zero-E faca (ad-A;ad-D;sub-E);
+						ate zero-D faca (ad-E;sub-D);
+						sub-C);
+			sub-B)
+			
+---- Multiplicacao Begin
+C := 0;
+			até	A = 0 
+			  faça	(C := C + 1; A := A - 1);
+			até	C = 0 
+			  faça	(D := 0;
+			            até	B = 0 
+			               faça  (A := A + 1; D := D + 1; B := B - 1);
+			             até	D = 0 
+			               faça  (B := B + 1; D := D - 1);
+	                           C := C - 1)
+----- Multiplicacao End			
+			
+}
+
+ate zero-A faca (ad-C;sub-A);
+ate zero-C faca (
+				ate zero-B faca (ad-A;ad-D;sub-B);
+				ate zero-D faca (ad-B;sub-D);
+				sub-C)

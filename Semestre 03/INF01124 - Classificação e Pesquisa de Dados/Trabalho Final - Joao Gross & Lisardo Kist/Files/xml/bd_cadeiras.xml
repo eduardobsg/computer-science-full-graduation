@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bd_cadeiras>
+	<cadeira>
+		<cod>MAT01355</cod>
+		<nome>Álgebra Linear I - A</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01202</cod>
+		<nome>Algorítmos e Programação - CIC</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04030</cod>
+		<nome>Análise de Circuitos I</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04031</cod>
+		<nome>Análise de Circuitos II</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04032</cod>
+		<nome>Análise de Circuitos III</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01023</cod>
+		<nome>Arquitetura e Desempenho de Banco de Dados</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01108</cod>
+		<nome>Arquitetura e Organização de Computadores I</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01112</cod>
+		<nome>Arquitetura e Organização de Computadores II</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01191</cod>
+		<nome>Arquiteturas Avançadas de Computadores</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01146</cod>
+		<nome>Avaliação de Desempenho</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01205</cod>
+		<nome>CAD para Sistemas Digitais</nome>
+	</cadeira>
+	<cadeira>
+		<cod>MAT01353</cod>
+		<nome>Cálculo e Geometria Analítica I - A</nome>
+	</cadeira>
+	<cadeira>
+		<cod>MAT01354</cod>
+		<nome>Cálculo e Geometria Analítica II - A</nome>
+	</cadeira>
+	<cadeira>
+		<cod>MAT01169</cod>
+		<nome>Cálculo Numérico</nome>
+	</cadeira>
+	<cadeira>
+		<cod>MAT01032</cod>
+		<nome>Cálculo Numérico A</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF05006</cod>
+		<nome>Categorias Computacionais N</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01058</cod>
+		<nome>Circuitos Digitais</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04055</cod>
+		<nome>Circuitos Integrados Analógicos</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01124</cod>
+		<nome>Classificação e Pesquisa de Dados</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01147</cod>
+		<nome>Compiladores</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF05515</cod>
+		<nome>Complexidade de Algoritmos - B</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01140</cod>
+		<nome>Computador e Sociedade</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01037</cod>
+		<nome>Computação Evolutiva</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01009</cod>
+		<nome>Computação Gráfica</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01005</cod>
+		<nome>Comunicação de Dados</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01185</cod>
+		<nome>Concepção de Circuitos Integrados I</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01194</cod>
+		<nome>Concepção de Circuitos Integrados II</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01056</cod>
+		<nome>Desafios de Programação</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04447</cod>
+		<nome>Eletrônica Fundamental I-a</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04033</cod>
+		<nome>Eletrônica Fundamental II - B</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01032</cod>
+		<nome>Empreendimento em Informática</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01003</cod>
+		<nome>Engenharia de Software II</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01127</cod>
+		<nome>Engenharia de Software N</nome>
+	</cadeira>
+	<cadeira>
+		<cod>MAT01167</cod>
+		<nome>Equações Diferenciais II</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01001</cod>
+		<nome>Especificação Formal N</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01203</cod>
+		<nome>Estruturas de Dados</nome>
+	</cadeira>
+	<cadeira>
+		<cod>FIS01182</cod>
+		<nome>Física Geral - Eletromagnetismo</nome>
+	</cadeira>
+	<cadeira>
+		<cod>FIS01181</cod>
+		<nome>Física I-c</nome>
+	</cadeira>
+	<cadeira>
+		<cod>FIS01183</cod>
+		<nome>Física III-c</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF05008</cod>
+		<nome>Fundamentos de Algoritmos</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01145</cod>
+		<nome>Fundamentos de Banco de Dados</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01047</cod>
+		<nome>Fundamentos de Computação Gráfica</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01046</cod>
+		<nome>Fundamentos de Processamento de Imagens</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01209</cod>
+		<nome>Fundamentos de Tolerância A Falhas</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01016</cod>
+		<nome>Gerência e Administração de Projetos</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01015</cod>
+		<nome>Gerência e Aplicações em Redes</nome>
+	</cadeira>
+	<cadeira>
+		<cod>LET02720</cod>
+		<nome>Inglês Instrumental para Processamento de Dados I</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04457</cod>
+		<nome>Instrumentação A</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01048</cod>
+		<nome>Inteligência Artificial</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF05004</cod>
+		<nome>Inteligência Artificial Avançada</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01043</cod>
+		<nome>Interação Homem-computador</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01107</cod>
+		<nome>Introdução à Arquitetura de Computadores</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04009</cod>
+		<nome>Introdução à Engenharia de Computação</nome>
+	</cadeira>
+	<cadeira>
+		<cod>fis01055</cod>
+		<nome>Introdução à Física Dos Dispositivos Semicondutores</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01049</cod>
+		<nome>Introdução à Pesquisa em Informática</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF05001</cod>
+		<nome>Laboratório de Programação em Lógica</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01022</cod>
+		<nome>Laboratório de Sistema de Software</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF05005</cod>
+		<nome>Linguagens Formais e Autômatos N</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF05508</cod>
+		<nome>Lógica para Computação</nome>
+	</cadeira>
+	<cadeira>
+		<cod>MAT01168</cod>
+		<nome>Matemática Aplicada II</nome>
+	</cadeira>
+	<cadeira>
+		<cod>MAT01375</cod>
+		<nome>Matemática Discreta B</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04056</cod>
+		<nome>Microcontroladores</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04476</cod>
+		<nome>Microprocessadores II</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01121</cod>
+		<nome>Modelos de Linguagem de Programação</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01113</cod>
+		<nome>Organização de Computadores B</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF05010</cod>
+		<nome>Otimização Combinatória</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04007</cod>
+		<nome>Princípios de Comunicação A</nome>
+	</cadeira>
+	<cadeira>
+		<cod>MAT02219</cod>
+		<nome>Probabilidade e Estatística</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04477</cod>
+		<nome>Processamento Digital de Sinais</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01008</cod>
+		<nome>Programação Distribuída e Paralela</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01006</cod>
+		<nome>Projeto de Banco de Dados</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01021</cod>
+		<nome>Projeto de Hiperdocumentos</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01019</cod>
+		<nome>Projeto em Computação Gráfica</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01002</cod>
+		<nome>Protocolos de Comunicação</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01154</cod>
+		<nome>Redes de Computadores N</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01036</cod>
+		<nome>Redes Neurais e Sistema Fuzzy B</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01017</cod>
+		<nome>Redes Neurais e Sistemas Fuzzy</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04479</cod>
+		<nome>Robótica A</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01034</cod>
+		<nome>Robótica II</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01045</cod>
+		<nome>Segurança em Sistemas de Computação</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF05516</cod>
+		<nome>Semântica Formal N</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01014</cod>
+		<nome>Sistemas de Banco de Dados Distribuídos</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04037</cod>
+		<nome>Sistemas de Controle Digitais</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04035</cod>
+		<nome>Sistemas de Controle I</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04036</cod>
+		<nome>Sistemas de Controle II</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04008</cod>
+		<nome>Sistemas de Tempo-real</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01175</cod>
+		<nome>Sistemas Digitais para Computadores A</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04006</cod>
+		<nome>Sistemas e Sinais</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01059</cod>
+		<nome>Sistemas Embarcados</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01038</cod>
+		<nome>Sistemas Especialistas N</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01018</cod>
+		<nome>Sistemas Operacionais Distribuídos e de Redes</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01142</cod>
+		<nome>Sistemas Operacionais I N</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01151</cod>
+		<nome>Sistemas Operacionais II N</nome>
+	</cadeira>
+	<cadeira>
+		<cod>HUM04020</cod>
+		<nome>Sociedade da Informação</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF05003</cod>
+		<nome>Teoria da Computação Distribuída</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF05501</cod>
+		<nome>Teoria da Computação N</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF05512</cod>
+		<nome>Teoria Dos Grafos e Análise Combinatória</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04010</cod>
+		<nome>Teoria Eletromagnética e Ondas</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04057</cod>
+		<nome>Teste de Sistemas Eletrônicos</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01120</cod>
+		<nome>Técnicas de Construção de Programas</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01118</cod>
+		<nome>Técnicas Digitais para Computação</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01050</cod>
+		<nome>Tópicos Especiais em Engenharia de Computação I</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04034</cod>
+		<nome>Tópicos Especiais em Engenharia de Computação II</nome>
+	</cadeira>
+	<cadeira>
+		<cod>ENG04041</cod>
+		<nome>Tópicos Especiais em Engenharia de Computação III</nome>
+	</cadeira>
+	<cadeira>
+		<cod>INF01053</cod>
+		<nome>Tópicos Especiais em Engenharia de Computação IV</nome>
+	</cadeira>
+</bd_cadeiras>

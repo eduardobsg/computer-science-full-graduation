@@ -1,0 +1,147 @@
+Cadeira: INF01048 - Inteligência Artificial
+Professor: Paulo Martins Engel
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2012/01
+Página do professor: http://www.inf.ufrgs.br/~engel/data/media/file/IA.html
+
+------------------------------------------------------------------------------
+---- Colegas:
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+---- Frase:
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+---- Notas de Aula
+------------------------------------------------------------------------------
+
+2012-03-26:
+* Redes Semânticas (lógica de predicados)
+- representação gráfica (interpretação do domínio) 
+	- nós -> conjuntos / instâncias
+	- arcos -> contido / instância 
+	
+* Frames
+- representação extensa (raciocínio)
+
+* Raciocínio
+- herança de atributos	(exceção declaradas nos nós)
+	- cancelamento de herança -> não monotônico
+	
+Exercício:
+- Tentar expressar o conhecimento em outra forma de representação. 	
+	
+* Lógica de predicados
+
+instancia(Flecha,águia)
+instancia(Falco,falcão)
+criador(flecha,eagle_club)
+criador(flaco,falcon_club)
+envergadura(aguia,80)
+é_um(aguia,ave_de_rapina)
+é_um(falcao,ave_de_rapina)
+locomocao(ave_de_rapina,voo)
+come(ave_de_rapina,carne)
+é_um(ave_de_rapina_ave)
+envergadura(ave_40)
+tem(ave,asas)
+
+------------------------------------------------------------------------------
+
+2012-03-28:
+Fracos => busca / representação de estados
+
+Métodos de IA Fortes para solução de problemas
+- intensivos em conhecimento de domínio
+- representação de conhecimento (humano) / raciocínio
+	- como adiquirir conhecimento??
+
+Sistemas Especialistas -> Sistemas de Conhecimento humano + corporativo
+	- Gestão do conhecimento
+
+------------------------------------------------------------------------------
+
+2012-04-02:
+
+SE(SBC;SC)
+
+Engenharia do Conhecimento
+-> Aquisição de conhecimento
+	-> extração do conhecimento de um especialista
+	
+-> conceitualização: conhecimento estático (metodologia do domínio)
+-> heurísticas: conhecimento dinâmico "regras de ouro" (p/ solução do problema)
+	- estratégias
+- técnicas de extração de conhecimento -> interação 
+	- entrevistas: abertas, estruturadas (objetivo específico)
+	
+Regras causais!
+	- causa -> efeito (100%) -> consistente
+	
+Regras heurísticas
+	- efeito -> causa -> inconsistente (< 100%) 
+
+------------------------------------------------------------------------------
+2012-04-30:
+
+Lógica Fuzzy
+- Estrutura lógica (alfa booleana)
+	Sintaxe é a mesma!
+
+	* Regras "fuzzy" -> implicações: Se A então B -> A é um conceito fuzzy
+						(lógica booleana: A e B fazem 
+						parte do intervalo de valores)
+
+- Intervalos de valores: contínuos -> Temperaturas, pressão,
+umidade, força, velocidade
+
+- Semântica é ajustável ao especialista (parâmetros)
+- Raciocínio -> tipos pré-estabelecidos -> Modus Pomens (Generalizado) 	
+
+------------------------------------------------------------------------------
+2012-05-28:		
+
+Algoritmos de aprendizagem indutiva para geração de modelos (genéricos) de dados
+
+Tarefas:
+* Classificação (preditiva): prever o rótulo de classe para uma instância de teste
+(consulta: 'query') (reconhecimento)
+	-> Representação Simbólica: um modelo descrito por regras de classificação
+		-> Árvore de Decisão
+
+* Regras
+
+Árvore de Decisão: gera uma modelo de partição de dados
+-> Modelos consistente para classificação: 
+
+Mtea => Joga -> Sim ou não
+
+Tempo -> ensolarado, nublado ou chuvoso
+Temperatura -> quente, amena ou fria
+Umidade -> alta ou normal
+
+Tempo, Temp, Umidade, Vento => Modelo => Joga? (Atribuição meta - rótulo - da classe)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+

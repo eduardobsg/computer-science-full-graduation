@@ -1,0 +1,280 @@
+digraph g {
+node [ fontsize = "10", shape = record ];
+edge [];
+
+"admauditoria" [shape = record, label = "{<col0> \N| cdlauditoria:  bigint\lcodclasse:  character varying(255)\lcodregistro:  character varying(255)\ldatevento:  timestamp without time zone\lcodusuario:  character varying(255)\ldesevento:  character varying(255)\lindtipoevento:  character varying(255)\l}" ];
+
+"admcustomer" [shape = record, label = "{<col0> \N| cdlcustomer:  bigint\lcdlpessoa:  bigint\ldesadditionalinfo:  character varying(2000)\l}" ];
+
+"admdomain" [shape = record, label = "{<col0> \N| cdidomain:  integer\ldesdomain:  character varying(2000)\lnomdomain:  character varying(255)\l}" ];
+
+"admempresa" [shape = record, label = "{<col0> \N| cdlempresa:  bigint\lcdlpessoa:  bigint\l}" ];
+
+"admgroup" [shape = record, label = "{<col0> \N| codgroup:  character varying(16)\ldesgroup:  character varying(50)\l}" ];
+
+"admgroupmenuoption" [shape = record, label = "{<col0> \N| cdlmenuoption:  bigint\lcodgroup:  character varying(16)\l}" ];
+
+"admlocalatend" [shape = record, label = "{<col0> \N| codlocal:  character varying(5)\lcdlpessoa:  bigint\lcdlcustomer:  bigint\l}" ];
+
+"admmenuoption" [shape = record, label = "{<col0> \N| cdlmenuoption:  bigint\ldesmenuoption:  character varying(40)\lnummenusequence:  integer\lindtype:  integer\ldesparameters:  character varying(255)\lnumconstantid:  integer\lcdlparent:  bigint\lcodprogram:  character varying(40)\l}" ];
+
+"admparametro" [shape = record, label = "{<col0> \N| nomparametro:  character varying(40)\ldesparam:  character varying(2000)\lvalparam:  character varying(500)\l}" ];
+
+"admprogram" [shape = record, label = "{<col0> \N| codprogram:  character varying(40)\ldesprogram:  character varying(50)\lcodfolder:  character varying(40)\l}" ];
+
+"admsequencia" [shape = record, label = "{<col0> \N| codsequencia:  character varying(50)\lvalsequencia:  numeric(38,0)\l}" ];
+
+"admusuario" [shape = record, label = "{<col0> \N| codusuario:  character varying(255)\ldessenha:  character varying(255)\ldessenhatemp:  character varying(50)\lindtype:  integer\lindativo:  character varying(255)\lcodlocal:  character varying(5)\lcdlpessoa:  bigint\lcdlcustomer:  bigint\ldesclientversion:  character varying(255)\l}" ];
+
+"admusuariogroup" [shape = record, label = "{<col0> \N| codusuario:  character varying(255)\lcodgroup:  character varying(16)\l}" ];
+
+"admusuariotrust" [shape = record, label = "{<col0> \N| cdlusuariotrust:  bigint\lnumtrust:  double precision\lsrcusuario:  character varying(255)\ldstusuario:  character varying(255)\l}" ];
+
+"endereco" [shape = record, label = "{<col0> \N| idendereco:  bigint\llocbairro:  character varying(255)\lloccidade:  character varying(255)\llocestado:  character varying(255)\llocpais:  character varying(255)\ldesendereco:  character varying(255)\lnumendereco:  character varying(255)\lcodcep:  character varying(9)\lcomplendereco:  character varying(255)\lidcity:  integer\ltemporario:  boolean\ldataexpiracao:  date\l}" ];
+
+"geocity" [shape = record, label = "{<col0> \N| idcity:  integer\lcodeibge:  integer\ldesname:  character varying(255)\lidstate:  integer\l}" ];
+
+"geocountry" [shape = record, label = "{<col0> \N| idcountry:  integer\ldesacronym:  character varying(2)\ldesname:  character varying(255)\l}" ];
+
+"geostate" [shape = record, label = "{<col0> \N| idstate:  integer\ldesacronym:  character varying(2)\ldesname:  character varying(255)\lidcountry:  integer\l}" ];
+
+"gerapplication" [shape = record, label = "{<col0> \N| codapplication:  character varying(255)\ldesname:  character varying(255)\ldeslastversion:  character varying(255)\l}" ];
+
+"gerapplicationversion" [shape = record, label = "{<col0> \N| cdlversion:  bigint\ldatrelease:  timestamp without time zone\ldesversion:  character varying(255)\ldesfilelocation:  character varying(255)\ldeschangelog:  character varying(255)\lcodapplication:  character varying(255)\l}" ];
+
+"homecaction" [shape = record, label = "{<col0> \N| idaction:  integer\ldesname:  character varying(255)\lindindex:  integer\ldesscript:  character varying(2000)\lidprotocol:  integer\lindmandatory:  boolean\l}" ];
+
+"homecactiontreatment" [shape = record, label = "{<col0> \N| idactiontreatment:  integer\lidprotocoltreatment:  integer\lidaction:  integer\ldesobservations:  character varying(1000)\ldatfinished:  timestamp without time zone\lindfinished:  boolean\l}" ];
+
+"homecprotocol" [shape = record, label = "{<col0> \N| idprotocol:  integer\ldesname:  character varying(255)\lcdidomain:  integer\l}" ];
+
+"homecprotocoltreatment" [shape = record, label = "{<col0> \N| idprotocoltreatment:  integer\ldatfinished:  timestamp without time zone\lindfinished:  boolean\ldesobservations:  character varying(1000)\lidprotocol:  integer\lcdlpaciente:  bigint\lcdlocorrencia:  bigint\lcodusuario:  character varying(255)\lcdlalert:  bigint\lcdidomain:  integer\l}" ];
+
+"incapacidadepaciente" [shape = record, label = "{<col0> \N| cdlpaciente:  bigint\lidincapacidade:  bigint\ldescricao:  character varying(2000)\l}" ];
+
+"invcategory" [shape = record, label = "{<col0> \N| idcategory:  bigint\ldescategory:  character varying(255)\ldesobservation:  character varying(2000)\l}" ];
+
+"invinstanceevent" [shape = record, label = "{<col0> \N| idevent:  bigint\ldatevent:  timestamp without time zone\ldesobservation:  character varying(2000)\lindeventtype:  character varying(255)\lidassociation:  bigint\lidinstance:  bigint\l}" ];
+
+"invinstancepatientassociation" [shape = record, label = "{<col0> \N| idassociation:  bigint\ldatfrom:  timestamp without time zone\ldatto:  timestamp without time zone\lidinstance:  bigint\lcdlpaciente:  bigint\l}" ];
+
+"invproduct" [shape = record, label = "{<col0> \N| idproduct:  bigint\ldesproduct:  character varying(255)\lindconsumable:  boolean\lindidentifiertype:  character varying(255)\lnomproduct:  character varying(255)\lquantity:  integer\lidcategory:  bigint\l}" ];
+
+"invproductinstance" [shape = record, label = "{<col0> \N| idinstance:  bigint\lcurrentquantity:  integer\ldesinfo:  character varying(255)\ldesobservation:  character varying(2000)\lindidentifier:  character varying(255)\lindstatus:  character varying(255)\lidproduct:  bigint\l}" ];
+
+"mbsethnicity" [shape = record, label = "{<col0> \N| idethnicity:  bigint\lcodintegration:  character varying(255)\ldesethnicity:  character varying(255)\l}" ];
+
+"mbsitem" [shape = record, label = "{<col0> \N| coditem:  character varying(16)\lindunidmedida:  character varying(2)\ldesitem:  character varying(60)\lindprocedencia:  character varying(1)\lindtipo:  character varying(2)\l}" ];
+
+"mbsitemestrutura" [shape = record, label = "{<col0> \N| cdnsequencia:  integer\lvalquantidade:  double precision\ldtvalidadeini:  date\ldtvalidadefim:  date\lcoditempai:  character varying(16)\lcoditemfilho:  character varying(16)\l}" ];
+
+"mbspessoa" [shape = record, label = "{<col0> \N| cdlpessoa:  bigint\lloccidade:  character varying(255)\ldatexpidentidade:  date\ldesobservacoes:  character varying(2000)\ldestelefone2:  character varying(17)\ldestelefone1:  character varying(17)\lcodcnpjcpf:  character varying(255)\lnompessoa:  character varying(255)\lnumversion:  integer\lindescolar:  character varying(1)\llocestado:  character varying(255)\lcomplendereco:  character varying(255)\lindtipopessoa:  character varying(255)\lcodcep:  character varying(9)\lcodidentidade:  character varying(10)\ldesendereco:  character varying(255)\ldesimagedata:  bytea\llocpais:  character varying(255)\ldesestadocivil:  character varying(255)\lnompai:  character varying(255)\ldesorgaoidentidade:  character varying(255)\ldatfundnasc:  date\lcontatoresponsavel:  character varying(255)\ldessignature:  bytea\lnommae:  character varying(255)\lnomresponsavel:  character varying(255)\lindsituacaocadastro:  character varying(255)\llocbairro:  character varying(255)\lindsexo:  character varying(1)\lcodemail:  character varying(255)\lnumendereco:  character varying(255)\ldesprofissao:  character varying(255)\lcdidomain:  integer\lrelethnicity:  bigint\lidcity:  integer\ldatcadastre:  timestamp without time zone\lidcityplaceofbirth:  integer\lidcountrynationality:  integer\ldatcadupdate:  timestamp without time zone\lcodusuariocad:  character varying(255)\lcodusuarioupd:  character varying(255)\l}" ];
+
+"mbssmsmessage" [shape = record, label = "{<col0> \N| idmessage:  bigint\ltargetphonenumber:  character varying(50)\lmessagebody:  character varying(255)\lstatus:  character varying(255)\lerrormessage:  character varying(1000)\lcdidomain:  integer\l}" ];
+
+"mbssmstemplate" [shape = record, label = "{<col0> \N| idtemplate:  integer\ldesname:  character varying(255)\lindactive:  boolean\lphonenumbers:  character varying(1000)\ldesmessagebody:  character varying(1000)\lcdidomain:  integer\l}" ];
+
+"mbsvideo" [shape = record, label = "{<col0> \N| cdlvideo:  bigint\ldesthumbnail:  bytea\ldesdescr:  character varying(2000)\ldestitle:  character varying(255)\ldesaddress:  character varying(255)\lindsource:  integer\l}" ];
+
+"mbsvideoprogram" [shape = record, label = "{<col0> \N| codprogram:  character varying(20)\ldesprogram:  character varying(50)\l}" ];
+
+"mbsvideoprogramassoc" [shape = record, label = "{<col0> \N| cdlvideoprogramassoc:  bigint\lnumsequence:  integer\lcdlvideo:  bigint\lcodprogram:  character varying(20)\l}" ];
+
+"mbswallcontribution" [shape = record, label = "{<col0> \N| cdlwallcontribution:  bigint\ldesname:  character varying(255)\ldessentence:  character varying(255)\lislocal:  boolean\lcontimestamp:  timestamp without time zone\lcdlfather:  bigint\lcodusuario:  character varying(255)\l}" ];
+
+"mbswallcontributionassoc" [shape = record, label = "{<col0> \N| cdlwallcontribution:  bigint\lcodusuario:  character varying(255)\l}" ];
+
+"mrpplanning" [shape = record, label = "{<col0> \N| codplanning:  character varying(10)\ldatplanning:  date\ldesplanning:  character varying(40)\l}" ];
+
+"mrpplanningitem" [shape = record, label = "{<col0> \N| cdnsequence:  integer\lquantity:  integer\lcodplanning:  character varying(10)\lcoditem:  character varying(16)\l}" ];
+
+"pacientealergia" [shape = record, label = "{<col0> \N| cdlpaciente:  bigint\lidalergia:  bigint\lseveridade:  integer\ldataidentificacaoalergia:  date\l}" ];
+
+"pessoaendereco" [shape = record, label = "{<col0> \N| cdlpessoa:  bigint\lidendereco:  bigint\l}" ];
+
+"tipoalergia" [shape = record, label = "{<col0> \N| idalergia:  bigint\lalergianome:  character varying(255)\lalergiadescricao:  character varying(4000)\l}" ];
+
+"tipoincapacidade" [shape = record, label = "{<col0> \N| idincapacidade:  bigint\lincapacidadenome:  character varying(80)\l}" ];
+
+"tmedalert" [shape = record, label = "{<col0> \N| cdlalert:  bigint\ldatalert:  timestamp without time zone\lindviewed:  boolean\lcdlpaciente:  bigint\lcodrecording:  bigint\lcdlocorrencia:  bigint\l}" ];
+
+"tmedalertvalue" [shape = record, label = "{<col0> \N| cdlalertvalue:  bigint\ldesvalue:  character varying(255)\ldesfield:  character varying(255)\lcdlalert:  bigint\lindtype:  character varying(50)\lindcritical:  boolean\lindcolor:  character varying(10)\ldesintegrationcode:  character varying(255)\lnumpriority:  integer\l}" ];
+
+"tmedbancofrase" [shape = record, label = "{<col0> \N| cdlbancofrases:  bigint\lindtype:  integer\lcdlparent:  bigint\ldesdisplayname:  character varying(40)\lindprocesso:  character varying(255)\lnumorder:  integer\ldestexttoinsert:  character varying(2000)\lcdlcustomer:  bigint\l}" ];
+
+"tmedbglrecording" [shape = record, label = "{<col0> \N| cdlrecording:  bigint\ldesdatedevice:  timestamp without time zone\lindunit:  character varying(255)\lnumbg:  integer\ldesdevicename:  character varying(255)\lcoddeviceserial:  character varying(255)\lindmeasuretype:  integer\lnumvoltage:  double precision\l}" ];
+
+"tmedbprrecording" [shape = record, label = "{<col0> \N| cdlrecording:  bigint\lvalpresartdiast:  integer\lvalpulso:  integer\lindunidade:  character varying(255)\lvalpresartsist:  integer\l}" ];
+
+"tmeddevice" [shape = record, label = "{<col0> \N| cdldevice:  bigint\lindtiposensor:  character varying(3)\ldesfriendlyname:  character varying(255)\lindtipoconexao:  integer\ldesdevicename:  character varying(255)\ldesaddress:  character varying(255)\lcodusuario:  character varying(255)\l}" ];
+
+"tmeddicomrecording" [shape = record, label = "{<col0> \N| cdlrecording:  bigint\lpatientid:  character varying(255)\lseriestime:  character varying(255)\lstudyid:  character varying(255)\lpatientname:  character varying(255)\limagetype:  character varying(255)\lstudydate:  character varying(255)\lprotocolname:  character varying(255)\lseriesdate:  character varying(255)\lseriesnumber:  character varying(255)\lstudytime:  character varying(255)\lstudyinstanceuid:  character varying(255)\lseriesdescription:  character varying(255)\lfilename:  character varying(255)\lscreenshotfilename:  character varying(255)\l}" ];
+
+"tmedecgrecording" [shape = record, label = "{<col0> \N| cdlrecording:  bigint\lnumintervalopq:  character varying(255)\lnumduracaoqrs:  character varying(255)\lnumganho:  integer\lindeletrododesconectado:  character varying(255)\ldesecgdata:  bytea\lnumeixop:  character varying(255)\lnumintervaloqt:  character varying(255)\lnumeixot:  character varying(255)\lnumintervaloqtc:  character varying(255)\lnumeixor:  character varying(255)\lnumvelocidade:  integer\lnumultbatimentocard:  integer\lnumfrequencia:  integer\ldesfiltro:  character varying(255)\lnumsensitividade:  double precision\l}" ];
+
+"tmedexam" [shape = record, label = "{<col0> \N| idexam:  bigint\lcodpriorityurgent:  character varying(255)\lcodexam:  character varying(255)\lindactive:  boolean\ldesexam:  character varying(255)\lcodpriorityroutine:  character varying(255)\lindexamtype:  character varying(255)\lcdlcustomer:  bigint\l}" ];
+
+"tmedimagerecording" [shape = record, label = "{<col0> \N| cdlrecording:  bigint\lindimagetype:  character varying(255)\ldesimagedata:  bytea\lcodimageformat:  character varying(255)\ldesimageref:  character varying(1000)\l}" ];
+
+"tmedmedico" [shape = record, label = "{<col0> \N| cdlmedico:  bigint\lcdipapel:  integer\lcodcrm:  character varying(255)\ldescontato:  character varying(30)\lindativo:  character varying(255)\lcdlpessoa:  bigint\lnumversion:  integer\l}" ];
+
+"tmedmedicoesrecording" [shape = record, label = "{<col0> \N| cdlrecording:  bigint\linddislipidemia:  boolean\lvalcperna:  numeric(5,2)\lindtabagista:  boolean\lindinsufcardcong:  boolean\lvalglicose:  integer\lvaltemperatura:  numeric(3,1)\lvalpresartdiast:  integer\lvalpresartsist:  integer\lindasma:  boolean\lvaldctriceps:  numeric(3,1)\lvalcbcontr:  numeric(5,2)\lindinfartoprevio:  boolean\lindmarcapasso:  boolean\lvalfreqcardexe:  integer\lvaltriglicerid:  integer\lvalcolesterol:  integer\lvaldcsubescap:  numeric(3,1)\lvalaltura:  numeric(3,2)\lvaloximetria:  integer\lvalfreqresp:  integer\lvaldciliocr:  numeric(3,1)\lvalnpassos:  integer\lvalhdlcolesterol:  integer\lindhiparterial:  boolean\lvalccintura:  numeric(5,2)\linddiabetesmelitus:  boolean\ldesmedicamentos:  character varying(2000)\lvalcquadril:  numeric(5,2)\lvalfreqcard:  integer\lvaldcabdom:  numeric(3,1)\lvalcbrelax:  numeric(5,2)\lvaldccoxa:  numeric(3,1)\ldesoutrasinf:  character varying(2000)\lvalpeso:  numeric(6,3)\lvalldlcolesterol:  integer\l}" ];
+
+"tmedocorrencia" [shape = record, label = "{<col0> \N| cdlocorrencia:  bigint\lindprocesso:  character varying(5)\ldeslocationlongitude:  character varying(255)\ldatagendamento:  timestamp without time zone\lindprioridade:  character varying(255)\ldatexame:  timestamp without time zone\ldatvista:  timestamp without time zone\lindestado:  character varying(255)\ldesanotacoes:  character varying(2000)\ldatexameservidor:  timestamp without time zone\ldeslocationlatitude:  character varying(255)\ldesmotivoexame:  character varying(2000)\lcodremoteid:  character varying(20)\lcdlmedicosolic:  bigint\lcodlocalmarcacao:  character varying(5)\lcdlfrase:  bigint\lcdlpaciente:  bigint\lcodusuariosolic:  character varying(255)\lcdlpatientvet:  bigint\lcodlocalexame:  character varying(5)\lcdlcustomer:  bigint\lcodusuariolock:  character varying(255)\lcodusuariovista:  character varying(255)\lidexam:  bigint\ldatlastmodification:  timestamp without time zone\ldesrequiredexam:  character varying(2000)\ldatclosed:  character varying(255)\lcodusuarioclosed:  character varying(255)\lindrejection:  integer\lindbillable:  boolean\ldesbillingreason:  character varying(2000)\ldatcorrectedexam:  timestamp without time zone\lindpublished:  boolean\l}" ];
+
+"tmedocorrencialaudo" [shape = record, label = "{<col0> \N| cdllaudo:  bigint\ldeslaudo:  character varying(4000)\ldatlaudo:  timestamp without time zone\lcdlocorrencia:  bigint\lcodusuariolaudo:  character varying(255)\l}" ];
+
+"tmedoxirecording" [shape = record, label = "{<col0> \N| cdlrecording:  bigint\ldesoxidata:  bytea\lnumheartrate:  integer\lnumspo2:  integer\lnumfrequencia:  integer\l}" ];
+
+"tmedpaciente" [shape = record, label = "{<col0> \N| cdlpaciente:  bigint\lindafdislipidemia:  boolean\lindafdiabetes:  boolean\lindafpneumopat:  boolean\ldesconvenio:  character varying(255)\lcodcartaosus:  character varying(255)\lindafneuropat:  boolean\lnumversion:  integer\lindconvenio:  boolean\lindafcardiopat:  boolean\lcdlpessoa:  bigint\lcodremoteid:  character varying(255)\lcodremotesystem:  character varying(255)\lcodcns:  character varying(15)\lcodremoteid2:  character varying(255)\l}" ];
+
+"tmedpatientdrugs" [shape = record, label = "{<col0> \N| cdlpacientedrugs:  bigint\ldesperiodofuse:  character varying(255)\lindusesanticoagulant:  boolean\lindmorning:  boolean\lindafternoon:  boolean\ldatstart:  timestamp without time zone\ldesactiveingredient:  character varying(255)\lindusespsychoactive:  boolean\lindusesantidiabetic:  boolean\lindwhenself:  boolean\ldesdrugname:  character varying(255)\ldesdose:  character varying(255)\ldesdailydose:  character varying(255)\lindnight:  boolean\ldatend:  timestamp without time zone\lindwhenprescripted:  boolean\lindwhensymptom:  boolean\lcdlpatient:  bigint\l}" ];
+
+"tmedpatienthistoric" [shape = record, label = "{<col0> \N| cdlhistoric:  bigint\ldesevento:  character varying(255)\lnumanoevento:  integer\ldesobservation:  character varying(255)\lcdlpaciente:  bigint\l}" ];
+
+"tmedpatientprofile" [shape = record, label = "{<col0> \N| cdlprofile:  integer\ldesname:  character varying(255)\ldescription:  character varying(255)\lcdlpatient:  bigint\lcdidomain:  integer\lnumversion:  integer\l}" ];
+
+"tmedpatientprofileassociation" [shape = record, label = "{<col0> \N| cdlpatientprofileassociation:  bigint\lcdlpaciente:  bigint\lcdlprofile:  integer\l}" ];
+
+"tmedpatientprofilefield" [shape = record, label = "{<col0> \N| cdlprofilefield:  integer\lindusage:  integer\ldatlatestrequiredexam:  timestamp without time zone\lnumperiodicity:  integer\ldesfield:  character varying(255)\lcodprogram:  character varying(20)\lcdlprofile:  integer\lscheduletype:  character varying(255)\lweekdays:  character varying(255)\lmissedexamintegrationcode:  character varying(255)\lnummissedexampriority:  integer\l}" ];
+
+"tmedpatientprofileschedule" [shape = record, label = "{<col0> \N| cdlschedule:  bigint\ldatnotifypatient:  character varying(5)\lnumnotifyinterval:  integer\ldatschedulestart:  character varying(5)\ldatnotifycenter:  character varying(5)\lcdlprofilefield:  integer\l}" ];
+
+"tmedpatientsupportnetwork" [shape = record, label = "{<col0> \N| cdlpatientsupportnetwork:  bigint\lindcontent:  boolean\ldescontact:  character varying(255)\ldesname:  character varying(255)\lindsupportnettype:  integer\lindkinship:  integer\ldesspecialization:  character varying(255)\ldesobservation:  character varying(255)\ldatbirthday:  timestamp without time zone\lcdlpatient:  bigint\l}" ];
+
+"tmedpatientvet" [shape = record, label = "{<col0> \N| cdlpatientvet:  bigint\ldesfur:  character varying(255)\ldesowner:  character varying(255)\ldesname:  character varying(255)\ldesbreed:  character varying(255)\ldesspecies:  character varying(255)\lindsex:  character varying(1)\ldatbirth:  date\lcdlcustomer:  bigint\l}" ];
+
+"tmedpedrecording" [shape = record, label = "{<col0> \N| cdlrecording:  bigint\lnumsteps:  integer\l}" ];
+
+"tmedprofilefieldrange" [shape = record, label = "{<col0> \N| cdlfieldrange:  bigint\lintegrationcode:  character varying(255)\llowerthreshold:  character varying(255)\llowerlimit:  double precision\lupperlimit:  double precision\lgeneratealert:  boolean\lcolor:  character varying(10)\lcdlprofilefield:  integer\lidtemplate:  integer\lidprotocol:  integer\lnumpriority:  integer\l}" ];
+
+"tmedprogramenrollment" [shape = record, label = "{<col0> \N| cdlenrollment:  bigint\ldatdisenroll:  timestamp without time zone\ldatenroll:  timestamp without time zone\lprogram:  character varying(255)\lcdlpaciente:  bigint\lpatientgroup:  character varying(255)\lpatienttype:  character varying(255)\l}" ];
+
+"tmedrecording" [shape = record, label = "{<col0> \N| cdlrecording:  bigint\lindtiposensor:  character varying(3)\ldesdate:  timestamp without time zone\ldesnomeeqpto:  character varying(255)\lcdlocorrencia:  bigint\lidexam:  bigint\lindpublished:  boolean\lindstatus:  character varying(255)\lcdlrecordingsequel:  bigint\l}" ];
+
+"tmedsclrecording" [shape = record, label = "{<col0> \N| cdlrecording:  bigint\lweight:  numeric(6,3)\l}" ];
+
+"tmedvideorecording" [shape = record, label = "{<col0> \N| cdlrecording:  bigint\ldesvideoref:  character varying(1000)\l}" ];
+
+"vmeduser" [shape = record, label = "{<col0> \N| coduser:  character varying(255)\ldespassword:  character varying(255)\lnumuploadspeed:  integer\lnumsessionid:  bigint\lnumport:  integer\lindmanualip:  boolean\ldesipaddress:  character varying(255)\linduserstatus:  integer\ldesusername:  character varying(255)\ldatlastlogin:  timestamp without time zone\l}" ];
+
+"vmeduserconnection" [shape = record, label = "{<col0> \N| cdluserconnection:  bigint\ldatended:  timestamp without time zone\ldatlastkeepalive:  timestamp without time zone\lindconnectionstatus:  integer\ldatstarted:  timestamp without time zone\lcodusersource:  character varying(255)\lcodusertarget:  character varying(255)\l}" ];
+
+"vmeduserfriendship" [shape = record, label = "{<col0> \N| cdluserfriendship:  bigint\lcodusersource:  character varying(255)\lcodusertarget:  character varying(255)\l}" ];
+
+
+"admcustomer" -> "mbspessoa" [label="fk_admcustomer_cdlpessoa"];
+"admempresa" -> "mbspessoa" [label="fk_admempresa_cdlpessoa"];
+"admgroupmenuoption" -> "admmenuoption" [label="fk_admgroupmenuoption_cdlmenuoption"];
+"admgroupmenuoption" -> "admgroup" [label="fk_admgroupmenuoption_codgroup"];
+"admlocalatend" -> "mbspessoa" [label="fk_admlocalatend_cdlpessoa"];
+"admlocalatend" -> "admcustomer" [label="fk_admlocalatend_cdlcustomer"];
+"admmenuoption" -> "admmenuoption" [label="fk_admmenuoption_cdlparent"];
+"admmenuoption" -> "admprogram" [label="fk_admmenuoption_codprogram"];
+"admusuario" -> "admlocalatend" [label="fk_admusuario_codlocal"];
+"admusuario" -> "mbspessoa" [label="fk_admusuario_cdlpessoa"];
+"admusuario" -> "admcustomer" [label="fk_admusuario_cdlcustomer"];
+"admusuariogroup" -> "admusuario" [label="fk_admusuariogroup_codusuario"];
+"admusuariogroup" -> "admgroup" [label="fk_admusuariogroup_codgroup"];
+"admusuariotrust" -> "admusuario" [label="fk_admusuariotrust_srcusuario"];
+"admusuariotrust" -> "admusuario" [label="fk_admusuariotrust_dstusuario"];
+"geocity" -> "geostate" [label="fk_geocity_idstate"];
+"geostate" -> "geocountry" [label="fk_geostate_idcountry"];
+"gerapplicationversion" -> "gerapplication" [label="fk_gerapplicationversion_codapplication"];
+"homecaction" -> "homecprotocol" [label="fk_homecaction_idprotocol"];
+"homecactiontreatment" -> "homecprotocoltreatment" [label="fk_action_idprotocoltreatment"];
+"homecactiontreatment" -> "homecaction" [label="fk_homecaction_idaction"];
+"homecprotocol" -> "admdomain" [label="fk_homecprotocol_cdidomain"];
+"homecprotocoltreatment" -> "homecprotocol" [label="fk_hptreatment_idprotocol"];
+"homecprotocoltreatment" -> "tmedpaciente" [label="fk_hptreatment_cdlpaciente"];
+"homecprotocoltreatment" -> "tmedocorrencia" [label="fk_hptreatment_cdlocorrencia"];
+"homecprotocoltreatment" -> "admusuario" [label="fk_hptreatment_coduser"];
+"homecprotocoltreatment" -> "tmedalert" [label="fk_hptreatment_cdlalert"];
+"homecprotocoltreatment" -> "admdomain" [label="fk_hptreatment_cdidomain"];
+"incapacidadepaciente" -> "tmedpaciente" [label="fk_incapacidadepaciente_cdlpaciente"];
+"incapacidadepaciente" -> "tipoincapacidade" [label="fk_incapacidadepaciente_idincapacidade"];
+"invinstanceevent" -> "invinstancepatientassociation" [label="fk_invinstanceevent_idassociation"];
+"invinstanceevent" -> "invproductinstance" [label="fk_invinstanceevent_idinstance"];
+"invinstancepatientassociation" -> "invproductinstance" [label="fk_invinstancepatientassociation_idinstance"];
+"invinstancepatientassociation" -> "tmedpaciente" [label="fk_invinstancepatientassociation_cdlpaciente"];
+"invproduct" -> "invcategory" [label="fk_invproduct_idcategory"];
+"invproductinstance" -> "invproduct" [label="fk_invproductinstance_idproduct"];
+"mbsitemestrutura" -> "mbsitem" [label="fk_mbsitemestrutura_coditempai"];
+"mbsitemestrutura" -> "mbsitem" [label="fk_mbsitemestrutura_coditemfilho"];
+"mbspessoa" -> "admdomain" [label="fk_mbspessoa_cdidomain"];
+"mbspessoa" -> "mbsethnicity" [label="fk_mbspessoa_relethnicity"];
+"mbspessoa" -> "geocity" [label="fk_pessoa_idcity"];
+"mbspessoa" -> "geocity" [label="fk_mbspessoa_idcitybirth"];
+"mbspessoa" -> "geocountry" [label="fk_mbspessoa_idnationality"];
+"mbssmsmessage" -> "admdomain" [label="fk_mbssmsmessage_cdidomain"];
+"mbssmstemplate" -> "admdomain" [label="fk_mbssmstemplate_cdidomain"];
+"mbsvideoprogramassoc" -> "mbsvideo" [label="fk_mbsvideoprogramassoc_cdlvideo"];
+"mbsvideoprogramassoc" -> "mbsvideoprogram" [label="fk_mbsvideoprogramassoc_codprogram"];
+"mbswallcontribution" -> "mbswallcontribution" [label="fk_mbswallcontribution_cdlfather"];
+"mbswallcontribution" -> "admusuario" [label="fk_mbswallcontribution_codusuario"];
+"mbswallcontributionassoc" -> "mbswallcontribution" [label="fk_mbswallcontributionassoc_cdlwallcontribution"];
+"mbswallcontributionassoc" -> "admusuario" [label="fk_mbswallcontributionassoc_codusuario"];
+"mrpplanningitem" -> "mrpplanning" [label="fk_mrpplanningitem_codplanning"];
+"mrpplanningitem" -> "mbsitem" [label="fk_mrpplanningitem_coditem"];
+"pacientealergia" -> "tmedpaciente" [label="fk_pacientealergia_cdlpaciente"];
+"pacientealergia" -> "tipoalergia" [label="fk_pacientealergia_idalergia"];
+"pessoaendereco" -> "mbspessoa" [label="fk_pessoaendereco_cdlpessoa"];
+"pessoaendereco" -> "endereco" [label="fk_pessoaendereco_idendereco"];
+"tmedalert" -> "tmedpaciente" [label="fk_tmedalert_cdlpaciente"];
+"tmedalert" -> "tmedrecording" [label="fk_tmedalert_codrecording"];
+"tmedalert" -> "tmedocorrencia" [label="fk_tmedalert_cdlocorrencia"];
+"tmedalertvalue" -> "tmedalert" [label="fk_tmedalertvalue_cdlalert"];
+"tmedbancofrase" -> "admcustomer" [label="fk_tmedbancofrase_cdlcustomer"];
+"tmedbglrecording" -> "tmedrecording" [label="fk_tmedbgrecording_cdlrecording"];
+"tmedbprrecording" -> "tmedrecording" [label="fk_tmedbprrecording_cdlrecording"];
+"tmeddevice" -> "admusuario" [label="fk_tmeddevice_codusuario"];
+"tmeddicomrecording" -> "tmedrecording" [label="fk_tmeddicomrecording_cdlrecording"];
+"tmedecgrecording" -> "tmedrecording" [label="fk_tmedecgrecording_cdlrecording"];
+"tmedexam" -> "admcustomer" [label="fk_tmedexam_cdlcustomer"];
+"tmedimagerecording" -> "tmedrecording" [label="fk_tmedimagerecording_cdlrecording"];
+"tmedmedico" -> "mbspessoa" [label="fk_tmedmedico_cdlpessoa"];
+"tmedmedicoesrecording" -> "tmedrecording" [label="fk_tmedmedicoesrecording_cdlrecording"];
+"tmedocorrencia" -> "tmedmedico" [label="fk_tmedocorrencia_cdlmedicosolic"];
+"tmedocorrencia" -> "admlocalatend" [label="fk_tmedocorrencia_codlocalmarcacao"];
+"tmedocorrencia" -> "tmedbancofrase" [label="fk_tmedocorrencia_cdlfrase"];
+"tmedocorrencia" -> "tmedpaciente" [label="fk_tmedocorrencia_cdlpaciente"];
+"tmedocorrencia" -> "admusuario" [label="fk_tmedocorrencia_codusuariosolic"];
+"tmedocorrencia" -> "tmedpatientvet" [label="fk_tmedocorrencia_cdlpatientvet"];
+"tmedocorrencia" -> "admlocalatend" [label="fk_tmedocorrencia_codlocalexame"];
+"tmedocorrencia" -> "admcustomer" [label="fk_tmedocorrencia_cdlcustomer"];
+"tmedocorrencia" -> "admusuario" [label="fk_tmedocorrencia_codusuariolock"];
+"tmedocorrencia" -> "admusuario" [label="fk_tmedocorrencia_codusuariovista"];
+"tmedocorrencia" -> "tmedexam" [label="fk_tmedocorrencia_idexam"];
+"tmedocorrencia" -> "admusuario" [label="fk_ocorrencia_usuarioclosed"];
+"tmedocorrencialaudo" -> "tmedocorrencia" [label="fk_tmedocorrencialaudo_cdlocorrencia"];
+"tmedocorrencialaudo" -> "admusuario" [label="fk_tmedocorrencialaudo_codusuariolaudo"];
+"tmedoxirecording" -> "tmedrecording" [label="fk_tmedoxirecording_cdlrecording"];
+"tmedpaciente" -> "mbspessoa" [label="fk_tmedpaciente_cdlpessoa"];
+"tmedpatientdrugs" -> "tmedpaciente" [label="fk_tmedpatientdrugs_cdlpatient"];
+"tmedpatienthistoric" -> "tmedpaciente" [label="fk_tmedpatienthistoric_cdlpaciente"];
+"tmedpatientprofile" -> "tmedpaciente" [label="fk_tmedpatientprofile_cdlpatient"];
+"tmedpatientprofile" -> "admdomain" [label="fk_pessoa_cdidomain"];
+"tmedpatientprofileassociation" -> "tmedpaciente" [label="fk_tmedpatientprofileassociation_cdlpaciente"];
+"tmedpatientprofileassociation" -> "tmedpatientprofile" [label="fk_tmedpatientprofileassociation_cdlprofile"];
+"tmedpatientprofilefield" -> "mbsvideoprogram" [label="fk_tmedpatientprofilefield_codprogram"];
+"tmedpatientprofilefield" -> "tmedpatientprofile" [label="fk_tmedpatientprofilefield_cdlprofile"];
+"tmedpatientprofileschedule" -> "tmedpatientprofilefield" [label="fk_tmedpatientprofileschedule_cdlprofilefield"];
+"tmedpatientsupportnetwork" -> "tmedpaciente" [label="fk_tmedpatientsupportnetwork_cdlpatient"];
+"tmedpatientvet" -> "admcustomer" [label="fk_tmedpatientvet_cdlcustomer"];
+"tmedpedrecording" -> "tmedrecording" [label="fk_pedrecording_cdlrecording"];
+"tmedprofilefieldrange" -> "tmedpatientprofilefield" [label="fk_tmedprofilefieldrange_cdlprofilefield"];
+"tmedprofilefieldrange" -> "mbssmstemplate" [label="fk_tpfieldrange_idtemplate"];
+"tmedprofilefieldrange" -> "homecprotocol" [label="fk_tpfieldrange_idprotocol"];
+"tmedprogramenrollment" -> "tmedpaciente" [label="fk_tmedprogramenrollment_cdlpaciente"];
+"tmedrecording" -> "tmedocorrencia" [label="fk_tmedrecording_cdlocorrencia"];
+"tmedrecording" -> "tmedexam" [label="fk_tmedrecording_idexam"];
+"tmedrecording" -> "tmedrecording" [label="fk_tmedrecording_sequel"];
+"tmedsclrecording" -> "tmedrecording" [label="fk_sclrecording_cdlrecording"];
+"tmedvideorecording" -> "tmedrecording" [label="fk_tmedvideorecording_cdlrecording"];
+"vmeduserconnection" -> "vmeduser" [label="fk_vmeduserconnection_codusersource"];
+"vmeduserconnection" -> "vmeduser" [label="fk_vmeduserconnection_codusertarget"];
+"vmeduserfriendship" -> "vmeduser" [label="fk_vmeduserfriendship_codusersource"];
+"vmeduserfriendship" -> "vmeduser" [label="fk_vmeduserfriendship_codusertarget"];
+}
+
+

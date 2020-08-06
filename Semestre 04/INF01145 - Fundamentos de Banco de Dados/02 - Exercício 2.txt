@@ -1,0 +1,44 @@
+Abordagem em rede
+
+Construa o modelo lógico de uma base de dados em rede que armazene os dados 
+referidos no exercício sobre bases de dados hierárquicas: 
+
+Deseja-se armazenar informações sobre a produção científica de 
+vários pesquisadores. Acompanhe a descrição:
+- A base de dados armazena dados sobre artigos científicos publicados 
+por cada pesquisador. 
+- Para cada artigo deseja-se saber o título, o ano e o local de publicação. 
+- Para cada artigo é necessário conhecer os pesquisadores que são autores. 
+- Para cada autor, deseja-se saber o nome e a instituição a qual ele está vinculado.
+
+Considere o que ocorre neste modelo, caso seja necessário incluir a ordem em 
+que cada autor aparece em um artigo. 
+
+
+Modelo:
+
+<lista de instituições> <--> <lista de autores> <--> <lista de artigos>
+
+- A lista de instituições contêm todas as intituições as quais todos os autores
+estão vinculados
+- A lista de autores contêm todos os autores que escreveram algum artigo
+- A lista de artigos contem todos os artigos que foram escritos por algum autor
+- Nenhuma das listas possui elementos repetidos
+
+- Cada autor da lista de autores aponta para UM elemento da lista de instituições
+- Cada autor da lista de autores aponta para TODOS os arquivos que este escreveu
+
+- Como os artigos podem ter mais de um autor, os artigos poderão ter mais de um 
+'pai', logo temos um grafo, ou seja, uma abordagem em rede.
+
+
+Perguntas:
+- A base de dados em rede que foi projetada contém redundâncias? Caso afirmativo, 
+onde está a redundância?
+	Não há redundância de dados, pois cada informação é apresentada apenas uma vez.
+Quando é necessária a associação de um valor mais de uma vez, como por exemplo, 
+dois autores que escreveram o mesmo artigo e devem referenciá-lo, são utilizados 
+apontadores para os dados, ou seja, a informação não se repete, ela apenas é 
+reutilizada.
+
+

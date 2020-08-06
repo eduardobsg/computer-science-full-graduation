@@ -1,0 +1,114 @@
+Cadeira: INF01120 - Técnicas de Construção de Programas
+Professor: Marcelo Pimenta
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2011/02
+
+Trabalho - Polimorfismo
+
+Definir um trecho de código para produzir mensagens a serem
+enviadas por correio eletrônico a vários clientes, dependendo do
+TIPO de cliente:
+	– Cliente regular: “Este mês todos itens terão 20% de desconto”
+	– Cliente alpinista: “Este mês as barracas e sacos de dormir podem ser pagos
+	em 3x pelo preço a vista”
+	– Cliente inadimplente: “O pagamento previsto para o dia xx/xx não foi
+	efetuado. Solicitamos regularização imediata de sua situação até o dia yy/yy,
+	a partir do qual as medidas cabíveis serão tomadas.”
+
+• Obs:
+	– Novos tipos de clientes e novos textos serão especificados com freqüência;
+	– Faça 2 soluções:
+		• uma usando expressões condicionais (if, switch, etc);
+		• uma usando polimorfismo : defina o que é necessário para esta funcionar...
+		
+		
+---------------------------------------------------------------------------------------
+----- Primeira Solução - expressões condicionais
+---------------------------------------------------------------------------------------
+int main () {
+	char cliente;	
+
+	printf("Que tipo de cliente voce eh?");
+	scanf("%d", &cliente);
+
+	switch(cliente) {
+		case 'r': printf("Este mês todos itens terão 20% de desconto.");
+			  break;
+		case 'a': printf("Este mês as barracas e sacos de dormir podem ser pagos
+	em 3x pelo preço a vista.");
+			  break;
+		case 'i': printf("O pagamento previsto para o dia xx/xx não foi
+	efetuado. Solicitamos regularização imediata de sua situação até o dia yy/yy,
+	a partir do qual as medidas cabíveis serão tomadas.");
+			  break;
+		default:  break;
+		
+	}	
+
+	return 0;
+}
+
+---------------------------------------------------------------------------------------
+----- Segunda Solução - Polimorfismo
+---------------------------------------------------------------------------------------
+//superclasse
+public abstract class Cliente {
+	private String nomeCompleto;
+	private String email;
+	private String mensagem;
+
+	public Cliente(String nome, String em) {
+		nomeCompleto = nome;
+		email = em;
+		mensagem = "COLOQUE UMA MENSAGEM AQUI!";
+	}
+	
+	public void enviaEmail() {
+		setaMensagem();
+		mailto(nomeCompleto, email, mensagem); //envia o email
+	}
+
+	public abstract void setaMensagem();
+}
+
+//subclasse: cliente regular
+public class ClienteRegular extends Cliente {
+	public void setaMensagem() {
+		mensagem = "Este mês todos itens terão 20% de desconto.";
+	}
+}
+
+//subclasse: cliente alpinista
+public class ClienteAlpinista extends Cliente {
+	public void setaMensagem() {
+		mensagem = "Este mês as barracas e sacos de dormir podem ser pagos
+		em 3x pelo preço a vista.";
+	}
+}
+
+//subclasse: cliente inadimplente
+public class ClienteInadimplente extends Cliente {
+	public void setaMensagem() {
+		mensagem = "O pagamento previsto para o dia xx/xx não foi efetuado. 
+		Solicitamos regularização imediata de sua situação até o dia yy/yy,
+		a partir do qual as medidas cabíveis serão tomadas.";
+	}
+}
+
+public class Test {
+	public static void main() {
+		ClienteRegular clienteRegular = new ClienteRegular("João", "joao@gmail.com");
+		ClienteAlpinista clienteAlpinista = new ClienteAlpinista("Maria", "maria@gmail.com");
+		ClienteInadimplente clienteInadimplente = new ClienteInadimplente("Maria", "maria@gmail.com");
+		
+		clienteRegular.enviaEmail();
+		clienteAlpinista.enviaEmail();
+		clienteInadimplente.enviaEmail();
+	}
+}
+
+
+
+
+

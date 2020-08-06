@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal" 
+	android:background="@drawable/background_menu" >
+
+	<Button
+	    android:id="@+id/ButtonPlay"
+	    android:layout_width="200dip"
+	    android:layout_height="150dip"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/button_play" 
+		android:layout_marginBottom="10dip"
+	    android:textSize="24sp" 
+	    android:textStyle="bold"
+		android:onClick="buttonPlay" />
+  
+  	<Button
+	    android:id="@+id/ButtonQuit"
+	    android:layout_width="200dip"
+	    android:layout_height="150dip"
+	    android:layout_below="@id/ButtonPlay"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/button_quit" 
+	    android:textSize="24sp" 
+	    android:textStyle="bold"
+		android:onClick="buttonQuit" />
+
+</RelativeLayout>

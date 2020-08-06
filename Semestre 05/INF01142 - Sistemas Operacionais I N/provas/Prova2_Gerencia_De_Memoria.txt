@@ -1,0 +1,263 @@
+Prova 2 - Gerência de Memória
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+Aula 10 - Introdução à Gerência de Memória
+
+MMU:
+* base register: endereço inicial físico do processo
+* logical adress: endereço começando de zero até o máximo alocado para o processo.
+O usuário vê esta faixa virtual de endereços. Gerado pela CPU.
+* physical adress: endereço real, gerado pela mmu para se ter acesso aos endereços 
+reais da RAM
+
+relocation regiter (base register) + logical adress = physical adress
+
+Dymanic loading:
+- apenas o código utilizado é carregado na memória
+- vantagem: melhor aproveitamento dos recursos da RAM
+- desvantagem: é necessário carregar rotinas de código do disco sempre
+que uma rotina solicitada ainda não esteja em memória, ou seja, a eficiência
+é prejudicada.
+
+Dynamic linking:
+- biblioteca é carregada na memória
+- um stub é inserido no código do processo, fazendo referência à biblioteca
+disponível na RAM.
+- se a biblioteca referenciada pelo stub não estiver na memória, ela é
+carregada e é feito no link dinâmico, atualizando o endereço de referência 
+do stub.
+
+- processo só executa se estiver em memória
+- um programa deve virar um processo, alocar espaço em memória e possuir descritor 
+de processo e ponteiros para heap e pilha.
+
+SWAPPING:
+- swap-in (volta para memória), swap-out (vai pra disco)
+- execution-time binding: endereços físicos calculados em tempo de 
+execução. O processo pode ir para disco e voltar em outra região da RAM,
+pois seus endereços físicos serão recalculados.
+
+Ferramentas de desenvolviento:
+1.1) Compilador: linguagem de programação p/ assembly
+1.2) Montador: assembly p/ linguagem de máquina => gera programa objeto
+2) Ligador: liga o programa objeto às bibliotecas, resolve endereços externo e
+gera executável
+	- ligação estática: todas as referências externas são resolvidas
+	- ligação dinâmica: há referências externas não resolvidas. São resolvidas em tempo
+	de execução pela atualização da referência no stub. Alterações nas bibliotecas não 
+	necessitam de recompilação.
+3) Carregador: coloca o código executável na memória, traduzindo os endereços lógicos
+para endereços físicos (reais na RAM)
+	- carregador absoluto: não faz ajuste de endereço
+	- carregador dinâmico: faz ajuste de endereços de ligação p/ os endereços de carga
+	
+Amarração
+- estática: endereços lógicos são amarrados a endereços físicos. Processo só executa
+se for aloca em uma região da memória que tiver tais endereços físicos.
+	- amarração em tempo de ligação: código relocável fica com pendências de ajuste de endereços.
+	Código absoluto não precisa de ajustes, mas deve ser carregado na posição certa.
+	- amarração em tempo de carga: endereços ajustados no momento da carga. Código relocável.
+- dinâmica: feita em tempo de execução, quando houver acesso a referência de memória 	
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+Aula 12 - Alocação Particionada
+
+- Separar memória em várias paartições de tamanho fixo.
+- Cada partição tem um processo.
+
+- A medida que processos são alocados e desalocados, ficam buracos na memória.
+Novos processos são criados, entram na fila de execução e necessitam serem alocados para
+poder executar. Algoritmos que selecionam buracos de memória:
+	- first-fit: aloca o primeiro buraco encontrado grande o suficiente para o processo.
+	- best-fit: aloca o menor buraco grande o suficiente para o processo.
+	- worst-fit: aloca o maior buraco dentre todos os buracos.
+	
+Fragmentação:
+- fragmentação externa: vários pequenos buracos entre duas regiões de memória alocadas a
+processos que sozinhas não podem servir de zona de alocação para um processo.
+- fragmentação interna: memória não utilizável interna a uma partição. Se um processo é 
+alocado em blocos, um desses blocos pode não ser totalmente utilizado, logo a memória alocada
+ao processo que não é utilizada caracteriza fragmentação interna.
+
+Compactação:
+- minimiza o problema da fragmentação externa, porém não pode mexer em processos com amarração
+estática, pois seus endereços não podem mudar.
+- outra técnica é alocar os processos de forma não contígua, em blocos espalhados pela memória,
+que geram um aproveitamento melhor da memória utilizável.
+
+Alocação
+	Contígua 
+		Simples: apenas duas partições, do SISOP e do usuário
+		Particionada: participção do usuário é separada em blocos de memória. Um processo por bloco
+			Estática (blocos de tamanho fixo) => gera fragmentação interna
+			Dinâmica (blocos de tamanho variável) => gera fragmentação externa
+	Não contígua
+		Paginação
+		Segmentação
+		Segmentação com paginação
+
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+Aula 13 - Paginação
+
+- Paginação evita fragmentação externa e compactação. Mas gera fragmentação interna.
+- Aumenta o tempo de troca de contexto.
+- Processo fica não contíguo
+
+- quebrar memórias RAM em frames que tamaho fixo e a memória lógica
+em páginas do mesmo tamanho.
+
+CPU gera: [p(page number) d(page offset)]
+- p: index da tabela de páginas. Cada registro na tabela de páginas possui o 
+endereço físico base na memória RAM.
+- endereço base + page offset = endereço físico final acessado
+
+- o sisop tem uma tabela de frames, para saber quais frames da RAM estão livres
+ou alocados. Se alocados para qual página de qual processo.
+
+Tebalas de páginas:
+- tabelas pequenas ficam em registradores da CPU e são extremamente rápidas
+- tabelas grandes ficam em memória e um page-table bas eregister (PTBR) aponta
+para a referida tabela.
+	- usa-se uma TLB (translation look-aside buffer): hardware rápido, possui alguns
+	registros da tabela de páginas. Se uma página é encontrada seu frame e usado para 
+	acessar a memória. Se houver TLB miss, é feita uma referência à tabela de página, 
+	o frame é obtido e inserido na TLB (aplica-se a política LRU caso a TLB esteja cheia).
+- TLB é uma tabela de acesso rápido feita de registradores. Pertence a MMU.	
+	
+- TLB hit (página encontrada na TLB): acesso à TLB + acesso ao frame (memória)
+- TLB miss (página do processo não encontrada na TLB): acesso à TLB + acesso à tabela de 
+páginas (memória) + acesso ao frame (memória)
+
+Exemplo:
+Características do sistema:
+	Memória física: 64 kbytes (16 bits)
+	Tamanho processo (máx): 32 kbytes (15 bits)
+	Páginas 8 kbytes
+Paginação:
+	Número de quadros: 64/8 = 8 (0 a 7) -> 3 bits
+	Número de páginas: 32/8 = 4 ( 0 a 3) -> 2 bits
+Deslocamento: 
+	8 kbytes -> 13 bits
+Endereço lógico: 	p		d		=> total de 15 bits
+					2bits	13bits
+Endereço físico: 	q		d		=> total de 16 bits
+					3bits	13bits
+					
+Paginação multi-nível:
+- paginar a tabela de páginas
+	- criar tabela de diretório de páginas. Cada registro aponta para uma tabela de páginas
+	com algumas das páginas de todas as páginas do processo.
+	- cada mini tabela de páginas é acessa a partir do diretório de páginas
+	
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+Aula 14 - Segmentação E Segmentação com Paginação
+
+Segmentação:
+- Causa fragmentação externa
+- Os segmentos possuem tamanhos variados. Não há fragmentação interna.
+- Consumo de memória por demanda igual a alocação particionada dinâmica.
+- Processo divido em segmentos. Cada segmento é dedicado a um fim.
+Há segmentos de dados, pilha, código
+- Endereço é composto de número de segmento e deslocamento dentro do segmento
+- Cada segmento pode ter um tamanho, possui um registrador base e um limite
+- Transformação de endereços é feita via tabela de segmentos
+
+Tabela de segmentos:
+- representada através de uma lista duplamente encadeada
+- os métodos de busca são os mesmos da paginação: best-fit, worst-fit, first-fit
+
+Segmentação com Paginação:
+- Para evitar a fragmentação externa pode-se fazer segmentação com paginação
+- O endereço lógica agora fica com 3 partes:
+	[s(segmento) p(página dentro do segmentp) d(deslocamento na página)]
+	
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------	
+
+Paginação por demanda:
+- Carregar as páginas a medida que há necessidade em usá-las, em tempo de execução
+- Páginas que ão são utilizadas pelo programa, não são carregadas e assim não ocupam
+memória desnecessariamente
+- paginação por demanda = paginação + swap de páginas (pager)
+- é necessário distinguir as páginas que estão na memória das páginas em disco. Um bit 
+resolve o problema.
+
+Page Fault:
+- Ocorre quando se tenta acessar uma página da tabela de páginas, porém ela está marcada
+como inválida, ou seja, está em disco.
+- Se uma instrução acessa uma variável que está em uma página na memória virtual, a 
+instrução é interrompida, o pager carrega a página em memória e a instrução volta a ser 
+executada desde o iníco.
+
+Tempo efetivo de acesso = (1-p) * ma + p*page_fault_time
+p: probabilidade de ocorrer page fault
+ma: memory-access time
+
+
+Memória virtual:
+- para a paginação por demanda funcionar é necessário:
+	- frame-allocation algorithm: para decidir quantos frames serão alocadas para cada processo
+	- page-replacement agorithm: selecionar frames para substituir páginas da memória por páginas
+	em disco
+
+- string de referências de memória ou string de referência
+
+Algoritmos de substituição:
+1) FIFO page replacement: por ordem de chegada na memória. Página que entra fica
+no final da fila, página a sair é a página do início da fila.
+	- nem sempre mais memória causa menos page faults. Há casos em que o aumento
+	do número de frames da memória aumenta o número de page faults
+2) Optimal page replacement: substituir a página que não será utilizada pelo maior
+tempo. Isso garante a menor taxa de page fault.
+	- requer conhecimento futuro da string de referência
+3) LRU page repacement: substituir a página que não foi utilizada pelo maior tempo.
+4) Aproximação do algoritmo LRU:
+	- uso de bit de referência. Quando uma página é usada seu bit é setado para 1.
+	Quando se necessita trocar páginas se procura as páginas com bit zero. O problema
+	é que não se sabe a ordem.
+
+
+Alocação de frames
+- alocação mínima: definida pela arquitetura
+- alocação máxima: definida pelo tamanho de memória física disponível
+
+Quanto alocar?
+- alocação fixa: igualitária ou proporcional
+- alocação variável: working set
+
+Estratégias de alocação:
+- estratégia global: um processo pode pegar frames de outros processos. Isso faz
+com que o controle de page faults se perca, pois a quantidade de páginas alocadas 
+a cada processo varia.
+- estratégia local: o processo só tem acesso às suas próprias páginas para 
+substituição.
+
+tlb time: 20
+memory time: 100
+
+hit: 20 + 100 = 120
+miss: 20 + 100 + 100 = 220
+
+medium time: 120 * 0,95 + 220 * 0,05
+
+
+	
+
+
+
+
+
+
+
+
+
+
+	

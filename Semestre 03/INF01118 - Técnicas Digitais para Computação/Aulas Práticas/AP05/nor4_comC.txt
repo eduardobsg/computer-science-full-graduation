@@ -1,0 +1,29 @@
+Titulo: Circuito NOR4 c/ transistor MOS
+
+.include cmos7tm.mod
+
+vcc 1 0 12
+v10p 10 0 1.2
+v90p 90 0 10.8
+v1 2 0 pulse(0 12.3 0 0 0 15n 30n)
+v2 3 0 pulse(0 12.1 0 0 0 30n 60n)
+v3 4 0 pulse(0 11.9 0 0 0 60n 120n)
+v4 5 0 pulse(0 11.7 0 0 0 120n 240n)
+
+.subckt  nor4  in1 in2 in3 in4 out1 out2 out3 out vcc
+mp1  vcc  in1  out1  vcc  modp
+mp2  out1 in2  out2  vcc  modp
+mp3  out2 in3  out3  vcc  modp
+mp4  out3 in4  out   vcc  modp
+mn1  out  in1  0  0  modn
+mn2  out  in2  0  0  modn
+mn3  out  in3  0  0  modn
+mn4  out  in4  0  0  modn
+.ends nor4
+
+x1 2 3 4 5 6 7 8 9 1 nor4
+c1 9 0 50f
+
+.tran 0.001n 250n
+.print tran v(2) v(3) v(4) v(5) v(9) v(10) v(90)
+.end

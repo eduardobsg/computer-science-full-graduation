@@ -1,0 +1,20 @@
+Titulo: Circuito NAND2 c/ transistor MOS
+
+.include cmos7tm.mod
+
+vcc 1 0 10
+vin1 2 0 pulse(0 9.9 0.1n 0.1n 0.1n 5n 10n)
+vin2 3 0 pulse(0 10.1 0.1n 0.1n 0.1n 10n 20n)
+
+.subckt  nand2  in1 in2 out  vcc
+mp1  vcc  in1  out  vcc  modp l=0.6u w=5u
+mp2  vcc  in2  out  vcc  modp l=0.6u w=5u
+mn1  out  in1  666  0    modn l=0.6u w=3u
+mn2  666  in2	0   0    modn l=0.6u w=3u
+.ends nand2
+
+x1 2 3 4 1 nand2
+
+.tran 0.001n 45n
+.print tran v(2) v(3) v(4)
+.end

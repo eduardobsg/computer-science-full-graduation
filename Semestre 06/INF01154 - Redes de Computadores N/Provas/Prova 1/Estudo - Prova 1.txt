@@ -1,0 +1,24 @@
+ByteStuffing OK
+Scrambling OK
+Controle de dados OK
+Piggybacking: 
+
+Controle de fluxo:
+- Stop and wait
+- Janela deslizante
+1. Go-back N: Com janela w >= 1, possui um recurso de confirmação cumulativa. Ao confirmar um pacote n, os pacotes n-1, n-2, ..., não confirmados automaticamente.
+
+2. Selective Repeat: 
+
+Nyquist: C = 2*B log2 (N)
+Shannon: C = B * log2 (1 + S/R)
+
+domínio de colisão:
+domínio de broadcast:
+diâmetro de rede:
+circuito virtual:
+
+TDM
+FDM
+
+controle de acesso ao meio

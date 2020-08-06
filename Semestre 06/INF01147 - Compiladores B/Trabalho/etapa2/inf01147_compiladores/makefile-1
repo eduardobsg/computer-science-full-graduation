@@ -1,0 +1,9 @@
+all: etapa2
+
+etapa2:  
+	lex --header-file=lex.yy.h --outfile=lex.yy.c scanner.l
+	yacc -d yacc.y
+	gcc -o etapa2 main.c hashtable.c y.tab.c lex.yy.c -Wall
+	
+clean: 
+	rm etapa2 lex.yy.c lex.yy.h y.tab.c y.tab.h

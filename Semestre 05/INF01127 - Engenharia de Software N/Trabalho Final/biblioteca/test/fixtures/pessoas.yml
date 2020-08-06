@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cpf: MyString
+  senha: MyString
+  pessoaTipo: 
+
+two:
+  cpf: MyString
+  senha: MyString
+  pessoaTipo: 

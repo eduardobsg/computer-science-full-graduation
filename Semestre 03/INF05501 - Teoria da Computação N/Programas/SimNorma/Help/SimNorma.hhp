@@ -1,0 +1,83 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=SimNorma.chm
+Contents file=SimNorma.hhc
+Default Window=Main
+Default topic=Main.html
+Display compile progress=Yes
+Full-text search=Yes
+Language=0x409 English (United States)
+Title=SimNorma
+
+[WINDOWS]
+Main="SimNorma","SimNorma.hhc",,"Main.html",,,,,,0x2520,,0x3806,[7,6,1016,614],,,,,,,0
+
+
+[FILES]
+VGSN.html
+C.html
+GA.html
+GABF.html
+GAM.html
+Main.html
+RLM.html
+RLMB.html
+RLMC.html
+RLMCP.htm
+RLMISV.html
+RLMLR.html
+RLMM.html
+RLMMN.html
+RLMMNeCB.html
+RLMMNeCM.html
+RLMMNeEAB.html
+RLMMNeEAM.html
+RLMMNeEE.html
+RLMMNeES.html
+RLMMNeFAE.html
+RLMMNeFE.html
+RLMMNeFME.html
+RLMMNeFNEAV.html
+RLMMNeIE.html
+RLMMNeMND.html
+RLMMNeNBE.html
+RLMMNeNIP.html
+RLMMNeNLE.html
+RLMMNeNME.html
+RLMMNeNOE.html
+RLMMNeNRE.html
+RLMMNeNTE.html
+RLMMNeONV.html
+RLMMNePE.html
+RLMMNePEm.html
+RLMMNePME.html
+RLMMNeRE.html
+RLMMNeRNV.html
+RLMMNeSE.html
+RLMMNeTME.html
+RLMMNeTND.html
+RLMMNeTNV.html
+RLMMNeTPE.html
+RLMMNeVE.html
+RLMNA.html
+RLMPC.html
+RLMPCa.html
+RLMPCe.html
+RLMPCent.html
+RLMPCfa.html
+RLMPCfi.html
+RLMPCim.html
+RLMPCit.html
+RLMPCma.html
+RLMPCmo.html
+RLMPCp.html
+RLMPCr.html
+RLMPCse.html
+RLMPCsen.html
+RLMPCt.html
+RLMPCv.html
+RLMPI.html
+RLMPM.html
+
+[INFOTYPES]
+

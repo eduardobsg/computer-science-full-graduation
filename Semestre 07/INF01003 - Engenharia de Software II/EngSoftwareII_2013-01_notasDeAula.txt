@@ -1,0 +1,84 @@
+Cadeira: INF01003 - Engenharia de Software II
+Professor: Marcelo Soares Pimenta
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2013/01
+Página do professor: http://www.inf.ufrgs.br/~mpimenta/Wiki/doku.php
+
+------------------------------------------------------------------------------
+---- Colegas:
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+---- Frase:
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+---- Notas de Aula
+------------------------------------------------------------------------------
+
+2013-04-08:
+
+TDD:
+- K. Beck
+- casos de teste definidos => requisitos
+- testes codificados para passar nesses casos
+
+"Test, then code, then refactoring"
+
+Tópicos Especiais - Teste
+
+
+
+------------------------------------------------------------------------------
+
+2013-04-01:
+
+Processo de Software - Lista de atividades macro:
+	- Análise
+	- Projeto/Implementação
+	- Teste
+	- Manutenção
+
+- Requisitos nunca param de mudar
+	- mudanças devem ser permitidas, mas tem um preço
+	- gerenciar as mudanças, não se pode ficar mudando a qualquer instante
+	
+Rastreabilidade:
+- informações sobre origem e evolução do requisito
+
+Desenvolvimento:
+	Requisitios <=> Modelos <=> Código
+
+------------------------------------------------------------------------------
+
+2013-03-18 - Aula 03:
+
+Atividade de desenvolvimento de software:
+- Engenharia de requisitos, casos de uso
+	- requisitos, especificação, UML
+	
+Modelos e Requisitos
+Validação de Requisitos
+Revisão de Requisitos
+
+Casos de Uso:
+- Detalhar um caso de uso é uma forma de dizer como ele funciona. Ajuda na 
+implementação
+
+Tipos de Caso de Uso:
+- preliminar: com descrição textual sem detalhamento da
+implemetação. Expõem de forma genérica o que o caso de uso faz e sem
+detalhes exagerados do que é feito. Faz parte da análise dos requisitos.
+- essencial: apresenta alto nível de detalhamento, porém ainda sem 
+características de modo de implemetação. Faz parte da análise dos requisitos.
+- real: detalhes de implementação, tecnologias, interfaces. Ferramenta
+de projeto.
+
+- Diagrama UML: descrição gráfica dos casos de uso.
+
+Classificação de Requisitos:
+- Requisitos Funcionais (RF): o que o sistema deve fazer
+- Requisitos Não Funcionas (RNF): critérios que qualificam os RF
+
+------------------------------------------------------------------------------

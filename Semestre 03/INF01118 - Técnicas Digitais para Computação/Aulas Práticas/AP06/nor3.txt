@@ -1,0 +1,25 @@
+Titulo: Circuito NOR3 c/ transistor MOS
+
+.include cmos7tm.mod
+
+vcc 1 0 10
+v10p 10 0 1
+v90p 90 0 10
+v1 2 0 pulse(0 10.2 0 0 0 5n 10n)
+v2 3 0 pulse(0 10 0 0 0 10n 20n)
+v3 4 0 pulse(0 9.8 0 0 0 20n 40n)
+
+.subckt  nor3  in1 in2 in3 out1 out2 out vcc
+mp1  vcc  in1  out1  vcc  modp
+mp2  out1 in2  out2  vcc  modp
+mp3  out2 in3  out  vcc  modp
+mn1  out  in1  0  0  modn
+mn2  out  in2  0  0  modn
+mn3  out  in3  0  0  modn
+.ends nor3
+
+x1 2 3 4 5 6 7 1 nor3
+
+.tran 0.001n 250n
+.print tran v(2) v(3) v(4) v(7) v(10) v(90)
+.end

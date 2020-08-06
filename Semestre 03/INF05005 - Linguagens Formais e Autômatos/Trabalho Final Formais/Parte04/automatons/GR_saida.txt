@@ -1,0 +1,7 @@
+M=({a,b,0,1},{qf,S,A,C,D,S2},S,{qf})
+qf - - - - -
+S qf A - - -
+A qf;S2 - qf - -
+C qf - - - D
+D - - - C -
+S2 qf - - C -

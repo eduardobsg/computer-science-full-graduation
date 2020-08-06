@@ -1,0 +1,189 @@
+Prova 1 - MLP
+
+-------------------------------------------------
+Aula 01:
+- Prova dissertativa
+- Cobrança: 
+	- conceitos e seu uso
+	- argumentação correta
+	- uso correto da terminologia
+	- escrita coerente
+	
+Perguntas
+1) O que é programar?
+	Arte de expressar a outro ser humano o que
+se quer que o pc faça.
+
+2) O que é uma linguagem de programação?
+	Notação utilizada por seres humanos para 
+expressar aos computadores o que se quer que eles
+executem.	
+
+3) Por que há várias linguagens de programação?
+	Pois evoluímos, fomos aprendendo a fazer as
+linguagens cada vez melhorees, com suporte a para-
+lelismo, OO, etc. Também pois há linguagens dedi-
+cadas a hardwares específicos, ou mesmo a aplica-
+ções específicas (desempenho).
+	
+-------------------------------------------------
+Aula 02:
+
+Programa-fonte + dados = resultados
+
+Tipos de máquina:
+	- real: conjunto de hardware e sistema operaci-
+onal capaz de executar um conjunto próprio de instru-
+ções.
+	- abstrata (virtual): computador + processador
+de linguagem 
+
+Compilação:
+programa fonte (.c) -> compilador -> programa alvo (.o)
+dados -> programa alvo -> resultados
+
+Critérios
+	- legibilidade e redigibilidade: facilidade de ler e
+	escrever programas
+	- confiabilidade: programas que atendem às suas es-
+	pecificações (confiáveis). Métodos: tipagem forte,
+	tratamento de exceções, redução do aliasing (impedir
+	que dois ou mais métodos ou nomes façam referência à
+	mesma célula de memória)	
+	- simplicidade: simplicidade sintática (sem ambiguidades)
+	e simplicidade semântica (ter significado independente do
+	contexto -> sobrecarga)
+	- ortogonalidade: permitir operações sobre qualquer
+	tipo de dados e esperar que o resultado seja coerente.
+	Aumenta a complexidade.
+
+Ortogonalidade x Complexidade
+=> vale a pena pensar na semântica de todas as possibilidades
+de todas as operações valerem para todos os tipos de dados
+Depende do caso, mas não, pois necessitaria um esforço muito 
+grande e o benefício não seria tão grande, visto que o com-
+portamento esperado poderia ser criado quando houvesse necessi-
+dade.
+
+-------------------------------------------------
+Aula 03 - Programação Funcional
+
+Modelos
+- imperativo: (como executar)
+	- estruturado: sequencia de comandos, orientado a procedimentos,
+	arquitetura d evon neumann
+	- OO: comandos específicos que realizam transformações sobre
+	dados
+- declarativo: (o que executar)
+	- funcional (foco da cadeira): ênfase em valores computados 
+	por funções
+	- lógica: ênfase em axiomas lógicos, pensamento natural
+
+Modelo x Paradigma
+- Modelo: descrição prática da maneira como algo funciona e
+que tem como propósito a utilidade
+- Paradigma: padrão de pensamento que guia um conjunto de atividades
+relacionadas, filosofia de programação	
+
+Paradigma Funcional: foca na aplicação de funções
+
+Formas funcionais:
+	- composição: f(g(x))
+	- construção: [g,h,i](4)
+	- apply-to-all: alfa(h,(2,3,4)) 
+	
+Linguagem de programação funcional:
+- funções não possuem efeitos colaterais -> sempre o mesmo resultado para 
+a mesma entrada	
+- função são componentes de primeira ordem -> podem ser passados
+como argumentos, retornados como resultado de uma subrotina
+- manipulam listas, tuplas
+- possuem garbage collection e recursão
+- fortemente embasadas em cálculo lambda
+
+Mecanismos importantes
+- funções puras
+- funções que atuam como valores/elementos de primeira classe/ordem
+- formas funcionais (high order)
+- recursão
+	
+Linguagem de programação imperativa:
+- projetado na arquitetura de von neumann
+- preocupação com eficiência
+- sequencial
+- componentes de primeira ordem são variáveis
+
+-------------------------------------------------
+Aula 04 - Programação Funcional - Linguagem ML
+
+- Elemento de 1ª ordem => manipulado por comandos e operadores. Funções
+simples são consideradas elementos de 1ª odem.
+- Elemento de alta ordem => manipula/opera sobre outras funções. Funções que 
+recebem outras funções como argumentos ou que retornam funções.
+
+- Exemplos de funções de alta ordem:
+  * composição: h = f O g => h(x) = f(g(x))
+  * construção: [f,g,h](4) => (f(4), g(4), h(4))
+  * apply-to-all: alpha(f, (2,3,4)) => (f(2), f(3), f(4))
+
+- Avaliação tardia (lazy evaluation)
+	x = 5 + 3;
+	print x;
+  * O x só é calculado quando ocorre o print.
+
+Tipos:
+- Primitivos: int, real, bool, char, string
+- Compostos: 
+  * listas: entre [], mesmo tipo.
+  * tuplas: entre (), tipos diferentes, ordem importa.
+  * registros: entre {}, tipos iguais ou difrentes, ordem não importa.
+
+Operadores:
+- Aritméticos: +, -, *, / (real), div (int)
+- Lógicos: <, >, <=, >=, <>, =
+- Listas: :: (concatena elemento com elemento/lista), @ (concatena listas) 
+
+Listas:
+(declaração) val list = 1::2::3::nil;
+(declaração) val list = [1, 2, 3];
+
+Perguntas Teóricas:
+(responder) 1) A linguagem é ortogonal? Até que ponto? Comente, com exemplos.
+
+2) A linguagem é fortemente tipada? Sim.
+
+3) Há conversão implícita/explícita? Não, a conversão de tipo deve ser explícita.
+Por exemplo, para se converter um valor real para int usamos a função round().
+
+4) O operador “=“ possui semântica diferenciada, dependente do contexto? Sim. Ele
+pode ser considerado uma atribuição/associação de nomes e valores, como em 
+"val a = 5;", ou uma comparação, operador lógico, como em "5 = 9" que resulta false.
+
+Como fazer uma função de soma que recebe dois elementos 
+de uma única vez, evitando currying?
+
+fun soma1 (x,y) = x + y;
+	> val soma1 = fn : int * int -> int (sem currying)
+fun soma2 x y = x + y;
+	> val soma2 = fn : int -> int -> int (com currying)
+
+-------------------------------------------------
+Aula 05 - Programação Funcional - Linguagem ML
+
+Currying:
+- técnica de transformação de uma função que recebe múltiplos argumentos
+em uma sequencia de funções que recebem cada um único argumento.
+- funções com múltiplos argumentos podem utilizar a técnica de currying.
+- usado em funções de ordem superior para que os parâmetros sejam consumidos
+gradativamente.
+
+- Vantagens:
+  * permite realizar especialização de uma função
+  * permite criar funções que são parâmetro de outras funções	
+  
+  
+  
+  
+  
+  
+  

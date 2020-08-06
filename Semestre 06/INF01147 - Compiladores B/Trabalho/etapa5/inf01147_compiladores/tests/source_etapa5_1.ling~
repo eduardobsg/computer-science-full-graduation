@@ -1,0 +1,62 @@
+word a: 1;
+word b: 1;
+word c: 1;
+word d: 1;
+word e: 1;
+word xx: 1;
+word ba[3];
+word bb[3] : 11 22 33;
+bool vb_a: true;
+word $pt : 10;
+
+
+word main ()
+	word f: 1;
+	word g: 1;
+  {
+  	//a = b + c + d * e;
+  	//xx = foo(b, c);
+  	
+	/**
+	 * IF TESTS
+     */
+  	//if(a + b * c) then a = 3;
+
+  	/*if(vb_a) then {
+		a = 2;
+		b = 2;
+	};*/
+	
+	/*
+	if(a+b) then c = 2 else {
+		a = 2;
+	};
+	*/
+	
+	//input a;
+
+	//output "lala", a + b * c, "teste", a * b - c;
+
+	/**
+     * LOOP TESTS
+     */
+	/*
+	loop(b) {
+		a = 1;
+	};
+	*/
+
+	bb[1+1] = 2 + 2 * 3;
+	a = bb[1 + 2 * 3 / 4];
+	
+	
+	pt = pt + 1;
+  
+	return 10;	
+  }
+  
+word foo (word aa, word bb) 
+	word h: 1;
+  {
+	return 10;
+  }

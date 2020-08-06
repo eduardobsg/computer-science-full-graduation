@@ -1,0 +1,674 @@
+;==========================================================================================================================
+;==                                                                                                                      ==
+;==                                       Universidade Federal do Rio Grande Do Sul                                      ==
+;==                                      Arquitetura E Organização de Computadores I                                     ==
+;==                                              Professor Marcelo Johann                                                ==
+;==                                          Trabalho Prático - Simulador Cesar                                          ==
+;==                                       Nome: Érica Bastos Rigo   Cartão: 151074                                       ==
+;==                                                                                                                      ==
+;==========================================================================================================================
+;                                               INSTRUCOES DO PROGRAMA                                                    ;
+;==========================================================================================================================
+;                                                                                                                         ;
+; O programa feito para o simulador Cesar, faz um cadastro de registros de empréstimos, inseridos pelo usuário.           ;
+;                                                                                                                         ;
+; Na tela de abertura, aparecerão as 4 opções do programa:                                                                ;
+;   1 - Ins:  Insere um registro na memória                                                                               ;
+;		Digitar as iniciais, nome e item, apertando enter quando quiser confirmar a inserção.                     ;
+;   2 - List: Listagem de todos os registros contidos na memória                                                          ;
+;		A listagem mostra iniciais, nome e item, sequencialmente. Aperte enter para ver o próximo item do registro;
+;   3 - Cons: Consulta de registros pelas iniciais cadastradas quando o registro é inserido                               ;
+;		Digite as iniciais que se deseja procurar e aperte enter. Há a opção de excluir um item procurado. (No    ;
+;               caso, se o item for devolvido, é retirado da lista).                                                      ;
+;               OBSERVAÇÃO: A Busca é case sensitive. Itens devolvidos não são mais listados.                                                                    ;
+;   4 - Sair: Encerra o programa                                                                                          ;
+;                                                                                                                         ;
+;==========================================================================================================================
+;                                               PROGRAMA PRINCIPAL                                                        ;
+;==========================================================================================================================
+ 
+		org 0
+
+ini_pilha: 
+        mov #65498, r6
+        
+menu_inicial:
+	jsr r5, limpa_visor
+	mov #26, r2
+	mov #5000, r1
+	mov #65500, r0
+        jsr r5, escreve_visor
+
+teste:   clr 65498
+         tst 65498
+         beq -6
+
+compara: 
+           mov #65499, r2    ; se a pessoa digitou, passa o valor do caracter ascii para o r2
+	   
+           mov #49, r3       ; passa o valor 49 (1) para r3
+	   cmp r3, (r2)      ; compara com a opção escolhida pelo usuário
+	   beq sub_insere    ; se forem iguais, vai para a chamada de subrotina inserir
+
+	   mov #50, r3       ; passa o valor 50 (2) para r3
+	   cmp r3, (r2)      ; compara com a opção escolhida pelo usuário
+	   beq sub_lista     ; se forem iguais, vai para a chamada de subrotina listar
+
+           mov #51, r3       ; passa o valor 51 (3) para r3
+           cmp r3, (r2)      ; compara com a opção escolhida pelo usuário
+	   beq sub_cons      ; se forem iguais, vai para a chamada de subrotina consultar
+
+	   mov #52, r3       ; passa o valor 52 (4) para r3
+	   cmp r3, (r2)      ; compara com a opção escolhida pelo usuário
+	   beq fim           ; se forem iguais, vai para o fim do programa
+
+	   br teste
+
+sub_insere: jsr r5, insere        ; chama subrotina insere
+            jmp menu_inicial
+
+sub_lista:  jsr r5, lista         ; chama subrotina lista
+            jmp menu_inicial
+
+sub_cons:   jsr r5, consulta      ; chama subrotina consulta
+	    jmp menu_inicial
+		
+
+fim:      jsr r5, limpa_visor
+          mov #8, r2
+	  mov #5026, r1
+	  mov #65513, r0
+          jsr r5, escreve_visor           ; escreve mensagem de despedida na tela
+          hlt	   
+
+
+;==========================================================================================================================
+;                                            fim do programa principal                                                    ;
+;==========================================================================================================================
+;  					           SUBROTINAS                                                             ;
+;==========================================================================================================================
+;                                               SUBROTINA INSERE                                                          ;
+;==========================================================================================================================
+insere:
+
+;; MARCAS NOS CADASTROS!!!!
+;; marca de excluido/n excluido: 43 (+)
+;; marca de inicial: 38 (&)
+;; marca de nome: 35 (#)
+;; marca de item: 36 ($)
+;; fim de registros: 47 (/)
+
+menu_ins:
+        jsr r5, limpa_visor
+
+marca_devolv:
+	mov fim_mem, r1
+        clr (r1)
+        mov #43, (r1)+
+        mov #0, (r1)+
+        mov r1, fim_mem
+
+iniciais:
+        mov #10, r2                 ;; escreve "Iniciais:" no visor
+	mov #5046, r1                
+	mov #65500, r0               
+        jsr r5, escreve_visor
+        inc r0
+
+ins_ini: 
+        mov fim_mem, r1          ;; ponteiro de memória
+        mov #38, (r1)+           ;; marca de inicio de iniciais (&)
+        jsr r5, insere_palav     ;; grava as iniciais na memória
+        jsr r5, limpa_visor
+         
+nome:	mov #6, r2               ;; escreve "Nome: " no visor
+	mov #5034, r1                
+	mov #65500, r0               
+        jsr r5, escreve_visor   
+        inc r0
+
+ins_nome:
+        mov fim_mem, r1      ;; ponteiro de memória
+        mov #35, (r1)+       ;; marca de inicio de nome (#)
+        jsr r5, insere_palav ;; grava o nome na memória
+        jsr r5, limpa_visor
+
+item:
+        mov #6, r2            ; escreve "Item: " no visor
+        mov #5040, r1
+        mov #65500, r0
+        jsr r5, escreve_visor
+        inc r0
+
+ins_item:
+        mov fim_mem, r1      ;; ponteiro de memória
+        mov #36 (r1)+        ;; marca de inicio de item ($)
+        jsr r5, insere_palav ;; grava o item na memória
+        jsr r5, limpa_visor
+        mov fim_mem, r1
+	mov #47, (r1)
+        
+fim2:   rts r5
+
+
+;==========================================================================================================================
+
+insere_palav: 
+              mov #0, cont
+
+apaga_teste:  clr 65498            ;; teste de escrita
+teste2:	      tst 65498
+              beq teste2
+        
+enter_v:      cmp 65499, enter     ;; verifica se a pessoa quer encerrar a escrita
+	      beq fim3
+
+              mov 65499, (r0)      ;; move o caracter pro visor
+	      mov 65499, (r1)+     ;; grava o caracter na memoria
+	      mov r1, fim_mem      ;; atualiza o ponteiro de memoria
+              
+              inc r0               ;; incrementa o visor
+              inc cont             ;; incrementa o cont
+              cmp cont, #15        ;; se ultrapassar 15, para a execucao
+              beq 2          
+              br apaga_teste       ;; volta para o teste se n ultrapassar e o usuario n der enter
+
+
+fim3:         mov r1, fim_mem      ;; atualiza o ponteiro de memoria
+              rts r5
+
+;==========================================================================================================================
+;                                               SUBROTINA LISTAR                                                          ;
+;==========================================================================================================================
+
+lista:     
+        jsr r5, limpa_visor
+	mov ini_mem, r1              ;; aponta o r1 para o início da memória
+	
+compara1: 
+	mov #43, r2                  ;; verifica se é marca de início de registro.
+	cmp r2, (r1)                 ;; se é, vai para verificação de excluido/não excluído
+	beq ve_exc
+	
+	mov #47, r3                  ;; verifica se é marca de fim de registros
+	cmp r3, (r1)                 ;; se é, vai para o fim
+	beq fim_msg
+
+	add #2, r1                   ;; se não é nem marca de início de registro, nem marca de fim de registros, 
+	br compara1                  ;; aumenta 1 posição e volta para a verificação
+
+ve_exc: 
+	mov #65500, r0               
+	jsr r5, espera_enter
+	jsr r5, limpa_visor
+	add #2, r1                  
+	tst (r1)
+	beq imprime                  ;; se o ítem estiver excluído, vai ter 1 na posição. Se for zero, vai imprimir 
+	                             ;; o registro. Se for 1, vai incrementar o ponteiro da memória, e vai voltar para a 
+	add #2, r1                   ;; comparação.
+	br compara1
+
+imprime: 
+	add #2, r1                  ;; pula a marca de iniciais
+	add #2, r1
+	
+imprime_ini:
+	mov (r1)+,(r0)              ;; manda para o visor, até que encontre a marca de nome. Quando encontrar, irá imprimir
+	inc r0                      ;; o nome
+	mov #35, r2
+	cmp r2, (r1)
+	beq imprime_nome
+	br imprime_ini
+
+imprime_nome:
+	jsr r5, espera_enter 
+	jsr r5, limpa_visor
+	mov #65500, r0
+	add #2, r1
+imp:	
+	mov (r1)+, (r0)            ;; manda para o visor até que encontre a marca de item. Quando encontrar, irá imprimir o
+	inc r0                     ;; item.
+	mov #36, r2
+	cmp r2, (r1)
+	beq imprime_item
+	br imp
+
+imprime_item:
+	jsr r5, espera_enter
+	jsr r5, limpa_visor
+	mov #65500, r0
+	add #2, r1
+
+imp2:	
+	mov (r1)+, (r0)            ;; manda para o visor até que encontre uma marca de fim de registros ou de novo registro.
+	inc r0
+	mov #47, r4
+	cmp r4, (r1)
+	beq fim_msg                ;; se encontra de fim de registros, vai para o fim
+	mov #43, r4
+	cmp r4, (r1)
+	beq ve_exc                 ;; se encontra de novo registro, vai para a verificação de excluido/não excluído
+	br imp2
+
+fim_msg: 
+	jsr r5, espera_enter
+        jsr r5, limpa_visor
+	mov #15, r2                   
+	mov #5056, r1               
+	mov #65500, r0               
+	jsr r5, escreve_visor      ;; escreve mensagem "Fim da memória" no visor
+	jsr r5, espera_enter
+	rts r5
+
+
+;==========================================================================================================================
+;						SUBROTINA ESPERA ENTER                                                    ;
+;==========================================================================================================================
+
+espera_enter:                         ;; espera o usuário apertar a tecla enter
+	clr 65498
+	tst 65498
+	beq -6
+
+	cmp 65499, enter
+	beq 2
+	br -14
+	rts r5
+
+;==========================================================================================================================
+;                                           SUBROTINA DE ESCRITA NO VISOR                                                 ;
+;==========================================================================================================================
+
+escreve_visor:
+
+__VOLTA_ESCR:
+          MOV (R1),R3           ; coloca 2 caracteres em R3
+          ASR R3                ; alinha primeiro caractere
+          ASR R3                ; a direita do registrador,
+          ASR R3                ; porque quando se escreve
+          ASR R3                ; na memoria a partir do
+          ASR R3                ; endereco 65500 apenas o byte
+          ASR R3                ; menos significativo e' escrito
+          ASR R3                ; na posicao correspondente
+          ASR R3                ; a um LED do visor
+          MOV R3,(R0)           ; move para o visor
+          SOB R2,__SEGUNDO      ; se ja moveu todo o texto,
+          rts r5                ; retorna ao ponto de chamada
+                                ; senao, vai mover o segundo
+                                ; caractere da mesma palavra
+__SEGUNDO:
+          INC R0                ; aponta para proximo LED
+          BEQ __FIM_VISOR2      ; fim do visor - volta ao LED 00
+__CONTINUA2:
+          MOV (R1)+,R3          ; mesmos 2 caracteres em R3 e
+                                ; incrementa apontador do texto
+          MOV R3,(R0)           ; desta vez, move o segundo byte
+          SOB R2,__PROXIMO_LED  ; se ja moveu todo o texto,
+          rts r5                ; retorna ao ponto de chamada
+
+__PROXIMO_LED:
+          INC R0                ; senao, aponta proximo LED
+          BNE __VOLTA_ESCR      ; e repete o laco
+                                ; fim do visor - volta ao LED 00
+__FIM_VISOR1:
+          MOV #65500,R0         ; aponta para primeiro LED
+          BR  __VOLTA_ESCR      ; volta a escrever no visor
+
+__FIM_VISOR2:
+          MOV #65500,R0         ; aponta para primeiro LED
+          BR  __CONTINUA2       ; volta a escrever no visor
+
+;==========================================================================================================================
+;                                       SUBROTINA DE LIMPAR O VISOR                                                       ;
+;==========================================================================================================================
+
+limpa_visor:
+          CLR 65500             ; limpa LED 00
+          CLR 65501             ; limpa LED 01
+          CLR 65502             ; limpa LED 02
+          CLR 65503             ; limpa LED 03
+          CLR 65504             ; limpa LED 04
+          CLR 65505             ; limpa LED 05
+          CLR 65506             ; limpa LED 06
+          CLR 65507             ; limpa LED 07
+          CLR 65508             ; limpa LED 08
+          CLR 65509             ; limpa LED 09
+          CLR 65510             ; limpa LED 10
+          CLR 65511             ; limpa LED 11
+          CLR 65512             ; limpa LED 12
+          CLR 65513             ; limpa LED 13
+          CLR 65514             ; limpa LED 14
+          CLR 65515             ; limpa LED 15
+          CLR 65516             ; limpa LED 16
+          CLR 65517             ; limpa LED 17
+          CLR 65518             ; limpa LED 18
+          CLR 65519             ; limpa LED 19
+          CLR 65520             ; limpa LED 20
+          CLR 65521             ; limpa LED 21
+          CLR 65522             ; limpa LED 22
+          CLR 65523             ; limpa LED 23
+          CLR 65524             ; limpa LED 24
+          CLR 65525             ; limpa LED 25
+          CLR 65526             ; limpa LED 26
+          CLR 65527             ; limpa LED 27
+          CLR 65528             ; limpa LED 28
+          CLR 65529             ; limpa LED 29
+          CLR 65530             ; limpa LED 30
+          CLR 65531             ; limpa LED 31
+          CLR 65532             ; limpa LED 32
+          CLR 65533             ; limpa LED 33
+          CLR 65534             ; limpa LED 34
+          CLR 65535             ; limpa LED 35
+          RTS R5                ; retorna ao ponto de chamada
+
+;==========================================================================================================================
+; 					SUBROTINA CONSULTA
+;==========================================================================================================================
+consulta:
+
+escrev_iniciais:
+	jsr r5, limpa_visor
+	mov #10, r2                  ;; tamanho palavra
+	mov #5046, r1                ;; inicio dados fixos
+	mov #65500, r0               ;; visor
+        jsr r5, escreve_visor
+        inc r0
+
+	mov #0, cont
+        mov ini_busca, r3
+
+teste_escrita:
+
+	clr 65498
+test:	tst 65498
+	beq test
+      
+	cmp 65499, enter     ;; verifica se a pessoa quer encerrar a escrita
+	beq compara_string   ;; se for enter, vai pra compara, senão, vai escrevendo na tela o q a pessoa digita
+
+	mov 65499, (r0)      ;; move o caracter pro visor
+	mov 65499, (r3)+     ;; move o caracter pra um string auxiliar (a partir de ini_busca)
+	
+	inc r0
+	inc cont
+	cmp cont, #15
+	beq compara_string   ;; limita em 15 o numero de caracteres utilizados para escrever
+
+	br teste_escrita
+
+
+compara_string:	
+	
+	mov ini_mem, r1
+        mov r3, fim_busca
+comp1:
+	mov ini_busca, r3
+
+	mov #47, r4                        ;; ve se é marca de fim de memoria (/)
+	cmp r4, (r1)
+	beq pulo1                          ;; se é, não foi encontrado registro, vai para o fim
+
+	mov #43, r4                        ;; ve se é marca de inicio de cadastro (+)
+	cmp r4, (r1) 
+	beq ve_exc2                        ;; se é, vai verificar se o registro está excluído ou não
+	           	
+
+	add #2, r1                         ;; se não é, incrementa o ponteiro da memória e volta pra comparação
+	br comp1
+
+pulo1:  jmp nao_encontrado
+
+ve_exc2:
+	add #2, r1
+	tst (r1)                          ;; testa a marca de excluído. Se for 0, imprime o registro.
+	beq pulam
+
+	add #2, r1                        ;; se for 1, incrementa o ponteiro de memória e procura o próximo registro.
+	br comp1
+
+pulam:  mov r1, excluir                   ;; guarda o endereço da marca de exclusão
+	add #2, r1
+	add #2, r1                        ;; pula a marca de iniciais	 
+
+compara5: 
+	
+	cmp (r1), (r3)                    ;; compara a primeira letra de um, e a primeira da busca
+	beq continua
+        
+	add #2, r1
+	br comp1                          ;; se não forem iguais, parte pro proximo cadastro
+
+continua:
+	add #2, r1
+	mov #35, r4                       ;; compara com marca de inicio de nome
+	cmp r4, (r1)                      ;; se chegou até aqui é porque são iguais, então vai imprimir o nome do cadastro
+	beq imprime_nome2                 ;; pula pra impressão do nome do cadastro
+
+	add #2, r3                        ;; vai comparar com o próximo 
+	br pular5
+
+pular5: jmp compara5 
+
+imprime_nome2:                            ;; imprime o nome contido no registro
+	jsr r5, limpa_visor
+	mov #65500, r0
+	add #2, r1
+imp4:	
+	mov (r1)+, (r0)
+	inc r0
+	mov #36, r4
+	cmp r4, (r1)
+	beq imprime_item2
+	br imp4
+
+imprime_item2:
+	jsr r5, espera_enter             ;; imprime o item contido no registro
+	jsr r5, limpa_visor
+	mov #65500, r0
+	add #2, r1
+
+imp5:	
+	mov (r1), (r0)
+	inc r0
+        add #2, r1  
+       
+	mov #47, r4
+	cmp r4, (r1)
+	beq exclui                       ;; se for marca de fim de memória, chegou ao fim do registro solicitado.
+	
+        mov #43, r4
+	cmp r4, (r1)
+	beq exclui                       ;; se for marca de início de registro, chegou ao fim do registro solicitado,
+					 ;; vai para a exclusão       
+                                         ;; vai para a exclusão
+	jmp imp5                         ;; se não, continua a imprimir o registro solicitado
+
+exclui:   jsr r5, espera_enter            ; escreve a mensagem: "Excluir? 1-Sim 2-Nao" na tela
+	  mov #21, r2                  
+	  mov #5085, r1                
+	  mov #65500, r0  
+	  jsr r5, escreve_visor
+	
+teste_esc:                                ; teste de escrita
+         clr 65498
+         tst 65498
+         beq -6
+
+opta: 
+           mov #65499, r2                 ; se a pessoa digitou, passa o valor do caracter ascii para o r2
+	   
+           mov #49, r3                    ; passa o valor 49 (1) para r3
+	   cmp r3, (r2)                   ; compara com a opção escolhida pelo usuário
+	   beq marca                      ; se forem iguais, vai marcar como excluído
+
+	   mov #50, r3                    ; passa o valor 50 (2) para r3
+	   cmp r3, (r2)                   ; compara com a opção escolhida pelo usuário
+	   beq sai                        ; se forem iguais, apenas volta para o menu
+
+marca:  mov excluir, r4                   ; o valor armazenado anteriormente é passado para r4. 
+	mov #1, (r4)                      ; coloca 1 na marca de excluído do registro.
+	rts r5
+
+sai:    rts r5	
+
+nao_encontrado:
+	jsr r5, limpa_visor
+	mov #14, r2                  
+	mov #5071, r1                
+	mov #65500, r0           
+        jsr r5, escreve_visor           ; escreve mensagem de "Nao Encontrado"
+	jsr r5, espera_enter
+        rts r5
+
+;==========================================================================================================================
+;                                           MENSAGENS EXIBIDAS NA TELA                                                    ;
+;==========================================================================================================================
+		org 5000
+
+;1-Ins 2-List 3-Cons 4-Sair
+;posicao 5000
+db 49
+db 45
+db 73
+db 110
+db 115
+db 32
+db 50
+db 45
+db 76
+db 105
+db 115
+db 116
+db 32
+db 51
+db 45
+db 67
+db 111
+db 110
+db 115
+db 32
+db 52
+db 45
+db 83
+db 97
+db 105
+db 114
+
+
+;TCHAU o/
+;posicao 5026
+db 84
+db 67
+db 72
+db 65
+db 85
+db 32
+db 111
+db 47
+
+;Nome: 
+;posicao 5034
+db 78
+db 111
+db 109
+db 101
+db 58
+db 32
+
+;Item:
+;posicao 5040 
+db 73
+db 116
+db 101
+db 109
+db 58
+db 32
+
+;Iniciais:
+;posicao 5046
+db 73
+db 110
+db 105
+db 99
+db 105
+db 97
+db 105
+db 115
+db 58
+db 32
+
+
+;Fim da memoria:
+;posicao 5056
+db 70
+db 105
+db 109
+db 32
+db 100
+db 97
+db 32
+db 109
+db 101
+db 109
+db 111
+db 114
+db 105
+db 97
+db 33
+
+
+; Nao Encontrado
+; posicao 5071
+db 78
+db 97
+db 111
+db 32
+db 101
+db 110
+db 99
+db 111
+db 110
+db 116
+db 114
+db 97
+db 100
+db 111
+  
+; Devolve? 1-Sim 2-Nao: 
+; posicao 5085
+db 68
+db 101
+db 118
+db 111
+db 108
+db 118
+db 101
+db 63
+db 32
+db 49
+db 45
+db 83
+db 105
+db 109
+db 32
+db 50
+db 45
+db 78
+db 97
+db 111
+db 58
+
+
+;==========================================================================================================================
+;                                                  CONSTANTES                                                             ;
+;==========================================================================================================================
+
+enter:    dw 13                   ;; valor ascii da tecla enter (usado em subrotinas)
+ini_mem:  dw 10000                ;; valor de início da área de memória destinada para os registros
+fim_mem:  dw 10000                ;; valor de fim da área de memória destinada para os registros (atualizada durante o programa)
+cont:     dw 0                    ;; contador que limita o tamanho das strings digitadas
+excluir:  dw 0                    ;; variável que aponta para uma marca de excluído/não excluído
+
+ini_busca: dw 5121                   ;; início da string auxiliar para consulta
+fim_busca: dw 0                      ;; armazena onde acaba a string auxiliar para consulta
+

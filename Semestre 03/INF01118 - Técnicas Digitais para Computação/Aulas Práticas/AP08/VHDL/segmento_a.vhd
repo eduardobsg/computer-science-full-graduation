@@ -1,0 +1,15 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY segmento_a IS
+	PORT (	A	: IN STD_LOGIC;
+			B	: IN STD_LOGIC;
+			C	: IN STD_LOGIC;
+			D	: IN STD_LOGIC;
+			S_A	: OUT STD_LOGIC);
+END segmento_a;
+
+ARCHITECTURE data_flow OF segmento_a IS
+BEGIN
+	S_A <= ((NOT B) AND (NOT D)) OR ((NOT A) AND C) OR ((NOT A) AND B AND D) OR (A AND (NOT B) AND (NOT C)) OR (A AND (NOT D)) OR (B AND C);
+END data_flow;

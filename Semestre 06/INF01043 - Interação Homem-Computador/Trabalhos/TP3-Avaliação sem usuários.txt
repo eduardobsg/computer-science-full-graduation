@@ -1,0 +1,26 @@
+TP3: Avaliação sem usuários
+
+Considere as seguintes tarefas:
+
+1) Você precisa pesquisar e efetuar a compra de uma passagem aérea de ida e volta entre Porto Alegre e 
+Cuiabá, assumindo que a ida será no dia 26 de maio e a volta no dia 30 de maio. Compre a mais barata 
+(vale procurar em qualquer companhia e qualquer site de venda de passagens)! Obviamente, você não efetuará 
+a compra, mas evolua no sistema até o momento em que precisar entrar com os dados do cartão de crédito. 
+Pare neste instante!
+
+2) Agora, tente fazer a mesma coisa, porém compre uma passagem de Porto Alegre a Paris, indo e voltando nos 
+mesmos dias acima.
+
+3) Finalmente, compre também uma passagem de Paris até Toulouse usando a Easyjet (use os mesmos dias acima).
+
+
+Individualmente, realize a avaliação dos sistemas de compra de passagem que você testou usando a avaliação 
+por percurso cognitivo (sem usuários). Use o formulário do Ergolist, disponibilizado em: 
+http://www.labiutil.inf.ufsc.br/ergolist/check.htm
+
+Devido à complexidade variada dos sistemas, NÃO ESPERO uma avaliação exaustiva. Portanto, se você encontrar 
+mais de 10 (dez) problemas, pode dar por encerrada a sua avaliação.
+
+Das experiências que você acabou de ter, qual a melhor? E qual a pior? Por que?
+
+OBS: O relatório deve ser enviado até o momento de fechamento desta tarefa, impreterivelmente!

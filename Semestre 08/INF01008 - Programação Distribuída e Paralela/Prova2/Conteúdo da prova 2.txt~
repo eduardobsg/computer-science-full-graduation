@@ -1,0 +1,181 @@
+Prova 2:
+
+1 - Algoritmo de terminação para grafo qualquer
+2 - Conceitos de algoritmos paralelos: máquinas abstratas, arquitetura PRAM
+(entender), sppedup
+3 - MPI: modelo de programa (único), como processos são criados e identificados,
+formas de comunicação e sincronização, primitivas coletivas.
+4 - OpenMP: variáveis default e shared.
+
+=======================================================================
+
+OpenMp
+
+- programação paralela em memória compartilhada
+- recomendado para projetos onde não se consegue ver o paralelismo
+	- análise de dependência difícil
+- usada quando a granularidade das tarefas não é suficiente
+
+Vantagens:
+- programa é escrito de forma sequencial e openMP realiza a parallização
+- paralelizaçõ transparente
+- facilita depuração e manutenção
+- leve, maduro, muito usado e disponível
+- mecanismos de sincronização implícitos
+
+Modelo de Memória:
+- todas as threads tem acesso à memória compartilhada
+- shared - dados compartilhados: acesso por todas tarefas, permite
+escrita/leitura concorrente pelas tarefas
+- private - dados privados: acessados pela tarefa proprietária; cada
+tarefa tem uma cópia da variável e as alterações tem repercussão local
+
+Modelo de Fluxos de Execução:
+- master: partes sequenciais
+- workers: partes concorrentes
+
+Termos e Comportamento:
+- master: id = 0
+
+Pragmas:
+
+#pragma opm parallel if() { ... código ... } : se condição verdadeira, então é executado em paralelo, caso contrário é executado sequencialmente
+
+#pragma omp for nowait : works executam concorrentemente
+
+#pragma opm paralle if() \
+shared(n, x, y) 
+{ code } : variáveis shared acessíveis por todos os processos. Acesso
+no mesmo endereço
+
+#pragma opm paralle if() \
+private(i)
+{ code } : variável private é local. Não é associada com variável 
+original, visto que no processo i é uma cópia da variável declarada
+
+Barreiras:
+#pragma omp barrier : barreira. Todas as threads chegam ali e continuam.
+Força sincronização para evitar problemas de dependência.
+
+=======================================================================
+
+MPI
+
+- uma solução sequencial ótima, nem sempre é a melhor para ser para-
+lelizada.
+- solução paralela deve se comportar bem com o crescimento tamanho do
+problema
+
+Particionamento: quebrar problema em outros menores
+- balancear cargas entre processos
+- particionar dados ou tarefas
+
+Comunicação:
+- identificar fluxo de info entre os processos de forma precisa
+- uma thread de cálculo e uma de receive ou duas cálculo/receive?
+
+Aglomeração:
+- aglomerar tarefas para diminuir comunicação
+
+Mapeamento:
+- distribuição das tarefas entre os processos
+
+
+Passos para paralelizar:
+1) Desenvolver programa sequencial
+2) Analisar e identificar gargalos
+3) Paralelizar
+4) Verificar resultados da versão paralela
+5) Analisar e identificar gargalos da versão paralela
+6) Otimizar
+7) Voltar a 4 até que não sejá mais necessário
+
+
+Definições de MPI:
+- rotinas de comunicação ponto-a-ponto, coletiva
+- gerenciamento de processos
+
+Rotinas:
+
+MPI_Init: cria ambiente de execução para MPI
+MPI_Finalize: finaliza processo MPI. Sincroniza todos processos
+na finalização de uma aplicação MPI.
+
+Comunicação Ponto-a-ponto:
+MPI_Send: envia msg a outro processo. Bloqueante.
+MPI_Recv: recebe msg de um processo. Bloqueante.
+MPI_Send: envia msg a outro processo. Não-Bloqueante.
+MPI_Recv: recebe msg de um processo. Não-Bloqueante.
+MPI_Wait: usada para ver se um "request" foi atendido (usada juntamente
+com instruções não-bloqueantes para garantir a consistência dos dados)
+
+Comunicação Coletiva:
+- troca de msgs entre todos os processos do grupo
+MPI_Bcast: todos os processos executam ao mesmo tempo. Apenas uma
+envia e os demais recebem.
+MPI_Scatter: distribui uma estrutura por todos processos, incuso o 
+emissor
+MPI_Gather: agrupar dados.
+MPI_Allgather: todos processos coletam dados de todos processos.
+MPI_Reduce: realiza operação sobre dados de todos os processos.
+MPI_Reduce: MPI_Reduce + broadcast
+
+=======================================================================
+
+Métricas: 
+
+- Speedpup : Tserial / Tparalelo => menor e ideal 1 / n, sendo n o nº e
+procesos
+- Eficiência : Tserial / [nº processos * Tparalelo] => máximo e ideal
+é 1
+
+Modelos de Máquinas Paralelas:
+- permitir comparação simplicada entre algoritmos
+- permitir análise matemática de medidas importantes de desempenho
+- independente de arquitetura
+
+DAG: Grafo acíclico direto
+
+PRAM: Máquina paralea de acesso randômico
+- modelo de memória compartilhada
+- processadores operam de forma síncrona, mesmo relógio
+- cada cpu pode executar uma coisa diferente da outra
+
+
+=======================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

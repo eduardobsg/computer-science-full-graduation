@@ -1,0 +1,7 @@
+13/06/2013
+
+Tradução dirigida por sintaxe
+
+- Livro didático capítulo 4
+
+"enquanto analiso sintaxe" gerar código intermediário (ou crio uma árvore)

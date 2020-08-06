@@ -1,0 +1,105 @@
+Lab4
+
+2. Escreva um procedimento para ler estas imagens (imread) e para cada uma delas:
+
+(a) Exibir a imagem em uma janela particular usando o comando subplot(1,2,1).
+
+I1 = imread('big_square.bmp');
+figure(1);
+subplot(1,2,1), imshow(I1);
+subplot(1,2,2), imshow(log(abs(fftshift(fft2(I1)))), [3, 10]);
+
+I2 = imread('bw_horizontal.bmp');
+figure(2);
+subplot(1,2,1), imshow(I2);
+subplot(1,2,2), imshow(log(abs(fftshift(fft2(I2)))), [3, 10]);
+         
+I3 = imread('bw_triangle.bmp');
+figure(3);
+subplot(1,2,1), imshow(I3);
+subplot(1,2,2), imshow(log(abs(fftshift(fft2(I3)))), [3, 10]);
+                                   
+I4 = imread('bw_vertical.bmp');
+figure(4);
+subplot(1,2,1), imshow(I4);
+subplot(1,2,2), imshow(log(abs(fftshift(fft2(I4)))), [3, 10]);
+
+I5 = imread('bw_vertical_middle.bmp');
+figure(5);
+subplot(1,2,1), imshow(I5);
+subplot(1,2,2), imshow(log(abs(fftshift(fft2(I5)))), [3, 10]);
+
+I6 = imread('diagonal_square.bmp');
+figure(6);
+subplot(1,2,1), imshow(I6);
+subplot(1,2,2), imshow(log(abs(fftshift(fft2(I6)))), [3, 10]);                                       
+           
+I7 = imread('high_pass.bmp');
+figure(7);
+subplot(1,2,1), imshow(I7);
+subplot(1,2,2), imshow(log(abs(fftshift(fft2(I7)))), [3, 10]);                             
+
+I8 = imread('low_pass.bmp');
+figure(8);
+subplot(1,2,1), imshow(I8);
+subplot(1,2,2), imshow(log(abs(fftshift(fft2(I8)))), [3, 10]);
+                                          
+I9 = imread('small_square.bmp');
+figure(9);
+subplot(1,2,1), imshow(I9);
+subplot(1,2,2), imshow(log(abs(fftshift(fft2(I9)))), [3, 10]);                                 
+                                                                              
+I10 = imread('triangle.bmp');
+figure(10);
+subplot(1,2,1), imshow(I10);
+subplot(1,2,2), imshow(log(abs(fftshift(fft2(I10)))), [3, 10]);                                           
+
+Transformada de Fourier: operador de projeção. Decompõem um sinal complexo em conjunto de 
+sinais mais simples, em um conjunto de funções de base de senos e cossenos. Funções são ortogonais,
+ou seja, possuem ângulo de 90º entre si, dessa forma são mais organizadas.
+
+Altas frequencias: nas bordas (após o shift)
+Baixas frequencias: centro (após o shift)
+Cores do espectro de amplitude: 
+	- branco: coeficiente de alta amplitude
+	- preto: coeficiente de baixa amplitude
+
+Imagem: Combinação linear de funções de base de senos e cossenos, com diferentes frequencias e
+amplitudes diferentes
+
+Pontilhado: 
+	- bw_vertical: a imagem varia do branco para o preto, da esquerda para a direita.
+	No espectro (com shift) o centro possui a frequencia zero. A imagem se comporta como 
+	uma onda quadrada, e para formar uma onda quadrada há apenas contribuição de coeficientes 
+	das frequencias ímpares para as funções de base seno e do coeficiente zero.
+	Coeficientes: 1/1, 1/3, 1/5, ...., 1/501, ..., tendendo ao coeficiente zero.
+
+	- bw_triangle: 
+
+(b) Calcular sua transformada de Fourier (comando fft2);
+(c) Aplicar um deslocalmento ao resultado da transformada (comando fftshift);
+(d) Visualizar o resultado utilizando imshow(log(abs(<img transf>)), [3, 10]).
+Coloque este resultado na janela definida pelo comando subplot(1,2,2)
+
+
+4) 
+I = imread('cameraman.tif');
+figure(100);
+subplot(1,2,1), imshow(I);
+subplot(1,2,2), imshow(log(abs(fftshift(fft2(I)))), [3, 10]);
+
+5)
+figure(100);
+
+M = imread('low_pass.bmp');
+M = M / 255;
+I = imread('cameraman.tif');
+FSI = fftshift(fft2(I));
+FSJ = FSI .* double(M);
+J = ifft2(fftshift(FSJ));
+
+subplot(2,2,1), imshow(I);
+subplot(2,2,2), imshow(log(abs(FSI)), [0, 10]);
+subplot(2,2,3), imshow(log(abs(FSJ)), [0, 10]);
+subplot(2,2,4), imshow(J);
+

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.4.--><structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>90.0</x>
+			<y>261.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>200.0</x>
+			<y>153.0</y>
+		</state>
+		<state id="2" name="q2">
+			<x>204.0</x>
+			<y>314.0</y>
+		</state>
+		<state id="3" name="q3">
+			<x>327.0</x>
+			<y>83.0</y>
+		</state>
+		<state id="4" name="q4">
+			<x>328.0</x>
+			<y>193.0</y>
+		</state>
+		<state id="5" name="q5">
+			<x>329.0</x>
+			<y>298.0</y>
+		</state>
+		<state id="6" name="q6">
+			<x>311.0</x>
+			<y>430.0</y>
+		</state>
+		<state id="7" name="q7">
+			<x>440.0</x>
+			<y>84.0</y>
+		</state>
+		<state id="8" name="q8">
+			<x>441.0</x>
+			<y>191.0</y>
+		</state>
+		<state id="9" name="q9">
+			<x>432.0</x>
+			<y>304.0</y>
+		</state>
+		<state id="10" name="q10">
+			<x>431.0</x>
+			<y>429.0</y>
+		</state>
+		<state id="11" name="q11">
+			<x>577.0</x>
+			<y>246.0</y>
+			<final/>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>3</from>
+			<to>7</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>2</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>4</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>6</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>7</from>
+			<to>11</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>8</from>
+			<to>11</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>10</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>9</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>6</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>5</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>3</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>4</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>3</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>5</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>4</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>6</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>3</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>10</from>
+			<to>11</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>9</from>
+			<to>11</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>8</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>5</to>
+			<read>0</read>
+		</transition>
+		<note>
+			<text>
+</text>
+			<x>167.0</x>
+			<y>85.0</y>
+		</note>
+		<note>
+			<text>M3c={{0,1},{q0,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11},q0,{q11}}</text>
+			<x>131.0</x>
+			<y>493.0</y>
+		</note>
+	</automaton>
+</structure>

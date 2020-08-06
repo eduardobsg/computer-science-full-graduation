@@ -1,0 +1,349 @@
+Cadeira: INF01147 - Compiladores B
+Professor: Marcelo Johann
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2013/01
+Página do professor: http://www.inf.ufrgs.br/~johann/comp/
+
+------------------------------------------------------------------------------
+---- Colegas:
+------------------------------------------------------------------------------
+
+- Mário
+- Luiz SOuza
+- Suyá
+- Paula
+- Paola
+- Lucas Lersch
+- Vítor'
+
+------------------------------------------------------------------------------
+---- Frase:
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+---- Notas de Aula
+------------------------------------------------------------------------------
+
+2013-04-18:
+
+Exercício
+
+E	-> 	TE'
+E'	->	+TE'|palavra vazia
+T	->	FT'
+T'	->	*FT'|palavra vazia	
+F	-> 	(E)|id
+
+		+					*		(		)					id		$ 	=>	(coluna é o first do lado direito da regra)
+E									E->TE'						E->TE'
+E'		E'->+TE'							E'->palavra vazia			E'->palavra vazia
+T									T->FT'						T->FT'
+T'		T'->palavra vazia	T'->*FT'		T'->palavra vazia			T'->palavra vazia
+F									F->(E)						F->id
+
+
+Follow: Primeiro elemento da gramática tem $
+
+		First					Follow
+E		first de T => (,id		), $
+E'		+,palavra vazia			follow de E' + follow de E => ), $
+T		first de F => (,id		first de E', exceto palavra vazia + follow de E => +, ), palavra vazia
+T'		*,palavra vazia			follow de T => +, ), palavra vazia
+F		(,id					follow de T => *, +, ), palavra vazia
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------
+
+2013-04-11:
+
+Analisadores Descendentes Tabulares; Cjs First Follow
+
+Conjunto First:
+- conjuntos de todos os terminais deriváveis a partir de uma sentença.
+
+Follow:
+- símbolos terminais que podem surgir depois de uma sentença. Ex.: 
+Follow(CMD) = { ';', ',', ')' }
+- follow só tem terminais
+
+X -> (alfa)A : follow do X está dentro do follow do A
+
+- só terminais entram em first e follow
+
+Exemplo:
+
+S -> XYZ
+X -> aXb | (palavra vazia)
+Y -> cYZcX | d
+Z -> eZye | f
+
+		First					Follow
+S 		a, c, d					$
+X		a, (palavra vazia)		b, First(Y), Follow(Y), First(Z) => b, c, d, e, f
+Y		c, d					First(Z) => e, f
+Z		e, f					Follow(S), First(Y) => $, c, d
+
+- O first de S terminou com o first de X e de Y, pois Y não tinha a palavra 
+vazia em seu first. X tinha, logo necessita o Frist de Y, mas Y não tem, logo 
+termina aí.
+- no primeiro símbolo da gramática devemos incluir $ no follow (símbolo de
+final de arquivo).
+- S não aparece a direita em nenhuma produção, logo, seu Follow fica apenas com
+$.
+-
+
+First(YZ) = {c, d} => pois, não tem palavra vazia, logo acaba no first do Y, sem
+incluir nada do Z
+
+
+Exemplo:
+
+S -> cAa
+A -> cB | B
+B -> bcB | palavra vazia
+
+	First					Follow
+S	c						$
+A	c, b, palavra vazia		a
+B	b, palavra vazia		Follow(A) => a
+
+- O follow de A tem que estar em follow de B, pois B está à direita de uma produção 
+de A. Da mesma forma follow de B tem que estar dentro de follow de B, mas isso é
+óbvio
+
+Etapa 2:
+
+1) Separador: ',' 
+2) Terminador: ';'
+	- terminador sempre tem que ser terminado, necessita em ';'
+3) ling <- dentro do bloco
+	- dentro do bloco, as expressões precisam terminar com ';'
+	- Exemplo:
+		
+		{
+			a = 5;
+			b = 7;
+			if(x)
+				a = 8;
+		}	
+	
+4) C/C++
+
+
+------------------------------------------------------------------------------
+
+2013-04-09:
+
+Etapa 2:
+- criar uma função para cara caracter terminal
+
+int Etrada[15] = {'{',IF,ID,THEN,ID,'=',NUM,';','*','}','$'};
+
+
+int main() {
+	tok = le_tok();
+	if( func_CMD() )
+		if( tok == '$' )
+			printf("Sucess!");
+		else
+			printf("ok, ok, mas problemas")
+	else
+		printf("wrong")
+}
+
+
+first(E) = {NUM, ID}
+first(L) = {*, NUM, ID} + first(E) {}
+first(ASS) = {*, NUM, ID} + first(L) 
+first(WHILE) = { "while" }
+first(IF) = { "if" }
+first(RESTO) = { ";" }
+first(BL) = { '{' }
+
+first(CMD) = {"if", "*", NUM, ID, "while", "{"}
+first(CMDL) = first(CMD)
+
+
+int func_CMD() {
+	
+	if(tok == IF)
+		if(func_IF())
+			return true;
+		else	
+			return false;
+	...
+	if(tok == '{')
+		if(func_BL())
+			return true;
+		else
+			return false;	
+
+}
+
+
+int func_BL() {
+	
+	if(tok == '{') {
+		tok = le_tok();
+		
+	}
+
+}
+
+
+
+- RESTO tem produção vazia, logo retorna true se não encontrar nada.
+Se não encontrar CMDL ou não encontrar ';', retorna true.
+
+- main terá uma chamda do yyparse()
+- main não será trocado
+
+- yyerror: quando encontrado falar "Erro sintático encontrado na linha XX"
+
+Colocar no início:
+#ifndef HASH_HEADER
+#define HASH_HEADER
+
+------------------------------------------------------------------------------
+
+2013-04-04:
+
+Gramáticas livres de contexto:
+- as regras de produção podem ser aplicadas independente do contexto
+- já em gramáticas dependentes de contexto as regras de produção só podem
+ser usadas caso um contexto esteja vigente.
+
+Gramática formal: 
+G = {S,P,N,T}
+	- S: símbolo inicial (S pertence a N)
+	- P: conjunto de regras de produção do tipo u -> v
+	- T: conjunto de símbolos terminais (palavras/tokens da linguagem)
+	- N: conjunto de símbolos não terminais. Símbolos que podem ser
+	substituídos por produções
+
+Derivações
+
+------------------------------------------------------------------------------
+
+2013-03-21 - Aula 04:
+
+Trabalho - Etapa 1:
+- sem ponto flutuante
+- comentário: //.*
+- case sensitive
+- literais representados em hexadecimal, e hexadecimal não é case sensitive.
+
+a = 10; //10 em hexa é 16, a = 16 decimal
+
+- booleanos TRUE/FALSE
+
+- main.c só pode ter função main
+
+Hash table:
+- cada identificador só fica uma vez na hash table
+- na hash table não entram palavras reservadas
+
+Makefile:
+a.out: lex.yy.c
+	gcc lex.yy.c
+		
+lex.yy.c: scanner.l		
+	lex scanner.l
+
+Makefile 2:
+etapa1: lex.yy.c
+	gcc lex.yy.c -o etapa1
+		
+lex.yy.c: scanner.l		
+	lex scanner.l
+	
+clean: 
+	rm etapa1 lex.yy.c
+
+Makefile 3:
+target: etapa1
+		
+lex.yy.c: scanner.l		
+	lex scanner.l
+	
+etapa1: lex.yy.c
+	gcc lex.yy.c -o etapa1	
+	
+clean: 
+	rm etapa1 lex.yy.c
+	
+	
+Analisador sintático:
+
+%%
+program :
+		;
+%%
+
+
+X -> a b X
+X -> a
+
+em yacc:
+
+X : a b X
+  | a
+  ;
+
+  
+Exemplo: 
+ 
+%token KW_LOOP
+
+%% 
+  
+program : KW_LOOP
+		;
+		
+%%
+
+Para compilar no linux: "yacc parser.y"
+
+
+%token KW_LOOP
+
+%% 
+  
+program : dec program
+		|
+		;
+		
+dec : KW_INT		
+		
+%%
+
+------------------------------------------------------------------------------
+
+2013-03-14:
+
+Compilador:
+- analisador léxico é escravo do analisador sintático, é uma função desde
+
+expressão: construção - elemento sintático - estrutura do programa
+
+Elementos folha: 
+- operador
+- palavra reservada, keyword
+- literais (valores numéricos)
+- símbolos (ponto e vírgula, chaves, parênteses)
+- identificadores
+
+Tabela de símbolos: possui identificadores e constantes (literais)
+
+Sentença: programa do início ao fim.
+

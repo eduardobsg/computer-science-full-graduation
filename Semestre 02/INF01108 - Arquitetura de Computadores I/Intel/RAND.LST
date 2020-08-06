@@ -1,0 +1,201 @@
+Turbo Assembler	 Version 3.2	    06/15/10 09:13:01	    Page 1
+rand.ASM
+
+
+
+      1					      assume cs:codigo,ds:dados,es:dados,ss:pilha
+      2
+      3	      =000D		     CR	      EQU    0DH ; constante - codigo ASCII do caractere "carriage return"
+      4	      =000A		     LF	      EQU    0AH ; constante - codigo ASCII do caractere "line feed"
+      5
+      6				     ; definicao do segmento de	dados do programa
+      7	0000			     dados    segment
+      8	0000  49 72 20 70 61 72	61+  mensagem db     'Ir para posicao: '
+      9	      20 70 6F 73 69 63	61+
+     10	      6F 3A 20
+     11	0011  20 20		     linha    db     '	'
+     12	0013  2C			      db     ','
+     13	0014  20 20		     coluna   db     '	'
+     14	0016  2E			      db     '.'
+     15	0017  32*(20)			      db     50	dup (' ') ; com	AH=9, a	INT 21H	escreve	tudo o
+     16	0049  0D 0A 24		     fimlinha db     CR,LF,'$'	  ; que	houver antes do	"$" - CUIDADO !
+     17	004C  54 20 70 61 72 61	20+  prompt   db     'T	para terminar ou qualquer outra	tecla para continuar.',CR,'$'
+     18	      74 65 72 6D 69 6E	61+
+     19	      72 20 6F 75 20 71	75+
+     20	      61 6C 71 75 65 72	20+
+     21	      6F 75 74 72 61 20	74+
+     22	      65 63 6C 61 20 70	61+
+     23	      72 61 20 63 6F 6E	74+
+     24	      69 6E 75 61 72 2E	0D+
+     25	      24
+     26	0085  0A		     dez      db     10
+     27				     ;---------------------------------------------------------*
+     28				     ; Dados para a funcao RAND	- copiar p/fim segmento	'dados'|
+     29				     ;---------------------------------------------------------*
+     30				     ; dados para 4 partidas, com sorteios duplos nas 2	1as   ;|
+     31	0086			     _@RNDvet label byte ; 8 minas por linha		      ;|
+     32											      ;|
+     33	0086  01 01 02 02 03 03	04+	  DB  1, 1, 2, 2, 3, 3,	4, 4, 5, 5, 6, 6, 7, 7,	8, 8  ;|
+     34	      04 05 05 06 06 07	07+
+     35	      08 08
+     36	0096  09 09 0A 0A 0A 01	09+	  DB  9, 9,10,10,10, 1,	9, 2, 4, 4, 1, 9, 1,10,	2,10  ;|
+     37	      02 04 04 01 09 01	0A+
+     38	      02 0A
+     39											      ;|
+     40	00A6  02 02 02 03 02 04	02+	  DB  2, 2, 2, 3, 2, 4,	2, 5, 2, 6, 3, 2, 3, 4,	3, 6  ;|
+     41	      05 02 06 03 02 03	04+
+     42	      03 06
+     43	00B6  04 02 04 03 04 04	04+	  DB  4, 2, 4, 3, 4, 4,	4, 5, 4, 6, 2, 5, 5, 2,	5, 6  ;|
+     44	      05 04 06 02 05 05	02+
+     45	      05 06
+     46											      ;|
+     47	00C6  01 02 03 04 05 06	07+	  DB  1, 2, 3, 4, 5, 6,	7, 8, 9,10, 2, 1, 4, 3,	6, 5  ;|
+     48	      08 09 0A 02 01 04	03+
+     49	      06 05
+     50	00D6  08 07 0A 09 05 04	04+	  DB  8, 7,10, 9, 5, 4,	4, 9, 4, 6, 2, 5, 5, 2	      ;|
+     51	      09 04 06 02 05 05	02
+     52											      ;|
+     53	00E4  03 05 03 06 03 07	03+	  DB  3, 5, 3, 6, 3, 7,	3, 8, 3, 9, 4, 5, 4, 6,	4, 7  ;|
+     54	      08 03 09 04 05 04	06+
+     55	      04 07
+     56	00F4  04 08 04 09 05 05	05+	  DB  4, 8, 4, 9, 5, 5,	5, 6, 5, 7, 5, 8, 5, 9	      ;|
+     57	      06 05 07 05 08 05	09
+Turbo Assembler	 Version 3.2	    06/15/10 09:13:01	    Page 2
+rand.ASM
+
+
+
+     58											      ;|
+     59	      =007C		     _@RNDmax EQU  $-_@RNDvet				      ;|
+     60	0102  007C		     _@RNDcnt dw  _@RNDmax				      ;|
+     61	0104  0086r		     _@RNDptr dw  _@RNDvet				      ;|
+     62	0106  0086r		     _@RNDadr dw  _@RNDvet				      ;|
+     63				     ;---------------------------------------------------------*
+     64	0108			     dados    ends
+     65
+     66				     ; definicao do segmento de	pilha do programa
+     67	0000			     pilha    segment stack ; permite inicializacao automatica de SS:SP
+     68	0000  80*(????)			      dw     128 dup(?)
+     69	0100			     pilha    ends
+     70
+     71				     ; definicao do segmento de	codigo do programa
+     72	0000			     codigo   segment
+     73	0000			     inicio:  ;	CS e IP	sao inicializados com este endereco
+     74	0000  B8 0000s			      mov    ax,dados ;	inicializa DS
+     75	0003  8E D8			      mov    ds,ax    ;	com endereco do	segmento DADOS
+     76	0005  8E C0			      mov    es,ax    ;	idem em	ES
+     77				     ; fim da carga inicial dos	registradores de segmento
+     78
+     79				     ; a partir	daqui, as instrucoes especificas para cada programa
+     80	0007  E8 004A		     tiro:    call   RAND	  ; obtem coordenada de	linha -	1 byte
+     81	000A  8A C2			      mov    al,dl	  ; coloca coordenada em AL e
+     82	000C  98			      cbw		  ; converte para 16 bits em AX
+     83	000D  F6 36 0085r		      div    dez	  ; separa digitos em AL e AH
+     84	0011  0C 30			      or     al,00110000B ; converte quociente para ASCII
+     85	0013  80 CC 30			      or     ah,00110000B ; converte resto para	ASCII
+     86	0016  A2 0011r			      mov    linha,al	  ; preenche coordenada	de
+     87	0019  88 26 0012r		      mov    linha+1,ah	  ; linha na mensagem
+     88
+     89	001D  E8 0034			      call   RAND	  ; obtem coordenada de	coluna
+     90	0020  8A C2			      mov    al,dl
+     91	0022  98			      cbw		  ; converte para 16 bits em AX
+     92	0023  F6 36 0085r		      div    dez	  ; separa digitos em AL e AH
+     93	0027  0C 30			      or     al,00110000B ; converte quociente para ASCII
+     94	0029  80 CC 30			      or     ah,00110000B ; converte resto para	ASCII
+     95	002C  A2 0014r			      mov    coluna,al	  ; preenche coordenada	de
+     96	002F  88 26 0015r		      mov    coluna+1,ah  ; coluna na mensagem
+     97
+     98				     ; neste exemplo, o	programa exibe uma mensagem na tela usando uma
+     99				     ; chamada do DOS que exibe	desde "mensagem" ate' encontrar	um '$'
+    100	0033  BA 0000r			      lea    dx,mensagem	; endereco da mensagem em DX
+    101	0036  B4 09			      mov    ah,9		; funcao exibir	mensagem no AH
+    102	0038  CD 21			      int    21h		; chamada do DOS
+    103				     ; exibe prompt antes de continuar
+    104	003A  BA 004Cr			      lea    dx,prompt		; endereco da mensagem em DX
+    105	003D  B4 09			      mov    ah,9		; funcao exibir	mensagem no AH
+    106	003F  CD 21			      int    21h		; chamada do DOS
+    107				     ; espera que usuario pressione uma	tecla
+    108	0041  B4 00			      mov    ah,0
+    109	0043  CD 16			      int    16H		; recebe caractere no AL
+    110	0045  3C 54			      cmp    al,'T'
+    111	0047  74 06			      je     terminar
+    112	0049  3C 74			      cmp    al,'t'
+    113	004B  74 02			      je     terminar
+    114	004D  EB B8			      jmp    tiro
+Turbo Assembler	 Version 3.2	    06/15/10 09:13:01	    Page 3
+rand.ASM
+
+
+
+    115				     ; retorno ao DOS com codigo de retorno 0 no AL (fim normal)
+    116	004F			     terminar:
+    117	004F  B8 4C00			      mov    ax,4c00h		; funcao retornar ao DOS no AH
+    118	0052  CD 21			      int    21h		; chamada do DOS
+    119
+    120				     ;---------------------------------------------------------*
+    121				     ; Codigo da funcao	RAND - copiar p/fim segmento 'codigo'  |
+    122				     ;---------------------------------------------------------*
+    123	0054			     RAND     PROC					      ;|
+    124	0054  50			      push   ax					      ;|
+    125	0055  53			      push   bx					      ;|
+    126	0056  8B 1E 0104r		      mov    bx,_@RNDptr			      ;|
+    127	005A  8A 17			      mov    dl,[bx]				      ;|
+    128	005C  43			      inc    bx					      ;|
+    129	005D  FF 0E 0102r		      dec    _@RNDcnt				      ;|
+    130	0061  75 0A			      jnz    naozero				      ;|
+    131	0063  B8 007C			      mov    ax,_@RNDmax			      ;|
+    132	0066  A3 0102r			      mov    _@RNDcnt,ax			      ;|
+    133	0069  8B 1E 0106r		      mov    bx,_@RNDadr			      ;|
+    134	006D  89 1E 0104r	     naozero: mov    _@RNDptr,bx			      ;|
+    135	0071  5B			      pop    bx					      ;|
+    136	0072  58			      pop    ax					      ;|
+    137	0073  C3			      ret					      ;|
+    138	0074			     RAND     ENDP					      ;|
+    139				     ;---------------------------------------------------------*
+    140
+    141	0074			     codigo   ends
+    142
+    143				     ; a diretiva a seguir indica o fim	do codigo fonte	(ultima	linha do arquivo)
+    144				     ; e informa que o programa	deve comecar a execucao	no rotulo "inicio";
+    145					      end    inicio
+Turbo Assembler	 Version 3.2	    06/15/10 09:13:01	    Page 4
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??DATE				  Text	 "06/15/10"
+??FILENAME			  Text	 "rand	  "
+??TIME				  Text	 "09:13:01"
+??VERSION			  Number 0314
+@CPU				  Text	 0101H
+@CURSEG				  Text	 CODIGO
+@FILENAME			  Text	 RAND
+@WORDSIZE			  Text	 2
+COLUNA				  Byte	 DADOS:0014
+CR				  Number 000D
+DEZ				  Byte	 DADOS:0085
+FIMLINHA			  Byte	 DADOS:0049
+INICIO				  Near	 CODIGO:0000
+LF				  Number 000A
+LINHA				  Byte	 DADOS:0011
+MENSAGEM			  Byte	 DADOS:0000
+NAOZERO				  Near	 CODIGO:006D
+PROMPT				  Byte	 DADOS:004C
+RAND				  Near	 CODIGO:0054
+TERMINAR			  Near	 CODIGO:004F
+TIRO				  Near	 CODIGO:0007
+_@RNDADR			  Word	 DADOS:0106
+_@RNDCNT			  Word	 DADOS:0102
+_@RNDMAX			  Number 007C
+_@RNDPTR			  Word	 DADOS:0104
+_@RNDVET			  Byte	 DADOS:0086
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+CODIGO				  16  0074 Para	  none
+DADOS				  16  0108 Para	  none
+PILHA				  16  0100 Para	  Stack
+

@@ -1,0 +1,19 @@
+Titulo: Circuito Inversor c/ transistor MOS
+
+.include cmos7tm.mod
+
+vcc 1 0 10
+v10p 10 0 1
+v90p 90 0 10
+vin 2 0 pulse(0 10 0 0 0 5n 10n)
+
+.subckt  inv  in  out  vcc
+mp1  vcc  in  out  vcc  modp
+mn1  out  in  0  0  modn
+.ends inv
+
+x1 2 3 1 inv
+
+.tran 0.001n 50n
+.print tran v(2) v(3) v(10) v(90)
+.end

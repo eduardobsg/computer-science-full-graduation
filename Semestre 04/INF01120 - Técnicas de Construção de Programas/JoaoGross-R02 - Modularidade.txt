@@ -1,0 +1,123 @@
+Cadeira: INF01120 - Técnicas de Construção de Programas
+Professor: Marcelo Pimenta
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2011/02
+
+Resumo 2 - Modularidade
+
+	No capítulo 3 do livro do Meyer, que trata sobre modularidade, os 
+critérios que mais me chamaram a atenção, e que julguei mais importantes 
+para consagrarem um módulo foram a decomponibilidade, componibilidade e
+continuidade. A decomposição de problemas, chegando a problemas atômicos,
+ajuda muito a resolvê-los, visto que um problema pequeno tem, geralmente,
+uma solução mais evidente e fácil de implementar do que um problema grande
+e complexo. A composição das soluções de todos os pequenos problemas 
+decompostos deixa a aplicação mais organizada, fácil de depurar e de criar
+alterações e a continuidade nos dá margem para editar os módulos de acordo 
+com a evolução do sistema, preservando os demais módulos.
+	Dentre as regras estabelecidas para um software modular, as regras de 
+interface e informações escondidados me chamaram mais a atenção, pois 
+interfaces explícitas, pequenas e em pouca quantidade trazem mais independência
+aos módulos e clareza na forma com que eles se inter relacionam. Módulos com
+apenas algumas propriedades e métodos públicos são mais fáceis de compreender,
+a regra de informações escondidas, além de serem mais seguros, pois o uso das 
+funções fica direto e restrito a apenas às atribuições que o módulo se propõem 
+a resolver. A independência de um módulo, mencionada anteriormente, é um benefício
+à aplicação, pois módulos independentes são mais estáveis por não sofrerem 
+influência de outros módulos, além do que podem ser reusados em outros sistemas
+com facilidade, devido a baixa dependência de outras informações.
+	Por fim, Meyer escreve outros conceitos importantes, chamados de princípios.
+Os princípios de módulo aberto e fechado, bem como de escolha única, são essenciais 
+em um software, pois ele deve estar pronto para o uso, mas também disponível para 
+alterações e cada módulo deve se ater a resolver apenas um tipo de problema, ou seja, 
+o desenvolvedor deve ter apenas uma escolha de módulo para resolver um problema. Isso 
+evita ambiguidade de soluções ou mesmo código redundante.
+	Analisando o texto do Meyer, do referido capítulo, vejo que a modularidade é 
+um fator crucial para que qualquer aplicação seja bem sucedida, tendo como base
+todas as vantagens que o uso de módulos traz. 
+
+
+Tópicos:
+- Modularidade: extensividade + reusabilidade
+- Os módulos devem corretos e estáveis, para que a modularidade
+de fato funcione, pois não adianta extender um módulo, ou reusá-lo
+caso este não seja estável ou correto.
+
+- Características que tornam uma subrotina modular:
+	- Cinco critérios:
+		-> decomponibilidade modular: um método considerado modular deve
+		ajudar a decompor o problema que se quer resolver em problemas 
+		menos complexos e além disso deve ser independente, ou seja, o 
+		restante do trabalho que a aplicação deseja fazer pode prosseguir
+		nos outros módulos.
+			- devemos especificar com clareza todas as dependências entre
+			os módulos.
+			- o problema deve ser decomposto até o seu nível mais baixo, 
+			até chegar o ponto em que a solução desses micro problemas 
+			seja mais direta.
+		-> componibilidade modular: um método deve poder combinar elementos
+		de software livres e uní-los para produzir novos sistemas. Ocorre o 
+		inverso da decomponibilidade modular.
+			- preprocessador: recebe como entrada uma sintaxe e mapeia a
+			saída para uma forma padrão de uma determinada linguagem.
+		-> compreensibilidade modular: um módulo é compreensível se um leiotr
+		humano conseguir entender o módulo sem precisar consultar outros 
+		módulos.
+			- esse critério possui influência direta na etapa de manutenção
+			do software, pois um software bem documentado facilita esse 
+			processo.
+		-> continuidade modular: um método será contínuo caso uma alteração 
+		na especificação irá gerar apenas alterações em um módulo ou em poucos
+		módulos.
+		-> proteção modular: um método é considerado modular se uma situação
+		anormal fica contida em um módulo e não se propaga aos demais módulos.
+
+	- Cinco regras:
+		- há cinco regras que devemos observar para garantir a modularidade
+		-> mapeamento direto: correspondência entre a estrutura da solução e
+		a estrutura do problema.
+		-> poucas interfaces: os módulos devem se comunicar o menos possível 
+		com outros módulos, ou seja, durante a sua execução devem chamar a
+		menor quantidade de módulos.
+			- com poucos interfaces a continuidade é mais garantida, pois uma
+			alteração em um módulo irá gerar pouco impacto sobre outro, devido
+			às poucas conexões entre eles.
+		-> pequenas interfaces: essa regra não se preocupo a com a quantidade de 
+		interfaces, mas com o tamanho elas. Quanto menos parâmetros forem enviados
+		na chamada de um módulo a partir de outro melhor. Isso ajuda na continuidade
+		e também na segurança.
+		-> interfaces explícitas: a interface entre dois módulos deve ser explícita,
+		fazendo com que o leitor ao ver as funções consiga saber que entre elas há uma
+		ligação.
+			- Ex.: dois módulos que lidam com strings de nomes. O primeiro módulo 
+			'carregaNome' carrega uma string com o nome de uma pessoa de um arquivo. O 
+			segundo módulo 'imprimeNome' pega a string carregada e mostra ao usuário na 
+			tela. Fica evidente a relação entre esses dois módulos. Para que seja feito 
+			uma impressão, antes é preciso carregar o nome do arquivo.
+		-> informações escondidas: um módulo é classificado como tendo informações
+		escondidas se o desenvolvedor de um módulo apenas deixa pública algumas propriedades
+		do módulo, porém não todas.
+			- Ex.: é como um iceberg. A ponta é a parte pública, porém a parte não visível 
+			também faz parte do módulo, só que não é apresentada ao usuário.
+			- O uso do módulo deve ser independente do que é feito dentro dele. Ex.: consultar
+			dados de um banco de dados. A query enviada ao SGBD é tratada e o SGBD realiza um
+			procedimento de busca muito diferente, dependendo de como a tabela está armazenada
+			(há diversos tipos de estruturas para representar os dados em tabelas).
+
+	- Cinco princípios:
+		-> unidades sintáticas modulares: devem corresponder a unidades sintáticas na linguagem
+		usada.
+		-> auto-documentação: escrever um código bem organizado e legível. Isso facilita a 
+		compreensão do código, sem a necessidade de grande documentação.
+		-> acesso uniforme: os recursos de um módulo devem ser acessados a partir de uma
+		notação única, os quais independem se são implementados por computação ou por 
+		armazenamento. Evita que o usuário do módulo se preocupe com as escolhas que o próprio
+		módulo fará.
+		-> aberto-fechado: os módulos devem ser fechados, prontos para o uso, e abertos,
+		com possibilidade de extensão / alteração
+		-> single choice: se um programa suporta uma série de alternativas, apenas um módulo
+		deverá saber essa lista. Toda vez que uma alternativa for adicionada ou excluída, 
+		apenas este módulo é alterado, os demais permanecem iguais.
+		
+		

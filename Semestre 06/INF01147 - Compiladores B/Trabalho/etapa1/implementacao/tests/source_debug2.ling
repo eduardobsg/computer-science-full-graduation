@@ -1,0 +1,5 @@
+word bool byte if then else loop input return output
+// MY LINE COMMENT HAS AN int AND a bool
+<= >= == != && ||
+, ; : ( ) [ ] { } + - * / < > = ! & $
+TRUE FALSE

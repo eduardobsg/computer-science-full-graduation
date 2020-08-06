@@ -1,0 +1,26 @@
+
+
+div.oj_literal {
+    background-color : #ffffc0;
+    font-family : 'Courier New';
+  }
+
+
+table.oj_problemtable {
+    width : 75%;
+  }
+
+table.oj_problemtable th {
+    background-color : #ffffc0 ;
+    text-align : center ;
+    border-width : 1px ;
+    border-style : solid ;
+  }
+  
+table.oj_problemtable td {
+    text-align : center ;
+  }
+
+math {
+    font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif, CMSY10, CMEX10, Symbol, Math1, Math2, Math3, Math4, Math5;
+  }

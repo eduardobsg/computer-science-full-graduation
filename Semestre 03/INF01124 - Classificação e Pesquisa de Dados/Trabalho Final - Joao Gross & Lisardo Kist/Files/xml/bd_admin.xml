@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<bd_admin>
+	<admin>
+		<id>1</id>
+		<nome>João Luiz Grave Gross</nome>
+		<usuario>jlggross</usuario>
+		<senha>698d51a19d8a121ce581499d7b701668</senha>
+		<status>1</status>
+	</admin>
+	<admin>
+		<id>2</id>
+		<nome>Lisardo Kist</nome>
+		<usuario>lskist</usuario>
+		<senha>e10adc3949ba59abbe56e057f20f883e</senha>
+		<status>1</status>
+	</admin>
+	<admin>
+		<id>2</id>
+		<nome>Profa. Renata Galante</nome>
+		<usuario>rgalante</usuario>
+		<senha>e10adc3949ba59abbe56e057f20f883e</senha>
+		<status>1</status>
+	</admin>
+</bd_admin>

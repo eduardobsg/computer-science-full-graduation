@@ -1,0 +1,123 @@
+﻿Anotações do Trabalho Ramses:
+
+
+
+- Analisar apenas os endereços de 201 a 246
+
+
+
+- Variáveis:
+          
+	o Constates:
+		
+		c1: 1
+
+                c7: 7
+
+                c8: 8
+
+                c9: 9
+
+		c36: 36
+
+		c201: 201
+
+       o Outros:
+  
+                end_analis: salva endereço que está sendo atualizado (ponto da matriz que receberá o número de bombas que tem na sua volta)
+ 
+                bombas: começa em zero
+
+		cont: inicializado com 36
+
+
+
+- Registradores:
+	
+      A: salva-se os endereços nos quais o entorno está sendo analisado
+	
+      B: salva o somatório da contagem de bombas
+
+      X:
+
+
+
+
+Início do programa:
+		
+	
+	LDR A C36	 
+	STR A CONT //Inicializa cont com c36
+	LDR A C201	
+	STR A END_ANALIS //Inicializa end_analis com c201
+
+
+	do
+	
+	{
+
+		LDR B #0 		//Carrega zero no regB (endereçamento imediato) //1 instrução
+		LDR A END_ANALIS,I 	//CARREGA O CONTEÚDO DO ENREDEÇO QUE ESTÁ EM END_ANALIS NO REGISTRADOR A
+		JN A			//SE CONTEÚDO DO REGISTRA A == NEGATIVO, FAZ:
+		JMP ATUALIZA		//VAI PARA O ENDEREÇO QUE CONTÉM O ENDEREÇO DE RETORNO			
+		JSR SUBROTINA 		//Chama subrotina1 //1 instrução
+
+		STR B END_ANALIS,I	;SALVA A QUANTIDADE DE BOMBAS NO ENDEREÇO CONTIDO EM END_ANALIS
+	ATUALIZA:
+		STR A END_ANALIS 	//Carrega end_analis no regA //1 instrução
+
+		ADD A #1 		//FAZ REGA = REGA + 1
+		STR A END_ANALIS 	//END_ANALIS = END_ANALIS + 1
+		LDR A CONT		//CARREGA CONT NO REGA
+		ADD A #255		//FAZ REGA = REGA - 1
+		STR A CONT		//FAZ CONT = CONT - 1			
+
+
+
+
+		
+	} while (cont != 0); //esse while faz o seguinte: if (cont != 0) goto "reinicia o do-while", caso contrário termina o programa
+
+	termina programa		
+
+     	
+
+subrotina1:
+           	
+	NOP			;LOCAL ONDE SERÁ GUARDADO O ENDEREÇO DE RETORNO
+	LDR A END_ANALIS	;CARREGA END_ANALIS NO REGA
+1:
+	ADD A #1		;FAZ REGA = REGA + 1
+	JN A,I			;REGA TEM UM ENDEREÇO. SE O CONTEÚDO DESSE ENDEREÇO TIVER -1, ENTÃO ALI HÁ UMA BOMBA
+	ADD B #1		;REGB = REGB + 1 -> UMA BOMBA ENCONTRADA
+2:
+	ADD A #6		;FAZ REGA = REGA + 6
+	JN A,I			;REGA TEM UM ENDEREÇO. SE O CONTEÚDO DESSE ENDEREÇO TIVER -1, ENTÃO ALI HÁ UMA BOMBA
+	ADD B #1		;REGB = REGB + 1 -> UMA BOMBA ENCONTRADA
+3:
+	ADD A #1		;FAZ REGA = REGA + 1
+	JN A,I			;REGA TEM UM ENDEREÇO. SE O CONTEÚDO DESSE ENDEREÇO TIVER -1, ENTÃO ALI HÁ UMA BOMBA
+	ADD B #1		;REGB = REGB + 1 -> UMA BOMBA ENCONTRADA
+4:
+	ADD A #1		;FAZ REGA = REGA + 1
+	JN A,I			;REGA TEM UM ENDEREÇO. SE O CONTEÚDO DESSE ENDEREÇO TIVER -1, ENTÃO ALI HÁ UMA BOMBA
+	ADD B #1		;REGB = REGB + 1 -> UMA BOMBA ENCONTRADA
+5;
+	ADD A #246		;FAZ REGA = REGA - 10
+	JN A,I			;REGA TEM UM ENDEREÇO. SE O CONTEÚDO DESSE ENDEREÇO TIVER -1, ENTÃO ALI HÁ UMA BOMBA
+	ADD B #1		;REGB = REGB + 1 -> UMA BOMBA ENCONTRADA
+6:
+	ADD A #250		;FAZ REGA = REGA - 6
+	JN A,I			;REGA TEM UM ENDEREÇO. SE O CONTEÚDO DESSE ENDEREÇO TIVER -1, ENTÃO ALI HÁ UMA BOMBA
+	ADD B #1		;REGB = REGB + 1 -> UMA BOMBA ENCONTRADA
+7:
+	ADD A #255		;FAZ REGA = REGA - 1
+	JN A,I			;REGA TEM UM ENDEREÇO. SE O CONTEÚDO DESSE ENDEREÇO TIVER -1, ENTÃO ALI HÁ UMA BOMBA
+	ADD B #1		;REGB = REGB + 1 -> UMA BOMBA ENCONTRADA
+8:
+	ADD A #255		;FAZ REGA = REGA - 1
+	JN A,I			;REGA TEM UM ENDEREÇO. SE O CONTEÚDO DESSE ENDEREÇO TIVER -1, ENTÃO ALI HÁ UMA BOMBA
+	ADD B #1		;REGB = REGB + 1 -> UMA BOMBA ENCONTRADA
+
+	JMP RETORNA,I		;VAI PARA O ENDEREÇO QUE CONTÉM O ENDEREÇO DE RETORNO
+		

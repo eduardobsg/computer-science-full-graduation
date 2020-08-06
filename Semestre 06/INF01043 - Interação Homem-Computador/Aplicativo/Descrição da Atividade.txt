@@ -1,0 +1,19 @@
+O trabalho é sobre Concepção de Interfaces, cobrindo 3 das 4 
+etapas da concepção: análise contextual; projeto; prototipação 
+(avaliação fica de fora). O trabalho deverá ser apresentado 
+oralmente para a turma: serão 10 minutos de apresentação mais 
+5 para discussão. 
+
+Todos podem perguntar, mas os membros do grupo anterior na ordem 
+de apresentação deverão fazer perguntas aos colegas e serão 
+avaliados pelas perguntas que fizerem (ao primeiro grupo, perguntarão 
+os apresentadores do último trabalho do segundo dia).
+
+Preparem uma apresentação (estilo power point) com slides mostrando 
+cada etapa da concepção da interface de vocês (modelos de usuário, 
+tarefa e contexto, projeto em alto nível da interface [o que será 
+exibido e como], protótipos). Usem figuras, vídeos e/ou demonstrações. 
+
+Entreguem o ppt ou pptx ou pdf da apresentação pelo link que estará 
+disponível abaixo. Não é necessário o envio de relatório adicional, 
+apenas a cópia da apresentação.

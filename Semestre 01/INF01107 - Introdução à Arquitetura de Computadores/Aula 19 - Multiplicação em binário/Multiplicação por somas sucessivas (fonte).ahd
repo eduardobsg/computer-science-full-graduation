@@ -1,0 +1,35 @@
+; 1. Inicio: Pmsb=0, plsb=0, i=mcador
+       LDA Zero
+       STA Pmsb
+       STA plsb
+       LDA mcador
+       JZ  fim
+       STA i
+; 2. Soma multiplicando ao resultado (lsb)
+laco:  LDA plsb
+       ADD mcando
+       STA plsb
+; 3. Se houve carry, incrementa os bits mais significativos do resultado
+       JNC C0
+       LDA Pmsb
+       ADD Um
+       STA Pmsb
+C0:
+; 4. Decrementa contador (i)
+       LDA i
+       SUB Um
+       STA i
+; 5. Se n!=0, voltar para o passo 2
+       JNZ laco
+; Se não, terminar
+fim:   HLT
+
+ORG 128
+Mcando: DB  255
+Mcador: DB    1
+Pmsb:   DB    0
+Plsb:   DB    0
+i:      DB    0
+empty:	DB    0
+Zero:   DB    0
+Um:     DB    1

@@ -1,0 +1,1039 @@
+Project Informationc:\documents and settings\aluno\desktop\ap07\fulladder16bits.rpt
+
+MAX+plus II Compiler Report File
+Version 10.2 07/10/2002
+Compiled: 09/27/2010 12:13:47
+
+Copyright (C) 1988-2002 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+fulladder16bits
+      EPM7064LC68-7        33       17       0      47      14          73 %
+
+User Pins:                 33       17       0  
+
+
+
+Project Informationc:\documents and settings\aluno\desktop\ap07\fulladder16bits.rpt
+
+** FILE HIERARCHY **
+
+
+
+|fulladder4bits:1|
+|fulladder4bits:1|fulladder:1|
+|fulladder4bits:1|fulladder:4|
+|fulladder4bits:1|fulladder:6|
+|fulladder4bits:1|fulladder:5|
+|fulladder4bits:4|
+|fulladder4bits:4|fulladder:1|
+|fulladder4bits:4|fulladder:4|
+|fulladder4bits:4|fulladder:6|
+|fulladder4bits:4|fulladder:5|
+|fulladder4bits:2|
+|fulladder4bits:2|fulladder:1|
+|fulladder4bits:2|fulladder:4|
+|fulladder4bits:2|fulladder:6|
+|fulladder4bits:2|fulladder:5|
+|fulladder4bits:3|
+|fulladder4bits:3|fulladder:1|
+|fulladder4bits:3|fulladder:4|
+|fulladder4bits:3|fulladder:6|
+|fulladder4bits:3|fulladder:5|
+
+
+Device-Specific Information:c:\documents and settings\aluno\desktop\ap07\fulladder16bits.rpt
+fulladder16bits
+
+***** Logic for device 'fulladder16bits' compiled without errors.
+
+
+
+
+Device: EPM7064LC68-7
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+    MultiVolt I/O                              = OFF
+
+
+
+Device-Specific Information:c:\documents and settings\aluno\desktop\ap07\fulladder16bits.rpt
+fulladder16bits
+
+** ERROR SUMMARY **
+
+Info: Chip 'fulladder16bits' in device 'EPM7064LC68-7' has less than 20% of pins available for future logic changes -- if your project is likely to change, Altera recommends using a larger device
+                                                                 
+                                                                 
+                                V                                
+                                C                       V        
+                                C                       C        
+                 C  B  G        I  B  A  G  B  G        C  B  A  
+              A  i  1  N  B  B  N  1  1  N  1  N  A  A  I  1  1  
+              3  n  5  D  5  6  T  1  2  D  4  D  8  7  O  2  5  
+            -----------------------------------------------------_ 
+          /   9  8  7  6  5  4  3  2  1 68 67 66 65 64 63 62 61   | 
+      A2 | 10                                                  60 | A14 
+   VCCIO | 11                                                  59 | A5 
+      A1 | 12                                                  58 | GND 
+      B3 | 13                                                  57 | A13 
+      B0 | 14                                                  56 | RESERVED 
+      B1 | 15                                                  55 | B10 
+     GND | 16                                                  54 | B9 
+      B2 | 17                                                  53 | VCCIO 
+      A0 | 18                  EPM7064LC68-7                   52 | A6 
+      A9 | 19                                                  51 | A10 
+    Cout | 20                                                  50 | S3 
+   VCCIO | 21                                                  49 | B8 
+      S6 | 22                                                  48 | GND 
+      S7 | 23                                                  47 | B7 
+      S8 | 24                                                  46 | A4 
+     B13 | 25                                                  45 | S10 
+     GND | 26                                                  44 | S11 
+         |_  27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43  _| 
+           ------------------------------------------------------ 
+              S  S  S  S  V  S  S  G  V  S  B  G  S  A  S  S  V  
+              9  1  1  0  C  1  2  N  C  4  4  N  5  1  1  1  C  
+                 4  5     C        D  C        D     1  3  2  C  
+                          I           I                       I  
+                          O           N                       O  
+                                      T                          
+                                                                 
+                                                                 
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+
+
+Device-Specific Information:c:\documents and settings\aluno\desktop\ap07\fulladder16bits.rpt
+fulladder16bits
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16     0/16(  0%)  12/12(100%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32    16/16(100%)  12/12(100%)  15/16( 93%)  26/36( 72%) 
+C:    LC33 - LC48    15/16( 93%)  12/12(100%)  14/16( 87%)  31/36( 86%) 
+D:    LC49 - LC64    16/16(100%)  11/12( 91%)  16/16(100%)  15/36( 41%) 
+
+
+Total dedicated input pins used:                 3/4      ( 75%)
+Total I/O pins used:                            47/48     ( 97%)
+Total logic cells used:                         47/64     ( 73%)
+Total shareable expanders used:                 14/64     ( 21%)
+Total Turbo logic cells used:                   47/64     ( 73%)
+Total shareable expanders not available (n/a):  31/64     ( 48%)
+Average fan-in:                                  5.48
+Total fan-in:                                   258
+
+Total input pins required:                      33
+Total output pins required:                     17
+Total bidirectional pins required:               0
+Total logic cells required:                     47
+Total flipflops required:                        0
+Total product terms required:                  204
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:          14
+
+Synthesized logic cells:                        30/  64   ( 46%)
+
+
+
+Device-Specific Information:c:\documents and settings\aluno\desktop\ap07\fulladder16bits.rpt
+fulladder16bits
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  18    (1)  (A)      INPUT               0      0   0    0    0    2   15  A0
+  12    (8)  (A)      INPUT               0      0   0    0    0    1   16  A1
+  10    (9)  (A)      INPUT               0      0   0    0    0    0   15  A2
+   9   (11)  (A)      INPUT               0      0   0    0    0    2   10  A3
+  46   (44)  (C)      INPUT               0      0   0    0    0    1    3  A4
+  59   (57)  (D)      INPUT               0      0   0    0    0    1    1  A5
+  52   (51)  (D)      INPUT               0      0   0    0    0    1    3  A6
+  64   (62)  (D)      INPUT               0      0   0    0    0    1    2  A7
+  65   (64)  (D)      INPUT               0      0   0    0    0    2    2  A8
+  19   (32)  (B)      INPUT               0      0   0    0    0    1    1  A9
+  51   (49)  (D)      INPUT               0      0   0    0    0    1    3  A10
+  40   (37)  (C)      INPUT               0      0   0    0    0    1    2  A11
+   1      -   -       INPUT               0      0   0    0    0    2    2  A12
+  57   (56)  (D)      INPUT               0      0   0    0    0    1    1  A13
+  60   (59)  (D)      INPUT               0      0   0    0    0    2    1  A14
+  61   (60)  (D)      INPUT               0      0   0    0    0    2    0  A15
+  14    (5)  (A)      INPUT               0      0   0    0    0    2   14  B0
+  15    (4)  (A)      INPUT               0      0   0    0    0    1   16  B1
+  17    (3)  (A)      INPUT               0      0   0    0    0    0   13  B2
+  13    (6)  (A)      INPUT               0      0   0    0    0    2    9  B3
+  37   (35)  (C)      INPUT               0      0   0    0    0    1    3  B4
+   5   (14)  (A)      INPUT               0      0   0    0    0    1    1  B5
+   4   (16)  (A)      INPUT               0      0   0    0    0    1    3  B6
+  47   (45)  (C)      INPUT               0      0   0    0    0    1    2  B7
+  49   (46)  (C)      INPUT               0      0   0    0    0    2    2  B8
+  54   (52)  (D)      INPUT               0      0   0    0    0    1    1  B9
+  55   (53)  (D)      INPUT               0      0   0    0    0    1    3  B10
+   2      -   -       INPUT               0      0   0    0    0    1    2  B11
+  62   (61)  (D)      INPUT               0      0   0    0    0    2    2  B12
+  25   (25)  (B)      INPUT               0      0   0    0    0    1    1  B13
+  67      -   -       INPUT               0      0   0    0    0    2    1  B14
+   7   (13)  (A)      INPUT               0      0   0    0    0    2    0  B15
+   8   (12)  (A)      INPUT               0      0   0    0    0    2   15  Cin
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:c:\documents and settings\aluno\desktop\ap07\fulladder16bits.rpt
+fulladder16bits
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  20     30    B     OUTPUT      t        1      0   1    4    2    0    0  Cout
+  30     20    B     OUTPUT      t        0      0   0    3    0    0    0  S0
+  32     19    B     OUTPUT      t        3      0   1    5    0    0    0  S1
+  33     17    B     OUTPUT      t        0      0   0    0    3    0    0  S2
+  50     48    C     OUTPUT      t        2      0   0    2    3    0    0  S3
+  36     33    C     OUTPUT      t        1      0   0    2    7    0    0  S4
+  39     36    C     OUTPUT      t        1      0   1    4    1    0    0  S5
+  22     29    B     OUTPUT      t        0      0   0    0    2    0    0  S6
+  23     28    B     OUTPUT      t        2      1   1    4    2    0    0  S7
+  24     27    B     OUTPUT      t        2      0   0    2    1    0    0  S8
+  27     24    B     OUTPUT      t        1      0   1    4    1    0    0  S9
+  45     43    C     OUTPUT      t        0      0   0    0    2    0    0  S10
+  44     41    C     OUTPUT      t        2      1   1    4    2    0    0  S11
+  42     40    C     OUTPUT      t        2      0   0    2    1    0    0  S12
+  41     38    C     OUTPUT      t        1      0   1    4    1    0    0  S13
+  28     22    B     OUTPUT      t        0      0   0    0    2    0    0  S14
+  29     21    B     OUTPUT      t        2      0   1    4    2    0    0  S15
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:c:\documents and settings\aluno\desktop\ap07\fulladder16bits.rpt
+fulladder16bits
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+   -     55    D       SOFT    s t        1      0   1    6    0    1    0  |fulladder4bits:1|fulladder:4|S~1 (|fulladder4bits:1|fulladder:4|~5~1)
+ (65)    64    D       SOFT    s t        1      0   1    7    0    1    0  |fulladder4bits:1|fulladder:4|S~2 (|fulladder4bits:1|fulladder:4|~5~2)
+ (51)    49    D       SOFT    s t        1      0   1    7    0    1    0  |fulladder4bits:1|fulladder:4|S~3 (|fulladder4bits:1|fulladder:4|~5~3)
+   -     50    D       SOFT    s t        1      0   1    5    0    1    0  |fulladder4bits:1|fulladder:6|S~1 (|fulladder4bits:1|fulladder:6|~5~1)
+ (19)    32    B       SOFT    s t        0      0   0    4    0    1    0  |fulladder4bits:1|fulladder:6|S~2 (|fulladder4bits:1|fulladder:6|~5~2)
+ (46)    44    C       SOFT    s t        0      0   0    2    0    1    0  |fulladder4bits:1|fulladder:6|S~3 (|fulladder4bits:1|fulladder:6|~5~3)
+   -     31    B       SOFT    s t        3      1   1    6    2    1    1  |fulladder4bits:2|fulladder:1|~1~1
+   -     26    B       SOFT    s t        1      0   1    4    2    1    0  |fulladder4bits:2|fulladder:1|S~1 (|fulladder4bits:2|fulladder:1|~5~1)
+   -     23    B       SOFT    s t        1      0   1    4    1    2    2  |fulladder4bits:2|fulladder:5|~3~1
+   -     34    C       SOFT    s t        0      0   0    2    0    2    2  |fulladder4bits:2|fulladder:6|~4~1
+ (49)    46    C       SOFT    s t        3      1   1    6    2    1    1  |fulladder4bits:3|fulladder:1|~1~1
+   -     39    C       SOFT    s t        1      0   1    4    2    1    0  |fulladder4bits:3|fulladder:1|S~1 (|fulladder4bits:3|fulladder:1|~5~1)
+   -     47    C       SOFT    s t        1      0   1    4    1    3    0  |fulladder4bits:3|fulladder:5|~3~1
+   -     18    B       SOFT    s t        0      0   0    2    0    3    0  |fulladder4bits:3|fulladder:6|~4~1
+   -     63    D       SOFT    s t        1      0   1    7    6    1    1  |fulladder4bits:4|fulladder:1|~1~1
+ (57)    56    D       SOFT    s t        1      0   1    8    0    0    1  |fulladder4bits:4|fulladder:1|~1~2
+ (56)    54    D       SOFT    s t        1      0   1    9    0    0    1  |fulladder4bits:4|fulladder:1|~1~3
+ (55)    53    D       SOFT    s t        1      0   1    8    0    0    1  |fulladder4bits:4|fulladder:1|~1~4
+ (54)    52    D       SOFT    s t        1      0   1    7    0    0    1  |fulladder4bits:4|fulladder:1|~1~5
+ (52)    51    D       SOFT    s t        1      0   1    6    0    0    1  |fulladder4bits:4|fulladder:1|~1~6
+   -     42    C       SOFT    s t        0      0   0    6    0    0    1  |fulladder4bits:4|fulladder:1|~1~7
+ (60)    59    D       SOFT    s t        1      0   1    7    0    1    0  |fulladder4bits:4|fulladder:1|S~1 (|fulladder4bits:4|fulladder:1|~5~1)
+   -     58    D       SOFT    s t        1      0   1    8    0    1    0  |fulladder4bits:4|fulladder:1|S~2 (|fulladder4bits:4|fulladder:1|~5~2)
+ (64)    62    D       SOFT    s t        1      0   1    7    0    1    0  |fulladder4bits:4|fulladder:1|S~3 (|fulladder4bits:4|fulladder:1|~5~3)
+ (61)    60    D       SOFT    s t        1      0   1    7    0    1    0  |fulladder4bits:4|fulladder:1|S~4 (|fulladder4bits:4|fulladder:1|~5~4)
+ (59)    57    D       SOFT    s t        1      0   1    8    0    1    0  |fulladder4bits:4|fulladder:1|S~5 (|fulladder4bits:4|fulladder:1|~5~5)
+ (62)    61    D       SOFT    s t        1      0   1    6    0    1    0  |fulladder4bits:4|fulladder:1|S~6 (|fulladder4bits:4|fulladder:1|~5~6)
+ (40)    37    C       SOFT    s t        0      0   0    2    0    1    0  |fulladder4bits:4|fulladder:1|S~7 (|fulladder4bits:4|fulladder:1|~5~7)
+ (37)    35    C       SOFT    s t        1      0   1    4    1    2    2  |fulladder4bits:4|fulladder:5|~3~1
+ (25)    25    B       SOFT    s t        0      0   0    2    0    2    2  |fulladder4bits:4|fulladder:6|~4~1
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:c:\documents and settings\aluno\desktop\ap07\fulladder16bits.rpt
+fulladder16bits
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+                                         Logic cells placed in LAB 'B'
+        +------------------------------- LC30 Cout
+        | +----------------------------- LC32 |fulladder4bits:1|fulladder:6|S~2
+        | | +--------------------------- LC31 |fulladder4bits:2|fulladder:1|~1~1
+        | | | +------------------------- LC26 |fulladder4bits:2|fulladder:1|S~1
+        | | | | +----------------------- LC23 |fulladder4bits:2|fulladder:5|~3~1
+        | | | | | +--------------------- LC18 |fulladder4bits:3|fulladder:6|~4~1
+        | | | | | | +------------------- LC25 |fulladder4bits:4|fulladder:6|~4~1
+        | | | | | | | +----------------- LC20 S0
+        | | | | | | | | +--------------- LC19 S1
+        | | | | | | | | | +------------- LC17 S2
+        | | | | | | | | | | +----------- LC29 S6
+        | | | | | | | | | | | +--------- LC28 S7
+        | | | | | | | | | | | | +------- LC27 S8
+        | | | | | | | | | | | | | +----- LC24 S9
+        | | | | | | | | | | | | | | +--- LC22 S14
+        | | | | | | | | | | | | | | | +- LC21 S15
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'B'
+LC      | | | | | | | | | | | | | | | | | A B C D |     Logic cells that feed LAB 'B':
+LC32 -> - - - - - - - - - * - - - - - - | - * - - | <-- |fulladder4bits:1|fulladder:6|S~2
+LC31 -> - - - - * - - - - - - - - * - - | - * - - | <-- |fulladder4bits:2|fulladder:1|~1~1
+LC26 -> - - - - - - - - - - - - * - - - | - * - - | <-- |fulladder4bits:2|fulladder:1|S~1
+LC18 -> * - - - - - - - - - - - - - * * | - * - - | <-- |fulladder4bits:3|fulladder:6|~4~1
+LC25 -> - - * * - - - - - - * * - - - - | - * - - | <-- |fulladder4bits:4|fulladder:6|~4~1
+
+Pin
+18   -> - * - - - - - * * - - - - - - - | - * - * | <-- A0
+12   -> - * - - - - - - * - - - - - - - | - * - * | <-- A1
+52   -> - - * * - - * - - - - * - - - - | - * - - | <-- A6
+64   -> - - * * - - - - - - - * - - - - | - * - - | <-- A7
+65   -> - - * - * - - - - - - - * * - - | - * - - | <-- A8
+19   -> - - - - * - - - - - - - - * - - | - * - - | <-- A9
+1    -> - - - - - - - - - - - - - - - - | - - * - | <-- A12
+60   -> * - - - - * - - - - - - - - - * | - * - - | <-- A14
+61   -> * - - - - - - - - - - - - - - * | - * - - | <-- A15
+14   -> - - - - - - - * * - - - - - - - | - * - * | <-- B0
+15   -> - * - - - - - - * - - - - - - - | - * - * | <-- B1
+4    -> - - * * - - * - - - - * - - - - | - * - - | <-- B6
+47   -> - - * * - - - - - - - * - - - - | - * - - | <-- B7
+49   -> - - * - * - - - - - - - * * - - | - * - - | <-- B8
+54   -> - - - - * - - - - - - - - * - - | - * - - | <-- B9
+2    -> - - - - - - - - - - - - - - - - | - - * - | <-- B11
+67   -> * - - - - * - - - - - - - - - * | - * - - | <-- B14
+7    -> * - - - - - - - - - - - - - - * | - * - - | <-- B15
+8    -> - * - - - - - * * - - - - - - - | - * - * | <-- Cin
+LC50 -> - - - - - - - - - * - - - - - - | - * - - | <-- |fulladder4bits:1|fulladder:6|S~1
+LC44 -> - - - - - - - - - * - - - - - - | - * - - | <-- |fulladder4bits:1|fulladder:6|S~3
+LC47 -> * - - - - - - - - - - - - - * * | - * - - | <-- |fulladder4bits:3|fulladder:5|~3~1
+LC35 -> - - * * - - - - - - * * - - - - | - * - - | <-- |fulladder4bits:4|fulladder:5|~3~1
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:c:\documents and settings\aluno\desktop\ap07\fulladder16bits.rpt
+fulladder16bits
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'C':
+
+                                       Logic cells placed in LAB 'C'
+        +----------------------------- LC44 |fulladder4bits:1|fulladder:6|S~3
+        | +--------------------------- LC34 |fulladder4bits:2|fulladder:6|~4~1
+        | | +------------------------- LC46 |fulladder4bits:3|fulladder:1|~1~1
+        | | | +----------------------- LC39 |fulladder4bits:3|fulladder:1|S~1
+        | | | | +--------------------- LC47 |fulladder4bits:3|fulladder:5|~3~1
+        | | | | | +------------------- LC42 |fulladder4bits:4|fulladder:1|~1~7
+        | | | | | | +----------------- LC37 |fulladder4bits:4|fulladder:1|S~7
+        | | | | | | | +--------------- LC35 |fulladder4bits:4|fulladder:5|~3~1
+        | | | | | | | | +------------- LC48 S3
+        | | | | | | | | | +----------- LC33 S4
+        | | | | | | | | | | +--------- LC36 S5
+        | | | | | | | | | | | +------- LC43 S10
+        | | | | | | | | | | | | +----- LC41 S11
+        | | | | | | | | | | | | | +--- LC40 S12
+        | | | | | | | | | | | | | | +- LC38 S13
+        | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | |   that feed LAB 'C'
+LC      | | | | | | | | | | | | | | | | A B C D |     Logic cells that feed LAB 'C':
+LC34 -> - - * * - - - - - - - * * - - | - - * - | <-- |fulladder4bits:2|fulladder:6|~4~1
+LC46 -> - - - - * - - - - - - - - - * | - - * - | <-- |fulladder4bits:3|fulladder:1|~1~1
+LC39 -> - - - - - - - - - - - - - * - | - - * - | <-- |fulladder4bits:3|fulladder:1|S~1
+LC37 -> - - - - - - - - - * - - - - - | - - * - | <-- |fulladder4bits:4|fulladder:1|S~7
+
+Pin
+10   -> * - - - - * - - - - - - - - - | - - * * | <-- A2
+9    -> - - - - - * - - * * - - - - - | - - * * | <-- A3
+46   -> - - - - - * * * - - * - - - - | - - * - | <-- A4
+59   -> - - - - - - - * - - * - - - - | - - * - | <-- A5
+51   -> - * * * - - - - - - - - * - - | - - * - | <-- A10
+40   -> - - * * - - - - - - - - * - - | - - * - | <-- A11
+1    -> - - * - * - - - - - - - - * * | - - * - | <-- A12
+57   -> - - - - * - - - - - - - - - * | - - * - | <-- A13
+17   -> * - - - - * - - - - - - - - - | - - * * | <-- B2
+13   -> - - - - - * - - * * - - - - - | - - * * | <-- B3
+37   -> - - - - - * * * - - * - - - - | - - * - | <-- B4
+5    -> - - - - - - - * - - * - - - - | - - * - | <-- B5
+55   -> - * * * - - - - - - - - * - - | - - * - | <-- B10
+2    -> - - * * - - - - - - - - * - - | - - * - | <-- B11
+62   -> - - * - * - - - - - - - - * * | - - * - | <-- B12
+25   -> - - - - * - - - - - - - - - * | - - * - | <-- B13
+67   -> - - - - - - - - - - - - - - - | - * - - | <-- B14
+LC55 -> - - - - - - - - * - - - - - - | - - * - | <-- |fulladder4bits:1|fulladder:4|S~1
+LC64 -> - - - - - - - - * - - - - - - | - - * - | <-- |fulladder4bits:1|fulladder:4|S~2
+LC49 -> - - - - - - - - * - - - - - - | - - * - | <-- |fulladder4bits:1|fulladder:4|S~3
+LC23 -> - - * * - - - - - - - * * - - | - - * - | <-- |fulladder4bits:2|fulladder:5|~3~1
+LC63 -> - - - - - - - * - - * - - - - | - - * - | <-- |fulladder4bits:4|fulladder:1|~1~1
+LC59 -> - - - - - - - - - * - - - - - | - - * - | <-- |fulladder4bits:4|fulladder:1|S~1
+LC58 -> - - - - - - - - - * - - - - - | - - * - | <-- |fulladder4bits:4|fulladder:1|S~2
+LC62 -> - - - - - - - - - * - - - - - | - - * - | <-- |fulladder4bits:4|fulladder:1|S~3
+LC60 -> - - - - - - - - - * - - - - - | - - * - | <-- |fulladder4bits:4|fulladder:1|S~4
+LC57 -> - - - - - - - - - * - - - - - | - - * - | <-- |fulladder4bits:4|fulladder:1|S~5
+LC61 -> - - - - - - - - - * - - - - - | - - * - | <-- |fulladder4bits:4|fulladder:1|S~6
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:c:\documents and settings\aluno\desktop\ap07\fulladder16bits.rpt
+fulladder16bits
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'D':
+
+                                         Logic cells placed in LAB 'D'
+        +------------------------------- LC55 |fulladder4bits:1|fulladder:4|S~1
+        | +----------------------------- LC64 |fulladder4bits:1|fulladder:4|S~2
+        | | +--------------------------- LC49 |fulladder4bits:1|fulladder:4|S~3
+        | | | +------------------------- LC50 |fulladder4bits:1|fulladder:6|S~1
+        | | | | +----------------------- LC63 |fulladder4bits:4|fulladder:1|~1~1
+        | | | | | +--------------------- LC56 |fulladder4bits:4|fulladder:1|~1~2
+        | | | | | | +------------------- LC54 |fulladder4bits:4|fulladder:1|~1~3
+        | | | | | | | +----------------- LC53 |fulladder4bits:4|fulladder:1|~1~4
+        | | | | | | | | +--------------- LC52 |fulladder4bits:4|fulladder:1|~1~5
+        | | | | | | | | | +------------- LC51 |fulladder4bits:4|fulladder:1|~1~6
+        | | | | | | | | | | +----------- LC59 |fulladder4bits:4|fulladder:1|S~1
+        | | | | | | | | | | | +--------- LC58 |fulladder4bits:4|fulladder:1|S~2
+        | | | | | | | | | | | | +------- LC62 |fulladder4bits:4|fulladder:1|S~3
+        | | | | | | | | | | | | | +----- LC60 |fulladder4bits:4|fulladder:1|S~4
+        | | | | | | | | | | | | | | +--- LC57 |fulladder4bits:4|fulladder:1|S~5
+        | | | | | | | | | | | | | | | +- LC61 |fulladder4bits:4|fulladder:1|S~6
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'D'
+LC      | | | | | | | | | | | | | | | | | A B C D |     Logic cells that feed LAB 'D':
+LC56 -> - - - - * - - - - - - - - - - - | - - - * | <-- |fulladder4bits:4|fulladder:1|~1~2
+LC54 -> - - - - * - - - - - - - - - - - | - - - * | <-- |fulladder4bits:4|fulladder:1|~1~3
+LC53 -> - - - - * - - - - - - - - - - - | - - - * | <-- |fulladder4bits:4|fulladder:1|~1~4
+LC52 -> - - - - * - - - - - - - - - - - | - - - * | <-- |fulladder4bits:4|fulladder:1|~1~5
+LC51 -> - - - - * - - - - - - - - - - - | - - - * | <-- |fulladder4bits:4|fulladder:1|~1~6
+
+Pin
+18   -> * * * * * * * * * - * * * * * - | - * - * | <-- A0
+12   -> * * * * * * * * * * * * * - * * | - * - * | <-- A1
+10   -> * * * - * * * * - * * * - * * * | - - * * | <-- A2
+9    -> - - - - * * * - - * * * * - * * | - - * * | <-- A3
+1    -> - - - - - - - - - - - - - - - - | - - * - | <-- A12
+14   -> * * * * * * * * * - * * * * * - | - * - * | <-- B0
+15   -> * * * * * * * * * * * * - * * * | - * - * | <-- B1
+17   -> - * * - - * * * * * - * * * - * | - - * * | <-- B2
+13   -> - - - - - - * * * * - - * * * * | - - * * | <-- B3
+2    -> - - - - - - - - - - - - - - - - | - - * - | <-- B11
+67   -> - - - - - - - - - - - - - - - - | - * - - | <-- B14
+8    -> * * * * * * * * * - * * * * * - | - * - * | <-- Cin
+LC42 -> - - - - * - - - - - - - - - - - | - - - * | <-- |fulladder4bits:4|fulladder:1|~1~7
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:c:\documents and settings\aluno\desktop\ap07\fulladder16bits.rpt
+fulladder16bits
+
+** EQUATIONS **
+
+A0       : INPUT;
+A1       : INPUT;
+A2       : INPUT;
+A3       : INPUT;
+A4       : INPUT;
+A5       : INPUT;
+A6       : INPUT;
+A7       : INPUT;
+A8       : INPUT;
+A9       : INPUT;
+A10      : INPUT;
+A11      : INPUT;
+A12      : INPUT;
+A13      : INPUT;
+A14      : INPUT;
+A15      : INPUT;
+B0       : INPUT;
+B1       : INPUT;
+B2       : INPUT;
+B3       : INPUT;
+B4       : INPUT;
+B5       : INPUT;
+B6       : INPUT;
+B7       : INPUT;
+B8       : INPUT;
+B9       : INPUT;
+B10      : INPUT;
+B11      : INPUT;
+B12      : INPUT;
+B13      : INPUT;
+B14      : INPUT;
+B15      : INPUT;
+Cin      : INPUT;
+
+-- Node name is 'Cout' 
+-- Equation name is 'Cout', location is LC030, type is output.
+ Cout    = LCELL( _EQ001 $  GND);
+  _EQ001 =  A14 &  A15 &  B14 & !B15
+         #  A15 & !B15 &  _LC018 &  _LC047
+         #  A14 & !A15 &  B14 &  B15
+         # !A15 &  B15 &  _LC018 &  _LC047
+         #  A15 &  B15;
+
+-- Node name is 'S0' 
+-- Equation name is 'S0', location is LC020, type is output.
+ S0      = LCELL( _EQ002 $  Cin);
+  _EQ002 =  A0 & !B0
+         # !A0 &  B0;
+
+-- Node name is 'S1' 
+-- Equation name is 'S1', location is LC019, type is output.
+ S1      = LCELL( _EQ003 $  A1);
+  _EQ003 =  A0 & !B1 &  Cin
+         #  B0 & !B1 &  _X001
+         # !A0 &  B1 &  _X002
+         # !B0 &  B1 & !Cin;
+  _X001  = EXP(!A0 & !Cin);
+  _X002  = EXP( B0 &  Cin);
+
+-- Node name is 'S2' 
+-- Equation name is 'S2', location is LC017, type is output.
+ S2      = LCELL(!_LC044 $  _EQ004);
+  _EQ004 = !_LC032 & !_LC050;
+
+-- Node name is 'S3' 
+-- Equation name is 'S3', location is LC048, type is output.
+ S3      = LCELL( _EQ005 $  _EQ006);
+  _EQ005 =  _X003 &  _X004;
+  _X003  = EXP(!A3 &  B3);
+  _X004  = EXP( A3 & !B3);
+  _EQ006 = !_LC049 & !_LC055 & !_LC064;
+
+-- Node name is 'S4' 
+-- Equation name is 'S4', location is LC033, type is output.
+ S4      = LCELL(!_LC037 $  _EQ007);
+  _EQ007 = !_LC057 & !_LC058 & !_LC059 & !_LC060 & !_LC061 & !_LC062 &  _X005;
+  _X005  = EXP( A3 &  B3);
+
+-- Node name is 'S5' 
+-- Equation name is 'S5', location is LC036, type is output.
+ S5      = LCELL( _EQ008 $  A5);
+  _EQ008 =  A4 &  B4 & !B5
+         # !A4 &  B5 & !_LC063
+         # !B4 &  B5 & !_LC063
+         # !B5 &  _LC063;
+
+-- Node name is 'S6' 
+-- Equation name is 'S6', location is LC029, type is output.
+ S6      = LCELL( _LC025 $  _LC035);
+
+-- Node name is 'S7' 
+-- Equation name is 'S7', location is LC028, type is output.
+ S7      = LCELL( _EQ009 $  A7);
+  _EQ009 = !B7 &  _LC025 &  _LC035
+         #  A6 &  B6 & !B7
+         #  B7 & !_LC025 &  _X006
+         #  B7 & !_LC035 &  _X006;
+  _X006  = EXP( A6 &  B6);
+
+-- Node name is 'S8' 
+-- Equation name is 'S8', location is LC027, type is output.
+ S8      = LCELL( _EQ010 $ !_LC026);
+  _EQ010 =  _X007 &  _X008;
+  _X007  = EXP(!A8 &  B8);
+  _X008  = EXP( A8 & !B8);
+
+-- Node name is 'S9' 
+-- Equation name is 'S9', location is LC024, type is output.
+ S9      = LCELL( _EQ011 $  A9);
+  _EQ011 =  A8 &  B8 & !B9
+         # !A8 &  B9 & !_LC031
+         # !B8 &  B9 & !_LC031
+         # !B9 &  _LC031;
+
+-- Node name is 'S10' 
+-- Equation name is 'S10', location is LC043, type is output.
+ S10     = LCELL( _LC034 $  _LC023);
+
+-- Node name is 'S11' 
+-- Equation name is 'S11', location is LC041, type is output.
+ S11     = LCELL( _EQ012 $  A11);
+  _EQ012 = !B11 &  _LC023 &  _LC034
+         #  A10 &  B10 & !B11
+         #  B11 & !_LC034 &  _X009
+         #  B11 & !_LC023 &  _X009;
+  _X009  = EXP( A10 &  B10);
+
+-- Node name is 'S12' 
+-- Equation name is 'S12', location is LC040, type is output.
+ S12     = LCELL( _EQ013 $ !_LC039);
+  _EQ013 =  _X010 &  _X011;
+  _X010  = EXP(!A12 &  B12);
+  _X011  = EXP( A12 & !B12);
+
+-- Node name is 'S13' 
+-- Equation name is 'S13', location is LC038, type is output.
+ S13     = LCELL( _EQ014 $  A13);
+  _EQ014 =  A12 &  B12 & !B13
+         # !A12 &  B13 & !_LC046
+         # !B12 &  B13 & !_LC046
+         # !B13 &  _LC046;
+
+-- Node name is 'S14' 
+-- Equation name is 'S14', location is LC022, type is output.
+ S14     = LCELL( _LC018 $  _LC047);
+
+-- Node name is 'S15' 
+-- Equation name is 'S15', location is LC021, type is output.
+ S15     = LCELL( _EQ015 $  A15);
+  _EQ015 = !B15 &  _LC018 &  _LC047
+         #  A14 &  B14 & !B15
+         #  B15 & !_LC018 &  _X012
+         #  B15 & !_LC047 &  _X012;
+  _X012  = EXP( A14 &  B14);
+
+-- Node name is '|fulladder4bits:1|fulladder:4|~5~1' = '|fulladder4bits:1|fulladder:4|S~1' 
+-- Equation name is '_LC055', type is buried 
+-- synthesized logic cell 
+_LC055   = LCELL( _EQ016 $  GND);
+  _EQ016 =  A0 &  A1 &  A2 &  Cin
+         #  A1 &  A2 &  B0 &  Cin
+         #  A0 &  A1 &  A2 &  B0
+         #  A0 &  A2 &  B0 &  B1
+         #  A2 &  B0 &  B1 &  Cin;
+
+-- Node name is '|fulladder4bits:1|fulladder:4|~5~2' = '|fulladder4bits:1|fulladder:4|S~2' 
+-- Equation name is '_LC064', type is buried 
+-- synthesized logic cell 
+_LC064   = LCELL( _EQ017 $  GND);
+  _EQ017 =  A0 &  A2 &  B1 &  Cin
+         #  A0 &  B1 &  B2 &  Cin
+         #  B0 &  B1 &  B2 &  Cin
+         #  A0 &  B0 &  B1 &  B2
+         #  A0 &  A1 &  B0 &  B2;
+
+-- Node name is '|fulladder4bits:1|fulladder:4|~5~3' = '|fulladder4bits:1|fulladder:4|S~3' 
+-- Equation name is '_LC049', type is buried 
+-- synthesized logic cell 
+_LC049   = LCELL( _EQ018 $  GND);
+  _EQ018 =  A1 &  B0 &  B2 &  Cin
+         #  A0 &  A1 &  B2 &  Cin
+         #  A1 &  A2 &  B1
+         #  A1 &  B1 &  B2
+         #  A2 &  B2;
+
+-- Node name is '|fulladder4bits:1|fulladder:6|~5~1' = '|fulladder4bits:1|fulladder:6|S~1' 
+-- Equation name is '_LC050', type is buried 
+-- synthesized logic cell 
+_LC050   = LCELL( _EQ019 $  GND);
+  _EQ019 =  A0 &  A1 &  Cin
+         #  A1 &  B0 &  Cin
+         #  A0 &  A1 &  B0
+         #  A0 &  B0 &  B1
+         #  B0 &  B1 &  Cin;
+
+-- Node name is '|fulladder4bits:1|fulladder:6|~5~2' = '|fulladder4bits:1|fulladder:6|S~2' 
+-- Equation name is '_LC032', type is buried 
+-- synthesized logic cell 
+_LC032   = LCELL( _EQ020 $  GND);
+  _EQ020 =  A0 &  B1 &  Cin
+         #  A1 &  B1;
+
+-- Node name is '|fulladder4bits:1|fulladder:6|~5~3' = '|fulladder4bits:1|fulladder:6|S~3' 
+-- Equation name is '_LC044', type is buried 
+-- synthesized logic cell 
+_LC044   = LCELL( _EQ021 $  GND);
+  _EQ021 =  A2 & !B2
+         # !A2 &  B2;
+
+-- Node name is '|fulladder4bits:2|fulladder:1|~5~1' = '|fulladder4bits:2|fulladder:1|S~1' 
+-- Equation name is '_LC026', type is buried 
+-- synthesized logic cell 
+_LC026   = LCELL( _EQ022 $  GND);
+  _EQ022 =  A6 &  A7 &  B6
+         #  A7 &  _LC025 &  _LC035
+         #  B7 &  _LC025 &  _LC035
+         #  A6 &  B6 &  B7
+         #  A7 &  B7;
+
+-- Node name is '|fulladder4bits:2|fulladder:1|~1~1' 
+-- Equation name is '_LC031', type is buried 
+-- synthesized logic cell 
+_LC031   = LCELL( _EQ023 $  VCC);
+  _EQ023 = !A7 &  _X006 &  _X013
+         # !B7 &  _X006 &  _X013
+         #  A8 &  B8
+         # !A8 & !B8
+         # !A7 & !B7;
+  _X006  = EXP( A6 &  B6);
+  _X013  = EXP( _LC025 &  _LC035);
+
+-- Node name is '|fulladder4bits:2|fulladder:5|~3~1' 
+-- Equation name is '_LC023', type is buried 
+-- synthesized logic cell 
+_LC023   = LCELL( _EQ024 $  A9);
+  _EQ024 =  A8 & !A9 &  B8 &  B9
+         # !A8 &  A9 & !B9 & !_LC031
+         #  A9 & !B8 & !B9 & !_LC031
+         # !A9 &  B9 &  _LC031;
+
+-- Node name is '|fulladder4bits:2|fulladder:6|~4~1' 
+-- Equation name is '_LC034', type is buried 
+-- synthesized logic cell 
+_LC034   = LCELL( B10 $  A10);
+
+-- Node name is '|fulladder4bits:3|fulladder:1|~5~1' = '|fulladder4bits:3|fulladder:1|S~1' 
+-- Equation name is '_LC039', type is buried 
+-- synthesized logic cell 
+_LC039   = LCELL( _EQ025 $  GND);
+  _EQ025 =  A10 &  A11 &  B10
+         #  A11 &  _LC023 &  _LC034
+         #  B11 &  _LC023 &  _LC034
+         #  A10 &  B10 &  B11
+         #  A11 &  B11;
+
+-- Node name is '|fulladder4bits:3|fulladder:1|~1~1' 
+-- Equation name is '_LC046', type is buried 
+-- synthesized logic cell 
+_LC046   = LCELL( _EQ026 $  VCC);
+  _EQ026 = !A11 &  _X009 &  _X014
+         # !B11 &  _X009 &  _X014
+         #  A12 &  B12
+         # !A12 & !B12
+         # !A11 & !B11;
+  _X009  = EXP( A10 &  B10);
+  _X014  = EXP( _LC023 &  _LC034);
+
+-- Node name is '|fulladder4bits:3|fulladder:5|~3~1' 
+-- Equation name is '_LC047', type is buried 
+-- synthesized logic cell 
+_LC047   = LCELL( _EQ027 $  A13);
+  _EQ027 =  A12 & !A13 &  B12 &  B13
+         # !A12 &  A13 & !B13 & !_LC046
+         #  A13 & !B12 & !B13 & !_LC046
+         # !A13 &  B13 &  _LC046;
+
+-- Node name is '|fulladder4bits:3|fulladder:6|~4~1' 
+-- Equation name is '_LC018', type is buried 
+-- synthesized logic cell 
+_LC018   = LCELL( B14 $  A14);
+
+-- Node name is '|fulladder4bits:4|fulladder:1|~5~1' = '|fulladder4bits:4|fulladder:1|S~1' 
+-- Equation name is '_LC059', type is buried 
+-- synthesized logic cell 
+_LC059   = LCELL( _EQ028 $  GND);
+  _EQ028 =  A0 &  A1 &  A2 &  A3 &  Cin
+         #  A1 &  A2 &  A3 &  B0 &  Cin
+         #  A0 &  A1 &  A2 &  A3 &  B0
+         #  A0 &  A2 &  A3 &  B0 &  B1
+         #  A2 &  A3 &  B0 &  B1 &  Cin;
+
+-- Node name is '|fulladder4bits:4|fulladder:1|~5~2' = '|fulladder4bits:4|fulladder:1|S~2' 
+-- Equation name is '_LC058', type is buried 
+-- synthesized logic cell 
+_LC058   = LCELL( _EQ029 $  GND);
+  _EQ029 =  A0 &  A2 &  A3 &  B1 &  Cin
+         #  A0 &  A3 &  B1 &  B2 &  Cin
+         #  A3 &  B0 &  B1 &  B2 &  Cin
+         #  A0 &  A3 &  B0 &  B1 &  B2
+         #  A0 &  A1 &  A3 &  B0 &  B2;
+
+-- Node name is '|fulladder4bits:4|fulladder:1|~5~3' = '|fulladder4bits:4|fulladder:1|S~3' 
+-- Equation name is '_LC062', type is buried 
+-- synthesized logic cell 
+_LC062   = LCELL( _EQ030 $  GND);
+  _EQ030 =  A1 &  A3 &  B0 &  B2 &  Cin
+         #  A0 &  A1 &  A3 &  B2 &  Cin
+         #  A0 &  A1 &  B2 &  B3 &  Cin
+         #  A1 &  B0 &  B2 &  B3 &  Cin
+         #  A0 &  A1 &  B0 &  B2 &  B3;
+
+-- Node name is '|fulladder4bits:4|fulladder:1|~5~4' = '|fulladder4bits:4|fulladder:1|S~4' 
+-- Equation name is '_LC060', type is buried 
+-- synthesized logic cell 
+_LC060   = LCELL( _EQ031 $  GND);
+  _EQ031 =  A0 &  B0 &  B1 &  B2 &  B3
+         #  B0 &  B1 &  B2 &  B3 &  Cin
+         #  A0 &  B1 &  B2 &  B3 &  Cin
+         #  A0 &  A2 &  B1 &  B3 &  Cin
+         #  A2 &  B0 &  B1 &  B3 &  Cin;
+
+-- Node name is '|fulladder4bits:4|fulladder:1|~5~5' = '|fulladder4bits:4|fulladder:1|S~5' 
+-- Equation name is '_LC057', type is buried 
+-- synthesized logic cell 
+_LC057   = LCELL( _EQ032 $  GND);
+  _EQ032 =  A0 &  A2 &  B0 &  B1 &  B3
+         #  A0 &  A1 &  A2 &  B0 &  B3
+         #  A1 &  A2 &  B0 &  B3 &  Cin
+         #  A0 &  A1 &  A2 &  B3 &  Cin
+         #  A1 &  A2 &  A3 &  B1;
+
+-- Node name is '|fulladder4bits:4|fulladder:1|~5~6' = '|fulladder4bits:4|fulladder:1|S~6' 
+-- Equation name is '_LC061', type is buried 
+-- synthesized logic cell 
+_LC061   = LCELL( _EQ033 $  GND);
+  _EQ033 =  A1 &  A3 &  B1 &  B2
+         #  A1 &  B1 &  B2 &  B3
+         #  A1 &  A2 &  B1 &  B3
+         #  A2 &  A3 &  B2
+         #  A2 &  B2 &  B3;
+
+-- Node name is '|fulladder4bits:4|fulladder:1|~5~7' = '|fulladder4bits:4|fulladder:1|S~7' 
+-- Equation name is '_LC037', type is buried 
+-- synthesized logic cell 
+_LC037   = LCELL( _EQ034 $  GND);
+  _EQ034 =  A4 & !B4
+         # !A4 &  B4;
+
+-- Node name is '|fulladder4bits:4|fulladder:1|~1~1' 
+-- Equation name is '_LC063', type is buried 
+-- synthesized logic cell 
+_LC063   = LCELL( _EQ035 $  _EQ036);
+  _EQ035 = !A0 & !A1 & !A2 & !A3 & !B0 & !_LC042 & !_LC051 & !_LC052 & 
+             !_LC053 & !_LC054 & !_LC056
+         # !A0 & !A1 & !A2 & !A3 & !Cin & !_LC042 & !_LC051 & !_LC052 & 
+             !_LC053 & !_LC054 & !_LC056
+         # !A1 & !A2 & !A3 & !B0 & !Cin & !_LC042 & !_LC051 & !_LC052 & 
+             !_LC053 & !_LC054 & !_LC056
+         # !A0 & !A2 & !A3 & !B0 & !B1 & !_LC042 & !_LC051 & !_LC052 & 
+             !_LC053 & !_LC054 & !_LC056;
+  _EQ036 = !_LC042 & !_LC051 & !_LC052 & !_LC053 & !_LC054 & !_LC056;
+
+-- Node name is '|fulladder4bits:4|fulladder:1|~1~2' 
+-- Equation name is '_LC056', type is buried 
+-- synthesized logic cell 
+_LC056   = LCELL( _EQ037 $  GND);
+  _EQ037 = !A0 & !A2 & !A3 & !B1 & !Cin
+         # !A2 & !A3 & !B0 & !B1 & !Cin
+         # !A0 & !A1 & !A3 & !B0 & !B2
+         # !A0 & !A1 & !A3 & !B2 & !Cin
+         # !A1 & !A3 & !B0 & !B2 & !Cin;
+
+-- Node name is '|fulladder4bits:4|fulladder:1|~1~3' 
+-- Equation name is '_LC054', type is buried 
+-- synthesized logic cell 
+_LC054   = LCELL( _EQ038 $  GND);
+  _EQ038 = !A0 & !A3 & !B0 & !B1 & !B2
+         # !A0 & !A3 & !B1 & !B2 & !Cin
+         # !A3 & !B0 & !B1 & !B2 & !Cin
+         # !A0 & !A1 & !A2 & !B0 & !B3
+         # !A0 & !A1 & !A2 & !B3 & !Cin;
+
+-- Node name is '|fulladder4bits:4|fulladder:1|~1~4' 
+-- Equation name is '_LC053', type is buried 
+-- synthesized logic cell 
+_LC053   = LCELL( _EQ039 $  GND);
+  _EQ039 = !A1 & !A2 & !B0 & !B3 & !Cin
+         # !A0 & !A2 & !B0 & !B1 & !B3
+         # !A0 & !A2 & !B1 & !B3 & !Cin
+         # !A2 & !B0 & !B1 & !B3 & !Cin
+         # !A0 & !A1 & !B0 & !B2 & !B3;
+
+-- Node name is '|fulladder4bits:4|fulladder:1|~1~5' 
+-- Equation name is '_LC052', type is buried 
+-- synthesized logic cell 
+_LC052   = LCELL( _EQ040 $  GND);
+  _EQ040 = !A0 & !A1 & !B2 & !B3 & !Cin
+         # !A1 & !B0 & !B2 & !B3 & !Cin
+         # !A0 & !B0 & !B1 & !B2 & !B3
+         # !A0 & !B1 & !B2 & !B3 & !Cin
+         # !B0 & !B1 & !B2 & !B3 & !Cin;
+
+-- Node name is '|fulladder4bits:4|fulladder:1|~1~6' 
+-- Equation name is '_LC051', type is buried 
+-- synthesized logic cell 
+_LC051   = LCELL( _EQ041 $  GND);
+  _EQ041 = !A1 & !A2 & !A3 & !B1
+         # !A1 & !A3 & !B1 & !B2
+         # !A1 & !A2 & !B1 & !B3
+         # !A1 & !B1 & !B2 & !B3
+         # !A2 & !A3 & !B2;
+
+-- Node name is '|fulladder4bits:4|fulladder:1|~1~7' 
+-- Equation name is '_LC042', type is buried 
+-- synthesized logic cell 
+_LC042   = LCELL( _EQ042 $  GND);
+  _EQ042 = !A2 & !B2 & !B3
+         #  A4 &  B4
+         # !A4 & !B4
+         # !A3 & !B3;
+
+-- Node name is '|fulladder4bits:4|fulladder:5|~3~1' 
+-- Equation name is '_LC035', type is buried 
+-- synthesized logic cell 
+_LC035   = LCELL( _EQ043 $  A5);
+  _EQ043 =  A4 & !A5 &  B4 &  B5
+         # !A4 &  A5 & !B5 & !_LC063
+         #  A5 & !B4 & !B5 & !_LC063
+         # !A5 &  B5 &  _LC063;
+
+-- Node name is '|fulladder4bits:4|fulladder:6|~4~1' 
+-- Equation name is '_LC025', type is buried 
+-- synthesized logic cell 
+_LC025   = LCELL( B6 $  A6);
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--     (none)
+
+
+
+
+Project Informationc:\documents and settings\aluno\desktop\ap07\fulladder16bits.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Standard
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = off
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = on
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:01
+   Partitioner                            00:00:00
+   Fitter                                 00:00:00
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:00
+   --------------------------             --------
+   Total Time                             00:00:01
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 4,096K

@@ -1,0 +1,156 @@
+---------------------------------------------------
+insertion_sort.c, tempo em micro segundos
+tipo=i, tamanho=500
+773
+comp: 65616, trocas: 65113
+tipo=i, tamanho=5000
+63633
+comp: 6341431, trocas: 6336428
+tipo=i, tamanho=10000
+210940
+comp: 25201272, trocas: 25191269
+tipo=i, tamanho=30000
+1261084
+comp: 225634704, trocas: 225604701
+tipo=s, tamanho=500
+992
+comp: 67007, trocas: 61004
+tipo=s, tamanho=5000
+80223
+comp: 6273986, trocas: 6213983
+tipo=s, tamanho=10000
+321967
+comp: 25049821, trocas: 24929818
+tipo=s, tamanho=30000
+2862197
+comp: 225790989, trocas: 225430986
+---------------------------------------------------
+shell_sort.c, tempo em micro segundos
+tipo=i, tamanho=500
+136
+comp: 6112, trocas: 8056
+tipo=i, tamanho=5000
+1240
+comp: 104489, trocas: 134556
+tipo=i, tamanho=10000
+2770
+comp: 253138, trocas: 318362
+tipo=i, tamanho=30000
+9653
+comp: 910548, trocas: 1136246
+tipo=s, tamanho=500
+331
+comp: 14237, trocas: 8224
+tipo=s, tamanho=5000
+3644
+comp: 195559, trocas: 135542
+tipo=s, tamanho=10000
+7847
+comp: 431702, trocas: 311683
+tipo=s, tamanho=30000
+28722
+comp: 1572075, trocas: 1212054
+---------------------------------------------------
+bubble_sort.c, tempo em micro segundos
+tipo=i, tamanho=500
+1280
+comp: 250502, trocas: 189645
+tipo=i, tamanho=5000
+117466
+comp: 25005002, trocas: 18783927
+tipo=i, tamanho=10000
+471779
+comp: 100010002, trocas: 74763402
+tipo=i, tamanho=30000
+4314511
+comp: 900030002, trocas: 674003412
+tipo=s, tamanho=500
+2600
+comp: 256002, trocas: 183930
+tipo=s, tamanho=5000
+249850
+comp: 25060002, trocas: 18551916
+tipo=s, tamanho=10000
+1009479
+comp: 100120002, trocas: 74506944
+tipo=s, tamanho=30000
+8949819
+comp: 900360002, trocas: 671510376
+---------------------------------------------------
+quick_sort.c, tempo em micro segundos
+tipo=i, tamanho=500
+131
+comp: 11009, trocas: 3675
+tipo=i, tamanho=5000
+969
+comp: 142809, trocas: 48858
+tipo=i, tamanho=10000
+2041
+comp: 311582, trocas: 103746
+tipo=i, tamanho=30000
+6501
+comp: 1041434, trocas: 342099
+tipo=s, tamanho=500
+300
+comp: 15554, trocas: 3657
+tipo=s, tamanho=5000
+2809
+comp: 183408, trocas: 48474
+tipo=s, tamanho=10000
+5787
+comp: 382434, trocas: 104073
+tipo=s, tamanho=30000
+18061
+comp: 1238016, trocas: 342900
+---------------------------------------------------
+heap_sort.c, tempo em micro segundos
+tipo=i, tamanho=500
+164
+comp: 18347, trocas: 13590
+tipo=i, tamanho=5000
+1494
+comp: 250313, trocas: 186048
+tipo=i, tamanho=10000
+3147
+comp: 540883, trocas: 402375
+tipo=i, tamanho=30000
+10454
+comp: 1811151, trocas: 1349658
+tipo=s, tamanho=500
+392
+comp: 23874, trocas: 13632
+tipo=s, tamanho=5000
+4245
+comp: 305553, trocas: 186306
+tipo=s, tamanho=10000
+8892
+comp: 650807, trocas: 402765
+tipo=s, tamanho=30000
+28981
+comp: 2141669, trocas: 1349877
+---------------------------------------------------
+merge_sort_re.c, tempo em micro segundos
+tipo=i, tamanho=500
+198
+comp: 16827, trocas: 8976
+tipo=i, tamanho=5000
+1823
+comp: 218834, trocas: 123616
+tipo=i, tamanho=10000
+3771
+comp: 467692, trocas: 267232
+tipo=i, tamanho=30000
+11996
+comp: 1543036, trocas: 894464
+tipo=s, tamanho=500
+449
+comp: 21832, trocas: 8976
+tipo=s, tamanho=5000
+4779
+comp: 268853, trocas: 123616
+tipo=s, tamanho=10000
+9942
+comp: 567720, trocas: 267232
+tipo=s, tamanho=30000
+32109
+comp: 1842923, trocas: 894464

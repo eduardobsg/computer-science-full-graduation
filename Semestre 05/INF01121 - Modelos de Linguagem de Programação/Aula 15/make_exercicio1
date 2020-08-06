@@ -1,0 +1,11 @@
+all: aula15-exercicio1
+
+aula15-exercicio1: aula15-exer1-main.o aula15-exer1-class.o
+	g++ -o aula15-exercicio1 aula15-exer1-main.o aula15-exer1-class.o
+
+aula15-exer1-main.o: aula15-exer1-main.cpp aula15-exer1-class.h
+	g++ -c aula15-exer1-main.cpp
+
+aula15-exer1-class.o: aula15-exer1-class.cpp aula15-exer1-class.h 
+	g++ -c aula15-exer1-class.cpp
+

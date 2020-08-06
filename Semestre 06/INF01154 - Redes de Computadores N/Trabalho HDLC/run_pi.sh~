@@ -1,0 +1,15 @@
+#!/bin/sh
+
+NPS="256"
+K="100000"
+#NPS="2 4 8 16 32 64 128 256"
+
+
+for k in $K; do
+  for np in $NPS; do
+    echo k=$k, np=$np
+    for i in 1 2 3; do
+      mpirun -machinefile nodes -np $np mpi_pi_cluster -k $k 2>/dev/null;
+    done;
+  done;
+done

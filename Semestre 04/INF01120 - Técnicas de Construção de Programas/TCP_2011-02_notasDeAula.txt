@@ -1,0 +1,405 @@
+Cadeira: INF01120 - Técnicas de Construção de Programas
+Professor: Marcelo Pimenta
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2011/02
+Moodle: 1120cod
+
+------------------------------------------------------------------------------
+---- Colegas:
+------------------------------------------------------------------------------
+- Hélio Brauner
+- Jozeane Belomo
+- Jefferson Stoffel
+- Germano
+- Alexandre Kreismann
+
+------------------------------------------------------------------------------
+---- Frases:
+------------------------------------------------------------------------------
+"Se cada vez que eu precisar da banana eu precisar levar o gorila junto, ta 
+complicado. (falando sobre modularidade / acoplamento)"
+
+"Fugia como quem foge da cruz. (falando de pessoas que não gostam de Basic)"
+
+
+
+------------------------------------------------------------------------------
+---- Notas de Aula: 
+------------------------------------------------------------------------------
+2011-10-24:
+
+* Revisão para prova
+
+Encapsulamento: 
+- o que é público e o que é privado. 
+- Evitar modificação direta. 
+- Usa-se métodos. 
+- Política de acesso uniforme.
+
+-> Forte coesão e baixo acoplamento.
+-> Se algo depende de outro algo este primeiro tem acoplamento.
+-> Sistemas tem acoplamento invariavelmente, mais devemos minimizar isso.
+
+-> Cada classe deve implementar um ADT. Por definição um ADT tem baixo acoplamento.
+Diminui o gap entre implementação e mundo real.
+-> O acoplamento da ADT com o restante do sistema deve ser o menor possível, senão nulo,
+um arquivo isolado. Porém as demais partes do programa irão usá-la, dependerão dela.
+
+Bom encapsulamento
+- setters, getters (não expor dados, evitar violação do encapsulamento)
+- evitar detalhes de implementação na interface (abstração)
+- clareza de leitura
+- a interface deve ser suficiente para dizer o que a função faz
+
+Por que fazer classes?
+- facilitar reuso
+- ... 
+
+Evitar
+- classes deusas
+- classes irrelevantes (dados sem comportamento devem virar atributos)
+- ...
+
+Convenções
+- nomes de variáveis devem ser o maisespecífico possível
+- bons nomes garantem legibilidade
+- código é muito mais lido do que escrito, logo escrever com carinho, cuidado e organização
+- evitar literais, substituir por nomes (definir valores)
+- definir constantes e usar
+- código linear, deve seguir uma ordem
+- usar case ao invés de ifs
+- evitar goto. Mas se usar, usar para baixo
+- evitar indentação profunda, com muitos níveis
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------
+2011-09-21:
+
+* Convenções (cont.)
+
+- Evitar literais, números soltos. Antes de usar um valor é obrigatório atribuí-lo a uma
+variável (ou definir uma constante) que tenha um nome significativo, para sabermos o 
+significado do valor quando ele for usado em um laço, comparação, etc.
+
+- Atentar para os WARNINGS, eles podem evitar vários futuros erros.
+
+- Usar conjunto de caracteres internacional - Unicode - UTF8
+
+
+* Dicas de codificação
+
+- Código linear
+
+------------------------------------------------------------------------------
+2011-09-14:
+
+26/09 			=> Introdução a Java, Eclipse (IDE) - Aula prática nos laboratórios
+03/10 a 07/10 	=> SEMAC, não haverá aula, mas haverá atividade
+
+* Convenções - Padrões de programação
+
+Uso de Variáveis:
+- evitar declarações implícitas de variáveis, declará-las explicitamente
+- inicializar variáveis (na declaração)
+- minimizar o escopo das variáveis
+	- iniciar a variável antes de usá-la sem loops
+	- mantê-las o mais local possível
+- evitar variáveis globais
+
+- evitar variáveis com significados múltiplos ocultos
+- pattern: solução genérica para um problema específico
+
+Identificadores Significativos:
+- identificador descreve total e precisamente uma entidade
+	1) Número de pessoas na equipe olímpica do Brasil
+	num_pes_eq_olimp_br
+	2) Total geral dos cheques gravados até a presente data
+	total_cheque_grav_ate_hoje
+	3) Velocidade de um trem bala
+	vel_trem_bala
+- tamanho ideal do identificador: 10 a 16 chars
+- identificadores significativos para métodos
+	Ex.: Impressora.EstaPronta() - retorna o estado da impressora, se está ou não pronta
+
+
+------------------------------------------------------------------------------
+2011-09-12:
+
+* Polimorfismo
+
+NÃO VIM NA AULA
+
+------------------------------------------------------------------------------
+2011-09-05:
+
+- Cada classe deve implementar apenas um tipo abstrato de dados
+
+* Orientação a Objetos
+
+-> GAP semântico: difícil mapear elementos do mundo real a elementos do software
+
+Programação estruturada    -----> 	 Programação Orientada a Obijetos 
+						(revolução)
+
+- Queremos representar em instâncias / classes propriedades e conceitos do mundo real.
+			
+"Márcia foi na padaria Pão-Bom comprar pão do José"
+- Ocorrências: valores do mundo real (Márcia, José, Pão-Bom)
+- Conceitos: (padaria, comprar pão)
+
+Evitar:
+- classes deusas: com acesso a tudo, muito grande. Melhor quebrá-las em classes menores
+- classes com nome de verbos
+
+Boas interfaces de classe:
+- abstração cnsistente que oculta a complexidade da implementação
+- ter serviços em pares: incluir/excluir, desenhar/apagar
+
+Instância:
+- um objeto é uma instância de uma classe
+
+Herança:
+- generalização / especificação
+
+
+
+------------------------------------------------------------------------------
+2011-08-29:
+- ADT (TAD)
+
+- Conjunto de dados e funções usadas para manipular certos dados
+- ADT são usados para manipular estruturas de dados. Ex.: Pilha (LIFO - Last
+in First out) tem as operações de push, pop, full?, empty?
+- Com as interfaces de uma ADT podemos fazer as manipulações necessárias sobre
+um grupo de dados
+
+- ADT => conceitual; Módulo e classe => formas de implementar ADTs
+
+- métodos public: acesso global pelo programa
+- métodos private: acesso restrito às funções do módulo / classe
+
+- os dados devem ser TODOS private. Para alterá-los devemos criar métodos 
+'setters' e para pegar os valores devemos criar 'getters'
+
+Exercícios:
+1) Piloto automático
+
+class PilotoAutomatico {
+	
+	/* Variáveis - Dados */
+	private $velocidade;
+	private $direcao;
+	private $altitude;
+	private $pilotoState;
+
+	/* Métodos */
+
+	public function __construct($velocidade, $direcao, $altitude) {
+		$this->setVelocidade($velocidade);
+		$this->setDirecao($direcao);
+		$this->setAltitude($altitude);
+	}
+
+	public function getVelocidade() { return $this->velocidade; }
+	public function getDirecao() { return $this->direcao; }
+	public function getAltitude() { return $this->altitude; }
+	public function getPilotoState() { return $this->pilotoState; }
+
+	public function turnOn() { $this->setPilotoState(true); }
+	public function turnOff() { $this->setPilotoState(false); } 
+
+	private function setVelocidade($velocidade) { $this->velocidade = $velocidade; }
+	private function setDirecao($direcao) { $this->direcao = $direcao; }
+	private function setAltitude($altitude) { $this->altitude = $altitude; }
+	private function setPilotoState($pilotoState) { $this->pilotoState = $pilotoState; }
+	
+
+	
+	
+}
+
+------------------------------------------------------------------------------
+2011-08-24:
+- Não haverá aula no dia 31/08/2011
+
+------------------------------------------------------------------------------
+2011-08-22:
+- Os módulos de um programa devem ser fechados, prontos para o uso, e abertos,
+com possibilidade de extensão / alteração.
+
+- Coesão: um módulo bem projetado, organizado e bem feito, que realiza o trabalho
+que deve, ou que pelo menos se esforça para tal.
+	- Coesão baixa:
+		- classe difícil de entender
+
+- Acoplamento: dependência entre módulos, que deve ser baixa, para aumentar a
+possibilidade de reuso de código
+	- Como os módulos se comunicam
+
+- Módulo: unidade básica de decomposição de sistemas
+	- A interação entre os módulos deve ser simples
+	- servem para decompor e compor problemas / soluções
+	- devem possuir interface, ou seja, as informações necessárias para o programador
+	saber o que o módulo faz e como fazer ele funcionar
+
+- KISS: Keep it simple, stupid!
+	- Se há duas soluções igualmente corretas, devemos escolher a mais simples
+
+- Modularidade:
+	- coeso
+	- baixo acoplamento
+	- simples
+	- poucas interfaces
+	- inter-dependência dos módulos deve ser baixa
+
+- Critérios de modularidade:
+	- decomponilibidade
+	- componibilidade
+	- legibilidade
+	- continuidade
+	- segurança
+
+- Regras de modularidade
+	- Mapeamento direto: 
+	- Poucas interfaces, pequenas e explícitas
+	- Ocultamento de informação
+
+- Princípios de modularidade
+	- Auto-documentação: o próprio código, bem escrito e organizado já possibilita
+	a compreensão do código
+	- Open-closed: falado anteriormente
+	- Single Choice: um tipo de escolha deve ser feita em um só módulo
+
+- Objeto
+	- representa um domínio do problema	da aplicação
+	- baixo gap semântico: alta abstração
+
+------------------------------------------------------------------------------
+2011-08-17:
+- Módulo
+
+Ex.: 
+
+Rotina 1
+Glcobal total, temp, termo1, termo2 //Parâmetros
+read(termo1, termo2);
+calcula(total, termo1, termo2, temp);
+print(temp, total);
+
+Rotina 2
+Local total, termo1, termo2 //parâmetros
+read(termo1, termo2)
+print( calcula(termo1, termo2) )
+
+- Relação entre a rotina 1 e calcula() é de 4 variáveis
+- Relação entre a rotina 2 e calcula() é de 2 variáveis
+# Na rotina 2 a chance do programador cometer algum erro e bem menor, devido
+a necessidade de menos parâmetros passados à função
+
+- Variáveis locais: deixar explícito que uma variável é utilizada em um escopo
+e está inicializada corretamente
+- Variáveis globais: é difícil ter certeza se está inicializada corretamente, 
+pois pode ser usada em outras rotinas do software
+# Sempre buscar utilizar variáveis locais. Melhora a organização, clareza e 
+compreensão do código
+
+- Coesão
+	- Um software coeso é desejável possuir baixo acoplamento
+	* Não Coeso:
+	calcula_e_imprime();
+
+	* Funções coesas:
+	calcula();
+	imprime();		
+
+- Acoplamento
+	- Acoplamento de conteúdo: um módulo afeta os dados e procedimentos
+	- Evitar variáveis globais, pois isso dificulta a interação entre módulos,
+devido a dependência dessas variáveis
+	- Evitar grupo de dados
+	Ex.: 
+	imprime(Nome, Telefone, Endereco, CEP, Cidade, ...)	//muitos dados
+	imprime(RegistroAluno) //estrutura de dados com todas as informações de 
+aluno
+
+- Os módulos de um software podem ter correspondência a partes do problema que 
+é solucionado, pois quando há um problema em uma parte da resolução do problema
+já é sabido qual módulo está com problemas.
+
+- Deixar explícita a relação entre módulos, variáveis e funções.
+- A linguagem de programação pode ser um obstáculo, logo devemos escolher uma
+linguagem com a qual possamos evoluir.
+- A melhor maneira de documentar um código é fazer um código claro
+
+- Todos os bancos possuem software em Cobol.
+
+
+------------------------------------------------------------------------------
+2011-08-15:
+- Cuidar com o poder que a aplicação dá ao usuário, senão ele pode comprometer o 
+sistema.
+- Programar em IDEs
+- Programação: atividade fortemente intelectual, baseado em pessoas. Pouco 
+automatismo.
+- Fazer software que não seja descartado. Pensar sempre no reuso. 
+
+Discussões:
+- corretude x reusabilidade: se um programa, ou trecho de programa for reusável,
+a corretude é fundamental para que se tenha garantia de que o código reusado
+esteja funcionando.
+- robustez x usabilidade: a aplicação deve tratar as anormalidades do sistema,
+indicando ao usuário o que ele deve fazer. A usabilidade, ou facilidade no uso, 
+corre junto à robustez, pois quando houver um problema o usuário não entrará em 
+pânico, visto que a própria aplicação irá orientar o cliente.
+- eficiência x portabilidade (exemplo conflituoso): um mesmo sistema não terá a
+mesma eficiência em diferentes plataformas
+- reusabilidade x compatibilidade (exemplo conflituoso): o reuso pode causar 
+incompatibilidade, pois nem sempre um mesmo programa será compatível para todas
+as plataformas.
+
+- Índice forte de qualidade: amigabilidade (conceito antigo - friendliness)
+
+- Usabilidade: procurar ver as necessidades do usuário. Exemplo: programas que 
+idosos usam devem ter fontes grandes e textos bem detakhados para não gerar dúvida.
+O software também pode ter flexibilidade de interação, para agradar diferentes
+perfis de usuário (novatos x experientes -> interação detalhada x interação ágil, 
+com atalhos e simplificada)
+
+- Devemos procurar problemas recorrentes que possam ser otimizados. Ex.: agilizar
+o uso de caixas eletrônicos, pois ganharíamos muito tempo nas transações bancárias, 
+pois o uso de caixas eletrônicos, diaramentente, chega aos milhares só no Brasil.
+
+------------------------------------------------------------------------------
+2011-08-10:
+- Desenvolvimento ad-hoc: ciclos completos de construção de programas que não foram 
+devidamente projetados, pela necessidade de atender uma demanda rapidamente. Ideia difícil 
+de ser compartilhada com os outras pessoas, pois não é muito clara.
+
+- Versionamento de código com Subversion no Linux: 
+http://www-pet.inf.ufsm.br/periodico/index.php/tutoriais/6-mensais/27-usando-o-subversion-svn-em-ambiente-gnulinux-ubuntu
+
+- Software é um produto virtual, e para muitas pessoas isso pode ser frustrante.
+
+- Engenharia de software é muito mais do que programar. Inclui várias etapas de desenvolvimento,
+especificação, projeto, programação, documentação, validação... 
+
+- Usabilidade: intuitivo, operacional (continua sendo fácil de usar com o tempo)
+
+- Qualidade interna: Ter um código organizado, com bons identificadores e claro 
+- Qualidade externa: Visível ao usuário/cliente
+------------------------------------------------------------------------------
+

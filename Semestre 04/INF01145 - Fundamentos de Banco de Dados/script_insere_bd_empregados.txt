@@ -1,0 +1,22 @@
+insert into EMP 
+	(CODEMP,NOMEEMP) 
+	values 
+	('E01','Manuel');
+	
+insert into EMP 
+	(CODEMP,NOMEEMP,CODEMPGER) 
+	values 	
+	('E02','Antônio','E01'),
+	('E03','José','E01'), 
+	('E04','Pedro','E01'),
+	('E05','Paulo','E01'), 
+	('E06','Luís','E02'), 
+	('E07','Joaquim','E02'), 
+	('E08','Carlos','E02'), 
+	('E09','Maria','E03'), 
+	('E10','Antonia','E03'), 
+	('E11','Paula','E03'), 
+	('E12','John','E07'), 
+	('E13','Paul','E07'), 
+	('E14','Peter','E07'), 
+	('E15','Mary','E07');

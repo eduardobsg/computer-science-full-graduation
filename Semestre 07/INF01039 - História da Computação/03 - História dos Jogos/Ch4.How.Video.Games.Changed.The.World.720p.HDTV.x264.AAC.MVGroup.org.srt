@@ -1,0 +1,8897 @@
+﻿1
+00:00:00,000 --> 00:00:02,900
+Videogames,
+for years the domain of outsiders
+
+2
+00:00:02,903 --> 00:00:05,063
+and geeks, and people who look
+a bit like owls.
+
+3
+00:00:05,250 --> 00:00:07,449
+Somewhere down the line,
+gaming went mainstream
+
+4
+00:00:07,450 --> 00:00:10,209
+and now everyone plays them
+18 hours a day, even George Alagiah.
+
+5
+00:00:10,210 --> 00:00:13,929
+And while that is a lie, games have
+infiltrated popular culture
+
+6
+00:00:13,930 --> 00:00:16,569
+and fundamentally changed the way we
+interact with the world.
+
+7
+00:00:16,570 --> 00:00:17,609
+Yes, really.
+
+8
+00:00:17,610 --> 00:00:19,529
+Now, tonight, I'll share
+my personal,
+
+9
+00:00:19,530 --> 00:00:22,769
+possibly bull-headed selection of
+the 25 most significant games that
+
+10
+00:00:22,770 --> 00:00:25,849
+ever there were, and we'll be
+hearing from videogame insiders,
+
+11
+00:00:25,850 --> 00:00:29,329
+videogame likers, and some
+reassuring, friendly, familiar faces
+
+12
+00:00:29,330 --> 00:00:32,409
+so easily spooked viewers don't
+shit their own kidneys out
+
+13
+00:00:32,410 --> 00:00:34,049
+with terrified indignation.
+
+14
+00:00:34,050 --> 00:00:36,649
+We'll show you games that broke
+out of the pixelated ghetto
+
+15
+00:00:36,650 --> 00:00:38,769
+and romped across
+mainstream culture.
+
+16
+00:00:38,770 --> 00:00:42,049
+We'll see games that will make you
+feel guilty, or make you cry,
+
+17
+00:00:42,050 --> 00:00:44,129
+or even introduced you
+to your soulmate.
+
+18
+00:00:44,130 --> 00:00:47,449
+In fact, we'll show you nothing
+less than how videogames
+
+19
+00:00:47,450 --> 00:00:49,209
+changed the world...
+
+20
+00:00:49,210 --> 00:00:51,769
+because that is the title,
+so we have to.
+
+21
+00:01:04,857 --> 00:01:11,895
+<font color="#3399CC">Subtitles by </font><font color="ffffff">MemoryOnSmells</font>
+<font color="#3399CC">http://UKsubtitles.ru.</font>
+
+22
+00:01:11,930 --> 00:01:15,649
+Today, in 2013, games are almost
+as commonplace as shoes.
+
+23
+00:01:15,650 --> 00:01:17,969
+Practically everyone plays them
+in some form.
+
+24
+00:01:17,970 --> 00:01:21,129
+Even bacon replicant David Cameron
+was reportedly addicted to the
+
+25
+00:01:21,130 --> 00:01:24,089
+jolly food slash 'em up
+Fruit Ninja on the iPad.
+
+26
+00:01:24,090 --> 00:01:26,769
+But games weren't always as
+graphically staggering,
+
+27
+00:01:26,770 --> 00:01:28,129
+painstakingly realistic,
+
+28
+00:01:28,130 --> 00:01:31,489
+or conceptually sophisticated
+as they tend to be today.
+
+29
+00:01:31,490 --> 00:01:33,209
+No, they had to start somewhere.
+
+30
+00:01:33,210 --> 00:01:36,969
+Gaming's Big Bang happened in 1972
+with the release of a simple
+
+31
+00:01:36,970 --> 00:01:40,970
+looking tennis simulator,
+a game called Pong.
+
+32
+00:01:50,610 --> 00:01:52,489
+Pong, of course, was very simple.
+
+33
+00:01:52,490 --> 00:01:56,490
+You know, it begins with a black
+screen, as all great moments do.
+
+34
+00:01:56,850 --> 00:01:58,649
+It's meant to be kind of table tennis
+
+35
+00:01:58,650 --> 00:02:01,129
+but it was like a moving white bar
+that would go up and down,
+
+36
+00:02:01,130 --> 00:02:05,130
+and you could bounce
+a ball from side to side.
+
+37
+00:02:05,690 --> 00:02:08,329
+But it was so limited,
+so kind of basic in its function,
+
+38
+00:02:08,330 --> 00:02:10,729
+and yet, curiously, satisfying.
+
+39
+00:02:10,730 --> 00:02:12,329
+Pong wasn't the first videogame
+
+40
+00:02:12,330 --> 00:02:15,089
+but it was the first truly
+successful one, and it contains
+
+41
+00:02:15,090 --> 00:02:18,889
+much of the same basic DNA as almost
+every game that followed.
+
+42
+00:02:18,890 --> 00:02:21,609
+It was co-created by Atari founder
+Nolan Bushnell
+
+43
+00:02:21,610 --> 00:02:23,569
+and programmer Allan Alcorn.
+
+44
+00:02:23,570 --> 00:02:25,249
+Without these two legendary figures,
+
+45
+00:02:25,250 --> 00:02:28,089
+there would be no videogames
+industry at all.
+
+46
+00:02:28,090 --> 00:02:31,969
+I had completed the design and
+we said, "Well, it plays pretty good,
+
+47
+00:02:31,970 --> 00:02:34,689
+"let's put it in a box and see
+if anybody plays it."
+
+48
+00:02:34,690 --> 00:02:37,409
+And all it had was the name
+Pong on it. There's no instructions,
+
+49
+00:02:37,410 --> 00:02:39,049
+there's just a coinmach.
+
+50
+00:02:39,050 --> 00:02:41,489
+And Nolan and I carried it over to
+Andy Capp's Tavern,
+
+51
+00:02:41,490 --> 00:02:44,489
+put it on a barrel, and within
+a short time, within a week or
+
+52
+00:02:44,490 --> 00:02:48,490
+so, the thing stopped working,
+and so I went over to fix it...
+
+53
+00:02:48,770 --> 00:02:51,009
+That became full of quarters.
+
+54
+00:02:51,010 --> 00:02:54,089
+Yeah, I opened it up
+and the quarters just gushed out,
+
+55
+00:02:54,090 --> 00:02:56,969
+filled my pockets with quarters
+and came in the next day and said,
+
+56
+00:02:56,970 --> 00:02:59,569
+"Nolan, I think we've got...
+Something is going on here."
+
+57
+00:02:59,570 --> 00:03:02,209
+And you go, "Hmm."
+
+58
+00:03:02,210 --> 00:03:05,209
+Pong was incredibly simple.
+Everybody knows how to play
+
+59
+00:03:05,210 --> 00:03:09,089
+ping-pong. It was a very stylised
+version of ping-pong on a TV.
+
+60
+00:03:09,090 --> 00:03:12,569
+The controls were simple,
+just a knob each to move the paddle.
+
+61
+00:03:12,570 --> 00:03:14,089
+There was also hidden depth.
+
+62
+00:03:14,090 --> 00:03:17,249
+The power allowed the ball to come
+off the bats in different angles,
+
+63
+00:03:17,250 --> 00:03:19,809
+depending on where you hit it,
+so it introduced this whole
+
+64
+00:03:19,810 --> 00:03:22,489
+idea of skill and strategy, which is
+really, really important.
+
+65
+00:03:22,490 --> 00:03:26,490
+Yes, it's hard to remember now,
+but in 1972 this was cutting edge.
+
+66
+00:03:27,410 --> 00:03:30,129
+You know, I found the graphics
+on Pong,
+
+67
+00:03:30,130 --> 00:03:33,929
+the little players, the little lines,
+they moved quite smoothly,
+
+68
+00:03:33,930 --> 00:03:37,809
+it was quite impressive,
+and the ball moved smoothly.
+
+69
+00:03:37,810 --> 00:03:40,009
+By ball, I mean square!
+
+70
+00:03:40,010 --> 00:03:41,729
+We didn't make the ball square
+
+71
+00:03:41,730 --> 00:03:44,369
+because we thought that
+a square ball was cool.
+
+72
+00:03:44,370 --> 00:03:46,329
+It's the only way we could do it,
+
+73
+00:03:46,330 --> 00:03:48,249
+and so, you know, in some ways,
+
+74
+00:03:48,250 --> 00:03:52,250
+I'd say the first 10
+years of the video game business,
+
+75
+00:03:52,610 --> 00:03:55,209
+we were always bumping right
+
+76
+00:03:55,210 --> 00:03:59,210
+up against the edge of the
+technology that was allowed to us.
+
+77
+00:03:59,890 --> 00:04:02,689
+'You are watching
+the most exciting game
+
+78
+00:04:02,690 --> 00:04:04,729
+'you'll ever see on your TV set.'
+
+79
+00:04:04,730 --> 00:04:07,169
+Technology may have held
+the graphics, back but soon,
+
+80
+00:04:07,170 --> 00:04:10,169
+the rise of cheap microchips created
+a wave of Pong-like imitators
+
+81
+00:04:10,170 --> 00:04:12,569
+you could plug in and enjoy in your
+living room,
+
+82
+00:04:12,570 --> 00:04:15,609
+revolutionising home entertainment
+at a stroke.
+
+83
+00:04:15,610 --> 00:04:16,769
+'Oops, a goal.'
+
+84
+00:04:16,770 --> 00:04:19,529
+Until Pong came along, you would
+have to sit there and withstand
+
+85
+00:04:19,530 --> 00:04:21,689
+whatever the TV threw at you,
+which in the '70s
+
+86
+00:04:21,690 --> 00:04:23,129
+was only a handful of channels.
+
+87
+00:04:23,130 --> 00:04:25,769
+It often meant a choice between
+a documentary about bricks
+
+88
+00:04:25,770 --> 00:04:27,209
+or Jimmy Savile.
+
+89
+00:04:27,210 --> 00:04:28,489
+Now, suddenly, there was
+
+90
+00:04:28,490 --> 00:04:32,089
+a box you could plug directly
+into your TV and take control.
+
+91
+00:04:32,090 --> 00:04:36,090
+At the time, the very idea of that
+was mind-manglingly exciting.
+
+92
+00:04:36,650 --> 00:04:38,169
+That was the revelation,
+
+93
+00:04:38,170 --> 00:04:40,569
+the fact that you didn't feel
+passive for the first time.
+
+94
+00:04:40,570 --> 00:04:42,569
+Not that you don't mind being
+passive with TV,
+
+95
+00:04:42,570 --> 00:04:44,969
+but for the first time you were
+doing something here that
+
+96
+00:04:44,970 --> 00:04:48,089
+translated into something over there
+and that was kind of mind-blowing.
+
+97
+00:04:48,090 --> 00:04:52,090
+So I think it was just the miracle
+of being in the TV and operating
+
+98
+00:04:52,250 --> 00:04:56,250
+something from your couch which was
+the game changer for me.
+
+99
+00:04:56,490 --> 00:04:59,089
+I can remember gathering around it
+with my whole family,
+
+100
+00:04:59,090 --> 00:05:03,090
+it was like the piano
+in the 1940s or the Victorian era.
+
+101
+00:05:03,250 --> 00:05:05,449
+We all gathered around
+and were amazed at this
+
+102
+00:05:05,450 --> 00:05:07,769
+idea of interacting with
+the television screen.
+
+103
+00:05:07,770 --> 00:05:10,969
+Even though the graphics were
+profoundly simple, there was
+
+104
+00:05:10,970 --> 00:05:14,049
+that sense that this was a whole new
+thing that was happening.
+
+105
+00:05:14,050 --> 00:05:15,689
+Trad TV was clearly
+
+106
+00:05:15,690 --> 00:05:18,609
+so rattled by the obvious threat
+posed by the technological
+
+107
+00:05:18,610 --> 00:05:21,249
+upstart, it made desperate
+attempts to incorporate the new
+
+108
+00:05:21,250 --> 00:05:24,849
+enemy into its flagship
+entertainment shows.
+
+109
+00:05:24,850 --> 00:05:28,289
+When Pong came out they tried to use
+it as part of a live TV thing,
+
+110
+00:05:28,290 --> 00:05:31,209
+and I know I am not imagining this,
+with Bruce Forsyth.
+
+111
+00:05:31,210 --> 00:05:34,449
+- Nice to see you to see you...
+- Nice!
+
+112
+00:05:34,450 --> 00:05:36,329
+Well, what else could I say?
+
+113
+00:05:36,330 --> 00:05:39,569
+Bruce Forsyth had jumped ship from
+BBC to ITV for a huge pay packet,
+
+114
+00:05:39,570 --> 00:05:41,049
+there was a huge story about that,
+
+115
+00:05:41,050 --> 00:05:43,450
+and ITV gave him
+the whole of Saturday night.
+
+116
+00:05:47,930 --> 00:05:49,449
+And the competition they had,
+
+117
+00:05:49,450 --> 00:05:52,369
+they had people using a
+voice-operated form of Pong.
+
+118
+00:05:52,370 --> 00:05:53,529
+I know I've seen this.
+
+119
+00:05:53,530 --> 00:05:56,809
+You're looking at me like I'm
+hallucinating, but I have seen this.
+
+120
+00:05:56,810 --> 00:06:00,730
+Ladies and gentlemen, tele-tennis.
+
+121
+00:06:11,850 --> 00:06:15,850
+And even as a kid I was thinking,
+"Wow, this really doesn't work."
+
+122
+00:06:15,890 --> 00:06:17,249
+In the years following Pong,
+
+123
+00:06:17,250 --> 00:06:20,329
+amusement arcades filled with
+coin guzzling monoliths became
+
+124
+00:06:20,330 --> 00:06:24,129
+a common sight, but in 1978,
+the success of one title
+
+125
+00:06:24,130 --> 00:06:28,130
+catapulted gaming out of the dark
+and further into the mainstream.
+
+126
+00:06:34,170 --> 00:06:37,729
+This stark, bleak, humans vs aliens
+fight-to-the-death quickly
+
+127
+00:06:37,730 --> 00:06:39,609
+hoovered up coins worldwide.
+
+128
+00:06:39,610 --> 00:06:43,449
+What Space Invaders did was it took
+arcade machines out of those
+
+129
+00:06:43,450 --> 00:06:46,649
+arcades, out of bars and suddenly,
+they were in restaurants
+
+130
+00:06:46,650 --> 00:06:49,649
+and cafes,
+places where families could go.
+
+131
+00:06:49,650 --> 00:06:51,769
+I think it was the first
+game that really did that.
+
+132
+00:06:51,770 --> 00:06:54,889
+It took games into the mainstream.
+
+133
+00:06:54,890 --> 00:06:58,890
+I can remember the first time
+I saw Space Invaders.
+
+134
+00:06:59,090 --> 00:07:01,689
+It was at the Silver Blades
+ice rink in Birmingham.
+
+135
+00:07:01,690 --> 00:07:04,009
+We were on a school trip,
+on Thursday night,
+
+136
+00:07:04,010 --> 00:07:06,449
+and I remember seeing this game
+
+137
+00:07:06,450 --> 00:07:10,450
+and putting 10p in the slot and it
+was like a revelation to me,
+
+138
+00:07:10,570 --> 00:07:12,529
+it was the most amazing experience.
+
+139
+00:07:12,530 --> 00:07:16,369
+And from then on in,
+Space Invaders was my life.
+
+140
+00:07:16,370 --> 00:07:18,769
+You would get 40p dinner money
+each day
+
+141
+00:07:18,770 --> 00:07:21,529
+and you could go down to the cafe
+down the hill
+
+142
+00:07:21,530 --> 00:07:25,530
+and get beans on toast for 20p and
+have two games of Space Invaders.
+
+143
+00:07:26,890 --> 00:07:30,009
+The pace of Space Invaders
+was beautiful.
+
+144
+00:07:30,010 --> 00:07:34,010
+As a newb, who had never played,
+you know, an arcade game before,
+
+145
+00:07:34,410 --> 00:07:38,169
+you could walk up, put 10p in,
+and you could play for, like,
+
+146
+00:07:38,170 --> 00:07:41,649
+five or ten minutes
+without being annihilated.
+
+147
+00:07:41,650 --> 00:07:45,650
+And that pace meant that it
+drew people in.
+
+148
+00:07:45,770 --> 00:07:49,689
+It also satisfied something which
+gamers seem to enjoy - attrition,
+
+149
+00:07:49,690 --> 00:07:51,009
+cleaning something up.
+
+150
+00:07:51,010 --> 00:07:53,569
+You have this block of stuff which
+had to be cleared away.
+
+151
+00:07:53,570 --> 00:07:56,649
+It's odd, because it is something
+you can never win. You clear them
+
+152
+00:07:56,650 --> 00:07:59,689
+up, there's a little pause
+and they all come back again.
+
+153
+00:07:59,690 --> 00:08:01,769
+But somehow, you want to keep on
+doing it.
+
+154
+00:08:01,770 --> 00:08:04,769
+Mastering Space Invaders became
+an overriding obsession for many.
+
+155
+00:08:04,770 --> 00:08:08,729
+This is one of the first published
+books by revered author Martin Amis.
+
+156
+00:08:08,730 --> 00:08:11,209
+It's Invasion Of
+The Space Invaders.
+
+157
+00:08:11,210 --> 00:08:15,169
+A surprisingly in-depth
+collection of his arcade tips with
+
+158
+00:08:15,170 --> 00:08:18,089
+a foreword by Steven Spielberg.
+
+159
+00:08:18,090 --> 00:08:20,489
+Martin Amis has since
+disavowed his involvement
+
+160
+00:08:20,490 --> 00:08:22,769
+in the Space Invaders tips scene.
+
+161
+00:08:22,770 --> 00:08:25,209
+And the game's appeal wasn't simply
+restricted to the
+
+162
+00:08:25,210 --> 00:08:28,729
+nature of its challenge. The sheer
+experience was equally important.
+
+163
+00:08:28,730 --> 00:08:32,730
+This was the first game to evoke
+a distinct mood and tone.
+
+164
+00:08:33,850 --> 00:08:37,850
+The music sped up as soon as aliens
+got closer to you, and it was like
+
+165
+00:08:38,370 --> 00:08:39,929
+that excitement and that,
+
+166
+00:08:39,930 --> 00:08:43,930
+"Oh, this is really responding
+to what I am doing."
+
+167
+00:08:44,130 --> 00:08:47,609
+It's like a heartbeat when the Space
+Invaders are coming down the screen.
+
+168
+00:08:47,610 --> 00:08:49,289
+It's, "Dum, dum, dum, dum."
+
+169
+00:08:49,290 --> 00:08:53,290
+It accentuates your own tension,
+it was perfect.
+
+170
+00:08:53,730 --> 00:08:55,809
+It was very stylistic.
+
+171
+00:08:55,810 --> 00:08:59,489
+You know, the shape of the alien,
+as soon as you saw it,
+
+172
+00:08:59,490 --> 00:09:03,490
+you kind of understood it
+and it burnt it into your mind.
+
+173
+00:09:09,570 --> 00:09:12,609
+As a result, Space Invaders wasn't
+just an arcade hit,
+
+174
+00:09:12,610 --> 00:09:15,609
+but a bona fide, mainstream,
+cultural phenomenon.
+
+175
+00:09:15,610 --> 00:09:18,369
+Yes, tonight, we will be discovering
+just who the Space Invader
+
+176
+00:09:18,370 --> 00:09:20,049
+champion of the Midlands is!
+
+177
+00:09:20,050 --> 00:09:23,049
+Space Invaders tournaments were
+considered entertaining enough
+
+178
+00:09:23,050 --> 00:09:24,609
+to be televised, for God's sake!
+
+179
+00:09:24,610 --> 00:09:27,369
+'And how Tim Coxon of Stoke
+must be feeling now.'
+
+180
+00:09:27,370 --> 00:09:30,409
+And the world of cheerful children's
+animation also couldn't
+
+181
+00:09:30,410 --> 00:09:33,449
+resist the pull of the global fad
+of the moment.
+
+182
+00:09:33,450 --> 00:09:34,769
+Left a bit, steady.
+
+183
+00:09:34,770 --> 00:09:37,649
+Right. Right a bit, fire.
+
+184
+00:09:37,650 --> 00:09:40,969
+Every element of the Invaders
+template had such an instant
+
+185
+00:09:40,970 --> 00:09:44,049
+iconic purity, it still resonates
+today, with references to it
+
+186
+00:09:44,050 --> 00:09:45,449
+popping up everywhere.
+
+187
+00:09:45,450 --> 00:09:48,369
+Slick TV commercials
+nod in its direction and it
+
+188
+00:09:48,370 --> 00:09:52,370
+appears on walls around the world,
+courtesy of street artist Invader.
+
+189
+00:09:53,210 --> 00:09:55,769
+And Space Invaders still
+survives as a game,
+
+190
+00:09:55,770 --> 00:09:59,049
+albeit in a remixed, re-imagined,
+modern form.
+
+191
+00:09:59,050 --> 00:10:01,169
+I was very honoured to be
+asked to do it.
+
+192
+00:10:01,170 --> 00:10:04,289
+Working on Space Invaders
+is like being asked to go on stage
+
+193
+00:10:04,290 --> 00:10:08,290
+and play with Dave Gilmour out
+of Pink Floyd or something like that.
+
+194
+00:10:09,530 --> 00:10:13,049
+Space Invaders was the catalyst
+for an explosion of similarly themed
+
+195
+00:10:13,050 --> 00:10:17,050
+games in the late '70s and early
+'80s as pubs, arcades and cafes
+
+196
+00:10:17,130 --> 00:10:20,729
+rang to the sound of zipping lasers
+and white noise explosions.
+
+197
+00:10:20,730 --> 00:10:23,329
+The primitive graphics of the day
+were ideally suited
+
+198
+00:10:23,330 --> 00:10:26,169
+for depicting basic shapes
+competing for power in black
+
+199
+00:10:26,170 --> 00:10:29,929
+space, but with this incessant
+focus on interstellar combat,
+
+200
+00:10:29,930 --> 00:10:33,930
+games were in danger of becoming
+a chiefly male obsession.
+
+201
+00:10:34,730 --> 00:10:36,569
+To gain wide acceptance once again,
+
+202
+00:10:36,570 --> 00:10:38,849
+games would need to become
+less abstract.
+
+203
+00:10:38,850 --> 00:10:42,850
+What they needed was some
+kind of likeable character.
+
+204
+00:10:51,050 --> 00:10:54,689
+Pac-Man was arguably
+videogaming's first mascot.
+
+205
+00:10:54,690 --> 00:10:58,049
+He is sort of the first character,
+I guess, you know, the very,
+
+206
+00:10:58,050 --> 00:11:01,249
+very iconic character of videogames.
+
+207
+00:11:01,250 --> 00:11:02,649
+The designer of Pac-Man,
+
+208
+00:11:02,650 --> 00:11:05,929
+he introduced this Japanese concept
+of kawaii, which is cute.
+
+209
+00:11:05,930 --> 00:11:08,609
+Lots of Japanese design is based
+around this sense of kawaii,
+
+210
+00:11:08,610 --> 00:11:09,809
+cuteness.
+
+211
+00:11:09,810 --> 00:11:12,529
+And so, not only is Pac-Man
+very kawaii, very cute,
+
+212
+00:11:12,530 --> 00:11:14,049
+but also, so are the ghosts.
+
+213
+00:11:14,050 --> 00:11:16,649
+He did this because he wanted to
+appeal to young girls
+
+214
+00:11:16,650 --> 00:11:17,969
+and women as well as men,
+
+215
+00:11:17,970 --> 00:11:21,289
+and in fact, he said in interviews
+since then, which sounds sexist now,
+
+216
+00:11:21,290 --> 00:11:23,809
+but he's thinking, "How can I
+make it appeal to women?"
+
+217
+00:11:23,810 --> 00:11:25,649
+"Oh, I know, women like food."
+
+218
+00:11:25,650 --> 00:11:27,089
+So...
+
+219
+00:11:27,090 --> 00:11:31,090
+Famously, he'd seen images
+of a pizza with a slice taken out
+
+220
+00:11:31,810 --> 00:11:34,169
+and he saw Pac-Man in that image.
+
+221
+00:11:34,170 --> 00:11:36,249
+And Pac-Man does have
+a lot of character.
+
+222
+00:11:36,250 --> 00:11:39,569
+I think the reason why everything
+went Pac-Man crazy for
+
+223
+00:11:39,570 --> 00:11:41,929
+a while was because he had a face.
+
+224
+00:11:41,930 --> 00:11:45,129
+Even the ghosts, even the enemies had
+character, and they had names.
+
+225
+00:11:45,130 --> 00:11:46,889
+Inky, Blinky, Pinky and Clyde.
+
+226
+00:11:46,890 --> 00:11:48,969
+They all had very distinct
+personalities
+
+227
+00:11:48,970 --> 00:11:52,049
+and they did their own
+thing in the maze.
+
+228
+00:11:52,050 --> 00:11:55,169
+Pac-Man's rudimentary artificial
+intelligence also represented
+
+229
+00:11:55,170 --> 00:11:58,049
+a breakthrough, tricking the player
+into thinking the ghosts were
+
+230
+00:11:58,050 --> 00:12:00,409
+actually alive with their own
+personal traits.
+
+231
+00:12:00,410 --> 00:12:03,129
+Blinky, the red ghost,
+was a fast, aggressive hunter.
+
+232
+00:12:03,130 --> 00:12:05,129
+Inky, the blue one, was a dawdler.
+
+233
+00:12:05,130 --> 00:12:07,649
+Pinky would anticipate
+where you were going and try
+
+234
+00:12:07,650 --> 00:12:08,729
+and block you off,
+
+235
+00:12:08,730 --> 00:12:11,849
+while Clyde, the orange one, was
+programmed to rapidly chase you
+
+236
+00:12:11,850 --> 00:12:12,969
+until he got too close,
+
+237
+00:12:12,970 --> 00:12:15,409
+at which point he'd
+dart back into a corner.
+
+238
+00:12:15,410 --> 00:12:18,049
+This hidden layer of sophistication
+made the ghosts seem
+
+239
+00:12:18,050 --> 00:12:19,809
+less like computerised drones
+
+240
+00:12:19,810 --> 00:12:23,569
+and more like fallible,
+living characters.
+
+241
+00:12:23,570 --> 00:12:25,449
+But the Pac-Man ghosts,
+I really liked.
+
+242
+00:12:25,450 --> 00:12:27,769
+And the cherry, the idea
+of a floating cherry was cool.
+
+243
+00:12:27,770 --> 00:12:29,529
+And the fact that it changed
+when it ate.
+
+244
+00:12:29,530 --> 00:12:32,049
+I mean, all these things were
+kind of major steps forward.
+
+245
+00:12:32,050 --> 00:12:34,849
+This was the grammar of gaming being
+constructed before your eyes.
+
+246
+00:12:34,850 --> 00:12:37,449
+It was the first time people thought,
+"Well, why not do this?"
+
+247
+00:12:37,450 --> 00:12:40,289
+It was the first videogame to
+actually feature cut scenes as well.
+
+248
+00:12:40,290 --> 00:12:42,729
+There were little humorous
+cut scenes with Pac-Man
+
+249
+00:12:42,730 --> 00:12:45,929
+and the ghosts before each level.
+
+250
+00:12:45,930 --> 00:12:48,009
+You had Pac-Man being
+pursued by ghosts
+
+251
+00:12:48,010 --> 00:12:49,529
+and then Pac-Man getting a giant.
+
+252
+00:12:49,530 --> 00:12:52,129
+He would turn around and chase
+the ghost off the other way.
+
+253
+00:12:52,130 --> 00:12:55,009
+And one of the ghosts would get
+his little rope caught and he would
+
+254
+00:12:55,010 --> 00:12:58,449
+come out and see his pink leg stuck,
+sticking out from underneath.
+
+255
+00:12:58,450 --> 00:13:01,409
+It introduced the gentle element
+of humour to game play which
+
+256
+00:13:01,410 --> 00:13:03,529
+I think helped broaden its appeal.
+
+257
+00:13:03,530 --> 00:13:07,209
+Likeable characters are big business
+and Pac-Man was no exception.
+
+258
+00:13:07,210 --> 00:13:10,209
+Pac-Man, instantly after it came
+out, it was so enormously popular.
+
+259
+00:13:10,210 --> 00:13:13,729
+We started seeing Pac-Man
+T-shirts, Pac-Man lunchboxes,
+
+260
+00:13:13,730 --> 00:13:15,889
+there was a Pac-Man cartoon.
+
+261
+00:13:15,890 --> 00:13:18,849
+Pac-Man soon became a staple
+of the cheesy American Saturday
+
+262
+00:13:18,850 --> 00:13:20,049
+morning cartoon slot,
+
+263
+00:13:20,050 --> 00:13:23,569
+winning his own goofy series as well
+as some irritating commercials.
+
+264
+00:13:23,570 --> 00:13:26,289
+# Now Pac-Man isn't just
+a game you play
+
+265
+00:13:26,290 --> 00:13:30,089
+# It's a crispy corn cereal
+that's coming your way. #
+
+266
+00:13:30,090 --> 00:13:31,729
+Chomp, chomp, delicious!
+
+267
+00:13:31,730 --> 00:13:34,929
+For a time, no quintessentially
+'80s commercial was complete
+
+268
+00:13:34,930 --> 00:13:38,209
+without a whorish cameo
+from the circular pill freak.
+
+269
+00:13:38,210 --> 00:13:41,889
+# 7-Up cools your thirst. #
+
+270
+00:13:41,890 --> 00:13:45,249
+Pac-Man was on stuff. There was
+a Pac-Man board game as well.
+
+271
+00:13:45,250 --> 00:13:48,369
+It was a terrible board game with
+a big plastic Pac-Man that would
+
+272
+00:13:48,370 --> 00:13:50,969
+go about, gobbling up pellets
+and stuff.
+
+273
+00:13:50,970 --> 00:13:53,289
+And even there was the weird
+knock-off stuff as well.
+
+274
+00:13:53,290 --> 00:13:55,729
+Like, how do you badly draw a
+Pac-Man? You know what I mean?
+
+275
+00:13:55,730 --> 00:13:57,249
+But a badly drawn Pac-Man.
+
+276
+00:13:57,250 --> 00:13:59,769
+That's an impressive thing
+when you see some merchandise,
+
+277
+00:13:59,770 --> 00:14:02,289
+and you go, "That Pac-Man
+doesn't even LOOK like Pac-Man."
+
+278
+00:14:02,290 --> 00:14:04,889
+That's when you know something
+has caught on in a big way.
+
+279
+00:14:04,890 --> 00:14:06,609
+In the wake of Pac-Man's success,
+
+280
+00:14:06,610 --> 00:14:08,769
+games began to resemble
+living cartoons -
+
+281
+00:14:08,770 --> 00:14:11,849
+bright, cheerful worlds, packed with
+non-threatening characters.
+
+282
+00:14:11,850 --> 00:14:14,649
+A golden age entertainingly
+celebrated earlier this
+
+283
+00:14:14,650 --> 00:14:18,289
+year in Pixar's charmingly evocative
+film, Wreck-It Ralph.
+
+284
+00:14:18,290 --> 00:14:20,449
+My name is Wreck-It Ralph.
+
+285
+00:14:20,450 --> 00:14:24,450
+Ralph, you are bad guy, but this
+does not mean you are bad guy.
+
+286
+00:14:24,650 --> 00:14:28,569
+I don't want to be
+the bad guy any more.
+
+287
+00:14:28,570 --> 00:14:31,609
+So far, so twee,
+but that was about to change.
+
+288
+00:14:31,610 --> 00:14:33,809
+The USA and Japan had ruled
+gaming's roost
+
+289
+00:14:33,810 --> 00:14:36,729
+but now the British were coming
+and we weren't interested in some
+
+290
+00:14:36,730 --> 00:14:39,889
+cute, yellow bauble, running around
+a maze, gobbling dots.
+
+291
+00:14:39,890 --> 00:14:44,637
+We were bringing something else
+with us. We were bringing anarchy.
+
+292
+00:14:52,370 --> 00:14:56,049
+The early 1980s were a heady mix
+of the Iron Lady's iron fist,
+
+293
+00:14:56,050 --> 00:14:59,049
+soaring unemployment,
+Charles and Di's sexless kissing
+
+294
+00:14:59,050 --> 00:15:01,649
+and this footage of
+the Rubik's cube that has to be
+
+295
+00:15:01,650 --> 00:15:04,969
+included in every '80s
+nostalgia montage by law.
+
+296
+00:15:04,970 --> 00:15:07,329
+All of which provided
+the backdrop to a major
+
+297
+00:15:07,330 --> 00:15:11,089
+revolution in British homes
+as the computerised future arrived.
+
+298
+00:15:11,090 --> 00:15:13,609
+Now, it doesn't look very futuristic
+looking at it now
+
+299
+00:15:13,610 --> 00:15:16,369
+from the vantage point of the
+future, but it did back then.
+
+300
+00:15:16,370 --> 00:15:19,249
+THAT'S how time works.
+
+301
+00:15:19,250 --> 00:15:23,089
+The explosion of home computing
+that happened in the '80s was
+
+302
+00:15:23,090 --> 00:15:25,569
+almost unique to Britain...
+
+303
+00:15:25,570 --> 00:15:28,569
+because of Clive Sinclair.
+
+304
+00:15:28,570 --> 00:15:31,969
+In 1982, Sir Clive Sinclair
+launched the ZX Spectrum,
+
+305
+00:15:31,970 --> 00:15:35,970
+a cut-price home computer intended to automate
+staid, and some might say piss-dull tasks,
+
+306
+00:15:36,850 --> 00:15:38,609
+like spreadsheets
+and home economics.
+
+307
+00:15:38,610 --> 00:15:42,089
+But more excitingly, as far
+as Britain's school kids
+
+308
+00:15:42,090 --> 00:15:44,409
+were concerned,
+the Spectrum could play games,
+
+309
+00:15:44,410 --> 00:15:48,129
+often rudimentary clones of existing
+arcade hits, but games nonetheless,
+
+310
+00:15:48,130 --> 00:15:49,649
+and for a fraction of the price
+
+311
+00:15:49,650 --> 00:15:53,369
+of the swanky
+American cartridge systems.
+
+312
+00:15:53,370 --> 00:15:56,129
+And, crucially, the Spectrum
+wasn't a closed system.
+
+313
+00:15:56,130 --> 00:15:59,689
+You could write your own
+programmes for it, your own games.
+
+314
+00:15:59,690 --> 00:16:03,690
+And if you didn't know how, there were
+hundreds of available blueprints to learn from,
+
+315
+00:16:04,010 --> 00:16:07,409
+printed line by line in the back
+of hobbyist magazines, like this.
+
+316
+00:16:07,410 --> 00:16:10,169
+I would come home and see my brother
+playing with his computer
+
+317
+00:16:10,170 --> 00:16:13,849
+and learning to code it,
+using a language called BASIC.
+
+318
+00:16:13,850 --> 00:16:17,850
+What was it?
+You'd write, "10 say fuck,
+
+319
+00:16:17,970 --> 00:16:21,689
+"20 goto 10". And it would go,
+"Fuck, Fuck, Fuck..."
+
+320
+00:16:21,690 --> 00:16:25,289
+That was my coding.
+That's my coding career.
+
+321
+00:16:25,290 --> 00:16:28,769
+It spawned sort of a huge explosion
+in creativity,
+
+322
+00:16:28,770 --> 00:16:32,770
+where some brilliant people
+were coding in their bedrooms.
+
+323
+00:16:33,330 --> 00:16:35,369
+It was just like the punk movement.
+
+324
+00:16:35,370 --> 00:16:38,009
+The punk movement
+was very much like a DIY ethic.
+
+325
+00:16:38,010 --> 00:16:40,689
+It was like, "If you can't
+play guitar, fuck it,
+
+326
+00:16:40,690 --> 00:16:42,289
+"pick up a guitar and play it.
+
+327
+00:16:42,290 --> 00:16:44,609
+"It doesn't matter
+if you can't do it. Do it."
+
+328
+00:16:44,610 --> 00:16:47,089
+And that is what games
+were like in the early '80s.
+
+329
+00:16:47,090 --> 00:16:51,090
+It was like, "Don't know anything
+about programming? It doesn't matter.
+Try it, learn, do it, release it."
+
+330
+00:16:52,330 --> 00:16:55,169
+If you ask me, the ZX Spectrum
+was the people's computer,
+
+331
+00:16:55,170 --> 00:16:56,689
+a true British original.
+
+332
+00:16:56,690 --> 00:16:59,809
+It didn't have
+the fastest processor,
+its graphics were primitive
+
+333
+00:16:59,810 --> 00:17:03,810
+and the keyboard was this
+notoriously awful
+dead flesh rubber catastrophe.
+
+334
+00:17:04,170 --> 00:17:07,969
+But it did have an immense range
+of bizarre and imaginative games,
+
+335
+00:17:07,970 --> 00:17:10,929
+shot through with a uniquely
+British sense of humour.
+
+336
+00:17:10,930 --> 00:17:14,529
+Many were almost like playable
+sitcoms or comedy sketches.
+
+337
+00:17:14,530 --> 00:17:17,049
+There were hundreds of colourful,
+quirky Spectrum games,
+
+338
+00:17:17,050 --> 00:17:21,050
+but only one came to truly
+symbolise the era.
+
+339
+00:17:25,250 --> 00:17:28,169
+I mean, the first thing that
+you are struck with with Manic Miner,
+
+340
+00:17:28,170 --> 00:17:31,090
+is the hideous
+tune at the beginning.
+
+341
+00:17:35,130 --> 00:17:37,769
+It's a sort of aural assault.
+
+342
+00:17:37,770 --> 00:17:41,770
+It's disgusting.
+And the colours as well - so garish.
+
+343
+00:17:42,530 --> 00:17:46,089
+But there was something, there was
+something really kind of charming
+
+344
+00:17:46,090 --> 00:17:48,929
+and mysterious about it.
+
+345
+00:17:48,930 --> 00:17:51,329
+What's fascinating to me
+now about Manic Miner is just
+
+346
+00:17:51,330 --> 00:17:55,330
+the excitement of the rooms
+and how many rooms there were.
+
+347
+00:17:55,610 --> 00:17:58,089
+You know, all you were doing was
+looking at something that,
+
+348
+00:17:58,090 --> 00:18:01,569
+I don't know, had a few different
+blocks flying around.
+
+349
+00:18:01,570 --> 00:18:04,769
+But there was something really
+thrilling about it.
+
+350
+00:18:04,770 --> 00:18:07,969
+What made this landmark game all
+the more unusual was that it was
+
+351
+00:18:07,970 --> 00:18:11,489
+written in just six weeks by
+a 17-year-old called Matthew Smith.
+
+352
+00:18:11,490 --> 00:18:13,169
+Every single Spectrum owner
+
+353
+00:18:13,170 --> 00:18:15,969
+in Britain had that game,
+that's how good it was.
+
+354
+00:18:15,970 --> 00:18:18,409
+It's absolutely chock full
+of humour.
+
+355
+00:18:18,410 --> 00:18:21,929
+The game is very much Matthew Smith.
+
+356
+00:18:21,930 --> 00:18:24,049
+The guy's a legend and rightly so,
+
+357
+00:18:24,050 --> 00:18:27,849
+and Manic Miner is his signature.
+
+358
+00:18:27,850 --> 00:18:29,569
+Manic Miner makes it onto our list
+
+359
+00:18:29,570 --> 00:18:31,969
+for being the quintessential
+Spectrum game -
+
+360
+00:18:31,970 --> 00:18:35,249
+an idiosyncratic, peculiarly
+British home brew classic,
+
+361
+00:18:35,250 --> 00:18:39,250
+still celebrated today in clever,
+fan-created homages on the internet.
+
+362
+00:18:41,530 --> 00:18:45,129
+The Spectrum's chief rival was
+the all-American Commodore 64,
+
+363
+00:18:45,130 --> 00:18:48,049
+a more powerful and altogether
+more confident system, marketed
+
+364
+00:18:48,050 --> 00:18:52,050
+with the emphasis on fun in
+impossibly wonderful advertisements.
+
+365
+00:18:52,370 --> 00:18:54,689
+# Are you keeping up with
+the Commodore?
+
+366
+00:18:54,690 --> 00:18:57,129
+# Because the Commodore
+is keeping up with you... #
+
+367
+00:18:57,130 --> 00:19:00,369
+Commodore games had slicker graphics
+and far superior sound.
+
+368
+00:19:00,370 --> 00:19:02,289
+And as well as its
+slew of American imports,
+
+369
+00:19:02,290 --> 00:19:05,169
+it still had room
+for oddball British titles.
+
+370
+00:19:05,170 --> 00:19:07,409
+One of the games
+I remember most fondly and that
+
+371
+00:19:07,410 --> 00:19:10,329
+I'm most pleased to have been
+involved with
+
+372
+00:19:10,330 --> 00:19:13,289
+was my old game Hover Bovver.
+Primarily because
+
+373
+00:19:13,290 --> 00:19:16,209
+that was a collaboration in design
+with me and my dad.
+
+374
+00:19:16,210 --> 00:19:19,169
+It's another one of these silly,
+British comedy games that
+
+375
+00:19:19,170 --> 00:19:22,649
+just arose one morning
+when we were sitting in a place
+
+376
+00:19:22,650 --> 00:19:25,449
+where there was somebody mowing
+a lawn outside.
+
+377
+00:19:25,450 --> 00:19:27,049
+We just started tossing back
+
+378
+00:19:27,050 --> 00:19:30,249
+and forth this idea of a comedic
+game where somebody was
+
+379
+00:19:30,250 --> 00:19:34,250
+mowing a lawn and there could be
+a dog which gets in the way.
+
+380
+00:19:34,850 --> 00:19:38,850
+I mean, it was all very
+Terry and June, you know? But...
+
+381
+00:19:39,490 --> 00:19:42,049
+it ended up being a really fun
+little game.
+
+382
+00:19:42,050 --> 00:19:44,809
+But it wasn't all
+rosy in the British gaming garden.
+
+383
+00:19:44,810 --> 00:19:46,209
+It wasn't like a club, no.
+
+384
+00:19:46,210 --> 00:19:49,529
+Commodore and Spectrum owners
+didn't like each other, at all.
+
+385
+00:19:49,530 --> 00:19:51,249
+Long before Blur versus Oasis,
+
+386
+00:19:51,250 --> 00:19:55,250
+or any other of those hideous
+media inventions of fake clashes,
+
+387
+00:19:56,170 --> 00:19:59,489
+the Commodore versus Spectrum
+debate was a civil war,
+
+388
+00:19:59,490 --> 00:20:03,490
+a geek civil war, whose repercussions
+can still be felt to this day.
+
+389
+00:20:03,770 --> 00:20:05,809
+The Spectrum was British, you know,
+
+390
+00:20:05,810 --> 00:20:09,369
+it was kind of the local favourite
+and all that. But...
+
+391
+00:20:09,370 --> 00:20:11,889
+you always knew, tell me,
+you always knew, didn't you,
+
+392
+00:20:11,890 --> 00:20:14,049
+you always knew that you had
+the lesser machine.
+
+393
+00:20:14,050 --> 00:20:17,249
+Essentially, you would be driving
+your Triumph, and that's great.
+
+394
+00:20:17,250 --> 00:20:19,449
+And then we'd pull up in a Cadillac,
+
+395
+00:20:19,450 --> 00:20:23,450
+which essentially, the Commodore 64
+was, with its big, clacky keys.
+
+396
+00:20:23,810 --> 00:20:27,489
+Shift, run, stop, loads and plays.
+
+397
+00:20:27,490 --> 00:20:29,209
+Still, despite their rivalry,
+
+398
+00:20:29,210 --> 00:20:32,449
+Spectrum and Commodore owners could
+unite on one key issue,
+
+399
+00:20:32,450 --> 00:20:36,169
+and that was that owners of
+the third system - the BBC Micro -
+
+400
+00:20:36,170 --> 00:20:39,409
+very much the Liberal Democrats
+of the computer world,
+
+401
+00:20:39,410 --> 00:20:40,849
+THEY were dicks.
+
+402
+00:20:40,850 --> 00:20:44,089
+The BBC Micro was a chunky,
+middle-class computer
+
+403
+00:20:44,090 --> 00:20:46,929
+created for the BBC's
+Computer Literacy Project -
+
+404
+00:20:46,930 --> 00:20:49,489
+a jolly, well-meaning attempt
+to get Britain coding,
+
+405
+00:20:49,490 --> 00:20:51,409
+courtesy of jolly, well-meaning,
+
+406
+00:20:51,410 --> 00:20:53,689
+but not notably
+sexy edutainment shows
+
+407
+00:20:53,690 --> 00:20:57,409
+like Making the Most of the Micro.
+
+408
+00:20:57,410 --> 00:21:00,049
+I've got here
+a listing of the programme that
+
+409
+00:21:00,050 --> 00:21:02,529
+I have taken off the printer.
+
+410
+00:21:02,530 --> 00:21:06,530
+And it's a reasonably sized
+programme for a microcomputer.
+
+411
+00:21:07,850 --> 00:21:11,169
+Little wonder the computer itself
+had a bit of an image problem.
+
+412
+00:21:11,170 --> 00:21:13,889
+The BBC was for people
+who were a bit posh,
+
+413
+00:21:13,890 --> 00:21:16,009
+because that was
+quite an expensive machine.
+
+414
+00:21:16,010 --> 00:21:17,809
+So if you were BBC,
+you were a bit posh.
+
+415
+00:21:17,810 --> 00:21:20,089
+I was a BBC Micro guy.
+
+416
+00:21:20,090 --> 00:21:23,529
+The squidgy keyboard Spectrum...
+I mean, I just laughed at it!
+
+417
+00:21:23,530 --> 00:21:24,889
+Square it may well have been,
+
+418
+00:21:24,890 --> 00:21:27,929
+but the BBC was soon blessed
+with a killer app of its own -
+
+419
+00:21:27,930 --> 00:21:30,809
+a game that didn't just promise
+you the world, but handed you
+
+420
+00:21:30,810 --> 00:21:34,449
+an entire universe, then let you
+do with you wanted in it.
+
+421
+00:21:34,450 --> 00:21:35,970
+A game called Elite.
+
+422
+00:21:44,130 --> 00:21:46,849
+These spartan,
+monochrome wire-frame graphics,
+
+423
+00:21:46,850 --> 00:21:49,849
+primitive by today's standards,
+were stunning at the time.
+
+424
+00:21:49,850 --> 00:21:51,609
+But that was only the start of it.
+
+425
+00:21:51,610 --> 00:21:53,689
+Elite came out in 1984,
+
+426
+00:21:53,690 --> 00:21:57,690
+and it was really a ground-breaking
+game on so many levels.
+
+427
+00:21:57,730 --> 00:21:59,689
+It was impossibly big.
+
+428
+00:21:59,690 --> 00:22:03,690
+You know, what Elite did was it
+simulated the entire universe.
+
+429
+00:22:04,810 --> 00:22:07,209
+It didn't do anything by halves.
+
+430
+00:22:07,210 --> 00:22:10,689
+Elite was made by two incredibly
+intelligent university
+
+431
+00:22:10,690 --> 00:22:13,369
+students called Ian Bell
+and David Braburn.
+
+432
+00:22:13,370 --> 00:22:17,370
+And technologically it was
+a massive, massive achievement,
+
+433
+00:22:17,410 --> 00:22:21,249
+because you have got these enormous
+galaxies into 32K,
+
+434
+00:22:21,250 --> 00:22:24,729
+which you couldn't even open
+a Word document without now.
+
+435
+00:22:24,730 --> 00:22:26,809
+That game feels like
+it fell through a time hole
+
+436
+00:22:26,810 --> 00:22:29,769
+from 20 years in the future, it
+shouldn't have existed back then.
+
+437
+00:22:29,770 --> 00:22:32,929
+Both technologically
+and also in terms of what
+
+438
+00:22:32,930 --> 00:22:36,930
+they were trying to achieve
+in creating a living, 3D world.
+
+439
+00:22:37,130 --> 00:22:40,529
+Elite wasn't just a technical
+marvel, but a conceptual one.
+
+440
+00:22:40,530 --> 00:22:43,489
+Until then, almost every game
+told you, the player, what to do.
+
+441
+00:22:43,490 --> 00:22:45,449
+There were rules
+and you had to follow them,
+
+442
+00:22:45,450 --> 00:22:47,849
+punching buttons like a lab rat.
+
+443
+00:22:47,850 --> 00:22:49,689
+Elite jettisoned
+the rule book into space
+
+444
+00:22:49,690 --> 00:22:53,690
+and let you get on
+with absolutely anything.
+
+445
+00:22:54,570 --> 00:22:57,129
+It was the first,
+what we would call a sandbox game,
+
+446
+00:22:57,130 --> 00:22:58,769
+or an open world game.
+
+447
+00:22:58,770 --> 00:23:02,369
+You can play the game in any way you
+want, it's not linear any more.
+
+448
+00:23:02,370 --> 00:23:05,609
+Suddenly you are given
+a playing environment
+
+449
+00:23:05,610 --> 00:23:09,610
+and you can choose to do Mission A
+first or Mission D first.
+
+450
+00:23:09,970 --> 00:23:12,209
+You can also choose not to do
+any missions, you can
+
+451
+00:23:12,210 --> 00:23:14,649
+just go out there
+and explore if you want to.
+
+452
+00:23:14,650 --> 00:23:18,650
+Suddenly you could really control
+your entertainment experience in ways
+that were never possible before.
+
+453
+00:23:22,770 --> 00:23:26,409
+The fantasy of exploring a limitless
+galaxy is a seductive one,
+
+454
+00:23:26,410 --> 00:23:28,569
+hence the success of
+memorable exercises
+
+455
+00:23:28,570 --> 00:23:32,129
+in wish fulfilment like the camp
+but lovable Star Trek, or the
+
+456
+00:23:32,130 --> 00:23:36,130
+rambling, picaresque shenanigans of
+space-hopping hobo Doctor Who.
+
+457
+00:23:38,850 --> 00:23:41,009
+Those interstellar bumbags
+had all the fun.
+
+458
+00:23:41,010 --> 00:23:45,010
+Now, thanks to Elite, you could explore
+the universe like Kirk or the Doctor.
+
+459
+00:23:45,970 --> 00:23:48,969
+But unlike them, you didn't have
+a deep space travel card, no.
+
+460
+00:23:48,970 --> 00:23:51,529
+You had to pay your way
+by trading goods.
+
+461
+00:23:51,530 --> 00:23:53,969
+And the quickest way
+to earn big money
+
+462
+00:23:53,970 --> 00:23:57,489
+was to trade illegal stuff,
+like slaves or narcotics.
+
+463
+00:23:57,490 --> 00:23:59,409
+Just like Doctor Who doesn't.
+
+464
+00:23:59,410 --> 00:24:01,929
+Massive bastards could even
+turn to piracy,
+
+465
+00:24:01,930 --> 00:24:05,729
+blowing up other ships
+and stealing their cargo.
+
+466
+00:24:05,730 --> 00:24:07,649
+I had always seen Elite as...
+
+467
+00:24:07,650 --> 00:24:11,529
+Imagine the 17th, 18th, 19th century
+of sailing ships
+
+468
+00:24:11,530 --> 00:24:14,529
+going across the Atlantic,
+trading all sorts of goods.
+
+469
+00:24:14,530 --> 00:24:17,089
+You know, should you just cover
+the normal things,
+
+470
+00:24:17,090 --> 00:24:19,929
+or should you cover the things
+that were deeply illegal?
+
+471
+00:24:19,930 --> 00:24:23,930
+We wanted the player to have the
+freedom to do good and to do bad.
+
+472
+00:24:24,730 --> 00:24:27,689
+It was, like,
+kind of Thatcher in space.
+
+473
+00:24:27,690 --> 00:24:30,769
+It was make money in this universe,
+however you want to do it.
+
+474
+00:24:30,770 --> 00:24:33,409
+If you want to sell slaves,
+if you want to sell narcotics,
+
+475
+00:24:33,410 --> 00:24:35,609
+if that's the way to do it,
+even though there was
+
+476
+00:24:35,610 --> 00:24:38,249
+risk involved, that's what you did.
+
+477
+00:24:38,250 --> 00:24:40,409
+If you can imagine in the mid-1980s,
+
+478
+00:24:40,410 --> 00:24:44,410
+we were at the height of capitalism
+and the economics of life
+
+479
+00:24:44,970 --> 00:24:48,970
+and the politics of life as well,
+were reflected inside the game.
+
+480
+00:24:50,090 --> 00:24:53,969
+It wasn't overtly meant to be
+political at all, but I think
+
+481
+00:24:53,970 --> 00:24:57,970
+it sort of, as a sort of child of
+its time, it sort of became that way
+
+482
+00:24:58,450 --> 00:25:00,849
+because of the money focus
+of the game.
+
+483
+00:25:00,850 --> 00:25:03,729
+You found yourself playing the game
+because you wanted that
+
+484
+00:25:03,730 --> 00:25:07,129
+docking computer, you wanted
+that large cargo bay or whatever.
+
+485
+00:25:07,130 --> 00:25:08,929
+And you aspired to the next
+bit of money
+
+486
+00:25:08,930 --> 00:25:11,209
+and you would do anything
+in the game to just try
+
+487
+00:25:11,210 --> 00:25:15,210
+and get that little extra bit
+because you wanted it so much.
+
+488
+00:25:16,010 --> 00:25:17,889
+There are so many new
+concepts in that game,
+
+489
+00:25:17,890 --> 00:25:21,289
+it was such a leap forward
+that I think for publishers and for
+
+490
+00:25:21,290 --> 00:25:24,649
+the audience at the time, it took a
+while to get their head around it.
+
+491
+00:25:24,650 --> 00:25:27,889
+But once they understood what was
+possible, that you could
+
+492
+00:25:27,890 --> 00:25:31,689
+create worlds inside a computer,
+that was just absolutely amazing.
+
+493
+00:25:31,690 --> 00:25:35,409
+Elite gave birth to an entire genre
+of open world sandbox games,
+
+494
+00:25:35,410 --> 00:25:38,329
+in which the player is largely free
+to create their own narrative.
+
+495
+00:25:38,330 --> 00:25:41,049
+The most famous example
+being the gleefully anarchic
+
+496
+00:25:41,050 --> 00:25:44,969
+and morally wonky Grand Theft Auto,
+which we'll return to later.
+
+497
+00:25:44,970 --> 00:25:48,129
+So, Britain had enjoyed a mini
+renaissance of early gaming,
+
+498
+00:25:48,130 --> 00:25:50,769
+but the rest of the world wasn't
+just sitting around, giving up
+
+499
+00:25:50,770 --> 00:25:52,129
+and going, "Pffff..."
+
+500
+00:25:52,130 --> 00:25:55,009
+Thousands of miles away,
+somewhere terrifyingly foreign,
+
+501
+00:25:55,010 --> 00:25:56,289
+a boffin was working on a game
+
+502
+00:25:56,290 --> 00:26:00,009
+so nightmarishly addictive, it would
+soon enslave all of mankind
+
+503
+00:26:00,010 --> 00:26:02,609
+and destroy the world as we knew it.
+Kind of.
+
+504
+00:26:02,610 --> 00:26:09,090
+You'll have to watch the next part
+to see if I've oversold that.
+
+505
+00:26:12,130 --> 00:26:15,409
+# Try not to use me
+
+506
+00:26:15,410 --> 00:26:18,369
+# Try not to use me... #
+
+507
+00:26:18,370 --> 00:26:21,089
+The year is 1985 and as
+an audience of millions
+
+508
+00:26:21,090 --> 00:26:23,289
+pretends to live in harmony
+while withstanding
+
+509
+00:26:23,290 --> 00:26:26,849
+this fucking excruciating Duran
+Duran performance at Live Aid,
+
+510
+00:26:26,850 --> 00:26:28,329
+the world is in flux.
+
+511
+00:26:28,330 --> 00:26:30,449
+Riots are tearing
+across the United Kingdom
+
+512
+00:26:30,450 --> 00:26:34,450
+and not even the glittering Royal Premiere
+of Back To The Future can stem that chaos,
+
+513
+00:26:35,250 --> 00:26:38,849
+chiefly because the two events
+are entirely unrelated.
+
+514
+00:26:38,850 --> 00:26:41,609
+Meanwhile, something was about to
+happen in the world of gaming
+
+515
+00:26:41,610 --> 00:26:45,049
+that was on a par with the Beatles
+releasing their first single
+
+516
+00:26:45,050 --> 00:26:49,050
+but with catchier music.
+
+517
+00:26:53,330 --> 00:26:54,769
+When Mario first appeared
+
+518
+00:26:54,770 --> 00:26:57,689
+as the protagonist in
+the challenging Donkey Kong,
+
+519
+00:26:57,690 --> 00:26:59,409
+he was known only as Jumpman.
+
+520
+00:26:59,410 --> 00:27:00,649
+A few years later he popped up
+
+521
+00:27:00,650 --> 00:27:03,449
+in the somewhat bare-boned
+platformer Mario Bros
+
+522
+00:27:03,450 --> 00:27:07,329
+but it wasn't until 1985 and
+the release of Super Mario Bros
+
+523
+00:27:07,330 --> 00:27:11,249
+that he became an instantly
+recognisable icon.
+
+524
+00:27:11,250 --> 00:27:15,249
+Super Mario Bros is a side scrolling
+platform game where basically
+
+525
+00:27:15,250 --> 00:27:18,889
+you have to run from left to right,
+going up ladders, down pipes,
+
+526
+00:27:18,890 --> 00:27:22,890
+jumping on monsters,
+collecting gold coins.
+
+527
+00:27:23,730 --> 00:27:27,730
+He's just a masterpiece
+of minimalist design.
+
+528
+00:27:29,570 --> 00:27:33,570
+You get his personality from just
+this tiny, tiny bit of information.
+
+529
+00:27:34,410 --> 00:27:36,049
+His design actually came from
+
+530
+00:27:36,050 --> 00:27:38,409
+the limitations of the console
+at the time,
+
+531
+00:27:38,410 --> 00:27:40,889
+you know, the blue overalls,
+the red cap, the moustache,
+
+532
+00:27:40,890 --> 00:27:42,329
+all of which came about because
+
+533
+00:27:42,330 --> 00:27:45,009
+they couldn't really render
+anything more complex than that.
+
+534
+00:27:45,010 --> 00:27:47,409
+So it was red, white,
+blue and black for a moustache,
+
+535
+00:27:47,410 --> 00:27:49,929
+it was as simple as that,
+and it was born of necessity.
+
+536
+00:27:49,930 --> 00:27:52,249
+That's why it's curious
+that he's become
+
+537
+00:27:52,250 --> 00:27:54,729
+the kind of iconic brand
+character that he is now.
+
+538
+00:27:54,730 --> 00:27:58,129
+Mario just means games to me,
+if I'm being honest.
+
+539
+00:27:58,130 --> 00:28:01,409
+Always friendly,
+always beautiful to play,
+
+540
+00:28:01,410 --> 00:28:02,809
+like ALWAYS beautiful to play.
+
+541
+00:28:02,810 --> 00:28:04,209
+It has never really failed
+
+542
+00:28:04,210 --> 00:28:08,210
+and I think that Mario represents
+all the right stuff in gaming,
+
+543
+00:28:09,610 --> 00:28:13,610
+all that pure fun stuff,
+the essence is all there in Mario.
+
+544
+00:28:14,170 --> 00:28:18,170
+Again, it's this idea of complexity
+hidden behind simplicity
+
+545
+00:28:18,930 --> 00:28:21,449
+so the Super Mario games look
+simple, they look beautiful,
+
+546
+00:28:21,450 --> 00:28:23,649
+they look like they're for everybody
+and they are,
+
+547
+00:28:23,650 --> 00:28:27,650
+but they're also really,
+really difficult games, you know?
+
+548
+00:28:32,090 --> 00:28:34,129
+'Oh, you idiot!'
+
+549
+00:28:34,130 --> 00:28:36,249
+It is the hallmark of just how
+well judged
+
+550
+00:28:36,250 --> 00:28:37,969
+Mario's level of difficulty is -
+
+551
+00:28:37,970 --> 00:28:40,129
+in the process of playing it
+you'll die hundreds,
+
+552
+00:28:40,130 --> 00:28:41,649
+if not thousands of times,
+
+553
+00:28:41,650 --> 00:28:44,449
+but each time, you'll blame
+yourself, not the game.
+
+554
+00:28:44,450 --> 00:28:47,489
+And it's that constant sense that
+next time you can do better
+
+555
+00:28:47,490 --> 00:28:49,649
+that spurs you on
+and keeps you playing.
+
+556
+00:28:49,650 --> 00:28:52,369
+Argh!
+
+557
+00:28:52,370 --> 00:28:55,249
+In fact, the Mario platforming
+format is so compelling
+
+558
+00:28:55,250 --> 00:28:57,689
+it appeals to absolutely everyone
+
+559
+00:28:57,690 --> 00:29:00,689
+from the under fives
+to the under fatwas.
+
+560
+00:29:00,690 --> 00:29:04,609
+I've become a master
+of the Nintendo machine.
+
+561
+00:29:04,610 --> 00:29:07,969
+I think I've become very
+good at defeating
+
+562
+00:29:07,970 --> 00:29:11,529
+all sorts of tiny little
+two-dimensional enemies.
+
+563
+00:29:11,530 --> 00:29:13,729
+Yes, Salman Rushdie
+became a Mario addict
+
+564
+00:29:13,730 --> 00:29:15,369
+during his virtual house arrest.
+
+565
+00:29:15,370 --> 00:29:18,529
+He even put his addiction to good
+use with his children's novel,
+
+566
+00:29:18,530 --> 00:29:21,929
+Luka And The Fire Of Life, seemingly
+directly inspired by the game.
+
+567
+00:29:21,930 --> 00:29:24,449
+In this, the hero traverses levels,
+saves his progress
+
+568
+00:29:24,450 --> 00:29:27,529
+and has multiple lives, which
+probably seems like a particularly
+
+569
+00:29:27,530 --> 00:29:31,530
+brilliant concept when you're living
+under a death sentence.
+
+570
+00:29:34,530 --> 00:29:37,489
+You can't really talk about
+Super Mario's success without
+
+571
+00:29:37,490 --> 00:29:41,490
+talking about Koji Kondo's
+music design.
+
+572
+00:29:44,570 --> 00:29:48,570
+Mario's music was brilliant
+because every melody is memorable.
+
+573
+00:29:54,050 --> 00:29:56,210
+There were so many of them.
+
+574
+00:30:03,250 --> 00:30:05,529
+And that's the sickest one, I think.
+
+575
+00:30:05,530 --> 00:30:09,530
+I swear, any rapper would just be
+like, that's the best rap beat ever.
+
+576
+00:30:11,450 --> 00:30:15,450
+'Labrinth, come in.'
+
+577
+00:30:16,930 --> 00:30:19,049
+I think video games have influenced
+
+578
+00:30:19,050 --> 00:30:22,089
+my whole reason for wanting
+to make the music I make.
+
+579
+00:30:22,090 --> 00:30:24,969
+You know, that kind of 8-bit energy,
+16-bit energy.
+
+580
+00:30:24,970 --> 00:30:26,369
+It's kind of inspired a lot,
+
+581
+00:30:26,370 --> 00:30:30,370
+especially a lot of the earlier
+stuff I made with Tinie massively.
+
+582
+00:30:31,810 --> 00:30:35,249
+It just had a very important effect
+on the way I think about music
+
+583
+00:30:35,250 --> 00:30:38,209
+and see music
+and get inspired with music as well.
+
+584
+00:30:38,210 --> 00:30:40,849
+Mario was created by
+Shigeru Miyamoto,
+
+585
+00:30:40,850 --> 00:30:44,850
+seen here winning
+a BAFTA in celebratory scenes.
+
+586
+00:30:45,130 --> 00:30:48,929
+No other game designer has ever been
+able to replicate
+
+587
+00:30:48,930 --> 00:30:50,809
+the sheer joy of exploration
+
+588
+00:30:50,810 --> 00:30:53,769
+and childhood wonder
+like Shigeru Miyamoto.
+
+589
+00:30:53,770 --> 00:30:56,889
+People talk about Miyamoto as
+the Spielberg of game design.
+
+590
+00:30:56,890 --> 00:30:58,129
+He very much is.
+
+591
+00:30:58,130 --> 00:31:01,769
+He's a man who creates wonder
+on the screen like no-one else.
+
+592
+00:31:01,770 --> 00:31:03,969
+In fact, Miyamoto isn't
+just the Spielberg
+
+593
+00:31:03,970 --> 00:31:05,449
+but the Walt Disney of games,
+
+594
+00:31:05,450 --> 00:31:08,249
+responsible for an unprecedented
+number of treats including
+
+595
+00:31:08,250 --> 00:31:11,729
+the beautifully designed
+and widely beloved Zelda series.
+
+596
+00:31:11,730 --> 00:31:13,289
+Unlike many video game mascots,
+
+597
+00:31:13,290 --> 00:31:15,889
+which tend to be
+a Crash Bandicoot in the pan,
+
+598
+00:31:15,890 --> 00:31:18,209
+Miyamoto's creations have
+endured largely
+
+599
+00:31:18,210 --> 00:31:21,689
+because the games they appear in
+tend to be very well made.
+
+600
+00:31:21,690 --> 00:31:25,169
+Mario, in particular, has become
+almost a kitemark of quality.
+
+601
+00:31:25,170 --> 00:31:27,689
+If you've grown-up with Mario,
+then he's part of your life
+
+602
+00:31:27,690 --> 00:31:28,929
+and so there are now parents
+
+603
+00:31:28,930 --> 00:31:32,529
+who want their children
+to experience Super Mario
+
+604
+00:31:32,530 --> 00:31:34,849
+and have the excitement and
+joy of problem solving and
+
+605
+00:31:34,850 --> 00:31:38,850
+winning games that they did
+with the Mario characters.
+
+606
+00:31:38,930 --> 00:31:41,969
+It's a joy
+to watch my children enjoying it.
+
+607
+00:31:41,970 --> 00:31:44,929
+Back on Earth in 1989,
+the Berlin Wall fell,
+
+608
+00:31:44,930 --> 00:31:47,649
+marking the end of the Cold War
+and the eastern bloc.
+
+609
+00:31:47,650 --> 00:31:49,529
+And these weren't the only
+tumbling blocks
+
+610
+00:31:49,530 --> 00:31:53,530
+and falling bricks the Soviets
+had to contend with.
+
+611
+00:32:01,130 --> 00:32:04,009
+I think there's been puzzles
+throughout the ages
+
+612
+00:32:04,010 --> 00:32:06,849
+and I think Tetris
+is the perfect incarnation
+
+613
+00:32:06,850 --> 00:32:08,769
+of a traditional puzzle game
+
+614
+00:32:08,770 --> 00:32:11,809
+in video game form.
+
+615
+00:32:11,810 --> 00:32:14,449
+Everybody is familiar with putting
+puzzle pieces together
+
+616
+00:32:14,450 --> 00:32:16,969
+and it just combined that
+with reflexes
+
+617
+00:32:16,970 --> 00:32:20,409
+and that's kind of like the perfect
+melding of two worlds,
+
+618
+00:32:20,410 --> 00:32:21,889
+like sports and puzzles.
+
+619
+00:32:21,890 --> 00:32:24,609
+When video games started out they
+were things anyone could play,
+
+620
+00:32:24,610 --> 00:32:25,769
+like Pac-Man, Donkey Kong,
+
+621
+00:32:25,770 --> 00:32:27,809
+things literally anybody
+could understand.
+
+622
+00:32:27,810 --> 00:32:28,969
+Tetris is just like that.
+
+623
+00:32:28,970 --> 00:32:31,929
+Games have got more complicated but
+Tetris was "fit shapes together".
+
+624
+00:32:31,930 --> 00:32:35,209
+The minute you learn how to play
+Tetris you've already succeeded at it
+
+625
+00:32:35,210 --> 00:32:37,569
+and there's not many games you can
+say that about.
+
+626
+00:32:37,570 --> 00:32:40,089
+The minute you learn,
+"Oh, this block goes in here,
+
+627
+00:32:40,090 --> 00:32:43,609
+"this fits in here, then that
+fits in here, that goes boom,"
+
+628
+00:32:43,610 --> 00:32:45,729
+and you've already
+succeeded right away.
+
+629
+00:32:45,730 --> 00:32:48,049
+The minute you learn it,
+you're winning at it.
+
+630
+00:32:48,050 --> 00:32:49,849
+I think that's the magic of Tetris,
+
+631
+00:32:49,850 --> 00:32:53,850
+that's what makes it completely
+compelling right from the start.
+
+632
+00:32:54,090 --> 00:32:56,449
+It's just a design
+that's so perfect
+
+633
+00:32:56,450 --> 00:33:00,450
+that every single game designer
+who looks at that thinks,
+
+634
+00:33:00,570 --> 00:33:03,369
+"I really wish
+I could've made that."
+
+635
+00:33:03,370 --> 00:33:07,049
+It's so simple but so beautiful.
+
+636
+00:33:07,050 --> 00:33:08,809
+Tetris's straightforward design
+
+637
+00:33:08,810 --> 00:33:11,289
+was largely a result of the way
+it was created.
+
+638
+00:33:11,290 --> 00:33:14,449
+Computer engineer
+Alexey Pajitnov wrote it on
+
+639
+00:33:14,450 --> 00:33:15,809
+the defiantly non-gamesy,
+
+640
+00:33:15,810 --> 00:33:19,810
+Soviet and utilitarian
+Electronica 60 terminal.
+
+641
+00:33:21,490 --> 00:33:23,929
+It was pretty much at the dying
+embers of the Cold War.
+
+642
+00:33:23,930 --> 00:33:27,849
+It was one of the first products
+that moved from east to west
+
+643
+00:33:27,850 --> 00:33:30,449
+and, interestingly, he never actually
+made any money out of it
+
+644
+00:33:30,450 --> 00:33:31,609
+until very, very recently
+
+645
+00:33:31,610 --> 00:33:35,610
+because it was effectively
+owned by the Russian government.
+
+646
+00:33:35,690 --> 00:33:38,369
+Tetris was perhaps the first game
+that was compelling
+
+647
+00:33:38,370 --> 00:33:39,969
+to the point of being addictive.
+
+648
+00:33:39,970 --> 00:33:43,970
+While playing, you were dimly aware
+that some kind of irrational appeal
+
+649
+00:33:44,290 --> 00:33:46,209
+had completely gripped your mind.
+
+650
+00:33:46,210 --> 00:33:49,889
+It was like a sickness,
+absolutely like a sickness,
+
+651
+00:33:49,890 --> 00:33:53,009
+because it was a constant, "Can
+I do this? I can do it, I've won.
+
+652
+00:33:53,010 --> 00:33:55,889
+"Can I do this? I've won. I've won.
+I've won. I've won. I've won."
+
+653
+00:33:55,890 --> 00:33:58,489
+Panic, panic, panic, and then
+eventually, you would lose,
+
+654
+00:33:58,490 --> 00:34:01,889
+but there was always, success was always
+just a couple of button presses away,
+
+655
+00:34:01,890 --> 00:34:04,009
+it was always a couple of button
+presses away
+
+656
+00:34:04,010 --> 00:34:05,569
+so it was just a constant reward.
+
+657
+00:34:05,570 --> 00:34:09,009
+There's a concept called flow
+in video game playing
+
+658
+00:34:09,010 --> 00:34:12,289
+and in fact it happens
+outside of video game play as well.
+
+659
+00:34:12,290 --> 00:34:16,289
+It's where a person will be
+completely immersed
+
+660
+00:34:16,290 --> 00:34:18,809
+and engaged in the task at hand
+
+661
+00:34:18,810 --> 00:34:22,810
+and everything else just disappears
+and falls to the wayside.
+
+662
+00:34:22,970 --> 00:34:26,970
+Years ago, the repetitive nature
+of knitting was quite often used
+
+663
+00:34:27,250 --> 00:34:30,649
+to help people with low-level
+mental health issues,
+
+664
+00:34:30,650 --> 00:34:32,289
+low-level depression,
+
+665
+00:34:32,290 --> 00:34:35,609
+and Tetris is a similar kind of
+environment to that.
+
+666
+00:34:35,610 --> 00:34:39,610
+If you handed me Tetris right now
+I would play for an hour happily.
+
+667
+00:34:40,610 --> 00:34:44,610
+Tetris, for me,
+was a hugely significant game
+
+668
+00:34:45,370 --> 00:34:48,289
+because it was the first game
+I ever got on my Game Boy,
+
+669
+00:34:48,290 --> 00:34:52,290
+which was basically your conduit to
+life and entertainment as a child.
+
+670
+00:34:52,490 --> 00:34:55,689
+Bundling Tetris with every Game Boy
+was a masterstroke.
+
+671
+00:34:55,690 --> 00:34:58,769
+Here was an addiction you could
+carry around with you for
+
+672
+00:34:58,770 --> 00:35:02,529
+a cheeky hit now and then, just like
+cigarettes but a bit less deathy.
+
+673
+00:35:02,530 --> 00:35:05,569
+I dread to think how many bus stops
+and train stops were missed
+
+674
+00:35:05,570 --> 00:35:08,929
+because of it but it was that sort
+of thing, you could just take it out
+
+675
+00:35:08,930 --> 00:35:11,969
+of your pocket and play it whenever
+you had any moment of downtime.
+
+676
+00:35:11,970 --> 00:35:15,129
+And that's something we're still
+seeing today with mobile phones.
+
+677
+00:35:15,130 --> 00:35:18,009
+Its lineage leads to things
+like Angry Birds -
+
+678
+00:35:18,010 --> 00:35:21,129
+the whole kind of
+casual mobile scene
+
+679
+00:35:21,130 --> 00:35:23,849
+pretty much had its ancestry
+in the likes of Tetris.
+
+680
+00:35:23,850 --> 00:35:27,729
+Even as the Russians were chalking
+up their first big hit with Tetris,
+
+681
+00:35:27,730 --> 00:35:29,849
+meanwhile on our side
+of the Iron Curtain,
+
+682
+00:35:29,850 --> 00:35:33,369
+Hollywood was starting to get
+seriously involved in the games industry.
+
+683
+00:35:33,370 --> 00:35:37,370
+Games were being created by the
+people who brought you Star Wars.
+
+684
+00:35:38,290 --> 00:35:42,289
+You know, Star Wars.
+
+685
+00:35:42,290 --> 00:35:45,649
+What was interesting straightaway
+about the LucasArts studio
+
+686
+00:35:45,650 --> 00:35:49,569
+was it was under the umbrella of
+Lucasfilm, George Lucas's company,
+
+687
+00:35:49,570 --> 00:35:52,889
+so it was the first connection
+between film and games.
+
+688
+00:35:52,890 --> 00:35:55,849
+LucasArts started and it had
+a mandate
+
+689
+00:35:55,850 --> 00:35:58,569
+to stay small and not lose any money
+
+690
+00:35:58,570 --> 00:36:02,409
+and to be the best, I think,
+were the three slogans they had.
+
+691
+00:36:02,410 --> 00:36:04,329
+And also, don't use Star Wars.
+
+692
+00:36:04,330 --> 00:36:08,330
+George wanted this new company
+to stand on its own legs.
+
+693
+00:36:08,370 --> 00:36:10,729
+Early LucasArts efforts were
+action games which,
+
+694
+00:36:10,730 --> 00:36:13,369
+while technically cutting-edge,
+didn't have much impact.
+
+695
+00:36:13,370 --> 00:36:15,769
+What these games were missing
+was a coherent story,
+
+696
+00:36:15,770 --> 00:36:17,889
+something you'd think Hollywood
+would excel at.
+
+697
+00:36:17,890 --> 00:36:21,129
+The first attempts at computerised
+interactive fiction
+
+698
+00:36:21,130 --> 00:36:24,889
+such as Zork, here, consisted of
+nothing but text on a screen -
+
+699
+00:36:24,890 --> 00:36:27,969
+a kind of playable novella
+you navigated through
+
+700
+00:36:27,970 --> 00:36:31,649
+by typing in instructions like
+"go north" and "get lamp".
+
+701
+00:36:31,650 --> 00:36:34,369
+This spectrum adaptation
+of The Hobbit added crude
+
+702
+00:36:34,370 --> 00:36:36,969
+graphics to the sea of text -
+not quite Peter Jackson.
+
+703
+00:36:36,970 --> 00:36:39,569
+It wasn't until LucasArts turned
+the genre into a point
+
+704
+00:36:39,570 --> 00:36:42,689
+and click cartoon that interactive
+storytelling came of age.
+
+705
+00:36:42,690 --> 00:36:45,209
+When anyone asks me
+what my favourite video game is,
+
+706
+00:36:45,210 --> 00:36:49,210
+it's not your Grand Theft Autos or
+Call Of Dutys, it's Monkey Island.
+
+707
+00:36:56,570 --> 00:36:58,009
+The Secret Of Monkey Island
+
+708
+00:36:58,010 --> 00:37:01,009
+was a brilliantly realised
+comic adventure
+
+709
+00:37:01,010 --> 00:37:03,729
+overflowing with
+character and charm.
+
+710
+00:37:03,730 --> 00:37:06,569
+What I loved about the Monkey Island
+series was the fact that they
+
+711
+00:37:06,570 --> 00:37:09,569
+were a bit romantic at times,
+the main character, the protagonist,
+
+712
+00:37:09,570 --> 00:37:11,809
+was a guy was a guy by the name of
+Guybrush Threepwood,
+
+713
+00:37:11,810 --> 00:37:14,129
+a wannabe pirate who just really
+didn't have it in him.
+
+714
+00:37:14,130 --> 00:37:16,809
+He didn't have the guts, he didn't
+have the nous to become this
+
+715
+00:37:16,810 --> 00:37:19,409
+famous pirate
+that he'd always wanted to be.
+
+716
+00:37:19,410 --> 00:37:21,289
+We had Elaine Marley,
+the love interest.
+
+717
+00:37:21,290 --> 00:37:23,489
+She was funny,
+the script was excellent.
+
+718
+00:37:23,490 --> 00:37:25,329
+The main antagonist, the main baddie,
+
+719
+00:37:25,330 --> 00:37:27,089
+was a ghost pirate by the name of
+LeChuck.
+
+720
+00:37:27,090 --> 00:37:28,489
+I love that character so much,
+
+721
+00:37:28,490 --> 00:37:32,490
+I've actually got a tattoo
+on my leg of the man himself.
+
+722
+00:37:32,930 --> 00:37:35,009
+Not only is it a beautifully
+programmed game
+
+723
+00:37:35,010 --> 00:37:38,049
+and wonderful looking - really
+lovely visuals, really distinctive,
+
+724
+00:37:38,050 --> 00:37:40,049
+but at the same time
+
+725
+00:37:40,050 --> 00:37:43,369
+it also had a very strong character
+sense of humour about it.
+
+726
+00:37:43,370 --> 00:37:47,370
+You know, a tone, basically, in the
+way that a good movie has a tone.
+
+727
+00:37:51,210 --> 00:37:52,849
+So few games are genuinely funny
+
+728
+00:37:52,850 --> 00:37:56,009
+and this game was not only funny
+in its writing,
+
+729
+00:37:56,010 --> 00:37:58,649
+It used its mechanics to set up
+a lot of the comedy.
+
+730
+00:37:58,650 --> 00:38:01,089
+There's a sword fight in Monkey
+Island that you have to win
+
+731
+00:38:01,090 --> 00:38:03,409
+but the way you win it is not by
+being better with a sword
+
+732
+00:38:03,410 --> 00:38:05,769
+but by having
+the funnier comebacks.
+
+733
+00:38:05,770 --> 00:38:07,569
+They are basically insult
+sword fights.
+
+734
+00:38:07,570 --> 00:38:10,449
+The character you're fighting
+against will insult you in some way
+
+735
+00:38:10,450 --> 00:38:12,729
+and then you've got
+various choices of what's
+
+736
+00:38:12,730 --> 00:38:15,289
+the funniest retort,
+what's the funniest comeback.
+
+737
+00:38:15,290 --> 00:38:19,209
+As you win the argument, as you win
+the fight of witty rejoinders,
+
+738
+00:38:19,210 --> 00:38:23,209
+the fight would go in the same
+direction.
+
+739
+00:38:23,210 --> 00:38:26,449
+I mean, we were certainly influenced
+on Monkey Island by The Simpsons
+
+740
+00:38:26,450 --> 00:38:29,769
+but also, I think,
+Monty Python in a way.
+
+741
+00:38:29,770 --> 00:38:32,089
+What the Holy Grail was doing to
+the Arthurian legend
+
+742
+00:38:32,090 --> 00:38:33,489
+we were hoping to do to pirates.
+
+743
+00:38:33,490 --> 00:38:36,489
+Fittingly, for a game forged
+from many different influences,
+
+744
+00:38:36,490 --> 00:38:39,809
+some believe Monkey Island turned
+out to be quite influential itself,
+
+745
+00:38:39,810 --> 00:38:41,929
+pointing out
+similarities between the game
+
+746
+00:38:41,930 --> 00:38:45,049
+and the vastly entertaining
+Pirates Of The Caribbean movies.
+
+747
+00:38:45,050 --> 00:38:48,649
+Both the game and the film feature
+a reluctant swashbuckler
+
+748
+00:38:48,650 --> 00:38:51,049
+who attempts to rescue his
+wisecracking love interest
+
+749
+00:38:51,050 --> 00:38:54,329
+from a motley crew of zombie pirates
+with a scary undead leader.
+
+750
+00:38:54,330 --> 00:38:57,369
+There are even individual moments
+that seem vaguely familiar.
+
+751
+00:38:57,370 --> 00:39:00,609
+For instance, here, Guybrush
+Threepwood solves a problem by using
+
+752
+00:39:00,610 --> 00:39:04,610
+a coffin as a boat, a bit like Jack
+Sparrow did in Dead Man's Chest.
+
+753
+00:39:05,050 --> 00:39:09,050
+Sorry, mate.
+
+754
+00:39:09,570 --> 00:39:13,529
+Mind if we make a little side trip?
+
+755
+00:39:13,530 --> 00:39:16,769
+I didn't think so.
+
+756
+00:39:16,770 --> 00:39:18,929
+All of which, I'm sure,
+is a total coincidence.
+
+757
+00:39:18,930 --> 00:39:21,369
+It's hard for me
+to watch those movies
+
+758
+00:39:21,370 --> 00:39:25,209
+and not see little glimpses of
+Monkey Island in them,
+
+759
+00:39:25,210 --> 00:39:29,089
+but Monkey Island was based on the
+Pirates Of The Caribbean ride.
+
+760
+00:39:29,090 --> 00:39:31,249
+That was my whole
+influence for that game,
+
+761
+00:39:31,250 --> 00:39:33,489
+so it's kind of a full circle thing.
+
+762
+00:39:33,490 --> 00:39:36,329
+Monkey Island earns a place
+on our list for bringing
+
+763
+00:39:36,330 --> 00:39:39,209
+cinematic storytelling techniques
+to interactive fiction
+
+764
+00:39:39,210 --> 00:39:41,889
+and its spirit lives on in advanced
+contemporary games
+
+765
+00:39:41,890 --> 00:39:43,889
+like the grim murder mystery,
+LA Noire,
+
+766
+00:39:43,890 --> 00:39:47,890
+and this year's flawed
+but interesting Beyond Two Souls.
+
+767
+00:39:56,050 --> 00:39:58,169
+They're impressive,
+but a bit po-faced.
+
+768
+00:39:58,170 --> 00:40:00,969
+Nothing since has had
+the humour of Monkey Island.
+
+769
+00:40:00,970 --> 00:40:03,529
+All this stuff about spinning yarns
+was all well and good
+
+770
+00:40:03,530 --> 00:40:06,369
+but when would games learn to
+focus on the really important things
+
+771
+00:40:06,370 --> 00:40:09,249
+like teaching children how to
+maim and kill?
+
+772
+00:40:09,250 --> 00:40:13,250
+The answer, fortunately, was soon.
+
+773
+00:40:14,010 --> 00:40:15,150
+Bang!
+
+774
+00:40:22,090 --> 00:40:24,649
+The early '90s were
+brimming with firsts -
+
+775
+00:40:24,724 --> 00:40:28,043
+the first President Bush was
+gleefully waging the first Gulf War.
+
+776
+00:40:28,044 --> 00:40:30,083
+The first McDonald's
+opened in Russia!
+
+777
+00:40:30,084 --> 00:40:31,963
+And something called
+the World Wide Web
+
+778
+00:40:31,964 --> 00:40:34,283
+became publicly accessible
+for the first time.
+
+779
+00:40:34,284 --> 00:40:35,923
+Popular youth culture, meanwhile,
+
+780
+00:40:35,924 --> 00:40:38,403
+was entranced by slackerdom
+and the grunge scene,
+
+781
+00:40:38,404 --> 00:40:41,883
+as detailed on gaudy
+entertainment shows like The Word.
+
+782
+00:40:41,884 --> 00:40:44,243
+But there was also
+a new wave of cultural icons,
+
+783
+00:40:44,244 --> 00:40:48,083
+hailing from Japan, whose
+specialist subject on Mastermind
+
+784
+00:40:48,084 --> 00:40:52,084
+would've been kicking
+the shit out of each other.
+
+785
+00:41:00,004 --> 00:41:04,003
+Street Fighter II looks incredible.
+It's the game that made gaming cool.
+
+786
+00:41:04,004 --> 00:41:06,003
+Arcades had to draft in
+more machines
+
+787
+00:41:06,004 --> 00:41:08,323
+just to accommodate
+for the demand for it,
+
+788
+00:41:08,324 --> 00:41:09,843
+you know, it was just such a...
+
+789
+00:41:09,844 --> 00:41:12,683
+such a huge, huge phenomenon.
+
+790
+00:41:12,684 --> 00:41:14,483
+Street Fighter II is a prime example
+
+791
+00:41:14,484 --> 00:41:17,003
+of why games are good, cos
+you've got a friend and you say,
+
+792
+00:41:17,004 --> 00:41:19,763
+"Let's just have a reasonable
+game of Street Fighter."
+
+793
+00:41:19,764 --> 00:41:22,723
+"Yeah, sure, let's have a game
+of Street Fighter." And you end up
+
+794
+00:41:22,724 --> 00:41:25,803
+screaming at them, "I'm going to
+kill you! I'm going to kill you!"
+
+795
+00:41:25,804 --> 00:41:28,363
+But it was great,
+cos it was competitive and it was
+
+796
+00:41:28,364 --> 00:41:31,243
+so unlike anything that I'd ever
+played before, to be honest,
+
+797
+00:41:31,244 --> 00:41:34,404
+cos it's just two characters
+punching each other in the face.
+
+798
+00:41:40,884 --> 00:41:42,723
+It was definitely competitive,
+
+799
+00:41:42,724 --> 00:41:45,083
+especially when you play
+with bad winners.
+
+800
+00:41:45,084 --> 00:41:46,403
+I called them bad winners,
+
+801
+00:41:46,404 --> 00:41:48,763
+because, while they're
+knocking you the hell out,
+
+802
+00:41:48,764 --> 00:41:51,083
+they're just like,
+"Yeah! Bam! Take that!"
+
+803
+00:41:51,084 --> 00:41:53,883
+And you just... You're just
+getting totally trashed up!
+
+804
+00:41:53,884 --> 00:41:55,803
+You lose!
+
+805
+00:41:55,804 --> 00:41:57,723
+There have always been
+head-to-head games -
+
+806
+00:41:57,724 --> 00:41:59,923
+Pong was a head-to-head game -
+but they tended to be
+
+807
+00:41:59,924 --> 00:42:02,603
+simple test of reflexes,
+until Street Fighter II came along.
+
+808
+00:42:02,604 --> 00:42:05,083
+This too was a test of reflexes,
+but also, crucially,
+
+809
+00:42:05,084 --> 00:42:07,323
+a test of memory,
+agility and strategy.
+
+810
+00:42:07,324 --> 00:42:10,283
+Now, unless you know what's
+going on, it looks fairly mindless,
+
+811
+00:42:10,284 --> 00:42:13,403
+but it's actually far more
+complex than it appears.
+
+812
+00:42:13,404 --> 00:42:16,403
+I think the key thing
+about Street Fighter II was that
+
+813
+00:42:16,404 --> 00:42:19,643
+it popularised the idea of
+complexity in control systems.
+
+814
+00:42:19,644 --> 00:42:22,563
+It was one of the first games to
+introduce the idea of special moves,
+
+815
+00:42:22,564 --> 00:42:25,763
+so each of the colourful characters
+have their own way of fighting.
+
+816
+00:42:25,764 --> 00:42:28,323
+To perform, say,
+Ryu's Rising Dragon Fist,
+
+817
+00:42:28,324 --> 00:42:31,483
+your fingers have to perform quite
+a complex dance on the controllers.
+
+818
+00:42:31,484 --> 00:42:34,443
+You have to memorise then perform
+this move at lightning speed,
+
+819
+00:42:34,444 --> 00:42:37,363
+which makes it a bit like
+mastering a musical instrument.
+
+820
+00:42:37,364 --> 00:42:39,123
+Someone playing Street Fighter II
+
+821
+00:42:39,124 --> 00:42:42,363
+is making hundreds of strategic
+decisions at lightning speed.
+
+822
+00:42:42,364 --> 00:42:44,603
+It's basically scissors,
+paper, stone,
+
+823
+00:42:44,604 --> 00:42:47,163
+but on a bewilderingly
+complex scale.
+
+824
+00:42:47,164 --> 00:42:50,403
+People playing Street Fighter II now,
+they're still really competitive,
+
+825
+00:42:50,404 --> 00:42:52,603
+and they're doing
+frame-by-frame analysis
+
+826
+00:42:52,604 --> 00:42:56,123
+of where the vulnerable windows are,
+and when you can use which attack,
+
+827
+00:42:56,124 --> 00:42:59,163
+and what blocks what
+and what doesn't block what
+
+828
+00:42:59,164 --> 00:43:01,203
+and it's, um, it's just crazy.
+
+829
+00:43:01,204 --> 00:43:03,643
+That's why it's so satisfying
+when you win.
+
+830
+00:43:03,644 --> 00:43:05,683
+You aren't simply thumping
+someone in the face.
+
+831
+00:43:05,684 --> 00:43:07,923
+You're outwitting
+and outperforming them,
+
+832
+00:43:07,924 --> 00:43:09,564
+while thumping them in the face.
+
+833
+00:43:12,004 --> 00:43:15,083
+Street Fighter II influenced
+a whole raft of other "beat 'em ups"
+
+834
+00:43:15,084 --> 00:43:18,203
+of growing complexity, such
+as the phenomenal Tekken series,
+
+835
+00:43:18,204 --> 00:43:21,083
+which, as you can see,
+became increasingly more violent.
+
+836
+00:43:21,084 --> 00:43:23,843
+Still, at least no-one's ever
+inspired to actually do that
+
+837
+00:43:23,844 --> 00:43:26,843
+kind of thing in real life, as
+a consequence of playing the game.
+
+838
+00:43:26,844 --> 00:43:30,283
+I remember, when I was a kid,
+my brothers, um,
+
+839
+00:43:30,284 --> 00:43:33,443
+made me fight with another kid
+and it was just like a little
+
+840
+00:43:33,444 --> 00:43:37,123
+kind of spar with another
+young kid that was my age.
+
+841
+00:43:37,124 --> 00:43:39,883
+Everybody thought
+I was going to lose and, um...
+
+842
+00:43:39,884 --> 00:43:43,163
+I actually
+used Tekken moves to win!
+
+843
+00:43:43,164 --> 00:43:46,603
+It was so dumb,
+but I actually won!
+
+844
+00:43:46,604 --> 00:43:50,604
+With my dodgy little
+Eddy Gordo moves.
+
+845
+00:43:50,884 --> 00:43:54,243
+My missus still laughs at me about
+that, like, I remember my brother
+
+846
+00:43:54,244 --> 00:43:57,803
+saying it around the table and I was
+like, "Oh, shit, I actually did it!"
+
+847
+00:43:57,804 --> 00:44:00,283
+That's how much I was into Tekken!
+It's so wrong!
+
+848
+00:44:00,284 --> 00:44:03,083
+Oh, well, at least they're just
+kicking and punching each other.
+
+849
+00:44:03,084 --> 00:44:06,044
+It's not like games are full of
+people running around shooting guns!
+
+850
+00:44:08,404 --> 00:44:10,283
+By 1993, there have been a few games
+
+851
+00:44:10,284 --> 00:44:13,883
+in which you shoot people with guns
+from a first-person perspective,
+
+852
+00:44:13,884 --> 00:44:17,243
+like the fun Nazi-culling excursion
+Wolfenstein 3D,
+
+853
+00:44:17,244 --> 00:44:19,363
+but it was the release
+of our next game
+
+854
+00:44:19,364 --> 00:44:23,364
+that truly cemented
+their place in history.
+
+855
+00:44:27,284 --> 00:44:30,243
+Doom was a flabbergasting,
+ultraviolent descent
+
+856
+00:44:30,244 --> 00:44:33,083
+into bloody hell!
+The first time I saw Doom,
+
+857
+00:44:33,084 --> 00:44:37,084
+my jaw was on the floor,
+it was absolutely stunning!
+
+858
+00:44:40,324 --> 00:44:43,803
+Doom was one of the big "holy shit"
+moments in games history.
+
+859
+00:44:43,804 --> 00:44:47,483
+I remember, I had been working
+at PC Gamer for about a year
+
+860
+00:44:47,484 --> 00:44:49,723
+when that had come out
+and, you know,
+
+861
+00:44:49,724 --> 00:44:51,603
+we were experienced
+video game people.
+
+862
+00:44:51,604 --> 00:44:53,763
+You know, we all did that
+for a living.
+
+863
+00:44:53,764 --> 00:44:55,563
+And Doom was
+one of those moments where,
+
+864
+00:44:55,564 --> 00:44:59,203
+the first time we saw it,
+we were like, "What is this?"
+
+865
+00:44:59,204 --> 00:45:01,723
+The modern-day shooter is
+Doom, essentially.
+
+866
+00:45:01,724 --> 00:45:04,883
+Id Design effectively created
+the first-person shooter,
+
+867
+00:45:04,884 --> 00:45:06,843
+with Wolfenstein, before Doom.
+
+868
+00:45:06,844 --> 00:45:10,844
+Doom popularised it, because it was
+the perfect implementation, I think,
+
+869
+00:45:10,964 --> 00:45:14,964
+at that time of the idea of seeing,
+of you inhabiting the character,
+
+870
+00:45:15,924 --> 00:45:18,843
+and the camera view
+being your view of the world.
+
+871
+00:45:18,844 --> 00:45:21,923
+In fact, this ground-breaking
+first-person viewpoint
+
+872
+00:45:21,924 --> 00:45:23,403
+was actually a happy accident.
+
+873
+00:45:23,404 --> 00:45:27,083
+The reason why we made the games
+first-person when we started was
+
+874
+00:45:27,084 --> 00:45:29,123
+because it took less processor time
+
+875
+00:45:29,124 --> 00:45:31,843
+to actually not draw
+a character in front of you,
+
+876
+00:45:31,844 --> 00:45:33,843
+so the game can go faster
+because of it.
+
+877
+00:45:33,844 --> 00:45:37,443
+There was something very, um...
+
+878
+00:45:37,444 --> 00:45:40,004
+How can I describe it? ..lonely..
+
+879
+00:45:41,764 --> 00:45:43,403
+..about Doom.
+
+880
+00:45:43,404 --> 00:45:47,003
+I know, it's not a shock for some
+people to imagine computer players,
+
+881
+00:45:47,004 --> 00:45:49,123
+computer game players
+as being lonely,
+
+882
+00:45:49,124 --> 00:45:52,603
+but Doom was one of those games
+I used to dream about, you know.
+
+883
+00:45:52,604 --> 00:45:56,604
+There was a feeling of real isolation
+to it, you know, and, er,
+
+884
+00:45:56,924 --> 00:45:58,923
+I found that quite powerful at times.
+
+885
+00:45:58,924 --> 00:46:02,924
+Isolation is scary. Doom was scary.
+Very scary! Honestly!
+
+886
+00:46:04,764 --> 00:46:07,843
+Young people hearing
+older people talk about...
+
+887
+00:46:07,844 --> 00:46:11,844
+how Doom was scary must be like, you
+know when you read those stories how
+
+888
+00:46:12,324 --> 00:46:14,963
+when people saw the first cinema
+and would see a train coming,
+
+889
+00:46:14,964 --> 00:46:17,363
+and they would run out of
+the cinema, you know what I mean,
+
+890
+00:46:17,364 --> 00:46:19,883
+you hear those stories and
+laugh and think, "These idiots!
+
+891
+00:46:19,884 --> 00:46:21,723
+"They thought
+it was a real train coming!"
+
+892
+00:46:21,724 --> 00:46:24,323
+But you know, things can have
+an incredible effect on you,
+
+893
+00:46:24,324 --> 00:46:26,123
+when you're first experiencing them.
+
+894
+00:46:26,124 --> 00:46:28,643
+The reason why Doom was
+terrifying for me was
+
+895
+00:46:28,644 --> 00:46:31,843
+because there were doors in it
+that could open and shut.
+
+896
+00:46:31,844 --> 00:46:35,443
+That, you know, seems like caveman
+staff, like being scared of that,
+
+897
+00:46:35,444 --> 00:46:38,083
+like, "Eugh!" being scared
+of a shadow or something,
+
+898
+00:46:38,084 --> 00:46:39,843
+but the fact that there were doors,
+
+899
+00:46:39,844 --> 00:46:42,043
+and you could hear things
+behind the doors,
+
+900
+00:46:42,044 --> 00:46:44,403
+that was an incredible
+kind of leap forward,
+
+901
+00:46:44,404 --> 00:46:47,084
+that was an incredible,
+um, an incredible thing!
+
+902
+00:46:49,364 --> 00:46:52,283
+One of the things
+that makes Doom scary is just,
+
+903
+00:46:52,284 --> 00:46:55,283
+obviously, the darkness in the game
+
+904
+00:46:55,284 --> 00:46:58,483
+and it's also scary in that,
+um, enemies,
+
+905
+00:46:58,484 --> 00:47:02,403
+you can hear them wandering around,
+so you know they're there somewhere
+
+906
+00:47:02,404 --> 00:47:05,963
+and just hearing that,
+not seeing it, is a scary thing.
+
+907
+00:47:05,964 --> 00:47:08,443
+And also, you know that
+you could go through a hallway
+
+908
+00:47:08,444 --> 00:47:11,403
+and accidentally step on the
+wrong thing and, all of a sudden,
+
+909
+00:47:11,404 --> 00:47:14,123
+a wall opens up next to you
+and stuff is coming out at you.
+
+910
+00:47:14,124 --> 00:47:15,963
+Doom was packed with
+so many innovations,
+
+911
+00:47:15,964 --> 00:47:18,683
+it was almost embarrassing,
+but its biggest innovation of all
+
+912
+00:47:18,684 --> 00:47:22,684
+was the immersive
+and compelling multiplayer mode.
+
+913
+00:47:22,764 --> 00:47:25,843
+I can remember, I was actually
+working at a game development studio,
+
+914
+00:47:25,844 --> 00:47:28,443
+and one day we all went in
+one Saturday, we all went in
+
+915
+00:47:28,444 --> 00:47:31,443
+and set up the computers, um,
+set up the local area networks,
+
+916
+00:47:31,444 --> 00:47:33,323
+that we could all play Doom together,
+
+917
+00:47:33,324 --> 00:47:36,483
+and it was my first experience
+of being in a game world with
+
+918
+00:47:36,484 --> 00:47:40,203
+a whole bunch of friends playing
+together, beating enemies, er...
+
+919
+00:47:40,204 --> 00:47:43,323
+and being aware of each other,
+that whole idea of telepresence,
+
+920
+00:47:43,324 --> 00:47:46,283
+being aware of each other in
+a game world, it was fascinating
+
+921
+00:47:46,284 --> 00:47:49,363
+and so, so compelling and we just
+played for 12 hours straight.
+
+922
+00:47:49,364 --> 00:47:52,483
+The beauty of video games
+is that it, um,
+
+923
+00:47:52,484 --> 00:47:56,484
+it adds... it adds a dimension to
+friendship that nothing else does.
+
+924
+00:47:57,044 --> 00:47:59,723
+Going to see a film with your friends
+is nothing compared
+
+925
+00:47:59,724 --> 00:48:02,243
+to being in a shoot 'em up
+or a game with your friends
+
+926
+00:48:02,244 --> 00:48:05,443
+and Doom was the first game that
+really allowed us to experience that.
+
+927
+00:48:05,444 --> 00:48:07,883
+Yeah, although it's hard not to
+notice that experience is
+
+928
+00:48:07,884 --> 00:48:11,884
+kind of violent and, in this regard,
+Doom was a child of its time.
+
+929
+00:48:13,524 --> 00:48:17,524
+By 1993, technology had improved to
+the point where in-game characters
+
+930
+00:48:17,564 --> 00:48:20,683
+could be represented,
+albeit crudely, by real people,
+
+931
+00:48:20,684 --> 00:48:23,043
+as in the notorious
+Mortal Kombat here,
+
+932
+00:48:23,044 --> 00:48:24,643
+And the sight of
+these "real" people
+
+933
+00:48:24,644 --> 00:48:28,644
+maiming and mutilating each other
+was a step too far, for some.
+
+934
+00:48:29,004 --> 00:48:32,683
+When a player wins, the so-called
+"death sequence" begins.
+
+935
+00:48:32,684 --> 00:48:35,643
+The game narrator instructs
+the player "to finish...",
+
+936
+00:48:35,644 --> 00:48:37,963
+and I quote, "finish his opponent."
+
+937
+00:48:37,964 --> 00:48:41,643
+The player may then choose
+a method of murder, ranging from
+
+938
+00:48:41,644 --> 00:48:45,644
+ripping a heart out, to pulling
+off the head of the opponent
+
+939
+00:48:46,044 --> 00:48:48,003
+with spinal-cord attached.
+
+940
+00:48:48,004 --> 00:48:51,203
+Every generation seems to have
+some sort of cultural moral panic,
+
+941
+00:48:51,204 --> 00:48:53,603
+whether it's, you know,
+Elvis Presley's hips
+
+942
+00:48:53,604 --> 00:48:56,923
+or video nasties or whatever, then,
+in the '90s, it was video games.
+
+943
+00:48:56,924 --> 00:49:00,003
+It was games like Doom,
+you know, and Mortal Kombat,
+
+944
+00:49:00,004 --> 00:49:03,643
+that had what were perceived
+to be super gory terrible graphics
+
+945
+00:49:03,644 --> 00:49:06,923
+which, when you look at them now, is
+ludicrous, cos, of course, it's just
+
+946
+00:49:06,924 --> 00:49:09,643
+basically like people made
+out of Ceefax getting blown up.
+
+947
+00:49:09,644 --> 00:49:12,683
+Just as controversial was
+the frankly crappy Night Trap,
+
+948
+00:49:12,684 --> 00:49:14,843
+which came on the exciting
+new CD-ROM format,
+
+949
+00:49:14,844 --> 00:49:18,844
+threatening to turn games
+into full-motion video nasties.
+
+950
+00:49:25,244 --> 00:49:28,403
+Five teenage girls have disappeared,
+after spending the night
+
+951
+00:49:28,404 --> 00:49:31,923
+at the old Lakeshore winery house
+of Mr and Mrs Victor Martin.
+
+952
+00:49:31,924 --> 00:49:34,483
+It's like a television programme
+in a lot of ways
+
+953
+00:49:34,484 --> 00:49:37,283
+and the purpose is
+you're part of a crack team
+
+954
+00:49:37,284 --> 00:49:40,403
+that's protecting some girls
+on a slumber party.
+
+955
+00:49:40,404 --> 00:49:43,723
+So the gameplay is, basically,
+clicking on the CCTV cameras
+
+956
+00:49:43,724 --> 00:49:47,163
+and setting traps for these kind of
+vampire things that are coming in.
+
+957
+00:49:47,164 --> 00:49:50,243
+And, because it's video
+and not graphics,
+
+958
+00:49:50,244 --> 00:49:52,843
+and especially at the time
+I think, it was life-like,
+
+959
+00:49:52,844 --> 00:49:55,803
+because it wasn't the clunky
+graphics of the '80s,
+
+960
+00:49:55,804 --> 00:49:58,483
+- this was film you are watching.
+- What are you doing?!
+
+961
+00:49:58,484 --> 00:50:01,163
+And it is quite disturbing
+to watch it, actually,
+
+962
+00:50:01,164 --> 00:50:03,603
+because it does feel
+very voyeuristic.
+
+963
+00:50:03,604 --> 00:50:06,643
+I understand why
+it was controversial, um,
+
+964
+00:50:06,644 --> 00:50:07,963
+because even today,
+
+965
+00:50:07,964 --> 00:50:10,963
+if you made a game today
+where the concept was spying on,
+
+966
+00:50:10,964 --> 00:50:13,363
+you know, college girls
+in their lingerie,
+
+967
+00:50:13,364 --> 00:50:15,083
+via various security cameras,
+
+968
+00:50:15,084 --> 00:50:17,563
+and kind of stalking them
+around this house,
+
+969
+00:50:17,564 --> 00:50:20,243
+that would be
+very controversial now! Back then,
+
+970
+00:50:20,244 --> 00:50:23,203
+I can understand why people had
+the reaction that they did.
+
+971
+00:50:23,204 --> 00:50:26,803
+It has been... quite a leap
+
+972
+00:50:26,804 --> 00:50:29,563
+from Pac-Man to Night Trap.
+
+973
+00:50:29,564 --> 00:50:32,843
+Night Trap, which, just to be clear,
+was a deeply shit game,
+
+974
+00:50:32,844 --> 00:50:35,003
+was such a hot potato,
+it featured heavily
+
+975
+00:50:35,004 --> 00:50:37,363
+in a US Senate hearing
+on video game violence,
+
+976
+00:50:37,364 --> 00:50:40,523
+which led to Toys "R" Us
+taking it off the shelves.
+
+977
+00:50:40,524 --> 00:50:42,203
+Mortal Kombat and Night Trap
+
+978
+00:50:42,204 --> 00:50:46,163
+are not the kind of gifts
+that responsible parents give.
+
+979
+00:50:46,164 --> 00:50:49,083
+Night Trap, which adds
+a new dimension of violence,
+
+980
+00:50:49,084 --> 00:50:53,084
+specifically targeted against women,
+is especially repugnant.
+
+981
+00:50:53,204 --> 00:50:55,083
+Significantly,
+it led to the creation of
+
+982
+00:50:55,084 --> 00:50:56,643
+the US video game ratings system,
+
+983
+00:50:56,644 --> 00:50:59,163
+a voluntary code designed
+to alert parents to content
+
+984
+00:50:59,164 --> 00:51:01,883
+that might be unsuitable
+for their disgusting children!
+
+985
+00:51:01,884 --> 00:51:03,163
+This had a twofold effect.
+
+986
+00:51:03,164 --> 00:51:06,523
+On the one hand, the games industry
+was aware it was being watched.
+
+987
+00:51:06,524 --> 00:51:07,603
+But on the other hand,
+
+988
+00:51:07,604 --> 00:51:10,363
+the introduction of ratings
+meant that games could now be
+
+989
+00:51:10,364 --> 00:51:14,364
+conceived and marketed
+explicitly as not for children.
+
+990
+00:51:14,404 --> 00:51:16,323
+Suddenly, developers
+had a green light
+
+991
+00:51:16,324 --> 00:51:18,203
+to pursue nasty games
+for nasty adults,
+
+992
+00:51:18,204 --> 00:51:19,843
+leading to further controversy,
+
+993
+00:51:19,844 --> 00:51:23,083
+with the death-packed
+pedestrian-splattering Carmageddon
+
+994
+00:51:23,084 --> 00:51:25,123
+being briefly banned
+in the UK in 1997
+
+995
+00:51:25,124 --> 00:51:29,124
+and the MP-alarming Grand Theft Auto
+making its debut that same year.
+
+996
+00:51:29,164 --> 00:51:32,043
+Lots of people at that time,
+moral campaigners were trying
+
+997
+00:51:32,044 --> 00:51:34,483
+to link video game violence
+with real-life violence
+
+998
+00:51:34,484 --> 00:51:38,403
+and we saw this later on
+with, um, the Columbine tragedy,
+
+999
+00:51:38,404 --> 00:51:40,843
+which lots of people
+tried to suggest that
+
+1000
+00:51:40,844 --> 00:51:44,363
+the two kids that were involved
+in this were heavy games players.
+
+1001
+00:51:44,364 --> 00:51:47,163
+Every time there's any
+sort of violent act in the news,
+
+1002
+00:51:47,164 --> 00:51:50,963
+it's always reported like,
+"And the shooter was a big fan of,"
+
+1003
+00:51:50,964 --> 00:51:53,683
+you know, "Grand Theft Auto
+or Call Of Duty."
+
+1004
+00:51:53,684 --> 00:51:56,363
+It's like, well, that's
+because he's an 18-35-year-old man.
+
+1005
+00:51:56,364 --> 00:51:59,483
+That's probably why he's a fan,
+not because he's a psychopath!
+
+1006
+00:51:59,484 --> 00:52:02,163
+Recently, in the USA,
+the National Rifle Association
+
+1007
+00:52:02,164 --> 00:52:05,163
+has tried to shift blame for
+a spate of mass shootings away from
+
+1008
+00:52:05,164 --> 00:52:08,603
+the availability of firearms and
+onto the shoulders of video games.
+
+1009
+00:52:08,604 --> 00:52:12,604
+Through vicious, violent video games,
+
+1010
+00:52:12,884 --> 00:52:15,603
+with names like Bulletstorm...
+
+1011
+00:52:15,604 --> 00:52:17,923
+Grand Theft Auto,
+
+1012
+00:52:17,924 --> 00:52:19,843
+Mortal Kombat,
+
+1013
+00:52:19,844 --> 00:52:21,923
+and Splatterhouse!
+
+1014
+00:52:21,924 --> 00:52:24,803
+Ironically, the NRA make
+some crude target shooting
+
+1015
+00:52:24,804 --> 00:52:27,123
+and varmint hunting
+games of their own.
+
+1016
+00:52:27,124 --> 00:52:29,283
+Furthermore, not everyone is
+
+1017
+00:52:29,284 --> 00:52:32,163
+convinced of a link between
+violent games and violent behaviour.
+
+1018
+00:52:32,164 --> 00:52:35,323
+I think there might be violent people
+that play these video games,
+
+1019
+00:52:35,324 --> 00:52:38,643
+but I don't think these video games
+turn you into violent people.
+
+1020
+00:52:38,644 --> 00:52:40,403
+We should move on.
+We should talk about
+
+1021
+00:52:40,404 --> 00:52:42,443
+some of the positive aspects
+of video games
+
+1022
+00:52:42,444 --> 00:52:45,563
+or some of the genuine challenges
+we can make to the industry,
+
+1023
+00:52:45,564 --> 00:52:48,683
+like where are the positive,
+er, female role models in games?
+
+1024
+00:52:48,684 --> 00:52:50,803
+But you know, if we carry on
+with this debate...
+
+1025
+00:52:50,804 --> 00:52:52,803
+It amazes me that
+it's lasted me for so long.
+
+1026
+00:52:52,804 --> 00:52:56,163
+Dedicated gamers tend to reflexively
+scoff at any suggestion
+
+1027
+00:52:56,164 --> 00:52:57,403
+games might be too violent,
+
+1028
+00:52:57,404 --> 00:53:00,003
+but it's clear that even the most
+hard-core splatter movies
+
+1029
+00:53:00,004 --> 00:53:02,003
+don't dwell on
+biological destruction
+
+1030
+00:53:02,004 --> 00:53:05,043
+to quite the same gleeful degree
+as many games do.
+
+1031
+00:53:05,044 --> 00:53:08,323
+Increasing graphical fidelity means
+the debate will intensify,
+
+1032
+00:53:08,324 --> 00:53:10,203
+as the portrayal of violence does.
+
+1033
+00:53:10,204 --> 00:53:13,283
+It's easy to laugh
+at the low-tech depiction of death
+
+1034
+00:53:13,284 --> 00:53:16,643
+in the early Mortal Kombat games,
+but the recent Mortal Kombat 9
+
+1035
+00:53:16,644 --> 00:53:18,963
+features extreme
+and upsetting imagery
+
+1036
+00:53:18,964 --> 00:53:22,964
+that would be almost entirely
+unthinkable in most other mediums.
+
+1037
+00:53:31,244 --> 00:53:33,123
+Despite scenes that shocking,
+
+1038
+00:53:33,124 --> 00:53:36,123
+Mortal Kombat 9 failed to
+generate any real controversy,
+
+1039
+00:53:36,124 --> 00:53:39,363
+but then, many games still fly
+somehow under the cultural radar
+
+1040
+00:53:39,364 --> 00:53:42,603
+and, consequently, aren't
+called upon to justify themselves.
+
+1041
+00:53:42,604 --> 00:53:45,763
+I'm traditionally quite nonchalant
+about violence in video games.
+
+1042
+00:53:45,764 --> 00:53:48,763
+I played the shit out of things
+like Doom and Sniper Elite,
+
+1043
+00:53:48,764 --> 00:53:52,043
+but even I find that
+basically unacceptable,
+
+1044
+00:53:52,044 --> 00:53:55,683
+which either means I've become
+a terrible wuss in my old age
+
+1045
+00:53:55,684 --> 00:53:58,483
+or games are becoming
+so forensically graphic,
+
+1046
+00:53:58,484 --> 00:54:00,203
+they're reaching a tipping point.
+
+1047
+00:54:00,204 --> 00:54:02,203
+Some games have a more mature
+
+1048
+00:54:02,204 --> 00:54:05,363
+and responsible attitude to
+depicting violence than others.
+
+1049
+00:54:05,364 --> 00:54:07,483
+Some are outright irresponsible.
+
+1050
+00:54:07,484 --> 00:54:10,643
+Others, I think, do it in a much
+more mature and responsible way.
+
+1051
+00:54:10,644 --> 00:54:13,283
+And so, um, I don't think
+there's anything inherently bad
+
+1052
+00:54:13,284 --> 00:54:16,603
+about expressing or exploring the
+subjects of violence in video games,
+
+1053
+00:54:16,604 --> 00:54:20,123
+just as there is in any medium, but
+there is violence in the real world,
+
+1054
+00:54:20,124 --> 00:54:22,003
+there will be violence in
+any artistic, er,
+
+1055
+00:54:22,004 --> 00:54:26,004
+reflection of the real world,
+and video games are no different.
+
+1056
+00:54:26,524 --> 00:54:29,723
+And when women in games aren't
+being gruesomely sawn in half,
+
+1057
+00:54:29,724 --> 00:54:33,724
+they're often being simplified,
+patronised and objectified.
+
+1058
+00:54:36,044 --> 00:54:38,283
+But the games industry's
+treatment of what
+
+1059
+00:54:38,284 --> 00:54:40,843
+I tactfully won't refer to
+as "the titted gender"
+
+1060
+00:54:40,844 --> 00:54:47,964
+was about to be challenged,
+as we'll see after this break.
+
+1061
+00:54:51,684 --> 00:54:53,203
+Picture the scene.
+
+1062
+00:54:53,204 --> 00:54:57,163
+It's the mid-1990s and no-one knows what to
+make of humankind's poxy existence any more
+
+1063
+00:54:57,164 --> 00:55:01,043
+because OJ Simpson has just left
+court an entirely innocent man.
+
+1064
+00:55:01,044 --> 00:55:04,243
+Barings Bank has collapsed thanks to
+rogue trader Nick Leeson
+
+1065
+00:55:04,244 --> 00:55:07,603
+and in the world of pop,
+middle-class Kinks fans Blur
+
+1066
+00:55:07,604 --> 00:55:11,123
+are going head to head with dirge-spewing
+musical chimps' tea-party Oasis
+
+1067
+00:55:11,124 --> 00:55:14,763
+in a battle literally no-one gave
+a shit about, even at the time.
+
+1068
+00:55:14,764 --> 00:55:18,123
+Meanwhile, bruised by the beating
+it took over flogging violent
+
+1069
+00:55:18,124 --> 00:55:22,043
+games to kids, the games industry
+suddenly hit on a new target market.
+
+1070
+00:55:22,044 --> 00:55:24,603
+People off their faces on ecstasy,
+
+1071
+00:55:24,604 --> 00:55:27,803
+or clubbers as
+they are technically known.
+
+1072
+00:55:27,804 --> 00:55:31,763
+Have you seen any drug-taking? Aye!
+
+1073
+00:55:31,764 --> 00:55:35,764
+Did you take any yourself?
+
+1074
+00:55:37,204 --> 00:55:41,204
+Here we have a normal, healthy young
+man and here we have a fellow
+
+1075
+00:55:41,884 --> 00:55:45,323
+who has been experimenting with
+PlayStation for only a few minutes.
+
+1076
+00:55:45,324 --> 00:55:47,763
+Enter the slickly marketed
+PlayStation,
+
+1077
+00:55:47,764 --> 00:55:51,764
+positioned as the post-club,
+post-spliff entertainment medium of choice,
+
+1078
+00:55:51,804 --> 00:55:55,804
+bristling with trippy visuals
+and incredible soundtracks.
+
+1079
+00:55:58,204 --> 00:56:00,003
+PlayStation moved gaming on
+
+1080
+00:56:00,004 --> 00:56:01,683
+and gaming was now something that
+
+1081
+00:56:01,684 --> 00:56:03,363
+young adults did, not just men.
+
+1082
+00:56:03,364 --> 00:56:07,364
+Lots of woman played Wipeout, lots of
+women played early PlayStation games.
+
+1083
+00:56:07,484 --> 00:56:11,484
+They understood there was something
+powerful about putting a woman on screen.
+
+1084
+00:56:17,284 --> 00:56:19,843
+Tomb Raider was the first game
+I became obsessed with.
+
+1085
+00:56:19,844 --> 00:56:23,844
+It was the only game at the time
+where there was a woman involved,
+
+1086
+00:56:24,604 --> 00:56:28,604
+and a woman with a couple of guns
+shooting stuff and being really kick ass.
+
+1087
+00:56:29,604 --> 00:56:33,604
+Partly inspired by the gutsy female
+image of singer Neneh Cherry
+
+1088
+00:56:33,684 --> 00:56:37,443
+and post-punk toon feminist
+Tank Girl, Tomb Raider's Lara Croft
+
+1089
+00:56:37,444 --> 00:56:41,203
+earns a place on our list for being
+gaming's first true female icon.
+
+1090
+00:56:41,204 --> 00:56:44,163
+This was the era of Loaded and FHM,
+
+1091
+00:56:44,164 --> 00:56:48,123
+and Lara Croft somehow was the
+virtual representation
+
+1092
+00:56:48,124 --> 00:56:49,563
+of that whole idea,
+
+1093
+00:56:49,564 --> 00:56:53,443
+she was a sexy Mario,
+the sexy sonic.
+
+1094
+00:56:53,444 --> 00:56:55,843
+There has been
+so much discussion about
+
+1095
+00:56:55,844 --> 00:56:58,723
+was she an object of female
+empowerment
+
+1096
+00:56:58,724 --> 00:57:01,123
+or an object of male titillation?
+
+1097
+00:57:01,124 --> 00:57:05,124
+When I was ten years old playing
+that game, that didn't matter to me,
+
+1098
+00:57:05,364 --> 00:57:09,364
+all I saw was a woman where
+previously I had only seen a man,
+
+1099
+00:57:09,844 --> 00:57:11,803
+and that was huge for me.
+
+1100
+00:57:11,804 --> 00:57:15,123
+Having ruled the late '90s,
+brightening up trendy magazine covers
+
+1101
+00:57:15,124 --> 00:57:17,403
+and appearing in irreverent
+soft drinks ads,
+
+1102
+00:57:17,404 --> 00:57:20,883
+the 2000s would be less kind to
+Lara, despite, or perhaps because
+
+1103
+00:57:20,884 --> 00:57:23,843
+of, being trained by the equally
+unrealistic Angelina Jolie
+
+1104
+00:57:23,844 --> 00:57:26,563
+in a pair of noisy but not very good
+Hollywood action flicks.
+
+1105
+00:57:26,564 --> 00:57:27,483
+Stop!
+
+1106
+00:57:27,484 --> 00:57:30,843
+But then in 2013, Tomb Raider was
+rebooted and re-imagined
+
+1107
+00:57:30,844 --> 00:57:34,844
+with an increased emphasis on story
+and Lara's character.
+
+1108
+00:57:35,364 --> 00:57:39,364
+I have finally set out to
+make my mark. To find adventure.
+
+1109
+00:57:40,404 --> 00:57:44,404
+Another key difference - this time
+the lead writer was female.
+
+1110
+00:57:44,764 --> 00:57:48,683
+I didn't like the way she had been
+adopted by the wider media
+
+1111
+00:57:48,684 --> 00:57:52,684
+and over-sexualised, and I felt
+that as a younger female gamer
+
+1112
+00:57:53,204 --> 00:57:55,923
+I was being pushed
+away from the franchise.
+
+1113
+00:57:55,924 --> 00:57:59,323
+When I took on the role of helping
+develop this new, younger Lara,
+
+1114
+00:57:59,324 --> 00:58:03,324
+I really thought about what
+myself as a gamer when I started out
+
+1115
+00:58:04,164 --> 00:58:08,164
+would have liked and what the younger
+me would have responded well to.
+
+1116
+00:58:10,324 --> 00:58:12,443
+You can look at the journey
+of video games
+
+1117
+00:58:12,444 --> 00:58:15,523
+and mirror it with the journey
+of Lara Croft as a character.
+
+1118
+00:58:15,524 --> 00:58:18,483
+At the beginning she was a look,
+because video games were
+
+1119
+00:58:18,484 --> 00:58:21,963
+mostly about looks, and then as time
+has gone on, Lara's creators
+
+1120
+00:58:21,964 --> 00:58:25,083
+have made her more of a character,
+more of a relatable person.
+
+1121
+00:58:25,084 --> 00:58:29,084
+Similarly, all video games have been trying to
+tell stories that are more human, more relatable.
+
+1122
+00:58:29,284 --> 00:58:31,243
+The new Tomb Raider
+reboot feeds into that.
+
+1123
+00:58:31,244 --> 00:58:34,483
+What you have there is a character
+who was once an avatar
+
+1124
+00:58:34,484 --> 00:58:36,163
+and is now becoming a person.
+
+1125
+00:58:36,164 --> 00:58:40,163
+This shift reflected a debate
+about gaming's depiction of women
+
+1126
+00:58:40,164 --> 00:58:41,923
+that was already well underway.
+
+1127
+00:58:41,924 --> 00:58:45,043
+In many ways, games still seem
+psychologically lodged
+
+1128
+00:58:45,044 --> 00:58:46,283
+somewhere around 1978,
+
+1129
+00:58:46,284 --> 00:58:49,243
+full of eye candy dolly birds
+without much to say for themselves
+
+1130
+00:58:49,244 --> 00:58:51,803
+and the voices questioning this
+have been growing louder.
+
+1131
+00:58:51,804 --> 00:58:54,523
+In 2012, when cultural critic
+
+1132
+00:58:54,524 --> 00:58:57,323
+Anita Sarkeesian launched a
+Kickstarter campaign to fund
+
+1133
+00:58:57,324 --> 00:59:01,003
+a series of short films about female
+stereotypes in games,
+
+1134
+00:59:01,004 --> 00:59:05,004
+some male gamers reacted by bombarding
+her with rape and death threats.
+
+1135
+00:59:05,244 --> 00:59:07,123
+I don't believe video
+gamers are sexist.
+
+1136
+00:59:07,124 --> 00:59:10,363
+I don't believe most
+games are sexist.
+
+1137
+00:59:10,364 --> 00:59:13,403
+But also, you look at video games
+and you can't deny that there are
+
+1138
+00:59:13,404 --> 00:59:15,883
+things in there that are not
+flattering to women and
+
+1139
+00:59:15,884 --> 00:59:19,163
+make you roll your eyes and sigh, or
+sometimes make you really angry.
+
+1140
+00:59:19,164 --> 00:59:21,363
+I think it is not so much
+gaming culture
+
+1141
+00:59:21,364 --> 00:59:24,443
+that is unfriendly to women,
+it is internet culture.
+
+1142
+00:59:24,444 --> 00:59:27,443
+Even today, a huge number of games
+still place you,
+
+1143
+00:59:27,444 --> 00:59:30,523
+the player, in the shoes of a boring
+cookie-cutter Caucasian
+
+1144
+00:59:30,524 --> 00:59:34,524
+hetero dude with a dick and a gun,
+and fuck all else of interest.
+
+1145
+00:59:35,124 --> 00:59:37,083
+But there are some exceptions.
+
+1146
+00:59:37,084 --> 00:59:41,084
+Mass Effect is a good
+example of a mainstream video game,
+
+1147
+00:59:41,204 --> 00:59:44,003
+one that many people buy, that does
+include something other than
+
+1148
+00:59:44,004 --> 00:59:46,523
+straight white men and for that
+reason it has a very devoted
+
+1149
+00:59:46,524 --> 00:59:49,763
+following among people who are not
+necessarily straight white men.
+
+1150
+00:59:49,764 --> 00:59:52,723
+In Mass Effect, your character is
+basically bisexual by default,
+
+1151
+00:59:52,724 --> 00:59:54,283
+you can fight with whoever you want
+
+1152
+00:59:54,284 --> 00:59:57,003
+and pursue a relationship with
+whoever you want and it is sad
+
+1153
+00:59:57,004 --> 01:00:01,004
+that this is progressive but in a
+video game of this size it is progressive.
+
+1154
+01:00:01,524 --> 01:00:04,523
+I did not know you were such
+an optimist.
+
+1155
+01:00:04,524 --> 01:00:07,683
+You have that effect on people.
+
+1156
+01:00:07,684 --> 01:00:11,403
+Meanwhile, back in the late 1990s,
+those cool adult gamers were not content
+
+1157
+01:00:11,404 --> 01:00:15,404
+to experiment with things like
+female protagonists such as Lara Croft,
+
+1158
+01:00:15,724 --> 01:00:17,683
+they wanted whole new
+kinds of experience.
+
+1159
+01:00:17,684 --> 01:00:21,603
+Games had become set in their ways,
+there were too many predictable
+
+1160
+01:00:21,604 --> 01:00:25,604
+platformers or metronomic fighting
+games or by-the-book shoot-'em-ups.
+
+1161
+01:00:26,564 --> 01:00:29,763
+What was required was an entirely
+new kind of experiences,
+
+1162
+01:00:29,764 --> 01:00:31,523
+a new kind of game.
+
+1163
+01:00:31,524 --> 01:00:35,524
+And that is precisely what turned
+up. Winning a bobble head.
+
+1164
+01:00:42,844 --> 01:00:45,283
+PaRappa The Rapper is a game about
+a musical dog
+
+1165
+01:00:45,284 --> 01:00:49,284
+who learns the value of self belief
+by rapping with a kung-fu onion
+
+1166
+01:00:50,764 --> 01:00:54,764
+while you just press
+buttons along with the beat.
+
+1167
+01:00:57,724 --> 01:01:00,043
+PaRappa The Rapper was incredible.
+
+1168
+01:01:00,044 --> 01:01:02,603
+Such a simple, really clever
+use of the controller,
+
+1169
+01:01:02,604 --> 01:01:04,403
+you had to hit the things
+in sequence.
+
+1170
+01:01:04,404 --> 01:01:07,483
+The first time I remember the
+"boom-boom-ba, boom-boom-ba".
+
+1171
+01:01:07,484 --> 01:01:11,123
+That very simple Simon says
+kind of gameplay.
+
+1172
+01:01:11,124 --> 01:01:14,123
+Simon sets the pace,
+you follow right along.
+
+1173
+01:01:14,124 --> 01:01:17,403
+Simon says style rhythm action games
+began with the endearingly
+
+1174
+01:01:17,404 --> 01:01:19,443
+advertised computer
+smart arse Simon.
+
+1175
+01:01:19,444 --> 01:01:20,883
+Simon has a brain,
+
+1176
+01:01:20,884 --> 01:01:24,883
+you either do what Simon says
+or else go down the drain.
+
+1177
+01:01:24,884 --> 01:01:27,203
+PaRappa turned this basic concept
+
+1178
+01:01:27,204 --> 01:01:31,204
+into a psychedelic
+musical pop-up book.
+
+1179
+01:01:31,244 --> 01:01:35,244
+The songs are...
+they are so catchy and insane.
+
+1180
+01:01:49,564 --> 01:01:53,564
+I often listen to
+the onion man song.
+
+1181
+01:01:57,164 --> 01:02:01,164
+The driving school one.
+
+1182
+01:02:02,844 --> 01:02:06,844
+There's the one where they are all
+waiting to go to the toilet.
+
+1183
+01:02:11,924 --> 01:02:14,643
+There's the driving school one,
+did I say that? Yes.
+
+1184
+01:02:14,644 --> 01:02:18,283
+PaRappa The Rapper was appealing
+because it made people like me
+
+1185
+01:02:18,284 --> 01:02:21,123
+who have absolutely no musical
+ability whatsoever
+
+1186
+01:02:21,124 --> 01:02:24,083
+feel like they did.
+
+1187
+01:02:24,084 --> 01:02:26,243
+That was a big
+part of the appeal,
+
+1188
+01:02:26,244 --> 01:02:28,683
+the fact that you
+were pressing buttons in time.
+
+1189
+01:02:28,684 --> 01:02:30,683
+There's no musical talent in that
+whatsoever
+
+1190
+01:02:30,684 --> 01:02:32,123
+but you felt that there was.
+
+1191
+01:02:32,124 --> 01:02:34,923
+PaRappa The Rapper led to
+games like Guitar Hero,
+
+1192
+01:02:34,924 --> 01:02:38,483
+in which you use a simplified
+push-button guitar to play along to
+
+1193
+01:02:38,484 --> 01:02:40,723
+recognisable
+hits from big-name acts.
+
+1194
+01:02:40,724 --> 01:02:43,963
+Later games added far more
+realistic instruments, meaning
+
+1195
+01:02:43,964 --> 01:02:46,203
+players would generally
+improve their skills,
+
+1196
+01:02:46,204 --> 01:02:50,204
+however old they were, as you
+can see from this charming footage.
+
+1197
+01:02:54,404 --> 01:02:57,483
+The very latest rhythm games have
+taken this to the logical
+
+1198
+01:02:57,484 --> 01:03:01,283
+conclusion. You now connect a real
+guitar directly to your console.
+
+1199
+01:03:01,284 --> 01:03:03,563
+In fact, they are not
+marketed as games any more
+
+1200
+01:03:03,564 --> 01:03:06,443
+but bona fide
+musical education tools.
+
+1201
+01:03:06,444 --> 01:03:08,883
+Not a bad legacy for a cartoon dog
+in a hat, although
+
+1202
+01:03:08,884 --> 01:03:10,483
+PaRappa himself has been forgotten,
+
+1203
+01:03:10,484 --> 01:03:14,484
+relegated to appearing alongside 50 Cent as a
+pop culture reference in subversive comedy shows.
+
+1204
+01:03:15,404 --> 01:03:17,283
+# Kickin' and punchin' and blockin'
+
+1205
+01:03:17,284 --> 01:03:20,003
+# Blockin' and kickin' all night
+
+1206
+01:03:20,004 --> 01:03:22,243
+# Blockin' and kickin'
+and turn around
+
+1207
+01:03:22,244 --> 01:03:24,803
+# We'll be punching everything
+in sight. #
+
+1208
+01:03:24,804 --> 01:03:28,804
+PaRappa, you never return my phone
+calls so now eat bullets, and lick my balls.
+
+1209
+01:03:31,004 --> 01:03:35,004
+It is a rarity talking about games
+on TV. TV doesn't often "do" games
+
+1210
+01:03:35,084 --> 01:03:38,243
+and one of the key reasons for
+that is that TV commissioners believe that
+
+1211
+01:03:38,244 --> 01:03:41,283
+no-one wants to watch other people
+playing them, which is a valid point.
+
+1212
+01:03:41,284 --> 01:03:44,963
+Picture two dweebs playing some
+baffling point-and-click strategy game,
+
+1213
+01:03:44,964 --> 01:03:48,964
+it is not like anyone is going to
+pack out a stadium to see that.
+
+1214
+01:03:51,564 --> 01:03:55,564
+This illuminating documentary
+footage depicts emotional South Korean fans
+
+1215
+01:03:56,444 --> 01:03:59,883
+watching their idols in action.
+Who are their idols?
+
+1216
+01:03:59,884 --> 01:04:03,763
+These guys.
+Shit-hot Starcraft players.
+
+1217
+01:04:03,764 --> 01:04:07,764
+The Koreans are quite into
+Starcraft.
+
+1218
+01:04:11,764 --> 01:04:15,764
+A densely complex war sim, Starcraft is
+basically fast-paced space chess.
+
+1219
+01:04:17,724 --> 01:04:20,483
+Starcraft is a real-time strategy
+game,
+
+1220
+01:04:20,484 --> 01:04:23,403
+building a base
+and sending soldiers to kill people
+
+1221
+01:04:23,404 --> 01:04:27,404
+but at a pace that will
+take whole years off your life.
+
+1222
+01:04:27,884 --> 01:04:31,884
+Starcraft is interesting in that
+it has emerged as the first
+
+1223
+01:04:31,924 --> 01:04:35,924
+sort of competitive sport of gaming.
+
+1224
+01:04:35,964 --> 01:04:38,643
+If you look at Korea, for example,
+
+1225
+01:04:38,644 --> 01:04:40,963
+Starcraft is effectively
+the national sport.
+
+1226
+01:04:40,964 --> 01:04:43,723
+There are cable television channels
+dedicated to Starcraft.
+
+1227
+01:04:43,724 --> 01:04:46,843
+The key Starcraft pro players in
+Korea are superstars,
+
+1228
+01:04:46,844 --> 01:04:50,283
+they have fans, screaming adulation.
+
+1229
+01:04:50,284 --> 01:04:52,243
+As you can see it evokes
+unparalleled
+
+1230
+01:04:52,244 --> 01:04:54,164
+excitement among commentators.
+
+1231
+01:04:57,364 --> 01:05:00,603
+For a lot of people, they just
+enjoy watching people that are
+
+1232
+01:05:00,604 --> 01:05:04,604
+good at things. It is almost like
+watching a virtuoso piano playing.
+
+1233
+01:05:04,764 --> 01:05:08,403
+When you watch these guys playing
+Starcraft, their fingers are a blur,
+
+1234
+01:05:08,404 --> 01:05:10,523
+and it is kind of fascinating.
+
+1235
+01:05:10,524 --> 01:05:12,563
+Never mind fascinating,
+
+1236
+01:05:12,564 --> 01:05:15,604
+the Korean audience finds the game
+shout-out-loud shit-ifying.
+
+1237
+01:05:22,124 --> 01:05:26,124
+Shortly afterwards, the year 2000
+arrived in a flurry of optimistic fireworks
+
+1238
+01:05:26,884 --> 01:05:29,763
+and humankind wondered what majesty
+the new century would behold.
+
+1239
+01:05:29,764 --> 01:05:32,323
+It turned out the answer was
+a voyeuristic reality show in
+
+1240
+01:05:32,324 --> 01:05:36,324
+which egotists entertained the nation
+by sharing a bog for six weeks.
+
+1241
+01:05:36,364 --> 01:05:40,364
+They weren't the only housemates
+entrancing millions.
+
+1242
+01:05:46,884 --> 01:05:50,884
+The Sims in some sense is a life
+simulator where you create little people,
+
+1243
+01:05:51,444 --> 01:05:54,683
+personalities, they then
+live their lives in the game.
+
+1244
+01:05:54,684 --> 01:05:58,323
+You can create houses for them,
+they can get jobs, fall in love, have kids.
+
+1245
+01:05:58,324 --> 01:06:01,523
+Following in the footsteps of the
+voyeuristic satire The Truman Show,
+
+1246
+01:06:01,524 --> 01:06:05,443
+in which the world tuned in to watch
+the mundanity of a suburban life,
+
+1247
+01:06:05,444 --> 01:06:08,563
+The Sims tapped into our desire for
+a perfect domestic existence.
+
+1248
+01:06:08,564 --> 01:06:11,963
+It appeals to that part of you that
+wants to escape into another
+
+1249
+01:06:11,964 --> 01:06:14,523
+world and create another
+version of yourself,
+
+1250
+01:06:14,524 --> 01:06:18,243
+almost too similar to
+what your real life is.
+
+1251
+01:06:18,244 --> 01:06:20,163
+I was living on my own
+
+1252
+01:06:20,164 --> 01:06:24,164
+when I first played The Sims and
+I didn't really go for it.
+
+1253
+01:06:24,244 --> 01:06:27,643
+I just could not see the point.
+
+1254
+01:06:27,644 --> 01:06:31,644
+But I was playing it and it was in
+the early stages of the game when you
+
+1255
+01:06:32,044 --> 01:06:36,044
+buy a flat and I noticed there were
+these little green patches on the floor
+
+1256
+01:06:36,164 --> 01:06:40,164
+and the sound of flies near them.
+I was like, "What are these?"
+
+1257
+01:06:40,724 --> 01:06:44,724
+As the game progressed, more of
+these would build up.
+
+1258
+01:06:45,444 --> 01:06:48,283
+I thought, "How do I get rid of
+them?"
+
+1259
+01:06:48,284 --> 01:06:51,363
+I figured it out that it was
+wastepaper bins.
+
+1260
+01:06:51,364 --> 01:06:53,683
+You put wastepaper bins in each room
+
+1261
+01:06:53,684 --> 01:06:56,363
+and those little green things
+stop appearing.
+
+1262
+01:06:56,364 --> 01:06:57,643
+I was playing the game
+
+1263
+01:06:57,644 --> 01:07:01,644
+and I thought, "Maybe I should put
+wastepaper bins in my flat."
+
+1264
+01:07:02,364 --> 01:07:05,363
+The Sims wasn't just idle play,
+it was stressful.
+
+1265
+01:07:05,364 --> 01:07:08,203
+You have to micro-manage every
+aspect of your Sims' existence,
+
+1266
+01:07:08,204 --> 01:07:11,523
+from how many bins they had, to how
+often they went to the toilet.
+
+1267
+01:07:11,524 --> 01:07:14,323
+You had to eat healthily,
+exercise loads
+
+1268
+01:07:14,324 --> 01:07:16,603
+and generally behave
+if you wanted a good life
+
+1269
+01:07:16,604 --> 01:07:20,523
+and that good life was rigidly
+defined as a well-paid job,
+
+1270
+01:07:20,524 --> 01:07:24,123
+a smiling partner and a tidy house
+full of possessions.
+
+1271
+01:07:24,124 --> 01:07:26,883
+Maintaining all of that became
+increasingly difficult.
+
+1272
+01:07:26,884 --> 01:07:28,963
+It took the American suburban dream
+
+1273
+01:07:28,964 --> 01:07:32,403
+and turned it into an endless
+point-and-click pain in the arse.
+
+1274
+01:07:32,404 --> 01:07:34,963
+It was meant to be
+a satire of US culture
+
+1275
+01:07:34,964 --> 01:07:36,723
+and most people didn't get that.
+
+1276
+01:07:36,724 --> 01:07:39,563
+The promise of the game is that you
+have all of these objects
+
+1277
+01:07:39,564 --> 01:07:41,763
+and each one has little ratings.
+
+1278
+01:07:41,764 --> 01:07:45,764
+Each object becomes a ticking time
+bomb. They can break, they can
+
+1279
+01:07:48,044 --> 01:07:50,523
+catch fire, become dysfunctional.
+
+1280
+01:07:50,524 --> 01:07:54,524
+You find out these objects you are buying to
+make yourself happy are making you miserable.
+
+1281
+01:07:57,764 --> 01:08:01,403
+Even though The Sims' roots lay in
+satirising consumerism,
+
+1282
+01:08:01,404 --> 01:08:04,763
+it soon became a capitalist cash cow
+itself, with a barrage
+
+1283
+01:08:04,764 --> 01:08:08,603
+of distinctly un-ironic branded
+spin-off packs you had to pay for.
+
+1284
+01:08:08,604 --> 01:08:11,843
+I don't think The Sims will ever
+be as popular again as it was
+
+1285
+01:08:11,844 --> 01:08:14,043
+when it was first released
+and the reason why is
+
+1286
+01:08:14,044 --> 01:08:18,043
+because we are The Sims now, really.
+Each other are The Sims.
+
+1287
+01:08:18,044 --> 01:08:21,963
+When you look at social networks
+and Facebook, you now
+
+1288
+01:08:21,964 --> 01:08:24,723
+have that top-down
+view into people's lives.
+
+1289
+01:08:24,724 --> 01:08:28,603
+The Sims created a realistic world
+but made you conform in it.
+
+1290
+01:08:28,604 --> 01:08:30,603
+Luckily a game was about
+to come along
+
+1291
+01:08:30,604 --> 01:08:35,964
+that would let you indulge
+your darker side.
+
+1292
+01:08:38,964 --> 01:08:41,403
+On September 11 2001,
+
+1293
+01:08:41,404 --> 01:08:44,763
+millions feared the world
+was about to slide into chaos.
+
+1294
+01:08:44,764 --> 01:08:48,323
+Weeks later a video game consisting
+almost entirely of nihilistic
+
+1295
+01:08:48,324 --> 01:08:52,324
+urban anarchy ushered in a new age
+of morally blank freedom for gamers.
+
+1296
+01:08:58,844 --> 01:09:02,844
+I love the feeling of
+dropping in to what is
+
+1297
+01:09:04,724 --> 01:09:08,283
+a pretty realistic simulation
+of a working city
+
+1298
+01:09:08,284 --> 01:09:12,003
+and then just causing havoc.
+
+1299
+01:09:12,004 --> 01:09:14,763
+It is just sort of
+perfect escapism for me.
+
+1300
+01:09:14,764 --> 01:09:18,323
+Early incarnations of Grand Theft
+Auto were somewhat primitive
+
+1301
+01:09:18,324 --> 01:09:22,324
+and looked vaguely reminiscent of the
+rebellious bedroom-coded ZX Spectrum games
+
+1302
+01:09:22,444 --> 01:09:24,203
+that were part of its genetic code.
+
+1303
+01:09:24,204 --> 01:09:27,043
+Despite being set in
+an exaggerated version of the USA,
+
+1304
+01:09:27,044 --> 01:09:31,044
+it was a defiantly British game
+made in Scotland from murders!
+
+1305
+01:09:32,924 --> 01:09:34,003
+Grand Theft Auto
+
+1306
+01:09:34,004 --> 01:09:35,563
+arrived at DMA Design,
+
+1307
+01:09:35,564 --> 01:09:38,203
+a small Scottish development team
+in Dundee.
+
+1308
+01:09:38,204 --> 01:09:42,203
+It was something their very small
+team had worked on for four years
+
+1309
+01:09:42,204 --> 01:09:46,204
+and it was thought of in the studio
+as kind of the runt of the litter.
+
+1310
+01:09:49,884 --> 01:09:53,803
+Then in came Sam and Dan Houser
+who took on a publishing deal
+
+1311
+01:09:53,804 --> 01:09:54,963
+with DMA Design.
+
+1312
+01:09:54,964 --> 01:09:58,523
+They became kind of the producers
+of the game and it changed.
+
+1313
+01:09:58,524 --> 01:10:00,563
+So when Grand Theft Auto III
+came out,
+
+1314
+01:10:00,564 --> 01:10:03,763
+they used 3D visuals which made
+the game feel more mature
+
+1315
+01:10:03,764 --> 01:10:07,163
+but it was also much more aware
+of wider cultural issues.
+
+1316
+01:10:07,164 --> 01:10:08,603
+It had lots of cool music in it
+
+1317
+01:10:08,604 --> 01:10:10,883
+and again there was
+a sense of anarchy to it
+
+1318
+01:10:10,884 --> 01:10:14,003
+but it was more out of control
+this time.
+
+1319
+01:10:14,004 --> 01:10:15,803
+I'm only pretending to play that.
+
+1320
+01:10:15,804 --> 01:10:18,443
+Grand Theft Auto III
+was an immense blockbuster
+
+1321
+01:10:18,444 --> 01:10:20,923
+revolutionising a franchise
+that has become one of the most
+
+1322
+01:10:20,924 --> 01:10:23,723
+lucrative entertainment properties
+in history with an influence
+
+1323
+01:10:23,724 --> 01:10:25,483
+that stretches
+beyond the world of games.
+
+1324
+01:10:25,484 --> 01:10:26,963
+If you watch the film Drive
+
+1325
+01:10:26,964 --> 01:10:29,043
+with Ryan Gosling.
+
+1326
+01:10:29,044 --> 01:10:30,643
+I do not believe that film
+
+1327
+01:10:30,644 --> 01:10:31,923
+would look the way it does
+
+1328
+01:10:31,924 --> 01:10:33,683
+if it wasn't for Grand Theft Auto.
+
+1329
+01:10:33,684 --> 01:10:37,283
+Lots of people say the director
+essentially made
+
+1330
+01:10:37,284 --> 01:10:39,763
+a non-interactive
+version of Grand Theft Auto.
+
+1331
+01:10:39,764 --> 01:10:43,764
+The world of Drive as depicted
+in that film is very much influenced
+
+1332
+01:10:45,284 --> 01:10:47,523
+and inspired
+by Grand Theft Auto, I think.
+
+1333
+01:10:47,524 --> 01:10:48,563
+But unlike cinema,
+
+1334
+01:10:48,564 --> 01:10:51,123
+most of the stories told
+within the world of GTA
+
+1335
+01:10:51,124 --> 01:10:53,843
+are ones the player
+effectively writes themselves
+
+1336
+01:10:53,844 --> 01:10:56,003
+using the freedom
+of their own actions.
+
+1337
+01:10:56,004 --> 01:10:58,363
+Don't be no wise-ass punk.
+Now give me that!
+
+1338
+01:10:58,364 --> 01:11:00,243
+The other day I stole a car,
+
+1339
+01:11:00,244 --> 01:11:03,443
+I'm shooting someone in the head
+
+1340
+01:11:03,444 --> 01:11:06,483
+and my wife was shouting
+shoot him again, shoot him again.
+
+1341
+01:11:06,484 --> 01:11:10,484
+Now, we are two very peaceable
+cat-loving ladies from Glasgow.
+
+1342
+01:11:10,724 --> 01:11:14,724
+I think I can rationalise it because
+I know it's not real, it's not real.
+
+1343
+01:11:14,884 --> 01:11:17,723
+Yes, and if rib-tickling
+viral videos are anything to go by,
+
+1344
+01:11:17,724 --> 01:11:19,483
+GTA's world of fantasy indulgence
+
+1345
+01:11:19,484 --> 01:11:21,443
+even seems to appeal
+to older players,
+
+1346
+01:11:21,444 --> 01:11:24,723
+especially those with an axe to
+grind against energy companies.
+
+1347
+01:11:24,724 --> 01:11:27,203
+You take that.
+Hello, what do you do for a living?
+
+1348
+01:11:27,204 --> 01:11:30,443
+Work for British Gas, do you?
+You wanker.
+
+1349
+01:11:30,444 --> 01:11:33,483
+I'll give you put my bills up.
+Bastard bank! You take that.
+
+1350
+01:11:33,484 --> 01:11:37,403
+You won't put them up no more.
+Bang! One for you and one for you!
+
+1351
+01:11:37,404 --> 01:11:38,443
+For some reason,
+
+1352
+01:11:38,444 --> 01:11:41,563
+this level of anarchic freedom
+seems to upset people.
+
+1353
+01:11:41,564 --> 01:11:45,564
+Parents, listen up because here's
+what you need to know tonight.
+
+1354
+01:11:47,684 --> 01:11:51,684
+In Grand Theft Auto, your son
+or your husband or your boyfriend
+
+1355
+01:11:52,284 --> 01:11:56,284
+or whoever can hire a prostitute,
+have sex with her
+
+1356
+01:11:56,764 --> 01:12:00,764
+and then beat her to death
+with a baseball bat.
+
+1357
+01:12:03,644 --> 01:12:06,923
+GTA is the gift that
+keeps on giving for tabloids.
+
+1358
+01:12:06,924 --> 01:12:09,083
+I mean, Parliament debates it,
+
+1359
+01:12:09,084 --> 01:12:12,163
+there are motions tabled
+in the House of Commons on it,
+
+1360
+01:12:12,164 --> 01:12:14,323
+there are endless commentators
+
+1361
+01:12:14,324 --> 01:12:17,563
+who judge it to be something
+linked to the devil.
+
+1362
+01:12:17,564 --> 01:12:21,323
+If you're a parent and you allow
+your son or daughter to watch this,
+
+1363
+01:12:21,324 --> 01:12:25,324
+even if they are beyond 18 years old,
+you're a lousy parent, in my opinion.
+
+1364
+01:12:26,444 --> 01:12:30,444
+It is the definitive
+moral panic game.
+
+1365
+01:12:31,484 --> 01:12:35,043
+Please don't make me ruin all the great work
+your plastic surgeons have been doing.
+
+1366
+01:12:35,044 --> 01:12:39,043
+Grand Theft Auto is pretty much the
+Frankie Boyle of the gaming world, really.
+
+1367
+01:12:39,044 --> 01:12:41,643
+It's controversial,
+Scottish, nihilistic,
+
+1368
+01:12:41,644 --> 01:12:44,443
+hard to defend in the Guardian
+and to what end?
+
+1369
+01:12:44,444 --> 01:12:48,443
+Well, because it just wants to
+make you laugh, of course.
+
+1370
+01:12:48,444 --> 01:12:50,083
+Yeah, shut it, pal.
+
+1371
+01:12:50,084 --> 01:12:53,163
+You'll leave here with an asshole
+like a yawning hippo's mouth.
+
+1372
+01:12:53,164 --> 01:12:55,723
+It is interesting being a Brit
+living in the United States.
+
+1373
+01:12:55,724 --> 01:12:58,803
+People outside of America
+tend to look at the American world
+
+1374
+01:12:58,804 --> 01:13:00,963
+from the outside
+a little more cynically.
+
+1375
+01:13:00,964 --> 01:13:04,323
+We look at American culture
+and American values with a little
+
+1376
+01:13:04,324 --> 01:13:07,123
+bit more cynicism than
+people inside America society do.
+
+1377
+01:13:07,124 --> 01:13:09,603
+You have to be on the outside
+to hold up a mirror
+
+1378
+01:13:09,604 --> 01:13:13,604
+and that may be the reason GTA has
+been fairly successful as a piece of satire.
+
+1379
+01:13:15,204 --> 01:13:16,803
+Again, I think the satire,
+
+1380
+01:13:16,804 --> 01:13:19,123
+the commentary in GTA,
+is often very crass.
+
+1381
+01:13:19,124 --> 01:13:21,523
+I think they miss the target
+as often as they hit it but again,
+
+1382
+01:13:21,524 --> 01:13:24,563
+the fact that they are trying
+goes beyond a lot of what
+
+1383
+01:13:24,564 --> 01:13:27,363
+a lot of triple-A big budget video
+games ever try to do.
+
+1384
+01:13:27,364 --> 01:13:31,364
+It's a giant cartoon, Grand Theft
+Auto, and it's not exactly a subtle
+
+1385
+01:13:32,964 --> 01:13:36,403
+representation of anything
+but then it is not meant to be.
+
+1386
+01:13:36,404 --> 01:13:39,763
+If you want a subtle representation
+of something else,
+
+1387
+01:13:39,764 --> 01:13:42,123
+read a lovely book by Jane Austen.
+
+1388
+01:13:42,124 --> 01:13:45,003
+Grand Theft Auto is all about
+causing mayhem and not giving
+
+1389
+01:13:45,004 --> 01:13:48,323
+a fig about the consequences
+but increasingly some games
+
+1390
+01:13:48,324 --> 01:13:52,203
+are prompting players to consider
+the repercussions of their actions.
+
+1391
+01:13:52,204 --> 01:13:56,204
+And they do it
+with surprising grace.
+
+1392
+01:13:59,804 --> 01:14:03,123
+Shadow Of The Colossus was a really
+fascinating game in a lot of ways.
+
+1393
+01:14:03,124 --> 01:14:05,283
+It was a really meditative game.
+
+1394
+01:14:05,284 --> 01:14:09,284
+You played a character who lived
+in a fantasy world, whose mission was
+
+1395
+01:14:09,684 --> 01:14:13,363
+to rescue a princess which is
+a very basic video game set-up.
+
+1396
+01:14:13,364 --> 01:14:16,803
+Your job in the game is to bring
+down these huge creatures.
+
+1397
+01:14:16,804 --> 01:14:19,363
+It's like seven huge boss battles
+
+1398
+01:14:19,364 --> 01:14:21,603
+where the bosses
+are not only monsters
+
+1399
+01:14:21,604 --> 01:14:24,963
+but so big that they are
+almost a landscape in themselves
+
+1400
+01:14:24,964 --> 01:14:27,123
+and gradually as the game goes on,
+
+1401
+01:14:27,124 --> 01:14:29,923
+your feelings as you bring down
+these monsters
+
+1402
+01:14:29,924 --> 01:14:32,043
+become more and more complicated.
+
+1403
+01:14:32,044 --> 01:14:35,803
+Because every time you killed one
+of these creatures, you realise you
+
+1404
+01:14:35,804 --> 01:14:39,363
+just killed something magnificent,
+something larger-than-life.
+
+1405
+01:14:39,364 --> 01:14:41,923
+This beautiful majestic animal
+
+1406
+01:14:41,924 --> 01:14:44,763
+and you just slaughtered it
+for some unknown reason.
+
+1407
+01:14:44,764 --> 01:14:48,764
+And every time you did one of those
+things your character design
+
+1408
+01:14:48,964 --> 01:14:51,283
+slowly morphed
+and became darker and darker
+
+1409
+01:14:51,284 --> 01:14:55,284
+and you realise
+you are the villain of this world.
+
+1410
+01:14:58,084 --> 01:14:59,883
+Shadow Of The Colossus
+was significant
+
+1411
+01:14:59,884 --> 01:15:02,243
+because it helped forge
+a new way of looking at games,
+
+1412
+01:15:02,244 --> 01:15:06,243
+one in which the player could no
+longer be certain they were the hero.
+
+1413
+01:15:06,244 --> 01:15:09,563
+It also influenced recent indie
+titles like Papers, Please
+
+1414
+01:15:09,564 --> 01:15:11,243
+which, despite its basic appearance,
+
+1415
+01:15:11,244 --> 01:15:15,163
+is a complex game that causes
+the player increasing discomfort.
+
+1416
+01:15:15,164 --> 01:15:17,923
+Papers, Please is a game
+where you are a customs officer
+
+1417
+01:15:17,924 --> 01:15:20,803
+working on a fictional border
+of a made-up country
+
+1418
+01:15:20,804 --> 01:15:22,883
+and you have to check
+everyone's paperwork
+
+1419
+01:15:22,884 --> 01:15:25,203
+to see whether or not
+they can come into the country.
+
+1420
+01:15:25,204 --> 01:15:28,283
+The mechanics is, like, someone
+approaches kind of the checkpoint
+
+1421
+01:15:28,284 --> 01:15:31,283
+and hands you their papers and they
+might ask you to let them in,
+
+1422
+01:15:31,284 --> 01:15:34,803
+they have family starving inside or
+they're trying to bring something to them
+
+1423
+01:15:34,804 --> 01:15:37,403
+but your job is just to check
+whether their paper is forged,
+
+1424
+01:15:37,404 --> 01:15:38,723
+do they have all their papers
+
+1425
+01:15:38,724 --> 01:15:42,243
+and whether to allow them
+to get in or reject them.
+
+1426
+01:15:42,244 --> 01:15:45,123
+You quickly realise
+you've got to be a bit evil.
+
+1427
+01:15:45,124 --> 01:15:48,523
+If you do not make the quota every day
+for stamping enough people through,
+
+1428
+01:15:48,524 --> 01:15:51,043
+you don't get enough money
+to feed your wife and kids.
+
+1429
+01:15:51,044 --> 01:15:52,763
+And it's the sort of game
+where you play it
+
+1430
+01:15:52,764 --> 01:15:55,563
+and you realise why people
+do bad things.
+
+1431
+01:15:55,564 --> 01:15:58,923
+It puts you into a position where you
+slide and you go, "All right, well,
+
+1432
+01:15:58,924 --> 01:16:01,923
+"just one person," and before you
+know it, you are completely corrupt.
+
+1433
+01:16:01,924 --> 01:16:03,963
+And yet you never really
+noticed it happening.
+
+1434
+01:16:03,964 --> 01:16:07,964
+Through those mechanics you feel a
+feeling that is so unique to gaming.
+
+1435
+01:16:08,644 --> 01:16:10,163
+You feel guilt.
+
+1436
+01:16:10,164 --> 01:16:11,843
+And a movie
+can't make you feel guilty,
+
+1437
+01:16:11,844 --> 01:16:13,843
+a book can't make you feel guilty
+but here's, like,
+
+1438
+01:16:13,844 --> 01:16:16,403
+I'm making an action
+and somebody can curse me
+
+1439
+01:16:16,404 --> 01:16:20,404
+because of it and I feel guilty and
+it's kind of brilliant in that way.
+
+1440
+01:16:20,684 --> 01:16:23,443
+Games excel at making you
+stand in other people's shoes.
+
+1441
+01:16:23,444 --> 01:16:26,523
+Not just the shoes of corrupt
+Eastern European officials
+
+1442
+01:16:26,524 --> 01:16:28,763
+but creatures so phantasmagorical,
+
+1443
+01:16:28,764 --> 01:16:32,243
+so beyond our imaginations
+they don't even need shoes.
+
+1444
+01:16:32,244 --> 01:16:36,244
+Imagine that. You can't!
+
+1445
+01:16:39,804 --> 01:16:42,603
+Something happened in the mid-2000s
+with the rise of what's called
+
+1446
+01:16:42,604 --> 01:16:44,443
+the massively multiplayer game
+
+1447
+01:16:44,444 --> 01:16:45,603
+and this was the point
+
+1448
+01:16:45,604 --> 01:16:49,523
+in which the line between games and
+reality started to get quite blurred.
+
+1449
+01:16:49,524 --> 01:16:50,603
+My wife got super into it
+
+1450
+01:16:50,604 --> 01:16:52,803
+and so did my son and what was nice
+in actual fact
+
+1451
+01:16:52,804 --> 01:16:55,683
+was it became quite a nice mother
+and son thing to do together.
+
+1452
+01:16:55,684 --> 01:16:58,443
+It was very interesting, you know,
+they would go on raids together.
+
+1453
+01:16:58,444 --> 01:17:00,323
+You know, where else can a woman,
+
+1454
+01:17:00,324 --> 01:17:03,043
+a grown woman who's mothered
+several children
+
+1455
+01:17:03,044 --> 01:17:06,243
+and written several hit movies,
+go out with her son,
+
+1456
+01:17:06,244 --> 01:17:10,163
+skin some animals, kill a troll, OK,
+win some gold
+
+1457
+01:17:10,164 --> 01:17:13,963
+and still see a lovely bit of scenery in
+a lovely new mythical city? Nowhere.
+
+1458
+01:17:13,964 --> 01:17:17,443
+The problem with a game this
+seductive is it can also be quite addictive.
+
+1459
+01:17:17,444 --> 01:17:21,403
+Regularly,
+I would play for 14 hours straight.
+
+1460
+01:17:21,404 --> 01:17:22,843
+When I would be raiding.
+
+1461
+01:17:22,844 --> 01:17:25,683
+I would do a couple of raids a day
+and then I'd have to do upkeep
+
+1462
+01:17:25,684 --> 01:17:26,963
+in between the raids.
+
+1463
+01:17:26,964 --> 01:17:30,043
+You hear of people who would
+sit there, especially men,
+
+1464
+01:17:30,044 --> 01:17:34,044
+I have to say, who will sit
+there with buckets or bottles
+
+1465
+01:17:35,284 --> 01:17:37,963
+attached to their nether regions
+so they don't have to move.
+
+1466
+01:17:37,964 --> 01:17:40,043
+They can play constantly
+and just pee in a bottle.
+
+1467
+01:17:40,044 --> 01:17:43,323
+The cliched image of World
+Of Warcraft players as addicted
+
+1468
+01:17:43,324 --> 01:17:46,203
+shut-in husks neglecting
+their own lives was memorably
+
+1469
+01:17:46,204 --> 01:17:49,643
+satirised in
+this South Park episode.
+
+1470
+01:17:49,644 --> 01:17:53,644
+Mum, bathroom! What, hon? Bathroom!
+
+1471
+01:17:57,084 --> 01:17:59,203
+Oh, that's a big boy, isn't he?
+
+1472
+01:17:59,204 --> 01:18:01,243
+Yeah, never mind
+World Of Warcraft,
+
+1473
+01:18:01,244 --> 01:18:03,643
+that is the tragedy of all games,
+isn't it?
+
+1474
+01:18:03,644 --> 01:18:06,083
+The way they steal you away
+from the real world where all
+
+1475
+01:18:06,084 --> 01:18:09,163
+the normal people live
+and encourage you to stay indoors.
+
+1476
+01:18:09,164 --> 01:18:12,003
+Gaming is just such a sad,
+sedentary pursuit, isn't it?
+
+1477
+01:18:12,004 --> 01:18:14,283
+It's totally unlike, say,
+the way you're sitting there
+
+1478
+01:18:14,284 --> 01:18:16,923
+in a darkened room
+passively watching me say this.
+
+1479
+01:18:16,924 --> 01:18:19,243
+Box sets are the silver
+bullet in this.
+
+1480
+01:18:19,244 --> 01:18:22,803
+Everyone who complains to you about
+playing Far Cry 3 for 30 hours
+
+1481
+01:18:22,804 --> 01:18:24,443
+has sat through far more
+
+1482
+01:18:24,444 --> 01:18:27,283
+of that in terms of Game Of Thrones
+
+1483
+01:18:27,284 --> 01:18:30,843
+and Breaking Bad, all of which is
+a pretty sedentary activity.
+
+1484
+01:18:30,844 --> 01:18:32,523
+And no-one is down on box sets.
+
+1485
+01:18:32,524 --> 01:18:34,483
+No-one is going,
+"These are appalling.
+
+1486
+01:18:34,484 --> 01:18:36,363
+"Box sets are making
+our children fat."
+
+1487
+01:18:36,364 --> 01:18:38,083
+So that's always been the one
+I've gone,
+
+1488
+01:18:38,084 --> 01:18:41,083
+"Slam! Have you watched a box set
+recently?" "Well, of course I have
+
+1489
+01:18:41,084 --> 01:18:45,084
+"because I have watched Dir Klurgen Furgen,
+the new Scandinavian murderer thing."
+
+1490
+01:18:45,684 --> 01:18:49,523
+How is that different to
+playing Grand Theft Auto V?
+
+1491
+01:18:49,524 --> 01:18:52,403
+Yes, you may learn a word or
+two of Danish as it goes along
+
+1492
+01:18:52,404 --> 01:18:54,763
+but it is exactly
+the same experience.
+
+1493
+01:18:54,764 --> 01:18:58,483
+In fact, it's more passive. At least
+my thumbs are getting a work-out.
+
+1494
+01:18:58,484 --> 01:19:01,523
+Never mind a work-out for
+your thumbs, what about your other fingers?
+
+1495
+01:19:01,524 --> 01:19:05,524
+Early video games were simple
+and so therefore
+
+1496
+01:19:05,884 --> 01:19:09,843
+anybody can sort of pick them up
+and figure out what to do.
+
+1497
+01:19:09,844 --> 01:19:13,403
+Then there were overlays
+upon overlays upon overlays
+
+1498
+01:19:13,404 --> 01:19:17,243
+of complexity to where,
+if you picked up a PS3 controller,
+
+1499
+01:19:17,244 --> 01:19:21,244
+it looked a little bit
+like the cockpit of a 747.
+
+1500
+01:19:21,724 --> 01:19:25,724
+The minute you went to
+a one-button gesture thing,
+
+1501
+01:19:25,844 --> 01:19:28,483
+it empowered a hole
+bunch of new gamers.
+
+1502
+01:19:28,484 --> 01:19:32,484
+That was really the power of it.
+
+1503
+01:19:37,764 --> 01:19:39,803
+It sounds too good to be true.
+
+1504
+01:19:39,804 --> 01:19:42,163
+Being able to play
+a game of tennis on your lunch hour
+
+1505
+01:19:42,164 --> 01:19:44,243
+and you don't even have
+to take your suit off.
+
+1506
+01:19:44,244 --> 01:19:46,683
+It was the first time you could
+actually play games
+
+1507
+01:19:46,684 --> 01:19:49,443
+with your family
+and have a level playing field.
+
+1508
+01:19:49,444 --> 01:19:52,163
+You know, you could hand the
+controller to your grandma, your mum,
+
+1509
+01:19:52,164 --> 01:19:54,803
+and say, "Let's play tennis,"
+and they might well beat you at it.
+
+1510
+01:19:54,804 --> 01:19:57,563
+And for a long-time gamer
+that was a great experience.
+
+1511
+01:19:57,564 --> 01:20:00,923
+Wii Sports is on our list, not because it's
+one of the bestselling games of all time,
+
+1512
+01:20:00,924 --> 01:20:02,603
+shifting over 80 million copies,
+
+1513
+01:20:02,604 --> 01:20:04,803
+but because it's one
+of the most accessible,
+
+1514
+01:20:04,804 --> 01:20:07,523
+turning gaming into
+an even more mainstream pursuit
+
+1515
+01:20:07,524 --> 01:20:11,524
+that could be easily marketed
+at anyone who can do this or...
+
+1516
+01:20:11,924 --> 01:20:14,963
+this or... this.
+
+1517
+01:20:14,964 --> 01:20:16,803
+Right, this one is my favourite.
+Chop chop.
+
+1518
+01:20:16,804 --> 01:20:20,804
+I'll cook for you, Marv,
+if you want.
+
+1519
+01:20:26,164 --> 01:20:29,763
+After the spectacular coming of the
+Wii was the Microsoft Xbox Kinect
+
+1520
+01:20:29,764 --> 01:20:31,603
+which did away with the controller
+
+1521
+01:20:31,604 --> 01:20:34,363
+and instead watched you
+with its beady camera eye
+
+1522
+01:20:34,364 --> 01:20:37,323
+and judged your every action
+like Orwell's Big Brother but fun.
+
+1523
+01:20:37,324 --> 01:20:40,363
+The new incarnation of the Xbox
+comes bundled with this more
+
+1524
+01:20:40,364 --> 01:20:44,123
+advanced, bulkier version
+of the Kinect which can now
+
+1525
+01:20:44,124 --> 01:20:47,243
+analyse your heartbeat
+and facial expression.
+
+1526
+01:20:47,244 --> 01:20:49,683
+Gesture technology has now
+dribbled out of gaming
+
+1527
+01:20:49,684 --> 01:20:53,643
+and into other everyday gizmos like
+smartphones and even televisions
+
+1528
+01:20:53,644 --> 01:20:57,644
+which now routinely require you
+to wave at them like some kind of peasant,
+
+1529
+01:20:57,804 --> 01:20:59,963
+as we can see
+from this unsettling advert.
+
+1530
+01:20:59,964 --> 01:21:02,883
+And the gaming world hasn't finished
+invading your life just because
+
+1531
+01:21:02,884 --> 01:21:06,683
+it's taught you to perform a few
+gestures like some kind of gibbon.
+
+1532
+01:21:06,684 --> 01:21:11,402
+No, as we'll see, it's after
+nothing less than your soul.
+
+1533
+01:21:18,484 --> 01:21:20,283
+2007 was grim.
+
+1534
+01:21:20,284 --> 01:21:23,443
+Even the launch of the spangly new
+iPhone couldn't distract anyone
+
+1535
+01:21:23,444 --> 01:21:26,843
+from the unrelenting misery
+of the global economic crisis.
+
+1536
+01:21:26,844 --> 01:21:28,603
+What could you do for
+cheap escapism?
+
+1537
+01:21:28,604 --> 01:21:31,083
+The cinema was full of
+crappy threequels
+
+1538
+01:21:31,084 --> 01:21:33,323
+and a new Transformers movie,
+so that was out.
+
+1539
+01:21:33,324 --> 01:21:37,324
+And thanks to the smoking ban, pubs
+now stank of sweat and arse gas.
+
+1540
+01:21:38,004 --> 01:21:41,283
+Fortunately, there was one form of
+entertainment that still delivered,
+
+1541
+01:21:41,284 --> 01:21:45,284
+and it chiefly delivered by letting
+you shoot people in the face.
+
+1542
+01:21:49,204 --> 01:21:51,363
+This action-packed epic is very much
+
+1543
+01:21:51,364 --> 01:21:53,923
+the Citizen Kane of
+remorseless gunfire.
+
+1544
+01:21:53,924 --> 01:21:57,763
+Modern Warfare's about putting
+you into the shoes of a soldier,
+
+1545
+01:21:57,764 --> 01:22:00,003
+putting you in the middle
+of a battle.
+
+1546
+01:22:00,004 --> 01:22:04,004
+And not just as the lone superhero,
+but as part of this giant machine.
+
+1547
+01:22:04,164 --> 01:22:06,563
+It's a world going on around you.
+
+1548
+01:22:06,564 --> 01:22:08,003
+The Call Of Duty franchise
+
+1549
+01:22:08,004 --> 01:22:10,323
+is impeccably produced
+and fun to play,
+
+1550
+01:22:10,324 --> 01:22:13,403
+but also, so brutal, many find it
+hard to stomach.
+
+1551
+01:22:13,404 --> 01:22:15,963
+For my money, the most disturbing
+mission in Modern Warfare
+
+1552
+01:22:15,964 --> 01:22:17,323
+is Death From Above.
+
+1553
+01:22:17,324 --> 01:22:19,603
+A mission that puts
+you in an AC130 gunship
+
+1554
+01:22:19,604 --> 01:22:22,123
+and puts a kind of grainy film
+over the camera,
+
+1555
+01:22:22,124 --> 01:22:26,083
+as you're looking down, shooting
+at targets you can't even recognise.
+
+1556
+01:22:26,084 --> 01:22:28,283
+It's the only mission
+in Modern Warfare
+
+1557
+01:22:28,284 --> 01:22:31,723
+that could be photorealistic
+because the real-life footage
+
+1558
+01:22:31,724 --> 01:22:35,203
+we see on the news from AC130s is
+grainy, and it's tremendously
+
+1559
+01:22:35,204 --> 01:22:38,683
+disturbing, because you can't make
+out what these figures are.
+
+1560
+01:22:38,684 --> 01:22:41,083
+It could be, it could almost
+be a statement,
+
+1561
+01:22:41,084 --> 01:22:45,003
+but it's not, it's just there so you
+can have fun, and that's very dark.
+
+1562
+01:22:45,004 --> 01:22:48,083
+Every Call Of Duty game seems to
+have its banner moment, which is
+
+1563
+01:22:48,084 --> 01:22:49,643
+almost deliberately conceived.
+
+1564
+01:22:49,644 --> 01:22:52,203
+Oh, this is the level that will get
+us all in the headlines
+
+1565
+01:22:52,204 --> 01:22:53,923
+in the Daily Mail and the Sun,
+
+1566
+01:22:53,924 --> 01:22:56,723
+and these are the things people
+will complain about.
+
+1567
+01:22:56,724 --> 01:22:58,323
+I think that's a little bit cynical.
+
+1568
+01:22:58,324 --> 01:23:02,123
+The game's success also lends the debate
+about violence an interesting new kink.
+
+1569
+01:23:02,124 --> 01:23:05,403
+Many of the guns it features
+are real-world weapons,
+
+1570
+01:23:05,404 --> 01:23:08,243
+licensed with the manufacturer's
+full consent.
+
+1571
+01:23:08,244 --> 01:23:11,483
+It's a kind of grim product
+placement which means the game
+
+1572
+01:23:11,484 --> 01:23:15,484
+doubles as a shop window for future
+gun owners, albeit inadvertently.
+
+1573
+01:23:15,724 --> 01:23:17,803
+The trouble is, some of its more
+fanatical fans
+
+1574
+01:23:17,804 --> 01:23:20,083
+are the very last people you'd want
+owning guns.
+
+1575
+01:23:20,084 --> 01:23:22,563
+Or even rocks, to be honest.
+
+1576
+01:23:22,564 --> 01:23:25,123
+Fucking come out of there, bitch!
+Go on! Get out!
+
+1577
+01:23:25,124 --> 01:23:27,483
+Fucking lightweight and marathon,
+
+1578
+01:23:27,484 --> 01:23:29,524
+you think you're fucking good,
+get the fuck!
+
+1579
+01:23:31,244 --> 01:23:34,363
+Call Of Duty is the prime example
+of a game
+
+1580
+01:23:34,364 --> 01:23:38,364
+with a horrible player base,
+in terms of behaviour online.
+
+1581
+01:23:38,764 --> 01:23:42,764
+Oh, my God! Get the fuck
+out, you stupid fucking dosshead!
+
+1582
+01:23:44,484 --> 01:23:47,443
+There's a joke that comedians tell
+called The Aristocrats,
+
+1583
+01:23:47,444 --> 01:23:51,283
+which is just basically just the most
+offensive joke you can possibly tell,
+
+1584
+01:23:51,284 --> 01:23:54,923
+and playing Call Of Duty with
+a headset on is like listening
+
+1585
+01:23:54,924 --> 01:23:58,924
+to a children's choir sing the longest,
+most vile Aristocrats joke, in your ear.
+
+1586
+01:24:01,164 --> 01:24:02,363
+For hours.
+
+1587
+01:24:02,364 --> 01:24:03,763
+It's intolerable.
+
+1588
+01:24:03,764 --> 01:24:06,243
+I swear to God, I'm going to come
+over there,
+
+1589
+01:24:06,244 --> 01:24:09,923
+I'm going to fuck your mom like
+the pig she is.
+
+1590
+01:24:09,924 --> 01:24:11,883
+All of that could lead you
+to believe
+
+1591
+01:24:11,884 --> 01:24:14,083
+that present-day gaming is horrible.
+
+1592
+01:24:14,084 --> 01:24:15,123
+Not necessarily.
+
+1593
+01:24:15,124 --> 01:24:17,123
+Video games are in an amazing
+place right now.
+
+1594
+01:24:17,124 --> 01:24:19,363
+Because you've got these giant
+blockbuster games
+
+1595
+01:24:19,364 --> 01:24:22,043
+that are like giant Hollywood movies
+and then you've also got
+
+1596
+01:24:22,044 --> 01:24:24,123
+the equivalent of the independent
+film scene.
+
+1597
+01:24:24,124 --> 01:24:26,563
+You've got games that are made by
+one person, two people,
+
+1598
+01:24:26,564 --> 01:24:29,243
+little teams who are saying
+something that they want to say.
+
+1599
+01:24:29,244 --> 01:24:32,483
+Just like indie films came about
+when the cost of making films
+
+1600
+01:24:32,484 --> 01:24:34,163
+was drastically reduced, now,
+
+1601
+01:24:34,164 --> 01:24:37,723
+tools and publishing options
+are available for essentially,
+
+1602
+01:24:37,724 --> 01:24:40,683
+the little guys, who just want
+to put their game out there,
+
+1603
+01:24:40,684 --> 01:24:43,723
+games that don't have so much
+appeal, but cost SO much less.
+
+1604
+01:24:43,724 --> 01:24:46,803
+They can recoup their investment
+with just a few thousand sales.
+
+1605
+01:24:46,804 --> 01:24:50,443
+Suddenly, it seemed the
+idiosyncratic bedroom coder of the 1980s
+
+1606
+01:24:50,444 --> 01:24:54,204
+was back with a vengeance, like
+someone had turned back the clock.
+
+1607
+01:24:55,364 --> 01:24:59,364
+And an unusual time-twisting
+indie platform game called Braid
+
+1608
+01:24:59,604 --> 01:25:03,604
+led the charge.
+
+1609
+01:25:09,244 --> 01:25:13,244
+Braid is a puzzle platformer,
+and it was created by Jonathan Blow.
+
+1610
+01:25:14,564 --> 01:25:16,643
+On the surface it's all about a guy
+
+1611
+01:25:16,644 --> 01:25:19,243
+trying to rescue
+a princess from a horrible monster.
+
+1612
+01:25:19,244 --> 01:25:22,203
+When you first pick it up,
+I'm just playing a platform game.
+
+1613
+01:25:22,204 --> 01:25:24,723
+But, then, going into kind
+of the fourth dimension,
+
+1614
+01:25:24,724 --> 01:25:27,763
+playing with concepts of time,
+and reversing and speeding up
+
+1615
+01:25:27,764 --> 01:25:30,643
+and manipulating time in
+a way that took something
+
+1616
+01:25:30,644 --> 01:25:33,723
+that looked familiar and completely
+reinvented it.
+
+1617
+01:25:33,724 --> 01:25:37,724
+One aesthetic thing I didn't like
+about it was, the main character.
+
+1618
+01:25:39,244 --> 01:25:41,923
+Just didn't care for the little guy.
+
+1619
+01:25:41,924 --> 01:25:44,843
+He looked like a sort of
+squashed Hugh Grant.
+
+1620
+01:25:44,844 --> 01:25:47,603
+HE LAUGHS
+You know, that's just my taste.
+
+1621
+01:25:47,604 --> 01:25:51,604
+I'm not a fan of
+miniaturised Hugh Grants.
+
+1622
+01:25:51,804 --> 01:25:54,443
+Braid is almost a game that's
+kind of too smart for its own good.
+
+1623
+01:25:54,444 --> 01:25:58,323
+Almost, I kind of feel that it's
+a game you admire.
+
+1624
+01:25:58,324 --> 01:26:01,243
+But I definitely remember reaching
+a point where I was like,
+
+1625
+01:26:01,244 --> 01:26:02,923
+I'm not really having fun any more.
+
+1626
+01:26:02,924 --> 01:26:04,883
+And that's fine,
+that's absolutely fine,
+
+1627
+01:26:04,884 --> 01:26:08,243
+because I think, for indie games,
+they have to explore what a game is.
+
+1628
+01:26:08,244 --> 01:26:11,043
+Braid earns a place on our list
+for proving indie games could sell,
+
+1629
+01:26:11,044 --> 01:26:15,044
+paving the way for other individual
+and experimental titles.
+
+1630
+01:26:15,124 --> 01:26:19,124
+Braid was swiftly followed
+then by Limbo, which, again,
+
+1631
+01:26:19,324 --> 01:26:23,123
+was a beautifully stylised,
+very emotionally wrenching story
+
+1632
+01:26:23,124 --> 01:26:26,763
+of a small boy walking through
+a kind of ethereal landscape.
+
+1633
+01:26:26,764 --> 01:26:29,923
+Journey is probably the most
+famous example of that.
+
+1634
+01:26:29,924 --> 01:26:31,363
+Fabulously beautiful.
+
+1635
+01:26:31,364 --> 01:26:33,603
+Incredibly emotionally involving.
+
+1636
+01:26:33,604 --> 01:26:37,203
+There's a point where the little
+fella just can't quite make it up
+
+1637
+01:26:37,204 --> 01:26:39,563
+a snowy mountain and Jesus,
+it'll get ya!
+
+1638
+01:26:39,564 --> 01:26:42,763
+Many of the new wave of indie titles
+hark back to the retro past,
+
+1639
+01:26:42,764 --> 01:26:46,764
+offering subversive or surprising
+reimaginings of gaming's heritage.
+
+1640
+01:26:46,964 --> 01:26:49,643
+And indie games aren't something
+you have to seek out
+
+1641
+01:26:49,644 --> 01:26:51,163
+in some obscure hobby shop.
+
+1642
+01:26:51,164 --> 01:26:52,363
+Today, you can buy them
+
+1643
+01:26:52,364 --> 01:26:55,283
+without leaving
+the comfort of your own hand.
+
+1644
+01:26:55,284 --> 01:26:58,563
+There's this whole line of video game
+genealogy that starts off with
+
+1645
+01:26:58,564 --> 01:27:00,563
+the arcades and moves through
+the Game Boy
+
+1646
+01:27:00,564 --> 01:27:01,963
+and stuff like Tetris and Mario
+
+1647
+01:27:01,964 --> 01:27:04,203
+and ends up with modern
+arcade-like mobile games
+
+1648
+01:27:04,204 --> 01:27:06,243
+like Candy Crush and Angry Birds.
+
+1649
+01:27:06,244 --> 01:27:08,643
+Games started off as something
+that everybody played.
+
+1650
+01:27:08,644 --> 01:27:12,644
+And now, again, they're something
+that everybody plays.
+
+1651
+01:27:16,924 --> 01:27:19,643
+Lots of people that didn't really
+think of themselves as gamers
+
+1652
+01:27:19,644 --> 01:27:22,723
+will play something like Angry Birds
+because it's like a time killer.
+
+1653
+01:27:22,724 --> 01:27:24,603
+Wherever you are,
+whatever you're doing,
+
+1654
+01:27:24,604 --> 01:27:27,683
+in a doctor's waiting room, on the
+bus, if you're bored on the Tube,
+
+1655
+01:27:27,684 --> 01:27:30,323
+you can play Angry Birds
+and it kills that dead time.
+
+1656
+01:27:30,324 --> 01:27:33,763
+With its intuitive, visually
+appealing gameplay, Angry Birds has
+
+1657
+01:27:33,764 --> 01:27:37,283
+brought intense hand-held pleasure
+to millions, just like your mum has.
+
+1658
+01:27:37,284 --> 01:27:39,283
+Angry Birds is a nice enough game.
+
+1659
+01:27:39,284 --> 01:27:43,083
+I don't think it's the best game
+in the world, but I mean, certainly,
+
+1660
+01:27:43,084 --> 01:27:45,083
+it deserves to be a success.
+
+1661
+01:27:45,084 --> 01:27:47,963
+Whether it deserves to absolutely
+rule the entire universe
+
+1662
+01:27:47,964 --> 01:27:51,203
+to the exception of everything else,
+I really don't know.
+
+1663
+01:27:51,204 --> 01:27:54,603
+Yesterday, when I was buying
+my train ticket to come down here,
+
+1664
+01:27:54,604 --> 01:27:57,563
+I looked over at the ticket clerk's
+phone that was lying
+
+1665
+01:27:57,564 --> 01:28:00,963
+next to the ticket window.
+Angry Birds. It's just everywhere.
+
+1666
+01:28:00,964 --> 01:28:03,683
+Like Pac-Man, way back yonder,
+Angry Birds has become
+
+1667
+01:28:03,684 --> 01:28:06,563
+an unstoppable kiddiewink
+merchandising phenomenon,
+
+1668
+01:28:06,564 --> 01:28:10,443
+with branded goods, cartoon shows,
+theme park rides and all.
+
+1669
+01:28:10,444 --> 01:28:13,523
+But Angry Birds isn't the only
+indie game to have built an empire.
+
+1670
+01:28:13,524 --> 01:28:17,524
+Our next game is, if anything,
+an even more impressive achievement.
+
+1671
+01:28:22,364 --> 01:28:25,083
+Minecraft is just one of those
+bits of gaming genius.
+
+1672
+01:28:25,084 --> 01:28:28,723
+I think you can sum up the appeal
+of Minecraft effectively by saying
+
+1673
+01:28:28,724 --> 01:28:31,123
+that it's Lego of video games.
+
+1674
+01:28:31,124 --> 01:28:33,283
+Minecraft is an open world game
+which lets players
+
+1675
+01:28:33,284 --> 01:28:36,483
+shape their environment by placing
+or destroying blocks.
+
+1676
+01:28:36,484 --> 01:28:38,683
+It's easy, it's creative
+and it's social.
+
+1677
+01:28:38,684 --> 01:28:42,283
+The beautiful thing with Minecraft
+is that you see people playing
+
+1678
+01:28:42,284 --> 01:28:46,003
+together to create something,
+to build some massive project.
+
+1679
+01:28:46,004 --> 01:28:50,004
+People coming together to build replicas
+of the Starship Enterprise, and stuff like that,
+
+1680
+01:28:50,924 --> 01:28:53,123
+within Minecraft,
+and that's a lovely thing,
+
+1681
+01:28:53,124 --> 01:28:56,083
+because most of the time in games,
+people come together
+
+1682
+01:28:56,084 --> 01:28:57,883
+to destroy stuff, and each other.
+
+1683
+01:28:57,884 --> 01:29:01,363
+Minecraft became a hit,
+selling over 33 million copies.
+
+1684
+01:29:01,364 --> 01:29:04,483
+And its most enthusiastic
+fans are children.
+
+1685
+01:29:04,484 --> 01:29:07,763
+Children can interact with Minecraft
+and it allows them
+
+1686
+01:29:07,764 --> 01:29:10,083
+to be creative in a way that
+nothing else does.
+
+1687
+01:29:10,084 --> 01:29:12,523
+Like, reading a book is great,
+it's wonderful,
+
+1688
+01:29:12,524 --> 01:29:15,563
+but it doesn't allow them to be
+part of that fantasy. Minecraft does.
+
+1689
+01:29:15,564 --> 01:29:18,523
+And they create these huge
+worlds for themselves,
+
+1690
+01:29:18,524 --> 01:29:19,923
+these huge structures,
+
+1691
+01:29:19,924 --> 01:29:23,763
+not because someone is telling them
+to, but because they want to.
+
+1692
+01:29:23,764 --> 01:29:27,764
+And they're probably learning so
+much about teamwork and design and
+
+1693
+01:29:29,404 --> 01:29:33,404
+architecture and the environment,
+just through playing this game.
+
+1694
+01:29:33,644 --> 01:29:35,363
+You get lots of teachers now,
+
+1695
+01:29:35,364 --> 01:29:39,364
+geography teachers use Minecraft to
+get children to design villages.
+
+1696
+01:29:39,564 --> 01:29:42,803
+You get physics teachers now using
+Minecraft to teach kids
+
+1697
+01:29:42,804 --> 01:29:44,523
+about simple mechanisms.
+
+1698
+01:29:44,524 --> 01:29:48,524
+And finally, I made it work.
+The Minecraft escalator.
+
+1699
+01:29:48,564 --> 01:29:50,203
+It really communicates to kids.
+
+1700
+01:29:50,204 --> 01:29:52,483
+My children,
+my sons play Minecraft a lot.
+
+1701
+01:29:52,484 --> 01:29:56,484
+My older son is on
+the autism spectrum.
+
+1702
+01:29:57,004 --> 01:30:00,203
+To him, Minecraft is so valuable,
+because it's a world of logic
+
+1703
+01:30:00,204 --> 01:30:03,003
+and creativity, which he
+immediately understands.
+
+1704
+01:30:03,004 --> 01:30:04,963
+This is the same for all children.
+
+1705
+01:30:04,964 --> 01:30:07,203
+Like, it's really helped my son,
+in a lot of ways,
+
+1706
+01:30:07,204 --> 01:30:10,323
+to kind of express himself, which is
+really profoundly important.
+
+1707
+01:30:10,324 --> 01:30:13,363
+I'd love to shake the maker of
+that game by the hand,
+
+1708
+01:30:13,364 --> 01:30:17,243
+because I think he's
+kind of changed my son's life.
+
+1709
+01:30:17,244 --> 01:30:20,083
+So, the world of games has
+become like the world of cinema,
+
+1710
+01:30:20,084 --> 01:30:22,923
+with multimillion dollar
+blockbusters to one side
+
+1711
+01:30:22,924 --> 01:30:25,843
+and low-budget,
+cerebral indie titles on the other.
+
+1712
+01:30:25,844 --> 01:30:28,523
+But now, there are signs
+of a third way emerging.
+
+1713
+01:30:28,524 --> 01:30:31,563
+We're seeing the beginnings of
+the gaming equivalent
+
+1714
+01:30:31,564 --> 01:30:33,923
+of the critically acclaimed
+HBO box set.
+
+1715
+01:30:33,924 --> 01:30:36,283
+Where did you get the money for this?
+
+1716
+01:30:36,284 --> 01:30:38,403
+Drugs. I sell hardcore drugs.
+
+1717
+01:30:38,404 --> 01:30:41,403
+Oh, good. Well, start helping out
+with the mortgage, then.
+
+1718
+01:30:41,404 --> 01:30:42,523
+Tsk! Yeah, you wish!
+
+1719
+01:30:42,524 --> 01:30:45,483
+Jimmy? Dad? I'm coming. Come here.
+
+1720
+01:30:45,484 --> 01:30:48,003
+Jimmy?
+
+1721
+01:30:48,004 --> 01:30:50,043
+Jimmy, stay back!
+
+1722
+01:30:50,044 --> 01:30:53,763
+Jimmy, I am warning you. Stop!
+
+1723
+01:30:53,764 --> 01:30:56,763
+The Last Of Us is the story of these
+two survivors
+
+1724
+01:30:56,764 --> 01:30:59,883
+in a world that has been ravaged by
+this pandemic.
+
+1725
+01:30:59,884 --> 01:31:03,883
+And we follow Joel, this
+middle-aged survivor,
+
+1726
+01:31:03,884 --> 01:31:06,483
+who's going to do anything
+it takes to survive,
+
+1727
+01:31:06,484 --> 01:31:08,163
+cross kind of any moral line
+
+1728
+01:31:08,164 --> 01:31:11,283
+and, through circumstances, he ends
+up teaming up
+
+1729
+01:31:11,284 --> 01:31:14,603
+with this 14-year-old teenager,
+girl, Ellie.
+
+1730
+01:31:14,604 --> 01:31:17,163
+I need a gun. No, you don't.
+
+1731
+01:31:17,164 --> 01:31:18,563
+Joel?
+
+1732
+01:31:18,564 --> 01:31:21,443
+I can handle myself. No!
+
+1733
+01:31:21,444 --> 01:31:25,444
+I think Ellie in The Last Of Us
+was a great female character.
+
+1734
+01:31:25,924 --> 01:31:29,523
+She's young, but she's very capable,
+but she's also got
+
+1735
+01:31:29,524 --> 01:31:33,443
+this interesting vulnerability
+and she's not grown up in our world.
+
+1736
+01:31:33,444 --> 01:31:36,723
+I've never been in a plane.
+
+1737
+01:31:36,724 --> 01:31:37,963
+Isn't that weird?
+
+1738
+01:31:37,964 --> 01:31:40,323
+And she can't really
+kind of understand it
+
+1739
+01:31:40,324 --> 01:31:43,323
+and she sort of brings a unique
+perspective because of that.
+
+1740
+01:31:43,324 --> 01:31:47,324
+She can't envisage a time
+when young teenage girls were just
+
+1741
+01:31:47,524 --> 01:31:50,203
+sort of obsessed with boys,
+and looking good.
+
+1742
+01:31:50,204 --> 01:31:52,203
+That's completely alien to her.
+
+1743
+01:31:52,204 --> 01:31:55,723
+Is this really all
+they had to worry about?
+
+1744
+01:31:55,724 --> 01:31:59,123
+Boys? Movies?
+
+1745
+01:31:59,124 --> 01:32:01,683
+Deciding which shirt goes
+with which skirt?
+
+1746
+01:32:01,684 --> 01:32:04,283
+It's bizarre.
+
+1747
+01:32:04,284 --> 01:32:06,763
+Like any self-respecting
+box set drama,
+
+1748
+01:32:06,764 --> 01:32:09,483
+the game gradually
+and inexorably moves towards
+
+1749
+01:32:09,484 --> 01:32:12,043
+a fulfilling,
+some might say devastating climax.
+
+1750
+01:32:12,044 --> 01:32:16,044
+For the first time in my life,
+I was crying, as I held a controller
+
+1751
+01:32:17,004 --> 01:32:18,843
+and moved a character around.
+
+1752
+01:32:18,844 --> 01:32:22,523
+I'm really glad my wife didn't come
+in, but I was just kind of going...
+
+1753
+01:32:22,524 --> 01:32:24,123
+Oh, my God.
+
+1754
+01:32:24,124 --> 01:32:26,483
+Game designers are getting older.
+
+1755
+01:32:26,484 --> 01:32:28,923
+Lots of the big game
+designers are in their 30s and 40s
+
+1756
+01:32:28,924 --> 01:32:30,683
+and they have children,
+
+1757
+01:32:30,684 --> 01:32:33,803
+and they suddenly are thinking
+about games in a different way.
+
+1758
+01:32:33,804 --> 01:32:36,763
+Not as systems,
+not as scoring mechanics,
+
+1759
+01:32:36,764 --> 01:32:39,883
+but as an emotional experience.
+
+1760
+01:32:39,884 --> 01:32:41,483
+Oh, baby girl.
+
+1761
+01:32:41,484 --> 01:32:43,324
+It's OK, it's OK.
+
+1762
+01:32:45,244 --> 01:32:46,683
+In the next five to ten years,
+
+1763
+01:32:46,684 --> 01:32:48,923
+we're going to see
+more games about emotions
+
+1764
+01:32:48,924 --> 01:32:51,803
+and about social situations,
+
+1765
+01:32:51,804 --> 01:32:55,203
+about politics and about society,
+
+1766
+01:32:55,204 --> 01:32:59,083
+because we are now living
+in an age where we understand
+
+1767
+01:32:59,084 --> 01:33:03,084
+what happens around us in a very
+interactive and very digital way.
+
+1768
+01:33:03,164 --> 01:33:06,643
+So here we are now in 2013 with
+games at a bit of a crossroads.
+
+1769
+01:33:06,644 --> 01:33:09,803
+From the monochrome simplicity
+of Pong, they've transformed
+
+1770
+01:33:09,804 --> 01:33:12,763
+via this series of technological
+and conceptual shockwaves
+
+1771
+01:33:12,764 --> 01:33:15,443
+to become the most varied form
+of entertainment
+
+1772
+01:33:15,444 --> 01:33:16,843
+since the written word.
+
+1773
+01:33:16,844 --> 01:33:18,923
+But one thing we've seen
+throughout this show
+
+1774
+01:33:18,924 --> 01:33:20,523
+is that gaming never stands still.
+
+1775
+01:33:20,524 --> 01:33:23,843
+And, sure enough, a new generation
+of hardware has just arrived,
+
+1776
+01:33:23,844 --> 01:33:27,003
+bringing with it a fresh set
+of capabilities which is going to
+
+1777
+01:33:27,004 --> 01:33:29,283
+overturn everything
+that went before.
+
+1778
+01:33:29,284 --> 01:33:31,363
+As their slick promo
+material makes clear,
+
+1779
+01:33:31,364 --> 01:33:32,603
+the new PlayStation 4
+
+1780
+01:33:32,604 --> 01:33:35,563
+and Xbox One are both more powerful
+than their predecessors,
+
+1781
+01:33:35,564 --> 01:33:37,803
+but perhaps the biggest clue
+to gaming's future
+
+1782
+01:33:37,804 --> 01:33:39,243
+is their marked new emphasis
+
+1783
+01:33:39,244 --> 01:33:42,843
+on integrated social networking
+features.
+
+1784
+01:33:42,844 --> 01:33:46,763
+Now, why would games systems want
+to include social networking?
+
+1785
+01:33:46,764 --> 01:33:50,764
+Unless maybe social networking
+already functions like a game.
+
+1786
+01:33:55,844 --> 01:33:58,283
+Twitter is a massively multiplayer
+online game
+
+1787
+01:33:58,284 --> 01:34:01,283
+in which you
+choose an interesting avatar
+
+1788
+01:34:01,284 --> 01:34:03,803
+and then role-play a persona
+loosely based on your own,
+
+1789
+01:34:03,804 --> 01:34:06,563
+attempting to recruit followers
+by repeatedly pressing
+
+1790
+01:34:06,564 --> 01:34:09,043
+lettered buttons to form
+interesting sentences.
+
+1791
+01:34:09,044 --> 01:34:12,603
+The biggest way in which video games
+have affected our world,
+
+1792
+01:34:12,604 --> 01:34:15,763
+for me, is the increasing
+gameification of real life.
+
+1793
+01:34:15,764 --> 01:34:17,443
+Stuff like Twitter is a game.
+
+1794
+01:34:17,444 --> 01:34:20,563
+It's about small achievements
+adding up to bigger ones.
+
+1795
+01:34:20,564 --> 01:34:24,564
+And it's about playing
+the rules of whatever you're in.
+
+1796
+01:34:24,644 --> 01:34:28,283
+Gameification means applying
+the mechanics of video games to real-life.
+
+1797
+01:34:28,284 --> 01:34:31,523
+Now, often, this boils down
+to incentivising people
+
+1798
+01:34:31,524 --> 01:34:34,283
+to perform the same
+action over and over.
+
+1799
+01:34:34,284 --> 01:34:36,923
+Each time Mario headbutts a block,
+he gets a coin.
+
+1800
+01:34:36,924 --> 01:34:39,523
+When he gets 100 coins,
+he gets an extra life,
+
+1801
+01:34:39,524 --> 01:34:42,003
+and these perpetual little
+pats on the head
+
+1802
+01:34:42,004 --> 01:34:44,003
+compel you to bash
+those blocks for hours.
+
+1803
+01:34:44,004 --> 01:34:46,803
+By supplying a constant stream
+of fun-size rewards,
+
+1804
+01:34:46,804 --> 01:34:49,563
+social networking has, by accident,
+
+1805
+01:34:49,564 --> 01:34:52,003
+gameified whole aspects
+of our lives.
+
+1806
+01:34:52,004 --> 01:34:55,923
+Every second, another little
+gold coin for you to collect.
+
+1807
+01:34:55,924 --> 01:34:57,883
+More followers, more retweets,
+
+1808
+01:34:57,884 --> 01:35:00,723
+compelling you to
+interact over and over again.
+
+1809
+01:35:00,724 --> 01:35:04,043
+These are games we don't even
+realise we're playing.
+
+1810
+01:35:04,044 --> 01:35:08,044
+Every day, you have a drama and you
+have everyone sort of piling in
+
+1811
+01:35:08,924 --> 01:35:12,763
+to be the one to talk about,
+to be the one who gets retweeted.
+
+1812
+01:35:12,764 --> 01:35:16,764
+It has become kind of a game
+that I find myself gauging,
+
+1813
+01:35:17,284 --> 01:35:19,803
+when I do a tweet,
+how popular it's going to be
+
+1814
+01:35:19,804 --> 01:35:22,963
+and I try to guess ahead of time,
+like, how many retweets
+
+1815
+01:35:22,964 --> 01:35:25,923
+is that going to get, and how many
+favourites is that going to get.
+
+1816
+01:35:25,924 --> 01:35:29,924
+In terms of the competition,
+especially between, like,
+
+1817
+01:35:30,164 --> 01:35:34,003
+celebrities or people with
+the verification tick,
+
+1818
+01:35:34,004 --> 01:35:35,163
+every time I see someone,
+
+1819
+01:35:35,164 --> 01:35:37,363
+or every time someone's talking
+about someone,
+
+1820
+01:35:37,364 --> 01:35:40,523
+they're talking about,
+oh, I've got 50,000,
+
+1821
+01:35:40,524 --> 01:35:43,883
+I've got a million
+followers, I've got this.
+
+1822
+01:35:43,884 --> 01:35:46,643
+And it very much reminded me
+of a lot of games like that.
+
+1823
+01:35:46,644 --> 01:35:49,603
+It was always about how many points
+you got. It ups your profile
+
+1824
+01:35:49,604 --> 01:35:52,483
+and makes you feel like you're doing
+something in your life.
+
+1825
+01:35:52,484 --> 01:35:56,243
+What I do on Twitter a lot is just
+project a false persona.
+
+1826
+01:35:56,244 --> 01:35:57,843
+And it is like that avatar thing.
+
+1827
+01:35:57,844 --> 01:36:00,363
+It's like World of Warcraft
+or anything like that.
+
+1828
+01:36:00,364 --> 01:36:03,563
+The way I am on Twitter is nothing
+like the way I am in real life.
+
+1829
+01:36:03,564 --> 01:36:05,923
+That feels like a game, sometimes,
+you know what I mean?
+
+1830
+01:36:05,924 --> 01:36:09,483
+If you're a sociopath,
+feels like a game.
+
+1831
+01:36:09,484 --> 01:36:12,243
+So, how have video games
+changed the world?
+
+1832
+01:36:12,244 --> 01:36:14,683
+Well, they've entertained us,
+they've put us in the shoes
+
+1833
+01:36:14,684 --> 01:36:16,643
+of cartoon characters
+in fantastic settings,
+
+1834
+01:36:16,644 --> 01:36:18,323
+they've made spatial reasoning fun,
+
+1835
+01:36:18,324 --> 01:36:21,443
+they've allowed people to connect
+and explore nonexistent worlds,
+
+1836
+01:36:21,444 --> 01:36:24,363
+they've helped bridge the gap
+between Eastern and Western culture,
+
+1837
+01:36:24,364 --> 01:36:26,603
+they've provided a safe space
+to run riot,
+
+1838
+01:36:26,604 --> 01:36:29,643
+to fantasise out loud without anyone
+actually getting killed,
+
+1839
+01:36:29,644 --> 01:36:31,883
+they've handed a generation
+of creative thinkers
+
+1840
+01:36:31,884 --> 01:36:34,123
+a whole new set of tools
+to express themselves with,
+
+1841
+01:36:34,124 --> 01:36:36,763
+and they've inspired
+and instructed millions of children.
+
+1842
+01:36:36,764 --> 01:36:38,243
+Not that anyone cares about them!
+
+1843
+01:36:38,244 --> 01:36:40,963
+But, perhaps most significantly,
+possibly sinisterly,
+
+1844
+01:36:40,964 --> 01:36:43,443
+games have now burrowed, by stealth,
+
+1845
+01:36:43,444 --> 01:36:45,323
+into aspects of our social lives
+online
+
+1846
+01:36:45,324 --> 01:36:47,923
+and we, in response,
+have cheerfully invited them in,
+
+1847
+01:36:47,924 --> 01:36:49,803
+and that trend's just going
+to continue
+
+1848
+01:36:49,804 --> 01:36:52,443
+until whole areas of our existence
+have become games.
+
+1849
+01:36:52,444 --> 01:36:54,803
+In fact, you'll scarcely
+be known as you any more.
+
+1850
+01:36:54,804 --> 01:36:56,523
+You'll just be known as Player One.
+
+1851
+01:36:56,524 --> 01:37:00,363
+You might as well change your name
+by deed poll now and have done with it.
+
+1852
+01:37:00,364 --> 01:37:02,443
+That's the end of the programme now.
+
+1853
+01:37:02,444 --> 01:37:04,923
+I'd say game over,
+but only a prick would say that.
+
+1854
+01:37:04,924 --> 01:37:06,427
+Get out of my show.
+
+1855
+01:37:06,452 --> 01:37:35,060
+<font color="#3399CC">Subtitles by </font><font color="ffffff">MemoryOnSmells</font>
+<font color="#3399CC">http://UKsubtitles.ru.</font>
+

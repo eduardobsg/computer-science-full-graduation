@@ -1,0 +1,123 @@
+NDB006
+The number of symbol table entries is: 8
+The length of the symbol table is: 118
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|segmento_a:1|
+=	|segmento_b:2|
+L	|segmento_c:3|
+[	|segmento_d:4|
+j	|segmento_e:5|
+y	|segmento_f:6|
+"*	|segmento_g:7|
+
+The number of name info structs is : 104
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IGdW	!	:12	"G
+#	Ky&|	!	7	'	(	)	*	,	-	.	A	q
+$	Ky&|	!	7	'	(	)	*	,	-	.	B	r
+%	Ky&|	!	7	'	(	)	*	,	-	.	C	p
+&	Ky&|	!	7	'	(	)	*	,	-	.	D	o
+'	NLG+	!	1	S_A	z
+(	NLG+	!	1	S_B	y
+)	IGdq	!	S_C	x
+*	IGdq	!	S_D	w
++	IGdq	!	S_Dp	s
+,	IGdq	!	S_E	v
+-	NLG+	!	1	S_F	u
+.	IGdq	!	S_G	t
+/	IGdW	.	:10	"V
+0	IGdW	.	:11	"[
+1	IGdW	.	:12	"S
+2	IGdW	.	:13	"U
+3	IGdW	.	:14	"T
+4	IGdW	.	:15	"]
+5	IGdW	.	:16	"R
+6	IGdW	.	:17	"Z
+7	IGdW	.	:18	"Y
+8	IVOQ	.	=	:19	"_
+9	IGdW	.	:5	"X
+:	IGdW	.	:6	"\
+;	IGdW	.	:8	"^
+<	IGdW	.	:9	"W
+=	INu}	.	8	S_A	"_
+>	IGdW	=	:10	"p
+?	IGdW	=	:12	"o
+@	IGdW	=	:14	"j
+A	IGdW	=	:15	"u
+B	IGdW	=	:17	"s
+C	IGdW	=	:21	"n
+D	IGdW	=	:22	"m
+E	IGdW	=	:23	"l
+F	IGdW	=	:24	"v
+G	IGdW	=	:25	"k
+H	IVOQ	=	M	:27	"x
+I	IGdW	=	:5	"r
+J	IGdW	=	:6	"t
+K	IGdW	=	:8	"w
+L	IGdW	=	:9	"q
+M	INu}	=	H	S_B	"x
+N	IGdW	L	:10	#)
+O	IGdW	L	:14	#%
+P	IGdW	L	:17	#+
+Q	IGdW	L	:22	#(
+R	IGdW	L	:23	#'
+S	IGdW	L	:25	#&
+T	IGdW	L	:27	#.
+U	IGdW	L	:28	#-
+V	IGdW	L	:29	#,
+W	IVOQ	L	Z	:30	#0
+X	IGdW	L	:5	#*
+Y	IGdW	L	:6	#/
+Z	INu}	L	W	S_C	#0
+[	IGdW	[	:10	#=
+\	IGdW	[	:14	#;
+]	IGdW	[	:17	#A
+^	IGdW	[	:23	#<
+_	IGdW	[	:25	#?
+`	IGdW	[	:27	#C
+a	IGdW	[	:29	#B
+b	IGdW	[	:30	#>
+c	IGdW	[	:32	#E
+d	IVOQ	[	g	:33	#F
+e	IGdW	[	:5	#@
+f	IGdW	[	:6	#D
+g	INu}	[	d	S_D	#F
+h	IGdW	j	:10	#S
+i	IGdW	j	:14	#Q
+j	IGdW	j	:27	#V
+k	IGdW	j	:28	#W
+l	IGdW	j	:29	#T
+m	IVOQ	j	p	:32	#X
+n	IGdW	j	:5	#R
+o	IGdW	j	:6	#U
+p	INu}	j	m	S_E	#X
+q	IGdW	y	:10	#h
+r	IGdW	y	:14	#c
+s	IGdW	y	:27	#j
+t	IGdW	y	:28	#k
+u	IGdW	y	:29	#i
+v	IGdW	y	:33	#f
+w	IGdW	y	:34	#e
+x	IGdW	y	:35	#d
+y	IGdW	y	:36	#m
+z	IVOQ	y	}	:37	#n
+{	IGdW	y	:5	#g
+|	IGdW	y	:6	#l
+}	INu}	y	z	S_F	#n
+~	IGdW	"*	:10	#z
+"!	IGdW	"*	:14	#y
+""	IGdW	"*	:27	$"
+"#	IGdW	"*	:28	$#
+"$	IGdW	"*	:29	#~
+"%	IGdW	"*	:33	#|
+"&	IGdW	"*	:34	#{
+"'	IGdW	"*	:36	$$
+"(	IVOQ	"*	"+	:37	$%
+")	IGdW	"*	:5	#}
+"*	IGdW	"*	:6	$!
+"+	INu}	"*	"(	S_G	$%

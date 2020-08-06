@@ -1,0 +1,62 @@
+TODO List:
+
+=============================================================================================
+2013-03-25:
+
+TODO: 
+
+(João) Faltando regra para caracteres inválidos. Deve retornar código de erro, TOKEN_ERROR 290.
+Caracteres inválidos na tabela ascii vão dos de valor 128 ao de valor 255.
+
+---------------------------------------------------------------------------------------------
+DONE: 
+
+(João) Remover aspas duplas e aspas simples de um símbolo caso seja string ou char antes de 
+salvar na hashtable (OK)
+	- função fixEntry na hashtable.h trata esses dois casos.
+
+(João) Não aceita nomes do tipo minhaVal_32 (OK)	
+	- Agora aceita. A regra de indentificador no scnner.l foi alterada para: 
+	[A-Za-z][A-Za-z_0-9_]* { add(hashtable, yytext, TK_IDENTIFIER); return TK_IDENTIFIER;  } 
+	
+(João) No switch case do main.c não há case para LIT_STRING (OK)
+	- Inserido!
+	
+(João) LIT_INTEGER aceita apenas inteiros positivos. (OK)
+	- Agora também aceita inteiros negativos. Teste inserido no source_debug1.ling	
+	- Regra ficou -?[0-9]+ ; O '?' quer dizer uma ou nenhuma ocorrência do símbolo
+
+(João) Variáveis do tipo "32minhaVal" são lidas como:
+	* 32 		=> char
+	* minhaVal 	=> string
+	
+	- Inserido regra no scanner.l. Teste encontra-se em source_debug1.ling
+	
+=============================================================================================
+2013-03-24:
+
+TODO:
+
+(João) Usando o teste source_debug1.txt, ao imprimir a hastable, algumas posições apresentam 
+mais de dois valores. Exemplo:
+{052} Entry[==,272]	Entry[loop,264]
+Pelo que eu entendi deveria ser apenas um registro por posição na hashtable
+
+---------------------------------------------------------------------------------------------
+DONE:
+
+(João) String segue sendo tratada como char (OK)
+	- Problema resolvido alterando scanner.l para LIT_STRING na regra para string
+
+(João) Talvez melhorar o print da hashtable, pois imprime os TABLE_SIZE registros (100 no total),
+mas vários não tem nada. (OK)
+	- Apenas registros não vazios são impressos.
+	
+(João) string justapostas do tipo "Minha string contem um int" "as" são interpretadas apenas
+como uma string, ao invés de duas isoladas. Exemplo em source_debug1.ling (OK)
+	- Alterada regra de LIT_STRING no scanner.l de acordo com 
+	http://stackoverflow.com/questions/2039795/regular-expression-for-a-string-literal-in-flex-lex	
+
+=============================================================================================
+
+

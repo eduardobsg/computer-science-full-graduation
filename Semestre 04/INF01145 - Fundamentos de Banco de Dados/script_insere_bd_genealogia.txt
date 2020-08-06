@@ -1,0 +1,46 @@
+/* local(codLocal,nomeLocal) */      
+insert into local
+	(codLocal,nomeLocal) 
+	values 
+	('L01','Casa da Mãe Joana'),
+	('L02','Igreja Dom Feliciano'),
+	('L03','Varanda da Alegria'),
+	('L04','Restaurante do seu José'),
+	('L05','Cia do Matrimônio'),	
+	('L06','Cemitério Jardim da Paz'),
+	('L07','Cemitério Casa Feliz'),
+	('L08','Cemitério Aqui Jaz');
+
+/* pessoa(codPessoa,sexo,preNome,sobNome,dataNasc,codLocalNasc,codLocalFalec,codUniaoPais) */      
+insert into pessoa
+	(codPessoa,sexo,preNome,sobNome,dataNasc,codLocalNasc,codLocalFalec,codUniaoPais) 
+	values 	
+	('P01','M','João','Gross','1990-08-21','L02',null,'U03'),
+	('P02','F','Maria','Berhat','1980-09-12','L04',null,null), 
+	('P03','F','Jaqueline','Lisboa','1986-03-25','L05',null,'U03'),
+	('P04','F','Victória','Trucci','1988-05-17','L02',null,), 
+	('P05','M','Guilherme','Abe','1989-05-05','L01',,), 
+	('P06','M','Antunes','Menezes','1963-03-21','L03','L06',), 
+	('P07','F','Jandira','da Silva','1954-06-04','L02','L08',), 
+	('P08','F','Marta','Gross','2008-01-02','L03',,'U01'), 
+	('P09','M','Luis','Ferdinando','2010-03-18','L05',,'U01'), 
+	('P10','F','Samira','Ali','2007-03-10','L04',,'U02');
+
+/* uniao(codUniao,dataUniao,codLocalUniao,codMarido,codEsposa) */
+insert into uniao
+	(codUniao,dataUniao,codLocalUniao,codMarido,codEsposa)
+	values
+	('U01','2005-04-20','L05','P01','P02'),
+	('U02','2006-10-20','L05','P05','P03'),
+	('U03','1984-11-02','L05','P06','P07');
+
+
+
+
+
+
+
+
+
+
+

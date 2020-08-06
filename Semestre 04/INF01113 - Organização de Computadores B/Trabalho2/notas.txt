@@ -1,0 +1,55 @@
+./sim-cache -redir:sim <arquivo_de_saida> -cache:il1 <config> -cache:il2 none -cache:dl1 <config>
+./benchmarks/crc.ss
+
+
+onde:
+-redir:sim
+(nome_bench.txt);
+<config>
+= redireciona os resultados da simulação para o arquivo txt especificado
+= parâmetros de configuração da cache (dados e instruções);
+O parâmetro <config>, que configura a cache, possui o formato abaixo:
+<name>:<nsets>:<bsize>:<assoc>:<repl>
+onde:
+<name> = nome da cache sendo definida (il1 ou dl1)  deve ser único
+<nsets> = número de conjuntos da cache
+<bsize> = tamanho de cada bloco (em bytes)
+<assoc> = associatividade da cache (deve ser potência de 2)
+<repl> = política de reposição da cache (‘l’ = LRU, ‘f’ = FIFO e ‘r’ = aleatória)
+
+
+sendo o tamanho da cache o produto
+<nsets> X <bsize> X <assoc>
+Exemplo:
+-cache:il1 minha_primeira_cache_de_instrucoes:128:8:1:f
+
+
+# <nº conj.> 32, <tam bloc> 32, <assoc.> 1
+./sim-cache -redir:sim a.txt -cache:il1 il1:32:32:1:l -cache:il2 none -cache:dl1 dl1:32:32:1:l 
+./sim-cache -redir:sim a.txt -cache:il1 il1:32:32:1:r -cache:il2 none -cache:dl1 dl1:32:32:1:r 
+./sim-cache -redir:sim a.txt -cache:il1 il1:32:32:1:f -cache:il2 none -cache:dl1 dl1:32:32:1:f
+
+# <nº conj.> 16, <tam bloc> 32, <assoc.> 2
+./sim-cache -redir:sim a.txt -cache:il1 il1:16:32:2:l -cache:il2 none -cache:dl1 dl1:16:32:2:l 
+./sim-cache -redir:sim a.txt -cache:il1 il1:16:32:2:r -cache:il2 none -cache:dl1 dl1:16:32:2:r 
+./sim-cache -redir:sim a.txt -cache:il1 il1:16:32:2:f -cache:il2 none -cache:dl1 dl1:16:32:2:f
+
+# <nº conj.> 8, <tam bloc> 32, <assoc.> 4
+./sim-cache -redir:sim a.txt -cache:il1 il1:8:32:4:l -cache:il2 none -cache:dl1 dl1:8:32:4:l 
+./sim-cache -redir:sim a.txt -cache:il1 il1:8:32:4:r -cache:il2 none -cache:dl1 dl1:8:32:4:r 
+./sim-cache -redir:sim a.txt -cache:il1 il1:8:32:4:f -cache:il2 none -cache:dl1 dl1:8:32:4:f
+
+# <nº conj.> 4, <tam bloc> 32, <assoc.> 8
+./sim-cache -redir:sim a.txt -cache:il1 il1:4:32:8:l -cache:il2 none -cache:dl1 dl1:4:32:8:l 
+./sim-cache -redir:sim a.txt -cache:il1 il1:4:32:8:r -cache:il2 none -cache:dl1 dl1:4:32:8:r 
+./sim-cache -redir:sim a.txt -cache:il1 il1:4:32:8:f -cache:il2 none -cache:dl1 dl1:4:32:8:f
+
+# <nº conj.> 2, <tam bloc> 32, <assoc.> 16
+./sim-cache -redir:sim a.txt -cache:il1 il1:2:32:16:l -cache:il2 none -cache:dl1 dl1:2:32:16:l 
+./sim-cache -redir:sim a.txt -cache:il1 il1:2:32:16:r -cache:il2 none -cache:dl1 dl1:2:32:16:r 
+./sim-cache -redir:sim a.txt -cache:il1 il1:2:32:16:f -cache:il2 none -cache:dl1 dl1:2:32:16:f
+
+# <nº conj.> 1, <tam bloc> 32, <assoc.> 32
+./sim-cache -redir:sim a.txt -cache:il1 il1:1:32:32:l -cache:il2 none -cache:dl1 dl1:1:32:32:l 
+./sim-cache -redir:sim a.txt -cache:il1 il1:1:32:32:r -cache:il2 none -cache:dl1 dl1:1:32:32:r 
+./sim-cache -redir:sim a.txt -cache:il1 il1:1:32:32:f -cache:il2 none -cache:dl1 dl1:1:32:32:f

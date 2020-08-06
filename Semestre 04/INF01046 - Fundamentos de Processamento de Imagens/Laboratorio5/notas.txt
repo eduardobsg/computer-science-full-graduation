@@ -1,0 +1,124 @@
+2) Estas imagens encontram-se representadas no modelo de cores RGB. Assim, cada
+uma delas corresponde a uma matrix com três dimensões (NxMx3), onde N e M
+representam os números de linhas e colunas, respectivamente, da matrix.
+Escreva um procedimento para separar cada um dos canais (R, G e B) como imagens
+independentes:
+
+(a) Leia a image “Chateau_small.jpg” usando o commando imread.
+(b) Obtenha as dimensões da imagem lida utilizando o comando size (e.g.,
+[Rows, Cols, Channels) = size(<nome da matrix onde foi lida a imagem>));
+(c) Utilizando dois laços aninhados, salve os conteúdos dos canais R, G e B em três
+matrizes distintas (com dimensões NxM) chamadas red, green e blue,
+respectivamente.
+(d) Exiba a imagem original, bem como red, green e blue em uma janela definida
+pelo comando subplot(2,2,...)
+
+CS = imread('Chateau_small.jpg');
+[Rows, Cols, Channels) = size(CS);
+
+Red = zeros(Rows, Cols, Channels);
+Green = zeros(Rows, Cols, Channels);
+Blue = zeros(Rows, Cols, Channels);
+
+for i=1:Rows
+	for j=1:Cols
+		Red(i,j,1) = CS(i,j,1);			
+		Green(i,j,2) = CS(i,j,2);
+		Blue(i,j,3) = CS(i,j,3);
+	end;	
+end;
+
+figure;
+subplot(2,2,1); imshow(uint8(CS));
+subplot(2,2,2); imshow(uint8(Red));
+subplot(2,2,3); imshow(uint8(Green));
+subplot(2,2,4); imshow(uint8(Blue));
+
+3. Combine, duas a duas, as imagens dos canais R, G e B obtidas anteriormente, criandos
+as imagens red_green (canais R e G, com B = 0), red_blue (canais R e B, com G = 0)
+e green_blue (canais G e B, com R = 0). Lembre-se que estas imagens terão
+dimensões NxMx3. Inicialize cada uma delas com o commando uint8(zeros(Rows,
+Cols, Channels)). Exiba a imagem original, e as três imagens obtidas por meio destas
+combinações em uma janela definida pelo comando subplot(2,2,...)
+
+red_green = zeros(Rows,Cols,Channels);
+red_blue = zeros(Rows,Cols,Channels);
+green_blue = zeros(Rows,Cols,Channels);
+
+for i=1:Rows
+	for j=1:Cols
+		red_green(i,j,1) = Red(i,j,1);
+		red_green(i,j,2) = Green(i,j,2);	
+		red_blue(i,j,1) = Red(i,j,1);
+		red_blue(i,j,3) = Blue(i,j,3);	
+		green_blue(i,j,2) = Green(i,j,2);	
+		green_blue(i,j,3) = Blue(i,j,3);
+	end;
+end;
+
+figure;
+subplot(2,2,1); imshow(uint8(CS));
+subplot(2,2,2); imshow(uint8(red_green));
+subplot(2,2,3); imshow(uint8(red_blue));
+subplot(2,2,4); imshow(uint8(green_blue));
+
+4. Calcule o negativo (complemento) da imagem original (255 – imagem_original), bem
+como o complemento de cada um dos canais (R, G e B) da imagem original
+individualmente. Exiba a imagem complemento da imagem original, bem como os
+complementos dos três canais em uma janela definida pelo comando subplot(2,2,...)
+
+neg_Red = zeros(Rows, Cols, Channels);
+neg_Green = zeros(Rows, Cols, Channels);
+neg_Blue = zeros(Rows, Cols, Channels);
+neg_CS = zeros(Rows, Cols, Channels);
+
+neg_CS = 255 - CS;
+
+for i=1:Rows
+	for j=1:Cols
+		neg_Red(i,j,1) = 255 - Red(i,j,1);			
+		neg_Green(i,j,2) = 255 - Green(i,j,2);
+		neg_Blue(i,j,3) = 255 - Blue(i,j,3);
+	end;	
+end;
+
+figure;
+subplot(2,2,1); imshow(uint8(neg_CS));
+subplot(2,2,2); imshow(uint8(neg_Red));
+subplot(2,2,3); imshow(uint8(neg_Green));
+subplot(2,2,4); imshow(uint8(neg_Blue));
+
+
+5. Calcule a luminância (versão em tons de cinza da imagem colorida original) definida
+pela expressão Luminância = 0.299*R + 0.587*G + 0.114*B. Exiba a imagem
+original e sua versão em tons de cinza, em uma janela definida pelo comando
+subplot(1, 2,...).
+
+gray_CS = zeros(Rows, Cols, Channels);
+
+for i=1:Rows
+	for j=1:Cols
+		gray_CS(i,j,1) = 0.299 .* CS(i,j,1) + 0.587 .* CS(i,j,2) + 0.114 .* CS(i,j,3);
+		gray_CS(i,j,2) = 0.299 .* CS(i,j,1) + 0.587 .* CS(i,j,2) + 0.114 .* CS(i,j,3);
+		gray_CS(i,j,3) = 0.299 .* CS(i,j,1) + 0.587 .* CS(i,j,2) + 0.114 .* CS(i,j,3);
+	end;	
+end;
+
+figure;
+subplot(1,2,1); imshow(uint8(CS));
+subplot(1,2,2); imshow(uint8(gray_CS));
+
+6. Defina um kernel Gaussiano G = [0.0625 0.125 0.0625; 0.125 0.25 0.125; 0.0625
+0.125 0.0625] e obtenha o resultado da convolução da imagem colorida com este
+kernel. Você consegue aplicar a convolução diretamente sobre a imagem? Exiba a
+imagem original e sua filtrada, em uma janela definida pelo comando subplot(1,
+2,...).
+
+G = [0.0625 0.125 0.0625; 0.125 0.25 0.125; 0.0625 0.125 0.0625];
+CS_gauss = conv2(double(CS),double(G));
+
+figure;
+subplot(1,2,1); imshow(uint8(CS));
+subplot(1,2,2); imshow(uint8(CS_gauss));
+
+

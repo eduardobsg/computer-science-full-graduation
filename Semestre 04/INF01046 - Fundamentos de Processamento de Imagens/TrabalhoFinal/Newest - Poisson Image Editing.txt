@@ -1,0 +1,181 @@
+Algoritmo:
+
+0) Interface recém aberta, sem imagens carregadas, botões mix, crop, put crop e zoom desabilitados
+
+1) Carregar sourceImage e destImage
+	1.1) Se sourceImage for carregado, habilitado botões de zoom do sourceImage e botão crop
+	
+	1.2) Se destImage for carregado, habilitado botões de zoom do destImage, botão mix e put crop permanecem desabilitados
+	
+	1.3) Fazer zoom nas imagens caso necessário.
+	
+	1.4) Selecionar área da sourceImage e apertar botão "Crop". croppedImage é gerado. cropImage deve capturar uma trilha de pixels 
+	no entorno da área seleciona, para depois inicializar b (os pixels de dentro da máscara poderão ter vizinhos fora da máscara, caso 
+	esse pixel esteja na boda da cropImage. Logo essa linha extra em volta da cropImage jé é suficiente).
+		1.4.1) Botões crop e zoom são desabilitados. Botão Put crop é habilitado.
+		1.4.2) Testa se destImage é maior do que o crop da sourceImage. Se for maior segue, senão gera mensagem de erro e 
+		volta para 0).
+	
+	1.5) Clicar no botão put crop e posicionar a croppedImage na destImage.	
+		1.5.1) Capturar a posição do crop dentro da destImage e gerar a máscara, com o tamanho da destImage e também outra croppedImage 
+		com o mesmo tamanho da destImage, e na posição selecionada em relação à destImage. 
+		1.5.2) Botão mix é habilitado.
+	
+	1.6) Clicar no mix.	 
+
+2) Preparando Ax = b
+	2.1) x são os valores finais dos pixels, ou seja, a quantidade de pixels da imagem final. 
+	
+	2.2) A é uma matriz esparsa, ou seja, possui vários coeficientes iguais a zero. Para os pixels que não estão na máscara, as linhas em
+	b que correspondem aquelas linhas em A terão a diagonal igual a 1, para indicar que o valor desse pixel já está definido. Para os
+	pixels p que estão na máscara, a diagonal da linha em A correspondente a linha em b terá valor 4 e para os pixels q vizinhos a p o
+	valor -1 é atribuído. Se p está na posição (x,y), seus vizinhos serão os pixels q (x-1,y), (x+1,y), (x,y-1) e (x,y+1). 
+	
+	A: fx,y = 4p(x,y) - p(x-1,y) - p(x+1,y) - p(x,y-1) - p(x,y+1) (considerando 4 vizinhos)
+	(http://en.wikipedia.org/wiki/Discrete_Poisson_equation)
+	
+	// construindo A, a mesma para todos os 3 canais
+	double A[][];
+	initializeMatrixA(); //deixa todas as posições com zero
+	
+	int i = 0;
+	for(int x = 0; x < mask.width; x++) {
+		for(int y = 0; y < mask.height; y++) {
+			if(mask[x][y] == 1) {
+				//inicializa a linha e a coluna do pixel em questão
+				int row = x * mask.width + y;
+				int col = x * mask.width + y;
+				
+				int neighbors = 0;
+				
+				//inicializa os 4 vizinhos
+				if(mask[x-1][y] == 1 && (x-1) >= 0) {
+					A[row][col - 1] += -1;
+					neighbors++;
+				}
+				if(mask[x+1][y] == 1 && (x+1) <= mask.width) {
+					A[row][col + 1] = -1;
+					neighbors++;
+				}
+				if(mask[x][y-1] == 1 && (y-1) >= 0) {
+					A[row][col - mask.width] += -1;
+					neighbors++;
+				}
+				if(mask[x][y+1] == 1 && (y+1) <= mask.height) {
+					A[row][col + mask.width] += -1;	
+					neighbors++;
+				}
+				
+				//inicializa diagonal
+				A[row][col] = neighbors;
+			}
+			else
+				A[row][col] = 1;
+		}
+	}
+	
+	Obs.:
+		* x e y são usados para varrer a imagem e também para acessar as posições da matriz A
+		* mask.width é usado para auxiliar na varredura dos valores da matriz A e também para testas os limites da imagem
+
+	
+	2.3) b é um vetor onde cada posição corresponde à soma do dos gradientes do pixels com seus vizinhos na cropImage. Por exemplo, para
+	um pixel que não está na borda da imagem o pixel terá 4 vizinhos e sua equação será  4*xi - xn1 - xn2 - xn3 - xn4 = sum j=1to4 
+	source_i - source_nj.
+			
+	// construindo b, um b para cada canal - versão mais rápida
+	// lembrar que a cropImage foi gerada depois de ser colada sobre a destImage (1.5.1) e possui uma trilha de pixels a mais que vieram 
+	// da sourceImage e estão em torno da parea de interesse. Mesmo não estando dentro da máscara eles são usados para inicializar o vetor b
+	
+	for(int channel = 0; channel < 3; channel++) {
+		for(int x = 0; x < mask.width; x++) {
+			for(int y = 0; y < mask.height; y++) {
+				
+				int row = x * mask.width + y;
+			
+				if(mask[x][y] == 1) {
+					b[row][channel] = 0;	
+					if(mask[x-1][y] == 0 && (x-1) >= 0) 
+						b[row][channel] += cropImage[x][y][channel] - cropImage[x-1][y][channel];
+					if(mask[x+1][y] == 0 && (x+1) <= mask.width)
+						b[row][channel] += cropImage[x][y][channel] - cropImage[x+1][y][channel];
+					if(mask[x][y-1] == 0 && (y-1) >= 0) 
+						b[row][channel] += cropImage[x][y][channel] - cropImage[x][y-1][channel];
+					if(mask[x][y+1] == 0 && (y+1) <= mask.height)
+						b[row][channel] += cropImage[x][y][channel] - cropImage[x][y+1][channel];	
+				}
+				else
+					b[row][channel] = destImage[x][y][channel];
+			}
+		}
+	}
+		
+	ou
+
+	for(int x = 0; x < mask.width; x++) {
+		for(int y = 0; y < mask.height; y++) {
+				
+			int row = x * mask.width + y;
+			
+			if(mask[x][y] == 1) {
+				b[row][0] = 0;	
+				b[row][1] = 0;	
+				b[row][2] = 0;	
+				if(mask[x-1][y] == 0 && (x-1) >= 0) {
+					b[row][0] += cropImage[x][y][0] - cropImage[x-1][y][0];
+					b[row][1] += cropImage[x][y][1] - cropImage[x-1][y][1];
+					b[row][2] += cropImage[x][y][2] - cropImage[x-1][y][2];
+				}
+				if(mask[x+1][y] == 0 && (x+1) <= mask.width) {
+					b[row][0] += cropImage[x][y][0] - cropImage[x+1][y][0];
+					b[row][1] += cropImage[x][y][1] - cropImage[x+1][y][1];
+					b[row][2] += cropImage[x][y][2] - cropImage[x+1][y][2];
+				}
+				if(mask[x][y-1] == 0 && (y-1) >= 0) {
+					b[row][0] += cropImage[x][y][0] - cropImage[x][y-1][0];
+					b[row][1] += cropImage[x][y][1] - cropImage[x][y-1][1];
+					b[row][2] += cropImage[x][y][2] - cropImage[x][y-1][2];
+				}
+				if(mask[x][y+1] == 0 && (y+1) <= mask.height) {
+					b[row][0] += cropImage[x][y][0] - cropImage[x][y+1][0];	
+					b[row][1] += cropImage[x][y][1] - cropImage[x][y+1][1];	
+					b[row][2] += cropImage[x][y][2] - cropImage[x][y+1][2];	
+				}
+			}
+			else {
+				b[row][0] = destImage[x][y][0];
+				b[row][1] = destImage[x][y][1];
+				b[row][2] = destImage[x][y][2];
+			}
+		}
+	}
+		
+	Apoio:
+		- http://www.cs.brown.edu/courses/csci1950-g/results/proj2/eboswort/: Fala que o valor da diagonal dos pixels dentro da 
+		máscara deve ser igual ao número de vizinhos dentro da máscara.
+		- http://www.cs.brown.edu/courses/csci1950-g/results/proj2/dkendall/: Fala que a quantidade de linha e colunas da matriz A
+		devem ser iguais a quantidade total de pixels que a imagem possui, sendo esta matriz de tamanho pixels^2.
+		- http://www.cs.brown.edu/courses/csci1950-g/results/proj2/jtwebb/: Detalha EXATAMENTE como deve ser a matriz A e o vetor b.
+		
+3) Resolver equações de poisson
+	3.1) Utilizar algoritmo otimizado para solucionar sistemas lineares.
+	3.2) Resolver A * x = b para cada um dos canais.
+	3.3) x será o resultado final. Unir os 3 canais para formar a imagem final.
+		
+    for(int x = 0; x < mask.width; x++) {
+		for(int y = 0; y < mask.height; y++) {
+			row = x * mask.width + y;
+			final[x][y][0] = x[row][0];
+			final[x][y][1] = x[row][1];
+			final[x][y][2] = x[row][2];
+		}
+	}           
+
+Notas:
+	- http://www.cs.brown.edu/courses/csci1950-g/results/proj2/jtwebb/: "Pixels in the "target" that fall 
+	under the mask are considered unknown"
+    - http://www.mathworks.com/support/tech-notes/1100/1110.html: tamanho máximo das matrizes em MatLab                     
+                
+   
+        
+  

@@ -1,0 +1,88 @@
+Entendendo como o 'Tocar tudo' funciona:
+
+WindowArpejador.java
+	1) private void playNoteButtonActionPerformed(java.awt.event.ActionEvent evt)
+	1.1) chama função de parser e seta lista de acordes no player
+	1.2) chama playCurrentChord() e volta a chamar playCurrentChord() até tocar todos os acordes.
+
+InputParser.java
+	1.1.1) static public boolean parseInputLine(String input, Chord[] chordPtr, int[] octavePtr, int[] tempoPtr)
+	Pega a string do acorde, tokeniza a primeira parte, separando nota e modificador e cria um acorde,
+	fazendo "chordPtr[0] = new Chord(note, modifier);"
+
+Chord.java
+	1.1.2) public Chord(String note, String modifier)
+	chama duas funções:
+	1.1.3) setChordNote(note)
+		Chama setScaleNote(newNote), que está implementada em MajorScale.java. E depois seta a variável 'note' usando getScaleNote() (também implementada na classe MajorScale).
+	1.1.5) Nessa caso a variável 'note' fica com a string 'C' (Olhe o exemplo da execução do majorScale).
+
+	1.1.6) setChordModifier(modifier)
+		Apenas seta a variável 'modifier' com a string do modificador.
+
+
+
+	1.2.2) public int[] getNotes()
+	Em dado ponto chega no seguinte for:
+	for(int j = 0; j < this.modifierFormula[i].length(); j++){
+
+	Execução considerando o modificador ""
+	modifierFormula será "024"
+
+	chordNote = 0;
+	chordNotes[0] = 0
+
+	chordNote = 2;
+	chordNotes[1] = 4;
+
+	chordNote = 4;
+	chordNotes[2] = 7;
+	
+	
+
+
+MajorScale.java
+	1.1.4) public void setScaleNote(String noteName)
+	Aqui começa a loucura. Exemplo de execução da função:
+
+	noteID = 0; //corresponde a nota C
+	
+	executando o for:
+
+	iteração 0
+	scale[0] = 0;	
+	noteID = 2;
+	
+	iteração 1
+	scale[0] = 2;	
+	noteID = 4;
+
+	iteração 2
+	scale[0] = 4;	
+	noteID = 5;
+
+	iteração 3
+	scale[0] = 5;	
+	noteID = 7;
+
+	iteração 4
+	scale[0] = 7;	
+	noteID = 9;
+
+	iteração 5
+	scale[0] = 9;	
+	noteID = 11;
+
+	iteração 6
+	scale[0] = 11;	
+	noteID = 12;
+
+
+Player.java
+	1.2.1) playCurrentChord()
+	Pega o primeiro acorde da lista de acordes e chama chord.getNotes().
+	Obter como retorno uma lista de inteiros com 4 valores, que correspondem
+	às notas do acorde (podendo um acorde ter 3 ou 4 notas). Toca as notas do acorde.
+
+
+

@@ -1,0 +1,30 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+#include "pcb.h" /* defines the PCB struture */
+
+/* FIFO definitions:
+ * Last element: the last but one element points to it. The last element
+ * has a pointer pointing nowhere (null).
+ * First element: has a pointer to the second element.
+*/
+
+/**** Structures *****/
+
+/* Node info structure */
+typedef PCB infoFIFO;
+
+/* Node strutcture of the FIFO queue - simple linked list */
+typedef struct aFIFO {
+	infoFIFO pcb;
+	struct aFIFO *next;
+} nodeFIFO;
+
+/* Structure to a node of type nFIFO */
+typedef nodeFIFO pFIFO;
+
+
+/***** Operations over the FIFO queue *****/
+
+/* Creates a new queue FIFO */
+pFIFO * createFIFO(

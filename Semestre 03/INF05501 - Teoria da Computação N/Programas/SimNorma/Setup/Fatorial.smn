@@ -1,0 +1,17 @@
+{
+	EXEMPLO: FATORIAL
+	 - este exemplo calcula o fatorial do registrador A utilizando um programa iterativo
+	 - A = A!
+}
+
+programa iterativo
+
+ad-B;
+ate zero-A faca (
+			ate zero-B faca (ad-C;sub-B);
+			ate zero-C faca (
+						ate zero-A faca (ad-B;ad-D;sub-A);
+						ate zero-D faca (ad-A;sub-D);
+						sub-C);
+			sub-A);
+ate zero-B faca (ad-A;sub-B)

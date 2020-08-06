@@ -1,0 +1,47 @@
+; 1. Inicio: Pmsb=0, plsb=0, i=mcador
+       LDA Zero
+       STA Pmsb
+       STA plsb
+; 2. Compara mcador e mcando, para usar o menor como contador de laço
+       LDA mcador	; compara mcador - mcando
+       SUB mcando
+       JB  menor
+       LDA mcando
+       JZ  fim 
+       STA i
+       LDA mcador
+       STA aux
+       JMP laco
+menor: LDA mcando
+       STA aux
+       LDA mcador
+       JZ  fim
+       STA i
+; 3. Soma aux ao resultado (lsb)
+laco:  LDA plsb
+       ADD aux
+       STA plsb
+; 4. Se houve carry, incrementa os bits mais significativos do resultado
+       JNC C0
+       LDA Pmsb
+       ADD Um
+       STA Pmsb
+C0:
+; 5. Decrementa contador (i)
+       LDA i
+       SUB Um
+       STA i
+; 6. Se n!=0, voltar para o passo 2
+       JNZ laco
+; Se não, terminar
+fim:   HLT
+
+ORG 128
+Mcando: DB  255
+Mcador: DB    1
+Pmsb:   DB    0
+Plsb:   DB    0
+i:      DB    0
+aux:	DB    0
+Zero:   DB    0
+Um:     DB    1

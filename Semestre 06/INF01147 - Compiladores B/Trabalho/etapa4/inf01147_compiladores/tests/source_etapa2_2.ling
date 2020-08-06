@@ -1,0 +1,32 @@
+// UFRGS - Compiladores - Marcelo Johann - 2013/1
+
+word a:0;
+word v[10]:0 0 0 0 0 0 0 0 0 0; 
+word mat[1000];
+word $pt:0;
+
+word main()
+  word i:'a';
+  byte a:5;
+  {
+  output "digite um numero";
+  input i;
+  loop (i+10)
+    {
+    a = incn();
+    i = i + 1;
+    };
+  if (x)
+  then a = 5
+  else a = 7;
+  output "A resposta eh",i,a,2f,"\n";
+  }
+
+word incn (word x, word n)
+  { return x+n; }
+  
+word outra () {}
+
+word maisuma ()
+  {
+  }

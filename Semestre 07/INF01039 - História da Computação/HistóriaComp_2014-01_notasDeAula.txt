@@ -1,0 +1,54 @@
+Cadeira: INF01039 - História da Computação
+Professor: Weber e Cabral
+Aluno: João Luiz Grave Gross 
+Matrícula: 180171
+Semestre: 2014/01
+
+------------------------------------------------------------------------------
+---- Colegas:
+------------------------------------------------------------------------------
+
+Felipe Schmidt
+Jefferson Stoffel
+José Luis Damaren
+Rafael Cenci
+
+------------------------------------------------------------------------------
+---- Notas de Aula
+------------------------------------------------------------------------------
+
+26/02/2014
+
+Texto: O evangelho segundo Tux (sátira) - Gospel of Tux
+
+Turing:
+- Criou modelo abstrato de um computador, a máquina de Turing.
+- Representa o modelo lógico de um computador atual, com memória, estados e transições.
+- A máquina de Turing pode simular qualquer computador digital
+
+John von Neumann:
+- Dividiu o conceito de máquina de Turing em duas abstrações: dados e código
+
+Primeiros grandes computadores (primeiros filhos de Turing):
+- Colossus, the code breaker
+- ENIAC, the targeter
+- SAGE, the defender of the sky and creator of all networks
+
+Os mainframes eram fabricados por grandes corporações, tais como IBM, Digital, Burroughs, 
+Honeywell, Unisys, Rand e muitas outras.
+
+Lei de Moore: a cada 18 meses a quantidade de transistores disponíveis em um chip irá dobrar.
+
+
+Texto: The Computer Age
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+bool b: true;
+byte c: 'c';
+word a: 0;
+byte w[10];
+byte als[10];
+bool e[500]: 0 1 2 3 4;
+word z[2]  : 1 2;           // ok
+bool i[500]: true 1 2 3 4;  // wrong arg type
+bool u[2]: true;            // less args than needed
+bool k[2]: true false true; // more args than needed
+word $q: 10;
+
+word foo(word aaa, bool ccc, byte xxx, word lsl)
+	word hhh: 100;
+	byte iii: 200;
+	byte lll: 200;
+	byte jjj: 200;			
+{
+	a = 2;
+	b = 2 + 5 + 4 - 4 - 5 / 4;
+	k = 5000;
+	j[2] = 100;
+
+	if(a) then j = 3;
+
+	if(s) then {
+		a = 2;
+		b = 3;	
+	};
+	
+	if(a >= b) then c = 2 else {
+		if(d < e) then {
+			f = g;
+		};
+	};
+
+	/* Expressões */
+	//aa = *bb;
+	//cc = &dd;
+	//ee = -50;
+	//ff = gg[10];
+	//hh = (1 + ii) * (jj / 3);	
+	kk = foo(a, b, c, d);
+	//ll = goo( moo(), 50, vec[5] );
+
+	/* Comandos */
+	//input aa;
+
+	//loop(tt) ww = (q[30]) + &rr * -2; 
+
+	loop(5 + 5 / *hh) {
+		aa = 1;
+		bb = ( foo(cc, dd) );
+	};
+
+	//output "teste" , 1+1*30 , "legal";	
+	//output 2+2;
+
+	return xx;
+} 
+
+word foo2(word asa, byte xx, word ll) {
+}
+
+
+
+

@@ -1,0 +1,140 @@
+Installing OpenCV on Linux (Ubuntu)
+(http://abhitak.wordpress.com/2009/08/29/installing-opencv-on-linux-ubuntu-9-04/)
+
+Aug 29
+Posted by Abhi
+
+Earlier i was using openCV with Microsoft Visual C++ 6.0. But let me tell you, it crashed a lot. Every time i needed to close the process from Task Manager. Then i decided to somehow install OpenCV for my ubuntu.
+After searching and trying a lot for this, i was finally able to use opencv in GNU compiler(g++ or gcc).
+Synaptic Package Manager has simplified the life to a great extent. OpenCV is now available in the ubuntu repositories.
+Though there are some problems related to ‘ffmpeg’, i needed opencv for image processing only. So i have not mentioned here what to do about ‘ffmpeg’.
+
+Things to know before starting installation:
+i. This installation needs a C++ compiler like “g++”(which is most commonly used). So install g++ first using Synaptic or by following command at the terminal–
+
+    $ sudo apt-get install g++
+
+ii. OpenCV requires GTK+ 2.0 or higher for displaying images. GTK is graphical user interface library. Type out the following code to know the version of GTK+ installed on ur pc.
+
+    $ dpkg -l | grep libgtk
+
+This command should give o/p something like:
+
+libgtk-directfb-2.0-0 2.16.1-0ubuntu2
+
+If not, then u need to install the libraries for GTK+ 2.0 first, then start with this opencv installation.
+To install GTK+ 2.0 libraries, type out the following command:
+
+    $ sudo apt-get install libgtk2.0-dev
+
+If both g++ & GTK+ 2.0 are there then proceed as follows:
+
+I am using Ubuntu 9.04 (Jaunty Jackalope) and i did the following steps to install & configure OpenCV(ver 1.0.0.6) successfully:
+
+1. Go to Synaptic Package Manager (System> Administration> Synaptic Package Manager)
+2. Search for “opencv” and install the main “opencv” package and the following lib files:
+libcv
+libcv-dev
+libcvaux
+libcvaux-dev
+libhighgui
+libhighgui-dev
+opencv-doc
+(‘python-opencv’ not required).
+(you can also install opencv directly from the terminal by “sudo apt-get install” the above lib files
+3. After installing all the packages, open a terminal & type this code:
+
+    export LD_LIBRARY_PATH=/home/opencv/lib
+    export PKG_CONFIG_PATH=/home/opencv/lib/pkgconfig 
+
+The above ones are default paths for the opencv libraries.
+4. For testing:
+Create a new folder & a file “hello.cpp” in it using any text editor & type this code in it:
+
+    #include < cv.h > /* required to use OpenCV */
+    #include < highgui.h > /* required to use OpenCV's highgui */
+    #include < stdio.h >
+
+    int main(int argc, char *argv[]) {
+    IplImage* img=0; /* pointer to an image */
+    printf("Hello\n");
+    if(argv[1] != 0)
+    img = cvLoadImage(argv[1], 0); // 1 for color
+    else
+    printf("Enter filename\n");
+    if(img != 0) {
+    cvNamedWindow("Display", CV_WINDOW_AUTOSIZE); // create a window
+    cvShowImage("Display", img); // show image in window
+    cvWaitKey(0); // wait until user hits a key
+    cvDestroyWindow("Display");
+    }
+    else
+    printf("File not found\n");
+    return 0;
+    }
+
+
+5. To check the path where opencv & other lib files are stored, do:
+
+    $ pkg-config --cflags opencv
+
+(output will come as)
+-I/usr/include/opencv
+
+    $ pkg-config --libs opencv
+
+(output will come as)
+-lcxcore -lcv -lhighgui -lcvaux -lml
+
+These paths are needed to compile your opencv programs, as given in the next step.
+
+6. To compile & run:
+
+    $ g++ -I/usr/include/opencv -lcxcore -lhighgui -lm hello.cpp
+    ./a.out img
+
+where “img” is the name of any image within the same folder with extension.
+You should be able to see “Hello” and the image in a different window.
+
+-> If this runs, Congrats! now you can run any C/C++ program with opencv lib.
+Else, try
+
+    $ export PATH=$HOME/usr/bin/:$PATH
+
+and go to step3 again.
+
+7. Now lets simplify the above big command by making a shortcut for it:
+go to your local home directory(cd /home/) and open the .bashrc file using gedit(the file will be hidden). Append the following to the file:
+
+
+    alias gcv="g++ -I/usr/include/opencv -lcv -lcxcore -lcvaux -lhighgui -lm"
+
+and save. Close the terminal and open it again.(as this process requires relogin of the terminal)
+
+8.Now, go to directory containing a sample program & do
+
+    $ gcv filename.c && ./a.out
+    or
+    $ gcv filename.c
+    $ ./a.out input_img.jpg
+
+As you can see the commands now become similar to $cc filename.c, $./a.out which are used normally for compiling and executing C programs.
+
+****************************
+Some ways to check whether all lib files are installed-
+1. $ apt-cache search opencv
+returns:
+libcv-dev - development files for libcv
+libcv0.9-0c2 - computer vision library
+libcvaux-dev - development files for libcvaux
+libcvaux0.9-0c2a - computer vision extension library
+libhighgui-dev - development files for libhighgui
+libhighgui0.9-0c2 - computer vision GUI library
+opencv-doc - OpenCV documentation and examples
+
+
+—————————————————————————
+If you want to install openCV from a .tar file, refer this article:
+Installing opencv in linux(Ubuntu) from .tar.gz file
+Other helpful links on this topic:
+http://ivkin.net/2009/11/installing-opencv-2-0-on-ubuntu-9-10-karmic-koala/
