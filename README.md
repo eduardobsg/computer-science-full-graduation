@@ -96,6 +96,26 @@ Dentro de cada pasta estão os materiais específicos daquele disciplinas. Os ma
 * **Programas**: Algumas disciplinas possuem programas, seja para colocar em prática algum conceito da disciplina, elaborar um exercício ou trabalho.
 * **Material Adicional**: Algumas disciplinas possuem materiais adicionais que completam o conteúdo apresentado nos slides das aulas. Recomenda-se a leitura.
 
+## Disciplinas Imperdíveis
+
+Listo aqui algumas das disciplinas que acredito terem aberto minha cabeça para o mundo da informática e consolidado a base conceitual no que diz respeito a diferentes áreas da computação e à compreensão de algoritmos e programação.
+
+* INF01202 - Algoritmos e Programação : Fundamental para criar a mentalidade de lógica de programação.
+* INF01203 - Estrutura de Dados : Entendimento sobre estruturas de dados utilizadas em qualquer projeto, como Listas, Filas, Pilhas, Árvores e Grafos.
+* INF01107 - Introdução à Arquitetura de Computadores : Visão de como é o funcionamento interno do computador, como as instruções são armazenadas e executadas, como é realizado o acesso à memória e como os dados são processados.
+* INF01108 - Arquitetura de Computadores I : Assim como a disciplina de 'Introdução à Arquitetura de Computadores' explora mais a fundo o funcionamento de um computador, adicionando complexidade ao hardware e poder de computação à máquina. Novas instruções com mais poder de computação.
+* INF01124 - Classificação e Pesquisa de Dados : Como trabalhar com dados, ordenação, criação de estruturas, varredura de caminho em árvores e grafos.
+* INF05005 - Linguagens Formais e Autômatos : Apresenta a forma como a linguagem (texto) pode ser compreendida por máquinas a partir de gramáticas.
+* INF01046 - Fundamentos de Processamento de Imagens : Introduz diversos problemas sobre imagens, como solucioná-los.
+* INF01120 - Técnicas de Construção de Programas : Introduz a ideia de escrita de código com padrões e eficiência.
+* INF01145 - Fundamentos de Banco de Dados : Eventualmente iremos trabalhar com dados e teremos que armazená-los, portanto entender o funcionamento dos bancos de dados e como realizar a seleção de informações é essencial.
+* INF05515 - Complexidade de Algoritmos B : Introduz a noção de custo computacional de um programa e como calcular esse custo.
+* INF01142 - Sistemas Operacionais I N : Apresenta diversos elementos de software que compõem um computador e seu funcionamento, como o gerenciamento de memória, paginação, sistemas de arquivos, organização de espaço em disco, jornalização, etc.
+* INF05010 - Otimização Combinatória : Mostra formas de analisar custos e procurar soluções para reduzí-los.
+* INF01147 - Compiladores B : Mostra a forma como um código de programa é analisado e depois vira um código executável (código binário). Apresenta as etapas de tokenização, análise léxica, análise semântica, introdução de gramática para análise do código, etc
+* INF01154 - Redes de Computadores N : Como as informações trafegam pela Internet, protocolos de rede, camadas da arquitetura OSI, codificação de sinais, controle de fluxo, algoritmos de roteamento, IP e TCP, DNS e HTTP.
+* INF01056 - Desafios de Programação : Uma das disciplinas mais interessantes do curso. Embora eletiva, acredito que deveria ser obrigatória, pois consolida praticamente todo o conhecimento do curso. O aluno precisa ter conhecimento de padrões de programação, estruturas de dados, algoritmos de classificação e pesquisa, complexidade de algoritmos, banco de dados, etc. O foco aqui é solucionar problemas de programação de modo eficiente, com estruturas de dados e lógicas de programação que ocupem pouco espaço de armazenamento e executem rapidamente.
+
 ## Nota de atenção
 
 Ressalto que os materiais são do período de 2009 a 2014, então alguma coisa pode estar desatualizada. Entretanto, a maioria do conteúdo refere-se a conceitos de computação e informática, os quais estarão sempre atualizados.
